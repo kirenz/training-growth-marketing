@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 <link rel="icon" href="data:,">
+<script>
+// Einfacher clientseitiger Passwortschutz für die Kurswebsite.
+// Hinweis: schützt nur vor Gelegenheitszugriffen und ist keine echte Sicherheit,
+// der Code ist im Browser einsehbar. Für eine geschlossene Kursgruppe genügt das.
+// Passwort ändern: unten in erlaubteKennwoerter. Danach neu veröffentlichen.
+(function () {
+  function schuetzen() {
+    // In einem eingebetteten Rahmen keine eigene Abfrage, die umgebende Seite ist geschützt.
+    if (window.self !== window.top) return;
+    // Lokale Vorschau nicht abfragen.
+    var h = window.location.hostname;
+    if (h === 'localhost' || h === '127.0.0.1' || h === '') return;
+    // Einmal pro Browser abfragen, gilt dann für die ganze Website.
+    if (localStorage.getItem('gm26_zugang')) return;
+
+    var kennwort = prompt('Agentic AI für Growth Marketing\nBitte Kurspasswort eingeben:');
+    var erlaubteKennwoerter = ['growth-hdm-26'];
+    if (erlaubteKennwoerter.indexOf(kennwort) !== -1) {
+      localStorage.setItem('gm26_zugang', 'true');
+    } else {
+      document.body.innerHTML =
+        '<p style="font-family:system-ui,sans-serif;padding:3rem;max-width:34rem">' +
+        'Falsches Passwort. Das Kurspasswort steht in der Vorlesung und in der Kursmail. ' +
+        'Zum erneuten Versuch die Seite neu laden.</p>';
+    }
+  }
+  document.addEventListener('DOMContentLoaded', schuetzen);
+})();
+</script>
 
 
 </head>
