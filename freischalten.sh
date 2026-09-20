@@ -28,7 +28,8 @@ DATEIEN = {
     "dienstag": [("tage/_dienstag.qmd", "tage/dienstag.qmd"),
                  ("slides/_tag2-briefing.qmd", "slides/tag2-briefing.qmd")],
     "mittwoch": [("tage/_mittwoch.qmd", "tage/mittwoch.qmd"),
-                 ("slides/_tag3-testen.qmd", "slides/tag3-testen.qmd")],
+                 ("slides/_tag3-testen.qmd", "slides/tag3-testen.qmd"),
+                 ("_gesperrt/testfaelle-transfer.csv", "material/daten/testfaelle-transfer.csv")],
 }
 
 ERSETZUNGEN = {

@@ -13,7 +13,7 @@ rm -f "$TMP/aurenta-n8n-starterpaket.zip"
 cp material/daten/kampagnen.csv material/daten/kontakte-webinar.csv "$TMP/daten/"
 cp material/fall/fallpaket-kompakt.txt "$TMP/fall/"
 
-if [ -f tage/mittwoch.qmd ]; then
+if [ -f material/daten/testfaelle-transfer.csv ]; then
   cp material/daten/testfaelle-transfer.csv "$TMP/daten/"
   echo "Transfer-Testfälle enthalten (Mittwoch ist freigeschaltet)."
 else
