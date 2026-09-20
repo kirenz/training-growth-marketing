@@ -14,18 +14,18 @@ Jedes Team erstellt einen Projektbrief, eine aktualisierte Experimentkarte, eine
 
 ## Bausteine des Tages {#bausteine}
 
-Fest sind Beginn um 09:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr. Dazwischen arbeiten wir in Bausteinen. Die Dauer ist eine Schätzung; Reihenfolge und Umfang passen wir daran an, wie die Teamarbeit läuft. Kurze Pausen legen wir nach Bedarf ein. Fest liegt heute zusätzlich das Briefing durch Zoi ab 10:00 Uhr.
+Fest sind Beginn um 09:00 Uhr, das Briefing durch Zoi ab 10:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr.
 
-| Baustein | Dauer | |
-|---|---|---|
-| Rückblick auf Montag, ein gemeinsamer Fehler und seine Ursache | ca. 30 Min | |
-| Fragen bündeln und Briefing vorbereiten | ca. 30 Min | |
-| **Zoi-Briefing einschließlich Rückfragen** | ca. 60 Min | **fest ab 10:00 Uhr** |
-| Übung 2.1: Projektbrief und erster Zuschnitt | ca. 60 Min | |
-| Übung 2.2: Kundenweg und Ablauf entwerfen | ca. 45 Min | |
-| Übung 2.3: Anweisungen und Workflow übertragen | ca. 75 Min | |
-| Gegenseitiger Test: drei Teampaare | ca. 45 Min | |
-| Design-Reviews und Entscheidung für Mittwoch | ca. 45 Min | |
+| Baustein | Arbeitsform |
+|---|---|
+| Rückblick auf Montag, ein gemeinsamer Fehler und seine Ursache | Gemeinsam |
+| Fragen bündeln und Briefing vorbereiten | Dreierteams, dann gemeinsam |
+| **Zoi-Briefing einschließlich Rückfragen** | Gemeinsam |
+| Übung 2.1: Projektbrief und erster Zuschnitt | Dreierteams |
+| Übung 2.2: Kundenweg und Ablauf entwerfen | Dreierteams |
+| Übung 2.3: Anweisungen und Workflow übertragen | Dreierteams, Bedienung wechseln |
+| Gegenseitiger Test: drei Teampaare | Je zwei Teams |
+| Design-Reviews und Entscheidung für Mittwoch | Gemeinsam |
 
 ## Rückblick und Briefingvorbereitung
 

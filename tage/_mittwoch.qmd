@@ -14,17 +14,17 @@ Pro Team liegen ein Projektbrief mit Quellen, ein kleiner ausgeführter Workflow
 
 ## Bausteine des Tages {#bausteine}
 
-Fest sind Beginn um 09:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr. Dazwischen arbeiten wir in Bausteinen. Die Dauer ist eine Schätzung; Reihenfolge und Umfang passen wir daran an, wie die Teamarbeit läuft. Kurze Pausen legen wir nach Bedarf ein.
+Fest sind Beginn um 09:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr.
 
-| Baustein | Dauer |
+| Baustein | Arbeitsform |
 |---|---|
-| Stand, Vergleichskriterien und begrenzter Ausbau | ca. 30 Min |
-| Übung 3.1: Ablauf stabilisieren und testen | ca. 75 Min |
-| Übung 3.2: Chat und Workflow vergleichen | ca. 60 Min |
-| Übung 3.3: Entscheidung und erste Übergabeanleitung | ca. 60 Min |
-| Letzte Korrektur, erneuter Test und Vorbereitung der Demo | ca. 60 Min |
-| Teamdemos: je 8 Minuten plus 4 Minuten Fragen | ca. 75 Min |
-| Start ins Project Studio und nächste Coachingfrage | ca. 30 Min |
+| Stand, Vergleichskriterien und begrenzter Ausbau | Gemeinsam |
+| Übung 3.1: Ablauf stabilisieren und testen | Dreierteams |
+| Übung 3.2: Chat und Workflow vergleichen | Dreierteams |
+| Übung 3.3: Entscheidung und erste Übergabeanleitung | Dreierteams |
+| Letzte Korrektur, erneuter Test und Vorbereitung der Demo | Dreierteams |
+| Teamdemos mit Fragerunde | Gemeinsam |
+| Start ins Project Studio und nächste Coachingfrage | Gemeinsam |
 
 ## Übung 3.1: Drei Fälle und eine klare Fehlergrenze {#uebung-3-1}
 

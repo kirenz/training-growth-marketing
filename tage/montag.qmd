@@ -18,22 +18,23 @@ Am Ende des Tages hat jedes Team einen ersten eigenen KI-Workflow gebaut und an 
 
 ::: {#bausteine .callout-note collapse="true" title="Bausteine des Tages"}
 
-Fest sind Beginn um 09:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr. Dazwischen arbeiten wir in Bausteinen. Die Dauer ist eine Schätzung; Reihenfolge und Umfang passen wir daran an, wie die Teamarbeit läuft. Dass ein Baustein länger dauert und ein anderer entfällt, ist eingeplant.
+Fest sind Beginn um 09:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr.
 
-| Baustein | Dauer | Arbeitsform |
-|---|---|---|
-| Projekt und Semesterziel | ca. 20 Min | Gemeinsam |
-| Zugang zu Gemini einrichten | ca. 15 Min | Einzeln |
-| Teams bilden: Umfrage und Einteilung | ca. 20 Min | Einzeln, dann gemeinsam |
-| Übung 1.1: Als Team arbeitsfähig werden | ca. 60 Min | Dreierteams |
-| Growth Marketing am Beratungsfall | ca. 30 Min | Input mit gemeinsamer Auswertung |
-| Übung 1.2: Vom Trichter zur Hypothese | ca. 30 Min | Dreierteams |
-| KI verstehen und Aufträge formulieren | ca. 20 Min | Input |
-| Übung 1.3: Der erste Prompt | ca. 20 Min | Einzeln, dann im Team |
-| n8n-Demo und Vergleich Workflow / Agent | ca. 20 Min | Gemeinsam |
-| Übung 1.4: Der erste eigene Workflow | ca. 90 Min | Angeleitet in den Teams |
-| Übung 1.5: Eine Entscheidung verbessern | ca. 45 Min | Dreierteams |
-| Teamdemos, Reflexion und Fragen für Zoi | ca. 45 Min | Gemeinsam |
+| Baustein | Arbeitsform |
+|---|---|
+| Projekt und Semesterziel | Gemeinsam |
+| Umfrage zur Teambildung | Einzeln |
+| Zugang zu Gemini einrichten | Einzeln |
+| Teams bekanntgeben | Gemeinsam |
+| Übung 1.1: Als Team arbeitsfähig werden | Dreierteams |
+| Growth Marketing am Beratungsfall | Input mit gemeinsamer Auswertung |
+| Übung 1.2: Vom Trichter zur Hypothese | Dreierteams |
+| KI verstehen und Aufträge formulieren | Input |
+| Übung 1.3: Der erste Prompt | Einzeln, dann im Team |
+| n8n-Demo und Vergleich Workflow / Agent | Gemeinsam |
+| Übung 1.4: Der erste eigene Workflow | Angeleitet in den Teams |
+| Übung 1.5: Eine Entscheidung verbessern | Dreierteams |
+| Teamdemos, Reflexion und Fragen für Zoi | Gemeinsam |
 
 Zwei kurze Pausen legen wir nach Bedarf ein, etwa gegen 10:30 und gegen 15:00 Uhr.
 
@@ -66,6 +67,20 @@ Die Website von Aurenta zeigt das Unternehmen so, wie es ein Kontakt sieht: Star
 
 Aurenta beschreibt kein reales Angebot von Zoi. Der reale Projektzuschnitt entsteht nach dem Briefing am Dienstag.
 
+## Teams bilden {#teams}
+
+Das Projekt wird über das ganze Semester in sechs Dreierteams bearbeitet. Ziel sind Teams, in denen die Zusammenarbeit gut funktioniert, sich unterschiedliche Fähigkeiten ergänzen und Raum für neue Erfahrungen bleibt. Vorkenntnisse werden nicht vorausgesetzt; gefragt sind die bisherige Praxis und die eigenen Lernwünsche für das Projekt.
+
+::: {.todo}
+[Aufgabe · etwa 6 bis 8 Minuten]{.todo-label}
+
+Die Umfrage zur Teambildung ausfüllen. Sie fragt nach Stärken, Lerninteressen und Marketingpraxis, nach Erfahrungen mit KI, Automatisierung und Daten sowie nach gemeinsamen Arbeitszeiten in der Woche. Angaben zu Programmierung sind freiwillig.
+
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSc9kP94sU9djozeVh9rZ9O0Oz_0FLJbSW883tvB8zyQOeppeQ/viewform" class="btn btn-primary" target="_blank" rel="noopener">Umfrage öffnen</a>
+:::
+
+Die Einteilung erfolgt anschließend im Kurs. Währenddessen richten alle ihren Gemini-Zugang ein, der nächste Baustein.
+
 ## Zugang einrichten {#zugang}
 
 ::: {.todo}
@@ -86,19 +101,7 @@ Das Studierendenangebot von Google, ein Jahr Google AI Plus kostenlos, ist freiw
 
 Am Nachmittag kommt n8n dazu. Dort wird nicht das eigene Konto eingetragen, sondern eine vorbereitete Verbindung ausgewählt. Chat und Schnittstelle sind zwei getrennte Zugänge; warum das so ist, sehen wir uns in Übung 1.4 an.
 
-## Teams bilden {#teams}
-
-Das Projekt wird über das ganze Semester in sechs Dreierteams bearbeitet. Ziel sind Teams, in denen die Zusammenarbeit gut funktioniert, sich unterschiedliche Fähigkeiten ergänzen und Raum für neue Erfahrungen bleibt. Vorkenntnisse werden nicht vorausgesetzt; gefragt sind die bisherige Praxis und die eigenen Lernwünsche für das Projekt.
-
-::: {.todo}
-[Aufgabe · etwa 6 bis 8 Minuten]{.todo-label}
-
-Die Umfrage zur Teambildung ausfüllen. Sie fragt nach Stärken, Lerninteressen und Marketingpraxis, nach Erfahrungen mit KI, Automatisierung und Daten sowie nach gemeinsamen Arbeitszeiten in der Woche. Angaben zu Programmierung sind freiwillig.
-
-<a href="https://docs.google.com/forms/d/e/1FAIpQLSc9kP94sU9djozeVh9rZ9O0Oz_0FLJbSW883tvB8zyQOeppeQ/viewform" class="btn btn-primary" target="_blank" rel="noopener">Umfrage öffnen</a>
-:::
-
-Die Einteilung erfolgt anschließend im Kurs.
+Sobald alle so weit sind, geben wir die Teams bekannt und starten mit Übung 1.1.
 
 ## Übung 1.1: Als Team arbeitsfähig werden {#uebung-1-1}
 
