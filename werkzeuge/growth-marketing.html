@@ -1,0 +1,994 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Jan Kirenz">
+
+<title>Growth Marketing: Problem, Hypothese und Experiment – Agentic AI für Growth Marketing</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-30bf34a34693ded266ab0d3c7378b607.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-508b28f7632182f9614d764ce71ad950.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="icon" href="data:,">
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Agentic AI für Growth Marketing</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Start</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../start.html"> 
+<span class="menu-text">Vorbereitung</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-blocktage" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Blocktage</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-blocktage">    
+        <li>
+    <a class="dropdown-item" href="../tage/montag.html">
+ <span class="dropdown-text">Montag, 21.09.</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-werkzeugkasten" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Werkzeugkasten</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-werkzeugkasten">    
+        <li>
+    <a class="dropdown-item" href="../werkzeuge/index.html">
+ <span class="dropdown-text">Übersicht</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../werkzeuge/growth-marketing.html">
+ <span class="dropdown-text">Growth Marketing</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../werkzeuge/ki-verstehen.html">
+ <span class="dropdown-text">KI verstehen</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../werkzeuge/prompting.html">
+ <span class="dropdown-text">Aufträge formulieren</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../werkzeuge/assistenten.html">
+ <span class="dropdown-text">Anweisungen wiederverwenden</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../werkzeuge/workflows.html">
+ <span class="dropdown-text">Workflows und Agenten</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../werkzeuge/pruefen.html">
+ <span class="dropdown-text">Prüfen und vergleichen</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../projekt.html"> 
+<span class="menu-text">Semesterprojekt</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../materialien.html"> 
+<span class="menu-text">Materialien</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul class="collapse">
+  <li><a href="#der-kundenweg" id="toc-der-kundenweg" class="nav-link active" data-scroll-target="#der-kundenweg">Der Kundenweg</a></li>
+  <li><a href="#aarrr-als-raster" id="toc-aarrr-als-raster" class="nav-link" data-scroll-target="#aarrr-als-raster">AARRR als Raster</a></li>
+  <li><a href="#wertschöpfungskette-und-growth-loop" id="toc-wertschöpfungskette-und-growth-loop" class="nav-link" data-scroll-target="#wertschöpfungskette-und-growth-loop">Wertschöpfungskette und Growth Loop</a></li>
+  <li><a href="#vom-material-zur-hypothese" id="toc-vom-material-zur-hypothese" class="nav-link" data-scroll-target="#vom-material-zur-hypothese">Vom Material zur Hypothese</a></li>
+  <li><a href="#ab-test" id="toc-ab-test" class="nav-link" data-scroll-target="#ab-test">A/B-Test: die Hypothese prüfen</a></li>
+  <li><a href="#drei-arten-von-ergebnissen" id="toc-drei-arten-von-ergebnissen" class="nav-link" data-scroll-target="#drei-arten-von-ergebnissen">Drei Arten von Ergebnissen</a></li>
+  <li><a href="#beispiele" id="toc-beispiele" class="nav-link" data-scroll-target="#beispiele">Zwei Unternehmensbeispiele</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Growth Marketing: Problem, Hypothese und Experiment</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><span class="lead">Growth Marketing heißt: den Kundenweg kennen, die Stelle mit dem größten Verlust finden, eine Änderung als Hypothese formulieren und ihre Wirkung messen. Diese Seite liefert das Raster dafür am Fall Aurenta.</span></p>
+<section id="der-kundenweg" class="level2">
+<h2 class="anchored" data-anchor-id="der-kundenweg">Der Kundenweg</h2>
+<p>Bei Aurenta führt der Weg vom Fachbeitrag über das Webinar und die Nachbereitung zum Erstgespräch, Angebot und Auftrag. An jedem Übergang gehen Kontakte verloren, und die Gründe unterscheiden sich: fehlendes Vertrauen, falscher Zeitpunkt, unklarer Nutzen. Deshalb braucht jeder Übergang eine eigene Maßnahme.</p>
+<p><img src="images/growth-kundenweg.webp" class="abbildung img-fluid" alt="Kundenweg bei Aurenta: Fachbeitrag, Webinar, Nachbereitung, Erstgespräch, Angebot, Auftrag. An jeder Station verlassen Personen den Weg."></p>
+<div class="abb-cap">
+<p>Der Kundenweg bei Aurenta mit den Zahlen aus den drei Kampagnen. Der größte Verlust liegt zwischen Nachbereitung und Erstgespräch.</p>
+</div>
+<p>Vier Begriffe, die im Projekt ständig vorkommen:</p>
+<ul>
+<li><strong>Lead:</strong> ein Kontakt, der zur Zielgruppe passt und ein erkennbares Anliegen hat. Kein sicherer Auftrag.</li>
+<li><strong>Qualifizierung:</strong> die Prüfung, ob ein Lead zum Angebot passt, anhand vorher festgelegter Kriterien (bei Aurenta: benannte Marketingaufgabe, geklärte Zuständigkeit, passender nächster Schritt).</li>
+<li><strong>Conversion:</strong> ein vorher definierter Übergang, etwa vom Follow-up zum gebuchten Gespräch.</li>
+<li><strong>Conversion-Rate:</strong> Zähler, Nenner und Zeitraum. „16 Buchungen von 198 Follow-ups innerhalb von 14 Tagen” ist eine Rate, „16 Buchungen” allein nicht.</li>
+</ul>
+</section>
+<section id="aarrr-als-raster" class="level2">
+<h2 class="anchored" data-anchor-id="aarrr-als-raster">AARRR als Raster</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Bereich</th>
+<th>Frage</th>
+<th>Bei Aurenta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Acquisition</td>
+<td>Wie entsteht ein passender Erstkontakt?</td>
+<td>Anmeldung zum Webinar über einen Fachbeitrag</td>
+</tr>
+<tr class="even">
+<td>Activation</td>
+<td>Wann erlebt der Kontakt zum ersten Mal konkreten Nutzen?</td>
+<td>Eine Arbeitshilfe hilft bei der Auswahl eines eigenen KI-Anwendungsfalls</td>
+</tr>
+<tr class="odd">
+<td>Retention</td>
+<td>Warum bleibt die Beziehung relevant?</td>
+<td>Weitere passende Inhalte, erneute Zusammenarbeit</td>
+</tr>
+<tr class="even">
+<td>Referral</td>
+<td>Wann wird das Angebot weiterempfohlen?</td>
+<td>Eine zufriedene Kundin stellt einen Kontakt her</td>
+</tr>
+<tr class="odd">
+<td>Revenue</td>
+<td>Wie entsteht Umsatz?</td>
+<td>Beauftragter Praxischeck</td>
+</tr>
+</tbody>
+</table>
+<p>Im Blockkurs geht es um den Übergang von Acquisition zu Activation: vom Webinar-Kontakt zum qualifizierten Gespräch. Die anderen Bereiche kommen im Semesterprojekt je nach Zuschnitt mit Zoi dazu.</p>
+</section>
+<section id="wertschöpfungskette-und-growth-loop" class="level2">
+<h2 class="anchored" data-anchor-id="wertschöpfungskette-und-growth-loop">Wertschöpfungskette und Growth Loop</h2>
+<p>Von der Frage zur Aktion führt eine Kette aus sieben Stufen. Sie stammt aus der Datenanalyse und gilt für jedes Marketingexperiment, bei Netflix genauso wie bei Aurenta.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stufe</th>
+<th>Was passiert</th>
+<th>Bei Aurenta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Frage / Meinung</td>
+<td>Eine Frage aus dem Geschäft und eine Meinung dazu, gestützt auf Erfahrung oder Literatur</td>
+<td>Warum führen nur 10 von 198 Follow-ups zu einem Gespräch? Meinung: Nachbereitung nach Anliegen bringt mehr Gespräche</td>
+</tr>
+<tr class="even">
+<td>Plan</td>
+<td>Problem, Kennzahl und Studiendesign festlegen</td>
+<td>Gesprächsquote = qualifizierte Gespräche ÷ Follow-ups in 14 Tagen; A/B-Test mit Kontroll- und Treatment-Gruppe</td>
+</tr>
+<tr class="odd">
+<td>Daten</td>
+<td>Daten erheben und aufbereiten</td>
+<td>Je Kontakt: Gruppe und Ergebnis</td>
+</tr>
+<tr class="even">
+<td>Analyse</td>
+<td>Kennzahlen berechnen, Modelle bauen</td>
+<td>Kreuztabelle Gruppe gegen Ergebnis, Zeilenanteile vergleichen</td>
+</tr>
+<tr class="odd">
+<td>Report</td>
+<td>Schlüsse ziehen und kommunizieren</td>
+<td>Starker Hinweis für die Treatment-Gruppe, noch kein statistischer Test</td>
+</tr>
+<tr class="even">
+<td>Aktion</td>
+<td>Auf die Schlüsse handeln</td>
+<td>Einladung noch nicht ersetzen, Test mit ausreichender Fallzahl planen</td>
+</tr>
+<tr class="odd">
+<td>Evaluation</td>
+<td>Wirkung der Aktion prüfen</td>
+<td>Gesprächsquote weiter beobachten, daraus entsteht die nächste Frage</td>
+</tr>
+</tbody>
+</table>
+<p>So arbeitet das Team im Projekt: Jede Änderung am Workflow durchläuft diese Kette, in den Blocktagen im Kleinen (Testprotokoll statt Feldversuch), im Semester im Großen (Messdesign). Referenzfall aus der Statistik-Vorlesung: Netflix testet, ob eine andere Darstellung des Box-Art die Klickrate erhöht, mit demselben Aufbau (Tingley et al.&nbsp;2021, „Decision Making at Netflix”).</p>
+<p><strong>Growth Loop:</strong> Ein Ergebnis wird zum Input für den nächsten Durchlauf. Beispiel für eine Beratung: Ein abgeschlossenes Projekt wird zur Fallstudie, die Fallstudie zieht passende Interessierte an, daraus entstehen neue Projekte und neue Fallstudien. Der Begriff stammt von <a href="https://www.reforge.com/blog/growth-loops">Reforge</a>.</p>
+<p><img src="images/growth-zyklus.webp" class="abbildung img-fluid" alt="Links die Wertschöpfungskette mit sieben Stufen von Frage bis Evaluation im Kreis, rechts der Growth Loop aus Projekt, Fallstudie und Interessierten."></p>
+<div class="abb-cap">
+<p>Links die Wertschöpfungskette: Die Evaluation führt zur nächsten Frage. Rechts der Growth Loop: Das Ergebnis eines Durchlaufs ist der Input für den nächsten.</p>
+</div>
+</section>
+<section id="vom-material-zur-hypothese" class="level2">
+<h2 class="anchored" data-anchor-id="vom-material-zur-hypothese">Vom Material zur Hypothese</h2>
+<p>So sehen die ersten Stufen der Kette am Fall Aurenta aus:</p>
+<ul>
+<li><strong>Beobachtung:</strong> 198 Follow-ups führten zu 16 Buchungen und 10 qualifizierten Gesprächen. Von den Kontakten, die nur nachlesen wollten, hat 1 von 60 ein Gespräch gebucht, von denen mit Gesprächswunsch 10 von 28.</li>
+<li><strong>Mögliche Erklärungen:</strong> Die einheitliche Gesprächseinladung kommt für einen Teil der Kontakte zu früh. Oder: Angebot oder Zeitpunkt passen nicht.</li>
+<li><strong>Hypothese:</strong> Wenn die Nachbereitung den geäußerten Informationsbedarf berücksichtigt, entstehen innerhalb von 14 Tagen häufiger qualifizierte Gespräche als bei einer einheitlichen Gesprächseinladung, weil der nächste Schritt zur Situation des Kontakts passt.</li>
+<li><strong>Plan:</strong> Vergleichbare Kontakte werden zufällig auf eine Kontrollgruppe (bisherige Einladung) und eine Treatment-Gruppe (Nachbereitung nach Anliegen) verteilt, die Regeln stehen vorher fest, gezählt werden die durchgeführten qualifizierten Gespräche je Gruppe.</li>
+</ul>
+<p>Die <a href="https://docs.google.com/document/d/1JrrMgJ6fCEae3trCWNqdAonEc9EHbZ-PWskl8wtli-s/edit">Experimentkarte</a> hält Beobachtung, Hypothese und Kennzahl in dieser Reihenfolge fest.</p>
+</section>
+<section id="ab-test" class="level2">
+<h2 class="anchored" data-anchor-id="ab-test">A/B-Test: die Hypothese prüfen</h2>
+<p>Ein A/B-Test vergleicht zwei Gruppen unter gleichen Bedingungen: die <strong>Kontrollgruppe</strong> A bekommt das Bisherige, die <strong>Treatment-Gruppe</strong> B die Änderung. Vier Regeln entscheiden darüber, ob das Ergebnis etwas aussagt:</p>
+<ol type="1">
+<li><strong>Zufällige Zuteilung.</strong> Welcher Kontakt in welche Gruppe kommt, entscheidet der Zufall, nicht die Person, die den Kontakt bearbeitet. Sonst landen die vielversprechenden Kontakte in der Treatment-Gruppe.</li>
+<li><strong>Nur eine Änderung.</strong> Wer Text, Zeitpunkt und Absender gleichzeitig ändert, weiß am Ende nicht, was gewirkt hat.</li>
+<li><strong>Kennzahl und Zeitraum vorher festlegen.</strong> Bei Aurenta: Gesprächsquote = durchgeführte qualifizierte Gespräche ÷ Follow-ups, innerhalb von 14 Tagen. Nachträglich eine passendere Kennzahl zu wählen, macht jedes Ergebnis wertlos.</li>
+<li><strong>Genug Fälle.</strong> Kleine Unterschiede bei kleinen Zahlen sind meistens Zufall.</li>
+</ol>
+<p><img src="images/growth-abtest.webp" class="abbildung img-fluid" alt="A/B-Test: Kontakte werden zufällig auf Gruppe A (bisherige Einladung) und Gruppe B (nach Anliegen) verteilt, gezählt werden qualifizierte Gespräche, 5 von 99 gegen 9 von 99."></p>
+<div class="abb-cap">
+<p>So würde die Hypothese gemessen: gleiche Ausgangslage, zwei Gruppen, vorher festgelegte Kennzahl.</p>
+</div>
+<section id="kreuztabelle-gruppe-gegen-ergebnis" class="level3">
+<h3 class="anchored" data-anchor-id="kreuztabelle-gruppe-gegen-ergebnis">Kreuztabelle: Gruppe gegen Ergebnis</h3>
+<p>Das Ergebnis eines A/B-Tests steht in einer Kreuztabelle (Kontingenztabelle): Zeilen sind die Gruppen, Spalten das Ergebnis, Zellen die Anzahl der Kontakte. Sie wird in drei Stufen gelesen. Beispiel mit erfundenen Zahlen für Aurenta:</p>
+<p><strong>Stufe 1: absolute Werte.</strong></p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Gruppe</th>
+<th style="text-align: right;">Qualifiziertes Gespräch</th>
+<th style="text-align: right;">Kein qualifiziertes Gespräch</th>
+<th style="text-align: right;">Summe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A: Kontrollgruppe, bisherige Einladung</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">94</td>
+<td style="text-align: right;">99</td>
+</tr>
+<tr class="even">
+<td>B: Treatment-Gruppe, nach Anliegen</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">99</td>
+</tr>
+<tr class="odd">
+<td>Summe</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">184</td>
+<td style="text-align: right;">198</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Stufe 2: Zeilenanteile.</strong> Jede Zeile summiert auf 100 Prozent. Sie beantworten die Frage „Wie viele der Kontakte in Gruppe B führten ein qualifiziertes Gespräch?” Das ist die Gesprächsquote, die verglichen wird.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Gruppe</th>
+<th style="text-align: right;">Qualifiziertes Gespräch</th>
+<th style="text-align: right;">Kein qualifiziertes Gespräch</th>
+<th style="text-align: right;">Summe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A: Kontrollgruppe</td>
+<td style="text-align: right;">5,1 %</td>
+<td style="text-align: right;">94,9 %</td>
+<td style="text-align: right;">100 %</td>
+</tr>
+<tr class="even">
+<td>B: Treatment-Gruppe</td>
+<td style="text-align: right;">9,1 %</td>
+<td style="text-align: right;">90,9 %</td>
+<td style="text-align: right;">100 %</td>
+</tr>
+<tr class="odd">
+<td>Gesamt</td>
+<td style="text-align: right;">7,1 %</td>
+<td style="text-align: right;">92,9 %</td>
+<td style="text-align: right;">100 %</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Stufe 3: Spaltenanteile.</strong> Jede Spalte summiert auf 100 Prozent. Sie beantworten eine andere Frage: „Wie viele der geführten Gespräche kamen aus Gruppe B?” 9 von 14, also 64,3 Prozent. Das klingt eindrucksvoll, ist aber nicht die Gesprächsquote und sagt nichts über die Wirkung je Kontakt.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 26%">
+<col style="width: 26%">
+<col style="width: 26%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Gruppe</th>
+<th style="text-align: right;">Qualifiziertes Gespräch</th>
+<th style="text-align: right;">Kein qualifiziertes Gespräch</th>
+<th style="text-align: right;">Summe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A: Kontrollgruppe</td>
+<td style="text-align: right;">35,7 %</td>
+<td style="text-align: right;">51,1 %</td>
+<td style="text-align: right;">50 %</td>
+</tr>
+<tr class="even">
+<td>B: Treatment-Gruppe</td>
+<td style="text-align: right;">64,3 %</td>
+<td style="text-align: right;">48,9 %</td>
+<td style="text-align: right;">50 %</td>
+</tr>
+<tr class="odd">
+<td>Summe</td>
+<td style="text-align: right;">100 %</td>
+<td style="text-align: right;">100 %</td>
+<td style="text-align: right;">100 %</td>
+</tr>
+</tbody>
+</table>
+<p>Für den Vergleich der Gruppen zählen die Zeilenanteile: 9,1 gegen 5,1 Prozent. Der Unterschied sieht nach einem Erfolg aus, beruht aber auf 5 gegen 9 Gespräche. Vier Gespräche mehr oder weniger können Zufall sein. Das führt zur <strong>Inferenz-Frage</strong>: Ist der Unterschied zwischen den beiden Stichproben groß genug, um auf alle Kontakte zu schließen? Sie wird mit einem statistischen Test beantwortet (Vergleich zweier Anteile); den behandeln wir in einer eigenen Einheit im Semester, bevor das Messdesign entsteht. Bis dahin gilt: starker Hinweis, kein Beweis, nicht verallgemeinern.</p>
+<p>Um einen Anstieg von 5 % auf 10 % verlässlich nachzuweisen, braucht ein Test rund 400 Kontakte pro Gruppe. Für das Semesterprojekt heißt das: Das Messdesign wird vollständig geplant (Gruppen, Zuteilung, Kennzahl, Zeitraum, nötige Fallzahl, statistischer Test), die Durchführung übersteigt meist den Projektzeitraum. Bewertet wird die Qualität des Designs, nicht die Höhe der Zahlen.</p>
+</section>
+<section id="kreuztabelle-erwartete-gegen-tatsächliche-empfehlung" class="level3">
+<h3 class="anchored" data-anchor-id="kreuztabelle-erwartete-gegen-tatsächliche-empfehlung">Kreuztabelle: erwartete gegen tatsächliche Empfehlung</h3>
+<p>Dieselbe Tabellenform zeigt, wie gut ein Workflow entscheidet. Jeder Testfall hat zwei Merkmale: die <strong>erwartete</strong> Empfehlung, die das Team vor dem Lauf im Testprotokoll festgelegt hat, und die <strong>tatsächliche</strong> Empfehlung, die der Workflow ausgibt. Zeilen sind die Erwartungen, Spalten die Ausgaben, Zellen die Anzahl der Fälle. Fall K-02 mit Erwartung „Material” und Ausgabe „Erstgespräch” landet in Zeile Material, Spalte Erstgespräch.</p>
+<p><strong>Stufe 1: absolute Werte.</strong> Beispiel für neun Testfälle:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+<col style="width: 21%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Erwartet (Zeile) / Workflow (Spalte)</th>
+<th style="text-align: right;">Material</th>
+<th style="text-align: right;">Rückfrage</th>
+<th style="text-align: right;">Erstgespräch</th>
+<th style="text-align: right;">Summe</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Material</td>
+<td style="text-align: right;"><strong>3</strong></td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="even">
+<td>Rückfrage</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><strong>2</strong></td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr class="odd">
+<td>Erstgespräch</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;"><strong>2</strong></td>
+<td style="text-align: right;">2</td>
+</tr>
+<tr class="even">
+<td>Summe</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">9</td>
+</tr>
+</tbody>
+</table>
+<p>Auf der Diagonale stehen die Treffer: 7 von 9. Die beiden Fehler liegen in derselben Spalte, der Workflow empfiehlt zu oft ein Erstgespräch.</p>
+<p><strong>Stufe 2: Zeilenanteile</strong> beantworten: „Wenn Material erwartet war, wie oft hat der Workflow Material empfohlen?” 3 von 4, also 75 Prozent. Bei Rückfrage 2 von 3 (67 Prozent), bei Erstgespräch 2 von 2 (100 Prozent). Das ist die Trefferquote je erwarteter Empfehlung.</p>
+<p><strong>Stufe 3: Spaltenanteile</strong> beantworten: „Wenn der Workflow Erstgespräch empfiehlt, wie oft ist das richtig?” 2 von 4, also 50 Prozent. Bei Material und Rückfrage jeweils 100 Prozent. Das zeigt, welcher Ausgabe man trauen kann und welche Regel als Nächstes geändert wird.</p>
+<p>Mit dieser Tabelle vergleicht das Team am Mittwoch den eigenen Workflow mit einer einfachen Lösung: gleiche Testfälle, zwei Tabellen, Diagonale und Anteile vergleichen. Bei so kleinen Fallzahlen ist der Vergleich ein Hinweis; ob der Unterschied belastbar ist, klärt später ein statistischer Test.</p>
+</section>
+</section>
+<section id="drei-arten-von-ergebnissen" class="level2">
+<h2 class="anchored" data-anchor-id="drei-arten-von-ergebnissen">Drei Arten von Ergebnissen</h2>
+<p>Bei der Bewertung eines KI-Workflows im Marketing lassen sich drei Ebenen unterscheiden. Sie werden im Projekt getrennt gemessen.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Ebene</th>
+<th>Frage</th>
+<th>Messgröße</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Marketingwirkung</td>
+<td>Bringt die Änderung mehr passende Gespräche?</td>
+<td>Durchgeführte qualifizierte Gespräche je Gruppe in einem festen Zeitraum</td>
+</tr>
+<tr class="even">
+<td>Qualität des Workflows</td>
+<td>Sind die Empfehlungen und Texte richtig?</td>
+<td>Anteil korrekter Empfehlungen, gedeckte Aussagen, passende Sprache, eingehaltene Kontaktsperre</td>
+</tr>
+<tr class="odd">
+<td>Arbeitsaufwand</td>
+<td>Spart der Workflow Zeit?</td>
+<td>Bearbeitungszeit pro Kontakt inklusive Prüfung und Nacharbeit</td>
+</tr>
+</tbody>
+</table>
+<p>Für die erste Ebene ist der A/B-Test mit der Kreuztabelle Gruppe gegen Ergebnis das Werkzeug, für die zweite die Kreuztabelle erwartete gegen tatsächliche Empfehlung. In den Blocktagen wird die zweite Ebene geprüft, im Semesterprojekt kommen Messdesign und Aufwand dazu. Mehr Antworten auf ein Follow-up bedeuten nicht automatisch mehr passende Gespräche. Bei einem echten Versuch zählen auch unpassende Einladungen und Beschwerden mit.</p>
+</section>
+<section id="beispiele" class="level2">
+<h2 class="anchored" data-anchor-id="beispiele">Zwei Unternehmensbeispiele</h2>
+<p><strong>Indeed</strong> setzt KI im Marketing unter anderem für kreative Entwürfe, Tests und Markenrecherche sowie für personalisierte Ansprache im Vertrieb ein, so die Marketingverantwortliche Maggie Hulce in einem <a href="https://openai.com/index/indeed-maggie-hulce/">Interview mit OpenAI</a> vom Januar 2026. <strong>Transferfrage:</strong> Welcher wiederkehrende Vorbereitungsschritt bei Indeed ähnelt der Nachbereitung bei Aurenta?</p>
+<p><strong>Copy.ai</strong> nutzt Claude in Content-Workflows zur Erstellung und Bearbeitung von Marketinginhalten, beschrieben in einer <a href="https://www.anthropic.com/customers/copy-ai">Fallstudie von Anthropic</a>. <strong>Transferfrage:</strong> Welche Informationen und Prüfkriterien müssen feststehen, bevor Content in großer Zahl erzeugt wird?</p>
+<p>Beide Quellen sind Berichte der KI-Anbieter, keine unabhängigen Studien.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© <a href="https://www.kirenz.com/">Jan Kirenz</a>, 2026</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>HdM Stuttgart, Interdisziplinäres Projekt WS 2026/27</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

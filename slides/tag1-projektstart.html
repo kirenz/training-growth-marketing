@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="de"><head>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.8.27">
+
+  <meta name="author" content="Prof.&nbsp;Dr.&nbsp;Jan Kirenz | Agentic AI für Growth Marketing | HdM Stuttgart">
+  <title>Agentic AI für Growth Marketing – Projektstart</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto-d36b5de9b7f06adc66f5674d5ee7617e.css">
+  <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide" class="center">
+  <!-- Animierter Hintergrund (nur Dekoration, kein Inhalt) -->
+  <div class="animated-background">
+    <div class="particle particle-1"></div>
+    <div class="particle particle-2"></div>
+    <div class="particle particle-3"></div>
+    <div class="particle particle-4"></div>
+    <div class="particle particle-5"></div>
+    <div class="particle particle-6"></div>
+    <div class="particle particle-7"></div>
+    <div class="particle particle-8"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+
+    <svg style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none;">
+      <line x1="15%" y1="10%" x2="45%" y2="30%" stroke="rgba(75, 169, 255, 0.15)" stroke-width="1"></line>
+      <line x1="45%" y1="30%" x2="25%" y2="60%" stroke="rgba(189, 140, 255, 0.15)" stroke-width="1"></line>
+      <line x1="25%" y1="60%" x2="60%" y2="55%" stroke="rgba(183, 247, 91, 0.15)" stroke-width="1"></line>
+      <line x1="60%" y1="55%" x2="85%" y2="40%" stroke="rgba(255, 120, 71, 0.15)" stroke-width="1"></line>
+      <line x1="15%" y1="10%" x2="85%" y2="20%" stroke="rgba(75, 169, 255, 0.12)" stroke-width="1"></line>
+      <line x1="45%" y1="30%" x2="75%" y2="65%" stroke="rgba(189, 140, 255, 0.12)" stroke-width="1"></line>
+      <line x1="25%" y1="60%" x2="35%" y2="70%" stroke="rgba(183, 247, 91, 0.12)" stroke-width="1"></line>
+      <line x1="85%" y1="20%" x2="75%" y2="65%" stroke="rgba(75, 169, 255, 0.12)" stroke-width="1"></line>
+    </svg>
+  </div>
+
+  <div class="title-term">WS 2026/27</div>
+  <h1 class="title">Projektstart</h1>
+  <div class="subtitle-container">
+    <span class="subtitle-button">Semester, Prüfung, Teams</span>
+  </div>
+  <div class="title-meta">Prof.&nbsp;Dr.&nbsp;Jan Kirenz | Agentic AI für Growth Marketing | HdM Stuttgart</div>
+</section>
+<section id="das-semester-hat-drei-blocktage-ein-wöchentliches-coaching-und-einen-partner" class="slide level2">
+<h2>Das Semester hat drei Blocktage, ein wöchentliches Coaching und einen Partner</h2>
+<div class="ws-modules">
+<div class="ws-module">
+<p><strong>Blocktage</strong><span>21. bis 23. September, 09:00 bis 17:00 Uhr, Mittagspause 13:00 bis 14:00 Uhr</span></p>
+</div>
+<div class="ws-module">
+<p><strong>Zoi-Briefing</strong><span>Dienstag, 22. September, 10:00 Uhr vor Ort an der HdM</span></p>
+</div>
+<div class="ws-module">
+<p><strong>Coaching</strong><span>Dienstags 08:15 bis 09:45 Uhr, Raum I008, das ganze Semester</span></p>
+</div>
+<div class="ws-module">
+<p><strong>Abgaben</strong><span>Zwischenpräsentation 1. Dezember, Abschluss Ende Januar, Abgabe 12. Februar 2027</span></p>
+</div>
+</div>
+<div class="ws-note">
+<p>Vorlesung auf Deutsch, Projektinhalte und Kommunikation mit Zoi auf Englisch. Programmierung ist keine Voraussetzung.</p>
+</div>
+<aside class="notes">
+<p>Rahmen in zwei Minuten. Die 90 Minuten Coaching sind nicht das Arbeitsbudget: Die Teams vereinbaren ein eigenes wöchentliches Arbeitsfenster, das kommt in Übung 1.1. Ein weiterer Blocktag im Semester wird noch terminiert.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="ziel-des-semesters-ist-ein-nutzbarer-und-überprüfter-marketingprozess" class="slide level2 center">
+<h2>Ziel des Semesters ist ein nutzbarer und überprüfter Marketingprozess</h2>
+<div class="ws-statement">
+<p>Jedes Team entwickelt einen zusammenhängenden Prozess für die Vermarktung einer Dienstleistung: ein konkretes Marketingproblem, eine Zielgruppe, eine überprüfbare Nutzenannahme.</p>
+</div>
+<div class="ws-note">
+<p>Der fachliche Zuschnitt wird nach dem Zoi-Briefing im Coaching konkretisiert. Die Blocktage bauen einen ersten kleinen Ausschnitt.</p>
+</div>
+<aside class="notes">
+<p>Zwei Wörter betonen: nutzbar und überprüft. Nutzbar heißt, der Partner kann den Prozess verstehen und weiterentwickeln. Überprüft heißt, es gibt Testbelege und einen fairen Vergleich mit einer einfacheren Lösung.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="im-semesterprojekt-gibt-es-vier-arbeitsbereiche" class="slide level2">
+<h2>Im Semesterprojekt gibt es vier Arbeitsbereiche</h2>
+<div class="ws-cards">
+<div class="ws-card fragment">
+<p><span class="ws-card__tag">Bereich 1</span></p>
+<p><span class="ws-h">Passende Kunden finden</span></p>
+<p>Recherche und Qualifizierung: Welche Unternehmen kommen als Kunden infrage, und was wissen wir über sie?</p>
+</div>
+<div class="ws-card fragment">
+<p><span class="ws-card__tag">Bereich 2</span></p>
+<p><span class="ws-h">Inhalte erstellen</span></p>
+<p>Content und Lokalisierung: Texte für Website, LinkedIn oder Newsletter, auch in anderen Sprachen.</p>
+</div>
+<div class="ws-card fragment is-key">
+<p><span class="ws-card__tag">Bereich 3</span></p>
+<p><span class="ws-h">Kontakte nachfassen</span></p>
+<p>Nurturing und Follow-up: Wer sich für ein Webinar oder ein Whitepaper interessiert hat, bekommt den passenden nächsten Schritt.</p>
+</div>
+<div class="ws-card fragment">
+<p><span class="ws-card__tag">Bereich 4</span></p>
+<p><span class="ws-h">Ergebnisse auswerten</span></p>
+<p>Reporting: Welche Maßnahmen haben gewirkt, und was folgt daraus?</p>
+</div>
+</div>
+<div class="ws-note fragment">
+<p>In den drei Blocktagen arbeiten wir in Bereich 3. Welche Bereiche im Semester dazukommen, hängt vom Briefing mit Zoi ab.</p>
+</div>
+<aside class="notes">
+<p>Bereich 3 ist markiert, weil die drei Blocktage dort ansetzen. Welche Tiefe je Bereich sinnvoll ist, entscheidet sich am Partnerauftrag. KI wird eingesetzt, wo Sprachverständnis, Interpretation oder begrenzte Werkzeugwahl einen begründbaren Vorteil bringen.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="die-prüfung-hat-vier-benotete-teile-und-eine-vorprüfungsleistung" class="slide level2">
+<h2>Die Prüfung hat vier benotete Teile und eine Vorprüfungsleistung</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 30%">
+<col style="width: 40%">
+<col style="width: 30%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Komponente</th>
+<th style="text-align: right;">Gewicht</th>
+<th>Termin</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Vorprüfungsleistung: Online-Kurse, individuell</td>
+<td style="text-align: right;">unbenotet</td>
+<td>17.11.2026</td>
+</tr>
+<tr class="even">
+<td>Zwischenpräsentation</td>
+<td style="text-align: right;">10 %</td>
+<td>01.12.2026</td>
+</tr>
+<tr class="odd">
+<td>Abschlusspräsentation mit Live-Demo</td>
+<td style="text-align: right;">20 %</td>
+<td>Woche vom 26.01.2027</td>
+</tr>
+<tr class="even">
+<td>Agenten und Workflows</td>
+<td style="text-align: right;">40 %</td>
+<td>12.02.2027</td>
+</tr>
+<tr class="odd">
+<td>Playbook und Evaluation</td>
+<td style="text-align: right;">30 %</td>
+<td>12.02.2027</td>
+</tr>
+</tbody>
+</table>
+<div class="ws-note">
+<p>Die vier benoteten Teile werden im Team erbracht. Jede Person beteiligt sich an Umsetzung, Prüfung und Präsentation.</p>
+</div>
+<aside class="notes">
+<p>Vorprüfungsleistung: Online-Kurse zu KI-Grundlagen, KI-Agenten im Marketing, n8n und Inbound Marketing, jeweils mindestens 80 Prozent im Abschlussquiz, beliebig wiederholbar. Kursliste und Abgabeweg werden gesondert bekannt gegeben. Bewertungsdetails folgen auf der Kursseite.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="bewertet-wird-die-qualität-des-messdesigns-nicht-die-höhe-der-zahlen" class="slide level2 center">
+<h2>Bewertet wird die Qualität des Messdesigns, nicht die Höhe der Zahlen</h2>
+<div class="ws-statement">
+<p>Die Teams arbeiten mit synthetischen Daten und Testumgebungen. Damit lassen sich Funktion, Ergebnisqualität und Aufwand prüfen. Reale Conversion oder Umsatz werden nicht nachgewiesen, und das wird auch nicht erwartet.</p>
+</div>
+<aside class="notes">
+<p>Das nimmt Druck raus und setzt den Maßstab: Ein sauber geplantes Experiment mit ehrlicher Interpretation ist besser als eine große Zahl ohne Beleg. Ein negativer Vergleich ist ein verwertbares Ergebnis.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section>
+<section id="der-übungsfall" class="title-slide slide level1 center" data-background-color="#0b0d13">
+<h1>Der Übungsfall</h1>
+<!-- Grid Background Animation -->
+<div class="grid-background">
+
+</div>
+</section>
+<section id="warum-wir-mit-einem-kleinen-ausschnitt-anfangen" class="slide level2">
+<h2>Warum wir mit einem kleinen Ausschnitt anfangen</h2>
+<div class="ws-cards">
+<div class="ws-card fragment">
+<p><span class="ws-card__tag">Die Frage des Semesters</span></p>
+<p><span class="ws-h">Wo lohnt sich Agentic AI im Growth Marketing?</span></p>
+<p>Bei der Kundensuche, bei Inhalten, beim Nachfassen, beim Auswerten? Und woran erkennt man, ob KI dort wirklich etwas verbessert?</p>
+</div>
+<div class="ws-card fragment is-key">
+<p><span class="ws-card__tag">Die Antwort</span></p>
+<p><span class="ws-h">Bauen und an Fällen prüfen</span></p>
+<p>Ob KI etwas verbessert, sieht man erst, wenn ein Ablauf läuft und an konkreten Fällen geprüft ist. Dafür nehmen wir einen Ausschnitt, in dem alles bekannt ist: das Nachfassen von Webinar-Kontakten bei einer fiktiven Firma.</p>
+</div>
+<div class="ws-card fragment">
+<p><span class="ws-card__tag">Der Übertrag</span></p>
+<p><span class="ws-h">Dasselbe Vorgehen für Zoi</span></p>
+<p>Problem beobachten, Annahme formulieren, Workflow bauen, an Fällen testen. Dieses Vorgehen wenden die Teams im Semester auf die Bereiche an, die für Zoi wichtig sind.</p>
+</div>
+</div>
+<div class="ws-note fragment">
+<p>Der Fall ist absichtlich klein. Nicht der Workflow ist das Ziel, sondern die Erfahrung, wie man prüft, ob KI in einem Marketingschritt hilft.</p>
+</div>
+<aside class="notes">
+<p>Das ist die Brücke zwischen den vier Arbeitsbereichen und dem Übungsfall. Die Studierenden sollen verstehen: Wir bauen nicht irgendeinen Workflow, wir üben ein Vorgehen, das sich auf jeden der vier Bereiche übertragen lässt. Content-Erstellung wäre als Einstieg schwerer prüfbar, weil es dort kein richtig oder falsch gibt.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="aurenta-ist-eine-fiktive-ki-beratung-für-marketingabteilungen" class="slide level2">
+<h2>Aurenta ist eine fiktive KI-Beratung für Marketingabteilungen</h2>
+<div class="ws-cards">
+<div class="ws-card fragment">
+<p><span class="ws-card__tag">Unternehmen</span></p>
+<p><span class="ws-h">Aurenta</span></p>
+<p>Hilft Marketingteams mittelständischer B2B-Unternehmen, geeignete KI-Anwendungen auszuwählen und einen ersten Ablauf zu erproben.</p>
+</div>
+<div class="ws-card fragment is-key">
+<p><span class="ws-card__tag">Produkt</span></p>
+<p><span class="ws-h">KI-Praxischeck Marketing</span></p>
+<p>Zwei Wochen, ein Workshop, drei priorisierte Anwendungsfälle, ein kleiner Prototyp, Ergebnisbesprechung. 2.400 Euro netto.</p>
+</div>
+<div class="ws-card fragment">
+<p><span class="ws-card__tag">Kundenweg</span></p>
+<p><span class="ws-h">Vom Fachbeitrag zum Auftrag</span></p>
+<p>Fachbeitrag, Webinar, Nachbereitung, kostenloses Erstgespräch (30 Minuten), Angebot, Auftrag.</p>
+</div>
+</div>
+<div class="ws-note">
+<p>Die Website von Aurenta ist über die Kursseite erreichbar: Startseite, Praxischeck, Webinar, Fachbeitrag, Erstgespräch. Alles fiktiv, kein Bezug zu Zoi.</p>
+</div>
+<aside class="notes">
+<p>Die Website kurz zeigen, zwei Minuten: Startseite, dann Webinar-Seite mit der Zusammenfassung. So sehen die Studierenden Aurenta wie ein Kontakt und verstehen, was Material M1 und M2 sind. Das Fallpaket enthält zusätzlich die internen Regeln.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="das-problem-alle-webinar-kontakte-bekommen-dieselbe-gesprächseinladung" class="slide level2 center">
+<h2>Das Problem: Alle Webinar-Kontakte bekommen dieselbe Gesprächseinladung</h2>
+<div class="ws-statement">
+<p>Nach dem Webinar stellt sich für jeden Kontakt die Frage: Welcher nächste Schritt passt, <strong>Material, Rückfrage oder Erstgespräch?</strong> Bisher lädt Aurenta alle gleich zum Gespräch ein. Von 198 Follow-ups führen 10 zu einem qualifizierten Gespräch.</p>
+</div>
+<div class="ws-note">
+<p>Das Fallpaket fasst den Fall auf einer Seite zusammen: Problem, die drei Möglichkeiten, Regeln, Kontakte. Der reale Zuschnitt mit Zoi entsteht nach dem Briefing am Dienstag.</p>
+</div>
+<aside class="notes">
+<p>Warum ein fiktiver Fall: Alle Angaben sind vollständig, es gibt keine Informationsfallen, und die Teams treffen fachliche Entscheidungen statt Daten zu raten. Preis und Angebot sind bekannt, Termine und Buchungsseiten gibt es nicht. Die Zahlen kommen im Growth-Marketing-Deck ausführlich.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="die-drei-blocktage" class="title-slide slide level1 center" data-background-color="#0b0d13">
+<h1>Die drei Blocktage</h1>
+<!-- Grid Background Animation -->
+<div class="grid-background">
+
+</div>
+</section>
+<section id="drei-tage-ein-wachsender-prototyp" class="slide level2">
+<h2>Drei Tage, ein wachsender Prototyp</h2>
+<div class="ws-modules">
+<div class="ws-module">
+<p><strong>Montag</strong><span>Teams, Growth-Hypothese, erster eigener n8n-Workflow am Übungsfall</span></p>
+</div>
+<div class="ws-module">
+<p><strong>Dienstag</strong><span>Zoi-Briefing um 10 Uhr, Projektbrief, Ablaufskizze, Ausbau des Workflows</span></p>
+</div>
+<div class="ws-module">
+<p><strong>Mittwoch</strong><span>Testfälle, fairer Vergleich mit einer einfachen Lösung, Live-Demo, Start ins Semester</span></p>
+</div>
+</div>
+<aside class="notes">
+<p>Jeder Tag baut auf dem vorigen auf. Der Workflow vom Montag wird am Dienstag auf den Zoi-Zuschnitt übertragen und am Mittwoch getestet und übergeben.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="am-ende-von-tag-1-hat-jedes-team-einen-workflow-der-an-drei-kontakten-getestet-ist" class="slide level2 scrollable">
+<h2>Am Ende von Tag 1 hat jedes Team einen Workflow, der an drei Kontakten getestet ist</h2>
+<div class="ws-task">
+<p><strong>Fünf Übungen heute:</strong></p>
+<ol type="1">
+<li><strong>Übung 1.1:</strong> Teams bilden, Fall kennenlernen, Absprachen treffen</li>
+<li><strong>Übung 1.2:</strong> Webinar-Daten auswerten, eine Hypothese formulieren</li>
+<li><strong>Übung 1.3:</strong> Der erste Prompt, dreimal getestet</li>
+<li><strong>Übung 1.4:</strong> Der erste eigene n8n-Workflow, vor und nach der Mittagspause</li>
+<li><strong>Übung 1.5:</strong> Eine Regel ändern und an drei Fällen prüfen</li>
+</ol>
+<p><strong>16 Uhr:</strong> Sechs Teamdemos, danach Fragen für Zoi sammeln.</p>
+</div>
+<aside class="notes">
+<p>Zeitplan auf der Kursseite, nur grob: Pausen gegen 10:30 und 15:00 Uhr, Mittag 13 bis 14 Uhr. Wenn eine Übung länger dauert, wird die nächste gekürzt, nicht die Pause.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section></section>
+<section>
+<section id="teams-bilden" class="title-slide slide level1 center" data-background-color="#0b0d13">
+<h1>Teams bilden</h1>
+<!-- Grid Background Animation -->
+<div class="grid-background">
+
+</div>
+</section>
+<section id="sechs-dreierteams-für-das-ganze-semester" class="slide level2">
+<h2>Sechs Dreierteams für das ganze Semester</h2>
+<div class="ws-cards">
+<div class="ws-card fragment">
+<p><span class="ws-card__tag">Ziel</span></p>
+<p><span class="ws-h">Ergänzende Fähigkeiten</span></p>
+<p>Teams, in denen die Zusammenarbeit funktioniert, sich Fähigkeiten ergänzen und Raum für Neues bleibt. Vorkenntnisse werden nicht vorausgesetzt.</p>
+</div>
+<div class="ws-card fragment is-key">
+<p><span class="ws-card__tag">Grundlage</span></p>
+<p><span class="ws-h">Umfrage, 6 bis 8 Minuten</span></p>
+<p>Stärken, Lerninteressen, Marketingpraxis, Erfahrung mit KI, Automatisierung und Daten, gemeinsame Arbeitszeiten. Programmierung freiwillig.</p>
+</div>
+<div class="ws-card fragment">
+<p><span class="ws-card__tag">Einteilung</span></p>
+<p><span class="ws-h">Anschließend im Kurs</span></p>
+<p>Zuerst überschneidende Arbeitszeiten, dann ergänzende Erfahrungen und Interessen. Der Studiengang spielt keine Rolle.</p>
+</div>
+</div>
+<aside class="notes">
+<p>Für den Vorschlag wird KI genutzt, ich prüfe ihn vor der Bekanntgabe. Die Angaben werden nicht benotet, einzelne Antworten nicht veröffentlicht, nach der Einteilung gelöscht. Wer später kommt, wird im Raum zugeordnet.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="aufgabe-die-umfrage-zur-teambildung-ausfüllen" class="slide level2 center">
+<h2>Aufgabe: die Umfrage zur Teambildung ausfüllen</h2>
+<div class="ws-task">
+<p><strong>Jetzt, etwa 6 bis 8 Minuten.</strong> Link auf der Kursseite unter „Montag, Teams bilden“, Button „Umfrage öffnen“.</p>
+<p>Name und E-Mail dienen nur der Zuordnung. Aus den Antworten entsteht die Teameinteilung für Übung 1.1.</p>
+</div>
+<aside class="notes">
+<p>Link an die Wand oder in den Chat. Während die Studierenden ausfüllen, die Einteilung vorbereiten. Zeitfenster bis zur Bekanntgabe ist knapp, etwa zehn Minuten.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="übung-1.1-vorstellungsrunde-fall-lesen-absprachen-treffen" class="slide level2 scrollable">
+<h2>Übung 1.1: Vorstellungsrunde, Fall lesen, Absprachen treffen</h2>
+<div class="ws-task">
+<p><strong>Etwa eine Stunde im Dreierteam.</strong> Anleitung als Google Doc auf der Kursseite.</p>
+<ol type="1">
+<li><strong>Vorstellungsrunde</strong> mit drei Fragen: Was habe ich schon gemacht, was kann ich gut, was will ich lernen?</li>
+<li><strong>Den Fall lesen:</strong> Unternehmensprofil von Aurenta. Welches Problem will Aurenta lösen, und woran würde man merken, dass es gelöst ist?</li>
+<li><strong>Absprachen treffen:</strong> festes wöchentliches Arbeitsfenster, Kommunikationskanal, Vorgehen bei Abwesenheit. Ablage im Teamordner.</li>
+</ol>
+<p>Zum Schluss drei Rollen für die nächste Übung: bedienen, fachlich nachfragen, dokumentieren.</p>
+</div>
+<aside class="notes">
+<p>Danach Pause, dann der Input zu Growth Marketing am Fall mit eigenem Deck.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+
+
+</section></section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+<p><a class="deck-back" href="../tage/montag.html">Zurück zur Kursseite: Montag</a> · Agentic AI für Growth Marketing | Blocktag 1</p>
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': true,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'fade',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Kopiert");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Kopiert");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>

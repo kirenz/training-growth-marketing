@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="de" xml:lang="de"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.27">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Jan Kirenz">
+
+<title>n8n: Workflows und Agenten – Agentic AI für Growth Marketing</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-30bf34a34693ded266ab0d3c7378b607.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-508b28f7632182f9614d764ce71ad950.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "language": {
+    "search-no-results-text": "Keine Treffer",
+    "search-matching-documents-text": "Treffer",
+    "search-copy-link-title": "Link in die Suche kopieren",
+    "search-hide-matches-text": "Zusätzliche Treffer verbergen",
+    "search-more-match-text": "weitere Treffer in diesem Dokument",
+    "search-more-matches-text": "weitere Treffer in diesem Dokument",
+    "search-clear-button-title": "Zurücksetzen",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Abbrechen",
+    "search-submit-button-title": "Abschicken",
+    "search-label": "Suchen"
+  }
+}</script>
+<style>html{ scroll-behavior: smooth; }</style>
+<link rel="icon" href="data:,">
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Agentic AI für Growth Marketing</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Suchen"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navigation umschalten" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html"> 
+<span class="menu-text">Start</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../start.html"> 
+<span class="menu-text">Vorbereitung</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-blocktage" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Blocktage</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-blocktage">    
+        <li>
+    <a class="dropdown-item" href="../tage/montag.html">
+ <span class="dropdown-text">Montag, 21.09.</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-werkzeugkasten" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Werkzeugkasten</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-werkzeugkasten">    
+        <li>
+    <a class="dropdown-item" href="../werkzeuge/index.html">
+ <span class="dropdown-text">Übersicht</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../werkzeuge/growth-marketing.html">
+ <span class="dropdown-text">Growth Marketing</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../werkzeuge/ki-verstehen.html">
+ <span class="dropdown-text">KI verstehen</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../werkzeuge/prompting.html">
+ <span class="dropdown-text">Aufträge formulieren</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../werkzeuge/assistenten.html">
+ <span class="dropdown-text">Anweisungen wiederverwenden</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../werkzeuge/workflows.html">
+ <span class="dropdown-text">Workflows und Agenten</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../werkzeuge/pruefen.html">
+ <span class="dropdown-text">Prüfen und vergleichen</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="../projekt.html"> 
+<span class="menu-text">Semesterprojekt</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../materialien.html"> 
+<span class="menu-text">Materialien</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Auf dieser Seite</h2>
+   
+  <ul class="collapse">
+  <li><a href="#stufen" id="toc-stufen" class="nav-link active" data-scroll-target="#stufen">Vier Begriffe</a></li>
+  <li><a href="#downloads" id="toc-downloads" class="nav-link" data-scroll-target="#downloads">Starten und importieren</a></li>
+  <li><a href="#crm-start" id="toc-crm-start" class="nav-link" data-scroll-target="#crm-start">Einen Kontakt aus dem CRM laden</a></li>
+  <li><a href="#bauen" id="toc-bauen" class="nav-link" data-scroll-target="#bauen">Starter Schritt für Schritt</a></li>
+  <li><a href="#ausbau" id="toc-ausbau" class="nav-link" data-scroll-target="#ausbau">Ausbau: Struktur und feste Regeln</a></li>
+  <li><a href="#agent" id="toc-agent" class="nav-link" data-scroll-target="#agent">Agenten-Demo</a></li>
+  <li><a href="#fehler" id="toc-fehler" class="nav-link" data-scroll-target="#fehler">Wenn ein Lauf nicht funktioniert</a></li>
+  <li><a href="#ersatzweg" id="toc-ersatzweg" class="nav-link" data-scroll-target="#ersatzweg">Vorübergehende manuelle Route</a></li>
+  <li><a href="#technische-quellen" id="toc-technische-quellen" class="nav-link" data-scroll-target="#technische-quellen">Technische Quellen</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">n8n: Workflows und Agenten</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p><span class="lead">Ab Montag wird ein eigener kleiner Workflow gebaut. Der Einstieg verarbeitet einen Kontakt und macht Eingabe, Modellschritt und Ergebnis sichtbar. Der Ausbau ergänzt strukturierte Felder und eine feste Kontaktsperre.</span></p>
+<section id="stufen" class="level2">
+<h2 class="anchored" data-anchor-id="stufen">Vier Begriffe</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Begriff</th>
+<th>Bedeutung</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Chat</td>
+<td>Ein Mensch stellt eine Aufgabe und führt den Dialog.</td>
+</tr>
+<tr class="even">
+<td>Wiederverwendbare Anweisungen</td>
+<td>Regeln und Wissen werden getrennt von der aktuellen Eingabe gepflegt.</td>
+</tr>
+<tr class="odd">
+<td>Workflow</td>
+<td>Der Ablauf ist vorgegeben; ein Modell kann einzelne Aufgaben übernehmen.</td>
+</tr>
+<tr class="even">
+<td>Agent</td>
+<td>Das Modell wählt innerhalb gesetzter Grenzen Werkzeuge oder nächste Schritte.</td>
+</tr>
+</tbody>
+</table>
+<p>Eine Basic LLM Chain mit einem festgelegten Prompt ist noch kein Agent. Ein Agentenknoten allein beweist ebenfalls keinen sinnvollen Entscheidungsspielraum. Entscheidend sind die tatsächlichen Aufrufe und der Nutzen im Vergleich mit einer einfacheren Lösung. <a href="https://www.anthropic.com/engineering/building-effective-agents">Architekturgrundlage</a>.</p>
+</section>
+<section id="downloads" class="level2">
+<h2 class="anchored" data-anchor-id="downloads">Starten und importieren</h2>
+<p><strong><a href="../material/workflows/aurenta-n8n-starterpaket.zip">Starterpaket als ZIP</a></strong> herunterladen und entpacken. In n8n einen neuen Workflow öffnen, im Workflow-Menü „Import from File“ wählen, eine JSON-Datei importieren und unter einem eigenen Namen speichern. Die gleichnamige Markdown-Datei enthält die zugehörige Anleitung.</p>
+<p><strong>Erster Erfolg in etwa fünf Minuten:</strong> Variante 00 importieren und „Execute Workflow“ wählen. Der vorgefüllte Kontakt läuft durch eine feste Regel bis zur Ausgabe. Danach <code>kontakt_erlaubt</code> von <code>ja</code> auf <code>nein</code> ändern und die beiden Ausführungspfade vergleichen. Dafür wird weder eine Modell- noch eine Datenbankverbindung benötigt.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Referenz</th>
+<th>Einsatz</th>
+<th>Download</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>00 Ohne KI</td>
+<td>Erster Lauf, Daten und feste Regel, fünf Knoten</td>
+<td><a href="../material/workflows/00-einstieg-ohne-ki.json">JSON</a> · <a href="https://docs.google.com/document/d/19XdY6MzKBc777Z7LQbj7vIHJlXGTrhPc9vE6LYoeCqE/edit">Anleitung</a></td>
+</tr>
+<tr class="even">
+<td>01 Starter</td>
+<td>Montag gemeinsam bauen, fünf Knoten</td>
+<td><a href="../material/workflows/01-followup-starter.json">JSON</a> · <a href="https://docs.google.com/document/d/1whGrCq02zJ7LM-yM8582lpswnkP_ljRgUEo9_LFaT0s/edit">Anleitung</a></td>
+</tr>
+<tr class="odd">
+<td>02 Struktur und Sperre</td>
+<td>Dienstag/Mittwoch ausbauen, neun Knoten</td>
+<td><a href="../material/workflows/02-followup-strukturiert.json">JSON</a> · <a href="https://docs.google.com/document/d/1tX5rvYPzshU8nzsZ3FqZETn1s5Bj1PDoBWIy_YryXAM/edit">Anleitung</a></td>
+</tr>
+<tr class="even">
+<td>04 CRM lesen</td>
+<td>Optionaler Datenbankeinstieg ohne KI, sieben Knoten</td>
+<td><a href="../material/workflows/04-crm-kontakt-lesen.json">JSON</a> · <a href="https://docs.google.com/document/d/1EHbNDhpbzZGT6kEr8fwybjLJFXGERmrEc6tmQOZ4shM/edit">Anleitung</a></td>
+</tr>
+<tr class="odd">
+<td>05 CRM und KI</td>
+<td>Datenbankabruf und strukturierter Entwurf, dreizehn Knoten</td>
+<td><a href="../material/workflows/05-crm-followup.json">JSON</a> · <a href="https://docs.google.com/document/d/1xS-0L1zOmv3dfj6-b-eLuc3N2Rx6g0NXyTArke3SETU/edit">Anleitung</a></td>
+</tr>
+<tr class="even">
+<td>03 Agentenvergleich</td>
+<td>Kurze Lehrdemo, optional vertiefen</td>
+<td><a href="../material/workflows/03-agenten-demo.json">JSON</a> · <a href="https://docs.google.com/document/d/1iCLOaovYWVN8ethN2exdRWrZIm9zdB4aWI0v5BiliTM/edit">Anleitung</a></td>
+</tr>
+</tbody>
+</table>
+<p>Alle Exporte sind inaktiv und enthalten keine Zugangsdaten. Die Lehrperson bereitet die Modellverbindung vor. Die Referenzen setzen native n8n-Knoten ein; Studierende müssen keinen Programmcode schreiben. Der Starter nutzt eine Textausgabe, damit ein JSON-Schema nicht den ersten Lernerfolg blockiert.</p>
+<p>Empfohlene Reihenfolge: <strong>00 → 01 → 02</strong>. Mit verfügbarer Aurenta-Verbindung folgt <strong>04 → 05</strong>. Variante 03 bleibt eine zusätzliche Lehrdemo. Bei den KI-Varianten die vorbereitete Verbindung im Knoten Kursmodell auswählen; bei den CRM-Varianten zusätzlich die Postgres-Verbindung „Aurenta – Übungsfall (Lesen)“. Die beiden Verbindungen erfüllen unterschiedliche Aufgaben.</p>
+</section>
+<section id="crm-start" class="level2">
+<h2 class="anchored" data-anchor-id="crm-start">Einen Kontakt aus dem CRM laden</h2>
+<p>Variante 04 benötigt ausschließlich die Aurenta-Datenbankverbindung. Im Knoten <strong>Kontakt auswaehlen</strong> wird eine ID eingetragen, etwa K-01. Der Postgres-Knoten liest genau diesen Kontakt; bei einer unbekannten ID stoppt der Ablauf mit einer Fehlermeldung. Die Ausgabe enthält dieselben sieben Felder wie die manuell eingetragene Variante. K-05 bleibt als gesperrter Kontakt gekennzeichnet.</p>
+<p>Erst wenn Datenbankabruf und Modellaufruf einzeln funktionieren, verbindet Variante 05 beide Schritte. Die feste Kontaktsperre liegt vor der KI, die Kontakt-ID bleibt der Quelle zugeordnet. K-01, K-05 und K-06 sind die ersten Prüffälle. Alle SQL-Abfragen lesen nur; Empfehlungen und Entwürfe bleiben im Ausführungsprotokoll. Die Kampagnenzahlen und das übrige CRM werden nicht verändert.</p>
+</section>
+<section id="bauen" class="level2">
+<h2 class="anchored" data-anchor-id="bauen">Starter Schritt für Schritt</h2>
+<section id="start-und-kontakt" class="level3">
+<h3 class="anchored" data-anchor-id="start-und-kontakt">1. Start und Kontakt</h3>
+<p>Einen neuen Workflow mit <strong>Manual Trigger</strong> anlegen und „Manuell starten“ nennen. Einen <strong>Edit Fields (Set)</strong>-Knoten ergänzen und „Kontakt“ nennen. Die Knotennamen werden in den vorbereiteten Zuordnungen verwendet und bleiben zunächst unverändert.</p>
+<p>Im Modus Manual Mapping diese Felder als String eintragen. Werte aus einem Kontakt der <a href="../material/daten/kontakte-webinar.csv">Kontaktliste</a> übernehmen:</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Feld</th>
+<th>Beispiel K-01</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>kontakt_id</code></td>
+<td>K-01</td>
+</tr>
+<tr class="even">
+<td><code>rolle</code></td>
+<td>Marketingleitung</td>
+</tr>
+<tr class="odd">
+<td><code>unternehmen</code></td>
+<td>B2B-Dienstleister, 250 Beschäftigte</td>
+</tr>
+<tr class="even">
+<td><code>webinar_status</code></td>
+<td>teilgenommen</td>
+</tr>
+<tr class="odd">
+<td><code>anliegen</code></td>
+<td>Wir möchten unsere Content-Briefings verbessern. Können wir besprechen, ob der Praxischeck dafür passt?</td>
+</tr>
+<tr class="even">
+<td><code>sprache</code></td>
+<td>Deutsch</td>
+</tr>
+<tr class="odd">
+<td><code>kontakt_erlaubt</code></td>
+<td>ja</td>
+</tr>
+</tbody>
+</table>
+<p>Die beiden Knoten verbinden und ausführen. Die Ausgabe muss genau diesen Kontakt enthalten. Das ist das Zwischenziel vor der Mittagspause.</p>
+</section>
+<section id="modellschritt" class="level3">
+<h3 class="anchored" data-anchor-id="modellschritt">2. Modellschritt</h3>
+<p>Eine <strong>Basic LLM Chain</strong> hinzufügen und „Bedarf und Entwurf“ nennen. Den Prompt selbst definieren (Define below) und den vollständigen <a href="https://docs.google.com/document/d/1duTCf9tVaspLswnrjjesW6we4CtV7Nv0vefCDKm2oOY/edit">vorbereiteten n8n-Prompt</a> in das Feld einsetzen. Er enthält das Fallpaket und die variablen Kontaktfelder. Das führende <code>=</code> kennzeichnet im Export einen Ausdruck; in der Oberfläche den Expression-Modus verwenden und die Vorschau prüfen.</p>
+<p>Unter Chat Model den <strong>Google Gemini Chat Model</strong>-Knoten verbinden, „Kursmodell“ nennen und die vorbereitete Verbindung auswählen. Das Kursmodell wird von der Lehrperson festgelegt; die Referenz enthält gemini-3.1-flash-lite als austauschbare Voreinstellung. Das persönliche Gemini-Konto wird hier nicht eingegeben.</p>
+<p>Die Platzhalter wie <code>{ $json.anliegen }</code> greifen auf das Feld des aktuellen Eingabeelements zu. Sie sind Feldzuordnungen, keine Programmieraufgabe. In der Vorschau muss das tatsächliche Anliegen erscheinen. Den Workflow manuell ausführen und die Antwort lesen.</p>
+</section>
+<section id="ergebnis-zur-prüfung" class="level3">
+<h3 class="anchored" data-anchor-id="ergebnis-zur-prüfung">3. Ergebnis zur Prüfung</h3>
+<p>Einen weiteren <strong>Edit Fields</strong>-Knoten nach der Chain ergänzen, „Ergebnis zur Pruefung“ nennen und diese String-Felder setzen:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Feld</th>
+<th>Wert</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>kontakt_id</code></td>
+<td>Ausdruck: <code>{ $('Kontakt').item.json.kontakt_id }</code></td>
+</tr>
+<tr class="even">
+<td><code>ergebnis</code></td>
+<td>Ausdruck: <code>{ $json.text }</code></td>
+</tr>
+<tr class="odd">
+<td><code>freigabe</code></td>
+<td>Fester Text: <code>offen</code></td>
+</tr>
+</tbody>
+</table>
+<p>Die Ergebnisse stehen im Ausführungsprotokoll. Für die Teamablage die Ausgabe herunterladen oder kopieren. Der letzte Knoten schreibt noch nicht in eine externe Tabelle oder ein CRM. Eine solche Anbindung ist eine spätere Erweiterung.</p>
+</section>
+<section id="einen-weiteren-fall-ausführen" class="level3">
+<h3 class="anchored" data-anchor-id="einen-weiteren-fall-ausführen">4. Einen weiteren Fall ausführen</h3>
+<p>Alle Kontaktfelder gemeinsam ersetzen, beispielsweise durch K-02. Neu ausführen und die ID sowie den Anliegenbezug prüfen. Pro Lauf genau ein Kontakt. Das verhindert zunächst unbemerkte Zuordnungsfehler bei mehreren Elementen. Im Semester kann die Stapelverarbeitung gezielt ergänzt und getestet werden.</p>
+</section>
+</section>
+<section id="ausbau" class="level2">
+<h2 class="anchored" data-anchor-id="ausbau">Ausbau: Struktur und feste Regeln</h2>
+<p>Der <a href="../material/workflows/02-followup-strukturiert.json">zweite Export</a> ergänzt zwei Dinge:</p>
+<ol type="1">
+<li>Ein <strong>If</strong>-Knoten lässt nur <code>kontakt_erlaubt = ja</code> zum Modell. Bei <code>nein</code>, fehlendem oder unbekanntem Status entsteht eine interne Ausgabe mit <code>kein_followup</code> und leerem Entwurf. Der Modellknoten bleibt in diesem Zweig unberührt.</li>
+<li>Ein <strong>Structured Output Parser</strong> nutzt ein <a href="../material/workflows/ausgabe-schema.json">fertiges Schema</a>. Die Felder <code>entscheidung</code>, <code>begruendung</code>, <code>material_id</code>, <code>nachricht_entwurf</code> und <code>offene_punkte</code> werden danach einzeln übernommen. Die Chain stellt sie unter <code>output</code> bereit, etwa <code>{ $json.output.entscheidung }</code>.</li>
+</ol>
+<p>Die Kontakt-ID und der Status <code>offen</code> stammen weiterhin aus fester Logik. Ein Parserfehler stoppt den Lauf. Ein erfolgreiches Schema beweist weder Wahrheit noch fachliche Passung. Dafür dienen die Testfälle.</p>
+<p><strong>Aufgabe für eine eigene Erweiterung:</strong> Zuerst die Kontaktsperre ergänzen und K-05 ausführen. Danach strukturierte Felder aktivieren. Nach jeder Änderung einen normalen Fall mitprüfen. Nicht mehrere unbekannte Funktionen gleichzeitig einbauen.</p>
+</section>
+<section id="agent" class="level2">
+<h2 class="anchored" data-anchor-id="agent">Agenten-Demo</h2>
+<p>Die <a href="../material/workflows/03-agenten-demo.json">dritte Referenz</a> stellt zwei ausschließlich lesende Wissenswerkzeuge bereit: „Leistungswissen“ und „Lernmaterial“. Kleine vorgefertigte Code Tools liefern feste Texte. Sie werden in der Lehrdemo als fertige Werkzeuge verwendet; deren Programmierung ist keine studentische Aufgabe.</p>
+<p>Die Lehrperson führt K-02 und K-03 getrennt aus. Das Modell soll anhand des Anliegens die nötige Quelle wählen. Im Ausführungsprotokoll wird geprüft, welches Werkzeug tatsächlich aufgerufen wurde und ob dessen Inhalt die Antwort trägt. Die Zahl der Agenteniterationen ist auf drei begrenzt. Eine feste Kontaktsperre bleibt vorgeschaltet.</p>
+<p><strong>Vergleichsfrage:</strong> Verbessert die Werkzeugwahl die Antwort oder macht sie den einfachen Fall nur langsamer und schwerer prüfbar? Eine begründete Entscheidung gegen einen Agenten ist fachlich zulässig. Der Semesterprototyp soll sinnvollen agentischen Spielraum untersuchen und dessen Grenzen dokumentieren.</p>
+</section>
+<section id="fehler" class="level2">
+<h2 class="anchored" data-anchor-id="fehler">Wenn ein Lauf nicht funktioniert</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Beobachtung</th>
+<th>Nächster Prüfschritt</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Verbindung fehlt</td>
+<td>Vorbereitete Credential im Kursmodell auswählen; keine Schlüssel im Prompt verwenden</td>
+</tr>
+<tr class="even">
+<td>Kontingent oder Modell nicht verfügbar</td>
+<td>Lehrperson informieren, Fehlermeldung ohne Geheimnisse dokumentieren</td>
+</tr>
+<tr class="odd">
+<td>Leeres Anliegen im Prompt</td>
+<td>Schreibweise und Feldzuordnung im Kontakt-Knoten prüfen</td>
+</tr>
+<tr class="even">
+<td>Falsche Kontakt-ID</td>
+<td>Alle Felder des Falls und die Zuordnung im letzten Knoten prüfen</td>
+</tr>
+<tr class="odd">
+<td>Parserfehler</td>
+<td>Tatsächliche Ausgabe ansehen; Schema nicht umgehen und Fehler nicht als Erfolg ablegen</td>
+</tr>
+<tr class="even">
+<td>Formal korrekt, fachlich falsch</td>
+<td>Regel, Material und tatsächliches Anliegen anhand eines Testfalls vergleichen</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="ersatzweg" class="level2">
+<h2 class="anchored" data-anchor-id="ersatzweg">Vorübergehende manuelle Route</h2>
+<p>Bei ausgefallener Modellverbindung die Anweisungen, das Fallpaket und genau einen Kontakt in einen neuen Chat einfügen. Die Ausgabe anhand derselben Kriterien prüfen und in die <a href="../material/vorlagen/follow-up-ablage.csv">Prüfablage</a> übertragen. Die n8n-Schritte ohne Modell können weitergebaut werden.</p>
+<p>Die Ablage erhält den Hinweis „manuelle Simulation“. Damit ist die fachliche Arbeit dokumentiert, aber noch keine n8n-Ausführung nachgewiesen. Der vollständige Lauf wird nachgeholt. Zeitwerte einer Simulation werden nicht als automatisierter Betrieb ausgegeben.</p>
+</section>
+<section id="technische-quellen" class="level2">
+<h2 class="anchored" data-anchor-id="technische-quellen">Technische Quellen</h2>
+<p><a href="https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.chainllm/">Basic LLM Chain</a> · <a href="https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatgooglegemini/">Google Gemini Chat Model</a> · <a href="https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.outputparserstructured/">Structured Output Parser</a>. Der konkrete Lauf mit Kursmodell und Kurszugängen muss vor der Vorlesung geprüft sein.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Kopiert");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Kopiert");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© <a href="https://www.kirenz.com/">Jan Kirenz</a>, 2026</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+<p>HdM Stuttgart, Interdisziplinäres Projekt WS 2026/27</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+<script src="../site_libs/quarto-html/zenscroll-min.js"></script>
+</body></html>

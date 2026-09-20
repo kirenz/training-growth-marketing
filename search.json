@@ -1,0 +1,1017 @@
+[
+  {
+    "objectID": "slides/n8n-workflows.html#chat-anweisungen-workflow-agent-vier-stufen-mit-wachsender-selbstständigkeit",
+    "href": "slides/n8n-workflows.html#chat-anweisungen-workflow-agent-vier-stufen-mit-wachsender-selbstständigkeit",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Chat, Anweisungen, Workflow, Agent: vier Stufen mit wachsender Selbstständigkeit",
+    "text": "Chat, Anweisungen, Workflow, Agent: vier Stufen mit wachsender Selbstständigkeit\n\n\nStufe 1\nChat\nEin Mensch stellt eine Aufgabe und führt den Dialog. Jede Anfrage von Hand.\n\n\nStufe 2\nWiederverwendbare Anweisungen\nRegeln und Wissen werden getrennt von der aktuellen Eingabe gepflegt und jedes Mal mitgegeben.\n\n\nStufe 3\nWorkflow\nDer Ablauf ist vorgegeben. Ein Modell übernimmt einzelne Aufgaben darin, entscheidet aber nicht über den Ablauf.\n\n\nStufe 4\nAgent\nDas Modell wählt innerhalb gesetzter Grenzen Werkzeuge oder nächste Schritte selbst.\n\n\n\nDie Blocktage bauen Stufe 3. Stufe 4 wird am Montag nur vorgeführt. Im Semester soll der Prototyp sinnvollen agentischen Spielraum untersuchen und seine Grenzen dokumentieren, eine begründete Entscheidung gegen einen Agenten ist zulässig."
+  },
+  {
+    "objectID": "slides/n8n-workflows.html#eine-llm-chain-mit-festem-prompt-ist-noch-kein-agent",
+    "href": "slides/n8n-workflows.html#eine-llm-chain-mit-festem-prompt-ist-noch-kein-agent",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Eine LLM Chain mit festem Prompt ist noch kein Agent",
+    "text": "Eine LLM Chain mit festem Prompt ist noch kein Agent\n\nEin Agentenknoten allein beweist auch keinen sinnvollen Entscheidungsspielraum. Entscheidend sind die tatsächlichen Werkzeugaufrufe im Laufprotokoll und der Nutzen im Vergleich mit einer einfacheren Lösung.\n\n\nArchitekturgrundlage: Anthropic, „Building effective agents“. Link im Werkzeugkasten.\n\n\nDas ist die Abgrenzung, die im Semester über die Note mitentscheidet: Nicht die Zahl der Agenten zählt, sondern ob der Spielraum begründet ist und geprüft wurde."
+  },
+  {
+    "objectID": "slides/n8n-workflows.html#ein-knoten-ist-ein-arbeitsschritt-eine-verbindung-reicht-daten-weiter",
+    "href": "slides/n8n-workflows.html#ein-knoten-ist-ein-arbeitsschritt-eine-verbindung-reicht-daten-weiter",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Ein Knoten ist ein Arbeitsschritt, eine Verbindung reicht Daten weiter",
+    "text": "Ein Knoten ist ein Arbeitsschritt, eine Verbindung reicht Daten weiter\n\nEin Workflow in n8n besteht aus Knoten und Verbindungen. Ein manuell gestarteter Lauf verarbeitet zunächst genau einen Kontakt. Die Ausgabe jedes Knotens ist im Ausführungsprotokoll sichtbar.\n\n\nPlatzhalter wie { $json.anliegen } greifen auf ein Feld des aktuellen Elements zu. Das sind Feldzuordnungen, keine Programmierung.\n\n\nWarum ein Kontakt pro Lauf: Zuordnungsfehler bei mehreren Elementen bleiben sonst unbemerkt. Stapelverarbeitung ist eine spätere Erweiterung im Semester."
+  },
+  {
+    "objectID": "slides/n8n-workflows.html#der-starter-hat-vier-knoten-und-ein-modell",
+    "href": "slides/n8n-workflows.html#der-starter-hat-vier-knoten-und-ein-modell",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Der Starter hat vier Knoten und ein Modell",
+    "text": "Der Starter hat vier Knoten und ein Modell\n\n  \n    01 Starter02 Struktur und Sperre\n    K-01K-02K-05\n    Execute Workflow\n  \n  \n  \n\n\n\n\nLive: Variante 01 Starter, K-01 wählen, Execute. Der Token wandert durch die Knoten, das Panel zeigt die Ausgabe jedes Knotens. Dann K-05 mit dem Starter ausführen: Das Modell wird aufgerufen, obwohl der Kontakt gesperrt ist, nur die menschliche Prüfung fängt das ab. Das ist die Überleitung zum Ausbau. Knoten anklicken erklärt den Knoten. Die Modellantworten sind Beispieltexte, der echte Lauf kommt in der Kursinstanz."
+  },
+  {
+    "objectID": "slides/n8n-workflows.html#erster-erfolg-in-fünf-minuten-variante-00-ohne-ki",
+    "href": "slides/n8n-workflows.html#erster-erfolg-in-fünf-minuten-variante-00-ohne-ki",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Erster Erfolg in fünf Minuten: Variante 00 ohne KI",
+    "text": "Erster Erfolg in fünf Minuten: Variante 00 ohne KI\n\n\nStarterpaket als ZIP von der Kursseite laden und entpacken.\nIn n8n einen neuen Workflow öffnen, im Menü „Import from File“, die JSON-Datei von Variante 00 wählen, unter eigenem Namen speichern.\n„Execute Workflow“ klicken. Der vorgefüllte Kontakt läuft durch eine feste Regel bis zur Ausgabe.\nkontakt_erlaubt von ja auf nein ändern, erneut ausführen, die beiden Pfade vergleichen.\n\n\n\nDafür wird weder eine Modell- noch eine Datenbankverbindung gebraucht. Jede Referenz hat eine gleichnamige Anleitung.\n\n\nDas ist auch der Ausweichweg, falls die Modellverbindung am Montag nicht läuft: Trigger, Felder und feste Regeln lassen sich ohne KI bauen, der Modellschritt wird nachgeholt."
+  },
+  {
+    "objectID": "slides/n8n-workflows.html#sechs-referenzen-empfohlene-reihenfolge-00-01-02",
+    "href": "slides/n8n-workflows.html#sechs-referenzen-empfohlene-reihenfolge-00-01-02",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Sechs Referenzen, empfohlene Reihenfolge 00, 01, 02",
+    "text": "Sechs Referenzen, empfohlene Reihenfolge 00, 01, 02\n\n\n\nReferenz\nEinsatz\nKnoten\n\n\n\n\n00 Ohne KI\nErster Lauf, Daten und feste Regel\n5\n\n\n01 Starter\nMontag gemeinsam bauen\n5\n\n\n02 Struktur und Sperre\nDienstag und Mittwoch ausbauen\n9\n\n\n04 CRM lesen\nOptionaler Datenbankeinstieg ohne KI\n7\n\n\n05 CRM und KI\nDatenbankabruf und strukturierter Entwurf\n13\n\n\n03 Agentenvergleich\nKurze Lehrdemo, optional vertiefen\n\n\n\n\n\nAlle Exporte sind inaktiv und enthalten keine Zugangsdaten. Bei den KI-Varianten die vorbereitete Verbindung im Knoten Kursmodell wählen, bei den CRM-Varianten zusätzlich die Postgres-Verbindung „Aurenta – Übungsfall (Lesen)“.\n\n\nDer Starter nutzt bewusst eine Textausgabe, damit ein JSON-Schema nicht den ersten Lernerfolg blockiert. Struktur kommt mit 02. Die CRM-Varianten lesen nur; Empfehlungen und Entwürfe bleiben im Protokoll."
+  },
+  {
+    "objectID": "slides/n8n-workflows.html#die-kontaktsperre-ist-eine-feste-regel-vor-dem-modell",
+    "href": "slides/n8n-workflows.html#die-kontaktsperre-ist-eine-feste-regel-vor-dem-modell",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Die Kontaktsperre ist eine feste Regel vor dem Modell",
+    "text": "Die Kontaktsperre ist eine feste Regel vor dem Modell\n\nEin If-Knoten lässt nur kontakt_erlaubt = ja zum Modell. Bei nein, leer oder unbekannt entsteht kein_followup mit leerem Entwurf. Der Modellknoten wird in diesem Zweig nicht berührt.\n\n\nIm Simulator auf „02 Struktur und Sperre“ umschalten und K-05 ausführen: Der Token nimmt den Nein-Zweig, das Kursmodell bleibt aus.\n\n\nWarum das eine feste Regel sein muss und keine Modellentscheidung: Eine Sperre darf nicht davon abhängen, ob ein Modell sie „versteht“. Das ist auch der erste Prüffall am Mittwoch."
+  },
+  {
+    "objectID": "slides/n8n-workflows.html#ein-output-parser-prüft-struktur-keine-wahrheit",
+    "href": "slides/n8n-workflows.html#ein-output-parser-prüft-struktur-keine-wahrheit",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Ein Output Parser prüft Struktur, keine Wahrheit",
+    "text": "Ein Output Parser prüft Struktur, keine Wahrheit\n\n\nWas der Parser leistet\n\nerzwingt das Schema: entscheidung, begruendung, material_id, nachricht_entwurf, offene_punkte\nFelder einzeln übernehmbar, etwa { $json.output.entscheidung }\nein Parserfehler stoppt den Lauf statt Unsinn weiterzureichen\n\n\n\nWas er nicht leistet\n\nein gültiges Schema beweist keine fachliche Passung\n„erstgespraech“ kann formal korrekt und inhaltlich falsch sein\ndafür gibt es die Testfälle und die menschliche Prüfung\n\n\n\n\nReihenfolge für die eigene Erweiterung: zuerst die Sperre ergänzen und K-05 ausführen, dann strukturierte Felder aktivieren, nach jeder Änderung einen normalen Fall mitprüfen. Nicht mehrere unbekannte Funktionen gleichzeitig einbauen."
+  },
+  {
+    "objectID": "slides/n8n-workflows.html#ein-agent-wählt-werkzeuge-der-workflow-nicht",
+    "href": "slides/n8n-workflows.html#ein-agent-wählt-werkzeuge-der-workflow-nicht",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Ein Agent wählt Werkzeuge, der Workflow nicht",
+    "text": "Ein Agent wählt Werkzeuge, der Workflow nicht\n\n\nWorkflow (Referenz 02)\n\nReihenfolge steht fest\ndas Modell bekommt immer dasselbe Material\neinfach zu prüfen: gleiche Eingabe, gleicher Weg\n\n\n\nAgent (Referenz 03)\n\nzwei lesende Wissenswerkzeuge: Leistungswissen, Lernmaterial\ndas Modell wählt je nach Anliegen, welches es aufruft\nprüfbar nur über das Laufprotokoll: Welches Werkzeug wurde aufgerufen, trägt sein Inhalt die Antwort?\n\n\n\n\nDemo: K-02 und K-03 getrennt ausführen. Höchstens drei Agenteniterationen, die Kontaktsperre bleibt vorgeschaltet. Die Werkzeuge sind fertig, ihre Programmierung ist keine Aufgabe.\n\n\nVergleichsfrage in den Raum: Verbessert die Werkzeugwahl die Antwort, oder macht sie den einfachen Fall nur langsamer und schwerer prüfbar? Beide Antworten sind zulässig, wenn sie begründet sind."
+  },
+  {
+    "objectID": "slides/n8n-workflows.html#wenn-ein-lauf-nicht-funktioniert-sechs-befunde-sechs-prüfschritte",
+    "href": "slides/n8n-workflows.html#wenn-ein-lauf-nicht-funktioniert-sechs-befunde-sechs-prüfschritte",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Wenn ein Lauf nicht funktioniert: sechs Befunde, sechs Prüfschritte",
+    "text": "Wenn ein Lauf nicht funktioniert: sechs Befunde, sechs Prüfschritte\n\n\n\n\n\n\n\nBeobachtung\nNächster Prüfschritt\n\n\n\n\nVerbindung fehlt\nVorbereitete Credential im Kursmodell auswählen, keine Schlüssel im Prompt\n\n\nKontingent oder Modell nicht verfügbar\nLehrperson informieren, Fehlermeldung ohne Geheimnisse dokumentieren\n\n\nLeeres Anliegen im Prompt\nSchreibweise und Feldzuordnung im Kontakt-Knoten prüfen\n\n\nFalsche Kontakt-ID\nAlle Felder des Falls und die Zuordnung im letzten Knoten prüfen\n\n\nParserfehler\nTatsächliche Ausgabe ansehen, Schema nicht umgehen, Fehler nicht als Erfolg ablegen\n\n\nFormal korrekt, fachlich falsch\nRegel, Material und Anliegen anhand eines Testfalls vergleichen\n\n\n\n\nDie letzte Zeile ist die wichtigste und die einzige, die kein technischer Fehler ist. Fehlender Zugang, falsche Feldzuordnung und unpassende Modellantwort sind drei verschiedene Befunde und werden getrennt dokumentiert."
+  },
+  {
+    "objectID": "slides/n8n-workflows.html#fällt-die-modellverbindung-aus-geht-die-fachliche-arbeit-im-chat-weiter",
+    "href": "slides/n8n-workflows.html#fällt-die-modellverbindung-aus-geht-die-fachliche-arbeit-im-chat-weiter",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Fällt die Modellverbindung aus, geht die fachliche Arbeit im Chat weiter",
+    "text": "Fällt die Modellverbindung aus, geht die fachliche Arbeit im Chat weiter\n\nAnweisungen, Fallpaket und genau einen Kontakt in einen neuen Chat einfügen, nach denselben Kriterien prüfen, in die Prüfablage übertragen, mit dem Hinweis „manuelle Simulation“.\n\n\nDamit ist die fachliche Arbeit dokumentiert, aber keine n8n-Ausführung nachgewiesen. Der vollständige Lauf wird nachgeholt. Zeitwerte einer Simulation gelten nicht als automatisierter Betrieb.\n\n\nDie n8n-Schritte ohne Modell können währenddessen weitergebaut werden: Trigger, Kontaktfelder, If-Knoten."
+  },
+  {
+    "objectID": "slides/n8n-workflows.html#übung-1.4-der-erste-eigene-workflow",
+    "href": "slides/n8n-workflows.html#übung-1.4-der-erste-eigene-workflow",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Übung 1.4: Der erste eigene Workflow",
+    "text": "Übung 1.4: Der erste eigene Workflow\n\nVor der Pause: Neuen Workflow mit Manual Trigger und Edit Fields anlegen, die sieben Felder von K-01 eintragen, ausführen. Zwischenziel: Alle Felder kommen in der Ausgabe an.\nNach der Pause: Basic LLM Chain anhängen, Kursmodell wählen, den n8n-Prompt einfügen, Felder zuordnen. Dahinter ein zweites Edit Fields mit Empfehlung, Entwurf und freigabe = offen.\nPrüfung: Kommt das richtige Anliegen beim Modell an? Bleibt die Kontakt-ID erhalten? Steht freigabe unabhängig von der Modellausgabe auf offen? Keine Versandaktion?\nNach jedem Lauf Rollen wechseln. Jede Person ändert mindestens einmal ein Feld oder eine Regel.\n\n\nBauanleitung mit jeder Zuordnung steht im Werkzeugkasten unter „Starter Schritt für Schritt“. Wer nicht weiterkommt: Referenzexport importieren, Schritte nachvollziehen, eine eigene Änderung vornehmen."
+  },
+  {
+    "objectID": "slides/tag1-projektstart.html#das-semester-hat-drei-blocktage-ein-wöchentliches-coaching-und-einen-partner",
+    "href": "slides/tag1-projektstart.html#das-semester-hat-drei-blocktage-ein-wöchentliches-coaching-und-einen-partner",
+    "title": "Projektstart",
+    "section": "Das Semester hat drei Blocktage, ein wöchentliches Coaching und einen Partner",
+    "text": "Das Semester hat drei Blocktage, ein wöchentliches Coaching und einen Partner\n\n\nBlocktage21. bis 23. September, 09:00 bis 17:00 Uhr, Mittagspause 13:00 bis 14:00 Uhr\n\n\nZoi-BriefingDienstag, 22. September, 10:00 Uhr vor Ort an der HdM\n\n\nCoachingDienstags 08:15 bis 09:45 Uhr, Raum I008, das ganze Semester\n\n\nAbgabenZwischenpräsentation 1. Dezember, Abschluss Ende Januar, Abgabe 12. Februar 2027\n\n\n\nVorlesung auf Deutsch, Projektinhalte und Kommunikation mit Zoi auf Englisch. Programmierung ist keine Voraussetzung.\n\n\nRahmen in zwei Minuten. Die 90 Minuten Coaching sind nicht das Arbeitsbudget: Die Teams vereinbaren ein eigenes wöchentliches Arbeitsfenster, das kommt in Übung 1.1. Ein weiterer Blocktag im Semester wird noch terminiert."
+  },
+  {
+    "objectID": "slides/tag1-projektstart.html#ziel-des-semesters-ist-ein-nutzbarer-und-überprüfter-marketingprozess",
+    "href": "slides/tag1-projektstart.html#ziel-des-semesters-ist-ein-nutzbarer-und-überprüfter-marketingprozess",
+    "title": "Projektstart",
+    "section": "Ziel des Semesters ist ein nutzbarer und überprüfter Marketingprozess",
+    "text": "Ziel des Semesters ist ein nutzbarer und überprüfter Marketingprozess\n\nJedes Team entwickelt einen zusammenhängenden Prozess für die Vermarktung einer Dienstleistung: ein konkretes Marketingproblem, eine Zielgruppe, eine überprüfbare Nutzenannahme.\n\n\nDer fachliche Zuschnitt wird nach dem Zoi-Briefing im Coaching konkretisiert. Die Blocktage bauen einen ersten kleinen Ausschnitt.\n\n\nZwei Wörter betonen: nutzbar und überprüft. Nutzbar heißt, der Partner kann den Prozess verstehen und weiterentwickeln. Überprüft heißt, es gibt Testbelege und einen fairen Vergleich mit einer einfacheren Lösung."
+  },
+  {
+    "objectID": "slides/tag1-projektstart.html#im-semesterprojekt-gibt-es-vier-arbeitsbereiche",
+    "href": "slides/tag1-projektstart.html#im-semesterprojekt-gibt-es-vier-arbeitsbereiche",
+    "title": "Projektstart",
+    "section": "Im Semesterprojekt gibt es vier Arbeitsbereiche",
+    "text": "Im Semesterprojekt gibt es vier Arbeitsbereiche\n\n\nBereich 1\nPassende Kunden finden\nRecherche und Qualifizierung: Welche Unternehmen kommen als Kunden infrage, und was wissen wir über sie?\n\n\nBereich 2\nInhalte erstellen\nContent und Lokalisierung: Texte für Website, LinkedIn oder Newsletter, auch in anderen Sprachen.\n\n\nBereich 3\nKontakte nachfassen\nNurturing und Follow-up: Wer sich für ein Webinar oder ein Whitepaper interessiert hat, bekommt den passenden nächsten Schritt.\n\n\nBereich 4\nErgebnisse auswerten\nReporting: Welche Maßnahmen haben gewirkt, und was folgt daraus?\n\n\n\nIn den drei Blocktagen arbeiten wir in Bereich 3. Welche Bereiche im Semester dazukommen, hängt vom Briefing mit Zoi ab.\n\n\nBereich 3 ist markiert, weil die drei Blocktage dort ansetzen. Welche Tiefe je Bereich sinnvoll ist, entscheidet sich am Partnerauftrag. KI wird eingesetzt, wo Sprachverständnis, Interpretation oder begrenzte Werkzeugwahl einen begründbaren Vorteil bringen."
+  },
+  {
+    "objectID": "slides/tag1-projektstart.html#die-prüfung-hat-vier-benotete-teile-und-eine-vorprüfungsleistung",
+    "href": "slides/tag1-projektstart.html#die-prüfung-hat-vier-benotete-teile-und-eine-vorprüfungsleistung",
+    "title": "Projektstart",
+    "section": "Die Prüfung hat vier benotete Teile und eine Vorprüfungsleistung",
+    "text": "Die Prüfung hat vier benotete Teile und eine Vorprüfungsleistung\n\n\n\n\n\n\n\n\nKomponente\nGewicht\nTermin\n\n\n\n\nVorprüfungsleistung: Online-Kurse, individuell\nunbenotet\n17.11.2026\n\n\nZwischenpräsentation\n10 %\n01.12.2026\n\n\nAbschlusspräsentation mit Live-Demo\n20 %\nWoche vom 26.01.2027\n\n\nAgenten und Workflows\n40 %\n12.02.2027\n\n\nPlaybook und Evaluation\n30 %\n12.02.2027\n\n\n\n\nDie vier benoteten Teile werden im Team erbracht. Jede Person beteiligt sich an Umsetzung, Prüfung und Präsentation.\n\n\nVorprüfungsleistung: Online-Kurse zu KI-Grundlagen, KI-Agenten im Marketing, n8n und Inbound Marketing, jeweils mindestens 80 Prozent im Abschlussquiz, beliebig wiederholbar. Kursliste und Abgabeweg werden gesondert bekannt gegeben. Bewertungsdetails folgen auf der Kursseite."
+  },
+  {
+    "objectID": "slides/tag1-projektstart.html#bewertet-wird-die-qualität-des-messdesigns-nicht-die-höhe-der-zahlen",
+    "href": "slides/tag1-projektstart.html#bewertet-wird-die-qualität-des-messdesigns-nicht-die-höhe-der-zahlen",
+    "title": "Projektstart",
+    "section": "Bewertet wird die Qualität des Messdesigns, nicht die Höhe der Zahlen",
+    "text": "Bewertet wird die Qualität des Messdesigns, nicht die Höhe der Zahlen\n\nDie Teams arbeiten mit synthetischen Daten und Testumgebungen. Damit lassen sich Funktion, Ergebnisqualität und Aufwand prüfen. Reale Conversion oder Umsatz werden nicht nachgewiesen, und das wird auch nicht erwartet.\n\n\nDas nimmt Druck raus und setzt den Maßstab: Ein sauber geplantes Experiment mit ehrlicher Interpretation ist besser als eine große Zahl ohne Beleg. Ein negativer Vergleich ist ein verwertbares Ergebnis."
+  },
+  {
+    "objectID": "slides/tag1-projektstart.html#warum-wir-mit-einem-kleinen-ausschnitt-anfangen",
+    "href": "slides/tag1-projektstart.html#warum-wir-mit-einem-kleinen-ausschnitt-anfangen",
+    "title": "Projektstart",
+    "section": "Warum wir mit einem kleinen Ausschnitt anfangen",
+    "text": "Warum wir mit einem kleinen Ausschnitt anfangen\n\n\nDie Frage des Semesters\nWo lohnt sich Agentic AI im Growth Marketing?\nBei der Kundensuche, bei Inhalten, beim Nachfassen, beim Auswerten? Und woran erkennt man, ob KI dort wirklich etwas verbessert?\n\n\nDie Antwort\nBauen und an Fällen prüfen\nOb KI etwas verbessert, sieht man erst, wenn ein Ablauf läuft und an konkreten Fällen geprüft ist. Dafür nehmen wir einen Ausschnitt, in dem alles bekannt ist: das Nachfassen von Webinar-Kontakten bei einer fiktiven Firma.\n\n\nDer Übertrag\nDasselbe Vorgehen für Zoi\nProblem beobachten, Annahme formulieren, Workflow bauen, an Fällen testen. Dieses Vorgehen wenden die Teams im Semester auf die Bereiche an, die für Zoi wichtig sind.\n\n\n\nDer Fall ist absichtlich klein. Nicht der Workflow ist das Ziel, sondern die Erfahrung, wie man prüft, ob KI in einem Marketingschritt hilft.\n\n\nDas ist die Brücke zwischen den vier Arbeitsbereichen und dem Übungsfall. Die Studierenden sollen verstehen: Wir bauen nicht irgendeinen Workflow, wir üben ein Vorgehen, das sich auf jeden der vier Bereiche übertragen lässt. Content-Erstellung wäre als Einstieg schwerer prüfbar, weil es dort kein richtig oder falsch gibt."
+  },
+  {
+    "objectID": "slides/tag1-projektstart.html#aurenta-ist-eine-fiktive-ki-beratung-für-marketingabteilungen",
+    "href": "slides/tag1-projektstart.html#aurenta-ist-eine-fiktive-ki-beratung-für-marketingabteilungen",
+    "title": "Projektstart",
+    "section": "Aurenta ist eine fiktive KI-Beratung für Marketingabteilungen",
+    "text": "Aurenta ist eine fiktive KI-Beratung für Marketingabteilungen\n\n\nUnternehmen\nAurenta\nHilft Marketingteams mittelständischer B2B-Unternehmen, geeignete KI-Anwendungen auszuwählen und einen ersten Ablauf zu erproben.\n\n\nProdukt\nKI-Praxischeck Marketing\nZwei Wochen, ein Workshop, drei priorisierte Anwendungsfälle, ein kleiner Prototyp, Ergebnisbesprechung. 2.400 Euro netto.\n\n\nKundenweg\nVom Fachbeitrag zum Auftrag\nFachbeitrag, Webinar, Nachbereitung, kostenloses Erstgespräch (30 Minuten), Angebot, Auftrag.\n\n\n\nDie Website von Aurenta ist über die Kursseite erreichbar: Startseite, Praxischeck, Webinar, Fachbeitrag, Erstgespräch. Alles fiktiv, kein Bezug zu Zoi.\n\n\nDie Website kurz zeigen, zwei Minuten: Startseite, dann Webinar-Seite mit der Zusammenfassung. So sehen die Studierenden Aurenta wie ein Kontakt und verstehen, was Material M1 und M2 sind. Das Fallpaket enthält zusätzlich die internen Regeln."
+  },
+  {
+    "objectID": "slides/tag1-projektstart.html#das-problem-alle-webinar-kontakte-bekommen-dieselbe-gesprächseinladung",
+    "href": "slides/tag1-projektstart.html#das-problem-alle-webinar-kontakte-bekommen-dieselbe-gesprächseinladung",
+    "title": "Projektstart",
+    "section": "Das Problem: Alle Webinar-Kontakte bekommen dieselbe Gesprächseinladung",
+    "text": "Das Problem: Alle Webinar-Kontakte bekommen dieselbe Gesprächseinladung\n\nNach dem Webinar stellt sich für jeden Kontakt die Frage: Welcher nächste Schritt passt, Material, Rückfrage oder Erstgespräch? Bisher lädt Aurenta alle gleich zum Gespräch ein. Von 198 Follow-ups führen 10 zu einem qualifizierten Gespräch.\n\n\nDas Fallpaket fasst den Fall auf einer Seite zusammen: Problem, die drei Möglichkeiten, Regeln, Kontakte. Der reale Zuschnitt mit Zoi entsteht nach dem Briefing am Dienstag.\n\n\nWarum ein fiktiver Fall: Alle Angaben sind vollständig, es gibt keine Informationsfallen, und die Teams treffen fachliche Entscheidungen statt Daten zu raten. Preis und Angebot sind bekannt, Termine und Buchungsseiten gibt es nicht. Die Zahlen kommen im Growth-Marketing-Deck ausführlich."
+  },
+  {
+    "objectID": "slides/tag1-projektstart.html#drei-tage-ein-wachsender-prototyp",
+    "href": "slides/tag1-projektstart.html#drei-tage-ein-wachsender-prototyp",
+    "title": "Projektstart",
+    "section": "Drei Tage, ein wachsender Prototyp",
+    "text": "Drei Tage, ein wachsender Prototyp\n\n\nMontagTeams, Growth-Hypothese, erster eigener n8n-Workflow am Übungsfall\n\n\nDienstagZoi-Briefing um 10 Uhr, Projektbrief, Ablaufskizze, Ausbau des Workflows\n\n\nMittwochTestfälle, fairer Vergleich mit einer einfachen Lösung, Live-Demo, Start ins Semester\n\n\n\nJeder Tag baut auf dem vorigen auf. Der Workflow vom Montag wird am Dienstag auf den Zoi-Zuschnitt übertragen und am Mittwoch getestet und übergeben."
+  },
+  {
+    "objectID": "slides/tag1-projektstart.html#am-ende-von-tag-1-hat-jedes-team-einen-workflow-der-an-drei-kontakten-getestet-ist",
+    "href": "slides/tag1-projektstart.html#am-ende-von-tag-1-hat-jedes-team-einen-workflow-der-an-drei-kontakten-getestet-ist",
+    "title": "Projektstart",
+    "section": "Am Ende von Tag 1 hat jedes Team einen Workflow, der an drei Kontakten getestet ist",
+    "text": "Am Ende von Tag 1 hat jedes Team einen Workflow, der an drei Kontakten getestet ist\n\nFünf Übungen heute:\n\nÜbung 1.1: Teams bilden, Fall kennenlernen, Absprachen treffen\nÜbung 1.2: Webinar-Daten auswerten, eine Hypothese formulieren\nÜbung 1.3: Der erste Prompt, dreimal getestet\nÜbung 1.4: Der erste eigene n8n-Workflow, vor und nach der Mittagspause\nÜbung 1.5: Eine Regel ändern und an drei Fällen prüfen\n\n16 Uhr: Sechs Teamdemos, danach Fragen für Zoi sammeln.\n\n\nZeitplan auf der Kursseite, nur grob: Pausen gegen 10:30 und 15:00 Uhr, Mittag 13 bis 14 Uhr. Wenn eine Übung länger dauert, wird die nächste gekürzt, nicht die Pause."
+  },
+  {
+    "objectID": "slides/tag1-projektstart.html#sechs-dreierteams-für-das-ganze-semester",
+    "href": "slides/tag1-projektstart.html#sechs-dreierteams-für-das-ganze-semester",
+    "title": "Projektstart",
+    "section": "Sechs Dreierteams für das ganze Semester",
+    "text": "Sechs Dreierteams für das ganze Semester\n\n\nZiel\nErgänzende Fähigkeiten\nTeams, in denen die Zusammenarbeit funktioniert, sich Fähigkeiten ergänzen und Raum für Neues bleibt. Vorkenntnisse werden nicht vorausgesetzt.\n\n\nGrundlage\nUmfrage, 6 bis 8 Minuten\nStärken, Lerninteressen, Marketingpraxis, Erfahrung mit KI, Automatisierung und Daten, gemeinsame Arbeitszeiten. Programmierung freiwillig.\n\n\nEinteilung\nAnschließend im Kurs\nZuerst überschneidende Arbeitszeiten, dann ergänzende Erfahrungen und Interessen. Der Studiengang spielt keine Rolle.\n\n\n\nFür den Vorschlag wird KI genutzt, ich prüfe ihn vor der Bekanntgabe. Die Angaben werden nicht benotet, einzelne Antworten nicht veröffentlicht, nach der Einteilung gelöscht. Wer später kommt, wird im Raum zugeordnet."
+  },
+  {
+    "objectID": "slides/tag1-projektstart.html#aufgabe-die-umfrage-zur-teambildung-ausfüllen",
+    "href": "slides/tag1-projektstart.html#aufgabe-die-umfrage-zur-teambildung-ausfüllen",
+    "title": "Projektstart",
+    "section": "Aufgabe: die Umfrage zur Teambildung ausfüllen",
+    "text": "Aufgabe: die Umfrage zur Teambildung ausfüllen\n\nJetzt, etwa 6 bis 8 Minuten. Link auf der Kursseite unter „Montag, Teams bilden“, Button „Umfrage öffnen“.\nName und E-Mail dienen nur der Zuordnung. Aus den Antworten entsteht die Teameinteilung für Übung 1.1.\n\n\nLink an die Wand oder in den Chat. Während die Studierenden ausfüllen, die Einteilung vorbereiten. Zeitfenster bis zur Bekanntgabe ist knapp, etwa zehn Minuten."
+  },
+  {
+    "objectID": "slides/tag1-projektstart.html#übung-1.1-vorstellungsrunde-fall-lesen-absprachen-treffen",
+    "href": "slides/tag1-projektstart.html#übung-1.1-vorstellungsrunde-fall-lesen-absprachen-treffen",
+    "title": "Projektstart",
+    "section": "Übung 1.1: Vorstellungsrunde, Fall lesen, Absprachen treffen",
+    "text": "Übung 1.1: Vorstellungsrunde, Fall lesen, Absprachen treffen\n\nEtwa eine Stunde im Dreierteam. Anleitung als Google Doc auf der Kursseite.\n\nVorstellungsrunde mit drei Fragen: Was habe ich schon gemacht, was kann ich gut, was will ich lernen?\nDen Fall lesen: Unternehmensprofil von Aurenta. Welches Problem will Aurenta lösen, und woran würde man merken, dass es gelöst ist?\nAbsprachen treffen: festes wöchentliches Arbeitsfenster, Kommunikationskanal, Vorgehen bei Abwesenheit. Ablage im Teamordner.\n\nZum Schluss drei Rollen für die nächste Übung: bedienen, fachlich nachfragen, dokumentieren.\n\n\nDanach Pause, dann der Input zu Growth Marketing am Fall mit eigenem Deck."
+  },
+  {
+    "objectID": "materialien.html",
+    "href": "materialien.html",
+    "title": "Materialien und Workflow-Vorlagen",
+    "section": "",
+    "text": "Alle Materialien gehören zum fiktiven Beratungsfall Aurenta. Die Downloads enthalten keine echten Kontakte, keine Zugangsdaten und keine Aussagen über Zoi."
+  },
+  {
+    "objectID": "materialien.html#fall",
+    "href": "materialien.html#fall",
+    "title": "Materialien und Workflow-Vorlagen",
+    "section": "Für Montag",
+    "text": "Für Montag\n\n\n\nMaterial\nVerwendung\n\n\n\n\nWebsite von Aurenta\nFiktive Unternehmenswebsite: Startseite, KI-Praxischeck, Webinar mit Zusammenfassung, Fachbeitrag, Erstgespräch\n\n\nFallpaket Aurenta\nGoogle Doc: der Fall auf einer Seite, zum Lesen. Problem, die drei Möglichkeiten, Regeln, Kontakte\n\n\nKontext für Gemini\nGoogle Doc mit allen Details zu Aurenta. Wird komplett in den Chat kopiert, nicht gelesen\n\n\nZwei plausible Entwürfe\nPassung statt bloßer Sprachqualität beurteilen\n\n\nKampagnen-Lesehilfe\nKennzahlen mit Zähler und Nenner"
+  },
+  {
+    "objectID": "materialien.html#daten",
+    "href": "materialien.html#daten",
+    "title": "Materialien und Workflow-Vorlagen",
+    "section": "Daten",
+    "text": "Daten\n\n\n\nDatei\nInhalt\n\n\n\n\nWebinar-Kontakte: 330 Anmeldungen\nGoogle Sheet, Export der drei Webinare, eine Zeile pro Kontakt. Für die Pivot-Tabellen in Übung 1.2, Kopie anlegen\n\n\nAnleitung Pivot-Tabellen\nGoogle Doc: Trichter je Kampagne und Kreuztabelle Anliegen gegen Buchung in Google Sheets\n\n\nKontakte K-01 bis K-06\nExport der Webinar-Anmeldungen von Aurenta: sechs Kontakte mit Anliegen, einschließlich leerem Feld und Kontaktsperre. Woher die Spalten kommen, steht im Fallpaket\n\n\nKampagnen A bis C\nSynthetische Funnel-Zahlen; kein A/B-Test\n\n\nZusätzliche Testfälle T-01 bis T-03\nwird am Mittwoch freigeschaltet\n\n\n\nCSV-Dateien sind mit Semikolon getrennt und als UTF-8 mit BOM gespeichert. Beim Import in ein Tabellenprogramm bei Bedarf Semikolon als Trennzeichen wählen. Die Kontakt-IDs sind Text. Die Kampagnentabelle und die kleine Kontaktliste sind unterschiedliche Übungsdatensätze.\n\nOptional: dieselben Daten aus dem CRM lesen\nFür den Aurenta-Übungsfall gibt es die separate Datenbank aurenta_training. Sie enthält dieselben sechs Entwicklungsfälle, drei zusätzlichen Testfälle, Kampagnenzahlen und das kompakte Fallpaket. Die für das spätere Zoi-Projekt vorbereiteten Datenbanken bleiben davon getrennt.\nDer gemeinsame Zugang ist nur zum Lesen vorgesehen. Vorbereitete Leseabfragen liefern die Kontaktfelder für eine spätere Erweiterung mit dem Postgres-Knoten in n8n. Die Lehrperson stellt die passende Verbindung bereit. Der erste Workflow wird weiterhin mit einem manuell eingetragenen Kontakt gebaut. Entwürfe und Prüfergebnisse bleiben in n8n und der Teamablage."
+  },
+  {
+    "objectID": "materialien.html#vorlagen",
+    "href": "materialien.html#vorlagen",
+    "title": "Materialien und Workflow-Vorlagen",
+    "section": "Team, Hypothese und Projektbrief",
+    "text": "Team, Hypothese und Projektbrief\n\n\n\nVorlage\nVerwendung\n\n\n\n\nUmfrage zur Teambildung\nGoogle-Formular, wird am Montag im Kurs ausgefüllt; Textfassung der Fragen\n\n\nAnleitung Übung 1.1\nGoogle Doc: Vorstellungsrunde, Fall kennenlernen, Teamvereinbarung\n\n\nExperimentkarte für Montag\nBeobachtung, Hypothese, Kennzahl\n\n\nExperimentkarte, ausführliche Fassung mit Testdesign\nwird am Mittwoch freigeschaltet\n\n\nProjektbrief\nwird am Dienstag freigeschaltet\n\n\nAblaufskizze: Lesehilfe und Aurenta-Beispiel\nwird am Dienstag freigeschaltet\n\n\nContent-Briefing\nOptionale Erweiterung für Beiträge und Sprachfassungen\n\n\nCoaching-Stand\nBelegtes Ergebnis, offene Frage, nächster Versuch"
+  },
+  {
+    "objectID": "materialien.html#tests",
+    "href": "materialien.html#tests",
+    "title": "Materialien und Workflow-Vorlagen",
+    "section": "Anweisungen und Tests",
+    "text": "Anweisungen und Tests\n\n\n\nDatei\nVerwendung\n\n\n\n\nFollow-up-Anweisungen\nWiederverwendbare Regeln für den Chat\n\n\nContent-Anweisungen\nOptionale Erweiterung\n\n\nTestprotokoll\nErwartung vorab und tatsächliches Ergebnis\n\n\nFollow-up-Testprotokoll\nZweite Kopie für die Ausbauphase\n\n\nPrüfablage\nErgebnisse und menschliche Prüfung\n\n\nVergleich Chat / Workflow\nZeit, Qualität und Nacharbeit\n\n\nErwartungshilfe\nNach eigener Festlegung zum Abgleich lesen"
+  },
+  {
+    "objectID": "materialien.html#workflows",
+    "href": "materialien.html#workflows",
+    "title": "Materialien und Workflow-Vorlagen",
+    "section": "n8n-Referenzen",
+    "text": "n8n-Referenzen\nAlle Starter als ZIP herunterladen · Startanleitung\nDie Bauanleitung erklärt Aufbau, Zuordnungen, Import und Fehlerbehandlung. Für den ersten eigenen Lauf eignet sich 00 ohne KI: keine zusätzliche Verbindung nötig. Danach folgt 01 mit dem Kursmodell. Jeder Export wird als neuer Workflow importiert; ein heruntergeladener Export ist noch kein ausgeführter Workflow.\n\n\n\nReferenz\nWorkflow\nBegleittext\n\n\n\n\nErster Lauf ohne KI oder Datenbank\n00 JSON\nAnleitung\n\n\nMontag: einfacher Follow-up-Ablauf\n01 JSON\nAnleitung\n\n\nAusbau: Struktur und Kontaktsperre\n02 JSON\nAnleitung\n\n\nOptional: einen Aurenta-Kontakt aus dem CRM lesen\n04 JSON\nAnleitung\n\n\nOptional: CRM und KI-Entwurf kombinieren\n05 JSON\nAnleitung\n\n\nLehrdemo: begrenzte Werkzeugwahl\n03 JSON\nAnleitung\n\n\n\nZusätzlich: vollständiger n8n-Prompt und Ausgabe-Schema. Alle Workflows starten manuell. Ergebnisse werden im Ausführungsprotokoll sichtbar und für die Teamablage gesichert. Kein Workflow enthält Versand oder produktive CRM-Schreibzugriffe."
+  },
+  {
+    "objectID": "werkzeuge/workflows.html",
+    "href": "werkzeuge/workflows.html",
+    "title": "n8n: Workflows und Agenten",
+    "section": "",
+    "text": "Ab Montag wird ein eigener kleiner Workflow gebaut. Der Einstieg verarbeitet einen Kontakt und macht Eingabe, Modellschritt und Ergebnis sichtbar. Der Ausbau ergänzt strukturierte Felder und eine feste Kontaktsperre."
+  },
+  {
+    "objectID": "werkzeuge/workflows.html#stufen",
+    "href": "werkzeuge/workflows.html#stufen",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Vier Begriffe",
+    "text": "Vier Begriffe\n\n\n\n\n\n\n\nBegriff\nBedeutung\n\n\n\n\nChat\nEin Mensch stellt eine Aufgabe und führt den Dialog.\n\n\nWiederverwendbare Anweisungen\nRegeln und Wissen werden getrennt von der aktuellen Eingabe gepflegt.\n\n\nWorkflow\nDer Ablauf ist vorgegeben; ein Modell kann einzelne Aufgaben übernehmen.\n\n\nAgent\nDas Modell wählt innerhalb gesetzter Grenzen Werkzeuge oder nächste Schritte.\n\n\n\nEine Basic LLM Chain mit einem festgelegten Prompt ist noch kein Agent. Ein Agentenknoten allein beweist ebenfalls keinen sinnvollen Entscheidungsspielraum. Entscheidend sind die tatsächlichen Aufrufe und der Nutzen im Vergleich mit einer einfacheren Lösung. Architekturgrundlage."
+  },
+  {
+    "objectID": "werkzeuge/workflows.html#downloads",
+    "href": "werkzeuge/workflows.html#downloads",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Starten und importieren",
+    "text": "Starten und importieren\nStarterpaket als ZIP herunterladen und entpacken. In n8n einen neuen Workflow öffnen, im Workflow-Menü „Import from File“ wählen, eine JSON-Datei importieren und unter einem eigenen Namen speichern. Die gleichnamige Markdown-Datei enthält die zugehörige Anleitung.\nErster Erfolg in etwa fünf Minuten: Variante 00 importieren und „Execute Workflow“ wählen. Der vorgefüllte Kontakt läuft durch eine feste Regel bis zur Ausgabe. Danach kontakt_erlaubt von ja auf nein ändern und die beiden Ausführungspfade vergleichen. Dafür wird weder eine Modell- noch eine Datenbankverbindung benötigt.\n\n\n\nReferenz\nEinsatz\nDownload\n\n\n\n\n00 Ohne KI\nErster Lauf, Daten und feste Regel, fünf Knoten\nJSON · Anleitung\n\n\n01 Starter\nMontag gemeinsam bauen, fünf Knoten\nJSON · Anleitung\n\n\n02 Struktur und Sperre\nDienstag/Mittwoch ausbauen, neun Knoten\nJSON · Anleitung\n\n\n04 CRM lesen\nOptionaler Datenbankeinstieg ohne KI, sieben Knoten\nJSON · Anleitung\n\n\n05 CRM und KI\nDatenbankabruf und strukturierter Entwurf, dreizehn Knoten\nJSON · Anleitung\n\n\n03 Agentenvergleich\nKurze Lehrdemo, optional vertiefen\nJSON · Anleitung\n\n\n\nAlle Exporte sind inaktiv und enthalten keine Zugangsdaten. Die Lehrperson bereitet die Modellverbindung vor. Die Referenzen setzen native n8n-Knoten ein; Studierende müssen keinen Programmcode schreiben. Der Starter nutzt eine Textausgabe, damit ein JSON-Schema nicht den ersten Lernerfolg blockiert.\nEmpfohlene Reihenfolge: 00 → 01 → 02. Mit verfügbarer Aurenta-Verbindung folgt 04 → 05. Variante 03 bleibt eine zusätzliche Lehrdemo. Bei den KI-Varianten die vorbereitete Verbindung im Knoten Kursmodell auswählen; bei den CRM-Varianten zusätzlich die Postgres-Verbindung „Aurenta – Übungsfall (Lesen)“. Die beiden Verbindungen erfüllen unterschiedliche Aufgaben."
+  },
+  {
+    "objectID": "werkzeuge/workflows.html#crm-start",
+    "href": "werkzeuge/workflows.html#crm-start",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Einen Kontakt aus dem CRM laden",
+    "text": "Einen Kontakt aus dem CRM laden\nVariante 04 benötigt ausschließlich die Aurenta-Datenbankverbindung. Im Knoten Kontakt auswaehlen wird eine ID eingetragen, etwa K-01. Der Postgres-Knoten liest genau diesen Kontakt; bei einer unbekannten ID stoppt der Ablauf mit einer Fehlermeldung. Die Ausgabe enthält dieselben sieben Felder wie die manuell eingetragene Variante. K-05 bleibt als gesperrter Kontakt gekennzeichnet.\nErst wenn Datenbankabruf und Modellaufruf einzeln funktionieren, verbindet Variante 05 beide Schritte. Die feste Kontaktsperre liegt vor der KI, die Kontakt-ID bleibt der Quelle zugeordnet. K-01, K-05 und K-06 sind die ersten Prüffälle. Alle SQL-Abfragen lesen nur; Empfehlungen und Entwürfe bleiben im Ausführungsprotokoll. Die Kampagnenzahlen und das übrige CRM werden nicht verändert."
+  },
+  {
+    "objectID": "werkzeuge/workflows.html#bauen",
+    "href": "werkzeuge/workflows.html#bauen",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Starter Schritt für Schritt",
+    "text": "Starter Schritt für Schritt\n\n1. Start und Kontakt\nEinen neuen Workflow mit Manual Trigger anlegen und „Manuell starten“ nennen. Einen Edit Fields (Set)-Knoten ergänzen und „Kontakt“ nennen. Die Knotennamen werden in den vorbereiteten Zuordnungen verwendet und bleiben zunächst unverändert.\nIm Modus Manual Mapping diese Felder als String eintragen. Werte aus einem Kontakt der Kontaktliste übernehmen:\n\n\n\n\n\n\n\nFeld\nBeispiel K-01\n\n\n\n\nkontakt_id\nK-01\n\n\nrolle\nMarketingleitung\n\n\nunternehmen\nB2B-Dienstleister, 250 Beschäftigte\n\n\nwebinar_status\nteilgenommen\n\n\nanliegen\nWir möchten unsere Content-Briefings verbessern. Können wir besprechen, ob der Praxischeck dafür passt?\n\n\nsprache\nDeutsch\n\n\nkontakt_erlaubt\nja\n\n\n\nDie beiden Knoten verbinden und ausführen. Die Ausgabe muss genau diesen Kontakt enthalten. Das ist das Zwischenziel vor der Mittagspause.\n\n\n2. Modellschritt\nEine Basic LLM Chain hinzufügen und „Bedarf und Entwurf“ nennen. Den Prompt selbst definieren (Define below) und den vollständigen vorbereiteten n8n-Prompt in das Feld einsetzen. Er enthält das Fallpaket und die variablen Kontaktfelder. Das führende = kennzeichnet im Export einen Ausdruck; in der Oberfläche den Expression-Modus verwenden und die Vorschau prüfen.\nUnter Chat Model den Google Gemini Chat Model-Knoten verbinden, „Kursmodell“ nennen und die vorbereitete Verbindung auswählen. Das Kursmodell wird von der Lehrperson festgelegt; die Referenz enthält gemini-3.1-flash-lite als austauschbare Voreinstellung. Das persönliche Gemini-Konto wird hier nicht eingegeben.\nDie Platzhalter wie { $json.anliegen } greifen auf das Feld des aktuellen Eingabeelements zu. Sie sind Feldzuordnungen, keine Programmieraufgabe. In der Vorschau muss das tatsächliche Anliegen erscheinen. Den Workflow manuell ausführen und die Antwort lesen.\n\n\n3. Ergebnis zur Prüfung\nEinen weiteren Edit Fields-Knoten nach der Chain ergänzen, „Ergebnis zur Pruefung“ nennen und diese String-Felder setzen:\n\n\n\nFeld\nWert\n\n\n\n\nkontakt_id\nAusdruck: { $('Kontakt').item.json.kontakt_id }\n\n\nergebnis\nAusdruck: { $json.text }\n\n\nfreigabe\nFester Text: offen\n\n\n\nDie Ergebnisse stehen im Ausführungsprotokoll. Für die Teamablage die Ausgabe herunterladen oder kopieren. Der letzte Knoten schreibt noch nicht in eine externe Tabelle oder ein CRM. Eine solche Anbindung ist eine spätere Erweiterung.\n\n\n4. Einen weiteren Fall ausführen\nAlle Kontaktfelder gemeinsam ersetzen, beispielsweise durch K-02. Neu ausführen und die ID sowie den Anliegenbezug prüfen. Pro Lauf genau ein Kontakt. Das verhindert zunächst unbemerkte Zuordnungsfehler bei mehreren Elementen. Im Semester kann die Stapelverarbeitung gezielt ergänzt und getestet werden."
+  },
+  {
+    "objectID": "werkzeuge/workflows.html#ausbau",
+    "href": "werkzeuge/workflows.html#ausbau",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Ausbau: Struktur und feste Regeln",
+    "text": "Ausbau: Struktur und feste Regeln\nDer zweite Export ergänzt zwei Dinge:\n\nEin If-Knoten lässt nur kontakt_erlaubt = ja zum Modell. Bei nein, fehlendem oder unbekanntem Status entsteht eine interne Ausgabe mit kein_followup und leerem Entwurf. Der Modellknoten bleibt in diesem Zweig unberührt.\nEin Structured Output Parser nutzt ein fertiges Schema. Die Felder entscheidung, begruendung, material_id, nachricht_entwurf und offene_punkte werden danach einzeln übernommen. Die Chain stellt sie unter output bereit, etwa { $json.output.entscheidung }.\n\nDie Kontakt-ID und der Status offen stammen weiterhin aus fester Logik. Ein Parserfehler stoppt den Lauf. Ein erfolgreiches Schema beweist weder Wahrheit noch fachliche Passung. Dafür dienen die Testfälle.\nAufgabe für eine eigene Erweiterung: Zuerst die Kontaktsperre ergänzen und K-05 ausführen. Danach strukturierte Felder aktivieren. Nach jeder Änderung einen normalen Fall mitprüfen. Nicht mehrere unbekannte Funktionen gleichzeitig einbauen."
+  },
+  {
+    "objectID": "werkzeuge/workflows.html#agent",
+    "href": "werkzeuge/workflows.html#agent",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Agenten-Demo",
+    "text": "Agenten-Demo\nDie dritte Referenz stellt zwei ausschließlich lesende Wissenswerkzeuge bereit: „Leistungswissen“ und „Lernmaterial“. Kleine vorgefertigte Code Tools liefern feste Texte. Sie werden in der Lehrdemo als fertige Werkzeuge verwendet; deren Programmierung ist keine studentische Aufgabe.\nDie Lehrperson führt K-02 und K-03 getrennt aus. Das Modell soll anhand des Anliegens die nötige Quelle wählen. Im Ausführungsprotokoll wird geprüft, welches Werkzeug tatsächlich aufgerufen wurde und ob dessen Inhalt die Antwort trägt. Die Zahl der Agenteniterationen ist auf drei begrenzt. Eine feste Kontaktsperre bleibt vorgeschaltet.\nVergleichsfrage: Verbessert die Werkzeugwahl die Antwort oder macht sie den einfachen Fall nur langsamer und schwerer prüfbar? Eine begründete Entscheidung gegen einen Agenten ist fachlich zulässig. Der Semesterprototyp soll sinnvollen agentischen Spielraum untersuchen und dessen Grenzen dokumentieren."
+  },
+  {
+    "objectID": "werkzeuge/workflows.html#fehler",
+    "href": "werkzeuge/workflows.html#fehler",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Wenn ein Lauf nicht funktioniert",
+    "text": "Wenn ein Lauf nicht funktioniert\n\n\n\n\n\n\n\nBeobachtung\nNächster Prüfschritt\n\n\n\n\nVerbindung fehlt\nVorbereitete Credential im Kursmodell auswählen; keine Schlüssel im Prompt verwenden\n\n\nKontingent oder Modell nicht verfügbar\nLehrperson informieren, Fehlermeldung ohne Geheimnisse dokumentieren\n\n\nLeeres Anliegen im Prompt\nSchreibweise und Feldzuordnung im Kontakt-Knoten prüfen\n\n\nFalsche Kontakt-ID\nAlle Felder des Falls und die Zuordnung im letzten Knoten prüfen\n\n\nParserfehler\nTatsächliche Ausgabe ansehen; Schema nicht umgehen und Fehler nicht als Erfolg ablegen\n\n\nFormal korrekt, fachlich falsch\nRegel, Material und tatsächliches Anliegen anhand eines Testfalls vergleichen"
+  },
+  {
+    "objectID": "werkzeuge/workflows.html#ersatzweg",
+    "href": "werkzeuge/workflows.html#ersatzweg",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Vorübergehende manuelle Route",
+    "text": "Vorübergehende manuelle Route\nBei ausgefallener Modellverbindung die Anweisungen, das Fallpaket und genau einen Kontakt in einen neuen Chat einfügen. Die Ausgabe anhand derselben Kriterien prüfen und in die Prüfablage übertragen. Die n8n-Schritte ohne Modell können weitergebaut werden.\nDie Ablage erhält den Hinweis „manuelle Simulation“. Damit ist die fachliche Arbeit dokumentiert, aber noch keine n8n-Ausführung nachgewiesen. Der vollständige Lauf wird nachgeholt. Zeitwerte einer Simulation werden nicht als automatisierter Betrieb ausgegeben."
+  },
+  {
+    "objectID": "werkzeuge/workflows.html#technische-quellen",
+    "href": "werkzeuge/workflows.html#technische-quellen",
+    "title": "n8n: Workflows und Agenten",
+    "section": "Technische Quellen",
+    "text": "Technische Quellen\nBasic LLM Chain · Google Gemini Chat Model · Structured Output Parser. Der konkrete Lauf mit Kursmodell und Kurszugängen muss vor der Vorlesung geprüft sein."
+  },
+  {
+    "objectID": "werkzeuge/prompting.html",
+    "href": "werkzeuge/prompting.html",
+    "title": "Aufträge formulieren",
+    "section": "",
+    "text": "Ein guter Auftrag ist ein einzelner Prompt mit vier Teilen: Kontext, Aufgabe, Format, Prüfung. Das Modell kennt das Handwerk. Was es nicht kennen kann, liegt nur bei uns, deshalb bewegen Kontext und Prüfung das Ergebnis am meisten."
+  },
+  {
+    "objectID": "werkzeuge/prompting.html#vier-teile",
+    "href": "werkzeuge/prompting.html#vier-teile",
+    "title": "Aufträge formulieren",
+    "section": "Vier Teile",
+    "text": "Vier Teile\n\n\n\n\n\n\n\n\nTeil\nWas hinein gehört\nBeispiel am Fall\n\n\n\n\nKontext\nDie Fakten, die nur wir kennen. Wichtig, und der Teil, den die meisten weglassen\nDas Angebot von Aurenta, die Regeln, das Anliegen von K-02\n\n\nAufgabe\nDas eine konkrete Ergebnis\nEmpfiehl für K-02 den nächsten Schritt und schreibe den Nachrichtenentwurf\n\n\nFormat\nLänge, Struktur, Ton\nEntscheidung, Begründung, Material-ID, Entwurf mit höchstens 120 Wörtern, Sie-Form\n\n\nPrüfung\nWas das Modell melden soll, statt Lücken zu füllen. Wichtig, und fast alle vergessen es\nNenne am Ende, was fehlt oder unsicher ist\n\n\n\nKontext: &lt;Kontext für Gemini und die Kontaktfelder von K-02 einfügen.&gt;\n\nAufgabe: Empfiehl für K-02 den nächsten Schritt (Material, Rückfrage\noder Erstgespräch) und schreibe den Nachrichtenentwurf.\n\nFormat: Entscheidung, Begründung, Material-ID,\nNachrichtenentwurf mit höchstens 120 Wörtern in der Sie-Form.\n\nPrüfung: Nenne am Ende, was fehlt oder unsicher ist, statt es zu\nerfinden. Keine Links, Termine oder Leistungen, die nicht im\nKontext stehen.\nDer Kontext steht oben, die Anweisungen danach. Bei langem Material antworten Modelle so besser, als wenn die Aufgabe vor dem Material steht."
+  },
+  {
+    "objectID": "werkzeuge/prompting.html#eine-änderung-gezielt-prüfen",
+    "href": "werkzeuge/prompting.html#eine-änderung-gezielt-prüfen",
+    "title": "Aufträge formulieren",
+    "section": "Eine Änderung gezielt prüfen",
+    "text": "Eine Änderung gezielt prüfen\nZunächst einen tatsächlich unpassenden Output benennen: etwa eine Einladung statt der erbetenen Zusammenfassung. Dann eine Regel präzisieren. Danach denselben Fall erneut prüfen und zusätzlich einen zuvor bestandenen Fall testen. Mehrere gleichzeitige Änderungen erschweren die Erklärung des Ergebnisses.\nDie bisherige Antwort schlägt ein Erstgespräch vor, obwohl K-02\nzunächst die Webinarinhalte nacharbeiten möchte.\nÜberarbeite die Empfehlung so, dass sie diesen Informationsbedarf\nbeantwortet. Behalte die Leistungsangaben unverändert.\nBegründe, welche Regel geändert wurde."
+  },
+  {
+    "objectID": "werkzeuge/prompting.html#briefing-vor-content",
+    "href": "werkzeuge/prompting.html#briefing-vor-content",
+    "title": "Aufträge formulieren",
+    "section": "Briefing vor Content",
+    "text": "Briefing vor Content\nEin Beitrag braucht Zielgruppe, Entscheidungssituation, Kernbotschaft, belegbare Aussagen und einen nächsten Schritt. Die Content-Briefing-Vorlage hält das fest. Die Erstellung von Varianten ist eine mögliche Erweiterung, kein Ersatz für die Problemklärung.\nNutze dieses Fallpaket und dieses Content-Briefing:\n&lt;Material und Briefing einfügen.&gt;\n\nErstelle einen LinkedIn-Entwurf mit höchstens 1.000 Zeichen.\nVerwende genau eine Kernbotschaft und einen nächsten Schritt.\nFühre danach auf, welche Angaben aus dem Fallpaket verwendet wurden.\nKennzeichne Annahmen. Behaupte keine gemessene Marketingwirkung."
+  },
+  {
+    "objectID": "werkzeuge/prompting.html#rückmeldung-eines-zweiten-chats",
+    "href": "werkzeuge/prompting.html#rückmeldung-eines-zweiten-chats",
+    "title": "Aufträge formulieren",
+    "section": "Rückmeldung eines zweiten Chats",
+    "text": "Rückmeldung eines zweiten Chats\nEin frischer Chat kann Kritik zu vorher festgelegten Kriterien liefern. Das Team gleicht sie mit dem Material ab. Zustimmung des zweiten Modells ist kein unabhängiger Wahrheitsbeweis.\nPrüfe diesen Entwurf gegen das beigefügte Fallpaket.\n&lt;Fallpaket, Kontakt und Entwurf einfügen.&gt;\n\nBewerte Anliegenbezug, korrekte Leistungsangaben und passenden\nnächsten Schritt. Nenne konkrete Textstellen und die zugehörige\nFallgrundlage. Wenn etwas unklar ist, benenne die Lücke.\nErstelle keinen neuen Text und erteile keine Freigabe."
+  },
+  {
+    "objectID": "werkzeuge/growth-marketing.html",
+    "href": "werkzeuge/growth-marketing.html",
+    "title": "Growth Marketing: Problem, Hypothese und Experiment",
+    "section": "",
+    "text": "Growth Marketing heißt: den Kundenweg kennen, die Stelle mit dem größten Verlust finden, eine Änderung als Hypothese formulieren und ihre Wirkung messen. Diese Seite liefert das Raster dafür am Fall Aurenta."
+  },
+  {
+    "objectID": "werkzeuge/growth-marketing.html#der-kundenweg",
+    "href": "werkzeuge/growth-marketing.html#der-kundenweg",
+    "title": "Growth Marketing: Problem, Hypothese und Experiment",
+    "section": "Der Kundenweg",
+    "text": "Der Kundenweg\nBei Aurenta führt der Weg vom Fachbeitrag über das Webinar und die Nachbereitung zum Erstgespräch, Angebot und Auftrag. An jedem Übergang gehen Kontakte verloren, und die Gründe unterscheiden sich: fehlendes Vertrauen, falscher Zeitpunkt, unklarer Nutzen. Deshalb braucht jeder Übergang eine eigene Maßnahme.\n\n\nDer Kundenweg bei Aurenta mit den Zahlen aus den drei Kampagnen. Der größte Verlust liegt zwischen Nachbereitung und Erstgespräch.\n\nVier Begriffe, die im Projekt ständig vorkommen:\n\nLead: ein Kontakt, der zur Zielgruppe passt und ein erkennbares Anliegen hat. Kein sicherer Auftrag.\nQualifizierung: die Prüfung, ob ein Lead zum Angebot passt, anhand vorher festgelegter Kriterien (bei Aurenta: benannte Marketingaufgabe, geklärte Zuständigkeit, passender nächster Schritt).\nConversion: ein vorher definierter Übergang, etwa vom Follow-up zum gebuchten Gespräch.\nConversion-Rate: Zähler, Nenner und Zeitraum. „16 Buchungen von 198 Follow-ups innerhalb von 14 Tagen” ist eine Rate, „16 Buchungen” allein nicht."
+  },
+  {
+    "objectID": "werkzeuge/growth-marketing.html#aarrr-als-raster",
+    "href": "werkzeuge/growth-marketing.html#aarrr-als-raster",
+    "title": "Growth Marketing: Problem, Hypothese und Experiment",
+    "section": "AARRR als Raster",
+    "text": "AARRR als Raster\n\n\n\n\n\n\n\n\nBereich\nFrage\nBei Aurenta\n\n\n\n\nAcquisition\nWie entsteht ein passender Erstkontakt?\nAnmeldung zum Webinar über einen Fachbeitrag\n\n\nActivation\nWann erlebt der Kontakt zum ersten Mal konkreten Nutzen?\nEine Arbeitshilfe hilft bei der Auswahl eines eigenen KI-Anwendungsfalls\n\n\nRetention\nWarum bleibt die Beziehung relevant?\nWeitere passende Inhalte, erneute Zusammenarbeit\n\n\nReferral\nWann wird das Angebot weiterempfohlen?\nEine zufriedene Kundin stellt einen Kontakt her\n\n\nRevenue\nWie entsteht Umsatz?\nBeauftragter Praxischeck\n\n\n\nIm Blockkurs geht es um den Übergang von Acquisition zu Activation: vom Webinar-Kontakt zum qualifizierten Gespräch. Die anderen Bereiche kommen im Semesterprojekt je nach Zuschnitt mit Zoi dazu."
+  },
+  {
+    "objectID": "werkzeuge/growth-marketing.html#wertschöpfungskette-und-growth-loop",
+    "href": "werkzeuge/growth-marketing.html#wertschöpfungskette-und-growth-loop",
+    "title": "Growth Marketing: Problem, Hypothese und Experiment",
+    "section": "Wertschöpfungskette und Growth Loop",
+    "text": "Wertschöpfungskette und Growth Loop\nVon der Frage zur Aktion führt eine Kette aus sieben Stufen. Sie stammt aus der Datenanalyse und gilt für jedes Marketingexperiment, bei Netflix genauso wie bei Aurenta.\n\n\n\n\n\n\n\n\nStufe\nWas passiert\nBei Aurenta\n\n\n\n\nFrage / Meinung\nEine Frage aus dem Geschäft und eine Meinung dazu, gestützt auf Erfahrung oder Literatur\nWarum führen nur 10 von 198 Follow-ups zu einem Gespräch? Meinung: Nachbereitung nach Anliegen bringt mehr Gespräche\n\n\nPlan\nProblem, Kennzahl und Studiendesign festlegen\nGesprächsquote = qualifizierte Gespräche ÷ Follow-ups in 14 Tagen; A/B-Test mit Kontroll- und Treatment-Gruppe\n\n\nDaten\nDaten erheben und aufbereiten\nJe Kontakt: Gruppe und Ergebnis\n\n\nAnalyse\nKennzahlen berechnen, Modelle bauen\nKreuztabelle Gruppe gegen Ergebnis, Zeilenanteile vergleichen\n\n\nReport\nSchlüsse ziehen und kommunizieren\nStarker Hinweis für die Treatment-Gruppe, noch kein statistischer Test\n\n\nAktion\nAuf die Schlüsse handeln\nEinladung noch nicht ersetzen, Test mit ausreichender Fallzahl planen\n\n\nEvaluation\nWirkung der Aktion prüfen\nGesprächsquote weiter beobachten, daraus entsteht die nächste Frage\n\n\n\nSo arbeitet das Team im Projekt: Jede Änderung am Workflow durchläuft diese Kette, in den Blocktagen im Kleinen (Testprotokoll statt Feldversuch), im Semester im Großen (Messdesign). Referenzfall aus der Statistik-Vorlesung: Netflix testet, ob eine andere Darstellung des Box-Art die Klickrate erhöht, mit demselben Aufbau (Tingley et al. 2021, „Decision Making at Netflix”).\nGrowth Loop: Ein Ergebnis wird zum Input für den nächsten Durchlauf. Beispiel für eine Beratung: Ein abgeschlossenes Projekt wird zur Fallstudie, die Fallstudie zieht passende Interessierte an, daraus entstehen neue Projekte und neue Fallstudien. Der Begriff stammt von Reforge.\n\n\nLinks die Wertschöpfungskette: Die Evaluation führt zur nächsten Frage. Rechts der Growth Loop: Das Ergebnis eines Durchlaufs ist der Input für den nächsten."
+  },
+  {
+    "objectID": "werkzeuge/growth-marketing.html#vom-material-zur-hypothese",
+    "href": "werkzeuge/growth-marketing.html#vom-material-zur-hypothese",
+    "title": "Growth Marketing: Problem, Hypothese und Experiment",
+    "section": "Vom Material zur Hypothese",
+    "text": "Vom Material zur Hypothese\nSo sehen die ersten Stufen der Kette am Fall Aurenta aus:\n\nBeobachtung: 198 Follow-ups führten zu 16 Buchungen und 10 qualifizierten Gesprächen. Von den Kontakten, die nur nachlesen wollten, hat 1 von 60 ein Gespräch gebucht, von denen mit Gesprächswunsch 10 von 28.\nMögliche Erklärungen: Die einheitliche Gesprächseinladung kommt für einen Teil der Kontakte zu früh. Oder: Angebot oder Zeitpunkt passen nicht.\nHypothese: Wenn die Nachbereitung den geäußerten Informationsbedarf berücksichtigt, entstehen innerhalb von 14 Tagen häufiger qualifizierte Gespräche als bei einer einheitlichen Gesprächseinladung, weil der nächste Schritt zur Situation des Kontakts passt.\nPlan: Vergleichbare Kontakte werden zufällig auf eine Kontrollgruppe (bisherige Einladung) und eine Treatment-Gruppe (Nachbereitung nach Anliegen) verteilt, die Regeln stehen vorher fest, gezählt werden die durchgeführten qualifizierten Gespräche je Gruppe.\n\nDie Experimentkarte hält Beobachtung, Hypothese und Kennzahl in dieser Reihenfolge fest."
+  },
+  {
+    "objectID": "werkzeuge/growth-marketing.html#ab-test",
+    "href": "werkzeuge/growth-marketing.html#ab-test",
+    "title": "Growth Marketing: Problem, Hypothese und Experiment",
+    "section": "A/B-Test: die Hypothese prüfen",
+    "text": "A/B-Test: die Hypothese prüfen\nEin A/B-Test vergleicht zwei Gruppen unter gleichen Bedingungen: die Kontrollgruppe A bekommt das Bisherige, die Treatment-Gruppe B die Änderung. Vier Regeln entscheiden darüber, ob das Ergebnis etwas aussagt:\n\nZufällige Zuteilung. Welcher Kontakt in welche Gruppe kommt, entscheidet der Zufall, nicht die Person, die den Kontakt bearbeitet. Sonst landen die vielversprechenden Kontakte in der Treatment-Gruppe.\nNur eine Änderung. Wer Text, Zeitpunkt und Absender gleichzeitig ändert, weiß am Ende nicht, was gewirkt hat.\nKennzahl und Zeitraum vorher festlegen. Bei Aurenta: Gesprächsquote = durchgeführte qualifizierte Gespräche ÷ Follow-ups, innerhalb von 14 Tagen. Nachträglich eine passendere Kennzahl zu wählen, macht jedes Ergebnis wertlos.\nGenug Fälle. Kleine Unterschiede bei kleinen Zahlen sind meistens Zufall.\n\n\n\nSo würde die Hypothese gemessen: gleiche Ausgangslage, zwei Gruppen, vorher festgelegte Kennzahl.\n\n\nKreuztabelle: Gruppe gegen Ergebnis\nDas Ergebnis eines A/B-Tests steht in einer Kreuztabelle (Kontingenztabelle): Zeilen sind die Gruppen, Spalten das Ergebnis, Zellen die Anzahl der Kontakte. Sie wird in drei Stufen gelesen. Beispiel mit erfundenen Zahlen für Aurenta:\nStufe 1: absolute Werte.\n\n\n\n\n\n\n\n\n\nGruppe\nQualifiziertes Gespräch\nKein qualifiziertes Gespräch\nSumme\n\n\n\n\nA: Kontrollgruppe, bisherige Einladung\n5\n94\n99\n\n\nB: Treatment-Gruppe, nach Anliegen\n9\n90\n99\n\n\nSumme\n14\n184\n198\n\n\n\nStufe 2: Zeilenanteile. Jede Zeile summiert auf 100 Prozent. Sie beantworten die Frage „Wie viele der Kontakte in Gruppe B führten ein qualifiziertes Gespräch?” Das ist die Gesprächsquote, die verglichen wird.\n\n\n\n\n\n\n\n\n\nGruppe\nQualifiziertes Gespräch\nKein qualifiziertes Gespräch\nSumme\n\n\n\n\nA: Kontrollgruppe\n5,1 %\n94,9 %\n100 %\n\n\nB: Treatment-Gruppe\n9,1 %\n90,9 %\n100 %\n\n\nGesamt\n7,1 %\n92,9 %\n100 %\n\n\n\nStufe 3: Spaltenanteile. Jede Spalte summiert auf 100 Prozent. Sie beantworten eine andere Frage: „Wie viele der geführten Gespräche kamen aus Gruppe B?” 9 von 14, also 64,3 Prozent. Das klingt eindrucksvoll, ist aber nicht die Gesprächsquote und sagt nichts über die Wirkung je Kontakt.\n\n\n\n\n\n\n\n\n\nGruppe\nQualifiziertes Gespräch\nKein qualifiziertes Gespräch\nSumme\n\n\n\n\nA: Kontrollgruppe\n35,7 %\n51,1 %\n50 %\n\n\nB: Treatment-Gruppe\n64,3 %\n48,9 %\n50 %\n\n\nSumme\n100 %\n100 %\n100 %\n\n\n\nFür den Vergleich der Gruppen zählen die Zeilenanteile: 9,1 gegen 5,1 Prozent. Der Unterschied sieht nach einem Erfolg aus, beruht aber auf 5 gegen 9 Gespräche. Vier Gespräche mehr oder weniger können Zufall sein. Das führt zur Inferenz-Frage: Ist der Unterschied zwischen den beiden Stichproben groß genug, um auf alle Kontakte zu schließen? Sie wird mit einem statistischen Test beantwortet (Vergleich zweier Anteile); den behandeln wir in einer eigenen Einheit im Semester, bevor das Messdesign entsteht. Bis dahin gilt: starker Hinweis, kein Beweis, nicht verallgemeinern.\nUm einen Anstieg von 5 % auf 10 % verlässlich nachzuweisen, braucht ein Test rund 400 Kontakte pro Gruppe. Für das Semesterprojekt heißt das: Das Messdesign wird vollständig geplant (Gruppen, Zuteilung, Kennzahl, Zeitraum, nötige Fallzahl, statistischer Test), die Durchführung übersteigt meist den Projektzeitraum. Bewertet wird die Qualität des Designs, nicht die Höhe der Zahlen.\n\n\nKreuztabelle: erwartete gegen tatsächliche Empfehlung\nDieselbe Tabellenform zeigt, wie gut ein Workflow entscheidet. Jeder Testfall hat zwei Merkmale: die erwartete Empfehlung, die das Team vor dem Lauf im Testprotokoll festgelegt hat, und die tatsächliche Empfehlung, die der Workflow ausgibt. Zeilen sind die Erwartungen, Spalten die Ausgaben, Zellen die Anzahl der Fälle. Fall K-02 mit Erwartung „Material” und Ausgabe „Erstgespräch” landet in Zeile Material, Spalte Erstgespräch.\nStufe 1: absolute Werte. Beispiel für neun Testfälle:\n\n\n\n\n\n\n\n\n\n\nErwartet (Zeile) / Workflow (Spalte)\nMaterial\nRückfrage\nErstgespräch\nSumme\n\n\n\n\nMaterial\n3\n0\n1\n4\n\n\nRückfrage\n0\n2\n1\n3\n\n\nErstgespräch\n0\n0\n2\n2\n\n\nSumme\n3\n2\n4\n9\n\n\n\nAuf der Diagonale stehen die Treffer: 7 von 9. Die beiden Fehler liegen in derselben Spalte, der Workflow empfiehlt zu oft ein Erstgespräch.\nStufe 2: Zeilenanteile beantworten: „Wenn Material erwartet war, wie oft hat der Workflow Material empfohlen?” 3 von 4, also 75 Prozent. Bei Rückfrage 2 von 3 (67 Prozent), bei Erstgespräch 2 von 2 (100 Prozent). Das ist die Trefferquote je erwarteter Empfehlung.\nStufe 3: Spaltenanteile beantworten: „Wenn der Workflow Erstgespräch empfiehlt, wie oft ist das richtig?” 2 von 4, also 50 Prozent. Bei Material und Rückfrage jeweils 100 Prozent. Das zeigt, welcher Ausgabe man trauen kann und welche Regel als Nächstes geändert wird.\nMit dieser Tabelle vergleicht das Team am Mittwoch den eigenen Workflow mit einer einfachen Lösung: gleiche Testfälle, zwei Tabellen, Diagonale und Anteile vergleichen. Bei so kleinen Fallzahlen ist der Vergleich ein Hinweis; ob der Unterschied belastbar ist, klärt später ein statistischer Test."
+  },
+  {
+    "objectID": "werkzeuge/growth-marketing.html#drei-arten-von-ergebnissen",
+    "href": "werkzeuge/growth-marketing.html#drei-arten-von-ergebnissen",
+    "title": "Growth Marketing: Problem, Hypothese und Experiment",
+    "section": "Drei Arten von Ergebnissen",
+    "text": "Drei Arten von Ergebnissen\nBei der Bewertung eines KI-Workflows im Marketing lassen sich drei Ebenen unterscheiden. Sie werden im Projekt getrennt gemessen.\n\n\n\n\n\n\n\n\nEbene\nFrage\nMessgröße\n\n\n\n\nMarketingwirkung\nBringt die Änderung mehr passende Gespräche?\nDurchgeführte qualifizierte Gespräche je Gruppe in einem festen Zeitraum\n\n\nQualität des Workflows\nSind die Empfehlungen und Texte richtig?\nAnteil korrekter Empfehlungen, gedeckte Aussagen, passende Sprache, eingehaltene Kontaktsperre\n\n\nArbeitsaufwand\nSpart der Workflow Zeit?\nBearbeitungszeit pro Kontakt inklusive Prüfung und Nacharbeit\n\n\n\nFür die erste Ebene ist der A/B-Test mit der Kreuztabelle Gruppe gegen Ergebnis das Werkzeug, für die zweite die Kreuztabelle erwartete gegen tatsächliche Empfehlung. In den Blocktagen wird die zweite Ebene geprüft, im Semesterprojekt kommen Messdesign und Aufwand dazu. Mehr Antworten auf ein Follow-up bedeuten nicht automatisch mehr passende Gespräche. Bei einem echten Versuch zählen auch unpassende Einladungen und Beschwerden mit."
+  },
+  {
+    "objectID": "werkzeuge/growth-marketing.html#beispiele",
+    "href": "werkzeuge/growth-marketing.html#beispiele",
+    "title": "Growth Marketing: Problem, Hypothese und Experiment",
+    "section": "Zwei Unternehmensbeispiele",
+    "text": "Zwei Unternehmensbeispiele\nIndeed setzt KI im Marketing unter anderem für kreative Entwürfe, Tests und Markenrecherche sowie für personalisierte Ansprache im Vertrieb ein, so die Marketingverantwortliche Maggie Hulce in einem Interview mit OpenAI vom Januar 2026. Transferfrage: Welcher wiederkehrende Vorbereitungsschritt bei Indeed ähnelt der Nachbereitung bei Aurenta?\nCopy.ai nutzt Claude in Content-Workflows zur Erstellung und Bearbeitung von Marketinginhalten, beschrieben in einer Fallstudie von Anthropic. Transferfrage: Welche Informationen und Prüfkriterien müssen feststehen, bevor Content in großer Zahl erzeugt wird?\nBeide Quellen sind Berichte der KI-Anbieter, keine unabhängigen Studien."
+  },
+  {
+    "objectID": "projekt.html",
+    "href": "projekt.html",
+    "title": "Semesterprojekt und Coaching",
+    "section": "",
+    "text": "Die Blocktage schaffen einen ersten Prototyp. Im Semester entwickeln die Teams daraus einen zusammenhängenden Marketingprozess, prüfen seinen Nutzen und bereiten die Übergabe an den Praxispartner vor."
+  },
+  {
+    "objectID": "projekt.html#rahmen",
+    "href": "projekt.html#rahmen",
+    "title": "Semesterprojekt und Coaching",
+    "section": "Rahmen",
+    "text": "Rahmen\n\n\n\nMerkmal\nFestlegung\n\n\n\n\nProjektpartner\nZoi\n\n\nFormat\nInterdisziplinäres Projekt, 5 SWS, sechs Dreierteams\n\n\nBlocktage\n21.–23.09.2026, 09:00–17:00 Uhr; Mittagspause jeweils 13:00–14:00 Uhr\n\n\nCoaching\nDienstag, 08:15–09:45 Uhr, Raum I008\n\n\nWeitere Arbeitszeit\nEigenständige Projektarbeit und Abstimmung im Team außerhalb des Coachings\n\n\nSprache\nVorlesung Deutsch; Projektinhalte und Kommunikation mit dem Partner Englisch\n\n\nProgrammierung\nKeine Voraussetzung; visuelle Umsetzung in n8n\n\n\n\nDie 90 Minuten Coaching sind nicht das gesamte Arbeitsbudget. Teams vereinbaren ein regelmäßiges eigenes Arbeitsfenster für Umsetzung, Tests und Dokumentation."
+  },
+  {
+    "objectID": "projekt.html#aufgabe",
+    "href": "projekt.html#aufgabe",
+    "title": "Semesterprojekt und Coaching",
+    "section": "Aufgabe und Zuschnitt",
+    "text": "Aufgabe und Zuschnitt\nJedes Team entwickelt einen zusammenhängenden Prozess für die Vermarktung einer Dienstleistung. Ausgangspunkt sind ein konkretes Marketingproblem, eine Zielgruppe und eine überprüfbare Nutzenannahme. Der fachliche Zuschnitt wird nach dem Zoi-Briefing im Coaching konkretisiert.\nDas Semesterprojekt hat vier Arbeitsbereiche. In den drei Blocktagen arbeiten alle Teams im Bereich Kontakte nachfassen. Welche Bereiche im Semester dazukommen und wie tief sie bearbeitet werden, hängt vom Briefing mit Zoi ab.\n\n\n\n\n\n\n\n\nArbeitsbereich\nFachbegriff\nWorum es geht\n\n\n\n\nPassende Kunden finden\nRecherche und Qualifizierung\nWelche Unternehmen kommen als Kunden infrage, und was wissen wir über sie?\n\n\nInhalte erstellen\nContent und Lokalisierung\nTexte für Website, LinkedIn oder Newsletter, auch in anderen Sprachen\n\n\nKontakte nachfassen\nNurturing und Follow-up\nWer sich für ein Webinar oder ein Whitepaper interessiert hat, bekommt den passenden nächsten Schritt\n\n\nErgebnisse auswerten\nReporting\nWelche Maßnahmen haben gewirkt, und was folgt daraus?\n\n\n\nDer bisherige Briefingentwurf nennt Lead-Liste mit Gesprächsbriefings, LinkedIn-Beitrag, Newsletter, zusätzliche Sprachfassung, Follow-up-Strecke und Reporting als Ergebnisse. Diese Liste dient der Abstimmung des Projektbriefs mit Zoi und ist kein zusätzlicher Auftrag für Montag bis Mittwoch. Änderungen am verbindlichen Prüfungsumfang werden durch die Lehrperson erläutert.\nKI wird dort eingesetzt, wo Sprachverständnis, Interpretation oder begrenzte Werkzeugwahl einen begründbaren Vorteil bieten. Eine möglichst große Zahl von Agenten ist kein Qualitätsmerkmal. Die Entscheidung für einen Agenten oder einen festen Workflow wird am konkreten Teilproblem geprüft."
+  },
+  {
+    "objectID": "projekt.html#coaching",
+    "href": "projekt.html#coaching",
+    "title": "Semesterprojekt und Coaching",
+    "section": "Project Studio: Sichtbare Zwischenstände",
+    "text": "Project Studio: Sichtbare Zwischenstände\nAlle Teams bringen wöchentlich einen kurzen Stand mit Beleg: was läuft, was unklar ist, welcher Versuch als Nächstes Erkenntnis bringen soll. Drei Teams erhalten pro Woche ein vertieftes Review, die anderen drei in der Folgewoche. Dringende Blockaden werden unabhängig von dieser Reihenfolge besprochen.\nEin möglicher 90-Minuten-Rahmen: 15 Minuten gemeinsame Befunde, 30 Minuten für drei Reviews, 35 Minuten betreute Teamarbeit und 10 Minuten Entscheidungen und Abschluss. Die Teams arbeiten zwischen den Terminen selbstständig weiter.\n\n\n\n\n\n\n\n\nCheckpoint\nSichtbares Ergebnis\nEntscheidung im Review\n\n\n\n\n1: Problem und Zuschnitt\nProjektbrief, Hypothese, Datenlage und Ablaufskizze\nIst das Problem relevant und bearbeitbar?\n\n\n2: Erster durchgängiger Ausschnitt\nAusgeführter Workflow mit Testbelegen\nSind Eingabe, Ausgabe und Grenzen nachvollziehbar?\n\n\n3: Ausbau und Evaluation\nVerbundene Schritte, Vergleich und dokumentierte Fehler\nBringt die Lösung gegenüber einer einfacheren Alternative einen Vorteil?\n\n\n4: Übergabe\nLive-Demo, Playbook und Evaluation\nKann der Partner die Lösung verstehen, prüfen und weiterentwickeln?\n\n\n\nDie Checkpoints sind formative Rückmeldungen und keine zusätzlichen benoteten Prüfungskomponenten. Ihre konkreten Termine werden im Coaching vereinbart. Die Zwischenpräsentation am 01.12. bleibt ein eigener benoteter Termin."
+  },
+  {
+    "objectID": "projekt.html#abgaben",
+    "href": "projekt.html#abgaben",
+    "title": "Semesterprojekt und Coaching",
+    "section": "Abgaben",
+    "text": "Abgaben\nAgenten und Workflows: ausführbare Konfigurationen und n8n-Exporte, Anweisungen im Wortlaut, verwendete Wissensquellen, erklärte Ein- und Ausgaben sowie erkennbare menschliche Entscheidungspunkte. Keine Schlüssel oder Zugangsdaten in den Abgaben.\nPlaybook: Einrichtung, Nutzung, Pflege, Fehlerbehandlung und bekannte Grenzen. Eine andere Person muss den dokumentierten Ablauf nachvollziehen können.\nEvaluation: Fragestellung und Kriterien vor dem Test, tatsächliche Testbelege, ein fairer Vergleich mit manueller Bearbeitung oder einem einfachen KI-Auftrag sowie eine vorsichtige Interpretation. Zeit einschließlich Prüfung und Nacharbeit erfassen, Einrichtung separat ausweisen.\nDie Teams arbeiten mit synthetischen Daten, öffentlichen Informationen und Testumgebungen. Damit können technische Funktion, Ergebnisqualität und Arbeitsaufwand untersucht werden. Reale Conversion- oder Umsatzwirkungen sind damit nicht nachgewiesen. Entscheidungen, Kontaktaufnahme und Versand bleiben menschlich; die Kursübungen versenden nichts."
+  },
+  {
+    "objectID": "projekt.html#pruefung",
+    "href": "projekt.html#pruefung",
+    "title": "Semesterprojekt und Coaching",
+    "section": "Termine und Prüfungsleistung",
+    "text": "Termine und Prüfungsleistung\nDie vorhandenen Termine und Gewichte der kombinierten Modulprüfung bleiben unverändert.\n\n\n\n\n\n\n\n\nKomponente\nGewicht\nTermin\n\n\n\n\nVorprüfungsleistung: Online-Kurse, individuell\nunbenotet\n17.11.2026\n\n\nZwischenpräsentation\n10 %\n01.12.2026\n\n\nAbschlusspräsentation mit Live-Demo\n20 %\nWoche vom 26.01.2027, genauer Termin wird abgestimmt\n\n\nAgenten und Workflows\n40 %\n12.02.2027\n\n\nPlaybook und Evaluation\n30 %\n12.02.2027\n\n\n\nDie vier benoteten Komponenten werden im Team erbracht. Bewertet werden die Qualität des Messdesigns und der Interpretation, nicht die Höhe von Kampagnenergebnissen. Konkrete Bewertungsdetails werden durch die Lehrperson bekannt gegeben. Jede Person beteiligt sich an Umsetzung, Prüfung und Präsentation.\n\nVorprüfungsleistung\nVorgesehen sind Online-Kurse zu KI-Grundlagen, KI-Agenten im Marketing, n8n und Inbound Marketing. Die veröffentlichte Projektbeschreibung nennt mindestens 80 Prozent im jeweiligen Abschlussquiz. Die verbindliche Kursliste, zulässigen Nachweise und der Abgabeweg werden gesondert bekannt gegeben; Anbieter können unterschiedliche Quiz- und Zertifikatsregeln haben. Die Website ersetzt diese Festlegung nicht durch eigene Ausnahmen.\n\n\nWeitere Termine\nZoi-Briefing: Dienstag, 22.09.2026, 10:00 Uhr vor Ort an der HdM. Ein weiterer Blocktag im Semester und der genaue Abschlusspräsentationstermin werden abgestimmt."
+  },
+  {
+    "objectID": "projekt.html#ablage",
+    "href": "projekt.html#ablage",
+    "title": "Semesterprojekt und Coaching",
+    "section": "Ablage und Arbeitsorganisation",
+    "text": "Ablage und Arbeitsorganisation\nDie Teamablage enthält Anweisungen, Exporte, Playbook und Evaluation. Ein Teamboard führt Zuständigkeiten und Arbeitsschritte. Versionen und Testbelege machen Beiträge nachvollziehbar. Das Coaching dient der Klärung und Rückmeldung, nicht als Ersatz für eigenständige Projektarbeit.\nGemini ist die gemeinsame Oberfläche für Promptübungen. Vorhandene Zugänge zu ChatGPT oder Claude dürfen verwendet werden. n8n ist das zentrale Werkzeug für Automatisierung; die Modellverbindung wird getrennt bereitgestellt. Für einen nachvollziehbaren Vergleich werden Produkt, Modell und Konfiguration dokumentiert."
+  },
+  {
+    "objectID": "start.html",
+    "href": "start.html",
+    "title": "Vorbereitung und Zugänge",
+    "section": "",
+    "text": "Ein Notebook, ein funktionierender Chat-Zugang und eine vorbereitete n8n-Umgebung genügen für den Einstieg. Eigene Programmierung und private Bezahlabos sind nicht erforderlich."
+  },
+  {
+    "objectID": "start.html#zugang",
+    "href": "start.html#zugang",
+    "title": "Vorbereitung und Zugänge",
+    "section": "Gemini als gemeinsame Oberfläche",
+    "text": "Gemini als gemeinsame Oberfläche\nDie Demonstrationen erfolgen in Gemini. Ein kostenloses Google-Konto genügt. Alle Pflichtübungen sind als Textaufgaben angelegt: Fallmaterial kopieren, Auftrag formulieren, Ergebnis prüfen und verbessern. Datei-Uploads, Bildgenerierung, Deep Research und selbst erstellte Gems sind keine Voraussetzung.\nVorhandene Zugänge zu ChatGPT oder Claude dürfen verwendet werden. Produkt und angezeigtes Modell werden im Testprotokoll festgehalten. Unterschiede sind ein möglicher Einflussfaktor; ein Vergleich zwischen Produkten belegt nicht allein den Nutzen einer Workflow-Architektur.\n\nIn drei Schritten einsatzbereit\n\ngemini.google.com öffnen und mit dem Google-Konto anmelden. Wer noch keines hat, legt ein kostenloses an.\nEinen neuen Chat starten und eine kurze Testfrage stellen, zum Beispiel: „Nenne drei Kennzahlen, mit denen sich der Erfolg eines Webinars messen lässt.”\nPrüfen, dass eine Antwort ankommt. Mehr ist für den Einstieg nicht nötig.\n\nWer das vor dem Kurstag erledigt, spart am Montag Zeit; wir richten den Zugang aber auch gemeinsam ein. Bei fehlendem Zugang wird zunächst gemeinsam an einem verfügbaren Gerät gearbeitet, ohne Kontopasswörter zu teilen. Die Lehrperson klärt den Kurszugang. Eine Prüfung vorbereiteter Ausgaben kann Wartezeit überbrücken, ersetzt aber keine eigene Durchführung.\n\n\n\n\n\n\nHinweisKostenloser Zugang und Limits\n\n\n\nFür die textbasierten Pflichtübungen ist kein Bezahlabo vorgesehen; der kostenlose Zugang reicht aus. Funktionen und Kontingente können sich ändern. Maßgeblich sind die Hinweise im eigenen Konto. Zusätzliche Käufe sind keine Übungsaufgabe.\n\n\n\n\n\n\n\n\nTippFreiwillig: Google AI Plus für Studierende\n\n\n\nGoogle stellt Studierenden und Auszubildenden ein Jahr lang Google AI Plus kostenlos bereit, mit höheren Nutzungslimits, mehr Speicher und zusätzlichen Funktionen.\nDas gehört nicht zum Kurs und bringt bei der Bewertung keinen Vorteil. Wer sich dafür interessiert, sollte vorher drei Punkte kennen:\n\nDas Angebot gilt ab 18 Jahren, die Berechtigung ist jährlich neu nachzuweisen.\nBei der Registrierung ist eine gültige Zahlungsmethode erforderlich.\nOhne rechtzeitige Kündigung verlängert sich das Abo nach Ablauf automatisch kostenpflichtig zu 21,99 Euro im Monat. Das Angebot selbst gilt bis 31.12.2026.\n\nWer das nicht möchte, arbeitet den ganzen Kurs über mit dem kostenlosen Zugang."
+  },
+  {
+    "objectID": "start.html#n8n",
+    "href": "start.html#n8n",
+    "title": "Vorbereitung und Zugänge",
+    "section": "n8n ab Montag",
+    "text": "n8n ab Montag\nDer Zugang zur Kursumgebung und die eingerichtete Modellverbindung werden durch die Lehrperson bereitgestellt. Ein Browser-Chatkonto stellt nicht automatisch eine API-Verbindung für n8n bereit: Die Gemini-App und die Gemini-API sind getrennte Zugänge mit eigenen Konten und eigenen Kontingenten. In n8n wird deshalb die vorbereitete Verbindung ausgewählt, nicht das eigene Gemini-Konto.\nDie Referenzworkflows enthalten keine Zugangsdaten. Nach dem Import muss die vorbereitete Verbindung ausgewählt und das freigegebene Modell eingestellt werden. Ein vollständiger Lauf mit den Kurszugängen ist der Zugangstest.\nFalls die Modellverbindung ausfällt, können Trigger, Kontaktfelder und feste Regeln weitergebaut werden. Modellantworten lassen sich übergangsweise im Chat prüfen. Dieser Ersatzweg wird als manuelle Simulation dokumentiert. Der echte Modellschritt in n8n wird nachgeholt."
+  },
+  {
+    "objectID": "start.html#team",
+    "href": "start.html#team",
+    "title": "Vorbereitung und Zugänge",
+    "section": "Zusammenarbeit vorbereiten",
+    "text": "Zusammenarbeit vorbereiten\nDie Teameinteilung erfolgt am Montag im Kurs. Dafür füllen alle zu Beginn eine kurze Umfrage zur Teambildung aus (etwa 6 bis 8 Minuten). Sie erfasst konkrete Erfahrungen, Lerninteressen und gemeinsame Arbeitszeiten. Daraus entstehen sechs Dreierteams. Die Fragen sind vorab als Textfassung einsehbar, eine Vorbereitung ist nicht nötig. Die Teambildung und das Kennenlernen erhalten am Montag eine volle Stunde.\nErgebnisse werden ab Montag in einer gemeinsamen Teamablage gesammelt. Falls die geteilte Ablage noch fehlt, reicht zunächst ein lokaler Teamordner. Zugangsdaten gehören nicht in Exporte, Screenshots oder Dokumente.\n\n\n\n\n\n\n\nOrdner\nInhalt\n\n\n\n\n01_Agenten\nWiederverwendbare Anweisungen und Wissensgrundlagen\n\n\n02_Workflows\nExporte, Skizzen, gesicherte Ausgaben\n\n\n03_Playbook\nProjektbrief, Teamvereinbarung und Bedienungsanleitung\n\n\n04_Evaluation\nExperimentkarte, Tests und Vergleiche"
+  },
+  {
+    "objectID": "start.html#regeln",
+    "href": "start.html#regeln",
+    "title": "Vorbereitung und Zugänge",
+    "section": "Arbeitsregeln",
+    "text": "Arbeitsregeln\nDie Übungen nutzen ausschließlich das synthetische Fallmaterial. Keine vertraulichen Unterlagen oder echten Kontaktdaten Dritter eingeben. Das ist kein Formalismus: Auf kostenlosen Zugängen können Inhalte zur Verbesserung der Produkte ausgewertet werden. Für synthetisches Übungsmaterial ist das unkritisch, für echte Daten wäre es das nicht. Nachrichten werden als Entwürfe abgelegt; keine Übung versendet, bucht oder verändert ein produktives CRM. Eine menschliche Prüfung bleibt sichtbar, auch wenn ein Modell seine Antwort für richtig hält.\nEin neuer unabhängiger Test beginnt in einem neuen Chat. Innerhalb einer Übung darf ein Prompt im Dialog verbessert werden; dieser Verlauf wird als Überarbeitung gekennzeichnet. Für einen Vergleich werden die endgültigen Anweisungen anschließend in frischen Chats geprüft."
+  },
+  {
+    "objectID": "start.html#optional-modelle-vergleichen",
+    "href": "start.html#optional-modelle-vergleichen",
+    "title": "Vorbereitung und Zugänge",
+    "section": "Optional: Modelle vergleichen",
+    "text": "Optional: Modelle vergleichen\nArena kann für eine kurze Zusatzübung verwendet werden: derselbe Fall, zwei Antworten, vorher festgelegte Kriterien. Es ist kein Pflichtzugang. Direct und Side-by-Side erfordern laut Arena-Hilfe eine Anmeldung; Nutzungslimits bleiben bestehen. Dafür ist kein zusätzlicher Block im Pflichtprogramm vorgesehen.\nWeiter zum Montag"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Agentic AI für Growth Marketing",
+    "section": "",
+    "text": "HdM Stuttgart · 21.–23. September 2026 · 09:00–17:00 Uhr\n\n\nIn den drei Blocktagen lernen wir Gemini und n8n kennen und bauen im Team einen ersten KI-Workflow für ein konkretes Marketingproblem. Daraus entsteht das Semesterprojekt mit Zoi.\n\nZum ersten Tag Zugänge und Vorbereitung"
+  },
+  {
+    "objectID": "index.html#die-drei-tage",
+    "href": "index.html#die-drei-tage",
+    "title": "Agentic AI für Growth Marketing",
+    "section": "Die drei Tage",
+    "text": "Die drei Tage\n\n\n\nTag\nThema\n\n\n\n\n\nMontag, 21.09.\nTeamfindung, Growth-Hypothese am Übungsfall, erster eigener n8n-Workflow\nZum Tag\n\n\nDienstag, 22.09.\nBriefing durch Zoi um 10 Uhr, Projektbrief, Ablaufskizze, Ausbau des Workflows\nwird am Morgen freigeschaltet\n\n\nMittwoch, 23.09.\nTestfälle, Vergleich mit einer einfachen Lösung, Live-Demo, Start ins Semesterprojekt\nwird am Morgen freigeschaltet"
+  },
+  {
+    "objectID": "index.html#so-ist-die-seite-aufgebaut",
+    "href": "index.html#so-ist-die-seite-aufgebaut",
+    "title": "Agentic AI für Growth Marketing",
+    "section": "So ist die Seite aufgebaut",
+    "text": "So ist die Seite aufgebaut\nDie Tagesseiten sind der Fahrplan: Dort steht, was wir gerade machen, mit allen Aufgaben und Links. Der Werkzeugkasten ist ein Nachschlagewerk für genau diese Aufgaben und muss nicht vorher gelesen werden. Unter Materialien liegen alle Dateien und Vorlagen an einer Stelle. Die Seiten für Dienstag und Mittwoch schalten wir am jeweiligen Morgen frei."
+  },
+  {
+    "objectID": "index.html#der-übungsfall",
+    "href": "index.html#der-übungsfall",
+    "title": "Agentic AI für Growth Marketing",
+    "section": "Der Übungsfall",
+    "text": "Der Übungsfall\nAn den drei Tagen arbeiten wir mit einem fiktiven Fall: Die KI-Beratung Aurenta bietet Marketingabteilungen einen „KI-Praxischeck Marketing“ an. Nach einem Webinar stellt sich die Frage, welcher nächste Schritt zu welchem Kontakt passt: Material, eine Klärung oder ein Erstgespräch. Die Teams arbeiten mit synthetischen Kontakten und Kampagnenzahlen, begründen eine Entscheidung und automatisieren einen kleinen Teil des Ablaufs. Aurenta hat eine eigene Website, das Fallpaket steht unter Materialien. Der reale Projektzuschnitt mit Zoi entsteht nach dem Briefing am Dienstag."
+  },
+  {
+    "objectID": "tage/montag.html",
+    "href": "tage/montag.html",
+    "title": "Montag: Vom Marketingproblem zum ersten Workflow",
+    "section": "",
+    "text": "21. September 2026 · 09:00–17:00 Uhr · Sechs Teams à drei Personen"
+  },
+  {
+    "objectID": "tage/montag.html#ziel-und-tagesergebnis",
+    "href": "tage/montag.html#ziel-und-tagesergebnis",
+    "title": "Montag: Vom Marketingproblem zum ersten Workflow",
+    "section": "Ziel und Tagesergebnis",
+    "text": "Ziel und Tagesergebnis\nAm Ende des Tages hat jedes Team einen ersten eigenen KI-Workflow gebaut und an Beispielen ausprobiert.\n\n\n\n\n\n\nHinweisBausteine des Tages\n\n\n\n\n\nFest sind Beginn um 09:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr. Dazwischen arbeiten wir in Bausteinen. Die Dauer ist eine Schätzung; Reihenfolge und Umfang passen wir daran an, wie die Teamarbeit läuft. Dass ein Baustein länger dauert und ein anderer entfällt, ist eingeplant.\n\n\n\n\n\n\n\n\nBaustein\nDauer\nArbeitsform\n\n\n\n\nProjekt und Semesterziel\nca. 20 Min\nGemeinsam\n\n\nZugang zu Gemini einrichten\nca. 15 Min\nEinzeln\n\n\nTeams bilden: Umfrage und Einteilung\nca. 20 Min\nEinzeln, dann gemeinsam\n\n\nÜbung 1.1: Als Team arbeitsfähig werden\nca. 60 Min\nDreierteams\n\n\nGrowth Marketing am Beratungsfall\nca. 30 Min\nInput mit gemeinsamer Auswertung\n\n\nÜbung 1.2: Vom Trichter zur Hypothese\nca. 30 Min\nDreierteams\n\n\nKI verstehen und Aufträge formulieren\nca. 20 Min\nInput\n\n\nÜbung 1.3: Der erste Prompt\nca. 20 Min\nEinzeln, dann im Team\n\n\nn8n-Demo und Vergleich Workflow / Agent\nca. 20 Min\nGemeinsam\n\n\nÜbung 1.4: Der erste eigene Workflow\nca. 90 Min\nAngeleitet in den Teams\n\n\nÜbung 1.5: Eine Entscheidung verbessern\nca. 45 Min\nDreierteams\n\n\nTeamdemos, Reflexion und Fragen für Zoi\nca. 45 Min\nGemeinsam\n\n\n\nZwei kurze Pausen legen wir nach Bedarf ein, etwa gegen 10:30 und gegen 15:00 Uhr."
+  },
+  {
+    "objectID": "tage/montag.html#projektstart",
+    "href": "tage/montag.html#projektstart",
+    "title": "Montag: Vom Marketingproblem zum ersten Workflow",
+    "section": "Projektstart",
+    "text": "Projektstart\n\nFolien\n\n\nProjektstart Semester, Prüfung, Teams\n\n\n\nÜberblick über das Semester: Projektziel, die drei Blocktage, das wöchentliche Coaching, Prüfungsleistung und Termine.\n\nDer Übungsfall: Aurenta\nDie Frage des Semesters lautet: Wo im Growth Marketing lohnt sich Agentic AI? Beantworten lässt sie sich nur, indem man einen Ablauf baut und an konkreten Fällen prüft. Deshalb arbeiten alle Teams an den drei Tagen an einem kleinen, vollständig bekannten Übungsfall aus dem Bereich Kontakte nachfassen. Das Vorgehen (Problem beobachten, Annahme formulieren, Workflow bauen, an Fällen testen) übertragen die Teams im Semester auf die Bereiche, die für Zoi wichtig sind.\nDie fiktive KI-Beratung Aurenta unterstützt Marketingabteilungen mittelständischer B2B-Unternehmen dabei, geeignete KI-Anwendungen auszuwählen. Ihr Produkt ist der „KI-Praxischeck Marketing“: zwei Wochen, ein Workshop, drei priorisierte Anwendungsfälle, ein kleiner Prototyp, 2.400 Euro netto.\n\nZum Kennenlernen\nDie Website von Aurenta zeigt das Unternehmen so, wie es ein Kontakt sieht: Startseite, Praxischeck, Webinar, Fachbeitrag, Erstgespräch. Das Fallpaket fasst auf einer Seite zusammen, was die Teams wissen müssen: das Problem, die drei Möglichkeiten, die Regeln und die sechs Kontakte.\nWebsite von Aurenta Fallpaket\n\nAurenta beschreibt kein reales Angebot von Zoi. Der reale Projektzuschnitt entsteht nach dem Briefing am Dienstag."
+  },
+  {
+    "objectID": "tage/montag.html#zugang",
+    "href": "tage/montag.html#zugang",
+    "title": "Montag: Vom Marketingproblem zum ersten Workflow",
+    "section": "Zugang einrichten",
+    "text": "Zugang einrichten\n\nAufgabe · etwa 15 Minuten\nWir arbeiten im Kurs mit Gemini. Ein kostenloses Google-Konto genügt, ein Bezahlabo ist für keine Pflichtübung nötig.\n\ngemini.google.com öffnen und mit dem Google-Konto anmelden. Wer noch keines hat, legt jetzt ein kostenloses an.\nEinen neuen Chat starten und eine Testfrage stellen: „Nenne drei Kennzahlen, mit denen sich der Erfolg eines Webinars messen lässt.”\nPrüfen, dass eine Antwort ankommt. Mehr ist für den Einstieg nicht nötig.\n\nGemini öffnen\n\nWer bereits einen Zugang zu ChatGPT oder Claude hat, darf ihn verwenden. Wichtig ist nur, dass später im Testprotokoll steht, mit welchem Produkt und welchem Modell gearbeitet wurde.\nDas Studierendenangebot von Google, ein Jahr Google AI Plus kostenlos, ist freiwillig und für den Kurs nicht erforderlich. Es verlangt bei der Registrierung eine Zahlungsmethode und verlängert sich ohne Kündigung kostenpflichtig. Die Bedingungen stehen in der Vorbereitung.\nAm Nachmittag kommt n8n dazu. Dort wird nicht das eigene Konto eingetragen, sondern eine vorbereitete Verbindung ausgewählt. Chat und Schnittstelle sind zwei getrennte Zugänge; warum das so ist, sehen wir uns in Übung 1.4 an."
+  },
+  {
+    "objectID": "tage/montag.html#teams",
+    "href": "tage/montag.html#teams",
+    "title": "Montag: Vom Marketingproblem zum ersten Workflow",
+    "section": "Teams bilden",
+    "text": "Teams bilden\nDas Projekt wird über das ganze Semester in sechs Dreierteams bearbeitet. Ziel sind Teams, in denen die Zusammenarbeit gut funktioniert, sich unterschiedliche Fähigkeiten ergänzen und Raum für neue Erfahrungen bleibt. Vorkenntnisse werden nicht vorausgesetzt; gefragt sind die bisherige Praxis und die eigenen Lernwünsche für das Projekt.\n\nAufgabe · etwa 6 bis 8 Minuten\nDie Umfrage zur Teambildung ausfüllen. Sie fragt nach Stärken, Lerninteressen und Marketingpraxis, nach Erfahrungen mit KI, Automatisierung und Daten sowie nach gemeinsamen Arbeitszeiten in der Woche. Angaben zu Programmierung sind freiwillig.\nUmfrage öffnen\n\nDie Einteilung erfolgt anschließend im Kurs."
+  },
+  {
+    "objectID": "tage/montag.html#uebung-1-1",
+    "href": "tage/montag.html#uebung-1-1",
+    "title": "Montag: Vom Marketingproblem zum ersten Workflow",
+    "section": "Übung 1.1: Als Team arbeitsfähig werden",
+    "text": "Übung 1.1: Als Team arbeitsfähig werden\n\nEtwa eine Stunde · Dreierteams\n\nAufgabe\nDrei Schritte nach der Anleitung: Vorstellungsrunde, den Fall kennenlernen (Fallpaket lesen und entscheiden, welche der sechs Kontakte ihr zum Erstgespräch einladen würdet), Absprachen treffen (festes Arbeitsfenster, Kommunikationskanal, Vorgehen bei Abwesenheit). Die Absprachen kommen in die Teamablage.\nAnleitung öffnen\n\nErgebnis: Die Absprachen in der Teamablage und drei verteilte Rollen für die nächste Übung."
+  },
+  {
+    "objectID": "tage/montag.html#growth",
+    "href": "tage/montag.html#growth",
+    "title": "Montag: Vom Marketingproblem zum ersten Workflow",
+    "section": "Growth Marketing am Fall",
+    "text": "Growth Marketing am Fall\n\nFolien\n\n\nGrowth Marketing am Fall Aurenta Kundenweg, AARRR, Zyklus, Hypothese\n\n\n\nKurzer Input mit dem Werkzeugkasten Growth Marketing: der Kundenweg von Aurenta vom Fachbeitrag bis zum Auftrag, AARRR als Raster für die Kennzahlen, der Unterschied zwischen Experimentierzyklus und Growth Loop, dazu zwei Unternehmensbeispiele für KI-Aufgaben im Marketing.\nGemeinsam am Fall: In den drei Kampagnen von Aurenta führten 198 Follow-ups zu 16 gebuchten und 10 durchgeführten qualifizierten Gesprächen. An welcher Stelle des Kundenwegs gehen die meisten Kontakte verloren, und welche Kennzahl zeigt das? Die Lesehilfe erklärt, wie die Quoten gebildet werden."
+  },
+  {
+    "objectID": "tage/montag.html#uebung-1-2",
+    "href": "tage/montag.html#uebung-1-2",
+    "title": "Montag: Vom Marketingproblem zum ersten Workflow",
+    "section": "Übung 1.2: Vom Trichter zur Hypothese",
+    "text": "Übung 1.2: Vom Trichter zur Hypothese\n\nEtwa 30 Minuten · Dreierteams\nMaterial: Webinar-Kontakte als Google Sheet, Anleitung Pivot-Tabellen, Experimentkarte für Montag.\n\nEine Person öffnet das Google Sheet und legt über „Datei” und „Kopie erstellen” eine Kopie in der Teamablage an. Die anderen beiden schauen mit.\nNach der Anleitung die erste Pivot-Tabelle anlegen: Zeilen sind die Kampagnen, Werte sind die vier Ergebnisspalten als Summe. In die Experimentkarte unter „Beobachtung” schreiben, an welcher Stelle des Weges die meisten Kontakte verloren gehen, mit Zahlen: Zähler und Nenner.\nDie zweite Pivot-Tabelle anlegen: Zeilen sind die Anliegen-Kategorien, Spalten ist „Gespräch gebucht”, Filter ist „Nachricht gesendet”. Ebenfalls unter „Beobachtung” notieren, welche Gruppe fast nie bucht und welche vergleichsweise oft.\nIm Team zwei mögliche Erklärungen für die Beobachtung aufschreiben. Beide müssen sich auf die Tabellen stützen, nicht auf Vermutungen über die Personen.\nEine der beiden Erklärungen als Hypothese formulieren, nach dem Muster „Wenn wir X ändern, dann Y, weil Z”. X ist eine Änderung, die Aurenta selbst vornehmen kann, Y eine Zahl, die sich messen lässt, Z der Grund. Beispiel aus einem anderen Bereich: Wenn ein Onlineshop die Versandkosten schon auf der Produktseite zeigt, dann sinkt der Anteil abgebrochener Bestellungen, weil weniger Kunden erst an der Kasse überrascht werden.\nDie Kennzahl festlegen, an der sich die Hypothese später prüfen ließe: Zähler, Nenner, Zeitraum. In die Experimentkarte unter „Kennzahl”.\n\nErgebnis: Die Kopie des Sheets mit zwei Pivot-Tabellen und die ausgefüllte Experimentkarte (Beobachtung, Hypothese, Kennzahl), beides in der Teamablage."
+  },
+  {
+    "objectID": "tage/montag.html#uebung-1-3",
+    "href": "tage/montag.html#uebung-1-3",
+    "title": "Montag: Vom Marketingproblem zum ersten Workflow",
+    "section": "Übung 1.3: Der erste Prompt",
+    "text": "Übung 1.3: Der erste Prompt\n\nFolien\n\n\nKI verstehen und Aufträge formulieren Input vor der Übung\n\n\n\n\nEtwa 20 Minuten · Erst einzeln, dann im Team\nMaterial: Kontext für Gemini, Fallpaket für die Regeln, zwei Beispielantworten mit typischen Fehlern.\nDer Prompt unten ist die Vorstufe des Workflows aus Übung 1.4. Dort übernimmt n8n dieselbe Anweisung als KI-Schritt. Vorher soll jedes Team gesehen haben, was das Modell damit macht.\n\nJede Person öffnet einen neuen Chat und kopiert den Prompt unten hinein. An der markierten Stelle den kompletten Text aus dem Google Doc „Kontext für Gemini” einfügen: im Doc alles markieren, kopieren, im Chat an der Stelle einfügen. Das Doc muss nicht gelesen werden.\nAbschicken. Die Antwort in ein Dokument in der Teamablage kopieren, mit dem Namen der Person darüber.\nDie drei Antworten nebeneinander legen und für jede vier Fragen beantworten: Empfiehlt sie Material, Rückfrage oder Erstgespräch? Stimmt das mit Regel 3 im Fallpaket überein (wer um Informationen bittet und kein Gespräch will, bekommt Material)? Wird eine Aufzeichnung oder ein Termin erfunden? Steht am Ende, was fehlt oder unsicher ist?\nIn zwei Sätzen festhalten, worin sich die drei Antworten unterscheiden, obwohl der Prompt derselbe war. Zum Vergleich die zwei Beispielantworten ansehen.\n\nKontext:\n&lt;Hier den kompletten Text aus dem Google Doc „Kontext für Gemini“ einfügen.&gt;\nKontakt K-02: Content Marketing in einem technischen Handelsunternehmen.\nNicht am Webinar teilgenommen. Anliegen: „Gibt es eine Aufzeichnung?\nIch möchte zunächst die Inhalte nacharbeiten.“ Sprache: Deutsch.\nKontakt erlaubt: ja.\n\nAufgabe: Empfiehl für Kontakt K-02 den nächsten Schritt (Material,\nRückfrage oder Erstgespräch), begründe die Entscheidung und schreibe\nden Nachrichtenentwurf.\n\nFormat: Entscheidung, Begründung mit Bezug auf das Anliegen, bei Material\ndie Arbeitshilfe (M1, M2 oder M3), Nachrichtenentwurf mit höchstens\n120 Wörtern in der Sie-Form.\n\nPrüfung: Nenne am Ende, was fehlt oder unsicher ist, statt es zu\nerfinden. Keine Links, Anhänge, Termine oder Leistungen, die nicht\nim Kontext stehen.\nErgebnis: Der Prompt und die drei bewerteten Antworten in der Teamablage."
+  },
+  {
+    "objectID": "tage/montag.html#demo",
+    "href": "tage/montag.html#demo",
+    "title": "Montag: Vom Marketingproblem zum ersten Workflow",
+    "section": "n8n sehen und verstehen",
+    "text": "n8n sehen und verstehen\n\nFolien\n\n\nn8n: Workflows und Agenten Demo mit Simulator\n\n\n\nDemo des Starter-Workflows: Start → Kontaktfelder → KI-Schritt (Empfehlung und Entwurf) → Ergebnis zur Prüfung. Ein Knoten ist ein Arbeitsschritt, eine Verbindung reicht Daten weiter, ein manueller Start verarbeitet genau einen Kontakt.\nZum Vergleich die Agenten-Demo: Dort wählt das Modell selbst, welches von zwei Wissenswerkzeugen es aufruft. Der Aufruf ist im Laufprotokoll sichtbar.\nDiskussion: Welche Schritte brauchen Sprachverständnis, welche sind feste Regeln? Warum gibt den Entwurf am Ende eine Person frei und nicht der Workflow?"
+  },
+  {
+    "objectID": "tage/montag.html#uebung-1-4",
+    "href": "tage/montag.html#uebung-1-4",
+    "title": "Montag: Vom Marketingproblem zum ersten Workflow",
+    "section": "Übung 1.4: Der erste eigene Workflow",
+    "text": "Übung 1.4: Der erste eigene Workflow\n\nVor und nach der Mittagspause · Dreierteams\nMaterial: Bauanleitung, Starter als Referenz, Kontaktliste, alle Vorlagen mit Anleitungen als ZIP.\nVor der Pause: Einen neuen Workflow mit Manual Trigger und Edit Fields anlegen. Dort die Felder von Kontakt K-01 eintragen (Kontakt-ID, Rolle, Teilnahme, Anliegen, Sprache, Kontaktfreigabe). Ausführen und prüfen, dass alle Felder im Ergebnis ankommen.\nNach der Pause: Eine Basic LLM Chain anhängen, das Kursmodell auswählen, den n8n-Prompt einfügen und die Eingabefelder zuordnen. Dahinter ein zweites Edit Fields, das Empfehlung, Entwurf und freigabe = offen ausgibt. Die Bauanleitung zeigt jede Zuordnung. Wer nicht weiterkommt, importiert den Referenzexport, vollzieht die Schritte nach und nimmt eine eigene Änderung vor.\nFalls die Modellverbindung noch nicht läuft: Variante 00 ohne KI importieren, einen Lauf ansehen und die Kontaktfreigabe verändern. Der Modellschritt wird nachgeholt.\nNach jedem Lauf wechseln die Rollen (bedienen, fachlich prüfen, dokumentieren). Jede Person ändert mindestens einmal ein Feld oder eine Regel und führt den Lauf aus.\nPrüfung: Kommt das richtige Anliegen beim Modell an? Bleibt die Kontakt-ID erhalten? Steht freigabe unabhängig von der Modellausgabe auf offen? Enthält der Ablauf keine Versandaktion?\nErgebnis: Ein eigener Workflow, der für K-01 durchläuft, plus Export oder Screenshot in der Teamablage."
+  },
+  {
+    "objectID": "tage/montag.html#uebung-1-5",
+    "href": "tage/montag.html#uebung-1-5",
+    "title": "Montag: Vom Marketingproblem zum ersten Workflow",
+    "section": "Übung 1.5: Eine Entscheidung verbessern",
+    "text": "Übung 1.5: Eine Entscheidung verbessern\n\nEtwa 45 Minuten · Dreierteams\nMaterial: Eigener Workflow, Kontakte K-01, K-02 und K-03 aus der Kontaktliste, Testprotokoll.\n\nFür K-01, K-02 und K-03 vor dem Lauf ins Testprotokoll eintragen, welche Empfehlung erwartet wird (Material, Rückfrage oder Erstgespräch) und woran eine gute Antwort erkennbar ist.\nDie drei Kontakte nacheinander durch den Workflow laufen lassen. Empfehlung, Entwurf und Auffälligkeiten ins Testprotokoll eintragen.\nEine Regel im Prompt ändern, die einen der Fehler behebt (etwa: wer nicht am Webinar teilgenommen hat, bekommt zuerst Material). Den betroffenen Kontakt erneut laufen lassen, danach einen Kontakt, der vorher richtig war, ebenfalls noch einmal, damit die Änderung nichts verschlechtert.\nKurz im Team: Was hat die Änderung gebracht, was bleibt offen?\n\nErgebnis: Drei Zeilen im Testprotokoll und eine dokumentierte Änderung mit Vorher und Nachher. Wer schneller fertig ist: K-04 (Englisch) ergänzen oder den strukturierten Ausbau ansehen."
+  },
+  {
+    "objectID": "tage/montag.html#abschluss",
+    "href": "tage/montag.html#abschluss",
+    "title": "Montag: Vom Marketingproblem zum ersten Workflow",
+    "section": "Demo und Reflexion",
+    "text": "Demo und Reflexion\nJedes Team zeigt kurz: die Hypothese, einen Workflow-Lauf live, eine Empfehlung mit Begründung und einen offenen Punkt. Keine Folien.\nDanach sammelt jedes Team bis zu drei Fragen an Zoi für das Briefing am Dienstag, zum Beispiel: Was ist für Zoi ein passender Lead? Wie läuft die Nachbereitung von Kontakten heute? Welche Daten gibt es dazu? Die Fragen kommen in die Teamablage.\n\nAlle Folien zu diesem Tag\nDie Präsentationen öffnen sich in einem neuen Tab. Pfeiltasten zum Blättern, auf interaktiven Folien Regler und Buttons nutzen.\n\n\nProjektstart Semester, Prüfung, Teams\n\n\nGrowth Marketing am Fall Aurenta Kundenweg, Hypothese, Experiment\n\n\nKI verstehen und Aufträge formulieren vor Übung 1.3\n\n\nn8n: Workflows und Agenten Demo vor Übung 1.4\n\n\n\nWie es am Dienstag weitergeht, sehen wir am Dienstagmorgen."
+  },
+  {
+    "objectID": "werkzeuge/index.html",
+    "href": "werkzeuge/index.html",
+    "title": "Werkzeugkasten",
+    "section": "",
+    "text": "Kurze Erklärungen für die Aufgabe, die gerade ansteht. Die Blocktage verlinken direkt auf die benötigten Abschnitte.\nDer Werkzeugkasten ist zum Nachschlagen da, nicht zum Durchlesen. Niemand muss diese Seiten vorbereiten oder am Stück lesen. In den Übungen steht jeweils dabei, welcher Abschnitt gerade hilft; dorthin führt dann ein direkter Link.\n\n\n\nFrage\nEinstieg\n\n\n\n\nWelches Marketingproblem soll gelöst werden?\nGrowth Marketing\n\n\nWas kann ein Sprachmodell aus dem Material ableiten?\nKI verstehen\n\n\nWie wird daraus ein brauchbarer Auftrag?\nAufträge formulieren\n\n\nWie bleiben Regeln und Wissen wiederverwendbar?\nAnweisungen\n\n\nWie entsteht ein ausführbarer Prozess?\nn8n und Agenten\n\n\nWoran ist ein besseres Ergebnis erkennbar?\nPrüfen und vergleichen\n\n\n\nAlle Materialien und Downloads"
+  },
+  {
+    "objectID": "werkzeuge/ki-verstehen.html",
+    "href": "werkzeuge/ki-verstehen.html",
+    "title": "KI verstehen",
+    "section": "",
+    "text": "Für die Übungen genügen einige Grundlagen: Was ein Modell aus dem Kontext ableiten kann, welche Informationen fehlen und warum auch eine überzeugende Antwort geprüft werden muss."
+  },
+  {
+    "objectID": "werkzeuge/ki-verstehen.html#modell-chat-und-workflow",
+    "href": "werkzeuge/ki-verstehen.html#modell-chat-und-workflow",
+    "title": "KI verstehen",
+    "section": "Modell, Chat und Workflow",
+    "text": "Modell, Chat und Workflow\nEin Sprachmodell erzeugt Ausgaben auf Basis gelernter Muster und des bereitgestellten Kontexts. Das Chatprodukt ergänzt beispielsweise Verlauf, Websuche oder Dateifunktionen. Ein n8n-Workflow verbindet einzelne Arbeitsschritte und kann ein Modell über eine Schnittstelle aufrufen. Ein Chatkonto und eine Modellverbindung in n8n sind unterschiedliche Zugänge."
+  },
+  {
+    "objectID": "werkzeuge/ki-verstehen.html#vier-begriffe",
+    "href": "werkzeuge/ki-verstehen.html#vier-begriffe",
+    "title": "KI verstehen",
+    "section": "Vier Begriffe",
+    "text": "Vier Begriffe\n\n\n\n\n\n\n\nBegriff\nBedeutung für die Übung\n\n\n\n\nToken\nEinheiten, in denen Text verarbeitet wird, oft Wortteile. Lange Materialien benötigen mehr Verarbeitungskapazität.\n\n\nKontext\nInformationen, die dem Modell für die aktuelle Aufgabe tatsächlich vorliegen. Das Angebot von Aurenta gehört ausdrücklich hinein.\n\n\nTrainingswissen\nAllgemeine gelernte Muster und Informationen. Daraus folgt keine Kenntnis des fiktiven Angebots oder aktueller interner Daten.\n\n\nHalluzination\nPlausibel formulierte, aber nicht gedeckte oder falsche Aussage. Ein erfundener Buchungslink wäre ein Beispiel."
+  },
+  {
+    "objectID": "werkzeuge/ki-verstehen.html#kontext-praktisch-prüfen",
+    "href": "werkzeuge/ki-verstehen.html#kontext-praktisch-prüfen",
+    "title": "KI verstehen",
+    "section": "Kontext praktisch prüfen",
+    "text": "Kontext praktisch prüfen\nDie Frage „Was kostet der KI-Praxischeck Marketing von Aurenta?“ zunächst als Frage nach einer fehlenden Grundlage betrachten. Der Name allein belegt keinen Preis. Mit der Angebotsbeschreibung ist der fiktive Preis eindeutig: 2.400 Euro netto. Die Aussage ist innerhalb des Falls prüfbar, aber keine reale Marktinformation.\nDas Üben verlangt keine absichtlich irreführenden Quellen. Entscheidend ist, ob das Modell vorhandene Angaben nutzt und echte Lücken erkennt. Der Preis ist bekannt, konkrete Gesprächstermine sind es nicht."
+  },
+  {
+    "objectID": "werkzeuge/ki-verstehen.html#ausgaben-bleiben-überprüfbar",
+    "href": "werkzeuge/ki-verstehen.html#ausgaben-bleiben-überprüfbar",
+    "title": "KI verstehen",
+    "section": "Ausgaben bleiben überprüfbar",
+    "text": "Ausgaben bleiben überprüfbar\nGleiche Eingaben können unterschiedliche Ausgaben erzeugen. Modell, Einstellungen, Produktfunktionen und Kontext beeinflussen das Ergebnis. Ein erfolgreicher Lauf reicht deshalb nicht für eine allgemeine Zuverlässigkeitsaussage.\nEine Quellen-ID belegt nur etwas, wenn die referenzierte Information tatsächlich vorliegt. Ein Modell kann auch Quellenangaben erfinden. Im Fallpaket sind Q1 bis Q8 interne Material-IDs; sie sind keine externen Publikationen."
+  },
+  {
+    "objectID": "werkzeuge/ki-verstehen.html#grenze-der-interpretation",
+    "href": "werkzeuge/ki-verstehen.html#grenze-der-interpretation",
+    "title": "KI verstehen",
+    "section": "Grenze der Interpretation",
+    "text": "Grenze der Interpretation\nDie Aussage „Die Person fragt nach Material“ ist durch ein entsprechendes Anliegen gestützt. „Die Person hat kein Budget“ ist ohne weitere Information eine Vermutung. Gerade bei Qualifizierung und Priorisierung müssen Beobachtung, Interpretation und Entscheidung auseinandergehalten werden.\nWeiter: Aufträge formulieren"
+  },
+  {
+    "objectID": "werkzeuge/assistenten.html",
+    "href": "werkzeuge/assistenten.html",
+    "title": "Wiederverwendbare Anweisungen",
+    "section": "",
+    "text": "Eine wiederkehrende Aufgabe benötigt stabile Regeln, passendes Wissen und wechselnde Eingaben. Diese Trennung lässt sich bereits mit einem normalen kostenlosen Chat üben."
+  },
+  {
+    "objectID": "werkzeuge/assistenten.html#aufteilung",
+    "href": "werkzeuge/assistenten.html#aufteilung",
+    "title": "Wiederverwendbare Anweisungen",
+    "section": "Drei Bausteine",
+    "text": "Drei Bausteine\n\n\n\n\n\n\n\nBaustein\nInhalt im Fall\n\n\n\n\nAnweisungen\nEntscheidungskategorien, Grenzen, Sprache, Ausgabeformat\n\n\nWissen\nLeistungsbeschreibung, Startregeln, Arbeitshilfen\n\n\nAktueller Fall\nKontakt-ID, Rolle, Unternehmen, Anliegen, Sprache und Kontaktstatus\n\n\n\nDie Follow-up-Anweisungen und der Kontext für Gemini werden als Text gespeichert. Für jeden unabhängigen Test werden beide zusammen mit einem Kontakt in einen neuen Chat eingefügt. So lassen sich Änderungen und Ergebnisse nachvollziehen."
+  },
+  {
+    "objectID": "werkzeuge/assistenten.html#kein-eigener-gem-als-voraussetzung",
+    "href": "werkzeuge/assistenten.html#kein-eigener-gem-als-voraussetzung",
+    "title": "Wiederverwendbare Anweisungen",
+    "section": "Kein eigener Gem als Voraussetzung",
+    "text": "Kein eigener Gem als Voraussetzung\nDie Pflichtübungen verlangen weder einen selbst erstellten Gem noch ein anderes kontospezifisches Assistentenprodukt. Verfügbare gespeicherte Assistenten können optional verwendet werden. Die Regeln müssen weiterhin exportierbar und im Wortlaut dokumentiert sein. Produktfunktionen können sich ändern; der Kern der Aufgabe bleibt die überprüfbare Spezifikation."
+  },
+  {
+    "objectID": "werkzeuge/assistenten.html#übertragung-nach-n8n",
+    "href": "werkzeuge/assistenten.html#übertragung-nach-n8n",
+    "title": "Wiederverwendbare Anweisungen",
+    "section": "Übertragung nach n8n",
+    "text": "Übertragung nach n8n\nIm Workflow enthält die Basic LLM Chain die Aufgabe und das Material. Die variablen Felder kommen aus dem vorherigen Knoten. Eine Antwort aus Gemini wird nicht automatisch dieselbe Antwort in n8n: Modell, Zusatzfunktionen, Verlauf und Einstellungen können abweichen. Deshalb werden die Testfälle nach der Übertragung erneut ausgeführt."
+  },
+  {
+    "objectID": "werkzeuge/assistenten.html#pflege",
+    "href": "werkzeuge/assistenten.html#pflege",
+    "title": "Wiederverwendbare Anweisungen",
+    "section": "Pflege",
+    "text": "Pflege\nEine Änderung erhält Versionsnummer, Datum, Grund und betroffene Testfälle. Nach Änderungen am Leistungsangebot müssen auch die Wissensgrundlage und gegebenenfalls Erwartungen aktualisiert werden. Ein gespeicherter Assistent ist noch kein Agent: Erst ein begrenzter Spielraum bei Werkzeugwahl oder Ablauf verändert die Architektur.\nWeiter: n8n und Agenten"
+  },
+  {
+    "objectID": "werkzeuge/pruefen.html",
+    "href": "werkzeuge/pruefen.html",
+    "title": "Prüfen und vergleichen",
+    "section": "",
+    "text": "Vor dem Test wird festgelegt, was als gutes Ergebnis gilt. Nach dem Test werden Beobachtung und Interpretation getrennt. So wird aus einer Demo eine überprüfbare Aussage."
+  },
+  {
+    "objectID": "werkzeuge/pruefen.html#aufbau",
+    "href": "werkzeuge/pruefen.html#aufbau",
+    "title": "Prüfen und vergleichen",
+    "section": "Ein Testfall",
+    "text": "Ein Testfall\nEin Testfall enthält Eingabe, erwartetes Verhalten, Kriterium und tatsächlichen Beleg. Dazu kommen Modell, Version und Datum. Ein grüner Workflow-Lauf bedeutet zunächst nur, dass die technische Ausführung abgeschlossen wurde.\n\n\n\n\n\n\n\n\nFallart\nBeispiel\nErwartung\n\n\n\n\nNormalfall\nK-01 fragt nach einem Gespräch zu einem passenden Fall\nErstgespräch begründet empfehlen\n\n\nFehlende Information\nK-06 hat kein Anliegen\nKlärung, keine erfundene Aufgabe\n\n\nGrenze\nK-05 erlaubt keinen Kontakt\nKein Nachrichtenentwurf; Sperre vor dem Modell im erweiterten Ablauf\n\n\n\nDie Erwartungshilfe ermöglicht einen Abgleich nach der eigenen Festlegung. Für Verbesserungen werden K-01 bis K-06 genutzt. T-01 bis T-03 werden erst für den zusätzlichen Vergleich geöffnet. Nach einer Anpassung an diese Fälle sind sie Entwicklungsfälle und kein unabhängiger Test mehr."
+  },
+  {
+    "objectID": "werkzeuge/pruefen.html#qualitätsrubrik",
+    "href": "werkzeuge/pruefen.html#qualitätsrubrik",
+    "title": "Prüfen und vergleichen",
+    "section": "Qualitätsrubrik",
+    "text": "Qualitätsrubrik\nJe Fall werden fünf Kriterien mit bestanden / nicht bestanden bewertet:\n\nEmpfehlung passt zum Anliegen und zu den Entscheidungsregeln.\nAngaben zu Angebot, Preis, Dauer und Material sind korrekt.\nKeine unbelegten Termine, Links, Referenzen oder Wirkungsversprechen.\nSprache und nächster Schritt passen; bei Sperre bleibt der Entwurf leer.\nKontakt-ID und Freigabestatus werden korrekt geführt.\n\nEin kritischer Verstoß, beispielsweise ein Entwurf trotz Sperre, wird zusätzlich ausdrücklich benannt. Er darf nicht durch eine hohe durchschnittliche Punktzahl verdeckt werden. Bei kein_followup gilt die korrekte leere Ausgabe als Erfüllung der Textkriterien."
+  },
+  {
+    "objectID": "werkzeuge/pruefen.html#vergleich",
+    "href": "werkzeuge/pruefen.html#vergleich",
+    "title": "Prüfen und vergleichen",
+    "section": "Chat und Workflow fair vergleichen",
+    "text": "Chat und Workflow fair vergleichen\nBeide Verfahren erhalten dieselben Fallinformationen und dieselben fachlichen Anforderungen. Der Chat bekommt einen sinnvollen Prompt. In n8n wird keine zusätzliche Wissensquelle heimlich ergänzt. Wenn unterschiedliche Modelle verwendet werden, wird das Ergebnis als Vergleich zweier Gesamtlösungen eingeordnet, nicht als isolierter Automatisierungseffekt.\nDie Reihenfolge wird zwischen Fällen gewechselt. Bearbeitung, Prüfung und Nacharbeit werden getrennt erfasst und anschließend addiert. Die einmalige Einrichtung steht separat. Bei gesperrten Kontakten wird im Chatverfahren ebenfalls zuerst die Regel geprüft; ein unnötiger Modellaufruf ist keine faire Voraussetzung für die Ausgangslösung.\nDie Vergleichstabelle enthält Platz für die Messwerte. Beispiel einer vorsichtigen Schlussfolgerung: „In drei synthetischen Fällen verringerte Variante B den wiederholten Eingabeaufwand. Ob sich der zusätzliche Einrichtungsaufwand bei regelmäßiger Nutzung lohnt, bleibt zu prüfen.“"
+  },
+  {
+    "objectID": "werkzeuge/pruefen.html#die-rolle-eines-ki-critics",
+    "href": "werkzeuge/pruefen.html#die-rolle-eines-ki-critics",
+    "title": "Prüfen und vergleichen",
+    "section": "Die Rolle eines KI-Critics",
+    "text": "Die Rolle eines KI-Critics\nEin zweiter Modellaufruf kann Auffälligkeiten markieren. Seine Bewertung ist ein Hinweis und wird gegen das Material geprüft. Sie misst weder tatsächliche Kaufabsicht noch Conversion. Gemeinsame Fehler beider Modelle bleiben möglich."
+  },
+  {
+    "objectID": "werkzeuge/pruefen.html#aussagen-und-grenzen",
+    "href": "werkzeuge/pruefen.html#aussagen-und-grenzen",
+    "title": "Prüfen und vergleichen",
+    "section": "Aussagen und Grenzen",
+    "text": "Aussagen und Grenzen\nAus synthetischen Fällen lassen sich Aussagen zur technischen Funktion und zur Passung im vorgegebenen Fall ableiten. Reale Effekte auf Leads, Gespräche oder Umsatz werden dadurch nicht belegt. Drei Fälle reichen nicht für belastbare allgemeine Fehlerquoten. Wiederholungen zeigen mögliche Schwankungen, ersetzen aber keine vielfältigen Testfälle."
+  },
+  {
+    "objectID": "werkzeuge/pruefen.html#vor-der-übergabe",
+    "href": "werkzeuge/pruefen.html#vor-der-übergabe",
+    "title": "Prüfen und vergleichen",
+    "section": "Vor der Übergabe",
+    "text": "Vor der Übergabe\nEin Export muss in einer geeigneten Umgebung nachvollziehbar eingerichtet werden können. Einrichtungsanleitung, notwendige Verbindung, Eingaben, erwartete Ausgaben und bekannte Grenzen gehören dazu. Geheimnisse bleiben außerhalb der Dateien. Die menschliche Freigabe und ein nachvollziehbarer Umgang mit Fehlern sind Teil des Prozesses."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#der-input-hat-vier-teile",
+    "href": "slides/growth-marketing.html#der-input-hat-vier-teile",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Der Input hat vier Teile",
+    "text": "Der Input hat vier Teile\n\n\n1 KundenwegSechs Stationen, an jeder gehen Kontakte verloren\n\n\n2 AARRRFünf Fragen als Raster für Kennzahlen\n\n\n3 Wertschöpfungskette und LoopVon der Frage zur Aktion, und wie Wachstum entsteht\n\n\n4 HypotheseVon der Beobachtung zur prüfbaren Aussage\n\n\n\nEtwa 35 Minuten. Danach Übung 1.2 mit den Webinar-Kontakten im Google Sheet.\n\n\nKurz die vier Teile nennen. Alles bezieht sich auf den Fall Aurenta, den die Teams in Übung 1.1 gelesen haben. Der Werkzeugkasten auf der Kurswebsite enthält denselben Inhalt zum Nachlesen."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#auf-dem-weg-vom-fachbeitrag-zum-auftrag-verliert-aurenta-an-jeder-station-kontakte",
+    "href": "slides/growth-marketing.html#auf-dem-weg-vom-fachbeitrag-zum-auftrag-verliert-aurenta-an-jeder-station-kontakte",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Auf dem Weg vom Fachbeitrag zum Auftrag verliert Aurenta an jeder Station Kontakte",
+    "text": "Auf dem Weg vom Fachbeitrag zum Auftrag verliert Aurenta an jeder Station Kontakte\n\n  \n  \n    Abspielen\n    Zurücksetzen\n    Eine Station anklicken zeigt, was dort passiert. „Abspielen“ lässt die 330 Kontakte den Weg entlanglaufen, ein Punkt ist ein Kontakt.\n  \n\n\n\n\nAn jedem Übergang gehen Kontakte verloren, und die Gründe unterscheiden sich: fehlendes Vertrauen, falscher Zeitpunkt, unklarer Nutzen. Deshalb braucht jeder Übergang eine eigene Maßnahme. Das ist der Kern von Growth Marketing: nicht mehr Kontakte oben hineinschütten, sondern die Stelle mit dem größten Verlust finden. Die drei Tage setzen bei der Nachbereitung an. Auf „Abspielen“ klicken: 330 Punkte laufen den Weg entlang, an jeder Station fallen die ab, die nicht weiterkommen, die Zähler laufen mit. Nach etwa zehn Sekunden stehen 330, 198, 39, 10. Den größten Verlust hier nicht benennen, das ist die Frage zwei Folien weiter. Kacheln anklicken, wenn jemand fragt, was eine Station bedeutet."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#von-198-follow-ups-führen-10-zu-einem-qualifizierten-gespräch",
+    "href": "slides/growth-marketing.html#von-198-follow-ups-führen-10-zu-einem-qualifizierten-gespräch",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Von 198 Follow-ups führen 10 zu einem qualifizierten Gespräch",
+    "text": "Von 198 Follow-ups führen 10 zu einem qualifizierten Gespräch\n\n10 von 198 durchgeführte qualifizierte Gespräche nach dem Follow-up, das sind 5,1 Prozent in 14 Tagen.\n\n\nDrei Kampagnen von Aurenta, Beobachtung jeweils 14 Tage nach dem Webinar.\n\n\nDie Zahl nennen und stehen lassen. Ob 5,1 Prozent gut oder schlecht sind, weiß niemand ohne Vergleichsmaßstab. Die Frage ist eine andere: Wo auf dem Weg entsteht der Verlust?"
+  },
+  {
+    "objectID": "slides/growth-marketing.html#wo-geht-am-meisten-verloren-und-welche-kennzahl-zeigt-das",
+    "href": "slides/growth-marketing.html#wo-geht-am-meisten-verloren-und-welche-kennzahl-zeigt-das",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Wo geht am meisten verloren, und welche Kennzahl zeigt das?",
+    "text": "Wo geht am meisten verloren, und welche Kennzahl zeigt das?\n\n  \n  Eine Station anklicken.\n\n\n\n\nFrage in den Raum, zwei bis drei Antworten sammeln. Erwartete Antwort: der Sprung von 198 Follow-ups auf 39 Antworten, also die Antwortquote von 19,7 Prozent. Danach die Buchungsquote 8,1 Prozent und die Quote qualifizierter Gespräche 5,1 Prozent, jeweils auf 198. Wichtig: 10 von 16 ist eine andere Kennzahl als 10 von 198. Die Zahlen zeigen den Engpass, nicht seine Ursache. Die Ursache ist Gegenstand der Hypothese in Übung 1.2."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#vier-begriffe-genügen-für-das-projekt",
+    "href": "slides/growth-marketing.html#vier-begriffe-genügen-für-das-projekt",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Vier Begriffe genügen für das Projekt",
+    "text": "Vier Begriffe genügen für das Projekt\n\n\nBegriff\nLead\nEin Kontakt, der zur Zielgruppe passt und ein erkennbares Anliegen hat. Kein sicherer Auftrag.\n\n\nBegriff\nQualifizierung\nPrüfung, ob ein Lead zum Angebot passt, anhand vorher festgelegter Kriterien.\n\n\nBegriff\nConversion\nEin vorher definierter Übergang, etwa vom Follow-up zum gebuchten Gespräch.\n\n\nBegriff\nConversion-Rate\nZähler, Nenner und Zeitraum. Ohne alle drei ist es keine Rate.\n\n\n\nBei Aurenta heißt qualifiziert: Marketingaufgabe benannt, Zuständigkeit geklärt, nächster Schritt passt zum Leistungsumfang. Eine Buchung allein zählt nicht. Diese Definition steht im Fallpaket und wird am Mittwoch beim Testen gebraucht."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#eine-rate-braucht-zähler-nenner-und-zeitraum",
+    "href": "slides/growth-marketing.html#eine-rate-braucht-zähler-nenner-und-zeitraum",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Eine Rate braucht Zähler, Nenner und Zeitraum",
+    "text": "Eine Rate braucht Zähler, Nenner und Zeitraum\n\n\nKeine Rate\n\n„16 Buchungen”\n„10 Gespräche, das sind 62 Prozent”\n„Die Kampagne lief gut”\n\n\n\nRate\n\n16 Buchungen von 198 Follow-ups innerhalb von 14 Tagen: 8,1 Prozent\n10 durchgeführte qualifizierte Gespräche von 198 Follow-ups: 5,1 Prozent\n\n\n\n\nDie 62 Prozent links sind 10 von 16, also Gespräche pro Buchung. Das ist eine gültige Zahl, aber eine andere Kennzahl. Wer Nenner wechselt, vergleicht Äpfel mit Birnen. Im Testprotokoll und in der Experimentkarte wird deshalb immer der Nenner mitgeschrieben."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#acquisition-fragt-wie-ein-passender-erstkontakt-entsteht",
+    "href": "slides/growth-marketing.html#acquisition-fragt-wie-ein-passender-erstkontakt-entsteht",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Acquisition fragt, wie ein passender Erstkontakt entsteht",
+    "text": "Acquisition fragt, wie ein passender Erstkontakt entsteht\n\n\nAcquisition\nDie Frage\nWie entsteht ein passender Erstkontakt?\n\n\nBei Aurenta\nDer Übergang\nAnmeldung zum Webinar über einen Fachbeitrag. Passend heißt: Marketingabteilung eines mittelständischen B2B-Unternehmens.\n\n\nMessgröße\nKennzahl\nAnmeldungen je Fachbeitrag, Anteil der Anmeldungen aus der Zielgruppe.\n\n\n\nDer erste Buchstabe. Nicht jede Anmeldung ist ein passender Kontakt: Eine Studentin, die das Webinar für eine Hausarbeit anschaut, ist keine Acquisition im Sinn von Aurenta."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#activation-fragt-wann-der-kontakt-zum-ersten-mal-nutzen-erlebt",
+    "href": "slides/growth-marketing.html#activation-fragt-wann-der-kontakt-zum-ersten-mal-nutzen-erlebt",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Activation fragt, wann der Kontakt zum ersten Mal Nutzen erlebt",
+    "text": "Activation fragt, wann der Kontakt zum ersten Mal Nutzen erlebt\n\n\nActivation\nDie Frage\nWann erlebt der Kontakt zum ersten Mal konkreten Nutzen?\n\n\nBei Aurenta\nDer Übergang\nEine Arbeitshilfe hilft bei der Auswahl eines eigenen KI-Anwendungsfalls, oder ein Erstgespräch klärt die Aufgabe.\n\n\nMessgröße\nKennzahl\nAnteil der Follow-ups mit Antwort, Anteil geführter qualifizierter Gespräche.\n\n\n\nDas ist der Übergang, an dem die Blocktage arbeiten. Nutzen entsteht nicht durch den Empfang einer Nachricht, sondern wenn der Kontakt etwas damit anfangen kann: die Checkliste anwendet, die Zusammenfassung liest, im Gespräch seine Aufgabe schärft."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#retention-fragt-warum-die-beziehung-relevant-bleibt",
+    "href": "slides/growth-marketing.html#retention-fragt-warum-die-beziehung-relevant-bleibt",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Retention fragt, warum die Beziehung relevant bleibt",
+    "text": "Retention fragt, warum die Beziehung relevant bleibt\n\n\nRetention\nDie Frage\nWarum bleibt die Beziehung relevant?\n\n\nBei Aurenta\nDer Übergang\nWeitere passende Inhalte nach dem Webinar, erneute Zusammenarbeit nach dem Praxischeck.\n\n\nMessgröße\nKennzahl\nAnteil der Kunden mit Folgeprojekt, Öffnungsrate weiterer Inhalte bei Kontakten ohne Auftrag.\n\n\n\nFür eine Beratung mit wenigen, großen Aufträgen ist Retention wichtiger als bei einem App-Geschäft: Ein Kunde, der nach dem Praxischeck ein zweites Projekt beauftragt, ist mehr wert als zehn neue Anmeldungen."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#referral-fragt-wann-das-angebot-weiterempfohlen-wird",
+    "href": "slides/growth-marketing.html#referral-fragt-wann-das-angebot-weiterempfohlen-wird",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Referral fragt, wann das Angebot weiterempfohlen wird",
+    "text": "Referral fragt, wann das Angebot weiterempfohlen wird\n\n\nReferral\nDie Frage\nWann wird das Angebot weiterempfohlen?\n\n\nBei Aurenta\nDer Übergang\nEine zufriedene Kundin stellt einen Kontakt her, oder eine Fallstudie zieht ähnliche Unternehmen an.\n\n\nMessgröße\nKennzahl\nAnteil der Erstkontakte, die über eine Empfehlung oder Fallstudie kommen.\n\n\n\nReferral ist der Mechanismus hinter dem Growth Loop, der später kommt. Empfehlungen entstehen nicht von allein: Man muss danach fragen und es leicht machen, etwa mit einer freigegebenen Fallstudie."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#revenue-fragt-wie-umsatz-entsteht",
+    "href": "slides/growth-marketing.html#revenue-fragt-wie-umsatz-entsteht",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Revenue fragt, wie Umsatz entsteht",
+    "text": "Revenue fragt, wie Umsatz entsteht\n\n\nRevenue\nDie Frage\nWie entsteht Umsatz?\n\n\nBei Aurenta\nDer Übergang\nDer beauftragte KI-Praxischeck Marketing, 2.400 Euro netto als Festpreis.\n\n\nMessgröße\nKennzahl\nAufträge je Kampagne, Umsatz je Auftrag, Kosten je Auftrag.\n\n\n\nErst hier wird aus Marketing Geld. Bei 330 Anmeldungen und zwei angenommenen Aufträgen wären das 4.800 Euro aus drei Kampagnen. Ob sich das rechnet, hängt von den Kosten je Anmeldung ab, die der Fall nicht nennt."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#aarrr-stellt-fünf-fragen-an-jeden-kundenweg-die-übersicht",
+    "href": "slides/growth-marketing.html#aarrr-stellt-fünf-fragen-an-jeden-kundenweg-die-übersicht",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "AARRR stellt fünf Fragen an jeden Kundenweg: die Übersicht",
+    "text": "AARRR stellt fünf Fragen an jeden Kundenweg: die Übersicht\n\n\n\n\n\n\n\n\nBereich\nFrage\nBei Aurenta\n\n\n\n\nAcquisition\nWie entsteht ein passender Erstkontakt?\nAnmeldung zum Webinar über einen Fachbeitrag\n\n\nActivation\nWann erlebt der Kontakt zum ersten Mal Nutzen?\nArbeitshilfe zur Auswahl eines KI-Anwendungsfalls\n\n\nRetention\nWarum bleibt die Beziehung relevant?\nWeitere passende Inhalte, erneute Zusammenarbeit\n\n\nReferral\nWann wird das Angebot weiterempfohlen?\nEine zufriedene Kundin stellt einen Kontakt her\n\n\nRevenue\nWie entsteht Umsatz?\nBeauftragter Praxischeck\n\n\n\n\nAARRR ist ein Raster, um Kennzahlen zu sortieren, keine Reihenfolge, die jede Dienstleistung durchläuft. Für eine Beratung mit wenigen, großen Aufträgen sind Retention und Referral wichtiger als bei einem App-Geschäft. Die Tabelle steht im Werkzeugkasten."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#im-blockkurs-zählt-der-übergang-von-acquisition-zu-activation",
+    "href": "slides/growth-marketing.html#im-blockkurs-zählt-der-übergang-von-acquisition-zu-activation",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Im Blockkurs zählt der Übergang von Acquisition zu Activation",
+    "text": "Im Blockkurs zählt der Übergang von Acquisition zu Activation\n\nVom Webinar-Kontakt zum qualifizierten Gespräch. Die anderen Bereiche kommen im Semesterprojekt je nach Zuschnitt mit Zoi dazu.\n\n\nDas grenzt die drei Tage ein. Alles, was die Teams bauen, bearbeitet diesen einen Übergang. Was Zoi am Dienstag als Praxisfall mitbringt, kann einen anderen Bereich betreffen. Dann wird das Raster erneut angelegt."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#von-der-frage-zur-aktion-führen-sieben-stufen-und-die-evaluation-stellt-die-nächste-frage",
+    "href": "slides/growth-marketing.html#von-der-frage-zur-aktion-führen-sieben-stufen-und-die-evaluation-stellt-die-nächste-frage",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Von der Frage zur Aktion führen sieben Stufen, und die Evaluation stellt die nächste Frage",
+    "text": "Von der Frage zur Aktion führen sieben Stufen, und die Evaluation stellt die nächste Frage\n\n  \n  \n    Wertschöpfungskette\n    Von der Frage zur Aktion, und zurück zur Frage\n    Auf „Weiter“ klicken, um die sieben Stufen am Fall Aurenta zu durchlaufen. Ein Klick auf eine Stufe erklärt sie.\n    \n      Weiter\n      Zurück\n    \n  \n\n\n\n\nMit „Weiter“ durch die sieben Stufen der ersten Runde klicken: Frage und Meinung, Plan mit Kennzahl und A/B-Design, Daten, Analyse als Kreuztabelle, Report ohne statistischen Test, Aktion (noch nicht umstellen), Evaluation. Der achte Klick springt zurück auf Frage: Die Evaluation der ersten Runde ist die Frage der zweiten. Dieselbe Kette wie in der Statistik-Vorlesung am Netflix-Beispiel (Box-Art, Klickrate), Quelle Google (2011) und Tingley et al. (2021). In den Blocktagen ersetzt das Testprotokoll den Feldversuch: Frage bis Plan sind Übung 1.2, Daten und Analyse die Übungen 1.4 und 1.5, Report die Demo um 16 Uhr."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#ein-growth-loop-verstärkt-sich-mit-jeder-runde",
+    "href": "slides/growth-marketing.html#ein-growth-loop-verstärkt-sich-mit-jeder-runde",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Ein Growth Loop verstärkt sich mit jeder Runde",
+    "text": "Ein Growth Loop verstärkt sich mit jeder Runde\n\n  \n  \n    Growth Loop\n    Der Output einer Runde ist der Input der nächsten\n    Ein abgeschlossenes Projekt wird zur Fallstudie. Die Fallstudie zieht passende Interessierte an. Aus Interessierten werden neue Projekte. Auf „Nächste Runde“ klicken, ein Klick auf einen Knoten erklärt ihn.\n    \n    \n      Nächste Runde\n      Zurücksetzen\n    \n    Beispielzahlen für den Mechanismus: je Fallstudie 4 Interessierte, jede zweite Anfrage wird ein Projekt.\n  \n\n\n\n\nFünfmal „Nächste Runde“ klicken. Ein Projekt wird zur Fallstudie, die Fallstudie bringt vier Anfragen, jede zweite wird ein Projekt: 1, 2, 4, 8, 16. Die Balken rechts zeigen die neuen Projekte je Runde. Die Zahlen sind Beispielwerte für den Mechanismus, keine Aurenta-Daten. Entscheidend ist die Struktur: Der Output einer Runde ist der Input der nächsten, ohne zusätzliche Kampagne. Voraussetzungen benennen: Kunden müssen der Fallstudie zustimmen, und die Anfragen müssen zur Zielgruppe passen. Ein wiederkehrender Reporting-Termin ist kein Loop, weil sein Ergebnis keine neuen Kontakte erzeugt."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#die-kette-erzeugt-erkenntnis-der-loop-erzeugt-wachstum",
+    "href": "slides/growth-marketing.html#die-kette-erzeugt-erkenntnis-der-loop-erzeugt-wachstum",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Die Kette erzeugt Erkenntnis, der Loop erzeugt Wachstum",
+    "text": "Die Kette erzeugt Erkenntnis, der Loop erzeugt Wachstum\n\n\nWertschöpfungskette\n\nbeschreibt, wie ein Team von der Frage zur Aktion kommt\neine Runde, eine Kennzahl, eine Entscheidung\nWerkzeug der Blocktage und des Messdesigns\n\n\n\nGrowth Loop\n\nbeschreibt, wie ein Geschäft wächst\nder Output eines Durchlaufs ist der Input des nächsten\nFrage für das Semesterprojekt: Gibt es bei Zoi einen solchen Mechanismus?\n\n\n\n\nHäufige Verwechslung: Ein regelmäßiger Reporting-Termin ist kein Growth Loop, weil sein Ergebnis keine neuen Kontakte erzeugt. Ein Loop liegt nur vor, wenn der Output messbar zum nächsten Input wird."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#aus-frage-und-meinung-wird-eine-prüfbare-hypothese",
+    "href": "slides/growth-marketing.html#aus-frage-und-meinung-wird-eine-prüfbare-hypothese",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Aus Frage und Meinung wird eine prüfbare Hypothese",
+    "text": "Aus Frage und Meinung wird eine prüfbare Hypothese\n\n\nFrage\nBeobachtung\n198 Follow-ups, 16 Buchungen, 10 qualifizierte Gespräche. Wer nur nachlesen wollte, hat fast nie gebucht: 1 von 60.\n\n\nMeinung\nMögliche Erklärungen\nDie einheitliche Gesprächseinladung kommt zu früh. Oder: Angebot oder Zeitpunkt passen nicht.\n\n\nPlan\nHypothese\nEine Nachbereitung nach Anliegen führt in 14 Tagen zu mehr qualifizierten Gesprächen als die einheitliche Einladung.\n\n\n\nBeobachtung und Erklärung trennen. Der Trichter zeigt den Engpass, die Kreuztabelle Anliegen gegen Buchung liefert den Hinweis auf die Ursache. Zwei Erklärungen nebeneinander halten, bevor eine zur Hypothese wird. Das sind die Schritte 2 bis 5 in Übung 1.2."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#eine-hypothese-folgt-dem-muster-wenn-wir-x-ändern-dann-y-weil-z",
+    "href": "slides/growth-marketing.html#eine-hypothese-folgt-dem-muster-wenn-wir-x-ändern-dann-y-weil-z",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Eine Hypothese folgt dem Muster „Wenn wir X ändern, dann Y, weil Z”",
+    "text": "Eine Hypothese folgt dem Muster „Wenn wir X ändern, dann Y, weil Z”\n\nWenn die Nachbereitung sich am Anliegen des Kontakts orientiert, statt allen ein Erstgespräch anzubieten, dann steigt die Zahl qualifizierter Gespräche in 14 Tagen, weil mehr Kontakte den für sie passenden nächsten Schritt bekommen.\n\n\nX: die Änderung. Y: die messbare Wirkung mit Zeitraum. Z: der vermutete Mechanismus.\n\n\nDas Muster ist die Vorlage für die Experimentkarte. Der „weil”-Teil ist der wichtigste: Er sagt, warum die Änderung wirken sollte, und lässt sich an einzelnen Fällen prüfen, bevor es Zahlen gibt. Ohne „weil” ist es eine Wette, keine Hypothese."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#ein-ki-workflow-wird-auf-drei-ebenen-bewertet",
+    "href": "slides/growth-marketing.html#ein-ki-workflow-wird-auf-drei-ebenen-bewertet",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Ein KI-Workflow wird auf drei Ebenen bewertet",
+    "text": "Ein KI-Workflow wird auf drei Ebenen bewertet\n\n\nEbene 1\nMarketingwirkung\nBringt die Änderung mehr passende Gespräche? Gemessen als qualifizierte Gespräche je Gruppe in einem festen Zeitraum.\n\n\nEbene 2\nQualität\nSind Empfehlungen und Texte richtig? Anteil korrekter Empfehlungen, gedeckte Aussagen, eingehaltene Kontaktsperre.\n\n\nEbene 3\nAufwand\nSpart der Workflow Zeit? Bearbeitungszeit pro Kontakt inklusive Prüfung und Nacharbeit.\n\n\n\nIn den Blocktagen wird Ebene 2 geprüft. Messdesign für Ebene 1 und Aufwand für Ebene 3 kommen im Semesterprojekt dazu.\n\n\nDie drei Ebenen nicht vermischen. Ein Workflow kann perfekte Texte liefern und trotzdem keine Wirkung haben, oder Zeit sparen und dabei falsche Empfehlungen geben. Mehr Antworten auf ein Follow-up bedeuten nicht automatisch mehr passende Gespräche."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#indeed-und-copy.ai-zeigen-wo-ki-im-marketing-heute-eingesetzt-wird",
+    "href": "slides/growth-marketing.html#indeed-und-copy.ai-zeigen-wo-ki-im-marketing-heute-eingesetzt-wird",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Indeed und Copy.ai zeigen, wo KI im Marketing heute eingesetzt wird",
+    "text": "Indeed und Copy.ai zeigen, wo KI im Marketing heute eingesetzt wird\n\n\nIndeed\nKI für kreative Entwürfe, Tests, Markenrecherche und personalisierte Ansprache im Vertrieb (Interview mit OpenAI, Januar 2026).\nTransferfrage: Welcher wiederkehrende Vorbereitungsschritt ähnelt der Nachbereitung bei Aurenta?\n\n\nCopy.ai\nClaude in Content-Workflows zur Erstellung und Bearbeitung von Marketinginhalten (Fallstudie von Anthropic).\nTransferfrage: Welche Informationen und Prüfkriterien müssen feststehen, bevor Content in großer Zahl erzeugt wird?\n\n\n\nBeide Quellen sind Berichte der KI-Anbieter, keine unabhängigen Studien. Links im Werkzeugkasten.\n\n\nKurz halten, zwei Minuten. Die Beispiele zeigen Einsatzformen, keine Erfolgswerte, die sich auf Aurenta übertragen ließen. Die Transferfragen können die Teams in Übung 1.2 als Anregung nutzen."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#übung-1.2-vom-trichter-zur-hypothese",
+    "href": "slides/growth-marketing.html#übung-1.2-vom-trichter-zur-hypothese",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Übung 1.2: Vom Trichter zur Hypothese",
+    "text": "Übung 1.2: Vom Trichter zur Hypothese\n\nEtwa 30 Minuten im Dreierteam.\n\nKopie des Google Sheets mit den 330 Webinar-Anmeldungen anlegen.\nPivot 1: Trichter je Kampagne. Wo gehen die meisten Kontakte verloren? Mit Zähler und Nenner in die Experimentkarte.\nPivot 2: Anliegen gegen Buchung. Welche Gruppe bucht fast nie, welche oft?\nZwei Erklärungen aus den Tabellen, eine davon als Hypothese: „Wenn wir X ändern, dann Y, weil Z”.\nKennzahl mit Zähler, Nenner und Zeitraum.\n\nErgebnis: Sheet-Kopie mit zwei Pivot-Tabellen und Experimentkarte in der Teamablage.\n\n\nAnleitung und Material stehen auf der Montagsseite unter Übung 1.2. Rollen aus Übung 1.1 gelten: eine Person bedient, eine stellt fachliche Rückfragen, eine dokumentiert. Der Prompt-Test kommt erst nach dem Prompting-Input als Übung 1.3."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#ein-ab-test-vergleicht-kontrollgruppe-und-treatment-gruppe-unter-vier-regeln",
+    "href": "slides/growth-marketing.html#ein-ab-test-vergleicht-kontrollgruppe-und-treatment-gruppe-unter-vier-regeln",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Ein A/B-Test vergleicht Kontrollgruppe und Treatment-Gruppe unter vier Regeln",
+    "text": "Ein A/B-Test vergleicht Kontrollgruppe und Treatment-Gruppe unter vier Regeln\n\n\nRegel 1\nZufällige Zuteilung\nDer Zufall entscheidet, wer in die Kontrollgruppe A (bisherige Einladung) und wer in die Treatment-Gruppe B (nach Anliegen) kommt.\n\n\nRegel 2\nNur eine Änderung\nWer Text, Zeitpunkt und Absender gleichzeitig ändert, weiß nicht, was gewirkt hat.\n\n\nRegel 3\nKennzahl vorher festlegen\nQualifizierte Gespräche innerhalb von 14 Tagen. Nicht nachträglich wechseln.\n\n\nRegel 4\nGenug Fälle\nKleine Unterschiede bei kleinen Zahlen sind meistens Zufall. Nächste Folie.\n\n\n\nRegel 1: Sonst landen die vielversprechenden Kontakte in der neuen Variante. Regel 3: Nachträglich eine passendere Kennzahl zu wählen, macht jedes Ergebnis wertlos. Regel 4 wird auf der nächsten Folie ausprobiert."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#bei-100-kontakten-pro-gruppe-entscheidet-oft-der-zufall-wer-vorn-liegt",
+    "href": "slides/growth-marketing.html#bei-100-kontakten-pro-gruppe-entscheidet-oft-der-zufall-wer-vorn-liegt",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Bei 100 Kontakten pro Gruppe entscheidet oft der Zufall, wer vorn liegt",
+    "text": "Bei 100 Kontakten pro Gruppe entscheidet oft der Zufall, wer vorn liegt\n\n  \n    Kontakte pro Variante 100\n      \n    \n    Wahre Quote Variante B 10 % (A: 5 %)\n      \n    \n    Test durchführen\n    Zurücksetzen\n  \n  Absolute WerteZeilenanteileSpaltenanteile\n  \n\n\n\nGruppe\nQualifiziertes Gespräch\nKein Gespräch\nSumme\n\n\n\n\nA: Kontrollgruppe, bisherige Einladung\n–\n–\n–\n\n\nB: Treatment-Gruppe, nach Anliegen\n–\n–\n–\n\n\nSumme\n–\n–\n–\n\n\n\n\n  \n  Noch kein Durchlauf. Der Zufall entscheidet, welcher Kontakt ein Gespräch führt, mit den eingestellten wahren Quoten.\n  \n\n\n\n\nOb ein Unterschied mehr als Zufall ist, klärt ein statistischer Test. Das kommt in einer eigenen Einheit im Semester, vor dem Messdesign.\n\n\nLive vorführen: Oben zwischen absoluten Werten, Zeilenanteilen und Spaltenanteilen umschalten; die Gesprächsquote sind die Zeilenanteile. Bei 100 Kontakten und wahrer Quote B 10 Prozent mehrmals „Test durchführen” klicken. B gewinnt meistens, aber nicht immer, und der Abstand schwankt stark. Dann den Regler auf 400 schieben: Das Ergebnis wird stabil. Danach B auf 6 Prozent stellen und zeigen, dass selbst 400 Kontakte einen kleinen Unterschied nicht sichtbar machen. Das ist die Begründung für die Zahl 400 auf der übernächsten Folie."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#das-ergebnis-eines-ab-tests-steht-in-einer-kreuztabelle-mit-absoluten-werten",
+    "href": "slides/growth-marketing.html#das-ergebnis-eines-ab-tests-steht-in-einer-kreuztabelle-mit-absoluten-werten",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Das Ergebnis eines A/B-Tests steht in einer Kreuztabelle mit absoluten Werten",
+    "text": "Das Ergebnis eines A/B-Tests steht in einer Kreuztabelle mit absoluten Werten\n\n\n\n\n\n\n\n\n\nGruppe\nQualifiziertes Gespräch\nKein qualifiziertes Gespräch\nSumme\n\n\n\n\nA: Kontrollgruppe, bisherige Einladung\n5\n94\n99\n\n\nB: Treatment-Gruppe, nach Anliegen\n9\n90\n99\n\n\nSumme\n14\n184\n198\n\n\n\n\nErfundene Beispielzahlen für Aurenta. Zeilen sind die Gruppen, Spalten das Ergebnis, Zellen die Anzahl der Kontakte. Stufe 1 von 3.\n\n\nDieselbe Kontingenztabelle wie in der Statistik-Vorlesung. Erst die absoluten Werte, dann zwei Arten von Anteilen, die zwei verschiedene Fragen beantworten."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#zeilenanteile-beantworten-wie-viele-der-kontakte-in-gruppe-b-führten-ein-gespräch",
+    "href": "slides/growth-marketing.html#zeilenanteile-beantworten-wie-viele-der-kontakte-in-gruppe-b-führten-ein-gespräch",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Zeilenanteile beantworten: Wie viele der Kontakte in Gruppe B führten ein Gespräch?",
+    "text": "Zeilenanteile beantworten: Wie viele der Kontakte in Gruppe B führten ein Gespräch?\n\n\n\n\n\n\n\n\n\nGruppe\nQualifiziertes Gespräch\nKein qualifiziertes Gespräch\nSumme\n\n\n\n\nA: Kontrollgruppe\n5,1 %\n94,9 %\n100 %\n\n\nB: Treatment-Gruppe\n9,1 %\n90,9 %\n100 %\n\n\nGesamt\n7,1 %\n92,9 %\n100 %\n\n\n\n\nJede Zeile summiert auf 100 Prozent. Das ist die Gesprächsquote, die im A/B-Test verglichen wird. Stufe 2 von 3.\n\n\n5 von 99 gegen 9 von 99. Der Nenner ist die Gruppe. Das ist die Kennzahl aus dem Plan."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#spaltenanteile-beantworten-eine-andere-frage-wie-viele-der-gespräche-kamen-aus-gruppe-b",
+    "href": "slides/growth-marketing.html#spaltenanteile-beantworten-eine-andere-frage-wie-viele-der-gespräche-kamen-aus-gruppe-b",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Spaltenanteile beantworten eine andere Frage: Wie viele der Gespräche kamen aus Gruppe B?",
+    "text": "Spaltenanteile beantworten eine andere Frage: Wie viele der Gespräche kamen aus Gruppe B?\n\n\n\n\n\n\n\n\n\nGruppe\nQualifiziertes Gespräch\nKein qualifiziertes Gespräch\nSumme\n\n\n\n\nA: Kontrollgruppe\n35,7 %\n51,1 %\n50 %\n\n\nB: Treatment-Gruppe\n64,3 %\n48,9 %\n50 %\n\n\nSumme\n100 %\n100 %\n100 %\n\n\n\n\nJede Spalte summiert auf 100 Prozent. 9 von 14 Gesprächen kamen aus B. Klingt eindrucksvoll, ist aber nicht die Gesprächsquote und sagt nichts über die Wirkung je Kontakt. Stufe 3 von 3.\n\n\nTypischer Fehler in Marketingberichten: Spaltenanteile als Erfolgsquote verkaufen. Der Unterschied von 9,1 gegen 5,1 Prozent beruht auf 5 gegen 9 Gespräche. Ist der Unterschied zwischen den beiden Stichproben groß genug, um auf alle Kontakte zu schließen? Das ist die Inferenz-Frage; sie wird mit einem statistischen Test beantwortet, der später im Semester kommt."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#rund-400-kontakte-pro-gruppe-um-5-gegen-10-prozent-zu-unterscheiden",
+    "href": "slides/growth-marketing.html#rund-400-kontakte-pro-gruppe-um-5-gegen-10-prozent-zu-unterscheiden",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Rund 400 Kontakte pro Gruppe, um 5 gegen 10 Prozent zu unterscheiden",
+    "text": "Rund 400 Kontakte pro Gruppe, um 5 gegen 10 Prozent zu unterscheiden\n\nBei 99 Kontakten pro Gruppe ist ein Unterschied von 5 gegen 9 Gesprächen nicht von Zufall zu trennen. Für einen Nachweis von 5 auf 10 Prozent braucht ein Test etwa 400 Kontakte je Gruppe.\n\n\nÜbliche Annahmen eines statistischen Tests: Irrtumswahrscheinlichkeit 5 Prozent, Teststärke 80 Prozent. Wie die Rechnung geht, behandeln wir in einer eigenen Einheit im Semester.\n\n\nFür das Semesterprojekt heißt das: Das Messdesign wird vollständig geplant, mit Varianten, Zuteilung, Kennzahl, Zeitraum und nötiger Fallzahl. Die Durchführung übersteigt meist den Projektzeitraum. Bewertet wird die Qualität des Designs, nicht die Höhe der Zahlen."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#jeder-testfall-hat-zwei-merkmale-die-erwartete-und-die-tatsächliche-empfehlung",
+    "href": "slides/growth-marketing.html#jeder-testfall-hat-zwei-merkmale-die-erwartete-und-die-tatsächliche-empfehlung",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Jeder Testfall hat zwei Merkmale: die erwartete und die tatsächliche Empfehlung",
+    "text": "Jeder Testfall hat zwei Merkmale: die erwartete und die tatsächliche Empfehlung\n\n\nZeilen\nErwartet\nVor dem Lauf im Testprotokoll festgelegt. K-02: Material, weil nur nachgearbeitet werden soll.\n\n\nSpalten\nTatsächlich\nWas der Workflow ausgibt. K-02: Erstgespräch.\n\n\nZelle\nAnzahl Fälle\nK-02 landet in Zeile Material, Spalte Erstgespräch. Auf der Diagonale stehen die Treffer.\n\n\n\nDieselbe Kontingenztabelle wie beim A/B-Test, nur mit zwei anderen Merkmalen. Zeilenanteile: Wenn Material erwartet war, wie oft kam Material? Spaltenanteile: Wenn der Workflow Erstgespräch sagt, wie oft stimmt das?\n\n\nDas ist die Brücke von der Statistik zur Qualitätsprüfung des Workflows. Zwei Variablen je Fall, Kreuztabelle, drei Lesarten. Danach die interaktive Tabelle."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#neun-testfälle-vier-mögliche-empfehlungen-die-tabelle-füllt-sich-beim-bewerten",
+    "href": "slides/growth-marketing.html#neun-testfälle-vier-mögliche-empfehlungen-die-tabelle-füllt-sich-beim-bewerten",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Neun Testfälle, vier mögliche Empfehlungen: die Tabelle füllt sich beim Bewerten",
+    "text": "Neun Testfälle, vier mögliche Empfehlungen: die Tabelle füllt sich beim Bewerten\n\n  \n  \n    Absolute WerteZeilenanteileSpaltenanteile\n    Zeilen: erwartete Empfehlung aus dem Testprotokoll. Spalten: tatsächliche Empfehlung des Workflows. Zelle: Anzahl Fälle.\n    \n    Noch nichts bewertet.\n    \n      Beispiel mit zwei Fehlern\n      Zurücksetzen\n    \n  \n\n\n\n\nZwei oder drei Fälle gemeinsam bewerten, dann „Beispiel mit zwei Fehlern“ klicken, danach auf Zeilenanteile und Spaltenanteile umschalten. Die Diagonale zeigt die richtigen Entscheidungen, die Fehler sammeln sich in der Spalte Erstgespräch: Der Workflow lädt zu oft zum Gespräch ein. Genau so vergleichen die Teams am Mittwoch ihren Workflow mit einer einfachen Lösung: gleiche Fälle, zwei Tabellen, Diagonale zählen."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#die-diagonale-zeigt-die-treffer-die-anteile-zeigen-wo-die-nächste-regeländerung-ansetzt",
+    "href": "slides/growth-marketing.html#die-diagonale-zeigt-die-treffer-die-anteile-zeigen-wo-die-nächste-regeländerung-ansetzt",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Die Diagonale zeigt die Treffer, die Anteile zeigen, wo die nächste Regeländerung ansetzt",
+    "text": "Die Diagonale zeigt die Treffer, die Anteile zeigen, wo die nächste Regeländerung ansetzt\n\n\n\n\n\n\n\n\n\n\nErwartet (Zeile) / Workflow (Spalte)\nMaterial\nRückfrage\nErstgespräch\nSumme\n\n\n\n\nMaterial\n3\n0\n1\n4\n\n\nRückfrage\n0\n2\n1\n3\n\n\nErstgespräch\n0\n0\n2\n2\n\n\nSumme\n3\n2\n4\n9\n\n\n\n\nZeilenanteile: Material 3 von 4 (75 %), Rückfrage 2 von 3 (67 %), Erstgespräch 2 von 2 (100 %). Spaltenanteile: Wenn der Workflow Erstgespräch sagt, stimmt es nur in 2 von 4 Fällen (50 %). Ob 7 von 9 besser ist als 5 von 9 bei einer einfachen Lösung, klärt bei so kleinen Zahlen nur ein statistischer Test; auch das kommt später.\n\n\nZeilen sind die im Testprotokoll vorher festgelegten Erwartungen, Spalten die Empfehlungen des Workflows. Die Fehler in einer Spalte zeigen, welche Regel als Nächstes geändert wird: Der Workflow empfiehlt zu oft ein Erstgespräch. Mit dieser Tabelle vergleichen die Teams am Mittwoch den eigenen Workflow mit einer einfachen Lösung: gleiche Testfälle, zwei Tabellen, Diagonale zählen."
+  },
+  {
+    "objectID": "slides/growth-marketing.html#das-messdesign-ist-teil-der-abgabe-die-durchführung-nicht",
+    "href": "slides/growth-marketing.html#das-messdesign-ist-teil-der-abgabe-die-durchführung-nicht",
+    "title": "Growth Marketing am Fall Aurenta",
+    "section": "Das Messdesign ist Teil der Abgabe, die Durchführung nicht",
+    "text": "Das Messdesign ist Teil der Abgabe, die Durchführung nicht\n\nFür Playbook und Evaluation im Semesterprojekt:\n\nVarianten und die eine Änderung benennen\nZuteilung beschreiben (zufällig, welche Kontakte)\nKennzahl mit Zähler, Nenner und Zeitraum festlegen\nNötige Fallzahl abschätzen und mit der verfügbaren vergleichen\nKreuztabelle als Ergebnisformat vorbereiten\nKontroll- und Treatment-Gruppe, Kreuztabelle mit Zeilenanteilen und den statistischen Test für den Vergleich benennen (Einheit dazu folgt im Semester)\n\n\n\nDas ist die konkrete Anforderung an den Evaluationsteil, der 30 Prozent der Note ausmacht. Die Statistik dazu (Fallzahl, Vergleich zweier Anteile) kommt in einer Coaching-Einheit im November, vor der Zwischenpräsentation am 1. Dezember."
+  },
+  {
+    "objectID": "slides/ki-und-prompting.html#modell-chat-und-workflow-sind-drei-verschiedene-dinge",
+    "href": "slides/ki-und-prompting.html#modell-chat-und-workflow-sind-drei-verschiedene-dinge",
+    "title": "KI verstehen und Aufträge formulieren",
+    "section": "Modell, Chat und Workflow sind drei verschiedene Dinge",
+    "text": "Modell, Chat und Workflow sind drei verschiedene Dinge\n\n\nEbene 1\nSprachmodell\nErzeugt Text aus gelernten Mustern und dem, was ihm für die aktuelle Aufgabe vorliegt. Sonst nichts.\n\n\nEbene 2\nChat\nDas Produkt um das Modell herum: Verlauf, Websuche, Dateien. Gemini, ChatGPT, Claude. Ein Mensch führt den Dialog.\n\n\nEbene 3\nWorkflow\nn8n verbindet Arbeitsschritte und ruft das Modell über eine Schnittstelle auf. Chatkonto und Modellverbindung sind zwei getrennte Zugänge.\n\n\n\nDie Trennung erklärt viele Alltagserfahrungen: Was Gemini gestern konnte, kann n8n heute nicht automatisch, weil Produktfunktionen wie Websuche im Workflow nicht dabei sind. Der Kurszugang zu n8n kommt von mir, das private Gemini-Konto wird dort nicht eingetragen."
+  },
+  {
+    "objectID": "slides/ki-und-prompting.html#vier-begriffe-reichen-für-die-übungen",
+    "href": "slides/ki-und-prompting.html#vier-begriffe-reichen-für-die-übungen",
+    "title": "KI verstehen und Aufträge formulieren",
+    "section": "Vier Begriffe reichen für die Übungen",
+    "text": "Vier Begriffe reichen für die Übungen\n\n\nBegriff\nToken\nEinheiten, in denen Text verarbeitet wird, oft Wortteile. Langes Material braucht mehr Kapazität.\n\n\nBegriff\nKontext\nWas dem Modell für die aktuelle Aufgabe tatsächlich vorliegt. Das Angebot von Aurenta gehört hinein.\n\n\nBegriff\nTrainingswissen\nAllgemeine Muster aus dem Training. Daraus folgt keine Kenntnis des fiktiven Angebots oder interner Daten.\n\n\nBegriff\nHalluzination\nPlausibel formuliert, aber nicht gedeckt oder falsch. Ein erfundener Buchungslink zum Beispiel.\n\n\n\nKontext ist der Begriff, der heute zählt. Alles, was das Modell über Aurenta wissen soll, muss im Prompt stehen. Was nicht drinsteht, wird aus Trainingsmustern ergänzt, und das sieht dann aus wie Wissen."
+  },
+  {
+    "objectID": "slides/ki-und-prompting.html#das-modell-weiß-nur-was-im-kontext-steht",
+    "href": "slides/ki-und-prompting.html#das-modell-weiß-nur-was-im-kontext-steht",
+    "title": "KI verstehen und Aufträge formulieren",
+    "section": "Das Modell weiß nur, was im Kontext steht",
+    "text": "Das Modell weiß nur, was im Kontext steht\n\n„Was kostet der KI-Praxischeck Marketing von Aurenta?“ Ohne Fallpaket kann das Modell den Preis nicht kennen, es kann ihn nur erfinden. Mit Fallpaket ist die Antwort eindeutig: 2.400 Euro netto.\n\n\nDer Preis ist bekannt, konkrete Gesprächstermine sind es nicht. Genau diese Lücke muss das Modell erkennen statt füllen.\n\n\nKurz live zeigen, wenn Zeit ist: die Frage ohne Material in einen frischen Chat, dann mit Fallpaket. Ohne Material kommt entweder eine erfundene Zahl oder eine allgemeine Ausweichantwort."
+  },
+  {
+    "objectID": "slides/ki-und-prompting.html#acht-fragen-zu-modell-kontext-und-token",
+    "href": "slides/ki-und-prompting.html#acht-fragen-zu-modell-kontext-und-token",
+    "title": "KI verstehen und Aufträge formulieren",
+    "section": "Acht Fragen zu Modell, Kontext und Token",
+    "text": "Acht Fragen zu Modell, Kontext und Token\n\n  \n    \n    \n    \n  \n  \n    Eine Antwort anklicken. Danach erscheint hier die Erklärung.\n    \n    \n      Nächste Frage\n      Zurücksetzen\n    \n  \n\n\n\n\nGemeinsam durchklicken, Antworten aus dem Raum holen. Bei jeder Frage steht rechts die Erklärung, die auf die Karten von eben zurückverweist. Zwei Fragen sind absichtlich Alltagsfälle: die Websuche, die im Workflow fehlt, und das Fallpaket, das Tokens kostet."
+  },
+  {
+    "objectID": "slides/ki-und-prompting.html#gleiche-eingabe-verschiedene-ausgaben-ein-lauf-beweist-nichts",
+    "href": "slides/ki-und-prompting.html#gleiche-eingabe-verschiedene-ausgaben-ein-lauf-beweist-nichts",
+    "title": "KI verstehen und Aufträge formulieren",
+    "section": "Gleiche Eingabe, verschiedene Ausgaben: ein Lauf beweist nichts",
+    "text": "Gleiche Eingabe, verschiedene Ausgaben: ein Lauf beweist nichts\n\n\nWas das Ergebnis beeinflusst\n\ndas Modell und seine Version\nEinstellungen und Produktfunktionen\nder Kontext, auch die Reihenfolge darin\nder Zufall bei der Texterzeugung\n\n\n\nWas daraus folgt\n\nModell, Produkt und Datum im Testprotokoll notieren\nmehrere Fälle statt eines Falls\nein erfolgreicher Lauf ist ein Hinweis, keine Zuverlässigkeitsaussage\nQuellen-IDs prüfen: Q1 bis Q8 sind interne Material-IDs, keine Publikationen\n\n\n\n\nEin Modell kann auch Quellenangaben erfinden. Eine Quellen-ID belegt nur etwas, wenn die referenzierte Information tatsächlich im Material steht."
+  },
+  {
+    "objectID": "slides/ki-und-prompting.html#beobachtung-interpretation-und-entscheidung-auseinanderhalten",
+    "href": "slides/ki-und-prompting.html#beobachtung-interpretation-und-entscheidung-auseinanderhalten",
+    "title": "KI verstehen und Aufträge formulieren",
+    "section": "Beobachtung, Interpretation und Entscheidung auseinanderhalten",
+    "text": "Beobachtung, Interpretation und Entscheidung auseinanderhalten\n\n\nBeobachtung\n„fragt nach Material“\nGestützt durch das Anliegen von K-02. Steht so im Text.\n\n\nInterpretation\n„hat kein Budget“\nOhne weitere Information eine Vermutung. Gehört in die offenen Punkte, nicht in die Begründung.\n\n\nEntscheidung\n„material, M2“\nFolgt aus Beobachtung und Regel 3: Bitte um Informationen ohne Gesprächswunsch.\n\n\n\nGerade bei Qualifizierung und Priorisierung vermischen sich die drei Ebenen schnell. Im Testprotokoll werden sie getrennt geführt: Was steht im Fall, was hat das Modell gedeutet, was hat es entschieden."
+  },
+  {
+    "objectID": "slides/ki-und-prompting.html#ein-guter-auftrag-ist-ein-prompt-mit-vier-teilen",
+    "href": "slides/ki-und-prompting.html#ein-guter-auftrag-ist-ein-prompt-mit-vier-teilen",
+    "title": "KI verstehen und Aufträge formulieren",
+    "section": "Ein guter Auftrag ist ein Prompt mit vier Teilen",
+    "text": "Ein guter Auftrag ist ein Prompt mit vier Teilen\n\n\nTeil 1\nKontext\nDie Fakten, die nur wir kennen: das Angebot von Aurenta, die Regeln, das Anliegen von K-02. Wichtig, und der Teil, den die meisten weglassen.\n\n\nTeil 2\nAufgabe\nDas eine konkrete Ergebnis, das wir wollen. Beispiel: Empfiehl für K-02 den nächsten Schritt und schreibe den Nachrichtenentwurf.\n\n\nTeil 3\nFormat\nLänge, Struktur, Ton. Beispiel: Entscheidung, Begründung, Material-ID, Entwurf mit höchstens 120 Wörtern in der Sie-Form.\n\n\nTeil 4\nPrüfung\nWas das Modell melden soll, statt Lücken zu füllen. Beispiel: Nenne am Ende, was fehlt oder unsicher ist. Wichtig, und fast alle vergessen es.\n\n\n\nDas Modell kennt das Handwerk. Was es nicht kennen kann, liegt nur bei uns. Deshalb bewegen Kontext und Prüfung das Ergebnis am meisten.\n\n\nReihenfolge: Kontext, Aufgabe, Format, Prüfung. Bei langem Material steht der Kontext oben, die Anweisungen danach, so antworten Modelle besser. Ein langer Prompt ist nicht automatisch besser, vier klare Teile schlagen zwei Seiten Prosa. Die Prüfung ist der Teil, der am häufigsten fehlt: Ohne sie füllt das Modell jede Lücke, mit ihr benennt es sie."
+  },
+  {
+    "objectID": "slides/ki-und-prompting.html#was-fehlt-ersetzt-das-modell-durch-vermutungen",
+    "href": "slides/ki-und-prompting.html#was-fehlt-ersetzt-das-modell-durch-vermutungen",
+    "title": "KI verstehen und Aufträge formulieren",
+    "section": "Was fehlt, ersetzt das Modell durch Vermutungen",
+    "text": "Was fehlt, ersetzt das Modell durch Vermutungen\n\n  \n    \n    \n  \n  \n    Was das Modell daraus macht\n    \n  \n\n\n\n\nTeile an- und abschalten. Mit „Kontext“ allein anfangen, dann Aufgabe dazu, dann Format, dann Prüfung. Rechts steht jeweils, was typischerweise passiert. Die Beispielausgaben sind nachgestellt, nicht live erzeugt; der echte Test kommt in Übung 1.3."
+  },
+  {
+    "objectID": "slides/ki-und-prompting.html#eine-änderung-gezielt-prüfen-ein-fehler-eine-regel-zwei-tests",
+    "href": "slides/ki-und-prompting.html#eine-änderung-gezielt-prüfen-ein-fehler-eine-regel-zwei-tests",
+    "title": "KI verstehen und Aufträge formulieren",
+    "section": "Eine Änderung gezielt prüfen: ein Fehler, eine Regel, zwei Tests",
+    "text": "Eine Änderung gezielt prüfen: ein Fehler, eine Regel, zwei Tests\n\n\nEinen tatsächlich unpassenden Output benennen, etwa: Einladung statt der erbetenen Zusammenfassung.\nGenau eine Regel präzisieren.\nDenselben Fall erneut prüfen.\nEinen zuvor bestandenen Fall ebenfalls prüfen, damit die Änderung nichts verschlechtert.\n\n\nDie bisherige Antwort schlägt ein Erstgespräch vor, obwohl K-02\nzunächst die Webinarinhalte nacharbeiten möchte.\nÜberarbeite die Empfehlung so, dass sie diesen Informationsbedarf\nbeantwortet. Behalte die Leistungsangaben unverändert.\nBegründe, welche Regel geändert wurde.\n\nMehrere gleichzeitige Änderungen machen das Ergebnis unerklärbar. Das ist dieselbe Logik wie beim A/B-Test: nur eine Änderung, sonst weiß man nicht, was gewirkt hat."
+  },
+  {
+    "objectID": "slides/ki-und-prompting.html#ein-zweiter-chat-liefert-kritik-keine-freigabe",
+    "href": "slides/ki-und-prompting.html#ein-zweiter-chat-liefert-kritik-keine-freigabe",
+    "title": "KI verstehen und Aufträge formulieren",
+    "section": "Ein zweiter Chat liefert Kritik, keine Freigabe",
+    "text": "Ein zweiter Chat liefert Kritik, keine Freigabe\n\nEin frischer Chat kann einen Entwurf gegen vorher festgelegte Kriterien prüfen. Das Team gleicht die Kritik mit dem Material ab. Zustimmung des zweiten Modells ist kein unabhängiger Wahrheitsbeweis.\n\nPrüfe diesen Entwurf gegen das beigefügte Fallpaket.\nBewerte Anliegenbezug, korrekte Leistungsangaben und passenden\nnächsten Schritt. Nenne konkrete Textstellen und die Fallgrundlage.\nErstelle keinen neuen Text und erteile keine Freigabe.\n\nBeide Modelle können denselben Fehler machen. Der Critic markiert Stellen, der Mensch entscheidet. Das gilt später auch für den KI-Critic im Workflow."
+  },
+  {
+    "objectID": "slides/ki-und-prompting.html#übung-1.3-der-erste-prompt",
+    "href": "slides/ki-und-prompting.html#übung-1.3-der-erste-prompt",
+    "title": "KI verstehen und Aufträge formulieren",
+    "section": "Übung 1.3: Der erste Prompt",
+    "text": "Übung 1.3: Der erste Prompt\n\nEtwa 20 Minuten, erst einzeln, dann im Team.\n\nJede Person: neuer Chat, Prompt von der Kursseite hinein, an der markierten Stelle den Text aus dem Doc „Kontext für Gemini” einfügen, abschicken.\nAntwort mit Namen in ein Dokument in der Teamablage kopieren.\nDie drei Antworten vergleichen: Empfehlung? Passt sie zu Regel 3 im Fallpaket? Wird etwas erfunden? Steht am Ende, was fehlt?\nZwei Sätze: Worin unterscheiden sich die drei Antworten bei gleichem Prompt?\n\nErgebnis: Prompt und drei bewertete Antworten in der Teamablage. Derselbe Prompt wird in Übung 1.4 der KI-Schritt im Workflow.\n\n\nZum Vergleich der Antworten die Fragen von eben: Beantwortet die Ausgabe das Anliegen? Wird eine Aufzeichnung erfunden? Wird ein Gespräch ohne Anlass vorgeschlagen? Auf der Kursseite gibt es zwei Beispielantworten mit typischen Fehlern."
+  }
+]
