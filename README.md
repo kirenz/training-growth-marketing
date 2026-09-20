@@ -38,6 +38,14 @@ Das Skript benennt die Quelldateien um, nimmt sie in Renderliste und Navigation 
 
 Die Tagesseiten nennen bewusst keine Uhrzeiten mehr, sondern Bausteine mit geschätzter Dauer. Fest sind nur Beginn, Mittagspause, Ende und das Zoi-Briefing am Dienstag ab 10:00 Uhr. Damit widerspricht die Website nicht dem tatsächlichen Verlauf, wenn ein Baustein länger dauert oder entfällt.
 
+## Passwortschutz
+
+Die Website fragt beim ersten Aufruf ein Kurspasswort ab: **`growth-hdm-26`**. Die Freigabe wird im Browser gespeichert (`localStorage`, Schlüssel `gm26_zugang`) und gilt dann für alle Seiten, auch für die Folien und die Aurenta-Website. Auf `localhost` wird nicht gefragt, die lokale Vorschau bleibt also ungestört.
+
+Passwort ändern: in `passwortschutz.html` die Liste `erlaubteKennwoerter` anpassen und neu veröffentlichen. Eingebunden ist die Datei über `include-in-header` an drei Stellen: `_quarto.yml` (Kursseiten), `slides/_metadata.yml` (Foliensätze) und `aurenta/_quarto.yml` (Aurenta-Website).
+
+Das ist bewusst nur ein Schutz vor Gelegenheitszugriffen, keine echte Zugangskontrolle: Der Code läuft im Browser und ist im Quelltext lesbar, und das GitHub-Repository ist ohnehin öffentlich. Für eine geschlossene Kursgruppe reicht es, für vertrauliche Inhalte nicht.
+
 ## Veröffentlichung
 
 ```sh

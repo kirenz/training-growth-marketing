@@ -41,6 +41,8 @@ website:
 
 format:
   html:
+    include-in-header:
+      - ../passwortschutz.html
     theme: [cosmo, aurenta.scss]
     toc: false
     anchor-sections: false

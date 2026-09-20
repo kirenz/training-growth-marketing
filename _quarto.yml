@@ -101,5 +101,4 @@ format:
     smooth-scroll: true
     anchor-sections: true
     include-in-header:
-      text: |
-        <link rel="icon" href="data:,">
+      - passwortschutz.html

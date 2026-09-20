@@ -1,0 +1,5 @@
+# Gilt für alle Foliensätze in diesem Ordner.
+format:
+  revealjs:
+    include-in-header:
+      - ../passwortschutz.html
