@@ -7,8 +7,7 @@
 # Schaltet die Tagesseite, die zugehörigen Folien und das Material dieses Tages frei,
 # baut die Website neu und, beim Mittwoch, das Starterpaket mit den Transfer-Testfällen.
 #
-# Danach veröffentlichen:  quarto publish gh-pages --no-prompt --no-render
-# (--no-render ist wichtig: sonst rendert Quarto neu, leert _site und die Aurenta-Seiten fehlen.)
+# Danach veröffentlichen:  ./veroeffentlichen.sh
 # Rückgängig, solange nichts veröffentlicht ist:  git checkout -- . && git clean -fd
 set -e
 cd "$(dirname "$0")"
@@ -104,4 +103,4 @@ fi
 ./render.sh
 echo
 echo "$TAG ist freigeschaltet. Jetzt veröffentlichen:"
-echo "  quarto publish gh-pages --no-prompt --no-render"
+echo "  ./veroeffentlichen.sh"

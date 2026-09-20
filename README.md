@@ -28,9 +28,10 @@ Am Montag sind nur die Startseite, die Vorbereitung, der Montag, der Werkzeugkas
 Freischalten mit einem Befehl:
 
 ```sh
+cd ~/code/presentation/training-growth-marketing
 ./freischalten.sh dienstag     # am Dienstagmorgen
 ./freischalten.sh mittwoch     # am Mittwochmorgen
-quarto publish gh-pages --no-prompt --no-render
+./veroeffentlichen.sh
 ```
 
 Das Skript benennt die Quelldateien um, nimmt sie in Renderliste und Navigation auf, ersetzt die Platzhalter auf Startseite, Tagesseite und Materialseite, baut beim Mittwoch das Starterpaket mit den Transferfällen neu und rendert die Website. Rückgängig, solange nichts veröffentlicht ist: `git checkout -- . && git clean -fd`.
@@ -40,11 +41,11 @@ Die Tagesseiten nennen bewusst keine Uhrzeiten mehr, sondern Bausteine mit gesch
 ## Veröffentlichung
 
 ```sh
-./render.sh
-quarto publish gh-pages --no-prompt --no-render
+cd ~/code/presentation/training-growth-marketing
+./veroeffentlichen.sh
 ```
 
-`--no-render` ist zwingend. Ohne die Option rendert Quarto selbst, leert dabei `_site/` und die Aurenta-Seiten fehlen anschließend auf der veröffentlichten Website. Deshalb immer zuerst `./render.sh` (oder `./freischalten.sh`), das beide Projekte baut, und erst danach veröffentlichen.
+Das Skript wechselt selbst ins Projektverzeichnis, rendert beide Quarto-Projekte und ruft dann `quarto publish gh-pages --no-prompt --no-render` auf. `--no-render` ist zwingend. Ohne die Option rendert Quarto selbst, leert dabei `_site/` und die Aurenta-Seiten fehlen anschließend auf der veröffentlichten Website. Deshalb immer zuerst `./render.sh` (oder `./freischalten.sh`), das beide Projekte baut, und erst danach veröffentlichen.
 
 Das Repository ist öffentlich, GitHub Pages benötigt das im kostenlosen Konto. Ein Passwortschutz ist bisher nicht eingerichtet.
 
