@@ -40,11 +40,13 @@ Die Tagesseiten nennen bewusst keine Uhrzeiten mehr, sondern Bausteine mit gesch
 
 ## Passwortschutz
 
-Die Website fragt beim ersten Aufruf ein Kurspasswort ab: **`growth-hdm-26`**. Die Freigabe wird im Browser gespeichert (`localStorage`, Schlüssel `gm26_zugang`) und gilt dann für alle Seiten, auch für die Folien und die Aurenta-Website. Auf `localhost` wird nicht gefragt, die lokale Vorschau bleibt also ungestört.
+Die Website blendet den Inhalt aus und zeigt ein Eingabefeld. Kurspasswort: **`growth-hdm-26`**. Nach der Eingabe wird die Freigabe im Browser gespeichert (`localStorage`, Schlüssel `gm26_zugang`) und gilt für alle Seiten derselben Adresse, also auch für die Foliensätze und die Aurenta-Website. Auf `localhost` wird nicht gefragt, die lokale Vorschau bleibt ungestört.
 
-Passwort ändern: in `passwortschutz.html` die Liste `erlaubteKennwoerter` anpassen und neu veröffentlichen. Eingebunden ist die Datei über `include-in-header` an drei Stellen: `_quarto.yml` (Kursseiten), `slides/_metadata.yml` (Foliensätze) und `aurenta/_quarto.yml` (Aurenta-Website).
+Bewusst kein `prompt()`: Manche Browser, darunter etliche In-App-Browser, blockieren Systemdialoge. Dort wirft der Aufruf einen Fehler, die Abfrage bricht ab und die Seite wäre offen sichtbar. Das Formular funktioniert überall und blendet den Inhalt bis zur Freigabe aus.
 
-Das ist bewusst nur ein Schutz vor Gelegenheitszugriffen, keine echte Zugangskontrolle: Der Code läuft im Browser und ist im Quelltext lesbar, und das GitHub-Repository ist ohnehin öffentlich. Für eine geschlossene Kursgruppe reicht es, für vertrauliche Inhalte nicht.
+Passwort ändern: in `passwortschutz.html` die Liste `KENNWOERTER` anpassen und neu veröffentlichen. Eingebunden ist die Datei über `include-in-header` an drei Stellen: `_quarto.yml` (Kursseiten), `slides/_metadata.yml` (Foliensätze) und `aurenta/_quarto.yml` (Aurenta-Website).
+
+Das ist ein Schutz vor Gelegenheitszugriffen, keine echte Zugangskontrolle: Der Code läuft im Browser und ist im Quelltext lesbar, das HTML lässt sich auch ohne Passwort herunterladen, und das GitHub-Repository ist öffentlich. Für eine geschlossene Kursgruppe reicht das, für vertrauliche Inhalte nicht.
 
 ## Veröffentlichung
 
