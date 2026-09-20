@@ -1,0 +1,108 @@
+```{=html}
+<div class="gm-sim" id="gm-sim">
+  <div class="gm-sim__controls">
+    <label>Kontakte pro Variante <span id="gm-sim-n-val">100</span>
+      <input type="range" id="gm-sim-n" min="20" max="800" step="10" value="100" data-prevent-swipe>
+    </label>
+    <label>Wahre Quote Variante B <span id="gm-sim-p-val">10 %</span> <em>(A: 5 %)</em>
+      <input type="range" id="gm-sim-p" min="5" max="15" step="1" value="10" data-prevent-swipe>
+    </label>
+    <button type="button" id="gm-sim-run">Test durchführen</button>
+    <button type="button" id="gm-sim-reset" class="is-secondary">Zurücksetzen</button>
+  </div>
+  <div class="gm-sim__seg" id="gm-sim-view"><button type="button" data-v="abs" class="is-on">Absolute Werte</button><button type="button" data-v="row">Zeilenanteile</button><button type="button" data-v="col">Spaltenanteile</button></div>
+  <table class="gm-sim__table">
+    <thead><tr><th>Gruppe</th><th>Qualifiziertes Gespräch</th><th>Kein Gespräch</th><th>Summe</th></tr></thead>
+    <tbody>
+      <tr><td>A: Kontrollgruppe, bisherige Einladung</td><td id="gm-a-yes">–</td><td id="gm-a-no">–</td><td id="gm-a-n">–</td></tr>
+      <tr><td>B: Treatment-Gruppe, nach Anliegen</td><td id="gm-b-yes">–</td><td id="gm-b-no">–</td><td id="gm-b-n">–</td></tr>
+      <tr><td>Summe</td><td id="gm-t-yes">–</td><td id="gm-t-no">–</td><td id="gm-t-n">–</td></tr>
+    </tbody>
+  </table>
+  <div class="gm-sim__question" id="gm-sim-question"></div>
+  <div class="gm-sim__result" id="gm-sim-result">Noch kein Durchlauf. Der Zufall entscheidet, welcher Kontakt ein Gespräch führt, mit den eingestellten wahren Quoten.</div>
+  <div class="gm-sim__tally" id="gm-sim-tally"></div>
+</div>
+<style>
+.gm-sim { font-size: 0.48em; margin-top: 0.3em; color: #f2f5ff; }
+.gm-sim__controls { display: grid; grid-template-columns: 1fr 1fr auto auto; gap: 1em; align-items: end; margin-bottom: 0.8em; }
+.gm-sim__controls label { display: flex; flex-direction: column; gap: 0.3em; color: #9ba3ba; font-size: 0.9em; }
+.gm-sim__controls label span { color: #ffffff; font-weight: 700; }
+.gm-sim__controls label em { font-style: normal; }
+.gm-sim__controls input[type=range] { width: 100%; accent-color: #88F297; }
+.gm-sim__controls button { background: #88F297; color: #0b0d13; border: 0; border-radius: 0.5em; padding: 0.55em 1.1em; font-weight: 700; font-size: 0.95em; cursor: pointer; }
+.gm-sim__controls button.is-secondary { background: transparent; color: #9ba3ba; border: 1px solid #2a2f3e; }
+.reveal .gm-sim__table { font-size: 1em; width: 100%; margin: 0; }
+.reveal .gm-sim__table th, .reveal .gm-sim__table td { padding: 0.35em 0.6em; text-align: right; }
+.reveal .gm-sim__table th:first-child, .reveal .gm-sim__table td:first-child { text-align: left; }
+.gm-sim__result { margin-top: 0.7em; padding: 0.6em 0.9em; background: #161a24; border: 1px solid #2a2f3e; border-radius: 0.6em; line-height: 1.5; }
+.gm-sim__result strong { color: #88F297; }
+.gm-sim__result .is-warn { color: #ff7847; }
+.gm-sim__tally { margin-top: 0.5em; color: #9ba3ba; font-size: 0.9em; }
+.gm-sim__seg { display: inline-flex; border: 1px solid #2a2f3e; border-radius: 0.5em; overflow: hidden; margin-bottom: 0.5em; }
+.gm-sim__seg button { background: transparent; color: #9ba3ba; border: 0; padding: 0.4em 0.9em; cursor: pointer; font-weight: 600; font-size: 0.95em; }
+.gm-sim__seg button.is-on { background: #1e2332; color: #ffffff; }
+.gm-sim__question { margin-top: 0.4em; color: #88F297; font-size: 0.95em; }
+</style>
+<script>
+(function () {
+  var nEl = document.getElementById("gm-sim-n"), pEl = document.getElementById("gm-sim-p");
+  var runs = 0, bWins = 0, aWins = 0, ties = 0, view = "abs", last = null;
+  function fmt(x) { return x.toFixed(1).replace(".", ",") + " %"; }
+  function binom(n, p) { var k = 0; for (var i = 0; i < n; i++) if (Math.random() < p) k++; return k; }
+  function set(id, v) { document.getElementById(id).textContent = v; }
+  function updateLabels() {
+    set("gm-sim-n-val", nEl.value);
+    set("gm-sim-p-val", pEl.value + " %");
+  }
+  function resetTally() {
+    runs = bWins = aWins = ties = 0;
+    document.getElementById("gm-sim-tally").textContent = "";
+  }
+  function pct(x, d) { return d ? fmt(100 * x / d) : "–"; }
+  function renderTable() {
+    if (!last) return;
+    var n = last.n, a = last.a, b = last.b, ty = a + b, tn = 2 * n - ty, N = 2 * n;
+    var q = document.getElementById("gm-sim-question");
+    if (view === "abs") {
+      set("gm-a-yes", a); set("gm-a-no", n - a); set("gm-a-n", n);
+      set("gm-b-yes", b); set("gm-b-no", n - b); set("gm-b-n", n);
+      set("gm-t-yes", ty); set("gm-t-no", tn); set("gm-t-n", N);
+      q.textContent = "Absolute Werte: Anzahl der Kontakte je Zelle.";
+    } else if (view === "row") {
+      set("gm-a-yes", pct(a, n)); set("gm-a-no", pct(n - a, n)); set("gm-a-n", "100 %");
+      set("gm-b-yes", pct(b, n)); set("gm-b-no", pct(n - b, n)); set("gm-b-n", "100 %");
+      set("gm-t-yes", pct(ty, N)); set("gm-t-no", pct(tn, N)); set("gm-t-n", "100 %");
+      q.textContent = "Zeilenanteile: Wie viele der Kontakte in Gruppe B führten ein Gespräch? Das ist die Gesprächsquote, die verglichen wird.";
+    } else {
+      set("gm-a-yes", pct(a, ty)); set("gm-a-no", pct(n - a, tn)); set("gm-a-n", pct(n, N));
+      set("gm-b-yes", pct(b, ty)); set("gm-b-no", pct(n - b, tn)); set("gm-b-n", pct(n, N));
+      set("gm-t-yes", "100 %"); set("gm-t-no", "100 %"); set("gm-t-n", "100 %");
+      q.textContent = "Spaltenanteile: Wie viele der geführten Gespräche kamen aus Gruppe B? Eine andere Frage, nicht die Gesprächsquote.";
+    }
+  }
+  function run() {
+    var n = parseInt(nEl.value, 10), pB = parseInt(pEl.value, 10) / 100, pA = 0.05;
+    var a = binom(n, pA), b = binom(n, pB);
+    last = { n: n, a: a, b: b }; renderTable();
+    runs++;
+    var diff = 100 * (b - a) / n, txt;
+    if (b > a) { bWins++; txt = "<strong>B liegt vorn</strong>: " + b + " gegen " + a + " Gespräche, Gesprächsquote " + fmt(100 * b / n) + " gegen " + fmt(100 * a / n) + "."; }
+    else if (a > b) { aWins++; txt = "<span class='is-warn'>A liegt vorn</span>: " + a + " gegen " + b + " Gespräche, obwohl B die höhere wahre Quote hat."; }
+    else { ties++; txt = "Gleichstand: " + a + " gegen " + b + " Gespräche."; }
+    document.getElementById("gm-sim-result").innerHTML = txt + " Wahre Quoten: A 5 %, B " + pEl.value + " %. Ist der Unterschied zwischen den beiden Stichproben groß genug, um auf alle Kontakte zu schließen? Das ist die Inferenz-Frage, die ein statistischer Test beantwortet.";
+    document.getElementById("gm-sim-tally").textContent = "Durchläufe: " + runs + " · B vorn: " + bWins + " · A vorn: " + aWins + " · gleich: " + ties;
+  }
+  nEl.addEventListener("input", function () { updateLabels(); resetTally(); });
+  pEl.addEventListener("input", function () { updateLabels(); resetTally(); });
+  document.getElementById("gm-sim-run").addEventListener("click", run);
+  document.getElementById("gm-sim-reset").addEventListener("click", function () {
+    resetTally();
+    last = null; ["gm-a-yes","gm-a-no","gm-a-n","gm-b-yes","gm-b-no","gm-b-n","gm-t-yes","gm-t-no","gm-t-n"].forEach(function (id) { set(id, "–"); }); document.getElementById("gm-sim-question").textContent = "";
+    document.getElementById("gm-sim-result").textContent = "Noch kein Durchlauf.";
+  });
+  document.getElementById("gm-sim-view").addEventListener("click", function (ev) { var b = ev.target.closest("button"); if (!b) return; view = b.dataset.v; Array.prototype.forEach.call(ev.currentTarget.children, function (x) { x.className = x === b ? "is-on" : ""; }); renderTable(); });
+  updateLabels();
+})();
+</script>
+```

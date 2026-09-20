@@ -1,0 +1,138 @@
+```{=html}
+<div class="gm-gl" id="gm-gl">
+  <svg id="gm-gl-svg" viewBox="0 0 640 560" aria-hidden="true"></svg>
+  <div class="gm-gl__panel">
+    <div class="gm-gl__round" id="gm-gl-round">Growth Loop</div>
+    <div class="gm-gl__title" id="gm-gl-title">Der Output einer Runde ist der Input der nächsten</div>
+    <div class="gm-gl__text" id="gm-gl-text">Ein abgeschlossenes Projekt wird zur Fallstudie. Die Fallstudie zieht passende Interessierte an. Aus Interessierten werden neue Projekte. Auf „Nächste Runde“ klicken, ein Klick auf einen Knoten erklärt ihn.</div>
+    <div class="gm-gl__bars" id="gm-gl-bars"></div>
+    <div class="gm-gl__actions">
+      <button type="button" id="gm-gl-next">Nächste Runde</button>
+      <button type="button" id="gm-gl-reset" class="is-secondary">Zurücksetzen</button>
+    </div>
+    <div class="gm-gl__note">Beispielzahlen für den Mechanismus: je Fallstudie 4 Interessierte, jede zweite Anfrage wird ein Projekt.</div>
+  </div>
+</div>
+<style>
+.gm-gl { font-size: 0.48em; display: grid; grid-template-columns: 1fr 1fr; gap: 1.4em; align-items: center; margin-top: 0.2em; color: #f2f5ff; text-align: left; }
+.gm-gl svg { width: 100%; height: auto; display: block; }
+.gm-gl__round { color: #88F297; font-size: 0.8em; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; }
+.gm-gl__title { font-size: 1.3em; font-weight: 600; color: #ffffff; margin: 0.3em 0 0.5em; line-height: 1.25; }
+.gm-gl__text { color: #c5ccdd; line-height: 1.5; min-height: 4.6em; }
+.gm-gl__text b { color: #ffffff; font-weight: 600; }
+.gm-gl__bars { display: flex; gap: 0.5em; align-items: flex-end; height: 5.5em; margin-top: 0.8em; }
+.gm-gl__bar { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; }
+.gm-gl__bar div { width: 100%; background: #4ba9ff; border-radius: 0.3em 0.3em 0 0; transition: height 0.4s; }
+.gm-gl__bar.is-new div { background: #88F297; }
+.gm-gl__bar span { color: #9ba3ba; font-size: 0.8em; margin-top: 0.25em; }
+.gm-gl__bar b { color: #ffffff; font-size: 0.9em; }
+.gm-gl__actions { margin-top: 0.9em; display: flex; gap: 0.6em; }
+.gm-gl__actions button { background: #88F297; color: #0b0d13; border: 0; border-radius: 0.5em; padding: 0.5em 1.2em; font-weight: 700; cursor: pointer; font-size: 0.95em; }
+.gm-gl__actions button.is-secondary { background: transparent; color: #9ba3ba; border: 1px solid #2a2f3e; }
+.gm-gl__note { color: #5c6174; font-size: 0.8em; margin-top: 0.7em; }
+.gm-gl .node { cursor: pointer; }
+.gm-gl .node rect { fill: #1e2332; stroke: #2a2f3e; stroke-width: 2; }
+.gm-gl .node.is-info rect { stroke: #4ba9ff; stroke-width: 4; }
+.gm-gl .node.is-hot rect { stroke: #88F297; stroke-width: 4; }
+.gm-gl .node text { fill: #f2f5ff; font-family: Inter, system-ui, sans-serif; font-size: 22px; font-weight: 600; text-anchor: middle; }
+.gm-gl .node .count { fill: #88F297; font-size: 34px; font-weight: 700; }
+.gm-gl .node .sub { fill: #9ba3ba; font-size: 16px; font-weight: 400; }
+.gm-gl .arc { fill: none; stroke: #2a2f3e; stroke-width: 5; }
+.gm-gl .dot { fill: #88F297; }
+</style>
+<script>
+(function () {
+  var svg = document.getElementById("gm-gl-svg"), NS = "http://www.w3.org/2000/svg";
+  var names = ["Projekte", "Fallstudien", "Interessierte"], subs = ["abgeschlossen", "veröffentlicht", "angefragt"];
+  var infos = [
+    "Abgeschlossene Praxischecks. Jedes fertige Projekt ist der Rohstoff für eine Fallstudie, sofern der Kunde zustimmt. Ohne diese Zustimmung bricht der Loop hier ab.",
+    "Die veröffentlichte Beschreibung eines Projekts: Ausgangslage, Vorgehen, Ergebnis, mit Namen des Kunden. Sie zieht Unternehmen in ähnlicher Situation an, ohne neue Kampagne.",
+    "Anfragen, die über eine Fallstudie kommen. Passen sie zur Zielgruppe, wird ein Teil davon zu neuen Projekten, und die Schleife beginnt von vorn. Unpassende Anfragen kosten nur Zeit."
+  ];
+  var cx = 320, cy = 290, R = 185, n = 3, w = 190, h = 110;
+  function el(tag, attrs, parent) { var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); (parent || svg).appendChild(e); return e; }
+  function pos(i) { var a = -Math.PI / 2 + i * 2 * Math.PI / n; return [cx + R * Math.cos(a), cy + R * Math.sin(a)]; }
+  var defs = el("defs", {}); var m = el("marker", { id: "gm-gl-arr", viewBox: "0 0 10 10", refX: "9", refY: "5", markerWidth: "7", markerHeight: "7", orient: "auto-start-reverse" }, defs);
+  el("path", { d: "M 0 0 L 10 5 L 0 10 z", fill: "#4ba9ff" }, m);
+  var arcs = [];
+  for (var i = 0; i < n; i++) {
+    var a0 = -Math.PI / 2 + i * 2 * Math.PI / n, a1 = a0 + 2 * Math.PI / n, pad = 0.42;
+    var p0 = [cx + R * Math.cos(a0 + pad), cy + R * Math.sin(a0 + pad)], p1 = [cx + R * Math.cos(a1 - pad), cy + R * Math.sin(a1 - pad)];
+    arcs.push(el("path", { d: "M " + p0[0] + " " + p0[1] + " A " + R + " " + R + " 0 0 1 " + p1[0] + " " + p1[1], "class": "arc", "marker-end": "url(#gm-gl-arr)" }));
+  }
+  var nodes = [], countEls = [];
+  for (i = 0; i < n; i++) {
+    var p = pos(i), g = el("g", { "class": "node" });
+    el("rect", { x: p[0] - w / 2, y: p[1] - h / 2, width: w, height: h, rx: 14 }, g);
+    var c = el("text", { x: p[0], y: p[1] - 8, "class": "count" }, g); c.textContent = "0";
+    var t = el("text", { x: p[0], y: p[1] + 24 }, g); t.textContent = names[i];
+    var s = el("text", { x: p[0], y: p[1] + 46, "class": "sub" }, g); s.textContent = subs[i];
+    (function (idx) {
+      g.addEventListener("click", function () {
+        if (animating) return;
+        nodes.forEach(function (x, k) { x.setAttribute("class", "node" + (k === idx ? " is-info" : "")); });
+        document.getElementById("gm-gl-round").textContent = "Was hier passiert";
+        document.getElementById("gm-gl-title").textContent = names[idx];
+        document.getElementById("gm-gl-text").innerHTML = infos[idx];
+      });
+    })(i);
+    nodes.push(g); countEls.push(c);
+  }
+  var dotLayer = el("g", {});
+  var counts = [1, 0, 0], round = 0, history = [], animating = false;
+  var PER_CASE = 4, CONV = 0.5;
+  function setCounts() { countEls.forEach(function (c, i) { c.textContent = counts[i]; }); }
+  function bars() {
+    var box = document.getElementById("gm-gl-bars"); box.innerHTML = "";
+    var max = Math.max.apply(null, history.concat([1]));
+    history.forEach(function (v, i) {
+      var d = document.createElement("div"); d.className = "gm-gl__bar" + (i === history.length - 1 ? " is-new" : "");
+      d.innerHTML = '<b>' + v + '</b><div style="height:' + Math.max(6, 100 * v / max) + '%"></div><span>Runde ' + (i + 1) + '</span>';
+      box.appendChild(d);
+    });
+  }
+  function travel(fromIdx, toIdx, k, cb) {
+    var a0 = -Math.PI / 2 + fromIdx * 2 * Math.PI / n + 0.42, a1 = -Math.PI / 2 + toIdx * 2 * Math.PI / n - 0.42;
+    if (toIdx < fromIdx) a1 += 2 * Math.PI;
+    var dots = []; for (var j = 0; j < Math.min(k, 24); j++) dots.push(el("circle", { r: 6, "class": "dot" }, dotLayer));
+    var t0 = performance.now(), dur = 900;
+    (function fr(now) {
+      var u = Math.min(1, (now - t0) / dur);
+      dots.forEach(function (d, j) { var uu = Math.max(0, Math.min(1, u * 1.3 - j * 0.3 / dots.length)); var a = a0 + (a1 - a0) * uu; d.setAttribute("cx", cx + R * Math.cos(a)); d.setAttribute("cy", cy + R * Math.sin(a)); });
+      if (u < 1) requestAnimationFrame(fr); else { dots.forEach(function (d) { d.remove(); }); cb(); }
+    })(t0);
+  }
+  function hot(i) { nodes.forEach(function (g, k) { g.setAttribute("class", "node" + (k === i ? " is-hot" : "")); }); }
+  function nextRound() {
+    if (animating || round >= 5) return; animating = true; round++;
+    var projects = counts[0] - (history.length ? history.reduce(function (a, b) { return a + b; }, 0) - history[history.length - 1] : 0);
+    var newProjects = history.length ? history[history.length - 1] : 1;
+    var cases = newProjects, leads = cases * PER_CASE, next = Math.round(leads * CONV);
+    document.getElementById("gm-gl-round").textContent = "Runde " + round;
+    document.getElementById("gm-gl-title").textContent = newProjects + (newProjects === 1 ? " Projekt wird zur Fallstudie" : " Projekte werden zu Fallstudien");
+    document.getElementById("gm-gl-text").innerHTML = "<b>" + cases + "</b> " + (cases === 1 ? "Fallstudie bringt" : "Fallstudien bringen") + " <b>" + leads + "</b> passende Anfragen. Jede zweite wird ein Projekt: <b>" + next + "</b> neue Projekte, die in der nächsten Runde wieder Fallstudien werden.";
+    hot(0);
+    travel(0, 1, cases, function () {
+      counts[1] += cases; setCounts(); hot(1);
+      travel(1, 2, leads, function () {
+        counts[2] += leads; setCounts(); hot(2);
+        travel(2, 0, next, function () {
+          counts[0] += next; setCounts(); hot(0);
+          history.push(next); bars(); animating = false;
+          if (round === 5) document.getElementById("gm-gl-text").innerHTML += " Nach fünf Runden: <b>" + counts[0] + " Projekte</b>, ohne zusätzliche Kampagnen. Das ist der Loop. Voraussetzung: Kunden stimmen der Fallstudie zu, und die Anfragen passen.";
+        });
+      });
+    });
+  }
+  function reset() {
+    counts = [1, 0, 0]; round = 0; history = []; animating = false; setCounts(); bars(); hot(-1);
+    document.getElementById("gm-gl-round").textContent = "Growth Loop";
+    document.getElementById("gm-gl-title").textContent = "Der Output einer Runde ist der Input der nächsten";
+    document.getElementById("gm-gl-text").innerHTML = "Ein abgeschlossenes Projekt wird zur Fallstudie. Die Fallstudie zieht passende Interessierte an. Aus Interessierten werden neue Projekte. Auf „Nächste Runde“ klicken, ein Klick auf einen Knoten erklärt ihn.";
+  }
+  document.getElementById("gm-gl-next").addEventListener("click", nextRound);
+  document.getElementById("gm-gl-reset").addEventListener("click", reset);
+  reset();
+})();
+</script>
+```

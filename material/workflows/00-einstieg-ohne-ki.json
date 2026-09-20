@@ -1,0 +1,264 @@
+{
+  "name": "Aurenta 00 - Erster Lauf ohne KI",
+  "nodes": [
+    {
+      "id": "b2722eff-5f14-54d5-b744-376de504bf38",
+      "name": "Manuell starten",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "a6903491-80cf-58a6-a73c-78d51596da07",
+      "name": "Kontakt",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        240,
+        0
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "9ec29e62-7610-590a-b7a2-5c82866c5d17",
+              "name": "kontakt_id",
+              "value": "K-01",
+              "type": "string"
+            },
+            {
+              "id": "73e836bb-7b54-57ec-b157-5d31f6b476cd",
+              "name": "rolle",
+              "value": "Marketingleitung",
+              "type": "string"
+            },
+            {
+              "id": "e3a02efc-135b-5bdd-9441-4b787426173d",
+              "name": "unternehmen",
+              "value": "B2B-Dienstleister, 250 Beschäftigte",
+              "type": "string"
+            },
+            {
+              "id": "5baa121a-55db-5985-8fda-74e4218dc258",
+              "name": "webinar_status",
+              "value": "teilgenommen",
+              "type": "string"
+            },
+            {
+              "id": "e5ba0ae9-22f6-57dc-90a0-4516b8e75e05",
+              "name": "anliegen",
+              "value": "Wir möchten unsere Content-Briefings verbessern. Können wir besprechen, ob der Praxischeck dafür passt?",
+              "type": "string"
+            },
+            {
+              "id": "5e379960-3ee2-56d6-bbf7-c5bd3639c202",
+              "name": "sprache",
+              "value": "Deutsch",
+              "type": "string"
+            },
+            {
+              "id": "3656d718-ca0a-5b2b-a476-e856e5cb6473",
+              "name": "kontakt_erlaubt",
+              "value": "ja",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "notes": "Hier genau einen Kontaktfall eingeben. Für den zweiten Test kontakt_erlaubt auf nein setzen.",
+      "notesInFlow": true
+    },
+    {
+      "id": "4704b616-b20a-5eb8-a09d-d38e8ce08fd4",
+      "name": "Kontakt erlaubt",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        480,
+        0
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "contact-permission",
+              "leftValue": "={{ $json.kontakt_erlaubt }}",
+              "rightValue": "ja",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "995ef5ae-11a1-5a4e-883a-5e7c5059a528",
+      "name": "Ergebnis zur Pruefung",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        720,
+        0
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "4b59e457-9ae2-5cdc-bdc5-03b9288abd8c",
+              "name": "kontakt_id",
+              "value": "={{ $json.kontakt_id }}",
+              "type": "string"
+            },
+            {
+              "id": "08a587d5-7bbe-5fdc-ba1a-00e5a5737f1e",
+              "name": "anliegen",
+              "value": "={{ $json.anliegen }}",
+              "type": "string"
+            },
+            {
+              "id": "7b3765c7-d526-5823-aa36-b91a78b71f9a",
+              "name": "sprache",
+              "value": "={{ $json.sprache }}",
+              "type": "string"
+            },
+            {
+              "id": "2d012e55-fa77-5dbe-9453-2f48d9da4375",
+              "name": "naechster_schritt",
+              "value": "Anliegen fachlich prüfen. Dieser Ablauf verwendet keine KI.",
+              "type": "string"
+            },
+            {
+              "id": "8b403b06-8f60-52e6-8161-e523ddf071e3",
+              "name": "freigabe",
+              "value": "offen",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "2b5d4b34-c33f-5584-b234-de6db6aaa6dc",
+      "name": "Gesperrt zur Pruefung",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        720,
+        500
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d26da0ad-569e-5df6-ad2e-b245effb9416",
+              "name": "kontakt_id",
+              "value": "={{ $json.kontakt_id }}",
+              "type": "string"
+            },
+            {
+              "id": "9f2986f0-cbc9-5587-8b47-60549859f973",
+              "name": "entscheidung",
+              "value": "kein_followup",
+              "type": "string"
+            },
+            {
+              "id": "ff33e8fd-978c-53b4-af73-fc3568c0bad1",
+              "name": "begruendung",
+              "value": "Kontakt ist nicht ausdrücklich erlaubt. Kein Modellaufruf.",
+              "type": "string"
+            },
+            {
+              "id": "c4c73e39-e178-5c60-9bf3-9220bf34c147",
+              "name": "material_id",
+              "value": "keines",
+              "type": "string"
+            },
+            {
+              "id": "ead80398-2ea3-5805-8965-33c61ea93246",
+              "name": "nachricht_entwurf",
+              "value": "",
+              "type": "string"
+            },
+            {
+              "id": "98a62456-f11d-56ff-ae0b-6d6b4fca8023",
+              "name": "offene_punkte",
+              "value": "Kontaktstatus bei Bedarf intern klären.",
+              "type": "string"
+            },
+            {
+              "id": "46fb8cea-cbcf-5c04-b9fc-e815c965700d",
+              "name": "freigabe",
+              "value": "offen",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Manuell starten": {
+      "main": [
+        [
+          {
+            "node": "Kontakt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Kontakt": {
+      "main": [
+        [
+          {
+            "node": "Kontakt erlaubt",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Kontakt erlaubt": {
+      "main": [
+        [
+          {
+            "node": "Ergebnis zur Pruefung",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Gesperrt zur Pruefung",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "tags": []
+}

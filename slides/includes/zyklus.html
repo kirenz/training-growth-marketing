@@ -1,0 +1,129 @@
+```{=html}
+<div class="gm-cy" id="gm-cy">
+  <svg id="gm-cy-svg" viewBox="0 0 640 600" aria-hidden="true"></svg>
+  <div class="gm-cy__panel">
+    <div class="gm-cy__round" id="gm-cy-round">Wertschöpfungskette</div>
+    <div class="gm-cy__title" id="gm-cy-title">Von der Frage zur Aktion, und zurück zur Frage</div>
+    <div class="gm-cy__text" id="gm-cy-text">Auf „Weiter“ klicken, um die sieben Stufen am Fall Aurenta zu durchlaufen. Ein Klick auf eine Stufe erklärt sie.</div>
+    <div class="gm-cy__actions">
+      <button type="button" id="gm-cy-next">Weiter</button>
+      <button type="button" id="gm-cy-prev" class="is-secondary">Zurück</button>
+    </div>
+  </div>
+</div>
+<style>
+.gm-cy { font-size: 0.48em; display: grid; grid-template-columns: 1fr 1fr; gap: 1.4em; align-items: center; margin-top: 0.2em; color: #f2f5ff; text-align: left; }
+.gm-cy svg { width: 100%; height: auto; display: block; }
+.gm-cy__round { color: #88F297; font-size: 0.8em; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; }
+.gm-cy__title { font-size: 1.3em; font-weight: 600; color: #ffffff; margin: 0.3em 0 0.5em; line-height: 1.25; }
+.gm-cy__text { color: #c5ccdd; line-height: 1.5; min-height: 6.5em; }
+.gm-cy__text b { color: #ffffff; font-weight: 600; }
+.gm-cy__actions { margin-top: 1em; display: flex; gap: 0.6em; }
+.gm-cy__actions button { background: #88F297; color: #0b0d13; border: 0; border-radius: 0.5em; padding: 0.5em 1.2em; font-weight: 700; cursor: pointer; font-size: 0.95em; }
+.gm-cy__actions button.is-secondary { background: transparent; color: #9ba3ba; border: 1px solid #2a2f3e; }
+.gm-cy .node { cursor: pointer; }
+.gm-cy .node rect { fill: #1e2332; stroke: #2a2f3e; stroke-width: 2; transition: all 0.25s; }
+.gm-cy .node.is-info rect { stroke: #4ba9ff; stroke-width: 4; fill: #1b2a3a; }
+.gm-cy .node text { fill: #9ba3ba; font-family: Inter, system-ui, sans-serif; font-size: 18px; font-weight: 600; text-anchor: middle; transition: fill 0.25s; }
+.gm-cy .node.is-done rect { stroke: #4ba9ff; }
+.gm-cy .node.is-done text { fill: #f2f5ff; }
+.gm-cy .node.is-active rect { fill: #22303a; stroke: #88F297; stroke-width: 4; }
+.gm-cy .node.is-active text { fill: #ffffff; }
+.gm-cy .arc { fill: none; stroke: #2a2f3e; stroke-width: 5; transition: stroke 0.25s; }
+.gm-cy .arc.is-done { stroke: #4ba9ff; }
+.gm-cy .arc.is-back { stroke-dasharray: 10 10; }
+.gm-cy .arc.is-back.is-done { stroke: #88F297; stroke-dasharray: none; }
+.gm-cy .badge { fill: #88F297; }
+.gm-cy .badge-text { fill: #0b0d13; font-family: Inter, system-ui, sans-serif; font-size: 18px; font-weight: 700; text-anchor: middle; }
+.gm-cy .src { fill: #5c6174; font-family: Inter, system-ui, sans-serif; font-size: 13px; text-anchor: middle; }
+</style>
+<script>
+(function () {
+  var names = ["Frage / Meinung", "Plan", "Daten", "Analyse", "Report", "Aktion", "Evaluation"];
+  var infos = [
+    "Eine Frage aus dem Geschäft und eine Meinung dazu, gestützt auf Erfahrung oder Literatur. Bei Aurenta: Warum führen nur 10 von 198 Follow-ups zu einem Gespräch? Meinung: Eine Nachbereitung nach Anliegen bringt mehr qualifizierte Gespräche als die einheitliche Einladung.",
+    "Problem und Kennzahl festlegen und wie die Daten entstehen (Studiendesign). Bei Aurenta: Gesprächsquote = qualifizierte Gespräche ÷ Follow-ups in 14 Tagen. A/B-Test: Kontrollgruppe mit bisheriger Einladung, Treatment-Gruppe mit Nachbereitung nach Anliegen, zufällige Zuteilung.",
+    "Daten erheben und für die Analyse aufbereiten. Bei Aurenta: Kontakte durchlaufen den Test, je Kontakt wird festgehalten, ob ein qualifiziertes Gespräch stattfand. In den Blocktagen: Testprotokoll je Fall.",
+    "Daten erkunden, Kennzahlen berechnen, Modelle bauen. Bei Aurenta: Kreuztabelle Gruppe gegen Ergebnis, Zeilenanteile vergleichen, etwa 5,1 % gegen 9,1 %.",
+    "Schlüsse ziehen und Ergebnisse kommunizieren. Bei Aurenta: starker Hinweis, dass die Treatment-Gruppe besser abschneidet. Aber: noch kein statistischer Test, also nicht auf alle Kontakte verallgemeinern.",
+    "Auf die Schlüsse handeln. Bei Aurenta: Die bisherige Einladung noch nicht ersetzen. Stattdessen einen Test mit ausreichender Fallzahl planen und den statistischen Test durchführen.",
+    "Die Wirkung der Aktion prüfen. Bei Aurenta: Gesprächsquote weiter beobachten. Was dabei herauskommt, ist die nächste Frage. Die Kette ist ein Kreis."
+  ];
+  var steps = [
+    { r: 1, i: 0, t: "Frage: Warum nur 10 von 198?", x: "<b>Frage:</b> Warum führen nur 10 von 198 Follow-ups zu einem qualifizierten Gespräch? <b>Meinung:</b> Die einheitliche Einladung kommt für viele zu früh. Eine Nachbereitung nach Anliegen bringt mehr Gespräche." },
+    { r: 1, i: 1, t: "Plan: Kennzahl und A/B-Test", x: "<b>Kennzahl:</b> Gesprächsquote = qualifizierte Gespräche ÷ Follow-ups, 14 Tage. <b>Design:</b> Kontrollgruppe A bisherige Einladung, Treatment-Gruppe B Nachbereitung nach Anliegen, zufällige Zuteilung." },
+    { r: 1, i: 2, t: "Daten: je Kontakt ein Ergebnis", x: "Jeder Kontakt bekommt seine Variante. Nach 14 Tagen steht je Kontakt fest: qualifiziertes Gespräch ja oder nein. In den Blocktagen ersetzt das Testprotokoll mit K-01 bis K-03 diesen Schritt." },
+    { r: 1, i: 3, t: "Analyse: die Kreuztabelle", x: "Gruppe gegen Ergebnis. <b>Zeilenanteile</b> vergleichen: A 5 von 99 = 5,1 %, B 9 von 99 = 9,1 %. Spaltenanteile beantworten eine andere Frage: Wie viele der Gespräche kamen aus B?" },
+    { r: 1, i: 4, t: "Report: Hinweis, kein Beweis", x: "<b>Starker Hinweis</b>, dass B besser ist. Aber 5 gegen 9 Gespräche können Zufall sein. Ohne statistischen Test wird nicht auf alle Kontakte verallgemeinert. Das ist die Inferenz-Frage." },
+    { r: 1, i: 5, t: "Aktion: noch nicht umstellen", x: "Die bisherige Einladung bleibt vorerst. Geplant wird ein Test mit rund 400 Kontakten je Gruppe und ein statistischer Test. Nichts wird ohne Beleg ausgerollt." },
+    { r: 1, i: 6, t: "Evaluation: weiter beobachten", x: "Die Gesprächsquote wird weiter gemessen. Was dabei herauskommt, ist die <b>nächste Frage</b>. Die Kette schließt sich." },
+    { r: 2, i: 0, t: "Frage, zweite Runde", x: "Zweite Runde. Die Frage kommt aus der Evaluation: Der Workflow empfiehlt bei K-04 ein Gespräch, obwohl nur eine Checkliste gewünscht war. Meinung: Die Regel prüft nur die Teilnahme, nicht das Anliegen." },
+    { r: 2, i: 1, t: "Plan, zweite Runde", x: "Eine Regel ändern, dieselben Testfälle erneut laufen lassen, Kreuztabelle erwartet gegen tatsächlich vergleichen. Und so weiter: Jede Runde macht den Workflow ein Stück besser." }
+  ];
+  var svg = document.getElementById("gm-cy-svg"), NS = "http://www.w3.org/2000/svg";
+  var cx = 320, cy = 300, R = 215, n = names.length, w = 150, h = 58;
+  function pos(i) { var a = -Math.PI / 2 + i * 2 * Math.PI / n; return [cx + R * Math.cos(a), cy + R * Math.sin(a)]; }
+  function el(tag, attrs, parent) { var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); (parent || svg).appendChild(e); return e; }
+  var defs = el("defs", {});
+  ["#2a2f3e", "#4ba9ff", "#88F297"].forEach(function (c, k) {
+    var m = el("marker", { id: "gm-arr-" + k, viewBox: "0 0 10 10", refX: "9", refY: "5", markerWidth: "7", markerHeight: "7", orient: "auto-start-reverse" }, defs);
+    el("path", { d: "M 0 0 L 10 5 L 0 10 z", fill: c }, m);
+  });
+  var arcs = [], nodes = [];
+  for (var i = 0; i < n; i++) {
+    var a0 = -Math.PI / 2 + i * 2 * Math.PI / n, a1 = -Math.PI / 2 + (i + 1) * 2 * Math.PI / n;
+    var pad = 0.30;
+    var p0 = [cx + R * Math.cos(a0 + pad), cy + R * Math.sin(a0 + pad)], p1 = [cx + R * Math.cos(a1 - pad), cy + R * Math.sin(a1 - pad)];
+    var arc = el("path", { d: "M " + p0[0] + " " + p0[1] + " A " + R + " " + R + " 0 0 1 " + p1[0] + " " + p1[1], "class": "arc" + (i === n - 1 ? " is-back" : ""), "marker-end": "url(#gm-arr-0)" });
+    arcs.push(arc);
+  }
+  for (i = 0; i < n; i++) {
+    var p = pos(i), g = el("g", { "class": "node" });
+    el("rect", { x: p[0] - w / 2, y: p[1] - h / 2, width: w, height: h, rx: 12 }, g);
+    var t = el("text", { x: p[0], y: p[1] + 6 }, g); t.textContent = names[i];
+    (function (idx) {
+      g.addEventListener("click", function () {
+        render();
+        nodes[idx].classList.add("is-info");
+        document.getElementById("gm-cy-round").textContent = "Stufe " + (idx + 1) + " von 7 · Was hier passiert";
+        document.getElementById("gm-cy-title").textContent = names[idx];
+        document.getElementById("gm-cy-text").innerHTML = infos[idx];
+      });
+    })(i);
+    nodes.push(g);
+  }
+  var src = el("text", { x: cx, y: cy + 8, "class": "src" }); src.textContent = "nach Google (2011), Tingley et al. (2021)";
+  var badge = el("g", { "class": "badge-g", opacity: 0 });
+  var bp = pos(0); el("circle", { cx: bp[0] + w / 2 - 6, cy: bp[1] - h / 2 + 6, r: 16, "class": "badge" }, badge);
+  var bt = el("text", { x: bp[0] + w / 2 - 6, y: bp[1] - h / 2 + 12, "class": "badge-text" }, badge); bt.textContent = "2";
+  var step = -1;
+  function render() {
+    nodes.forEach(function (g) { g.setAttribute("class", "node"); });
+    arcs.forEach(function (a) { a.setAttribute("class", "arc" + (a === arcs[n - 1] ? " is-back" : "")); a.setAttribute("marker-end", "url(#gm-arr-0)"); });
+    badge.setAttribute("opacity", 0);
+    if (step < 0) {
+      document.getElementById("gm-cy-round").textContent = "Wertschöpfungskette";
+      document.getElementById("gm-cy-title").textContent = "Von der Frage zur Aktion, und zurück zur Frage";
+      document.getElementById("gm-cy-text").innerHTML = "Auf „Weiter“ klicken, um die sieben Stufen am Fall Aurenta zu durchlaufen. Ein Klick auf eine Stufe erklärt sie.";
+      return;
+    }
+    var s = steps[step];
+    for (var k = 0; k <= step; k++) {
+      var st = steps[k];
+      nodes[st.i].classList.add("is-done");
+      if (k < step) {
+        var idx = st.i; arcs[idx].classList.add("is-done"); arcs[idx].setAttribute("marker-end", idx === n - 1 ? "url(#gm-arr-2)" : "url(#gm-arr-1)");
+      }
+    }
+    nodes[s.i].classList.add("is-active");
+    if (s.r === 2) badge.setAttribute("opacity", 1);
+    document.getElementById("gm-cy-round").textContent = "Runde " + s.r + " · Stufe " + (s.i + 1) + " von 7";
+    document.getElementById("gm-cy-title").textContent = s.t;
+    document.getElementById("gm-cy-text").innerHTML = s.x;
+  }
+  document.getElementById("gm-cy-next").addEventListener("click", function () { if (step < steps.length - 1) { step++; render(); } });
+  document.getElementById("gm-cy-prev").addEventListener("click", function () { if (step >= 0) { step--; render(); } });
+  render();
+})();
+</script>
+```

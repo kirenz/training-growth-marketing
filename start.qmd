@@ -1,0 +1,52 @@
+---
+title: "Vorbereitung und Zugänge"
+toc: true
+---
+
+
+[Ein Notebook, ein funktionierender Chat-Zugang und eine vorbereitete n8n-Umgebung genügen für den Einstieg. Eigene Programmierung und private Bezahlabos sind nicht erforderlich.]{.lead}
+
+## ChatGPT als gemeinsame Oberfläche {#zugang}
+
+Die Demonstrationen erfolgen in [ChatGPT](https://chatgpt.com/). Alle Pflichtübungen sind als Textaufgaben angelegt: Fallmaterial kopieren, Auftrag formulieren, Ergebnis prüfen und verbessern. Datei-Uploads, Bildgenerierung, Deep Research und selbst erstellte GPTs sind keine Voraussetzung.
+
+Vorhandene Zugänge zu Claude oder Gemini dürfen verwendet werden. Produkt und angezeigtes Modell werden im Testprotokoll festgehalten. Unterschiede sind ein möglicher Einflussfaktor; ein Vergleich zwischen Produkten belegt nicht allein den Nutzen einer Workflow-Architektur.
+
+Vor dem Kurstag einmal anmelden, einen neuen Chat starten und eine kurze Testfrage stellen. Bei fehlendem Zugang wird zunächst gemeinsam an einem verfügbaren Gerät gearbeitet, ohne Kontopasswörter zu teilen. Die Lehrperson klärt den Kurszugang. Eine Prüfung vorbereiteter Ausgaben kann Wartezeit überbrücken, ersetzt aber keine eigene Durchführung.
+
+::: {.callout-note title="Kostenloser Zugang und Limits"}
+Für die textbasierten Pflichtübungen ist kein Bezahlabo vorgesehen. Funktionen und Kontingente können sich ändern. Maßgeblich sind die Hinweise im eigenen Konto und die [offizielle Free-Tier-Hilfe](https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq). Zusätzliche Käufe sind keine Übungsaufgabe.
+:::
+
+## n8n ab Montag {#n8n}
+
+Der Zugang zur Kursumgebung und die eingerichtete Modellverbindung werden durch die Lehrperson bereitgestellt. Ein Browser-Chatkonto stellt nicht automatisch eine API-Verbindung für n8n bereit. [ChatGPT und API werden getrennt abgerechnet](https://help.openai.com/en/articles/9039756-managing-billing-for-chatgpt-and-the-api-platform).
+
+Die [Referenzworkflows](materialien.qmd#workflows) enthalten keine Zugangsdaten. Nach dem Import muss die vorbereitete Verbindung ausgewählt und das freigegebene Modell eingestellt werden. Ein vollständiger Lauf mit den Kurszugängen ist der Zugangstest.
+
+Falls die Modellverbindung ausfällt, können Trigger, Kontaktfelder und feste Regeln weitergebaut werden. Modellantworten lassen sich übergangsweise im Chat prüfen. Dieser Ersatzweg wird als manuelle Simulation dokumentiert. Der echte Modellschritt in n8n wird nachgeholt.
+
+## Zusammenarbeit vorbereiten {#team}
+
+Die Teameinteilung erfolgt am Montag im Kurs. Dafür füllen alle zu Beginn eine kurze [Umfrage zur Teambildung](https://docs.google.com/forms/d/e/1FAIpQLSc9kP94sU9djozeVh9rZ9O0Oz_0FLJbSW883tvB8zyQOeppeQ/viewform) aus (etwa 6 bis 8 Minuten). Sie erfasst konkrete Erfahrungen, Lerninteressen und gemeinsame Arbeitszeiten. Daraus entstehen sechs Dreierteams. Die Fragen sind vorab als [Textfassung](https://docs.google.com/document/d/1YpzfFeP2L6jjcJthmrwukUelgQ7zNwMTB9burSysWEA/edit) einsehbar, eine Vorbereitung ist nicht nötig. Die Teambildung und das Kennenlernen erhalten am Montag eine volle Stunde.
+
+Ergebnisse werden ab Montag in einer gemeinsamen Teamablage gesammelt. Falls die geteilte Ablage noch fehlt, reicht zunächst ein lokaler Teamordner. Zugangsdaten gehören nicht in Exporte, Screenshots oder Dokumente.
+
+| Ordner | Inhalt |
+|---|---|
+| `01_Agenten` | Wiederverwendbare Anweisungen und Wissensgrundlagen |
+| `02_Workflows` | Exporte, Skizzen, gesicherte Ausgaben |
+| `03_Playbook` | Projektbrief, Teamvereinbarung und Bedienungsanleitung |
+| `04_Evaluation` | Experimentkarte, Tests und Vergleiche |
+
+## Arbeitsregeln {#regeln}
+
+Die Übungen nutzen ausschließlich das synthetische Fallmaterial. Keine vertraulichen Unterlagen oder echten Kontaktdaten Dritter eingeben. Nachrichten werden als Entwürfe abgelegt; keine Übung versendet, bucht oder verändert ein produktives CRM. Eine menschliche Prüfung bleibt sichtbar, auch wenn ein Modell seine Antwort für richtig hält.
+
+Ein neuer unabhängiger Test beginnt in einem neuen Chat. Innerhalb einer Übung darf ein Prompt im Dialog verbessert werden; dieser Verlauf wird als Überarbeitung gekennzeichnet. Für einen Vergleich werden die endgültigen Anweisungen anschließend in frischen Chats geprüft.
+
+## Optional: Modelle vergleichen
+
+[Arena](https://arena.ai/) kann für eine kurze Zusatzübung verwendet werden: derselbe Fall, zwei Antworten, vorher festgelegte Kriterien. Es ist kein Pflichtzugang. Direct und Side-by-Side erfordern laut [Arena-Hilfe](https://help.arena.ai/articles/7258407731-arena-how-to-create-an-account) eine Anmeldung; [Nutzungslimits](https://help.arena.ai/articles/3295820808-arena-troubleshooting-daily-usage-limits) bleiben bestehen. Dafür ist kein zusätzlicher Block im Pflichtprogramm vorgesehen.
+
+[**Weiter zum Montag**](tage/montag.qmd)

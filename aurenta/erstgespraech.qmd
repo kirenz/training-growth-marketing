@@ -1,0 +1,51 @@
+---
+title: "Erstgespräch"
+---
+
+::: {.au-hero}
+[Kostenlos, 30 Minuten]{.au-kicker}
+
+# Erstgespräch
+
+[In 30 Minuten klären wir, welche Aufgabe Sie im Blick haben, wer bei Ihnen zuständig ist und ob der KI-Praxischeck dafür passt. Unverbindlich und ohne Vorbereitung.]{.au-lead}
+:::
+
+## Was wir im Gespräch klären
+
+::: {.au-grid}
+::: {.au-card}
+[Frage 1]{.au-tag}
+
+### Die Aufgabe
+
+Welche wiederkehrende Marketingaufgabe kostet Zeit oder Qualität? Ein konkretes Beispiel genügt.
+:::
+::: {.au-card}
+[Frage 2]{.au-tag}
+
+### Die Zuständigkeit
+
+Wer würde im Praxischeck mitarbeiten, und wer entscheidet danach über den nächsten Schritt?
+:::
+::: {.au-card}
+[Frage 3]{.au-tag}
+
+### Die Passung
+
+Passt der Praxischeck zu Ihrer Situation, oder ist zunächst etwas anderes sinnvoller, etwa eine Arbeitshilfe oder das Nacharbeiten des Webinars?
+:::
+:::
+
+## Für wen das Gespräch gedacht ist
+
+Für Marketingteams, die einen konkreten Bedarf haben und den nächsten Schritt besprechen wollen. Wenn Sie zunächst nur Informationen suchen, sind der [Fachbeitrag](fachbeitrag.html) und die [Webinar-Zusammenfassung](webinar.html) der bessere Einstieg. Ein Gespräch ohne konkrete Aufgabe bringt weder Ihnen noch uns etwas.
+
+## Anfrage
+
+Schreiben Sie uns kurz, welche Aufgabe Sie im Blick haben und wer teilnehmen würde. Wir melden uns mit Terminvorschlägen.
+
+<a class="au-btn" href="mailto:kontakt@aurenta.example?subject=Erstgespr%C3%A4ch">Erstgespräch anfragen</a>
+
+::: {.au-note}
+Das Erstgespräch ist kein Verkaufsgespräch. Wenn der Praxischeck nicht passt, sagen wir das, und Sie bekommen stattdessen eine Empfehlung, was für Sie sinnvoll wäre.
+:::

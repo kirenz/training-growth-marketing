@@ -1,0 +1,7 @@
+﻿kontakt_id;rolle;unternehmen;webinar_status;anliegen;sprache;kontakt_erlaubt
+K-01;Marketingleitung;B2B-Dienstleister, 250 Beschäftigte;teilgenommen;Wir möchten unsere Content-Briefings verbessern. Können wir besprechen, ob der Praxischeck dafür passt?;Deutsch;ja
+K-02;Content Marketing;Technischer Handel, 180 Beschäftigte;nicht teilgenommen;Ich konnte nicht teilnehmen. Gibt es eine Aufzeichnung? Ich möchte zunächst die Inhalte nacharbeiten.;Deutsch;ja
+K-03;Marketing Operations;Industrieunternehmen, 600 Beschäftigte;teilgenommen;Was kostet der Praxischeck, und ist der laufende Betrieb unserer CRM-Automatisierung enthalten?;Deutsch;ja
+K-04;Marketing Manager;B2B software company, 120 employees;teilgenommen;We are collecting ideas for AI use in marketing. Could you recommend a checklist before we discuss a consulting project?;English;ja
+K-05;Marketingleitung;B2B-Dienstleister, 400 Beschäftigte;teilgenommen;Bitte keine weitere Kontaktaufnahme.;Deutsch;nein
+K-06;Marketing;Industrieunternehmen, 300 Beschäftigte;angemeldet;;Deutsch;ja

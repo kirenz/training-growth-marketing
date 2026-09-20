@@ -1,0 +1,331 @@
+kontakt_id,kampagne,rolle,branche,beschaeftigte,webinar_status,anliegen_kategorie,kontakt_erlaubt,followup_gesendet,antwort,gespraech_gebucht,gespraech_durchgefuehrt
+A-001,A,Marketing,Technischer Handel,150,teilgenommen,leer,ja,1,0,0,0
+A-002,A,Marketingleitung,B2B-Software,450,teilgenommen,leer,ja,1,0,0,0
+A-003,A,Marketing,B2B-Dienstleister,120,teilgenommen,leer,ja,1,0,0,0
+A-004,A,Kommunikation,Zulieferer,80,teilgenommen,leer,ja,1,0,0,0
+A-005,A,Produktmarketing,Industrieunternehmen,450,teilgenommen,leer,ja,1,0,0,0
+A-006,A,Digital Marketing,B2B-Software,80,teilgenommen,leer,ja,1,0,0,0
+A-007,A,Digital Marketing,Zulieferer,300,teilgenommen,leer,ja,1,0,0,0
+A-008,A,Kommunikation,B2B-Software,180,teilgenommen,leer,ja,1,0,0,0
+A-009,A,Marketing Manager,Zulieferer,450,teilgenommen,leer,ja,1,0,0,0
+A-010,A,Produktmarketing,B2B-Dienstleister,180,teilgenommen,leer,ja,1,0,0,0
+A-011,A,Marketing Operations,B2B-Dienstleister,800,teilgenommen,leer,ja,1,0,0,0
+A-012,A,Digital Marketing,B2B-Software,350,teilgenommen,leer,ja,1,1,0,0
+A-013,A,Marketing Operations,Zulieferer,180,teilgenommen,leer,ja,1,0,0,0
+A-014,A,Marketing,Logistik,180,teilgenommen,leer,ja,1,0,0,0
+A-015,A,Kommunikation,Zulieferer,600,teilgenommen,leer,ja,1,0,0,0
+A-016,A,Produktmarketing,Industrieunternehmen,200,teilgenommen,leer,ja,1,0,0,0
+A-017,A,Marketingleitung,Industrieunternehmen,120,teilgenommen,leer,ja,1,0,0,0
+A-018,A,Marketing Manager,Logistik,180,teilgenommen,leer,ja,1,0,0,0
+A-019,A,Marketing,B2B-Dienstleister,120,teilgenommen,leer,ja,1,0,0,0
+A-020,A,Produktmarketing,Zulieferer,350,teilgenommen,leer,ja,1,0,0,0
+A-021,A,Marketing Operations,Zulieferer,250,teilgenommen,leer,ja,1,0,0,0
+A-022,A,Produktmarketing,Maschinenbau,450,teilgenommen,nachlesen,ja,1,0,0,0
+A-023,A,Kommunikation,B2B-Software,80,teilgenommen,nachlesen,ja,1,1,0,0
+A-024,A,Kommunikation,Zulieferer,250,teilgenommen,nachlesen,ja,1,0,0,0
+A-025,A,Marketing Manager,B2B-Software,80,teilgenommen,nachlesen,ja,1,0,0,0
+A-026,A,Marketing Operations,B2B-Software,400,teilgenommen,nachlesen,ja,1,0,0,0
+A-027,A,Marketing,B2B-Dienstleister,200,teilgenommen,nachlesen,ja,1,1,0,0
+A-028,A,Marketing,Zulieferer,600,teilgenommen,nachlesen,ja,1,0,0,0
+A-029,A,Marketing,B2B-Software,450,teilgenommen,nachlesen,ja,1,0,0,0
+A-030,A,Produktmarketing,Zulieferer,120,teilgenommen,nachlesen,ja,1,0,0,0
+A-031,A,Marketing Operations,Maschinenbau,80,teilgenommen,nachlesen,ja,1,0,0,0
+A-032,A,Marketingleitung,Maschinenbau,450,teilgenommen,nachlesen,ja,1,0,0,0
+A-033,A,Produktmarketing,B2B-Software,350,teilgenommen,nachlesen,ja,1,0,0,0
+A-034,A,Marketing,Industrieunternehmen,350,teilgenommen,nachlesen,ja,1,0,0,0
+A-035,A,Produktmarketing,Technischer Handel,200,teilgenommen,nachlesen,ja,1,0,0,0
+A-036,A,Digital Marketing,Logistik,80,teilgenommen,nachlesen,ja,1,0,0,0
+A-037,A,Marketing Operations,B2B-Software,450,teilgenommen,nachlesen,ja,1,0,0,0
+A-038,A,Kommunikation,B2B-Software,800,teilgenommen,nachlesen,ja,1,0,0,0
+A-039,A,Produktmarketing,Zulieferer,600,teilgenommen,nachlesen,ja,1,0,0,0
+A-040,A,Content Marketing,Technischer Handel,350,teilgenommen,frage,ja,1,1,0,0
+A-041,A,Kommunikation,Industrieunternehmen,400,teilgenommen,frage,ja,1,0,0,0
+A-042,A,Produktmarketing,B2B-Software,600,teilgenommen,frage,ja,1,0,0,0
+A-043,A,Produktmarketing,B2B-Software,180,teilgenommen,frage,ja,1,0,0,0
+A-044,A,Produktmarketing,Technischer Handel,350,teilgenommen,frage,ja,1,0,0,0
+A-045,A,Marketing,Maschinenbau,350,teilgenommen,frage,ja,1,0,0,0
+A-046,A,Marketingleitung,B2B-Software,300,teilgenommen,frage,ja,1,0,0,0
+A-047,A,Marketing Operations,Industrieunternehmen,150,teilgenommen,frage,ja,1,1,1,0
+A-048,A,Marketing Operations,B2B-Dienstleister,350,teilgenommen,frage,ja,1,0,0,0
+A-049,A,Marketingleitung,Logistik,400,teilgenommen,frage,ja,1,0,0,0
+A-050,A,Kommunikation,B2B-Dienstleister,300,teilgenommen,frage,ja,1,1,0,0
+A-051,A,Marketing Operations,B2B-Software,800,teilgenommen,frage,ja,1,1,1,1
+A-052,A,Marketing,Logistik,150,teilgenommen,gespraech,ja,1,0,0,0
+A-053,A,Kommunikation,Technischer Handel,120,teilgenommen,gespraech,ja,1,0,0,0
+A-054,A,Marketing Operations,B2B-Software,120,teilgenommen,gespraech,ja,1,1,1,0
+A-055,A,Digital Marketing,Maschinenbau,450,teilgenommen,gespraech,ja,1,0,0,0
+A-056,A,Content Marketing,Zulieferer,120,teilgenommen,gespraech,ja,1,1,1,1
+A-057,A,Produktmarketing,Industrieunternehmen,180,teilgenommen,gespraech,ja,1,1,1,1
+A-058,A,Marketing Operations,Industrieunternehmen,450,teilgenommen,gespraech,ja,1,0,0,0
+A-059,A,Content Marketing,B2B-Dienstleister,600,teilgenommen,gespraech,ja,1,1,0,0
+A-060,A,Content Marketing,Logistik,800,teilgenommen,gespraech,ja,1,1,0,0
+A-061,A,Produktmarketing,Industrieunternehmen,400,nicht teilgenommen,leer,ja,0,0,0,0
+A-062,A,Produktmarketing,Industrieunternehmen,400,nicht teilgenommen,nachlesen,nein,0,0,0,0
+A-063,A,Digital Marketing,B2B-Software,150,nicht teilgenommen,frage,ja,0,0,0,0
+A-064,A,Marketing Operations,B2B-Dienstleister,150,nicht teilgenommen,nachlesen,ja,0,0,0,0
+A-065,A,Marketing,Industrieunternehmen,180,nicht teilgenommen,nachlesen,ja,0,0,0,0
+A-066,A,Marketing,Industrieunternehmen,80,nicht teilgenommen,leer,ja,0,0,0,0
+A-067,A,Marketing,Zulieferer,180,nicht teilgenommen,nachlesen,ja,0,0,0,0
+A-068,A,Marketing,B2B-Software,200,nicht teilgenommen,nachlesen,ja,0,0,0,0
+A-069,A,Marketing Operations,Maschinenbau,400,nicht teilgenommen,leer,ja,0,0,0,0
+A-070,A,Digital Marketing,Maschinenbau,800,nicht teilgenommen,leer,ja,0,0,0,0
+A-071,A,Marketing,Logistik,800,nicht teilgenommen,gespraech,ja,0,0,0,0
+A-072,A,Marketing Manager,Technischer Handel,180,nicht teilgenommen,nachlesen,ja,0,0,0,0
+A-073,A,Marketingleitung,B2B-Software,600,nicht teilgenommen,nachlesen,ja,0,0,0,0
+A-074,A,Content Marketing,Logistik,80,nicht teilgenommen,frage,ja,0,0,0,0
+A-075,A,Digital Marketing,B2B-Dienstleister,150,nicht teilgenommen,leer,ja,0,0,0,0
+A-076,A,Digital Marketing,B2B-Software,120,nicht teilgenommen,nachlesen,ja,0,0,0,0
+A-077,A,Marketingleitung,Maschinenbau,600,nicht teilgenommen,frage,ja,0,0,0,0
+A-078,A,Produktmarketing,Industrieunternehmen,300,nicht teilgenommen,leer,ja,0,0,0,0
+A-079,A,Marketingleitung,Maschinenbau,150,nicht teilgenommen,leer,ja,0,0,0,0
+A-080,A,Marketing,Technischer Handel,180,nicht teilgenommen,leer,ja,0,0,0,0
+A-081,A,Marketing Operations,Industrieunternehmen,450,nicht teilgenommen,leer,ja,0,0,0,0
+A-082,A,Kommunikation,Industrieunternehmen,120,nicht teilgenommen,leer,ja,0,0,0,0
+A-083,A,Marketing Manager,Industrieunternehmen,180,nicht teilgenommen,leer,ja,0,0,0,0
+A-084,A,Content Marketing,Technischer Handel,800,nicht teilgenommen,leer,ja,0,0,0,0
+A-085,A,Kommunikation,Maschinenbau,350,nicht teilgenommen,nachlesen,ja,0,0,0,0
+A-086,A,Produktmarketing,Technischer Handel,300,nicht teilgenommen,nachlesen,ja,0,0,0,0
+A-087,A,Kommunikation,Zulieferer,600,nicht teilgenommen,leer,ja,0,0,0,0
+A-088,A,Marketing Manager,Zulieferer,250,nicht teilgenommen,frage,ja,0,0,0,0
+A-089,A,Produktmarketing,B2B-Dienstleister,250,nicht teilgenommen,leer,ja,0,0,0,0
+A-090,A,Digital Marketing,Maschinenbau,600,nicht teilgenommen,leer,ja,0,0,0,0
+A-091,A,Produktmarketing,Maschinenbau,200,nicht teilgenommen,leer,ja,0,0,0,0
+A-092,A,Kommunikation,Logistik,180,nicht teilgenommen,leer,ja,0,0,0,0
+A-093,A,Produktmarketing,Industrieunternehmen,400,nicht teilgenommen,frage,ja,0,0,0,0
+A-094,A,Marketing,Logistik,300,nicht teilgenommen,frage,ja,0,0,0,0
+A-095,A,Marketing Manager,Industrieunternehmen,800,nicht teilgenommen,gespraech,ja,0,0,0,0
+A-096,A,Marketing Manager,Technischer Handel,200,nicht teilgenommen,nachlesen,ja,0,0,0,0
+A-097,A,Kommunikation,Industrieunternehmen,600,nicht teilgenommen,leer,ja,0,0,0,0
+A-098,A,Marketingleitung,Maschinenbau,200,nicht teilgenommen,frage,ja,0,0,0,0
+A-099,A,Content Marketing,Industrieunternehmen,400,nicht teilgenommen,frage,ja,0,0,0,0
+A-100,A,Produktmarketing,Industrieunternehmen,400,nicht teilgenommen,frage,ja,0,0,0,0
+B-001,B,Marketing Manager,Zulieferer,350,teilgenommen,leer,ja,1,0,0,0
+B-002,B,Marketingleitung,Logistik,80,teilgenommen,leer,ja,1,0,0,0
+B-003,B,Marketing,Maschinenbau,120,teilgenommen,leer,ja,1,0,0,0
+B-004,B,Kommunikation,Zulieferer,200,teilgenommen,leer,ja,1,0,0,0
+B-005,B,Marketing,Maschinenbau,300,teilgenommen,leer,ja,1,0,0,0
+B-006,B,Produktmarketing,B2B-Software,300,teilgenommen,leer,ja,1,0,0,0
+B-007,B,Produktmarketing,B2B-Software,150,teilgenommen,leer,ja,1,0,0,0
+B-008,B,Produktmarketing,Industrieunternehmen,120,teilgenommen,leer,ja,1,1,1,1
+B-009,B,Content Marketing,Zulieferer,200,teilgenommen,leer,ja,1,0,0,0
+B-010,B,Marketingleitung,Logistik,400,teilgenommen,leer,ja,1,0,0,0
+B-011,B,Kommunikation,Zulieferer,350,teilgenommen,leer,ja,1,0,0,0
+B-012,B,Content Marketing,Technischer Handel,80,teilgenommen,leer,ja,1,0,0,0
+B-013,B,Marketing,B2B-Dienstleister,500,teilgenommen,leer,ja,1,0,0,0
+B-014,B,Kommunikation,Zulieferer,80,teilgenommen,leer,ja,1,0,0,0
+B-015,B,Produktmarketing,B2B-Software,400,teilgenommen,leer,ja,1,0,0,0
+B-016,B,Produktmarketing,Technischer Handel,500,teilgenommen,leer,ja,1,0,0,0
+B-017,B,Marketing Operations,Technischer Handel,120,teilgenommen,leer,ja,1,0,0,0
+B-018,B,Marketing Operations,Zulieferer,400,teilgenommen,leer,ja,1,0,0,0
+B-019,B,Digital Marketing,B2B-Dienstleister,200,teilgenommen,leer,ja,1,0,0,0
+B-020,B,Kommunikation,Maschinenbau,600,teilgenommen,leer,ja,1,0,0,0
+B-021,B,Marketing Manager,Technischer Handel,350,teilgenommen,leer,ja,1,0,0,0
+B-022,B,Produktmarketing,Logistik,600,teilgenommen,leer,ja,1,0,0,0
+B-023,B,Marketing Manager,Maschinenbau,80,teilgenommen,leer,ja,1,0,0,0
+B-024,B,Marketing Manager,B2B-Dienstleister,450,teilgenommen,leer,ja,1,0,0,0
+B-025,B,Marketing Operations,B2B-Dienstleister,350,teilgenommen,leer,ja,1,0,0,0
+B-026,B,Marketing Manager,Industrieunternehmen,400,teilgenommen,leer,ja,1,0,0,0
+B-027,B,Content Marketing,Industrieunternehmen,300,teilgenommen,nachlesen,ja,1,0,0,0
+B-028,B,Produktmarketing,Industrieunternehmen,350,teilgenommen,nachlesen,ja,1,1,1,0
+B-029,B,Marketing Manager,Maschinenbau,500,teilgenommen,nachlesen,ja,1,1,0,0
+B-030,B,Content Marketing,Industrieunternehmen,600,teilgenommen,nachlesen,ja,1,0,0,0
+B-031,B,Kommunikation,B2B-Software,400,teilgenommen,nachlesen,ja,1,0,0,0
+B-032,B,Marketing Manager,Technischer Handel,200,teilgenommen,nachlesen,ja,1,0,0,0
+B-033,B,Marketing Operations,B2B-Software,500,teilgenommen,nachlesen,ja,1,0,0,0
+B-034,B,Produktmarketing,B2B-Dienstleister,200,teilgenommen,nachlesen,ja,1,0,0,0
+B-035,B,Kommunikation,Maschinenbau,350,teilgenommen,nachlesen,ja,1,1,0,0
+B-036,B,Marketing Operations,B2B-Dienstleister,120,teilgenommen,nachlesen,ja,1,0,0,0
+B-037,B,Marketingleitung,B2B-Dienstleister,120,teilgenommen,nachlesen,ja,1,0,0,0
+B-038,B,Digital Marketing,Technischer Handel,450,teilgenommen,nachlesen,ja,1,0,0,0
+B-039,B,Marketing,Logistik,800,teilgenommen,nachlesen,ja,1,0,0,0
+B-040,B,Digital Marketing,Technischer Handel,600,teilgenommen,nachlesen,ja,1,0,0,0
+B-041,B,Marketing,B2B-Dienstleister,180,teilgenommen,nachlesen,ja,1,0,0,0
+B-042,B,Produktmarketing,B2B-Dienstleister,150,teilgenommen,nachlesen,ja,1,0,0,0
+B-043,B,Marketing Manager,Industrieunternehmen,800,teilgenommen,nachlesen,ja,1,0,0,0
+B-044,B,Digital Marketing,B2B-Software,600,teilgenommen,nachlesen,ja,1,0,0,0
+B-045,B,Content Marketing,Zulieferer,800,teilgenommen,nachlesen,ja,1,0,0,0
+B-046,B,Produktmarketing,Industrieunternehmen,350,teilgenommen,nachlesen,ja,1,0,0,0
+B-047,B,Kommunikation,B2B-Dienstleister,300,teilgenommen,nachlesen,ja,1,0,0,0
+B-048,B,Content Marketing,B2B-Dienstleister,800,teilgenommen,nachlesen,ja,1,0,0,0
+B-049,B,Marketing Operations,Technischer Handel,150,teilgenommen,frage,ja,1,0,0,0
+B-050,B,Digital Marketing,Maschinenbau,400,teilgenommen,frage,ja,1,0,0,0
+B-051,B,Content Marketing,Maschinenbau,350,teilgenommen,frage,ja,1,0,0,0
+B-052,B,Kommunikation,B2B-Software,80,teilgenommen,frage,ja,1,0,0,0
+B-053,B,Marketing,B2B-Software,450,teilgenommen,frage,ja,1,1,1,0
+B-054,B,Marketingleitung,Industrieunternehmen,150,teilgenommen,frage,ja,1,1,0,0
+B-055,B,Marketing Manager,Industrieunternehmen,500,teilgenommen,frage,ja,1,1,0,0
+B-056,B,Marketing,B2B-Software,180,teilgenommen,frage,ja,1,0,0,0
+B-057,B,Marketing Manager,B2B-Dienstleister,350,teilgenommen,frage,ja,1,0,0,0
+B-058,B,Kommunikation,Technischer Handel,450,teilgenommen,frage,ja,1,1,0,0
+B-059,B,Marketing Manager,Industrieunternehmen,400,teilgenommen,frage,ja,1,0,0,0
+B-060,B,Marketing,Industrieunternehmen,800,teilgenommen,frage,ja,1,0,0,0
+B-061,B,Marketing Operations,Maschinenbau,350,teilgenommen,frage,ja,1,0,0,0
+B-062,B,Marketing,Zulieferer,300,teilgenommen,frage,ja,1,0,0,0
+B-063,B,Marketing Operations,Logistik,180,teilgenommen,gespraech,ja,1,1,0,0
+B-064,B,Produktmarketing,Logistik,80,teilgenommen,gespraech,ja,1,1,1,1
+B-065,B,Produktmarketing,Logistik,800,teilgenommen,gespraech,ja,1,1,1,1
+B-066,B,Marketing Operations,Zulieferer,180,teilgenommen,gespraech,ja,1,0,0,0
+B-067,B,Content Marketing,Logistik,400,teilgenommen,gespraech,ja,1,1,1,1
+B-068,B,Content Marketing,Maschinenbau,200,teilgenommen,gespraech,ja,1,1,0,0
+B-069,B,Marketingleitung,Logistik,800,teilgenommen,gespraech,ja,1,0,0,0
+B-070,B,Marketingleitung,Technischer Handel,400,teilgenommen,gespraech,ja,1,0,0,0
+B-071,B,Digital Marketing,B2B-Dienstleister,350,teilgenommen,gespraech,ja,1,1,0,0
+B-072,B,Marketing Manager,Maschinenbau,350,teilgenommen,gespraech,ja,1,0,0,0
+B-073,B,Content Marketing,Technischer Handel,120,nicht teilgenommen,leer,ja,0,0,0,0
+B-074,B,Kommunikation,Logistik,250,nicht teilgenommen,leer,ja,0,0,0,0
+B-075,B,Marketing,Maschinenbau,250,nicht teilgenommen,leer,ja,0,0,0,0
+B-076,B,Marketing,B2B-Dienstleister,600,nicht teilgenommen,nachlesen,ja,0,0,0,0
+B-077,B,Marketing Operations,Logistik,500,nicht teilgenommen,nachlesen,ja,0,0,0,0
+B-078,B,Marketing,B2B-Dienstleister,200,nicht teilgenommen,nachlesen,ja,0,0,0,0
+B-079,B,Kommunikation,Technischer Handel,450,nicht teilgenommen,leer,ja,0,0,0,0
+B-080,B,Marketing Operations,Logistik,250,nicht teilgenommen,nachlesen,ja,0,0,0,0
+B-081,B,Digital Marketing,Logistik,400,nicht teilgenommen,leer,ja,0,0,0,0
+B-082,B,Digital Marketing,Technischer Handel,400,nicht teilgenommen,nachlesen,ja,0,0,0,0
+B-083,B,Digital Marketing,B2B-Software,250,nicht teilgenommen,nachlesen,ja,0,0,0,0
+B-084,B,Content Marketing,Zulieferer,180,nicht teilgenommen,gespraech,ja,0,0,0,0
+B-085,B,Marketing,Zulieferer,180,nicht teilgenommen,leer,ja,0,0,0,0
+B-086,B,Marketing,B2B-Software,400,nicht teilgenommen,nachlesen,ja,0,0,0,0
+B-087,B,Marketing Operations,Technischer Handel,150,nicht teilgenommen,frage,ja,0,0,0,0
+B-088,B,Kommunikation,Industrieunternehmen,500,nicht teilgenommen,leer,ja,0,0,0,0
+B-089,B,Digital Marketing,Maschinenbau,800,nicht teilgenommen,nachlesen,ja,0,0,0,0
+B-090,B,Kommunikation,B2B-Dienstleister,80,nicht teilgenommen,leer,ja,0,0,0,0
+B-091,B,Marketing,Maschinenbau,450,nicht teilgenommen,leer,ja,0,0,0,0
+B-092,B,Marketing Manager,B2B-Dienstleister,400,nicht teilgenommen,leer,ja,0,0,0,0
+B-093,B,Kommunikation,Logistik,120,nicht teilgenommen,nachlesen,ja,0,0,0,0
+B-094,B,Marketing Operations,Industrieunternehmen,300,nicht teilgenommen,leer,nein,0,0,0,0
+B-095,B,Produktmarketing,Logistik,450,nicht teilgenommen,gespraech,ja,0,0,0,0
+B-096,B,Marketingleitung,B2B-Dienstleister,80,nicht teilgenommen,gespraech,ja,0,0,0,0
+B-097,B,Marketing Manager,Maschinenbau,120,nicht teilgenommen,nachlesen,ja,0,0,0,0
+B-098,B,Marketingleitung,Zulieferer,250,nicht teilgenommen,leer,ja,0,0,0,0
+B-099,B,Marketing Manager,Maschinenbau,150,nicht teilgenommen,leer,ja,0,0,0,0
+B-100,B,Digital Marketing,B2B-Dienstleister,250,nicht teilgenommen,nachlesen,ja,0,0,0,0
+B-101,B,Marketing,B2B-Dienstleister,400,nicht teilgenommen,frage,ja,0,0,0,0
+B-102,B,Marketingleitung,B2B-Software,350,nicht teilgenommen,leer,ja,0,0,0,0
+B-103,B,Produktmarketing,Industrieunternehmen,350,nicht teilgenommen,leer,ja,0,0,0,0
+B-104,B,Marketing Manager,B2B-Software,500,nicht teilgenommen,nachlesen,ja,0,0,0,0
+B-105,B,Produktmarketing,B2B-Software,800,nicht teilgenommen,leer,ja,0,0,0,0
+B-106,B,Marketing Manager,Industrieunternehmen,500,nicht teilgenommen,frage,ja,0,0,0,0
+B-107,B,Produktmarketing,Maschinenbau,400,nicht teilgenommen,leer,ja,0,0,0,0
+B-108,B,Content Marketing,Technischer Handel,150,nicht teilgenommen,frage,ja,0,0,0,0
+B-109,B,Kommunikation,Zulieferer,600,nicht teilgenommen,frage,ja,0,0,0,0
+B-110,B,Kommunikation,Industrieunternehmen,350,nicht teilgenommen,nachlesen,ja,0,0,0,0
+B-111,B,Kommunikation,Industrieunternehmen,120,nicht teilgenommen,frage,ja,0,0,0,0
+B-112,B,Content Marketing,B2B-Dienstleister,300,nicht teilgenommen,leer,ja,0,0,0,0
+B-113,B,Digital Marketing,B2B-Dienstleister,150,nicht teilgenommen,leer,ja,0,0,0,0
+B-114,B,Digital Marketing,Maschinenbau,180,nicht teilgenommen,leer,nein,0,0,0,0
+B-115,B,Marketing Operations,Industrieunternehmen,250,nicht teilgenommen,gespraech,ja,0,0,0,0
+B-116,B,Marketing,Logistik,250,nicht teilgenommen,leer,ja,0,0,0,0
+B-117,B,Content Marketing,B2B-Dienstleister,80,nicht teilgenommen,leer,ja,0,0,0,0
+B-118,B,Digital Marketing,B2B-Software,450,nicht teilgenommen,leer,ja,0,0,0,0
+B-119,B,Marketingleitung,Logistik,200,nicht teilgenommen,leer,nein,0,0,0,0
+B-120,B,Content Marketing,Zulieferer,120,nicht teilgenommen,leer,ja,0,0,0,0
+C-001,C,Kommunikation,B2B-Software,300,teilgenommen,leer,ja,1,0,0,0
+C-002,C,Marketing Manager,B2B-Dienstleister,350,teilgenommen,leer,ja,1,0,0,0
+C-003,C,Marketing Operations,Industrieunternehmen,150,teilgenommen,leer,ja,1,0,0,0
+C-004,C,Marketing,B2B-Software,800,teilgenommen,leer,ja,1,0,0,0
+C-005,C,Kommunikation,B2B-Dienstleister,400,teilgenommen,leer,ja,1,0,0,0
+C-006,C,Digital Marketing,Maschinenbau,400,teilgenommen,leer,ja,1,0,0,0
+C-007,C,Produktmarketing,Technischer Handel,300,teilgenommen,leer,ja,1,0,0,0
+C-008,C,Marketingleitung,B2B-Software,200,teilgenommen,leer,ja,1,0,0,0
+C-009,C,Marketing,Technischer Handel,400,teilgenommen,leer,ja,1,0,0,0
+C-010,C,Digital Marketing,Industrieunternehmen,300,teilgenommen,leer,ja,1,0,0,0
+C-011,C,Digital Marketing,Technischer Handel,300,teilgenommen,leer,ja,1,0,0,0
+C-012,C,Produktmarketing,Zulieferer,200,teilgenommen,leer,ja,1,0,0,0
+C-013,C,Content Marketing,Logistik,120,teilgenommen,leer,ja,1,0,0,0
+C-014,C,Marketingleitung,Industrieunternehmen,80,teilgenommen,leer,ja,1,0,0,0
+C-015,C,Digital Marketing,Industrieunternehmen,200,teilgenommen,leer,ja,1,0,0,0
+C-016,C,Kommunikation,Zulieferer,80,teilgenommen,leer,ja,1,0,0,0
+C-017,C,Kommunikation,Zulieferer,600,teilgenommen,leer,ja,1,0,0,0
+C-018,C,Produktmarketing,Zulieferer,450,teilgenommen,leer,ja,1,0,0,0
+C-019,C,Kommunikation,Logistik,400,teilgenommen,leer,ja,1,0,0,0
+C-020,C,Marketing Manager,Industrieunternehmen,200,teilgenommen,leer,ja,1,0,0,0
+C-021,C,Marketing Manager,B2B-Software,150,teilgenommen,leer,ja,1,0,0,0
+C-022,C,Kommunikation,B2B-Dienstleister,350,teilgenommen,leer,ja,1,0,0,0
+C-023,C,Marketing Manager,Maschinenbau,450,teilgenommen,leer,ja,1,0,0,0
+C-024,C,Content Marketing,Logistik,600,teilgenommen,nachlesen,ja,1,0,0,0
+C-025,C,Marketing,Industrieunternehmen,120,teilgenommen,nachlesen,ja,1,0,0,0
+C-026,C,Kommunikation,Maschinenbau,600,teilgenommen,nachlesen,ja,1,0,0,0
+C-027,C,Marketing,Industrieunternehmen,250,teilgenommen,nachlesen,ja,1,0,0,0
+C-028,C,Marketing,Technischer Handel,80,teilgenommen,nachlesen,ja,1,0,0,0
+C-029,C,Kommunikation,B2B-Dienstleister,350,teilgenommen,nachlesen,ja,1,0,0,0
+C-030,C,Kommunikation,Industrieunternehmen,500,teilgenommen,nachlesen,ja,1,0,0,0
+C-031,C,Marketing Operations,Industrieunternehmen,200,teilgenommen,nachlesen,ja,1,0,0,0
+C-032,C,Content Marketing,B2B-Dienstleister,300,teilgenommen,nachlesen,ja,1,0,0,0
+C-033,C,Marketing Manager,Zulieferer,200,teilgenommen,nachlesen,ja,1,0,0,0
+C-034,C,Kommunikation,Logistik,350,teilgenommen,nachlesen,ja,1,0,0,0
+C-035,C,Content Marketing,Zulieferer,400,teilgenommen,nachlesen,ja,1,0,0,0
+C-036,C,Digital Marketing,Maschinenbau,400,teilgenommen,nachlesen,ja,1,0,0,0
+C-037,C,Marketing Manager,B2B-Software,120,teilgenommen,nachlesen,ja,1,0,0,0
+C-038,C,Digital Marketing,Zulieferer,80,teilgenommen,nachlesen,ja,1,0,0,0
+C-039,C,Produktmarketing,Maschinenbau,120,teilgenommen,nachlesen,ja,1,0,0,0
+C-040,C,Marketingleitung,B2B-Dienstleister,80,teilgenommen,nachlesen,ja,1,1,0,0
+C-041,C,Kommunikation,Maschinenbau,150,teilgenommen,nachlesen,ja,1,0,0,0
+C-042,C,Marketing,B2B-Dienstleister,800,teilgenommen,nachlesen,ja,1,0,0,0
+C-043,C,Marketing Operations,Industrieunternehmen,800,teilgenommen,nachlesen,ja,1,1,0,0
+C-044,C,Digital Marketing,Industrieunternehmen,250,teilgenommen,frage,ja,1,0,0,0
+C-045,C,Marketing Manager,Technischer Handel,800,teilgenommen,frage,ja,1,0,0,0
+C-046,C,Marketing Operations,Industrieunternehmen,80,teilgenommen,frage,ja,1,0,0,0
+C-047,C,Marketing Manager,Maschinenbau,200,teilgenommen,frage,ja,1,0,0,0
+C-048,C,Digital Marketing,Industrieunternehmen,250,teilgenommen,frage,ja,1,1,0,0
+C-049,C,Marketing Operations,Industrieunternehmen,600,teilgenommen,frage,ja,1,0,0,0
+C-050,C,Marketing,Industrieunternehmen,400,teilgenommen,frage,ja,1,0,0,0
+C-051,C,Marketing,Industrieunternehmen,180,teilgenommen,frage,ja,1,1,0,0
+C-052,C,Marketing Operations,Zulieferer,120,teilgenommen,frage,ja,1,0,0,0
+C-053,C,Produktmarketing,Technischer Handel,120,teilgenommen,frage,ja,1,0,0,0
+C-054,C,Content Marketing,B2B-Dienstleister,800,teilgenommen,frage,ja,1,0,0,0
+C-055,C,Marketing Manager,Maschinenbau,400,teilgenommen,frage,ja,1,1,1,1
+C-056,C,Kommunikation,Zulieferer,120,teilgenommen,frage,ja,1,0,0,0
+C-057,C,Content Marketing,Technischer Handel,200,teilgenommen,frage,ja,1,1,0,0
+C-058,C,Marketing Manager,Logistik,200,teilgenommen,gespraech,ja,1,1,0,0
+C-059,C,Produktmarketing,Zulieferer,80,teilgenommen,gespraech,ja,1,1,0,0
+C-060,C,Digital Marketing,B2B-Dienstleister,350,teilgenommen,gespraech,ja,1,1,1,1
+C-061,C,Kommunikation,Technischer Handel,80,teilgenommen,gespraech,ja,1,1,1,1
+C-062,C,Kommunikation,Technischer Handel,180,teilgenommen,gespraech,ja,1,1,0,0
+C-063,C,Marketing,Maschinenbau,150,teilgenommen,gespraech,ja,1,0,0,0
+C-064,C,Content Marketing,Industrieunternehmen,400,teilgenommen,gespraech,ja,1,1,1,0
+C-065,C,Marketing Manager,Industrieunternehmen,80,teilgenommen,gespraech,ja,1,0,0,0
+C-066,C,Content Marketing,Maschinenbau,250,teilgenommen,gespraech,ja,1,1,1,0
+C-067,C,Marketing Manager,B2B-Dienstleister,150,nicht teilgenommen,leer,ja,0,0,0,0
+C-068,C,Digital Marketing,Maschinenbau,200,nicht teilgenommen,leer,ja,0,0,0,0
+C-069,C,Marketing Operations,Zulieferer,400,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-070,C,Content Marketing,B2B-Dienstleister,450,nicht teilgenommen,leer,ja,0,0,0,0
+C-071,C,Marketingleitung,Technischer Handel,180,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-072,C,Kommunikation,Industrieunternehmen,300,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-073,C,Kommunikation,Logistik,250,nicht teilgenommen,leer,ja,0,0,0,0
+C-074,C,Produktmarketing,B2B-Software,800,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-075,C,Marketing Manager,B2B-Dienstleister,120,nicht teilgenommen,frage,ja,0,0,0,0
+C-076,C,Digital Marketing,Logistik,120,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-077,C,Produktmarketing,B2B-Dienstleister,800,nicht teilgenommen,leer,ja,0,0,0,0
+C-078,C,Kommunikation,Maschinenbau,600,nicht teilgenommen,leer,ja,0,0,0,0
+C-079,C,Content Marketing,Zulieferer,120,nicht teilgenommen,gespraech,ja,0,0,0,0
+C-080,C,Marketing Manager,Industrieunternehmen,600,nicht teilgenommen,leer,ja,0,0,0,0
+C-081,C,Marketing Manager,Industrieunternehmen,250,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-082,C,Marketing Operations,Maschinenbau,600,nicht teilgenommen,leer,ja,0,0,0,0
+C-083,C,Marketing,Industrieunternehmen,180,nicht teilgenommen,leer,ja,0,0,0,0
+C-084,C,Marketing,B2B-Dienstleister,800,nicht teilgenommen,leer,ja,0,0,0,0
+C-085,C,Marketing Operations,Industrieunternehmen,120,nicht teilgenommen,frage,ja,0,0,0,0
+C-086,C,Marketingleitung,B2B-Dienstleister,450,nicht teilgenommen,leer,ja,0,0,0,0
+C-087,C,Marketing Operations,B2B-Software,120,nicht teilgenommen,leer,ja,0,0,0,0
+C-088,C,Marketing Operations,Zulieferer,600,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-089,C,Marketing Operations,Zulieferer,80,nicht teilgenommen,leer,ja,0,0,0,0
+C-090,C,Digital Marketing,Zulieferer,120,nicht teilgenommen,leer,ja,0,0,0,0
+C-091,C,Marketing Manager,B2B-Dienstleister,180,nicht teilgenommen,leer,ja,0,0,0,0
+C-092,C,Digital Marketing,Logistik,400,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-093,C,Content Marketing,Industrieunternehmen,120,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-094,C,Content Marketing,Zulieferer,200,nicht teilgenommen,leer,ja,0,0,0,0
+C-095,C,Marketing Operations,Industrieunternehmen,80,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-096,C,Marketingleitung,Logistik,80,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-097,C,Digital Marketing,Maschinenbau,500,nicht teilgenommen,leer,ja,0,0,0,0
+C-098,C,Marketing Operations,Maschinenbau,450,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-099,C,Digital Marketing,Zulieferer,120,nicht teilgenommen,leer,ja,0,0,0,0
+C-100,C,Marketingleitung,Technischer Handel,800,nicht teilgenommen,leer,ja,0,0,0,0
+C-101,C,Content Marketing,B2B-Dienstleister,800,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-102,C,Kommunikation,Technischer Handel,450,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-103,C,Kommunikation,B2B-Software,400,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-104,C,Produktmarketing,Logistik,250,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-105,C,Kommunikation,B2B-Dienstleister,200,nicht teilgenommen,nachlesen,ja,0,0,0,0
+C-106,C,Marketingleitung,Logistik,300,nicht teilgenommen,leer,ja,0,0,0,0
+C-107,C,Kommunikation,Zulieferer,300,nicht teilgenommen,frage,ja,0,0,0,0
+C-108,C,Marketingleitung,Logistik,180,nicht teilgenommen,leer,ja,0,0,0,0
+C-109,C,Marketing Operations,B2B-Software,200,nicht teilgenommen,leer,ja,0,0,0,0
+C-110,C,Marketing,Maschinenbau,400,nicht teilgenommen,nachlesen,ja,0,0,0,0

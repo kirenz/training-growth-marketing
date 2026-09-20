@@ -1,0 +1,137 @@
+```{=html}
+<div class="gm-kw" id="gm-kw">
+  <canvas id="gm-kw-canvas" width="1600" height="560"></canvas>
+  <div class="gm-kw__controls">
+    <button type="button" id="gm-kw-play">Abspielen</button>
+    <button type="button" id="gm-kw-reset" class="is-secondary">Zurücksetzen</button>
+    <span class="gm-kw__hint" id="gm-kw-hint">Eine Station anklicken zeigt, was dort passiert. „Abspielen“ lässt die 330 Kontakte den Weg entlanglaufen, ein Punkt ist ein Kontakt.</span>
+  </div>
+</div>
+<style>
+.gm-kw { font-size: 0.48em; margin-top: 0.2em; }
+.gm-kw canvas { width: 100%; height: auto; display: block; cursor: pointer; border-radius: 0.6em; background: #161a24; border: 1px solid #2a2f3e; }
+.gm-kw__controls { display: flex; gap: 0.6em; align-items: center; margin-top: 0.6em; }
+.gm-kw__controls button { background: #88F297; color: #0b0d13; border: 0; border-radius: 0.5em; padding: 0.5em 1.1em; font-weight: 700; cursor: pointer; font-size: 0.95em; }
+.gm-kw__controls button.is-secondary { background: transparent; color: #9ba3ba; border: 1px solid #2a2f3e; }
+.gm-kw__hint { color: #f2f5ff; line-height: 1.45; min-height: 2.9em; }
+.gm-kw__hint b { color: #88F297; font-weight: 600; }
+</style>
+<script>
+(function () {
+  var cv = document.getElementById("gm-kw-canvas"), ctx = cv.getContext("2d");
+  var W = cv.width, H = cv.height;
+  var stations = [
+    { label: "Fachbeitrag", sub: "330 Anmeldungen", data: true, info: "<b>Fachbeitrag:</b> Ein Artikel zu KI im Marketing auf einem Fachportal, im Blog oder auf LinkedIn. Wer das Thema vertiefen will, meldet sich zum Webinar an. In den drei Kampagnen: 330 Anmeldungen." },
+    { label: "Webinar", sub: "198 Teilnahmen", data: true, info: "<b>Webinar:</b> 45 Minuten „KI im Marketing: Vom Einzelprompt zum brauchbaren Ablauf“ mit Demo eines Content-Briefings. 198 der 330 Angemeldeten nehmen teil. Es gibt keine Aufzeichnung, nur eine schriftliche Zusammenfassung." },
+    { label: "Nachbereitung", sub: "39 Antworten", data: true, info: "<b>Nachbereitung:</b> Das Follow-up an alle 198 Teilnehmenden nach dem Webinar. Bisher lädt es alle gleich zum Erstgespräch ein, 39 von 198 antworten. Hier setzen die Teams an: je nach Anliegen Material, Rückfrage oder Gespräch." },
+    { label: "Erstgespräch", sub: "16 gebucht · 10 geführt", data: true, info: "<b>Erstgespräch:</b> 30 Minuten, kostenlos. Klärt Aufgabe, Zuständigkeit und Passung des Praxischecks. 16 gebucht, 10 geführt. Qualifiziert heißt: Marketingaufgabe benannt, Zuständigkeit geklärt, nächster Schritt passt zum Angebot." },
+    { label: "Angebot", sub: "5 Angebote (Annahme)", data: true, info: "<b>Angebot:</b> Der KI-Praxischeck Marketing, zwei Wochen mit Auftakt, halbtägigem Workshop, drei priorisierten Anwendungsfällen, kleinem Prototyp und Ergebnisbesprechung, 2.400 Euro netto. Die Zahl der Angebote ist eine Annahme, der Fall enthält dazu keine Daten." },
+    { label: "Auftrag", sub: "2 Aufträge (Annahme)", data: true, info: "<b>Auftrag:</b> Der beauftragte Praxischeck. Ein abgeschlossenes Projekt kann zur Fallstudie werden und neue Kontakte bringen, das wäre ein Growth Loop. Die Zahl der Aufträge ist eine Annahme." }
+  ];
+  var n = stations.length, pad = 120, gap = (W - 2 * pad) / (n - 1);
+  stations.forEach(function (s, i) { s.x = pad + i * gap; });
+  var pathY = 250, cardW = 190, cardH = 96, cardY = 70;
+  // Abbruch je Station: 132 nach Fachbeitrag (keine Teilnahme), 159 nach Webinar (keine Antwort), 29 nach Nachbereitung (kein geführtes Gespräch),
+  // 5 nach Erstgespräch (kein Angebot, Annahme), 3 nach Angebot (kein Auftrag, Annahme), 2 erreichen den Auftrag
+  var dropPlan = [];
+  for (var i = 0; i < 132; i++) dropPlan.push(1);
+  for (i = 0; i < 159; i++) dropPlan.push(2);
+  for (i = 0; i < 29; i++) dropPlan.push(3);
+  for (i = 0; i < 5; i++) dropPlan.push(4);
+  for (i = 0; i < 3; i++) dropPlan.push(5);
+  for (i = 0; i < 2; i++) dropPlan.push(99);
+  for (i = dropPlan.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)); var t = dropPlan[i]; dropPlan[i] = dropPlan[j]; dropPlan[j] = t; }
+  var dots = [], counts = [], running = false, raf = null, t0 = 0, selected = -1;
+  var DURATION = 9000, TRAVEL = 5600; // ms für den Weg von Station 0 bis 5
+  function reset() {
+    cancelAnimationFrame(raf); running = false;
+    dots = dropPlan.map(function (d, k) {
+      return { drop: d, delay: (k / dropPlan.length) * (DURATION - TRAVEL), yoff: (Math.random() - 0.5) * 70, alpha: 1, fell: 0, done: false };
+    });
+    counts = [0, 0, 0, 0, 0, 0]; lastElapsed = 0;
+    draw(0);
+    document.getElementById("gm-kw-hint").textContent = "Eine Station anklicken zeigt, was dort passiert. „Abspielen“ lässt die 330 Kontakte den Weg entlanglaufen, ein Punkt ist ein Kontakt.";
+  }
+  function roundRect(x, y, w, h, r) {
+    ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath();
+  }
+  function draw(elapsed) {
+    ctx.clearRect(0, 0, W, H);
+    // Weg
+    ctx.strokeStyle = "#2a2f3e"; ctx.lineWidth = 6; ctx.setLineDash([]);
+    ctx.beginPath(); ctx.moveTo(stations[0].x, pathY); ctx.lineTo(stations[5].x, pathY); ctx.stroke();
+    // Stationen
+    ctx.font = "600 26px Inter, system-ui, sans-serif"; ctx.textAlign = "center";
+    stations.forEach(function (s, i) {
+      var hl = i === selected;
+      ctx.fillStyle = i === selected ? "#22303a" : "#1e2332"; ctx.strokeStyle = hl ? "#88F297" : "#2a2f3e"; ctx.lineWidth = hl ? 3 : 1.5;
+      roundRect(s.x - cardW / 2, cardY, cardW, cardH, 14); ctx.fill(); ctx.stroke();
+      ctx.fillStyle = "#ffffff"; ctx.font = "600 26px Inter, system-ui, sans-serif"; ctx.fillText(s.label, s.x, cardY + 40);
+      ctx.fillStyle = s.data ? "#9ba3ba" : "#5c6174"; ctx.font = "400 20px Inter, system-ui, sans-serif"; ctx.fillText(s.sub, s.x, cardY + 74);
+      ctx.beginPath(); ctx.arc(s.x, pathY, 9, 0, Math.PI * 2); ctx.fillStyle = s.data ? "#4ba9ff" : "#2a2f3e"; ctx.fill();
+      // Zähler
+      ctx.fillStyle = counts[i] > 0 ? "#88F297" : "#5c6174"; ctx.font = "700 44px Inter, system-ui, sans-serif";
+      ctx.fillText(String(counts[i]), s.x, pathY + 200);
+      ctx.fillStyle = "#9ba3ba"; ctx.font = "400 18px Inter, system-ui, sans-serif";
+      ctx.fillText(["angemeldet", "teilgenommen", "geantwortet", "Gespräch geführt", "Angebot erhalten", "Auftrag erteilt"][i], s.x, pathY + 228);
+    });
+    // Punkte
+    var x0 = stations[0].x, x3 = stations[5].x, len = x3 - x0;
+    dots.forEach(function (d) {
+      var t = elapsed - d.delay; if (t < 0) return;
+      var prog = Math.min(1, t / TRAVEL * (len / len));
+      var x = x0 + prog * (x3 - x0) * (TRAVEL / TRAVEL);
+      var dropX = d.drop <= 5 ? stations[d.drop].x : Infinity;
+      if (x >= dropX && !d.fell) { d.fell = t; }
+      var y = pathY + d.yoff * 0.6, alpha = 1;
+      if (d.fell) {
+        var ft = (t - d.fell) / 900; x = dropX + Math.min(ft, 1) * 25 * (d.yoff > 0 ? 1 : -1) * 0.3;
+        y = pathY + d.yoff * 0.6 + Math.min(ft, 1) * 110; alpha = Math.max(0, 1 - ft);
+        if (ft >= 1) { d.done = true; return; }
+      }
+      ctx.globalAlpha = alpha;
+      ctx.fillStyle = d.fell ? "#ff7847" : (d.drop === 99 && x >= x3 - 0.5 ? "#88F297" : "#4ba9ff");
+      ctx.beginPath(); ctx.arc(x, y, 5, 0, Math.PI * 2); ctx.fill();
+      ctx.globalAlpha = 1;
+    });
+    // Zähler aktualisieren: wie viele Punkte haben Station i erreicht, ohne vorher abzuspringen
+    for (var i = 0; i <= 5; i++) {
+      var c = 0;
+      if (elapsed <= 0) { counts[i] = 0; continue; }
+      dots.forEach(function (d) {
+        var t = elapsed - d.delay; if (t < 0) return;
+        var x = x0 + Math.min(1, t / TRAVEL) * (x3 - x0);
+        if (x >= stations[i].x - 0.5 && d.drop > i) c++;
+      });
+      counts[i] = c;
+    }
+  }
+  var lastElapsed = 0;
+  function redraw() { draw(lastElapsed); }
+  function frame(now) {
+    var elapsed = now - t0; lastElapsed = elapsed;
+    draw(elapsed);
+    if (elapsed < DURATION + 1800) raf = requestAnimationFrame(frame);
+    else { running = false; document.getElementById("gm-kw-hint").textContent = "Alle 330 Kontakte sind durch. Angebote und Aufträge sind Annahmen, dazu enthält der Fall keine Daten. Eine Station anklicken zeigt, was dort passiert."; }
+  }
+  document.getElementById("gm-kw-play").addEventListener("click", function () {
+    if (running) return; reset(); document.getElementById("gm-kw-hint").textContent = "330 Anmeldungen aus drei Kampagnen laufen den Weg entlang. Ein Punkt ist ein Kontakt, orange Punkte kommen nicht weiter."; running = true; t0 = performance.now(); raf = requestAnimationFrame(frame);
+  });
+  document.getElementById("gm-kw-reset").addEventListener("click", function () { selected = -1; reset(); });
+  cv.addEventListener("click", function (ev) {
+    var r = cv.getBoundingClientRect();
+    var x = (ev.clientX - r.left) * (W / r.width), y = (ev.clientY - r.top) * (H / r.height);
+    for (var i = 0; i < stations.length; i++) {
+      var s = stations[i];
+      if (x >= s.x - cardW / 2 && x <= s.x + cardW / 2 && y >= cardY && y <= cardY + cardH) {
+        selected = i;
+        document.getElementById("gm-kw-hint").innerHTML = s.info;
+        if (!running) redraw();
+        return;
+      }
+    }
+  });
+  reset();
+})();
+</script>
+```

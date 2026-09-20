@@ -1,0 +1,72 @@
+{
+  "n8n": "2.39.8",
+  "network": "none",
+  "model": "local deterministic API mock, no semantic LLM evaluation",
+  "runs": [
+    {
+      "run": "result1.log",
+      "status": "passed",
+      "contact_id": "K-01",
+      "executed_nodes": [
+        "Manuell starten",
+        "Kontakt",
+        "Kursmodell",
+        "Bedarf und Entwurf",
+        "Ergebnis zur Pruefung"
+      ]
+    },
+    {
+      "run": "result2.log",
+      "status": "passed",
+      "contact_id": "K-01",
+      "executed_nodes": [
+        "Manuell starten",
+        "Kontakt",
+        "Kontakt erlaubt",
+        "Kursmodell",
+        "Ausgabeformat",
+        "Bedarf und Entwurf",
+        "Ergebnis zur Pruefung"
+      ]
+    },
+    {
+      "run": "result2case5.log",
+      "status": "passed",
+      "contact_id": "K-05",
+      "executed_nodes": [
+        "Manuell starten",
+        "Kontakt",
+        "Kontakt erlaubt",
+        "Gesperrt zur Pruefung"
+      ]
+    },
+    {
+      "run": "result2case6.log",
+      "status": "passed",
+      "contact_id": "K-06",
+      "executed_nodes": [
+        "Manuell starten",
+        "Kontakt",
+        "Kontakt erlaubt",
+        "Kursmodell",
+        "Ausgabeformat",
+        "Bedarf und Entwurf",
+        "Ergebnis zur Pruefung"
+      ]
+    },
+    {
+      "run": "result3.log",
+      "status": "passed",
+      "contact_id": "K-01",
+      "executed_nodes": [
+        "Manuell starten",
+        "Kontakt",
+        "Kontakt erlaubt",
+        "Kursmodell",
+        "Lernmaterial",
+        "Materialauswahl Agent",
+        "Ergebnis zur Pruefung"
+      ]
+    }
+  ]
+}

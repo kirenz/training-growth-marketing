@@ -1,0 +1,31 @@
+---
+title: "Wiederverwendbare Anweisungen"
+toc: true
+---
+
+
+[Eine wiederkehrende Aufgabe benötigt stabile Regeln, passendes Wissen und wechselnde Eingaben. Diese Trennung lässt sich bereits mit einem normalen kostenlosen Chat üben.]{.lead}
+
+## Drei Bausteine {#aufteilung}
+
+| Baustein | Inhalt im Fall |
+|---|---|
+| Anweisungen | Entscheidungskategorien, Grenzen, Sprache, Ausgabeformat |
+| Wissen | Leistungsbeschreibung, Startregeln, Arbeitshilfen |
+| Aktueller Fall | Kontakt-ID, Rolle, Unternehmen, Anliegen, Sprache und Kontaktstatus |
+
+Die [Follow-up-Anweisungen](https://docs.google.com/document/d/1SIYpnRHpPq9tb5qiE0-Ixu8o4xy0_5NJHvM-DgZ0LYc/edit) und der [Kontext für ChatGPT](https://docs.google.com/document/d/1bAQ1KaMDCp7nuRhHrkBBs7P0Iy9E_AxfXJAnBEiN68g/edit) werden als Text gespeichert. Für jeden unabhängigen Test werden beide zusammen mit einem Kontakt in einen neuen Chat eingefügt. So lassen sich Änderungen und Ergebnisse nachvollziehen.
+
+## Kein eigener GPT als Voraussetzung
+
+Die Pflichtübungen verlangen weder einen selbst erstellten GPT noch einen Gem oder ein anderes kontospezifisches Assistentenprodukt. Verfügbare gespeicherte Assistenten können optional verwendet werden. Die Regeln müssen weiterhin exportierbar und im Wortlaut dokumentiert sein. Produktfunktionen können sich ändern; der Kern der Aufgabe bleibt die überprüfbare Spezifikation.
+
+## Übertragung nach n8n
+
+Im Workflow enthält die Basic LLM Chain die Aufgabe und das Material. Die variablen Felder kommen aus dem vorherigen Knoten. Eine Antwort aus ChatGPT wird nicht automatisch dieselbe Antwort in n8n: Modell, Zusatzfunktionen, Verlauf und Einstellungen können abweichen. Deshalb werden die Testfälle nach der Übertragung erneut ausgeführt.
+
+## Pflege
+
+Eine Änderung erhält Versionsnummer, Datum, Grund und betroffene Testfälle. Nach Änderungen am Leistungsangebot müssen auch die Wissensgrundlage und gegebenenfalls Erwartungen aktualisiert werden. Ein gespeicherter Assistent ist noch kein Agent: Erst ein begrenzter Spielraum bei Werkzeugwahl oder Ablauf verändert die Architektur.
+
+[**Weiter: n8n und Agenten**](workflows.qmd)

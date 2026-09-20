@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "entscheidung": {
+      "type": "string",
+      "enum": [
+        "material",
+        "rueckfrage",
+        "erstgespraech",
+        "kein_followup"
+      ]
+    },
+    "begruendung": {
+      "type": "string"
+    },
+    "material_id": {
+      "type": "string",
+      "enum": [
+        "M1",
+        "M2",
+        "M3",
+        "keines"
+      ]
+    },
+    "nachricht_entwurf": {
+      "type": "string"
+    },
+    "offene_punkte": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "entscheidung",
+    "begruendung",
+    "material_id",
+    "nachricht_entwurf",
+    "offene_punkte"
+  ]
+}

@@ -1,0 +1,302 @@
+{
+  "name": "Aurenta 04 - Einen CRM-Kontakt lesen",
+  "nodes": [
+    {
+      "id": "b2722eff-5f14-54d5-b744-376de504bf38",
+      "name": "Manuell starten",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "parameters": {}
+    },
+    {
+      "id": "f98ef85d-04cd-5a78-9d8c-5163a9d4112f",
+      "name": "Kontakt auswaehlen",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        240,
+        0
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "97cfd6a4-7c61-5e10-aad7-6a0aacce96f3",
+              "name": "kontakt_id",
+              "value": "K-01",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "notes": "K-01 bis K-06; T-01 bis T-03 erst am Mittwoch. Genau eine ID.",
+      "notesInFlow": true
+    },
+    {
+      "id": "6334862d-621a-5e4a-bb06-f8320a93d6ea",
+      "name": "Kontakt aus CRM lesen",
+      "type": "n8n-nodes-base.postgres",
+      "typeVersion": 2.6,
+      "position": [
+        480,
+        0
+      ],
+      "parameters": {
+        "operation": "executeQuery",
+        "query": "SELECT kontakt_id, rolle, unternehmen, webinar_status, anliegen, sprache, kontakt_erlaubt\nFROM kontaktfaelle\nWHERE kontakt_id = $1;",
+        "options": {
+          "queryReplacement": "={{ [$json.kontakt_id] }}"
+        }
+      },
+      "alwaysOutputData": true,
+      "notes": "Postgres-Verbindung Aurenta – Übungsfall (Lesen) auswählen. Parameterbindung beibehalten.",
+      "notesInFlow": true
+    },
+    {
+      "id": "af377561-dfe2-547b-baa0-2c43ce956395",
+      "name": "Kontakt gefunden",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        720,
+        0
+      ],
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "55c2944d-c5ef-57b0-acd2-351d0f8f346b",
+              "leftValue": "={{ $json.kontakt_id ?? '' }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "7385a051-4e96-5a59-a746-bb8be4366b93",
+      "name": "Unbekannte Kontakt-ID",
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "position": [
+        960,
+        400
+      ],
+      "parameters": {
+        "errorMessage": "Kein Kontakt zur gewählten ID gefunden. Im Knoten Kontakt auswaehlen K-01 bis K-06 oder T-01 bis T-03 eintragen."
+      }
+    },
+    {
+      "id": "2bd1d567-bc74-50b4-bb49-e0fcd391dfc5",
+      "name": "Kontakt",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        960,
+        0
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "8216bad5-bb97-533f-8428-137080fdc6ed",
+              "name": "kontakt_id",
+              "value": "={{ $json.kontakt_id }}",
+              "type": "string"
+            },
+            {
+              "id": "638aa1cd-5f28-50f0-a91b-7f935f6feb9d",
+              "name": "rolle",
+              "value": "={{ $json.rolle }}",
+              "type": "string"
+            },
+            {
+              "id": "6d628b34-bfc2-5717-b84c-be09c87b39c2",
+              "name": "unternehmen",
+              "value": "={{ $json.unternehmen }}",
+              "type": "string"
+            },
+            {
+              "id": "940a1a83-457a-5245-acf8-6efa71c26b58",
+              "name": "webinar_status",
+              "value": "={{ $json.webinar_status }}",
+              "type": "string"
+            },
+            {
+              "id": "4140ede6-2af0-5765-a686-e2d7fbab1233",
+              "name": "anliegen",
+              "value": "={{ $json.anliegen }}",
+              "type": "string"
+            },
+            {
+              "id": "c650c81f-f3a0-539d-8f79-8306809a0be4",
+              "name": "sprache",
+              "value": "={{ $json.sprache }}",
+              "type": "string"
+            },
+            {
+              "id": "cb4cb503-7872-56e4-aa16-089a5ff3f9cc",
+              "name": "kontakt_erlaubt",
+              "value": "={{ $json.kontakt_erlaubt }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    },
+    {
+      "id": "995ef5ae-11a1-5a4e-883a-5e7c5059a528",
+      "name": "Ergebnis zur Pruefung",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        1200,
+        0
+      ],
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "4b59e457-9ae2-5cdc-bdc5-03b9288abd8c",
+              "name": "kontakt_id",
+              "value": "={{ $json.kontakt_id }}",
+              "type": "string"
+            },
+            {
+              "id": "82654a36-c882-5110-800f-ef0edcfb7f35",
+              "name": "rolle",
+              "value": "={{ $json.rolle }}",
+              "type": "string"
+            },
+            {
+              "id": "46c4cf36-d676-51d2-bc8f-2a08b20d44dd",
+              "name": "unternehmen",
+              "value": "={{ $json.unternehmen }}",
+              "type": "string"
+            },
+            {
+              "id": "e7ccd883-b9f5-56b7-be61-73989d1b0910",
+              "name": "webinar_status",
+              "value": "={{ $json.webinar_status }}",
+              "type": "string"
+            },
+            {
+              "id": "08a587d5-7bbe-5fdc-ba1a-00e5a5737f1e",
+              "name": "anliegen",
+              "value": "={{ $json.anliegen }}",
+              "type": "string"
+            },
+            {
+              "id": "7b3765c7-d526-5823-aa36-b91a78b71f9a",
+              "name": "sprache",
+              "value": "={{ $json.sprache }}",
+              "type": "string"
+            },
+            {
+              "id": "31b22c7f-8b1f-5b66-a976-ca4d4566b6e7",
+              "name": "kontakt_erlaubt",
+              "value": "={{ $json.kontakt_erlaubt }}",
+              "type": "string"
+            },
+            {
+              "id": "8b403b06-8f60-52e6-8161-e523ddf071e3",
+              "name": "freigabe",
+              "value": "offen",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      }
+    }
+  ],
+  "connections": {
+    "Manuell starten": {
+      "main": [
+        [
+          {
+            "node": "Kontakt auswaehlen",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Kontakt auswaehlen": {
+      "main": [
+        [
+          {
+            "node": "Kontakt aus CRM lesen",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Kontakt aus CRM lesen": {
+      "main": [
+        [
+          {
+            "node": "Kontakt gefunden",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Kontakt gefunden": {
+      "main": [
+        [
+          {
+            "node": "Kontakt",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Unbekannte Kontakt-ID",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Kontakt": {
+      "main": [
+        [
+          {
+            "node": "Ergebnis zur Pruefung",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "pinData": {},
+  "tags": []
+}

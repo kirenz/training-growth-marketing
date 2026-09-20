@@ -1,0 +1,179 @@
+{
+  "downloads": [
+    {
+      "url": "http://127.0.0.1:8768/material/fall/fallpaket-kompakt.txt",
+      "status": 200,
+      "bytes": 8121
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/fall/01-unternehmensprofil.md",
+      "status": 200,
+      "bytes": 2467
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/fall/02-angebot-webinar.md",
+      "status": 200,
+      "bytes": 2563
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/fall/03-zielgruppenprofile.md",
+      "status": 200,
+      "bytes": 1928
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/fall/04-tonalitaet.md",
+      "status": 200,
+      "bytes": 1157
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/fall/05-quellenverzeichnis.md",
+      "status": 200,
+      "bytes": 1221
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/fall/06-mangelhafte-antwort.md",
+      "status": 200,
+      "bytes": 1431
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/fall/07-kundenstimmen.md",
+      "status": 200,
+      "bytes": 1180
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/fall/08-kampagnen-lesehilfe.md",
+      "status": 200,
+      "bytes": 1008
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/daten/kontakte-webinar.csv",
+      "status": 200,
+      "bytes": 1062
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/daten/kampagnen.csv",
+      "status": 200,
+      "bytes": 260
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/daten/testfaelle-transfer.csv",
+      "status": 200,
+      "bytes": 626
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/vorlagen/kompetenzabfrage.md",
+      "status": 200,
+      "bytes": 1178
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/vorlagen/teamprofil.md",
+      "status": 200,
+      "bytes": 1045
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/vorlagen/experimentkarte.md",
+      "status": 200,
+      "bytes": 1266
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/vorlagen/projektbrief-vorlage.md",
+      "status": 200,
+      "bytes": 1509
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/vorlagen/content-briefing-vorlage.md",
+      "status": 200,
+      "bytes": 386
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/vorlagen/coaching-stand.md",
+      "status": 200,
+      "bytes": 485
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/vorlagen/assistent-instruktionen-followup.txt",
+      "status": 200,
+      "bytes": 1223
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/vorlagen/assistent-instruktionen-content.txt",
+      "status": 200,
+      "bytes": 608
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/vorlagen/testprotokoll.csv",
+      "status": 200,
+      "bytes": 191
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/vorlagen/testprotokoll-followup.csv",
+      "status": 200,
+      "bytes": 191
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/vorlagen/follow-up-ablage.csv",
+      "status": 200,
+      "bytes": 215
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/vorlagen/vergleich-baseline.csv",
+      "status": 200,
+      "bytes": 287
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/vorlagen/testerwartungen.md",
+      "status": 200,
+      "bytes": 1262
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/workflows/01-followup-starter.json",
+      "status": 200,
+      "bytes": 14544
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/workflows/01-followup-starter.md",
+      "status": 200,
+      "bytes": 1815
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/workflows/02-followup-strukturiert.json",
+      "status": 200,
+      "bytes": 19515
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/workflows/02-followup-strukturiert.md",
+      "status": 200,
+      "bytes": 1875
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/workflows/03-agenten-demo.json",
+      "status": 200,
+      "bytes": 10280
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/workflows/03-agenten-demo.md",
+      "status": 200,
+      "bytes": 1898
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/workflows/prompt-n8n.txt",
+      "status": 200,
+      "bytes": 9651
+    },
+    {
+      "url": "http://127.0.0.1:8768/material/workflows/ausgabe-schema.json",
+      "status": 200,
+      "bytes": 666
+    }
+  ],
+  "copyFeedback": [
+    {
+      "title": "Search",
+      "label": null
+    },
+    {
+      "title": "",
+      "label": "Kopiert"
+    }
+  ]
+}

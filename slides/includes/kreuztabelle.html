@@ -1,0 +1,117 @@
+```{=html}
+<div class="gm-kt" id="gm-kt">
+  <div class="gm-kt__cases" id="gm-kt-cases"></div>
+  <div class="gm-kt__right">
+    <div class="gm-kt__seg" id="gm-kt-view"><button type="button" data-v="abs" class="is-on">Absolute Werte</button><button type="button" data-v="row">Zeilenanteile</button><button type="button" data-v="col">Spaltenanteile</button></div>
+    <div class="gm-kt__hint">Zeilen: erwartete Empfehlung aus dem Testprotokoll. Spalten: tatsächliche Empfehlung des Workflows. Zelle: Anzahl Fälle.</div>
+    <table class="gm-kt__table" id="gm-kt-table"></table>
+    <div class="gm-kt__score" id="gm-kt-score">Noch nichts bewertet.</div>
+    <div class="gm-kt__actions">
+      <button type="button" id="gm-kt-example">Beispiel mit zwei Fehlern</button>
+      <button type="button" id="gm-kt-reset" class="is-secondary">Zurücksetzen</button>
+    </div>
+  </div>
+</div>
+<style>
+.gm-kt { font-size: 0.36em; display: grid; grid-template-columns: 1.15fr 1fr; gap: 1.2em; margin-top: 0.3em; color: #f2f5ff; text-align: left; }
+.gm-kt__cases { display: flex; flex-direction: column; gap: 0.25em; }
+.gm-case { display: grid; grid-template-columns: 3.2em 1fr auto; gap: 0.5em; align-items: center; padding: 0.2em 0.45em; background: #161a24; border: 1px solid #2a2f3e; border-radius: 0.45em; }
+.gm-case__id { font-weight: 700; color: #ffffff; }
+.gm-case__text { color: #9ba3ba; line-height: 1.25; }
+.gm-case__text b { color: #f2f5ff; font-weight: 600; }
+.gm-case__btns { display: flex; gap: 0.25em; }
+.gm-case__btns button { width: 2.1em; height: 2.1em; border-radius: 0.35em; border: 1px solid #2a2f3e; background: transparent; color: #9ba3ba; font-weight: 700; cursor: pointer; font-size: 0.95em; }
+.gm-case__btns button.is-on { background: #4ba9ff; color: #0b0d13; border-color: #4ba9ff; }
+.gm-case__btns button.is-on.is-right { background: #88F297; border-color: #88F297; }
+.gm-case__btns button.is-on.is-wrong { background: #ff7847; border-color: #ff7847; }
+.reveal .gm-kt__table { font-size: 1em; width: 100%; margin: 0; }
+.reveal .gm-kt__table th, .reveal .gm-kt__table td { padding: 0.35em 0.5em; text-align: center; }
+.reveal .gm-kt__table th:first-child, .reveal .gm-kt__table td:first-child { text-align: left; }
+.reveal .gm-kt__table td.is-diag { color: #88F297; font-weight: 700; }
+.reveal .gm-kt__table td.is-off { color: #ff7847; font-weight: 700; }
+.gm-kt__score { margin-top: 0.7em; padding: 0.5em 0.8em; background: #161a24; border: 1px solid #2a2f3e; border-radius: 0.5em; line-height: 1.45; }
+.gm-kt__score strong { color: #88F297; }
+.gm-kt__actions { margin-top: 0.6em; display: flex; gap: 0.5em; }
+.gm-kt__actions button { background: #88F297; color: #0b0d13; border: 0; border-radius: 0.45em; padding: 0.45em 0.9em; font-weight: 700; cursor: pointer; font-size: 0.95em; }
+.gm-kt__actions button.is-secondary { background: transparent; color: #9ba3ba; border: 1px solid #2a2f3e; }
+.gm-kt__legend { color: #9ba3ba; font-size: 0.9em; margin-top: 0.3em; }
+.gm-kt__seg { display: inline-flex; border: 1px solid #2a2f3e; border-radius: 0.5em; overflow: hidden; margin-bottom: 0.4em; }
+.gm-kt__seg button { background: transparent; color: #9ba3ba; border: 0; padding: 0.35em 0.7em; cursor: pointer; font-weight: 600; font-size: 0.95em; }
+.gm-kt__seg button.is-on { background: #1e2332; color: #ffffff; }
+.gm-kt__hint { color: #9ba3ba; font-size: 0.9em; margin-bottom: 0.4em; line-height: 1.35; }
+</style>
+<script>
+(function () {
+  var cats = [["M", "Material"], ["R", "Rückfrage"], ["E", "Erstgespräch"], ["K", "Kein Follow-up"]];
+  var cases = [
+    { id: "K-01", exp: "E", text: "Content-Briefings verbessern, <b>bittet um Gespräch</b>" },
+    { id: "K-02", exp: "M", text: "Nicht teilgenommen, <b>fragt nach Aufzeichnung</b>" },
+    { id: "K-03", exp: "R", text: "Fragt nach Preis und <b>laufendem CRM-Betrieb</b>" },
+    { id: "K-04", exp: "M", text: "Sammelt Ideen, <b>bittet um Checkliste</b> (Englisch)" },
+    { id: "K-05", exp: "K", text: "<b>Keine weitere Kontaktaufnahme</b>" },
+    { id: "K-06", exp: "R", text: "Angemeldet, <b>kein Anliegen angegeben</b>" },
+    { id: "T-01", exp: "E", text: "Konkreter Fall, zwei Kolleginnen, <b>wünscht Erstgespräch</b>" },
+    { id: "T-02", exp: "M", text: "Will nur die <b>schriftliche Zusammenfassung</b> (Englisch)" },
+    { id: "T-03", exp: "K", text: "Interesse, aber <b>keine Kontaktaufnahme</b> gewünscht" }
+  ];
+  var example = { "K-01": "E", "K-02": "M", "K-03": "R", "K-04": "E", "K-05": "K", "K-06": "E", "T-01": "E", "T-02": "M", "T-03": "K" };
+  var picks = {}, view = "abs";
+  var casesEl = document.getElementById("gm-kt-cases"), table = document.getElementById("gm-kt-table"), score = document.getElementById("gm-kt-score");
+  cases.forEach(function (c) {
+    var row = document.createElement("div"); row.className = "gm-case";
+    var btns = cats.map(function (k) { return '<button type="button" data-id="' + c.id + '" data-k="' + k[0] + '" title="' + k[1] + '">' + k[0] + '</button>'; }).join("");
+    row.innerHTML = '<span class="gm-case__id">' + c.id + '</span><span class="gm-case__text">' + c.text + ' · erwartet: <b>' + cats.filter(function (k) { return k[0] === c.exp; })[0][1] + '</b></span><span class="gm-case__btns">' + btns + '</span>';
+    casesEl.appendChild(row);
+  });
+  casesEl.addEventListener("click", function (ev) {
+    var b = ev.target.closest("button"); if (!b) return;
+    picks[b.dataset.id] = b.dataset.k; render();
+  });
+  function render() {
+    var counts = {}; cats.forEach(function (r) { cats.forEach(function (c) { counts[r[0] + c[0]] = 0; }); });
+    var rated = 0, right = 0;
+    cases.forEach(function (c) {
+      var p = picks[c.id]; if (!p) return;
+      counts[c.exp + p]++; rated++; if (p === c.exp) right++;
+    });
+    var rowSum = {}, colSum = {};
+    cats.forEach(function (r) { rowSum[r[0]] = 0; colSum[r[0]] = 0; });
+    cats.forEach(function (r) { cats.forEach(function (c) { rowSum[r[0]] += counts[r[0] + c[0]]; colSum[c[0]] += counts[r[0] + c[0]]; }); });
+    function cell(v, r, c) {
+      if (view === "abs") return v;
+      var d = view === "row" ? rowSum[r] : colSum[c];
+      return d ? (100 * v / d).toFixed(0) + " %" : "–";
+    }
+    var html = "<thead><tr><th>Erwartet ↓ / Workflow →</th>" + cats.map(function (c) { return "<th>" + c[1] + "</th>"; }).join("") + "<th>Summe</th></tr></thead><tbody>";
+    cats.forEach(function (r) {
+      html += "<tr><td>" + r[1] + "</td>" + cats.map(function (c) {
+        var v = counts[r[0] + c[0]];
+        var cls = v === 0 ? "" : (r[0] === c[0] ? "is-diag" : "is-off");
+        return '<td class="' + cls + '">' + cell(v, r[0], c[0]) + "</td>";
+      }).join("") + "<td>" + (view === "row" ? (rowSum[r[0]] ? "100 %" : "–") : view === "col" ? (rated ? (100 * rowSum[r[0]] / rated).toFixed(0) + " %" : "–") : rowSum[r[0]]) + "</td></tr>";
+    });
+    html += "<tr><td>Summe</td>" + cats.map(function (c) { return "<td>" + (view === "col" ? (colSum[c[0]] ? "100 %" : "–") : view === "row" ? (rated ? (100 * colSum[c[0]] / rated).toFixed(0) + " %" : "–") : colSum[c[0]]) + "</td>"; }).join("") + "<td>" + (view === "abs" ? rated : "100 %") + "</td></tr></tbody>";
+    table.innerHTML = html;
+    Array.prototype.forEach.call(casesEl.querySelectorAll("button"), function (b) {
+      var c = cases.filter(function (x) { return x.id === b.dataset.id; })[0];
+      b.className = picks[b.dataset.id] === b.dataset.k ? "is-on " + (b.dataset.k === c.exp ? "is-right" : "is-wrong") : "";
+    });
+    if (rated === 0) { score.textContent = "Noch nichts bewertet. Pro Fall die Empfehlung des Workflows anklicken: M, R, E oder K."; return; }
+    var offCols = {};
+    cases.forEach(function (c) { var p = picks[c.id]; if (p && p !== c.exp) offCols[p] = (offCols[p] || 0) + 1; });
+    var hint = "";
+    var keys = Object.keys(offCols);
+    if (keys.length) {
+      var top = keys.sort(function (a, b) { return offCols[b] - offCols[a]; })[0];
+      hint = " Die Fehler liegen vor allem in der Spalte <b>" + cats.filter(function (k) { return k[0] === top; })[0][1] + "</b>: Dort setzt die nächste Regeländerung an.";
+    }
+    var viewTxt = view === "row" ? " Zeilenanteile beantworten: Wenn eine Empfehlung erwartet war, wie oft hat der Workflow sie getroffen?" : view === "col" ? " Spaltenanteile beantworten: Wenn der Workflow eine Empfehlung ausgibt, wie oft ist sie richtig?" : "";
+    score.innerHTML = "<strong>" + right + " von " + rated + "</strong> bewerteten Fällen richtig (Diagonale)." + hint + viewTxt;
+  }
+  document.getElementById("gm-kt-view").addEventListener("click", function (ev) { var b = ev.target.closest("button"); if (!b) return; view = b.dataset.v; Array.prototype.forEach.call(ev.currentTarget.children, function (x) { x.className = x === b ? "is-on" : ""; }); render(); });
+  document.getElementById("gm-kt-example").addEventListener("click", function () { picks = Object.assign({}, example); render(); });
+  document.getElementById("gm-kt-reset").addEventListener("click", function () { picks = {}; render(); });
+  render();
+})();
+</script>
+```

@@ -1,0 +1,57 @@
+```{=html}
+<div class="gm-sort" id="gm-bs">
+  <div class="gm-sort__items" id="gm-bs-items"></div>
+  <div class="gm-sort__side">
+    <div class="gm-sort__legend"><b>A</b> Anweisungen (Regeln, Format) · <b>W</b> Wissen (Angebot, Material) · <b>F</b> aktueller Fall (Kontaktfelder)</div>
+    <div class="gm-sort__panel" id="gm-bs-panel">Acht Zeilen aus einem Prompt. Welche gehören zu den dauerhaften Anweisungen, welche zum Wissen, welche zum aktuellen Fall?</div>
+    <div class="gm-sort__score" id="gm-bs-score"></div>
+    <div class="gm-sort__actions"><button type="button" id="gm-bs-reset" class="is-secondary">Zurücksetzen</button></div>
+  </div>
+</div>
+<style>
+.gm-sort { font-size: 0.42em; display: grid; grid-template-columns: 1.25fr 1fr; gap: 1.2em; margin-top: 0.3em; color: #f2f5ff; text-align: left; align-items: start; }
+.gm-sort__items { display: flex; flex-direction: column; gap: 0.35em; }
+.gm-sort__item { display: grid; grid-template-columns: 1fr auto; gap: 0.6em; align-items: center; padding: 0.45em 0.7em; background: #161a24; border: 1px solid #2a2f3e; border-radius: 0.5em; line-height: 1.3; }
+.gm-sort__item.is-right { border-color: #88F297; }
+.gm-sort__item.is-wrong { border-color: #ff7847; }
+.gm-sort__btns { display: flex; gap: 0.3em; }
+.gm-sort__btns button { min-width: 2.2em; height: 2.2em; padding: 0 0.5em; border-radius: 0.4em; border: 1px solid #2a2f3e; background: transparent; color: #9ba3ba; font-weight: 700; cursor: pointer; font-size: 0.95em; }
+.gm-sort__btns button.is-on { background: #4ba9ff; color: #0b0d13; border-color: #4ba9ff; }
+.gm-sort__btns button.is-on.is-right { background: #88F297; border-color: #88F297; }
+.gm-sort__btns button.is-on.is-wrong { background: #ff7847; border-color: #ff7847; }
+.gm-sort__legend { color: #9ba3ba; line-height: 1.5; margin-bottom: 0.6em; }
+.gm-sort__legend b { color: #ffffff; }
+.gm-sort__panel { padding: 0.7em 0.9em; background: #161a24; border: 1px solid #2a2f3e; border-radius: 0.6em; line-height: 1.5; min-height: 6em; }
+.gm-sort__panel strong { color: #88F297; }
+.gm-sort__panel .is-warn { color: #ff7847; font-weight: 600; }
+.gm-sort__score { margin-top: 0.6em; color: #9ba3ba; }
+.gm-sort__actions { margin-top: 0.6em; }
+.gm-sort__actions button { background: transparent; color: #9ba3ba; border: 1px solid #2a2f3e; border-radius: 0.45em; padding: 0.4em 0.9em; cursor: pointer; font-size: 0.95em; }
+</style>
+<script>
+(function () {
+  var P = "gm-bs", cats = [{"k": "A", "n": "Anweisungen"}, {"k": "W", "n": "Wissen"}, {"k": "F", "n": "Aktueller Fall"}], items = [{"t": "Empfiehl genau einen nächsten Schritt: Material, Rückfrage oder Erstgespräch.", "a": "A", "e": "Eine dauerhafte Regel für jede Anfrage. Sie ändert sich nicht mit dem Kontakt."}, {"t": "Der KI-Praxischeck dauert zwei Wochen und kostet 2.400 Euro netto.", "a": "W", "e": "Angebotswissen. Es gilt für alle Fälle, ändert sich aber, wenn Aurenta das Angebot anpasst, deshalb getrennt von den Regeln."}, {"t": "Anliegen: „Gibt es eine Aufzeichnung? Ich möchte zunächst die Inhalte nacharbeiten.“", "a": "F", "e": "Das ist die wechselnde Eingabe: der konkrete Kontakt K-02."}, {"t": "Bei kontakt_erlaubt = nein bleibt der Nachrichtenentwurf leer.", "a": "A", "e": "Eine feste Regel. Im n8n-Ausbau wird sie sogar vor das Modell gezogen."}, {"t": "M1 ist eine Checkliste mit drei Fragen zur Auswahl eines KI-Anwendungsfalls.", "a": "W", "e": "Beschreibung einer Arbeitshilfe, also Wissen über das Material."}, {"t": "Rolle: Marketing Operations, Industrieunternehmen, 600 Beschäftigte.", "a": "F", "e": "Kontaktfelder von K-03, Teil des aktuellen Falls."}, {"t": "Der Follow-up-Entwurf hat höchstens 120 Wörter und ist auf Deutsch in der Sie-Form.", "a": "A", "e": "Ausgabeformat und Tonalität sind Anweisungen."}, {"t": "Es gibt keine Aufzeichnung des Webinars, nur eine schriftliche Zusammenfassung.", "a": "W", "e": "Fakt über das Material, den das Modell braucht, um K-02 richtig zu beantworten."}];
+  var picks = {}, box = document.getElementById(P + "-items"), panel = document.getElementById(P + "-panel"), score = document.getElementById(P + "-score");
+  items.forEach(function (it, i) {
+    var row = document.createElement("div"); row.className = "gm-sort__item"; row.id = P + "-row-" + i;
+    row.innerHTML = '<span>' + it.t + '</span><span class="gm-sort__btns">' + cats.map(function (c) { return '<button type="button" data-i="' + i + '" data-k="' + c.k + '" title="' + c.n + '">' + c.k + '</button>'; }).join("") + '</span>';
+    box.appendChild(row);
+  });
+  box.addEventListener("click", function (ev) {
+    var b = ev.target.closest("button"); if (!b) return;
+    var i = +b.dataset.i, k = b.dataset.k, it = items[i]; picks[i] = k;
+    var right = k === it.a;
+    var row = document.getElementById(P + "-row-" + i); row.className = "gm-sort__item " + (right ? "is-right" : "is-wrong");
+    Array.prototype.forEach.call(row.querySelectorAll("button"), function (x) { x.className = x.dataset.k === k ? "is-on " + (right ? "is-right" : "is-wrong") : ""; });
+    var catName = cats.filter(function (c) { return c.k === it.a; })[0].n;
+    panel.innerHTML = (right ? "<strong>Richtig: " + catName + ".</strong> " : "<span class='is-warn'>Nicht ganz. Richtig wäre: " + catName + ".</span> ") + it.e;
+    var n = Object.keys(picks).length, r = Object.keys(picks).filter(function (j) { return picks[j] === items[j].a; }).length;
+    score.textContent = r + " von " + n + " richtig" + (n === items.length ? " · alle bewertet" : "");
+  });
+  document.getElementById(P + "-reset").addEventListener("click", function () {
+    picks = {}; score.textContent = ""; panel.innerHTML = "Acht Zeilen aus einem Prompt. Welche gehören zu den dauerhaften Anweisungen, welche zum Wissen, welche zum aktuellen Fall?";
+    items.forEach(function (it, i) { var row = document.getElementById(P + "-row-" + i); row.className = "gm-sort__item"; Array.prototype.forEach.call(row.querySelectorAll("button"), function (x) { x.className = ""; }); });
+  });
+})();
+</script>
+```

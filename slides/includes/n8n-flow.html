@@ -1,0 +1,155 @@
+```{=html}
+<div class="gm-n8" id="gm-n8">
+  <div class="gm-n8__top">
+    <div class="gm-n8__seg" id="gm-n8-variant"><button type="button" data-v="starter" class="is-on">01 Starter</button><button type="button" data-v="ausbau">02 Struktur und Sperre</button></div>
+    <div class="gm-n8__seg" id="gm-n8-contact"><button type="button" data-c="K-01" class="is-on">K-01</button><button type="button" data-c="K-02">K-02</button><button type="button" data-c="K-05">K-05</button></div>
+    <button type="button" id="gm-n8-run" class="gm-n8__run">Execute Workflow</button>
+  </div>
+  <svg id="gm-n8-svg" viewBox="0 0 1200 300" aria-hidden="true"></svg>
+  <div class="gm-n8__panel" id="gm-n8-panel"></div>
+</div>
+<style>
+.gm-n8 { font-size: 0.44em; color: #f2f5ff; text-align: left; margin-top: 0.2em; }
+.gm-n8__top { display: flex; gap: 1em; align-items: center; margin-bottom: 0.4em; flex-wrap: wrap; }
+.gm-n8__seg { display: inline-flex; border: 1px solid #2a2f3e; border-radius: 0.5em; overflow: hidden; }
+.gm-n8__seg button { background: transparent; color: #9ba3ba; border: 0; padding: 0.45em 0.9em; cursor: pointer; font-weight: 600; font-size: 0.95em; }
+.gm-n8__seg button.is-on { background: #1e2332; color: #ffffff; }
+.gm-n8__run { background: #88F297; color: #0b0d13; border: 0; border-radius: 0.5em; padding: 0.5em 1.1em; font-weight: 700; cursor: pointer; font-size: 0.95em; margin-left: auto; }
+.gm-n8 svg { width: 100%; height: auto; display: block; }
+.gm-n8 .node { cursor: pointer; }
+.gm-n8 .node rect { fill: #1e2332; stroke: #2a2f3e; stroke-width: 2; }
+.gm-n8 .node.is-info rect { stroke: #4ba9ff; stroke-width: 4; }
+.gm-n8 .node.is-hot rect { stroke: #88F297; stroke-width: 4; }
+.gm-n8 .node.is-skip rect { stroke: #2a2f3e; opacity: 0.45; }
+.gm-n8 .node text { fill: #f2f5ff; font-family: Inter, system-ui, sans-serif; font-size: 17px; font-weight: 600; text-anchor: middle; }
+.gm-n8 .node .kind { fill: #9ba3ba; font-size: 12px; font-weight: 400; letter-spacing: 0.06em; }
+.gm-n8 .node.is-sub rect { stroke-dasharray: 6 5; }
+.gm-n8 .edge { fill: none; stroke: #2a2f3e; stroke-width: 4; }
+.gm-n8 .edge.is-done { stroke: #4ba9ff; }
+.gm-n8 .edge.is-off { stroke: #2a2f3e; stroke-dasharray: 6 6; }
+.gm-n8 .edgelabel { fill: #9ba3ba; font-family: Inter, system-ui, sans-serif; font-size: 13px; text-anchor: middle; }
+.gm-n8 .tok { fill: #88F297; }
+.gm-n8__panel { margin-top: 0.4em; padding: 0.7em 1em; background: #161a24; border: 1px solid #2a2f3e; border-radius: 0.6em; line-height: 1.45; min-height: 5.2em; }
+.gm-n8__panel b { color: #ffffff; }
+.gm-n8__panel code { color: #88F297; background: #0b0d13; padding: 0 0.3em; border-radius: 0.25em; font-size: 0.95em; }
+.gm-n8__panel .kv { display: grid; grid-template-columns: max-content 1fr; gap: 0.15em 0.9em; margin-top: 0.4em; }
+.gm-n8__panel .kv span:nth-child(odd) { color: #9ba3ba; }
+</style>
+<script>
+(function () {
+  var svg = document.getElementById("gm-n8-svg"), NS = "http://www.w3.org/2000/svg", panel = document.getElementById("gm-n8-panel");
+  var contacts = {
+    "K-01": { rolle: "Marketingleitung", unternehmen: "B2B-Dienstleister, 250 Beschäftigte", webinar_status: "teilgenommen", anliegen: "Wir möchten unsere Content-Briefings verbessern. Können wir besprechen, ob der Praxischeck dafür passt?", sprache: "Deutsch", kontakt_erlaubt: "ja",
+      out: "Empfehlung: Erstgespräch. Begründung: konkreter Briefing-Bedarf und ausdrücklicher Gesprächswunsch. Entwurf: Dank für die Teilnahme, Angebot eines kostenlosen 30-minütigen Erstgesprächs zur Klärung der Aufgabe, keine Terminangabe.",
+      struct: { entscheidung: "erstgespraech", begruendung: "Konkreter Bedarf (Content-Briefings) und expliziter Gesprächswunsch", material_id: "", nachricht_entwurf: "Vielen Dank für Ihre Teilnahme … gern klären wir in einem kostenlosen 30-minütigen Erstgespräch, ob der Praxischeck zu Ihren Content-Briefings passt.", offene_punkte: "Wer aus dem Marketing nimmt teil?" } },
+    "K-02": { rolle: "Content Marketing", unternehmen: "Technischer Handel, 180 Beschäftigte", webinar_status: "nicht teilgenommen", anliegen: "Ich konnte nicht teilnehmen. Gibt es eine Aufzeichnung? Ich möchte zunächst die Inhalte nacharbeiten.", sprache: "Deutsch", kontakt_erlaubt: "ja",
+      out: "Empfehlung: Material (M2). Begründung: Informationsbedarf, keine Gesprächsanfrage. Entwurf: Hinweis, dass es keine Aufzeichnung gibt, Angebot der schriftlichen Zusammenfassung, kein Gesprächsvorschlag.",
+      struct: { entscheidung: "material", begruendung: "Informationsbedarf ohne Gesprächswunsch; keine Aufzeichnung vorhanden", material_id: "M2", nachricht_entwurf: "Eine Aufzeichnung gibt es leider nicht, gern sende ich Ihnen die schriftliche Zusammenfassung des Webinars …", offene_punkte: "Späteres Interesse an einem Gespräch unklar" } },
+    "K-05": { rolle: "Marketingleitung", unternehmen: "B2B-Dienstleister, 400 Beschäftigte", webinar_status: "teilgenommen", anliegen: "Bitte keine weitere Kontaktaufnahme.", sprache: "Deutsch", kontakt_erlaubt: "nein",
+      out: "Das Modell erhält den Kontakt trotzdem. Je nach Antwort entsteht ein Entwurf, obwohl keine Kontaktaufnahme erlaubt ist. Im Starter fängt das nur die menschliche Prüfung ab.",
+      struct: null }
+  };
+  var variant = "starter", contact = "K-01", running = false, infoIdx = -1;
+  var layouts = {
+    starter: {
+      nodes: [
+        { id: "trigger", x: 90, y: 120, w: 150, h: 70, kind: "MANUAL TRIGGER", name: "Manuell starten", info: "Startet den Lauf per Klick. Pro Lauf genau ein Kontakt, damit Zuordnungsfehler sofort auffallen." },
+        { id: "kontakt", x: 330, y: 120, w: 170, h: 70, kind: "EDIT FIELDS (SET)", name: "Kontakt", info: "Sieben Felder als String: kontakt_id, rolle, unternehmen, webinar_status, anliegen, sprache, kontakt_erlaubt. Werte aus der Kontaktliste. Zwischenziel vor der Mittagspause: Diese Felder kommen in der Ausgabe an." },
+        { id: "chain", x: 600, y: 120, w: 190, h: 70, kind: "BASIC LLM CHAIN", name: "Bedarf und Entwurf", info: "Der vorbereitete n8n-Prompt mit Fallpaket. Platzhalter wie <code>{{ $json.anliegen }}</code> holen die Felder des aktuellen Kontakts, keine Programmierung. In der Vorschau muss das echte Anliegen erscheinen." },
+        { id: "model", x: 600, y: 235, w: 190, h: 56, kind: "OPENAI CHAT MODEL", name: "Kursmodell", sub: true, info: "Die vorbereitete Verbindung der Lehrperson, nicht das eigene ChatGPT-Konto. Voreinstellung im Export austauschbar. Chat-Abo und API sind getrennte Zugänge." },
+        { id: "result", x: 900, y: 120, w: 200, h: 70, kind: "EDIT FIELDS (SET)", name: "Ergebnis zur Pruefung", info: "Drei Felder: <code>kontakt_id</code> aus dem Kontakt-Knoten, <code>ergebnis</code> aus der Modellantwort, <code>freigabe = offen</code> als fester Text. Kein Versand, kein CRM-Schreiben. Die Ausgabe steht im Ausführungsprotokoll." }
+      ],
+      edges: [["trigger", "kontakt"], ["kontakt", "chain"], ["chain", "result"]],
+      path: ["trigger", "kontakt", "chain", "result"]
+    },
+    ausbau: {
+      nodes: [
+        { id: "trigger", x: 70, y: 100, w: 130, h: 64, kind: "MANUAL TRIGGER", name: "Manuell starten", info: "Startet den Lauf per Klick, ein Kontakt pro Lauf." },
+        { id: "kontakt", x: 260, y: 100, w: 150, h: 64, kind: "EDIT FIELDS", name: "Kontakt", info: "Dieselben sieben Felder wie im Starter." },
+        { id: "if", x: 470, y: 100, w: 150, h: 64, kind: "IF", name: "kontakt_erlaubt?", info: "Feste Regel vor dem Modell: Nur <code>kontakt_erlaubt = ja</code> geht weiter. Bei nein, leer oder unbekannt entsteht <code>kein_followup</code> mit leerem Entwurf, ohne Modellaufruf. Das ist die Kontaktsperre." },
+        { id: "chain", x: 700, y: 60, w: 180, h: 64, kind: "BASIC LLM CHAIN", name: "Bedarf und Entwurf", info: "Wie im Starter, jetzt mit Structured Output Parser: Das Modell muss ein festes Schema liefern." },
+        { id: "parser", x: 700, y: 170, w: 180, h: 56, kind: "STRUCTURED OUTPUT PARSER", name: "Schema", sub: true, info: "Prüft, ob die Antwort dem Schema entspricht: entscheidung, begruendung, material_id, nachricht_entwurf, offene_punkte. Ein Parserfehler stoppt den Lauf. Ein gültiges Schema beweist keine fachliche Richtigkeit." },
+        { id: "model", x: 700, y: 245, w: 180, h: 48, kind: "OPENAI CHAT MODEL", name: "Kursmodell", sub: true, info: "Vorbereitete Verbindung, wie im Starter." },
+        { id: "felder", x: 960, y: 60, w: 190, h: 64, kind: "EDIT FIELDS", name: "Felder übernehmen", info: "Die Schema-Felder einzeln übernehmen, etwa <code>{{ $json.output.entscheidung }}</code>. kontakt_id und <code>freigabe = offen</code> weiterhin aus fester Logik." },
+        { id: "block", x: 960, y: 170, w: 190, h: 64, kind: "EDIT FIELDS", name: "kein_followup", info: "Interne Ausgabe für gesperrte Kontakte: entscheidung <code>kein_followup</code>, Entwurf leer, kontakt_id bleibt. Der Modellknoten wurde nicht berührt." }
+      ],
+      edges: [["trigger", "kontakt"], ["kontakt", "if"], ["if", "chain", "ja"], ["if", "block", "nein"], ["chain", "felder"]],
+      pathYes: ["trigger", "kontakt", "if", "chain", "felder"],
+      pathNo: ["trigger", "kontakt", "if", "block"]
+    }
+  };
+  function el(tag, attrs, parent) { var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); (parent || svg).appendChild(e); return e; }
+  var nodeEls = {}, edgeEls = [], tokLayer;
+  function center(nd) { return [nd.x + nd.w / 2, nd.y + nd.h / 2]; }
+  function build() {
+    while (svg.firstChild) svg.removeChild(svg.firstChild);
+    nodeEls = {}; edgeEls = [];
+    var L = layouts[variant];
+    var defs = el("defs", {}); var m = el("marker", { id: "gm-n8-arr", viewBox: "0 0 10 10", refX: "9", refY: "5", markerWidth: "6", markerHeight: "6", orient: "auto" }, defs); el("path", { d: "M 0 0 L 10 5 L 0 10 z", fill: "#4ba9ff" }, m);
+    L.edges.forEach(function (e) {
+      var a = L.nodes.filter(function (n) { return n.id === e[0]; })[0], b = L.nodes.filter(function (n) { return n.id === e[1]; })[0];
+      var x1 = a.x + a.w, y1 = a.y + a.h / 2, x2 = b.x, y2 = b.y + b.h / 2, mx = (x1 + x2) / 2;
+      var p = el("path", { d: "M " + x1 + " " + y1 + " C " + mx + " " + y1 + ", " + mx + " " + y2 + ", " + x2 + " " + y2, "class": "edge", "marker-end": "url(#gm-n8-arr)" });
+      edgeEls.push({ el: p, from: e[0], to: e[1] });
+      if (e[2]) { var t = el("text", { x: mx, y: (y1 + y2) / 2 - 8, "class": "edgelabel" }); t.textContent = e[2]; }
+    });
+    L.nodes.forEach(function (nd, i) {
+      var g = el("g", { "class": "node" + (nd.sub ? " is-sub" : "") });
+      el("rect", { x: nd.x, y: nd.y, width: nd.w, height: nd.h, rx: 10 }, g);
+      var k = el("text", { x: nd.x + nd.w / 2, y: nd.y + 20, "class": "kind" }, g); k.textContent = nd.kind;
+      var t = el("text", { x: nd.x + nd.w / 2, y: nd.y + (nd.sub ? 40 : 46) }, g); t.textContent = nd.name;
+      g.addEventListener("click", function () { if (running) return; infoIdx = i; Object.keys(nodeEls).forEach(function (id) { nodeEls[id].setAttribute("class", "node" + (layouts[variant].nodes.filter(function (n) { return n.id === id; })[0].sub ? " is-sub" : "")); }); g.classList.add("is-info"); panel.innerHTML = "<b>" + nd.name + "</b> · " + nd.kind + "<br>" + nd.info; });
+      nodeEls[nd.id] = g;
+    });
+    // Verbindungen zu Sub-Knoten (Modell, Parser) gestrichelt
+    L.nodes.filter(function (n) { return n.sub; }).forEach(function (n) {
+      var parent = L.nodes.filter(function (p) { return p.id === "chain"; })[0];
+      el("path", { d: "M " + (n.x + n.w / 2) + " " + n.y + " L " + (parent.x + parent.w / 2) + " " + (parent.y + parent.h), "class": "edge is-off" });
+    });
+    tokLayer = el("g", {});
+    panel.innerHTML = variant === "starter"
+      ? "<b>Starter:</b> vier Knoten plus Modell. Einen Knoten anklicken für die Erklärung, oder oben einen Kontakt wählen und ausführen."
+      : "<b>Ausbau:</b> Ein If-Knoten zieht die Kontaktsperre vor das Modell, ein Output Parser erzwingt feste Felder. K-05 wählen und ausführen: Das Modell wird nicht aufgerufen.";
+  }
+  function fmtKV(obj) { return '<div class="kv">' + Object.keys(obj).map(function (k) { return "<span>" + k + "</span><span>" + obj[k] + "</span>"; }).join("") + "</div>"; }
+  function stepPanel(nodeId, c) {
+    var d = contacts[c];
+    if (nodeId === "trigger") return "<b>Manuell starten</b> · Lauf gestartet für " + c + ".";
+    if (nodeId === "kontakt") return "<b>Kontakt</b> · Ausgabe des Knotens:" + fmtKV({ kontakt_id: c, rolle: d.rolle, webinar_status: d.webinar_status, anliegen: d.anliegen, kontakt_erlaubt: d.kontakt_erlaubt });
+    if (nodeId === "if") return "<b>kontakt_erlaubt?</b> · Wert: <code>" + d.kontakt_erlaubt + "</code> → Zweig <b>" + (d.kontakt_erlaubt === "ja" ? "ja" : "nein") + "</b>.";
+    if (nodeId === "chain") return "<b>Bedarf und Entwurf</b> · Prompt mit eingesetztem Anliegen: „" + d.anliegen + "“ · Antwort des Kursmodells (Beispiel): " + d.out;
+    if (nodeId === "result") return "<b>Ergebnis zur Pruefung</b>" + fmtKV({ kontakt_id: c, ergebnis: "<i>Modellantwort als Text</i>", freigabe: "offen" }) + (c === "K-05" ? "<br><span style='color:#ff7847'>Problem: Für einen gesperrten Kontakt liegt ein Entwurf zur Prüfung vor. Der Ausbau verhindert das.</span>" : "");
+    if (nodeId === "felder") return "<b>Felder übernehmen</b>" + fmtKV(Object.assign({ kontakt_id: c }, d.struct, { freigabe: "offen" }));
+    if (nodeId === "block") return "<b>kein_followup</b>" + fmtKV({ kontakt_id: c, entscheidung: "kein_followup", nachricht_entwurf: "<i>leer</i>", freigabe: "offen" }) + "<br><span style='color:#88F297'>Das Modell wurde nicht aufgerufen. Die Sperre ist eine feste Regel, keine Modellentscheidung.</span>";
+    return "";
+  }
+  function run() {
+    if (running) return; running = true;
+    var L = layouts[variant], path = variant === "starter" ? L.path : (contacts[contact].kontakt_erlaubt === "ja" ? L.pathYes : L.pathNo);
+    Object.keys(nodeEls).forEach(function (id) { var nd = L.nodes.filter(function (n) { return n.id === id; })[0]; nodeEls[id].setAttribute("class", "node" + (nd.sub ? " is-sub" : "") + (path.indexOf(id) < 0 && !nd.sub ? " is-skip" : "")); });
+    edgeEls.forEach(function (e) { e.el.setAttribute("class", "edge"); });
+    var i = 0;
+    function next() {
+      if (i >= path.length) { running = false; return; }
+      var id = path[i]; nodeEls[id].classList.add("is-hot"); panel.innerHTML = stepPanel(id, contact);
+      if (i > 0) { var prev = path[i - 1]; edgeEls.forEach(function (e) { if (e.from === prev && e.to === id) e.el.classList.add("is-done"); }); }
+      if (i + 1 < path.length) {
+        var a = L.nodes.filter(function (n) { return n.id === id; })[0], b = L.nodes.filter(function (n) { return n.id === path[i + 1]; })[0];
+        var tok = el("circle", { r: 8, "class": "tok" }, tokLayer), t0 = performance.now(), dur = 700;
+        (function fr(now) {
+          var u = Math.min(1, (now - t0) / dur);
+          var x1 = a.x + a.w, y1 = a.y + a.h / 2, x2 = b.x, y2 = b.y + b.h / 2;
+          tok.setAttribute("cx", x1 + (x2 - x1) * u); tok.setAttribute("cy", y1 + (y2 - y1) * (u * u * (3 - 2 * u)));
+          if (u < 1) requestAnimationFrame(fr); else { tok.remove(); nodeEls[id].classList.remove("is-hot"); i++; setTimeout(next, 900); }
+        })(t0);
+      } else { setTimeout(function () { running = false; }, 300); }
+    }
+    setTimeout(next, 200);
+  }
+  document.getElementById("gm-n8-variant").addEventListener("click", function (ev) { var b = ev.target.closest("button"); if (!b || running) return; variant = b.dataset.v; Array.prototype.forEach.call(ev.currentTarget.children, function (x) { x.className = x === b ? "is-on" : ""; }); build(); });
+  document.getElementById("gm-n8-contact").addEventListener("click", function (ev) { var b = ev.target.closest("button"); if (!b || running) return; contact = b.dataset.c; Array.prototype.forEach.call(ev.currentTarget.children, function (x) { x.className = x === b ? "is-on" : ""; }); build(); });
+  document.getElementById("gm-n8-run").addEventListener("click", run);
+  build();
+})();
+</script>
+```

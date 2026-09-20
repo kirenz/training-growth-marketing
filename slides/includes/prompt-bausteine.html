@@ -1,0 +1,64 @@
+```{=html}
+<div class="gm-pb" id="gm-pb">
+  <div class="gm-pb__left">
+    <div class="gm-pb__toggles" id="gm-pb-toggles"></div>
+    <pre class="gm-pb__prompt" id="gm-pb-prompt"></pre>
+  </div>
+  <div class="gm-pb__right">
+    <div class="gm-pb__label">Was das Modell daraus macht</div>
+    <div class="gm-pb__out" id="gm-pb-out"></div>
+  </div>
+</div>
+<style>
+.gm-pb { font-size: 0.44em; display: grid; grid-template-columns: 1.1fr 1fr; gap: 1.2em; margin-top: 0.3em; color: #f2f5ff; text-align: left; align-items: start; }
+.gm-pb__toggles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.4em; margin-bottom: 0.6em; }
+.gm-pb__toggles button { padding: 0.5em 0.4em; border-radius: 0.5em; border: 1px solid #2a2f3e; background: #161a24; color: #9ba3ba; font-weight: 700; cursor: pointer; font-size: 0.95em; }
+.gm-pb__toggles button.is-on { background: #88F297; color: #0b0d13; border-color: #88F297; }
+.reveal .gm-pb__prompt { font-size: 0.95em; line-height: 1.45; background: #0b0d13; border: 1px solid #2a2f3e; border-radius: 0.6em; padding: 0.8em 1em; margin: 0; white-space: pre-wrap; color: #c5ccdd; min-height: 12em; font-family: ui-monospace, Menlo, monospace; }
+.gm-pb__prompt .off { color: #3a4152; text-decoration: line-through; }
+.gm-pb__label { color: #88F297; font-size: 0.8em; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; margin-bottom: 0.4em; }
+.gm-pb__out { background: #161a24; border: 1px solid #2a2f3e; border-radius: 0.6em; padding: 0.8em 1em; line-height: 1.5; min-height: 12em; }
+.gm-pb__out b { color: #ffffff; }
+.gm-pb__out .bad { color: #ff7847; }
+.gm-pb__out .good { color: #88F297; }
+.gm-pb__out ul { margin: 0.4em 0 0 1.1em; padding: 0; }
+.gm-pb__out li { margin-bottom: 0.3em; }
+</style>
+<script>
+(function () {
+  var parts = [
+    { k: "Kontext", line: "Kontext: <Kontext für ChatGPT und die Kontaktfelder von K-02 einfügen.>" },
+    { k: "Aufgabe", line: "Aufgabe: Empfiehl für K-02 den nächsten Schritt (Material, Rückfrage\noder Erstgespräch) und schreibe den Nachrichtenentwurf." },
+    { k: "Format", line: "Format: Entscheidung, Begründung, Material-ID,\nNachrichtenentwurf mit höchstens 120 Wörtern, Sie-Form." },
+    { k: "Prüfung", line: "Prüfung: Nenne am Ende, was fehlt oder unsicher ist, statt es zu erfinden.\nKeine Links, Termine oder Leistungen, die nicht im Kontext stehen." }
+  ];
+  var on = { Kontext: true, Aufgabe: false, Format: false, "Prüfung": false };
+  var tg = document.getElementById("gm-pb-toggles");
+  parts.forEach(function (p) {
+    var b = document.createElement("button"); b.type = "button"; b.textContent = p.k; b.dataset.k = p.k;
+    b.addEventListener("click", function () { on[p.k] = !on[p.k]; render(); }); tg.appendChild(b);
+  });
+  function esc(s) { return s.replace(/</g, "&lt;").replace(/>/g, "&gt;"); }
+  function render() {
+    Array.prototype.forEach.call(tg.children, function (b) { b.className = on[b.dataset.k] ? "is-on" : ""; });
+    document.getElementById("gm-pb-prompt").innerHTML = parts.map(function (p) { return on[p.k] ? esc(p.line) : '<span class="off">' + esc(p.line) + '</span>'; }).join("\n");
+    var out = "";
+    if (!on.Aufgabe) {
+      out = "<b>Nur Kontext, keine Aufgabe.</b> Das Modell fasst das Material zusammen oder fragt zurück, was es damit tun soll. Ohne Aufgabe gibt es nichts zu prüfen.";
+    } else if (!on.Kontext) {
+      out = "<b>Aufgabe ohne Kontext.</b> Das Modell kennt weder Aurenta noch K-02 und füllt die Lücke aus Trainingsmustern:<ul><li class='bad'>erfindet ein Beratungsangebot mit anderem Preis</li><li class='bad'>schlägt allgemein „ein unverbindliches Gespräch“ vor</li><li class='bad'>kein Bezug zum tatsächlichen Anliegen</li></ul>";
+    } else if (!on.Format && !on["Prüfung"]) {
+      out = "<b>Kontext und Aufgabe.</b> Der Bezug zum Fall stimmt, aber:<ul><li class='bad'>Fließtext ohne klare Entscheidung</li><li class='bad'>erwähnt eventuell eine Aufzeichnung, ohne die Lücke zu benennen</li><li class='bad'>nicht vergleichbar mit anderen Läufen</li></ul>";
+    } else if (!on["Prüfung"]) {
+      out = "<b>Ohne Prüfung.</b> Strukturiert und prüfbar, aber Lücken werden gefüllt statt gemeldet:<ul><li class='good'>Entscheidung und Begründung sind erkennbar</li><li class='bad'>bietet „gern einen Termin nächste Woche“ an, den es nicht gibt</li><li class='bad'>Unsicheres steht nirgends, alles klingt gleich sicher</li></ul>";
+    } else if (!on.Format) {
+      out = "<b>Ohne Format.</b> Inhaltlich richtig, formal schwer zu prüfen:<ul><li class='good'>empfiehlt Material (M2) statt Gespräch</li><li class='good'>benennt offene Punkte statt sie zu erfinden</li><li class='bad'>Entscheidung, Begründung und Entwurf sind in einem Absatz vermischt</li><li class='bad'>im Testprotokoll und in n8n nicht als Felder übernehmbar</li></ul>";
+    } else {
+      out = "<b>Alle vier Teile.</b> Ein prüfbarer Auftrag:<ul><li class='good'>Entscheidung: material, M2 (schriftliche Zusammenfassung)</li><li class='good'>Begründung bezieht sich auf das Anliegen von K-02</li><li class='good'>Entwurf unter 120 Wörtern, keine Aufzeichnung, kein Termin</li><li class='good'>offene Punkte: Interesse an einem späteren Gespräch unklar</li></ul>Jeder Punkt lässt sich gegen das Fallpaket prüfen. Das ist der Maßstab.";
+    }
+    document.getElementById("gm-pb-out").innerHTML = out;
+  }
+  render();
+})();
+</script>
+```

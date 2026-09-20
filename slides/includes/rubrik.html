@@ -1,0 +1,83 @@
+```{=html}
+<div class="gm-rb" id="gm-rb">
+  <div class="gm-rb__left">
+    <div class="gm-rb__label">Ausgabe des Workflows für K-02 (Beispiel)</div>
+    <div class="gm-rb__out">
+      <div><span>entscheidung</span><b>erstgespraech</b></div>
+      <div><span>begruendung</span><b>Content-Marketing-Rolle im technischen Handel passt zur Zielgruppe des Praxischecks.</b></div>
+      <div><span>material_id</span><b>M2</b></div>
+      <div><span>nachricht_entwurf</span><b>Guten Tag, schade, dass Sie nicht dabei sein konnten. Die Aufzeichnung finden Sie unter dem beigefügten Link. Der KI-Praxischeck Marketing dauert zwei Wochen und kostet 2.400 Euro netto. Gern besprechen wir am Donnerstag um 11 Uhr in einem kostenlosen Erstgespräch, wie wir Ihre Content-Erstellung beschleunigen. Viele Grüße, Aurenta</b></div>
+      <div><span>offene_punkte</span><b>keine</b></div>
+      <div><span>kontakt_id / freigabe</span><b>K-02 / offen</b></div>
+    </div>
+  </div>
+  <div class="gm-rb__right">
+    <div class="gm-rb__label">Fünf Kriterien, je bestanden oder nicht</div>
+    <div id="gm-rb-crit"></div>
+    <div class="gm-rb__actions"><button type="button" id="gm-rb-solve">Auflösung</button><button type="button" id="gm-rb-reset" class="is-secondary">Zurücksetzen</button></div>
+    <div class="gm-rb__panel" id="gm-rb-panel">Erst selbst bewerten, dann auflösen.</div>
+  </div>
+</div>
+<style>
+.gm-rb { font-size: 0.42em; display: grid; grid-template-columns: 1fr 1fr; gap: 1.2em; margin-top: 0.3em; color: #f2f5ff; text-align: left; align-items: start; }
+.gm-rb__label { color: #88F297; font-size: 0.8em; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; margin-bottom: 0.4em; }
+.gm-rb__out { background: #0b0d13; border: 1px solid #2a2f3e; border-radius: 0.6em; padding: 0.7em 0.9em; }
+.gm-rb__out div { display: grid; grid-template-columns: 8.5em 1fr; gap: 0.6em; padding: 0.3em 0; border-bottom: 1px solid #1e2332; line-height: 1.4; }
+.gm-rb__out div:last-child { border-bottom: 0; }
+.gm-rb__out span { color: #9ba3ba; font-family: ui-monospace, Menlo, monospace; font-size: 0.9em; }
+.gm-rb__out b { font-weight: 500; color: #f2f5ff; }
+.gm-rb__out b mark { background: rgba(255,120,71,0.25); color: #ffb08f; padding: 0 0.15em; border-radius: 0.2em; }
+.gm-rb__crit { display: grid; grid-template-columns: 1fr auto; gap: 0.6em; align-items: center; padding: 0.4em 0.6em; background: #161a24; border: 1px solid #2a2f3e; border-radius: 0.5em; margin-bottom: 0.35em; line-height: 1.3; }
+.gm-rb__crit.is-right { border-color: #88F297; }
+.gm-rb__crit.is-wrong { border-color: #ff7847; }
+.gm-rb__crit .btns button { min-width: 3.6em; height: 2.1em; border-radius: 0.4em; border: 1px solid #2a2f3e; background: transparent; color: #9ba3ba; font-weight: 700; cursor: pointer; margin-left: 0.3em; font-size: 0.9em; }
+.gm-rb__crit .btns button.is-on { background: #4ba9ff; color: #0b0d13; border-color: #4ba9ff; }
+.gm-rb__actions { margin: 0.5em 0; display: flex; gap: 0.5em; }
+.gm-rb__actions button { background: #88F297; color: #0b0d13; border: 0; border-radius: 0.45em; padding: 0.45em 0.9em; font-weight: 700; cursor: pointer; font-size: 0.95em; }
+.gm-rb__actions button.is-secondary { background: transparent; color: #9ba3ba; border: 1px solid #2a2f3e; }
+.gm-rb__panel { padding: 0.6em 0.9em; background: #161a24; border: 1px solid #2a2f3e; border-radius: 0.5em; line-height: 1.45; }
+.gm-rb__panel b { color: #ff7847; }
+.gm-rb__panel .ok { color: #88F297; }
+</style>
+<script>
+(function () {
+  var crit = [
+    { t: "1. Empfehlung passt zum Anliegen und zu den Entscheidungsregeln", a: false, e: "K-02 will nacharbeiten und fragt nach Material. Regel 3: Bitte um Informationen ohne Gesprächswunsch → material. Erstgespräch ist falsch." },
+    { t: "2. Angaben zu Angebot, Preis, Dauer und Material sind korrekt", a: true, e: "Zwei Wochen und 2.400 Euro netto stimmen mit dem Fallpaket überein." },
+    { t: "3. Keine unbelegten Termine, Links, Referenzen oder Wirkungsversprechen", a: false, e: "Drei Verstöße: ein Link zur Aufzeichnung (gibt es nicht), ein Termin am Donnerstag um 11 Uhr (nie vereinbart), „Content-Erstellung beschleunigen“ (Wirkungsversprechen)." },
+    { t: "4. Sprache und nächster Schritt passen; bei Sperre bleibt der Entwurf leer", a: false, e: "Deutsch und Sie-Form stimmen, aber der nächste Schritt (Gespräch) passt nicht zum Anliegen. Keine Sperre bei K-02, daher hier kein kritischer Verstoß." },
+    { t: "5. Kontakt-ID und Freigabestatus werden korrekt geführt", a: true, e: "K-02 und freigabe = offen sind korrekt. Formal in Ordnung, fachlich trotzdem durchgefallen." }
+  ];
+  var picks = {}, box = document.getElementById("gm-rb-crit"), panel = document.getElementById("gm-rb-panel");
+  crit.forEach(function (c, i) {
+    var d = document.createElement("div"); d.className = "gm-rb__crit"; d.id = "gm-rb-c" + i;
+    d.innerHTML = "<span>" + c.t + "</span><span class='btns'><button type='button' data-i='" + i + "' data-v='1'>bestanden</button><button type='button' data-i='" + i + "' data-v='0'>nicht</button></span>";
+    box.appendChild(d);
+  });
+  box.addEventListener("click", function (ev) {
+    var b = ev.target.closest("button"); if (!b) return;
+    picks[b.dataset.i] = b.dataset.v === "1";
+    Array.prototype.forEach.call(b.parentNode.children, function (x) { x.className = x === b ? "is-on" : ""; });
+    var n = Object.keys(picks).length; panel.textContent = n + " von 5 bewertet." + (n === 5 ? " Jetzt auflösen." : "");
+  });
+  document.getElementById("gm-rb-solve").addEventListener("click", function () {
+    var html = "", passed = 0;
+    crit.forEach(function (c, i) {
+      var d = document.getElementById("gm-rb-c" + i); var mine = picks[i];
+      d.className = "gm-rb__crit " + (mine === undefined ? "" : (mine === c.a ? "is-right" : "is-wrong"));
+      if (c.a) passed++;
+      html += "<div style='margin-bottom:0.35em'><span class='" + (c.a ? "ok" : "") + "'>" + (c.a ? "bestanden" : "<b>nicht bestanden</b>") + "</span> · " + c.e + "</div>";
+    });
+    html += "<div style='margin-top:0.5em'><b>" + passed + " von 5</b> bestanden. Ein Durchschnitt hilft nicht: Kriterium 1 und 3 sind fachliche Fehler, die den Entwurf unbrauchbar machen. Bei einer Sperre wäre ein Entwurf ein kritischer Verstoß, der gesondert benannt wird.</div>";
+    panel.innerHTML = html;
+    var out = document.querySelector(".gm-rb__out");
+    out.innerHTML = out.innerHTML.replace("Die Aufzeichnung finden Sie unter dem beigefügten Link.", "<mark>Die Aufzeichnung finden Sie unter dem beigefügten Link.</mark>").replace("am Donnerstag um 11 Uhr", "<mark>am Donnerstag um 11 Uhr</mark>").replace("wie wir Ihre Content-Erstellung beschleunigen", "<mark>wie wir Ihre Content-Erstellung beschleunigen</mark>").replace("<b>erstgespraech</b>", "<b><mark>erstgespraech</mark></b>");
+  });
+  document.getElementById("gm-rb-reset").addEventListener("click", function () {
+    picks = {}; panel.textContent = "Erst selbst bewerten, dann auflösen.";
+    crit.forEach(function (c, i) { var d = document.getElementById("gm-rb-c" + i); d.className = "gm-rb__crit"; Array.prototype.forEach.call(d.querySelectorAll("button"), function (x) { x.className = ""; }); });
+    var out = document.querySelector(".gm-rb__out"); out.innerHTML = out.innerHTML.replace(/<\/?mark>/g, "");
+  });
+})();
+</script>
+```

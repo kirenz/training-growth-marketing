@@ -1,0 +1,317 @@
+---
+title: "Projektstart"
+subtitle: "Semester, Prüfung, Teams"
+author: "Prof. Dr. Jan Kirenz | Agentic AI für Growth Marketing | HdM Stuttgart"
+lang: de
+execute:
+  echo: false
+format:
+  revealjs:
+    theme: [default, deck.scss]
+    incremental: false
+    transition: none
+    background-transition: fade
+    slide-number: c/t
+    navigation-mode: linear
+    scrollable: true
+    preview-links: auto
+    footer: '<a class="deck-back" href="../tage/montag.html">Zurück zur Kursseite: Montag</a> · Agentic AI für Growth Marketing | Blocktag 1'
+    template-partials:
+      - title-slide.html
+---
+
+## Das Semester hat drei Blocktage, ein wöchentliches Coaching und einen Partner
+
+::: {.ws-modules}
+::: {.ws-module}
+**Blocktage**<span>21. bis 23. September, 09:00 bis 17:00 Uhr, Mittagspause 13:00 bis 14:00 Uhr</span>
+:::
+::: {.ws-module}
+**Zoi-Briefing**<span>Dienstag, 22. September, 10:00 Uhr vor Ort an der HdM</span>
+:::
+::: {.ws-module}
+**Coaching**<span>Dienstags 08:15 bis 09:45 Uhr, Raum I008, das ganze Semester</span>
+:::
+::: {.ws-module}
+**Abgaben**<span>Zwischenpräsentation 1. Dezember, Abschluss Ende Januar, Abgabe 12. Februar 2027</span>
+:::
+:::
+
+::: {.ws-note}
+Vorlesung auf Deutsch, Projektinhalte und Kommunikation mit Zoi auf Englisch. Programmierung ist keine Voraussetzung.
+:::
+
+::: {.notes}
+Rahmen in zwei Minuten. Die 90 Minuten Coaching sind nicht das Arbeitsbudget: Die Teams vereinbaren ein eigenes wöchentliches Arbeitsfenster, das kommt in Übung 1.1. Ein weiterer Blocktag im Semester wird noch terminiert.
+:::
+
+## Ziel des Semesters ist ein nutzbarer und überprüfter Marketingprozess {.center}
+
+::: {.ws-statement}
+Jedes Team entwickelt einen zusammenhängenden Prozess für die Vermarktung einer Dienstleistung: ein konkretes Marketingproblem, eine Zielgruppe, eine überprüfbare Nutzenannahme.
+:::
+
+::: {.ws-note}
+Der fachliche Zuschnitt wird nach dem Zoi-Briefing im Coaching konkretisiert. Die Blocktage bauen einen ersten kleinen Ausschnitt.
+:::
+
+::: {.notes}
+Zwei Wörter betonen: nutzbar und überprüft. Nutzbar heißt, der Partner kann den Prozess verstehen und weiterentwickeln. Überprüft heißt, es gibt Testbelege und einen fairen Vergleich mit einer einfacheren Lösung.
+:::
+
+## Im Semesterprojekt gibt es vier Arbeitsbereiche
+
+::: {.ws-cards}
+::: {.ws-card .fragment}
+[Bereich 1]{.ws-card__tag}
+
+[Passende Kunden finden]{.ws-h}
+
+Recherche und Qualifizierung: Welche Unternehmen kommen als Kunden infrage, und was wissen wir über sie?
+:::
+::: {.ws-card .fragment}
+[Bereich 2]{.ws-card__tag}
+
+[Inhalte erstellen]{.ws-h}
+
+Content und Lokalisierung: Texte für Website, LinkedIn oder Newsletter, auch in anderen Sprachen.
+:::
+::: {.ws-card .fragment .is-key}
+[Bereich 3]{.ws-card__tag}
+
+[Kontakte nachfassen]{.ws-h}
+
+Nurturing und Follow-up: Wer sich für ein Webinar oder ein Whitepaper interessiert hat, bekommt den passenden nächsten Schritt.
+:::
+::: {.ws-card .fragment}
+[Bereich 4]{.ws-card__tag}
+
+[Ergebnisse auswerten]{.ws-h}
+
+Reporting: Welche Maßnahmen haben gewirkt, und was folgt daraus?
+:::
+:::
+
+::: {.ws-note .fragment}
+In den drei Blocktagen arbeiten wir in Bereich 3. Welche Bereiche im Semester dazukommen, hängt vom Briefing mit Zoi ab.
+:::
+
+::: {.notes}
+Bereich 3 ist markiert, weil die drei Blocktage dort ansetzen. Welche Tiefe je Bereich sinnvoll ist, entscheidet sich am Partnerauftrag. KI wird eingesetzt, wo Sprachverständnis, Interpretation oder begrenzte Werkzeugwahl einen begründbaren Vorteil bringen.
+:::
+
+## Die Prüfung hat vier benotete Teile und eine Vorprüfungsleistung
+
+| Komponente | Gewicht | Termin |
+|---|---:|---|
+| Vorprüfungsleistung: Online-Kurse, individuell | unbenotet | 17.11.2026 |
+| Zwischenpräsentation | 10 % | 01.12.2026 |
+| Abschlusspräsentation mit Live-Demo | 20 % | Woche vom 26.01.2027 |
+| Agenten und Workflows | 40 % | 12.02.2027 |
+| Playbook und Evaluation | 30 % | 12.02.2027 |
+
+::: {.ws-note}
+Die vier benoteten Teile werden im Team erbracht. Jede Person beteiligt sich an Umsetzung, Prüfung und Präsentation.
+:::
+
+::: {.notes}
+Vorprüfungsleistung: Online-Kurse zu KI-Grundlagen, KI-Agenten im Marketing, n8n und Inbound Marketing, jeweils mindestens 80 Prozent im Abschlussquiz, beliebig wiederholbar. Kursliste und Abgabeweg werden gesondert bekannt gegeben. Bewertungsdetails folgen auf der Kursseite.
+:::
+
+## Bewertet wird die Qualität des Messdesigns, nicht die Höhe der Zahlen {.center}
+
+::: {.ws-statement}
+Die Teams arbeiten mit synthetischen Daten und Testumgebungen. Damit lassen sich Funktion, Ergebnisqualität und Aufwand prüfen. Reale Conversion oder Umsatz werden nicht nachgewiesen, und das wird auch nicht erwartet.
+:::
+
+::: {.notes}
+Das nimmt Druck raus und setzt den Maßstab: Ein sauber geplantes Experiment mit ehrlicher Interpretation ist besser als eine große Zahl ohne Beleg. Ein negativer Vergleich ist ein verwertbares Ergebnis.
+:::
+
+# Der Übungsfall {background-color="#0b0d13"}
+
+{{< include includes/bg-grid.html >}}
+
+## Warum wir mit einem kleinen Ausschnitt anfangen
+
+::: {.ws-cards}
+::: {.ws-card .fragment}
+[Die Frage des Semesters]{.ws-card__tag}
+
+[Wo lohnt sich Agentic AI im Growth Marketing?]{.ws-h}
+
+Bei der Kundensuche, bei Inhalten, beim Nachfassen, beim Auswerten? Und woran erkennt man, ob KI dort wirklich etwas verbessert?
+:::
+::: {.ws-card .fragment .is-key}
+[Die Antwort]{.ws-card__tag}
+
+[Bauen und an Fällen prüfen]{.ws-h}
+
+Ob KI etwas verbessert, sieht man erst, wenn ein Ablauf läuft und an konkreten Fällen geprüft ist. Dafür nehmen wir einen Ausschnitt, in dem alles bekannt ist: das Nachfassen von Webinar-Kontakten bei einer fiktiven Firma.
+:::
+::: {.ws-card .fragment}
+[Der Übertrag]{.ws-card__tag}
+
+[Dasselbe Vorgehen für Zoi]{.ws-h}
+
+Problem beobachten, Annahme formulieren, Workflow bauen, an Fällen testen. Dieses Vorgehen wenden die Teams im Semester auf die Bereiche an, die für Zoi wichtig sind.
+:::
+:::
+
+::: {.ws-note .fragment}
+Der Fall ist absichtlich klein. Nicht der Workflow ist das Ziel, sondern die Erfahrung, wie man prüft, ob KI in einem Marketingschritt hilft.
+:::
+
+::: {.notes}
+Das ist die Brücke zwischen den vier Arbeitsbereichen und dem Übungsfall. Die Studierenden sollen verstehen: Wir bauen nicht irgendeinen Workflow, wir üben ein Vorgehen, das sich auf jeden der vier Bereiche übertragen lässt. Content-Erstellung wäre als Einstieg schwerer prüfbar, weil es dort kein richtig oder falsch gibt.
+:::
+
+## Aurenta ist eine fiktive KI-Beratung für Marketingabteilungen
+
+::: {.ws-cards}
+::: {.ws-card .fragment}
+[Unternehmen]{.ws-card__tag}
+
+[Aurenta]{.ws-h}
+
+Hilft Marketingteams mittelständischer B2B-Unternehmen, geeignete KI-Anwendungen auszuwählen und einen ersten Ablauf zu erproben.
+:::
+::: {.ws-card .fragment .is-key}
+[Produkt]{.ws-card__tag}
+
+[KI-Praxischeck Marketing]{.ws-h}
+
+Zwei Wochen, ein Workshop, drei priorisierte Anwendungsfälle, ein kleiner Prototyp, Ergebnisbesprechung. 2.400 Euro netto.
+:::
+::: {.ws-card .fragment}
+[Kundenweg]{.ws-card__tag}
+
+[Vom Fachbeitrag zum Auftrag]{.ws-h}
+
+Fachbeitrag, Webinar, Nachbereitung, kostenloses Erstgespräch (30 Minuten), Angebot, Auftrag.
+:::
+:::
+
+::: {.ws-note}
+Die Website von Aurenta ist über die Kursseite erreichbar: Startseite, Praxischeck, Webinar, Fachbeitrag, Erstgespräch. Alles fiktiv, kein Bezug zu Zoi.
+:::
+
+::: {.notes}
+Die Website kurz zeigen, zwei Minuten: Startseite, dann Webinar-Seite mit der Zusammenfassung. So sehen die Studierenden Aurenta wie ein Kontakt und verstehen, was Material M1 und M2 sind. Das Fallpaket enthält zusätzlich die internen Regeln.
+:::
+
+## Das Problem: Alle Webinar-Kontakte bekommen dieselbe Gesprächseinladung {.center}
+
+::: {.ws-statement}
+Nach dem Webinar stellt sich für jeden Kontakt die Frage: Welcher nächste Schritt passt, **Material, Rückfrage oder Erstgespräch?** Bisher lädt Aurenta alle gleich zum Gespräch ein. Von 198 Follow-ups führen 10 zu einem qualifizierten Gespräch.
+:::
+
+::: {.ws-note}
+Das Fallpaket fasst den Fall auf einer Seite zusammen: Problem, die drei Möglichkeiten, Regeln, Kontakte. Der reale Zuschnitt mit Zoi entsteht nach dem Briefing am Dienstag.
+:::
+
+::: {.notes}
+Warum ein fiktiver Fall: Alle Angaben sind vollständig, es gibt keine Informationsfallen, und die Teams treffen fachliche Entscheidungen statt Daten zu raten. Preis und Angebot sind bekannt, Termine und Buchungsseiten gibt es nicht. Die Zahlen kommen im Growth-Marketing-Deck ausführlich.
+:::
+
+# Die drei Blocktage {background-color="#0b0d13"}
+
+{{< include includes/bg-grid.html >}}
+
+## Drei Tage, ein wachsender Prototyp
+
+::: {.ws-modules}
+::: {.ws-module}
+**Montag**<span>Teams, Growth-Hypothese, erster eigener n8n-Workflow am Übungsfall</span>
+:::
+::: {.ws-module}
+**Dienstag**<span>Zoi-Briefing um 10 Uhr, Projektbrief, Ablaufskizze, Ausbau des Workflows</span>
+:::
+::: {.ws-module}
+**Mittwoch**<span>Testfälle, fairer Vergleich mit einer einfachen Lösung, Live-Demo, Start ins Semester</span>
+:::
+:::
+
+::: {.notes}
+Jeder Tag baut auf dem vorigen auf. Der Workflow vom Montag wird am Dienstag auf den Zoi-Zuschnitt übertragen und am Mittwoch getestet und übergeben.
+:::
+
+## Am Ende von Tag 1 hat jedes Team einen Workflow, der an drei Kontakten getestet ist
+
+::: {.ws-task}
+**Fünf Übungen heute:**
+
+1. **Übung 1.1:** Teams bilden, Fall kennenlernen, Absprachen treffen
+2. **Übung 1.2:** Webinar-Daten auswerten, eine Hypothese formulieren
+3. **Übung 1.3:** Der erste Prompt, dreimal getestet
+4. **Übung 1.4:** Der erste eigene n8n-Workflow, vor und nach der Mittagspause
+5. **Übung 1.5:** Eine Regel ändern und an drei Fällen prüfen
+
+**16 Uhr:** Sechs Teamdemos, danach Fragen für Zoi sammeln.
+:::
+
+::: {.notes}
+Zeitplan auf der Kursseite, nur grob: Pausen gegen 10:30 und 15:00 Uhr, Mittag 13 bis 14 Uhr. Wenn eine Übung länger dauert, wird die nächste gekürzt, nicht die Pause.
+:::
+
+# Teams bilden {background-color="#0b0d13"}
+
+{{< include includes/bg-grid.html >}}
+
+## Sechs Dreierteams für das ganze Semester
+
+::: {.ws-cards}
+::: {.ws-card .fragment}
+[Ziel]{.ws-card__tag}
+
+[Ergänzende Fähigkeiten]{.ws-h}
+
+Teams, in denen die Zusammenarbeit funktioniert, sich Fähigkeiten ergänzen und Raum für Neues bleibt. Vorkenntnisse werden nicht vorausgesetzt.
+:::
+::: {.ws-card .fragment .is-key}
+[Grundlage]{.ws-card__tag}
+
+[Umfrage, 6 bis 8 Minuten]{.ws-h}
+
+Stärken, Lerninteressen, Marketingpraxis, Erfahrung mit KI, Automatisierung und Daten, gemeinsame Arbeitszeiten. Programmierung freiwillig.
+:::
+::: {.ws-card .fragment}
+[Einteilung]{.ws-card__tag}
+
+[Anschließend im Kurs]{.ws-h}
+
+Zuerst überschneidende Arbeitszeiten, dann ergänzende Erfahrungen und Interessen. Der Studiengang spielt keine Rolle.
+:::
+:::
+
+::: {.notes}
+Für den Vorschlag wird KI genutzt, ich prüfe ihn vor der Bekanntgabe. Die Angaben werden nicht benotet, einzelne Antworten nicht veröffentlicht, nach der Einteilung gelöscht. Wer später kommt, wird im Raum zugeordnet.
+:::
+
+## Aufgabe: die Umfrage zur Teambildung ausfüllen {.center}
+
+::: {.ws-task}
+**Jetzt, etwa 6 bis 8 Minuten.** Link auf der Kursseite unter „Montag, Teams bilden“, Button „Umfrage öffnen“.
+
+Name und E-Mail dienen nur der Zuordnung. Aus den Antworten entsteht die Teameinteilung für Übung 1.1.
+:::
+
+::: {.notes}
+Link an die Wand oder in den Chat. Während die Studierenden ausfüllen, die Einteilung vorbereiten. Zeitfenster bis zur Bekanntgabe ist knapp, etwa zehn Minuten.
+:::
+
+## Übung 1.1: Vorstellungsrunde, Fall lesen, Absprachen treffen
+
+::: {.ws-task}
+**Etwa eine Stunde im Dreierteam.** Anleitung als Google Doc auf der Kursseite.
+
+1. **Vorstellungsrunde** mit drei Fragen: Was habe ich schon gemacht, was kann ich gut, was will ich lernen?
+2. **Den Fall lesen:** Unternehmensprofil von Aurenta. Welches Problem will Aurenta lösen, und woran würde man merken, dass es gelöst ist?
+3. **Absprachen treffen:** festes wöchentliches Arbeitsfenster, Kommunikationskanal, Vorgehen bei Abwesenheit. Ablage im Teamordner.
+
+Zum Schluss drei Rollen für die nächste Übung: bedienen, fachlich nachfragen, dokumentieren.
+:::
+
+::: {.notes}
+Danach Pause, dann der Input zu Growth Marketing am Fall mit eigenem Deck.
+:::

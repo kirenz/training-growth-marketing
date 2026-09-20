@@ -1,0 +1,85 @@
+```{=html}
+<div class="gm-quiz" id="gm-bq" data-prevent-swipe>
+  <div class="gm-quiz__main">
+    <div class="gm-quiz__count" id="gm-bq-count"></div>
+    <div class="gm-quiz__q" id="gm-bq-q"></div>
+    <div class="gm-quiz__opts" id="gm-bq-opts"></div>
+  </div>
+  <div class="gm-quiz__side">
+    <div class="gm-quiz__panel" id="gm-bq-panel">Eine Antwort anklicken. Danach erscheint hier die Erklärung.</div>
+    <div class="gm-quiz__score" id="gm-bq-score"></div>
+    <div class="gm-quiz__actions">
+      <button type="button" id="gm-bq-next">Nächste Frage</button>
+      <button type="button" id="gm-bq-reset" class="is-secondary">Zurücksetzen</button>
+    </div>
+  </div>
+</div>
+<style>
+.gm-quiz { font-size: 0.46em; display: grid; grid-template-columns: 1.3fr 1fr; gap: 1.2em; margin-top: 0.3em; color: #f2f5ff; text-align: left; align-items: start; }
+.gm-quiz__count { color: #88F297; font-size: 0.8em; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 700; margin-bottom: 0.5em; }
+.gm-quiz__q { font-size: 1.25em; font-weight: 600; line-height: 1.35; margin-bottom: 0.8em; color: #ffffff; }
+.gm-quiz__opts { display: flex; flex-direction: column; gap: 0.45em; }
+.gm-quiz__opts button { text-align: left; padding: 0.7em 0.9em; background: #161a24; border: 1px solid #2a2f3e; border-radius: 0.55em; color: #f2f5ff; line-height: 1.35; cursor: pointer; font-size: 1em; display: grid; grid-template-columns: 1.6em 1fr; gap: 0.5em; align-items: start; }
+.gm-quiz__opts button b { color: #9ba3ba; }
+.gm-quiz__opts button:hover { border-color: #4ba9ff; }
+.gm-quiz__opts button.is-right { border-color: #88F297; background: #17261c; }
+.gm-quiz__opts button.is-right b { color: #88F297; }
+.gm-quiz__opts button.is-wrong { border-color: #ff7847; background: #2a1c17; }
+.gm-quiz__opts button.is-wrong b { color: #ff7847; }
+.gm-quiz__opts button:disabled { cursor: default; }
+.gm-quiz__panel { padding: 0.8em 1em; background: #161a24; border: 1px solid #2a2f3e; border-radius: 0.6em; line-height: 1.5; min-height: 7em; }
+.gm-quiz__panel strong { color: #88F297; }
+.gm-quiz__panel .is-warn { color: #ff7847; font-weight: 600; }
+.gm-quiz__score { margin-top: 0.6em; color: #9ba3ba; }
+.gm-quiz__actions { margin-top: 0.6em; display: flex; gap: 0.5em; }
+.gm-quiz__actions button { background: #88F297; color: #0b0d13; border: 1px solid #88F297; border-radius: 0.45em; padding: 0.45em 1em; cursor: pointer; font-weight: 700; font-size: 0.95em; }
+.gm-quiz__actions button:disabled { opacity: 0.35; cursor: default; }
+.gm-quiz__actions button.is-secondary { background: transparent; color: #9ba3ba; border-color: #2a2f3e; font-weight: 400; }
+</style>
+<script>
+(function () {
+  var P = "gm-bq";
+  var qs = [
+    { q: "Woraus erzeugt ein Sprachmodell seinen Text?", o: ["Aus gelernten Mustern und dem, was ihm für die aktuelle Aufgabe vorliegt", "Aus einer Datenbank mit geprüften Fakten", "Aus einer Websuche, die es bei jeder Antwort macht"], a: 0, e: "Muster aus dem Training plus der Kontext der Aufgabe. Eine Faktendatenbank oder eine Suche gehören nicht zum Modell, höchstens zum Chat-Produkt drum herum." },
+    { q: "Was ist ein Token?", o: ["Ein Passwort für den Zugang zum Modell", "Eine Einheit, in der das Modell Text verarbeitet, oft ein Wortteil", "Eine Kennzeichnung für erfundene Angaben"], a: 1, e: "Text wird in Tokens zerlegt, oft Wortteile. Je länger das Material, desto mehr Tokens, desto mehr Kapazität braucht ein Durchlauf." },
+    { q: "Woher kennt das Modell den Preis des KI-Praxischecks?", o: ["Aus dem Training, Aurenta ist bekannt", "Nur, wenn der Preis im Kontext steht, etwa im eingefügten Fallpaket", "Es fragt bei Aurenta nach"], a: 1, e: "Aurenta ist erfunden, das Modell kann den Preis nicht gelernt haben. Steht er nicht im Kontext, wird er erfunden oder die Antwort weicht aus." },
+    { q: "Was ist eine Halluzination?", o: ["Eine Antwort, die zu lang geraten ist", "Eine Fehlermeldung des Chats", "Ein plausibel formulierter Inhalt, der nicht gedeckt oder falsch ist"], a: 2, e: "Das Gefährliche: Erfundenes klingt oft am überzeugendsten. Ein Link zur Webinar-Aufzeichnung, die es nicht gibt, ist so ein Fall." },
+    { q: "ChatGPT hat gestern im Chat eine Websuche gemacht. Kann der n8n-Workflow das mit demselben Modell automatisch auch?", o: ["Ja, gleiches Modell, gleiche Funktionen", "Nein, die Websuche ist eine Funktion des Chat-Produkts, nicht des Modells", "Nur, wenn das private ChatGPT-Konto eingetragen wird"], a: 1, e: "Chat und Workflow sind zwei Ebenen. n8n ruft das Modell über eine Schnittstelle auf, die Produktfunktionen des Chats sind dort nicht dabei. Das private Konto wird in n8n nicht eingetragen." },
+    { q: "Was muss im Kontext stehen, damit das Modell K-02 richtig beantworten kann?", o: ["Nur die Frage „Was soll K-02 bekommen?“", "Der Name des Modells und die Version", "Das Anliegen von K-02 und das Angebot von Aurenta"], a: 2, e: "Beides muss vorliegen: was der Kontakt will und was Aurenta anbietet. Fehlt eines davon, füllt das Modell die Lücke aus Trainingsmustern." },
+    { q: "Was bedeutet Trainingswissen?", o: ["Das Modell kennt alle Unternehmen, auch Aurenta", "Allgemeine Muster aus dem Training. Interne Angaben sind nicht dabei", "Das Modell lernt aus jedem Chat dazu"], a: 1, e: "Aus dem Training kommen Sprache und allgemeine Muster. Fiktive Angebote, interne Regeln und Kontaktdaten sind nicht darin, und ein Chat verändert das Modell nicht." },
+    { q: "Das komplette Fallpaket im Prompt …", o: ["macht das Modell klüger", "verbraucht mehr Tokens, also mehr Kapazität pro Durchlauf", "wird vom Modell dauerhaft gespeichert"], a: 1, e: "Kontext kostet Tokens. Deshalb lohnt es sich, nur das Material mitzugeben, das für die Aufgabe gebraucht wird. Gespeichert wird nichts." }
+  ];
+  var i = 0, answered = {}, right = 0;
+  var qEl = document.getElementById(P + "-q"), oEl = document.getElementById(P + "-opts"), cEl = document.getElementById(P + "-count"), pEl = document.getElementById(P + "-panel"), sEl = document.getElementById(P + "-score"), nBtn = document.getElementById(P + "-next");
+  var letters = ["A", "B", "C"];
+  function render() {
+    var q = qs[i];
+    cEl.textContent = "Frage " + (i + 1) + " von " + qs.length;
+    qEl.textContent = q.q;
+    oEl.innerHTML = q.o.map(function (t, k) { return '<button type="button" data-k="' + k + '"><b>' + letters[k] + '</b><span>' + t + '</span></button>'; }).join("");
+    var done = answered[i] !== undefined;
+    if (done) markAnswer(answered[i]); else pEl.innerHTML = "Eine Antwort anklicken. Danach erscheint hier die Erklärung.";
+    nBtn.disabled = !done || i === qs.length - 1;
+    var n = Object.keys(answered).length;
+    sEl.textContent = n ? right + " von " + n + " richtig" + (n === qs.length ? " · alle beantwortet" : "") : "";
+  }
+  function markAnswer(k) {
+    var q = qs[i];
+    Array.prototype.forEach.call(oEl.children, function (b, j) {
+      b.disabled = true;
+      if (j === q.a) b.classList.add("is-right");
+      else if (j === k) b.classList.add("is-wrong");
+    });
+    pEl.innerHTML = (k === q.a ? "<strong>Richtig.</strong> " : "<span class='is-warn'>Nicht ganz. Richtig ist " + letters[q.a] + ".</span> ") + q.e;
+  }
+  oEl.addEventListener("click", function (ev) {
+    var b = ev.target.closest("button"); if (!b || answered[i] !== undefined) return;
+    var k = +b.dataset.k; answered[i] = k; if (k === qs[i].a) right++;
+    render();
+  });
+  nBtn.addEventListener("click", function () { if (i < qs.length - 1) { i++; render(); } });
+  document.getElementById(P + "-reset").addEventListener("click", function () { i = 0; answered = {}; right = 0; render(); });
+  render();
+})();
+</script>
+```

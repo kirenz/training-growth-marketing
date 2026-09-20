@@ -1,0 +1,678 @@
+---
+title: "Growth Marketing am Fall Aurenta"
+subtitle: "Kundenweg, Hypothese, Experiment"
+author: "Prof. Dr. Jan Kirenz | Agentic AI für Growth Marketing | HdM Stuttgart"
+lang: de
+execute:
+  echo: false
+format:
+  revealjs:
+    theme: [default, deck.scss]
+    incremental: false
+    transition: none
+    background-transition: fade
+    slide-number: c/t
+    navigation-mode: linear
+    scrollable: true
+    preview-links: auto
+    footer: '<a class="deck-back" href="../tage/montag.html">Zurück zur Kursseite: Montag</a> · Agentic AI für Growth Marketing | Blocktag 1'
+    template-partials:
+      - title-slide.html
+---
+
+## Der Input hat vier Teile
+
+::: {.ws-modules}
+::: {.ws-module}
+**1 Kundenweg**<span>Sechs Stationen, an jeder gehen Kontakte verloren</span>
+:::
+::: {.ws-module}
+**2 AARRR**<span>Fünf Fragen als Raster für Kennzahlen</span>
+:::
+::: {.ws-module}
+**3 Wertschöpfungskette und Loop**<span>Von der Frage zur Aktion, und wie Wachstum entsteht</span>
+:::
+::: {.ws-module}
+**4 Hypothese**<span>Von der Beobachtung zur prüfbaren Aussage</span>
+:::
+:::
+
+::: {.ws-note}
+Etwa 35 Minuten. Danach Übung 1.2 mit den Webinar-Kontakten im Google Sheet.
+:::
+
+::: {.notes}
+Kurz die vier Teile nennen. Alles bezieht sich auf den Fall Aurenta, den die Teams in Übung 1.1 gelesen haben. Der Werkzeugkasten auf der Kurswebsite enthält denselben Inhalt zum Nachlesen.
+:::
+
+# Der Kundenweg {background-color="#0b0d13"}
+
+{{< include includes/bg-grid.html >}}
+
+## Auf dem Weg vom Fachbeitrag zum Auftrag verliert Aurenta an jeder Station Kontakte
+
+{{< include includes/kundenweg-anim.html >}}
+
+::: {.notes}
+An jedem Übergang gehen Kontakte verloren, und die Gründe unterscheiden sich: fehlendes Vertrauen, falscher Zeitpunkt, unklarer Nutzen. Deshalb braucht jeder Übergang eine eigene Maßnahme. Das ist der Kern von Growth Marketing: nicht mehr Kontakte oben hineinschütten, sondern die Stelle mit dem größten Verlust finden. Die drei Tage setzen bei der Nachbereitung an. Auf „Abspielen“ klicken: 330 Punkte laufen den Weg entlang, an jeder Station fallen die ab, die nicht weiterkommen, die Zähler laufen mit. Nach etwa zehn Sekunden stehen 330, 198, 39, 10. Den größten Verlust hier nicht benennen, das ist die Frage zwei Folien weiter. Kacheln anklicken, wenn jemand fragt, was eine Station bedeutet.
+:::
+
+## Von 198 Follow-ups führen 10 zu einem qualifizierten Gespräch {.center}
+
+::: {.ws-statement}
+**10 von 198** durchgeführte qualifizierte Gespräche nach dem Follow-up, das sind **5,1 Prozent** in 14 Tagen.
+:::
+
+::: {.ws-note}
+Drei Kampagnen von Aurenta, Beobachtung jeweils 14 Tage nach dem Webinar.
+:::
+
+::: {.notes}
+Die Zahl nennen und stehen lassen. Ob 5,1 Prozent gut oder schlecht sind, weiß niemand ohne Vergleichsmaßstab. Die Frage ist eine andere: Wo auf dem Weg entsteht der Verlust?
+:::
+
+## Wo geht am meisten verloren, und welche Kennzahl zeigt das?
+
+{{< include includes/funnel.html >}}
+
+::: {.notes}
+Frage in den Raum, zwei bis drei Antworten sammeln. Erwartete Antwort: der Sprung von 198 Follow-ups auf 39 Antworten, also die Antwortquote von 19,7 Prozent. Danach die Buchungsquote 8,1 Prozent und die Quote qualifizierter Gespräche 5,1 Prozent, jeweils auf 198. Wichtig: 10 von 16 ist eine andere Kennzahl als 10 von 198. Die Zahlen zeigen den Engpass, nicht seine Ursache. Die Ursache ist Gegenstand der Hypothese in Übung 1.2.
+:::
+
+## Vier Begriffe genügen für das Projekt
+
+::: {.ws-cards}
+::: {.ws-card .fragment}
+[Begriff]{.ws-card__tag}
+
+[Lead]{.ws-h}
+
+Ein Kontakt, der zur Zielgruppe passt und ein erkennbares Anliegen hat. Kein sicherer Auftrag.
+:::
+::: {.ws-card .fragment}
+[Begriff]{.ws-card__tag}
+
+[Qualifizierung]{.ws-h}
+
+Prüfung, ob ein Lead zum Angebot passt, anhand vorher festgelegter Kriterien.
+:::
+::: {.ws-card .fragment}
+[Begriff]{.ws-card__tag}
+
+[Conversion]{.ws-h}
+
+Ein vorher definierter Übergang, etwa vom Follow-up zum gebuchten Gespräch.
+:::
+::: {.ws-card .fragment .is-key}
+[Begriff]{.ws-card__tag}
+
+[Conversion-Rate]{.ws-h}
+
+Zähler, Nenner und Zeitraum. Ohne alle drei ist es keine Rate.
+:::
+:::
+
+::: {.notes}
+Bei Aurenta heißt qualifiziert: Marketingaufgabe benannt, Zuständigkeit geklärt, nächster Schritt passt zum Leistungsumfang. Eine Buchung allein zählt nicht. Diese Definition steht im Fallpaket und wird am Mittwoch beim Testen gebraucht.
+:::
+
+## Eine Rate braucht Zähler, Nenner und Zeitraum
+
+::: {.ws-compare}
+::: {.ws-compare__side .is-left}
+[Keine Rate]{.ws-h}
+
+- „16 Buchungen"
+- „10 Gespräche, das sind 62 Prozent"
+- „Die Kampagne lief gut"
+:::
+::: {.ws-compare__side .is-right}
+[Rate]{.ws-h}
+
+- 16 Buchungen von 198 Follow-ups innerhalb von 14 Tagen: 8,1 Prozent
+- 10 durchgeführte qualifizierte Gespräche von 198 Follow-ups: 5,1 Prozent
+:::
+:::
+
+::: {.notes}
+Die 62 Prozent links sind 10 von 16, also Gespräche pro Buchung. Das ist eine gültige Zahl, aber eine andere Kennzahl. Wer Nenner wechselt, vergleicht Äpfel mit Birnen. Im Testprotokoll und in der Experimentkarte wird deshalb immer der Nenner mitgeschrieben.
+:::
+
+# AARRR als Raster {background-color="#0b0d13"}
+
+{{< include includes/bg-grid.html >}}
+
+## Acquisition fragt, wie ein passender Erstkontakt entsteht
+
+::: {.ws-cards}
+::: {.ws-card .fragment .is-key}
+[Acquisition]{.ws-card__tag}
+
+[Die Frage]{.ws-h}
+
+Wie entsteht ein passender Erstkontakt?
+:::
+::: {.ws-card .fragment}
+[Bei Aurenta]{.ws-card__tag}
+
+[Der Übergang]{.ws-h}
+
+Anmeldung zum Webinar über einen Fachbeitrag. Passend heißt: Marketingabteilung eines mittelständischen B2B-Unternehmens.
+:::
+::: {.ws-card .fragment}
+[Messgröße]{.ws-card__tag}
+
+[Kennzahl]{.ws-h}
+
+Anmeldungen je Fachbeitrag, Anteil der Anmeldungen aus der Zielgruppe.
+:::
+:::
+
+::: {.notes}
+Der erste Buchstabe. Nicht jede Anmeldung ist ein passender Kontakt: Eine Studentin, die das Webinar für eine Hausarbeit anschaut, ist keine Acquisition im Sinn von Aurenta.
+:::
+
+## Activation fragt, wann der Kontakt zum ersten Mal Nutzen erlebt
+
+::: {.ws-cards}
+::: {.ws-card .fragment .is-key}
+[Activation]{.ws-card__tag}
+
+[Die Frage]{.ws-h}
+
+Wann erlebt der Kontakt zum ersten Mal konkreten Nutzen?
+:::
+::: {.ws-card .fragment}
+[Bei Aurenta]{.ws-card__tag}
+
+[Der Übergang]{.ws-h}
+
+Eine Arbeitshilfe hilft bei der Auswahl eines eigenen KI-Anwendungsfalls, oder ein Erstgespräch klärt die Aufgabe.
+:::
+::: {.ws-card .fragment}
+[Messgröße]{.ws-card__tag}
+
+[Kennzahl]{.ws-h}
+
+Anteil der Follow-ups mit Antwort, Anteil geführter qualifizierter Gespräche.
+:::
+:::
+
+::: {.notes}
+Das ist der Übergang, an dem die Blocktage arbeiten. Nutzen entsteht nicht durch den Empfang einer Nachricht, sondern wenn der Kontakt etwas damit anfangen kann: die Checkliste anwendet, die Zusammenfassung liest, im Gespräch seine Aufgabe schärft.
+:::
+
+## Retention fragt, warum die Beziehung relevant bleibt
+
+::: {.ws-cards}
+::: {.ws-card .fragment .is-key}
+[Retention]{.ws-card__tag}
+
+[Die Frage]{.ws-h}
+
+Warum bleibt die Beziehung relevant?
+:::
+::: {.ws-card .fragment}
+[Bei Aurenta]{.ws-card__tag}
+
+[Der Übergang]{.ws-h}
+
+Weitere passende Inhalte nach dem Webinar, erneute Zusammenarbeit nach dem Praxischeck.
+:::
+::: {.ws-card .fragment}
+[Messgröße]{.ws-card__tag}
+
+[Kennzahl]{.ws-h}
+
+Anteil der Kunden mit Folgeprojekt, Öffnungsrate weiterer Inhalte bei Kontakten ohne Auftrag.
+:::
+:::
+
+::: {.notes}
+Für eine Beratung mit wenigen, großen Aufträgen ist Retention wichtiger als bei einem App-Geschäft: Ein Kunde, der nach dem Praxischeck ein zweites Projekt beauftragt, ist mehr wert als zehn neue Anmeldungen.
+:::
+
+## Referral fragt, wann das Angebot weiterempfohlen wird
+
+::: {.ws-cards}
+::: {.ws-card .fragment .is-key}
+[Referral]{.ws-card__tag}
+
+[Die Frage]{.ws-h}
+
+Wann wird das Angebot weiterempfohlen?
+:::
+::: {.ws-card .fragment}
+[Bei Aurenta]{.ws-card__tag}
+
+[Der Übergang]{.ws-h}
+
+Eine zufriedene Kundin stellt einen Kontakt her, oder eine Fallstudie zieht ähnliche Unternehmen an.
+:::
+::: {.ws-card .fragment}
+[Messgröße]{.ws-card__tag}
+
+[Kennzahl]{.ws-h}
+
+Anteil der Erstkontakte, die über eine Empfehlung oder Fallstudie kommen.
+:::
+:::
+
+::: {.notes}
+Referral ist der Mechanismus hinter dem Growth Loop, der später kommt. Empfehlungen entstehen nicht von allein: Man muss danach fragen und es leicht machen, etwa mit einer freigegebenen Fallstudie.
+:::
+
+## Revenue fragt, wie Umsatz entsteht
+
+::: {.ws-cards}
+::: {.ws-card .fragment .is-key}
+[Revenue]{.ws-card__tag}
+
+[Die Frage]{.ws-h}
+
+Wie entsteht Umsatz?
+:::
+::: {.ws-card .fragment}
+[Bei Aurenta]{.ws-card__tag}
+
+[Der Übergang]{.ws-h}
+
+Der beauftragte KI-Praxischeck Marketing, 2.400 Euro netto als Festpreis.
+:::
+::: {.ws-card .fragment}
+[Messgröße]{.ws-card__tag}
+
+[Kennzahl]{.ws-h}
+
+Aufträge je Kampagne, Umsatz je Auftrag, Kosten je Auftrag.
+:::
+:::
+
+::: {.notes}
+Erst hier wird aus Marketing Geld. Bei 330 Anmeldungen und zwei angenommenen Aufträgen wären das 4.800 Euro aus drei Kampagnen. Ob sich das rechnet, hängt von den Kosten je Anmeldung ab, die der Fall nicht nennt.
+:::
+
+## AARRR stellt fünf Fragen an jeden Kundenweg: die Übersicht
+
+| Bereich | Frage | Bei Aurenta |
+|---|---|---|
+| Acquisition | Wie entsteht ein passender Erstkontakt? | Anmeldung zum Webinar über einen Fachbeitrag |
+| Activation | Wann erlebt der Kontakt zum ersten Mal Nutzen? | Arbeitshilfe zur Auswahl eines KI-Anwendungsfalls |
+| Retention | Warum bleibt die Beziehung relevant? | Weitere passende Inhalte, erneute Zusammenarbeit |
+| Referral | Wann wird das Angebot weiterempfohlen? | Eine zufriedene Kundin stellt einen Kontakt her |
+| Revenue | Wie entsteht Umsatz? | Beauftragter Praxischeck |
+
+::: {.notes}
+AARRR ist ein Raster, um Kennzahlen zu sortieren, keine Reihenfolge, die jede Dienstleistung durchläuft. Für eine Beratung mit wenigen, großen Aufträgen sind Retention und Referral wichtiger als bei einem App-Geschäft. Die Tabelle steht im Werkzeugkasten.
+:::
+
+## Im Blockkurs zählt der Übergang von Acquisition zu Activation {.center}
+
+::: {.ws-statement}
+Vom Webinar-Kontakt zum qualifizierten Gespräch. Die anderen Bereiche kommen im Semesterprojekt je nach Zuschnitt mit Zoi dazu.
+:::
+
+::: {.notes}
+Das grenzt die drei Tage ein. Alles, was die Teams bauen, bearbeitet diesen einen Übergang. Was Zoi am Dienstag als Praxisfall mitbringt, kann einen anderen Bereich betreffen. Dann wird das Raster erneut angelegt.
+:::
+
+# Wertschöpfungskette und Growth Loop {background-color="#0b0d13"}
+
+{{< include includes/bg-grid.html >}}
+
+## Von der Frage zur Aktion führen sieben Stufen, und die Evaluation stellt die nächste Frage
+
+{{< include includes/zyklus.html >}}
+
+::: {.notes}
+Mit „Weiter“ durch die sieben Stufen der ersten Runde klicken: Frage und Meinung, Plan mit Kennzahl und A/B-Design, Daten, Analyse als Kreuztabelle, Report ohne statistischen Test, Aktion (noch nicht umstellen), Evaluation. Der achte Klick springt zurück auf Frage: Die Evaluation der ersten Runde ist die Frage der zweiten. Dieselbe Kette wie in der Statistik-Vorlesung am Netflix-Beispiel (Box-Art, Klickrate), Quelle Google (2011) und Tingley et al. (2021). In den Blocktagen ersetzt das Testprotokoll den Feldversuch: Frage bis Plan sind Übung 1.2, Daten und Analyse die Übungen 1.4 und 1.5, Report die Demo um 16 Uhr.
+:::
+
+## Ein Growth Loop verstärkt sich mit jeder Runde
+
+{{< include includes/growthloop.html >}}
+
+::: {.notes}
+Fünfmal „Nächste Runde“ klicken. Ein Projekt wird zur Fallstudie, die Fallstudie bringt vier Anfragen, jede zweite wird ein Projekt: 1, 2, 4, 8, 16. Die Balken rechts zeigen die neuen Projekte je Runde. Die Zahlen sind Beispielwerte für den Mechanismus, keine Aurenta-Daten. Entscheidend ist die Struktur: Der Output einer Runde ist der Input der nächsten, ohne zusätzliche Kampagne. Voraussetzungen benennen: Kunden müssen der Fallstudie zustimmen, und die Anfragen müssen zur Zielgruppe passen. Ein wiederkehrender Reporting-Termin ist kein Loop, weil sein Ergebnis keine neuen Kontakte erzeugt.
+:::
+
+## Die Kette erzeugt Erkenntnis, der Loop erzeugt Wachstum
+
+::: {.ws-compare}
+::: {.ws-compare__side .is-left}
+[Wertschöpfungskette]{.ws-h}
+
+- beschreibt, wie ein Team von der Frage zur Aktion kommt
+- eine Runde, eine Kennzahl, eine Entscheidung
+- Werkzeug der Blocktage und des Messdesigns
+:::
+::: {.ws-compare__side .is-right}
+[Growth Loop]{.ws-h}
+
+- beschreibt, wie ein Geschäft wächst
+- der Output eines Durchlaufs ist der Input des nächsten
+- Frage für das Semesterprojekt: Gibt es bei Zoi einen solchen Mechanismus?
+:::
+:::
+
+::: {.notes}
+Häufige Verwechslung: Ein regelmäßiger Reporting-Termin ist kein Growth Loop, weil sein Ergebnis keine neuen Kontakte erzeugt. Ein Loop liegt nur vor, wenn der Output messbar zum nächsten Input wird.
+:::
+
+# Vom Material zur Hypothese {background-color="#0b0d13"}
+
+{{< include includes/bg-grid.html >}}
+
+## Aus Frage und Meinung wird eine prüfbare Hypothese
+
+::: {.ws-cards}
+::: {.ws-card}
+[Frage]{.ws-card__tag}
+
+[Beobachtung]{.ws-h}
+
+198 Follow-ups, 16 Buchungen, 10 qualifizierte Gespräche. Wer nur nachlesen wollte, hat fast nie gebucht: 1 von 60.
+:::
+::: {.ws-card}
+[Meinung]{.ws-card__tag}
+
+[Mögliche Erklärungen]{.ws-h}
+
+Die einheitliche Gesprächseinladung kommt zu früh. Oder: Angebot oder Zeitpunkt passen nicht.
+:::
+::: {.ws-card .is-key}
+[Plan]{.ws-card__tag}
+
+[Hypothese]{.ws-h}
+
+Eine Nachbereitung nach Anliegen führt in 14 Tagen zu mehr qualifizierten Gesprächen als die einheitliche Einladung.
+:::
+:::
+
+::: {.notes}
+Beobachtung und Erklärung trennen. Der Trichter zeigt den Engpass, die Kreuztabelle Anliegen gegen Buchung liefert den Hinweis auf die Ursache. Zwei Erklärungen nebeneinander halten, bevor eine zur Hypothese wird. Das sind die Schritte 2 bis 5 in Übung 1.2.
+:::
+
+## Eine Hypothese folgt dem Muster „Wenn wir X ändern, dann Y, weil Z" {.center}
+
+::: {.ws-statement}
+Wenn die Nachbereitung sich am Anliegen des Kontakts orientiert, statt allen ein Erstgespräch anzubieten, **dann** steigt die Zahl qualifizierter Gespräche in 14 Tagen, **weil** mehr Kontakte den für sie passenden nächsten Schritt bekommen.
+:::
+
+::: {.ws-note}
+X: die Änderung. Y: die messbare Wirkung mit Zeitraum. Z: der vermutete Mechanismus.
+:::
+
+::: {.notes}
+Das Muster ist die Vorlage für die Experimentkarte. Der „weil"-Teil ist der wichtigste: Er sagt, warum die Änderung wirken sollte, und lässt sich an einzelnen Fällen prüfen, bevor es Zahlen gibt. Ohne „weil" ist es eine Wette, keine Hypothese.
+:::
+
+## Ein KI-Workflow wird auf drei Ebenen bewertet
+
+::: {.ws-cards}
+::: {.ws-card}
+[Ebene 1]{.ws-card__tag}
+
+[Marketingwirkung]{.ws-h}
+
+Bringt die Änderung mehr passende Gespräche? Gemessen als qualifizierte Gespräche je Gruppe in einem festen Zeitraum.
+:::
+::: {.ws-card .is-key}
+[Ebene 2]{.ws-card__tag}
+
+[Qualität]{.ws-h}
+
+Sind Empfehlungen und Texte richtig? Anteil korrekter Empfehlungen, gedeckte Aussagen, eingehaltene Kontaktsperre.
+:::
+::: {.ws-card}
+[Ebene 3]{.ws-card__tag}
+
+[Aufwand]{.ws-h}
+
+Spart der Workflow Zeit? Bearbeitungszeit pro Kontakt inklusive Prüfung und Nacharbeit.
+:::
+:::
+
+::: {.ws-note}
+In den Blocktagen wird Ebene 2 geprüft. Messdesign für Ebene 1 und Aufwand für Ebene 3 kommen im Semesterprojekt dazu.
+:::
+
+::: {.notes}
+Die drei Ebenen nicht vermischen. Ein Workflow kann perfekte Texte liefern und trotzdem keine Wirkung haben, oder Zeit sparen und dabei falsche Empfehlungen geben. Mehr Antworten auf ein Follow-up bedeuten nicht automatisch mehr passende Gespräche.
+:::
+
+## Indeed und Copy.ai zeigen, wo KI im Marketing heute eingesetzt wird
+
+::: {.ws-compare}
+::: {.ws-compare__side .is-left}
+[Indeed]{.ws-h}
+
+KI für kreative Entwürfe, Tests, Markenrecherche und personalisierte Ansprache im Vertrieb (Interview mit OpenAI, Januar 2026).
+
+**Transferfrage:** Welcher wiederkehrende Vorbereitungsschritt ähnelt der Nachbereitung bei Aurenta?
+:::
+::: {.ws-compare__side .is-right}
+[Copy.ai]{.ws-h}
+
+Claude in Content-Workflows zur Erstellung und Bearbeitung von Marketinginhalten (Fallstudie von Anthropic).
+
+**Transferfrage:** Welche Informationen und Prüfkriterien müssen feststehen, bevor Content in großer Zahl erzeugt wird?
+:::
+:::
+
+::: {.ws-note}
+Beide Quellen sind Berichte der KI-Anbieter, keine unabhängigen Studien. Links im Werkzeugkasten.
+:::
+
+::: {.notes}
+Kurz halten, zwei Minuten. Die Beispiele zeigen Einsatzformen, keine Erfolgswerte, die sich auf Aurenta übertragen ließen. Die Transferfragen können die Teams in Übung 1.2 als Anregung nutzen.
+:::
+
+## Übung 1.2: Vom Trichter zur Hypothese
+
+::: {.ws-task}
+**Etwa 30 Minuten im Dreierteam.**
+
+1. Kopie des Google Sheets mit den 330 Webinar-Anmeldungen anlegen.
+2. Pivot 1: Trichter je Kampagne. Wo gehen die meisten Kontakte verloren? Mit Zähler und Nenner in die Experimentkarte.
+3. Pivot 2: Anliegen gegen Buchung. Welche Gruppe bucht fast nie, welche oft?
+4. Zwei Erklärungen aus den Tabellen, eine davon als Hypothese: „Wenn wir X ändern, dann Y, weil Z".
+5. Kennzahl mit Zähler, Nenner und Zeitraum.
+
+**Ergebnis:** Sheet-Kopie mit zwei Pivot-Tabellen und Experimentkarte in der Teamablage.
+:::
+
+::: {.notes}
+Anleitung und Material stehen auf der Montagsseite unter Übung 1.2. Rollen aus Übung 1.1 gelten: eine Person bedient, eine stellt fachliche Rückfragen, eine dokumentiert. Der Prompt-Test kommt erst nach dem Prompting-Input als Übung 1.3.
+:::
+
+# A/B-Test und Kreuztabellen {background-color="#0b0d13"}
+
+{{< include includes/bg-grid.html >}}
+
+## Ein A/B-Test vergleicht Kontrollgruppe und Treatment-Gruppe unter vier Regeln
+
+::: {.ws-cards}
+::: {.ws-card}
+[Regel 1]{.ws-card__tag}
+
+[Zufällige Zuteilung]{.ws-h}
+
+Der Zufall entscheidet, wer in die Kontrollgruppe A (bisherige Einladung) und wer in die Treatment-Gruppe B (nach Anliegen) kommt.
+:::
+::: {.ws-card}
+[Regel 2]{.ws-card__tag}
+
+[Nur eine Änderung]{.ws-h}
+
+Wer Text, Zeitpunkt und Absender gleichzeitig ändert, weiß nicht, was gewirkt hat.
+:::
+::: {.ws-card}
+[Regel 3]{.ws-card__tag}
+
+[Kennzahl vorher festlegen]{.ws-h}
+
+Qualifizierte Gespräche innerhalb von 14 Tagen. Nicht nachträglich wechseln.
+:::
+::: {.ws-card .is-key}
+[Regel 4]{.ws-card__tag}
+
+[Genug Fälle]{.ws-h}
+
+Kleine Unterschiede bei kleinen Zahlen sind meistens Zufall. Nächste Folie.
+:::
+:::
+
+::: {.notes}
+Regel 1: Sonst landen die vielversprechenden Kontakte in der neuen Variante. Regel 3: Nachträglich eine passendere Kennzahl zu wählen, macht jedes Ergebnis wertlos. Regel 4 wird auf der nächsten Folie ausprobiert.
+:::
+
+## Bei 100 Kontakten pro Gruppe entscheidet oft der Zufall, wer vorn liegt
+
+{{< include includes/abtest-sim.html >}}
+
+::: {.ws-note}
+Ob ein Unterschied mehr als Zufall ist, klärt ein statistischer Test. Das kommt in einer eigenen Einheit im Semester, vor dem Messdesign.
+:::
+
+::: {.notes}
+Live vorführen: Oben zwischen absoluten Werten, Zeilenanteilen und Spaltenanteilen umschalten; die Gesprächsquote sind die Zeilenanteile. Bei 100 Kontakten und wahrer Quote B 10 Prozent mehrmals „Test durchführen" klicken. B gewinnt meistens, aber nicht immer, und der Abstand schwankt stark. Dann den Regler auf 400 schieben: Das Ergebnis wird stabil. Danach B auf 6 Prozent stellen und zeigen, dass selbst 400 Kontakte einen kleinen Unterschied nicht sichtbar machen. Das ist die Begründung für die Zahl 400 auf der übernächsten Folie.
+:::
+
+## Das Ergebnis eines A/B-Tests steht in einer Kreuztabelle mit absoluten Werten
+
+| Gruppe | Qualifiziertes Gespräch | Kein qualifiziertes Gespräch | Summe |
+|---|---:|---:|---:|
+| A: Kontrollgruppe, bisherige Einladung | 5 | 94 | 99 |
+| B: Treatment-Gruppe, nach Anliegen | 9 | 90 | 99 |
+| Summe | 14 | 184 | 198 |
+
+::: {.ws-note}
+Erfundene Beispielzahlen für Aurenta. Zeilen sind die Gruppen, Spalten das Ergebnis, Zellen die Anzahl der Kontakte. Stufe 1 von 3.
+:::
+
+::: {.notes}
+Dieselbe Kontingenztabelle wie in der Statistik-Vorlesung. Erst die absoluten Werte, dann zwei Arten von Anteilen, die zwei verschiedene Fragen beantworten.
+:::
+
+## Zeilenanteile beantworten: Wie viele der Kontakte in Gruppe B führten ein Gespräch?
+
+| Gruppe | Qualifiziertes Gespräch | Kein qualifiziertes Gespräch | Summe |
+|---|---:|---:|---:|
+| A: Kontrollgruppe | **5,1 %** | 94,9 % | 100 % |
+| B: Treatment-Gruppe | **9,1 %** | 90,9 % | 100 % |
+| Gesamt | 7,1 % | 92,9 % | 100 % |
+
+::: {.ws-note}
+Jede Zeile summiert auf 100 Prozent. Das ist die Gesprächsquote, die im A/B-Test verglichen wird. Stufe 2 von 3.
+:::
+
+::: {.notes}
+5 von 99 gegen 9 von 99. Der Nenner ist die Gruppe. Das ist die Kennzahl aus dem Plan.
+:::
+
+## Spaltenanteile beantworten eine andere Frage: Wie viele der Gespräche kamen aus Gruppe B?
+
+| Gruppe | Qualifiziertes Gespräch | Kein qualifiziertes Gespräch | Summe |
+|---|---:|---:|---:|
+| A: Kontrollgruppe | 35,7 % | 51,1 % | 50 % |
+| B: Treatment-Gruppe | **64,3 %** | 48,9 % | 50 % |
+| Summe | 100 % | 100 % | 100 % |
+
+::: {.ws-note}
+Jede Spalte summiert auf 100 Prozent. 9 von 14 Gesprächen kamen aus B. Klingt eindrucksvoll, ist aber nicht die Gesprächsquote und sagt nichts über die Wirkung je Kontakt. Stufe 3 von 3.
+:::
+
+::: {.notes}
+Typischer Fehler in Marketingberichten: Spaltenanteile als Erfolgsquote verkaufen. Der Unterschied von 9,1 gegen 5,1 Prozent beruht auf 5 gegen 9 Gespräche. Ist der Unterschied zwischen den beiden Stichproben groß genug, um auf alle Kontakte zu schließen? Das ist die Inferenz-Frage; sie wird mit einem statistischen Test beantwortet, der später im Semester kommt.
+:::
+
+## Rund 400 Kontakte pro Gruppe, um 5 gegen 10 Prozent zu unterscheiden {.center}
+
+::: {.ws-statement}
+Bei 99 Kontakten pro Gruppe ist ein Unterschied von 5 gegen 9 Gesprächen nicht von Zufall zu trennen. Für einen Nachweis von 5 auf 10 Prozent braucht ein Test etwa **400 Kontakte je Gruppe**.
+:::
+
+::: {.ws-note}
+Übliche Annahmen eines statistischen Tests: Irrtumswahrscheinlichkeit 5 Prozent, Teststärke 80 Prozent. Wie die Rechnung geht, behandeln wir in einer eigenen Einheit im Semester.
+:::
+
+::: {.notes}
+Für das Semesterprojekt heißt das: Das Messdesign wird vollständig geplant, mit Varianten, Zuteilung, Kennzahl, Zeitraum und nötiger Fallzahl. Die Durchführung übersteigt meist den Projektzeitraum. Bewertet wird die Qualität des Designs, nicht die Höhe der Zahlen.
+:::
+
+## Jeder Testfall hat zwei Merkmale: die erwartete und die tatsächliche Empfehlung
+
+::: {.ws-cards}
+::: {.ws-card .fragment}
+[Zeilen]{.ws-card__tag}
+
+[Erwartet]{.ws-h}
+
+Vor dem Lauf im Testprotokoll festgelegt. K-02: Material, weil nur nachgearbeitet werden soll.
+:::
+::: {.ws-card .fragment}
+[Spalten]{.ws-card__tag}
+
+[Tatsächlich]{.ws-h}
+
+Was der Workflow ausgibt. K-02: Erstgespräch.
+:::
+::: {.ws-card .fragment .is-key}
+[Zelle]{.ws-card__tag}
+
+[Anzahl Fälle]{.ws-h}
+
+K-02 landet in Zeile Material, Spalte Erstgespräch. Auf der Diagonale stehen die Treffer.
+:::
+:::
+
+::: {.ws-note}
+Dieselbe Kontingenztabelle wie beim A/B-Test, nur mit zwei anderen Merkmalen. Zeilenanteile: Wenn Material erwartet war, wie oft kam Material? Spaltenanteile: Wenn der Workflow Erstgespräch sagt, wie oft stimmt das?
+:::
+
+::: {.notes}
+Das ist die Brücke von der Statistik zur Qualitätsprüfung des Workflows. Zwei Variablen je Fall, Kreuztabelle, drei Lesarten. Danach die interaktive Tabelle.
+:::
+
+## Neun Testfälle, vier mögliche Empfehlungen: die Tabelle füllt sich beim Bewerten
+
+{{< include includes/kreuztabelle.html >}}
+
+::: {.notes}
+Zwei oder drei Fälle gemeinsam bewerten, dann „Beispiel mit zwei Fehlern“ klicken, danach auf Zeilenanteile und Spaltenanteile umschalten. Die Diagonale zeigt die richtigen Entscheidungen, die Fehler sammeln sich in der Spalte Erstgespräch: Der Workflow lädt zu oft zum Gespräch ein. Genau so vergleichen die Teams am Mittwoch ihren Workflow mit einer einfachen Lösung: gleiche Fälle, zwei Tabellen, Diagonale zählen.
+:::
+
+## Die Diagonale zeigt die Treffer, die Anteile zeigen, wo die nächste Regeländerung ansetzt
+
+| Erwartet (Zeile) / Workflow (Spalte) | Material | Rückfrage | Erstgespräch | Summe |
+|---|---:|---:|---:|---:|
+| Material | **3** | 0 | 1 | 4 |
+| Rückfrage | 0 | **2** | 1 | 3 |
+| Erstgespräch | 0 | 0 | **2** | 2 |
+| Summe | 3 | 2 | 4 | 9 |
+
+::: {.ws-note}
+Zeilenanteile: Material 3 von 4 (75 %), Rückfrage 2 von 3 (67 %), Erstgespräch 2 von 2 (100 %). Spaltenanteile: Wenn der Workflow Erstgespräch sagt, stimmt es nur in 2 von 4 Fällen (50 %). Ob 7 von 9 besser ist als 5 von 9 bei einer einfachen Lösung, klärt bei so kleinen Zahlen nur ein statistischer Test; auch das kommt später.
+:::
+
+::: {.notes}
+Zeilen sind die im Testprotokoll vorher festgelegten Erwartungen, Spalten die Empfehlungen des Workflows. Die Fehler in einer Spalte zeigen, welche Regel als Nächstes geändert wird: Der Workflow empfiehlt zu oft ein Erstgespräch. Mit dieser Tabelle vergleichen die Teams am Mittwoch den eigenen Workflow mit einer einfachen Lösung: gleiche Testfälle, zwei Tabellen, Diagonale zählen.
+:::
+
+## Das Messdesign ist Teil der Abgabe, die Durchführung nicht
+
+::: {.ws-task}
+**Für Playbook und Evaluation im Semesterprojekt:**
+
+1. Varianten und die eine Änderung benennen
+2. Zuteilung beschreiben (zufällig, welche Kontakte)
+3. Kennzahl mit Zähler, Nenner und Zeitraum festlegen
+4. Nötige Fallzahl abschätzen und mit der verfügbaren vergleichen
+5. Kreuztabelle als Ergebnisformat vorbereiten
+6. Kontroll- und Treatment-Gruppe, Kreuztabelle mit Zeilenanteilen und den statistischen Test für den Vergleich benennen (Einheit dazu folgt im Semester)
+:::
+
+::: {.notes}
+Das ist die konkrete Anforderung an den Evaluationsteil, der 30 Prozent der Note ausmacht. Die Statistik dazu (Fallzahl, Vergleich zweier Anteile) kommt in einer Coaching-Einheit im November, vor der Zwischenpräsentation am 1. Dezember.
+:::

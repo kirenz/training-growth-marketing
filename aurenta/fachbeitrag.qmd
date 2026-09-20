@@ -1,0 +1,37 @@
+---
+title: "Fachbeitrag"
+---
+
+::: {.au-hero}
+[Fachbeitrag]{.au-kicker}
+
+# Der erste KI-Anwendungsfall im Marketing: drei Fragen, die vor dem Prompt kommen
+
+[Viele Marketingteams haben KI ausprobiert und wenig davon behalten. Meist liegt es nicht am Werkzeug, sondern an der Auswahl der Aufgabe.]{.au-lead}
+:::
+
+::: {.au-article}
+[Aurenta, August 2026 · Lesezeit 4 Minuten]{.au-meta}
+
+Wer heute eine Marketingabteilung fragt, ob sie KI nutzt, bekommt fast immer ein Ja. Wer nachfragt, wofür, hört von Textentwürfen, Übersetzungen, gelegentlichen Recherchen. Selten hört man von einem Ablauf, der jede Woche läuft und dessen Ergebnis jemand prüft. Der Unterschied zwischen beidem entsteht nicht beim Prompt, sondern davor: bei der Wahl der Aufgabe.
+
+## Erste Frage: Wiederholt sich die Aufgabe?
+
+Ein KI-Ablauf lohnt sich, wenn dieselbe Art von Aufgabe regelmäßig anfällt. Ein Content-Briefing pro Woche, die Nachbereitung jeder Veranstaltung, die Recherche zu jedem neuen Zielsegment. Einmalige Aufgaben, etwa der Text für die Jubiläumsseite, sind mit einem normalen Chat gut bedient. Für sie einen Ablauf zu bauen, kostet mehr, als er spart.
+
+## Zweite Frage: Sind die nötigen Informationen verfügbar?
+
+Ein Sprachmodell kennt Ihr Angebot, Ihre Preise und Ihre Kunden nicht. Was es für die Aufgabe wissen soll, muss als Grundlage vorliegen: die Leistungsbeschreibung, das Zielgruppenprofil, die Regeln für die Ansprache. Fehlt diese Grundlage, füllt das Modell die Lücke aus allgemeinen Mustern, und das Ergebnis klingt gut und stimmt nicht. Teams, die vor dem ersten Ablauf ihr Material ordnen, sparen sich später die meisten Korrekturen.
+
+## Dritte Frage: Lässt sich die Qualität prüfen?
+
+Für jede Aufgabe braucht es ein Kriterium, an dem ein gutes Ergebnis von einem schlechten zu unterscheiden ist. Bei einem Briefing: Sind Zielgruppe, Kernbotschaft und nächster Schritt enthalten, und sind die Aussagen durch das Material gedeckt? Bei einer Nachbereitung: Passt der vorgeschlagene nächste Schritt zum Anliegen des Kontakts? Ohne Kriterium lässt sich weder eine Verbesserung erkennen noch ein Fehler.
+
+## Der erste Test
+
+Wählen Sie eine häufige, klar begrenzte Aufgabe, für die Material und Prüfkriterium vorhanden sind. Bearbeiten Sie einige Fälle mit und ohne Ablauf und vergleichen Sie Bearbeitungszeit und Fehler. Das Ergebnis ist selten spektakulär, aber belastbar. Und es zeigt, ob sich der zweite Anwendungsfall lohnt.
+
+::: {.au-note}
+Wie aus diesen drei Fragen ein lauffähiger Ablauf wird, haben wir im Webinar „KI im Marketing: Vom Einzelprompt zum brauchbaren Ablauf" am 10. September 2026 gezeigt. Die [schriftliche Zusammenfassung](webinar.html) steht bereit.
+:::
+:::

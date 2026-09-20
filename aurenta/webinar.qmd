@@ -1,0 +1,59 @@
+---
+title: "Webinar"
+---
+
+::: {.au-hero}
+[Webinar vom 10. September 2026]{.au-kicker}
+
+# KI im Marketing: Vom Einzelprompt zum brauchbaren Ablauf
+
+[45 Minuten für Marketingteams, die mit KI mehr wollen als gelegentliche Chat-Anfragen. Das Webinar hat stattgefunden. Eine Aufzeichnung gibt es nicht, die schriftliche Zusammenfassung steht hier.]{.au-lead}
+:::
+
+## Anmeldung
+
+Die Anmeldung ist geschlossen. Zur Orientierung die Angaben, die wir bei der Anmeldung abgefragt haben:
+
+| Feld | Pflicht |
+|---|---|
+| Name und E-Mail-Adresse | ja |
+| Unternehmen und Rolle | ja |
+| Was möchten Sie klären? (Freitext) | nein |
+| Aurenta darf mich nach dem Webinar kontaktieren | Häkchen, freiwillig |
+
+Wer das Häkchen nicht gesetzt hat, erhält von uns keine Nachricht nach dem Webinar.
+
+## Ablauf des Webinars
+
+| Dauer | Inhalt |
+|---|---|
+| 10 Minuten | Geeignete Aufgaben auswählen: Wiederholung, verfügbare Informationen, prüfbare Qualität |
+| 20 Minuten | Demonstration: ein Content-Briefing aus Angebotsinformationen und Zielgruppenprofil |
+| 15 Minuten | Fragen aus dem Teilnehmerkreis |
+
+## Schriftliche Zusammenfassung
+
+Ein brauchbarer KI-Ablauf im Marketing braucht vier Dinge:
+
+::: {.au-steps}
+- **Eine definierte Eingabe.** Welche Informationen bekommt das Modell, und woher kommen sie? Im Beispiel: Angebotsinformationen und ein Zielgruppenprofil.
+- **Eine klare Aufgabe.** Was genau soll entstehen? Im Beispiel: ein Content-Briefing mit Zielgruppe, Kernbotschaft, belegbaren Aussagen und nächstem Schritt.
+- **Ein Ausgabeformat.** Feste Felder statt Fließtext, damit das Ergebnis geprüft und weiterverarbeitet werden kann.
+- **Eine fachliche Prüfung.** Ein Sprachmodell hilft bei Sprache und Einordnung. Die Freigabe bleibt bei einem Menschen.
+:::
+
+Das gezeigte Beispiel erstellt ein Content-Briefing aus Angebotsinformationen und einem Zielgruppenprofil. Derselbe Aufbau funktioniert für Recherche und für die Nachbereitung von Veranstaltungen.
+
+## Arbeitshilfe: Einen KI-Anwendungsfall auswählen
+
+Drei Fragen, die vor jedem Einsatz beantwortet werden sollten:
+
+1. **Wiederholt sich die Aufgabe?** Einmalige Aufgaben lohnen den Aufwand für einen Ablauf selten.
+2. **Sind geeignete Informationen verfügbar?** Das Modell kennt Ihr Angebot und Ihre Kunden nicht. Was es wissen soll, muss vorliegen.
+3. **Lässt sich die Qualität eines Ergebnisses prüfen?** Ohne Prüfkriterium ist kein Ergebnis besser als ein anderes.
+
+Als erster Test eignet sich eine häufige, klar begrenzte Aufgabe. Vorher und nachher werden Bearbeitungszeit und Fehler betrachtet.
+
+::: {.au-note}
+Sie waren angemeldet, konnten aber nicht teilnehmen? Die Zusammenfassung oben ersetzt die Aufzeichnung. Bei Fragen zur Umsetzung in Ihrem Team bieten wir ein [kostenloses Erstgespräch](erstgespraech.html) an.
+:::

@@ -1,0 +1,57 @@
+```{=html}
+<div class="gm-sort" id="gm-kc">
+  <div class="gm-sort__items" id="gm-kc-items"></div>
+  <div class="gm-sort__side">
+    <div class="gm-sort__legend"><b>G</b> gedeckt durch das Material · <b>V</b> Vermutung · <b>E</b> erfunden</div>
+    <div class="gm-sort__panel" id="gm-kc-panel">Jede Aussage einordnen: Steht sie im Fallpaket oder im Anliegen, ist sie eine Deutung, oder hat das Modell sie erfunden?</div>
+    <div class="gm-sort__score" id="gm-kc-score"></div>
+    <div class="gm-sort__actions"><button type="button" id="gm-kc-reset" class="is-secondary">Zurücksetzen</button></div>
+  </div>
+</div>
+<style>
+.gm-sort { font-size: 0.42em; display: grid; grid-template-columns: 1.25fr 1fr; gap: 1.2em; margin-top: 0.3em; color: #f2f5ff; text-align: left; align-items: start; }
+.gm-sort__items { display: flex; flex-direction: column; gap: 0.35em; }
+.gm-sort__item { display: grid; grid-template-columns: 1fr auto; gap: 0.6em; align-items: center; padding: 0.45em 0.7em; background: #161a24; border: 1px solid #2a2f3e; border-radius: 0.5em; line-height: 1.3; }
+.gm-sort__item.is-right { border-color: #88F297; }
+.gm-sort__item.is-wrong { border-color: #ff7847; }
+.gm-sort__btns { display: flex; gap: 0.3em; }
+.gm-sort__btns button { min-width: 2.2em; height: 2.2em; padding: 0 0.5em; border-radius: 0.4em; border: 1px solid #2a2f3e; background: transparent; color: #9ba3ba; font-weight: 700; cursor: pointer; font-size: 0.95em; }
+.gm-sort__btns button.is-on { background: #4ba9ff; color: #0b0d13; border-color: #4ba9ff; }
+.gm-sort__btns button.is-on.is-right { background: #88F297; border-color: #88F297; }
+.gm-sort__btns button.is-on.is-wrong { background: #ff7847; border-color: #ff7847; }
+.gm-sort__legend { color: #9ba3ba; line-height: 1.5; margin-bottom: 0.6em; }
+.gm-sort__legend b { color: #ffffff; }
+.gm-sort__panel { padding: 0.7em 0.9em; background: #161a24; border: 1px solid #2a2f3e; border-radius: 0.6em; line-height: 1.5; min-height: 6em; }
+.gm-sort__panel strong { color: #88F297; }
+.gm-sort__panel .is-warn { color: #ff7847; font-weight: 600; }
+.gm-sort__score { margin-top: 0.6em; color: #9ba3ba; }
+.gm-sort__actions { margin-top: 0.6em; }
+.gm-sort__actions button { background: transparent; color: #9ba3ba; border: 1px solid #2a2f3e; border-radius: 0.45em; padding: 0.4em 0.9em; cursor: pointer; font-size: 0.95em; }
+</style>
+<script>
+(function () {
+  var P = "gm-kc", cats = [{"k": "G", "n": "Gedeckt durch das Material"}, {"k": "V", "n": "Vermutung"}, {"k": "E", "n": "Erfunden"}], items = [{"t": "„Der KI-Praxischeck Marketing kostet 2.400 Euro netto.“", "a": "G", "e": "Der Preis steht im Fallpaket. Innerhalb des Falls ist die Aussage prüfbar."}, {"t": "„K-02 möchte zunächst die Webinarinhalte nacharbeiten.“", "a": "G", "e": "Das ist das wörtliche Anliegen von K-02 aus der Kontaktliste."}, {"t": "„K-02 hat kein Budget für Beratung.“", "a": "V", "e": "Dazu sagt K-02 nichts. Wer nach Material fragt, kann trotzdem Budget haben. Das ist eine Interpretation, keine Beobachtung."}, {"t": "„Hier ist der Link zur Aufzeichnung des Webinars.“", "a": "E", "e": "Es gibt keine Aufzeichnung, nur eine schriftliche Zusammenfassung. Ein Link wäre eine Halluzination."}, {"t": "„Ein Erstgespräch dauert 30 Minuten und ist kostenlos.“", "a": "G", "e": "Steht so im Fallpaket unter „Der Weg zum Auftrag“."}, {"t": "„Wir können nächsten Dienstag um 10 Uhr telefonieren.“", "a": "E", "e": "Konkrete Termine sind nicht Teil des Falls. Das Modell erfindet einen Termin, der nie vereinbart wurde."}, {"t": "„K-03 erwartet, dass der laufende CRM-Betrieb im Preis enthalten ist.“", "a": "V", "e": "K-03 fragt danach. Ob K-03 es erwartet, ist eine Deutung. Die richtige Antwort ist eine Rückfrage mit dem Hinweis, dass Betrieb nicht enthalten ist."}, {"t": "„Der Praxischeck bringt nachweislich mehr Leads.“", "a": "E", "e": "Das Fallpaket schließt Garantien für Leads und Umsatz ausdrücklich aus."}];
+  var picks = {}, box = document.getElementById(P + "-items"), panel = document.getElementById(P + "-panel"), score = document.getElementById(P + "-score");
+  items.forEach(function (it, i) {
+    var row = document.createElement("div"); row.className = "gm-sort__item"; row.id = P + "-row-" + i;
+    row.innerHTML = '<span>' + it.t + '</span><span class="gm-sort__btns">' + cats.map(function (c) { return '<button type="button" data-i="' + i + '" data-k="' + c.k + '" title="' + c.n + '">' + c.k + '</button>'; }).join("") + '</span>';
+    box.appendChild(row);
+  });
+  box.addEventListener("click", function (ev) {
+    var b = ev.target.closest("button"); if (!b) return;
+    var i = +b.dataset.i, k = b.dataset.k, it = items[i]; picks[i] = k;
+    var right = k === it.a;
+    var row = document.getElementById(P + "-row-" + i); row.className = "gm-sort__item " + (right ? "is-right" : "is-wrong");
+    Array.prototype.forEach.call(row.querySelectorAll("button"), function (x) { x.className = x.dataset.k === k ? "is-on " + (right ? "is-right" : "is-wrong") : ""; });
+    var catName = cats.filter(function (c) { return c.k === it.a; })[0].n;
+    panel.innerHTML = (right ? "<strong>Richtig: " + catName + ".</strong> " : "<span class='is-warn'>Nicht ganz. Richtig wäre: " + catName + ".</span> ") + it.e;
+    var n = Object.keys(picks).length, r = Object.keys(picks).filter(function (j) { return picks[j] === items[j].a; }).length;
+    score.textContent = r + " von " + n + " richtig" + (n === items.length ? " · alle bewertet" : "");
+  });
+  document.getElementById(P + "-reset").addEventListener("click", function () {
+    picks = {}; score.textContent = ""; panel.innerHTML = "Jede Aussage einordnen: Steht sie im Fallpaket oder im Anliegen, ist sie eine Deutung, oder hat das Modell sie erfunden?";
+    items.forEach(function (it, i) { var row = document.getElementById(P + "-row-" + i); row.className = "gm-sort__item"; Array.prototype.forEach.call(row.querySelectorAll("button"), function (x) { x.className = ""; }); });
+  });
+})();
+</script>
+```

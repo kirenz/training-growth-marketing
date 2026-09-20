@@ -1,0 +1,65 @@
+---
+title: "KI-Praxischeck Marketing"
+---
+
+::: {.au-hero}
+[Leistung]{.au-kicker}
+
+# KI-Praxischeck Marketing
+
+[Zwei Wochen, ein Workshop, drei priorisierte Anwendungsfälle und ein kleiner Prototyp. Am Ende wissen Sie, welche KI-Anwendung sich für Ihr Marketingteam lohnt und was für den Einsatz noch fehlt.]{.au-lead}
+
+<a class="au-btn" href="erstgespraech.html">Erstgespräch anfragen</a>
+:::
+
+## Ablauf
+
+::: {.au-steps}
+- **Auftaktgespräch.** Wir klären Ziele, beteiligte Personen und die wiederkehrenden Aufgaben, die im Alltag am meisten Zeit kosten.
+- **Halbtägiger Arbeitsworkshop.** Gemeinsam mit Ihrem Team sammeln wir Anwendungsfälle und bewerten sie: Wiederholt sich die Aufgabe? Sind geeignete Informationen verfügbar? Lässt sich die Qualität prüfen?
+- **Priorisierung von drei Anwendungsfällen.** Drei Fälle mit begründeter Reihenfolge, je mit Nutzenannahme und Voraussetzungen.
+- **Prototyp zu einem Fall.** Ein kleiner, lauffähiger Ablauf mit synthetischen Daten. Er zeigt Eingabe, KI-Schritt und Ergebnis und wird an Testfällen geprüft.
+- **Ergebnisbesprechung.** Wir halten Nutzenannahmen, Testergebnisse und offene Voraussetzungen fest, damit Sie entscheiden können, wie es weitergeht.
+:::
+
+## Leistungsumfang
+
+| Merkmal | Angabe |
+|---|---|
+| Zielgruppe | Marketingabteilungen mittelständischer B2B-Unternehmen |
+| Laufzeit | Zwei Wochen |
+| Leistungen | Auftaktgespräch, halbtägiger Workshop, Priorisierung von drei KI-Anwendungsfällen, ein kleiner Prototyp mit synthetischen Daten, Ergebnisbesprechung |
+| Preis | 2.400 Euro netto, Festpreis |
+| Voraussetzungen | Eine benannte Ansprechperson, mindestens zwei Teilnehmende aus dem Marketing |
+| Sprachen | Deutsch und Englisch |
+| Nicht enthalten | Produktive Integration, laufender Betrieb von Automatisierungen, Rechtsberatung, Aufbau eigener KI-Modelle |
+
+## Was Sie am Ende haben
+
+::: {.au-grid}
+::: {.au-card}
+[Ergebnis]{.au-tag}
+
+### Eine begründete Auswahl
+
+Drei Anwendungsfälle mit Reihenfolge, Nutzenannahme und Voraussetzungen, abgestimmt mit Ihrem Team.
+:::
+::: {.au-card}
+[Ergebnis]{.au-tag}
+
+### Ein getesteter Prototyp
+
+Ein Ablauf, den Sie selbst ausführen und an eigenen Fällen prüfen können. Kein Produktivsystem, aber ein belastbarer Anfang.
+:::
+::: {.au-card}
+[Ergebnis]{.au-tag}
+
+### Klarheit über den nächsten Schritt
+
+Was für einen Einsatz im Alltag noch fehlt: Daten, Freigaben, Zuständigkeiten. Ohne Verpflichtung zur Weiterarbeit mit uns.
+:::
+:::
+
+::: {.au-note}
+Einsparungen, zusätzliche Leads und Umsatz werden nicht garantiert. Ein Prototyp mit synthetischen Daten belegt die technische Funktion und die fachliche Passung, nicht die Wirkung im Markt.
+:::

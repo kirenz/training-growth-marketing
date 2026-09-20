@@ -1,0 +1,54 @@
+```{=html}
+<div class="gm-bp" id="gm-bp">
+  <svg id="gm-bp-svg" viewBox="0 0 900 330" aria-hidden="true"></svg>
+  <div class="gm-bp__panel" id="gm-bp-panel">Ein Symbol anklicken. Für die Ablaufskizze reichen die Bahnen und diese sechs Symbole.</div>
+</div>
+<style>
+.gm-bp { font-size: 0.46em; color: #f2f5ff; text-align: left; margin-top: 0.2em; }
+.gm-bp svg { width: 100%; height: auto; display: block; }
+.gm-bp .sym { cursor: pointer; }
+.gm-bp .sym rect.box, .gm-bp .sym polygon.box, .gm-bp .sym circle.box { fill: #1e2332; stroke: #9ba3ba; stroke-width: 2.5; }
+.gm-bp .sym.is-on rect.box, .gm-bp .sym.is-on polygon.box, .gm-bp .sym.is-on circle.box { stroke: #88F297; stroke-width: 4; }
+.gm-bp .sym .ico { stroke: #f2f5ff; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+.gm-bp .sym text { fill: #9ba3ba; font-family: Inter, system-ui, sans-serif; font-size: 16px; text-anchor: middle; }
+.gm-bp .sym.is-on text { fill: #ffffff; }
+.gm-bp .lane { fill: #161a24; stroke: #2a2f3e; stroke-width: 2; }
+.gm-bp .lanelabel { fill: #9ba3ba; font-family: Inter, system-ui, sans-serif; font-size: 15px; font-weight: 600; }
+.gm-bp__panel { margin-top: 0.5em; padding: 0.7em 1em; background: #161a24; border: 1px solid #2a2f3e; border-radius: 0.6em; line-height: 1.5; min-height: 4em; }
+.gm-bp__panel b { color: #88F297; }
+</style>
+<script>
+(function () {
+  var svg = document.getElementById("gm-bp-svg"), NS = "http://www.w3.org/2000/svg", panel = document.getElementById("gm-bp-panel");
+  function el(tag, attrs, parent) { var e = document.createElementNS(NS, tag); for (var k in attrs) e.setAttribute(k, attrs[k]); (parent || svg).appendChild(e); return e; }
+  // Drei Bahnen als Hintergrund
+  var lanes = ["Marketing-Team", "KI-Agent", "Workflow-System"];
+  lanes.forEach(function (l, i) { el("rect", { x: 20, y: 20 + i * 95, width: 860, height: 90, "class": "lane", rx: 6 }); var t = el("text", { x: 34, y: 45 + i * 95, "class": "lanelabel" }); t.textContent = l; });
+  var syms = [
+    { name: "Bahn (Lane)", lane: 1, x: 560, kind: "lane", e: "<b>Waagerechte Bahn:</b> wer den Schritt ausführt. Drei Bahnen reichen: Marketing-Team (Mensch), KI-Agent (Modellschritte), Workflow-System (feste Regeln, Systemaufrufe). Jeder Schritt liegt in genau einer Bahn." },
+    { name: "Mensch", lane: 0, x: 250, kind: "user", e: "<b>Rechteck mit Person:</b> ein Mensch entscheidet oder arbeitet, zum Beispiel Freigabe des Entwurfs. Liegt immer in der Bahn Marketing-Team." },
+    { name: "Versand", lane: 0, x: 400, kind: "send", e: "<b>Rechteck mit Briefumschlag:</b> Versand einer Nachricht. Im Kurs bleibt der Versand beim Menschen, kein Workflow versendet etwas." },
+    { name: "Modellschritt", lane: 1, x: 250, kind: "service", e: "<b>Rechteck mit Zahnrädern:</b> Modellschritt oder Systemaufruf, etwa der KI-Entwurf oder das Lesen aus dem CRM. Ein Modellschritt liegt in der Bahn KI-Agent." },
+    { name: "Feste Regel", lane: 2, x: 250, kind: "rule", e: "<b>Rechteck mit Tabelle:</b> feste Regel ohne KI, zum Beispiel die Kontaktsperre (kontakt_erlaubt = nein). Liegt im Workflow-System, vor dem Modell." },
+    { name: "Entscheidung", lane: 2, x: 400, kind: "gateway", e: "<b>Raute mit X:</b> Entscheidung, die Pfeile tragen die Antworten (ja, nein). Genau ein Pfad wird genommen." },
+    { name: "Start und Ende", lane: 2, x: 560, kind: "events", e: "<b>Dünner Kreis, dicker Kreis:</b> Start und Ende des Ablaufs. Lesen: von links nach rechts entlang der Pfeile." }
+  ];
+  syms.forEach(function (s, idx) {
+    var g = el("g", { "class": "sym" }), cy = 65 + s.lane * 95, cx = s.x;
+    if (s.kind === "lane") { el("rect", { x: cx - 60, y: cy - 28, width: 120, height: 56, rx: 4, "class": "box", "stroke-dasharray": "8 6" }, g); }
+    else if (s.kind === "gateway") { el("polygon", { points: (cx) + "," + (cy - 30) + " " + (cx + 30) + "," + cy + " " + cx + "," + (cy + 30) + " " + (cx - 30) + "," + cy, "class": "box" }, g); el("path", { d: "M " + (cx - 10) + " " + (cy - 10) + " L " + (cx + 10) + " " + (cy + 10) + " M " + (cx + 10) + " " + (cy - 10) + " L " + (cx - 10) + " " + (cy + 10), "class": "ico" }, g); }
+    else if (s.kind === "events") { el("circle", { cx: cx - 30, cy: cy, r: 18, "class": "box" }, g); el("circle", { cx: cx + 30, cy: cy, r: 18, "class": "box", "stroke-width": 6 }, g); }
+    else {
+      el("rect", { x: cx - 60, y: cy - 28, width: 120, height: 56, rx: 8, "class": "box" }, g);
+      var ix = cx - 44, iy = cy - 18;
+      if (s.kind === "user") { el("circle", { cx: ix + 8, cy: iy + 6, r: 5, "class": "ico" }, g); el("path", { d: "M " + ix + " " + (iy + 22) + " C " + ix + " " + (iy + 12) + ", " + (ix + 16) + " " + (iy + 12) + ", " + (ix + 16) + " " + (iy + 22), "class": "ico" }, g); }
+      if (s.kind === "send") { el("rect", { x: ix, y: iy + 4, width: 20, height: 14, "class": "ico" }, g); el("path", { d: "M " + ix + " " + (iy + 4) + " L " + (ix + 10) + " " + (iy + 12) + " L " + (ix + 20) + " " + (iy + 4), "class": "ico" }, g); }
+      if (s.kind === "service") { el("circle", { cx: ix + 8, cy: iy + 8, r: 6, "class": "ico" }, g); el("circle", { cx: ix + 16, cy: iy + 16, r: 5, "class": "ico" }, g); el("circle", { cx: ix + 8, cy: iy + 8, r: 2, "class": "ico" }, g); }
+      if (s.kind === "rule") { el("rect", { x: ix, y: iy + 2, width: 20, height: 16, "class": "ico" }, g); el("path", { d: "M " + ix + " " + (iy + 8) + " L " + (ix + 20) + " " + (iy + 8) + " M " + ix + " " + (iy + 13) + " L " + (ix + 20) + " " + (iy + 13) + " M " + (ix + 7) + " " + (iy + 2) + " L " + (ix + 7) + " " + (iy + 18), "class": "ico" }, g); }
+    }
+    var t = el("text", { x: cx, y: cy + (s.kind === "gateway" || s.kind === "events" ? 48 : 46) }, g); t.textContent = s.name;
+    g.addEventListener("click", function () { Array.prototype.forEach.call(svg.querySelectorAll(".sym"), function (x) { x.classList.remove("is-on"); }); g.classList.add("is-on"); panel.innerHTML = s.e; });
+  });
+})();
+</script>
+```

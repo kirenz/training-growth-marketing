@@ -1,0 +1,55 @@
+```{=html}
+<div class="gm-funnel" id="gm-funnel">
+  <div class="gm-funnel__bars" id="gm-funnel-bars"></div>
+  <div class="gm-funnel__panel" id="gm-funnel-panel">Eine Station anklicken.</div>
+</div>
+<style>
+.gm-funnel { font-size: 0.5em; margin-top: 0.4em; }
+.gm-funnel__bars { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.8em; align-items: end; height: 8.5em; }
+.gm-station { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; cursor: pointer; border-radius: 0.5em; padding: 0.3em; transition: background 0.15s; }
+.gm-station:hover { background: rgba(255,255,255,0.04); }
+.gm-station.is-active { background: rgba(136,242,151,0.08); }
+.gm-station__bar { width: 70%; background: #4ba9ff; border-radius: 0.35em 0.35em 0 0; transition: height 0.3s; }
+.gm-station.is-active .gm-station__bar { background: #88F297; }
+.gm-station__n { font-weight: 700; color: #ffffff; margin-top: 0.3em; }
+.gm-station__label { color: #9ba3ba; font-size: 0.85em; text-align: center; line-height: 1.2; min-height: 2.4em; }
+.gm-funnel__panel { margin-top: 0.9em; padding: 0.7em 1em; background: #161a24; border: 1px solid #2a2f3e; border-radius: 0.6em; color: #f2f5ff; min-height: 3.2em; line-height: 1.5; }
+.gm-funnel__panel strong { color: #88F297; }
+.gm-funnel__panel em { color: #9ba3ba; font-style: normal; }
+</style>
+<script>
+(function () {
+  var stations = [
+    { label: "Anmeldungen", n: 330 },
+    { label: "Teilnahmen und Follow-ups", n: 198 },
+    { label: "Antworten", n: 39 },
+    { label: "Gebuchte Gespräche", n: 16 },
+    { label: "Qualifizierte Gespräche", n: 10 }
+  ];
+  var bars = document.getElementById("gm-funnel-bars");
+  var panel = document.getElementById("gm-funnel-panel");
+  function pct(a, b) { return (100 * a / b).toFixed(1).replace(".", ",") + " %"; }
+  stations.forEach(function (s, i) {
+    var el = document.createElement("div");
+    el.className = "gm-station";
+    el.innerHTML = '<div class="gm-station__bar" style="height:' + Math.max(4, 100 * s.n / 330) + '%"></div>' +
+      '<div class="gm-station__n">' + s.n + '</div><div class="gm-station__label">' + s.label + '</div>';
+    el.addEventListener("click", function () {
+      Array.prototype.forEach.call(bars.children, function (c) { c.classList.remove("is-active"); });
+      el.classList.add("is-active");
+      if (i === 0) {
+        panel.innerHTML = "<strong>330 Anmeldungen</strong> in drei Kampagnen. Das ist der Nenner für die Teilnahmequote. <em>Woher die Anmeldungen kommen, steht nicht in den Daten.</em>";
+        return;
+      }
+      var prev = stations[i - 1];
+      var lost = prev.n - s.n;
+      var html = "<strong>" + s.n + " von " + prev.n + "</strong> (" + pct(s.n, prev.n) + ") gehen weiter, " + lost + " (" + pct(lost, prev.n) + ") springen hier ab.";
+      if (i >= 2) html += " Bezogen auf 198 Follow-ups: <strong>" + pct(s.n, 198) + "</strong>.";
+      if (i === 4) html += " <em>10 von 16 wären 62,5 %, aber das ist eine andere Kennzahl: Gespräche pro Buchung.</em>";
+      panel.innerHTML = html;
+    });
+    bars.appendChild(el);
+  });
+})();
+</script>
+```
