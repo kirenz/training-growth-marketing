@@ -1,14 +1,14 @@
 # Growth Marketing: Kurswebsite und Lehrvorbereitung
 
-Stand: 19.09.2026. Lokale Überarbeitung des Lernpfads für die Blocktage 21.–23.09.2026. Die Website wird mit Quarto gebaut. Diese README ist für die Lehrperson und nicht Teil der Renderliste.
+Stand: 20.09.2026. Lernpfad für die Blocktage 21.–23.09.2026. Die Website wird mit Quarto gebaut und auf GitHub Pages veröffentlicht. Diese README ist für die Lehrperson und nicht Teil der Renderliste.
 
 ## Didaktischer Zuschnitt
 
 Fiktive KI-Beratung Aurenta, Dienstleistung „KI-Praxischeck Marketing“: zwei Wochen, Workshop und ein kleiner Prototyp mit synthetischen Daten, 2.400 Euro netto. Ausgangsproblem ist die passende Nachbereitung von Webinar-Kontakten. Keine Angaben beschreiben Zoi. Preis und Kernangebot sind vollständig, damit die Übungen fachliche Entscheidungen statt künstlicher Informationsfallen behandeln.
 
-Montag: sechs Dreierteams, 60 Minuten Teamfindung, Growth-Hypothese, ChatGPT, n8n ab 12 Uhr mit ersten eigenen Schritten vor der Pause. Dienstag: Zoi-Briefing, Projektbrief, Ablauf und gezielter Ausbau. Mittwoch: Tests, fairer Vergleich und Übergabe. Mittagspause an allen Tagen 13:00–14:00 Uhr. Die 90 Minuten im Semester sind Coaching, keine Begrenzung der eigenständigen Projektarbeit.
+Montag: sechs Dreierteams, Zugang zu Gemini einrichten, 60 Minuten Teamfindung, Growth-Hypothese, erster Prompt, n8n mit ersten eigenen Schritten vor der Pause. Dienstag: Zoi-Briefing, Projektbrief, Ablauf und gezielter Ausbau. Mittwoch: Tests, fairer Vergleich und Übergabe. Mittagspause an allen Tagen 13:00–14:00 Uhr. Die 90 Minuten im Semester sind Coaching, keine Begrenzung der eigenständigen Projektarbeit.
 
-Keine ECTS-Zahl erfunden. Prüfungsgewichte und bekannte Termine bleiben unverändert. Der konkrete fachliche Semesterumfang wird nach dem Briefing abgestimmt. Browser-Chat und n8n-API sind getrennte Zugänge. Kein privates Bezahlabo für Pflichtübungen.
+Keine ECTS-Zahl erfunden. Prüfungsgewichte und bekannte Termine bleiben unverändert. Der konkrete fachliche Semesterumfang wird nach dem Briefing abgestimmt. Browser-Chat und n8n-API sind getrennte Zugänge. Kein privates Bezahlabo für Pflichtübungen; das Studierendenangebot Google AI Plus ist ausdrücklich freiwillig und steht mit seinen Bedingungen (Zahlungsmethode, automatische Verlängerung) auf der Vorbereitungsseite.
 
 ## Lokal ansehen
 
@@ -19,7 +19,32 @@ quarto preview --no-browser
 
 `render.sh` rendert die Kurswebsite und danach das Teilprojekt `aurenta/` (fiktive Unternehmenswebsite, Ausgabe `_site/aurenta/`). Ein alleiniges `quarto render` leert `_site/` und entfernt damit die Aurenta-Seiten; dann `cd aurenta && quarto render` nachholen.
 
-14 HTML-Seiten, lokale Styles, keine externe Schrift. Downloads unter material/. Das ursprüngliche Quelldateipaket wurde vor Bearbeitung außerhalb der Website unter /tmp/growth-marketing-before-20260919-100639 gesichert. Keine Veröffentlichung im Rahmen dieser lokalen Überarbeitung.
+Lokale Styles, keine externe Schrift. Downloads unter material/. Im Montagsstand werden 12 Kursseiten, 4 Foliensätze und die 5 Aurenta-Seiten gebaut; Dienstag und Mittwoch kommen bei der Freischaltung dazu.
+
+## Freischaltung der Blocktage
+
+Am Montag sind nur die Startseite, die Vorbereitung, der Montag, der Werkzeugkasten, das Semesterprojekt und die Materialien online. Dienstag und Mittwoch liegen als `tage/_dienstag.qmd` und `tage/_mittwoch.qmd` im Projekt. Quarto ignoriert Dateien mit Unterstrich, sie werden also weder gebaut noch ins `_site` kopiert und sind auch über die Adresse nicht erreichbar. Ebenso gesperrt sind die Folien `slides/_tag2-briefing.qmd` und `slides/_tag3-testen.qmd`, die tagesgebundenen Zeilen auf der Materialseite und, bis Mittwoch, die drei Transfer-Testfälle im Starterpaket.
+
+Freischalten mit einem Befehl:
+
+```sh
+./freischalten.sh dienstag     # am Dienstagmorgen
+./freischalten.sh mittwoch     # am Mittwochmorgen
+quarto publish gh-pages --no-prompt
+```
+
+Das Skript benennt die Quelldateien um, nimmt sie in Renderliste und Navigation auf, ersetzt die Platzhalter auf Startseite, Tagesseite und Materialseite, baut beim Mittwoch das Starterpaket mit den Transferfällen neu und rendert die Website. Rückgängig, solange nichts veröffentlicht ist: `git checkout -- . && git clean -fd`.
+
+Die Tagesseiten nennen bewusst keine Uhrzeiten mehr, sondern Bausteine mit geschätzter Dauer. Fest sind nur Beginn, Mittagspause, Ende und das Zoi-Briefing am Dienstag ab 10:00 Uhr. Damit widerspricht die Website nicht dem tatsächlichen Verlauf, wenn ein Baustein länger dauert oder entfällt.
+
+## Veröffentlichung
+
+```sh
+./render.sh
+quarto publish gh-pages --no-prompt
+```
+
+Das Repository ist öffentlich, GitHub Pages benötigt das im kostenlosen Konto. Ein Passwortschutz ist bisher nicht eingerichtet.
 
 ## Vorlesungsvorbereitung
 
@@ -29,7 +54,7 @@ Die [Kompetenzabfrage in Google Forms](https://docs.google.com/forms/d/1NZ7ugXit
 
 Die spätere automatische Teameinteilung nutzt die Antworten: zuerst gemeinsame Arbeitszeiten aus dem Raster (Montag bis Sonntag, sechs Zwei-Stunden-Fenster von 08 bis 20 Uhr), dann ergänzende Erfahrungen in Programmierung, Automatisierung, Daten und Marketing sowie Stärken und Lerninteressen. Name und E-Mail dienen nur der Zuordnung. Die Pflichtfrage zur Verlässlichkeit unterscheidet regelmäßige, vorläufige und noch unbekannte Verfügbarkeit sowie abweichende Zeitfenster. Leere Raster bei noch offener Planung gelten als unbekannt, nicht als fehlende Verfügbarkeit. Vorläufige Überschneidungen, abweichende Zeiten, widersprüchliche Antworten und fehlende Angaben müssen bei der Auswertung sichtbar bleiben. Es gibt keinen pauschalen Kompetenz-Gesamtwert. Die Einteilung soll sechs arbeitsfähige Dreierteams ergeben, mit kurzer Begründung je Team. Eine Einteilung liegt noch nicht vor; sie setzt eingegangene Antworten voraus.
 
-Die sechs n8n-Exporte nutzen native Knoten, Manual Trigger und je einen Kontakt pro Lauf. 00 funktioniert ohne Modell und Datenbank; 01/02 nutzen das Kursmodell, 04 ausschließlich die Aurenta-Datenbank, 05 beide Verbindungen. 03 ist die optionale Agenten-Demo. Alle Vorlagen mit Anleitungen stehen als `material/workflows/aurenta-n8n-starterpaket.zip` bereit. Sie sind nicht an eine produktive Instanz gebunden. Voreinstellung gpt-4.1-mini ist austauschbar und muss im Kurskonto verfügbar sein. Die Agenten-Demo enthält zwei vorbereitete Code Tools, die ausschließlich statisches Fallwissen liefern; Studierende programmieren sie nicht. Versand, Terminbuchung und produktive Schreibzugriffe fehlen vollständig.
+Die sechs n8n-Exporte nutzen native Knoten, Manual Trigger und je einen Kontakt pro Lauf. 00 funktioniert ohne Modell und Datenbank; 01/02 nutzen das Kursmodell, 04 ausschließlich die Aurenta-Datenbank, 05 beide Verbindungen. 03 ist die optionale Agenten-Demo. Alle Vorlagen mit Anleitungen stehen als `material/workflows/aurenta-n8n-starterpaket.zip` bereit. Sie sind nicht an eine produktive Instanz gebunden. Voreinstellung models/gemini-3.1-flash-lite ist austauschbar und muss auf dem verwendeten Gemini-Schlüssel verfügbar sein. Die Agenten-Demo enthält zwei vorbereitete Code Tools, die ausschließlich statisches Fallwissen liefern; Studierende programmieren sie nicht. Versand, Terminbuchung und produktive Schreibzugriffe fehlen vollständig.
 
 Ausgaben bleiben zunächst im Ausführungsprotokoll. Sie werden für die Teamablage gesichert. Eine dauerhafte Ablage oder CRM-Anbindung ist eine spätere eigene Erweiterung. Bei Ausfall kann im Chat fachlich weitergearbeitet werden; diese Simulation ersetzt den ausstehenden echten n8n-Lauf nicht.
 

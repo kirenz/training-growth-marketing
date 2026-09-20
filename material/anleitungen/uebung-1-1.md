@@ -8,7 +8,7 @@ Reihum drei Fragen beantworten, der Rest ergibt sich im Gespräch:
 
 | Frage | Zum Beispiel |
 |---|---|
-| Was habe ich schon gemacht, das mit Marketing, Daten oder KI zu tun hat? | Praktikum, Nebenjob, Kursprojekt, eigener Social-Media-Kanal, ChatGPT für Hausarbeiten. „Bisher nichts“ ist völlig in Ordnung. |
+| Was habe ich schon gemacht, das mit Marketing, Daten oder KI zu tun hat? | Praktikum, Nebenjob, Kursprojekt, eigener Social-Media-Kanal, ein KI-Chat für Hausarbeiten. „Bisher nichts“ ist völlig in Ordnung. |
 | Was kann ich gut, das dem Team hilft? | Texte schreiben, präsentieren, organisieren, mit Tabellen arbeiten, neue Tools ausprobieren, auf Leute zugehen |
 | Was will ich in diesem Projekt lernen? | KI-Workflows bauen, Marketingdaten auswerten, mit einem Unternehmenspartner arbeiten, vor Publikum präsentieren |
 

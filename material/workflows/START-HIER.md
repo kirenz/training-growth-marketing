@@ -21,6 +21,10 @@ Zunächst den gesamten Workflow mit „Execute Workflow“ starten. Dann die tat
 
 Die Dateien `daten/kontakte-webinar.csv`, `daten/testfaelle-transfer.csv` und `fall/fallpaket-kompakt.txt` im ZIP entsprechen der Kurswebsite. Bei einzelnen Downloads stehen sie auf der Materialseite. Die drei Transferfälle erst beim Vergleich am Mittwoch öffnen.
 
+## Modellverbindung
+
+Der Knoten **Kursmodell** ist ein *Google Gemini Chat Model*. Er benötigt eine Credential vom Typ „Google Gemini (PaLM) API“, die von der Lehrperson bereitgestellt wird. Voreingestellt ist `models/gemini-3.1-flash-lite`; jedes andere Modell, das auf dem verwendeten Schlüssel verfügbar ist, kann eingetragen werden. Das eigene Gemini-Konto aus dem Browser wird hier nicht eingetragen: Die Gemini-App und die Gemini-API sind getrennte Zugänge mit eigenen Kontingenten.
+
 ## Stand und Prüfgrenze
 
-Stand: 19.09.2026. Technische Referenz: n8n 2.39.8. Der technische Prüfbericht liegt in der Kurswebsite unter `output/validation/`. Die Tests verwenden eine isolierte Kopie der Aurenta-Daten und simulierte Modellantworten. Ein echter Modelllauf mit den Kurszugängen bleibt vor der Vorlesung erforderlich. Die Workflow-Dateien sind noch nicht in die HdM-n8n-Instanz importiert.
+Stand: 20.09.2026. Technische Referenz: n8n 2.39.8. Der technische Prüfbericht in der Kurswebsite unter `output/validation/` bezieht sich auf die vorherige Fassung mit einem OpenAI-Knoten; Ablauflogik, Feldzuordnungen und Testfälle sind unverändert, getauscht wurde nur der Modellknoten. Die Tests verwenden eine isolierte Kopie der Aurenta-Daten und simulierte Modellantworten. Ein echter Lauf mit einer Gemini-Credential steht noch aus und bleibt vor der Vorlesung erforderlich. Die Workflow-Dateien sind noch nicht in die HdM-n8n-Instanz importiert.

@@ -88,4 +88,4 @@ Zoi-Briefing: Dienstag, 22.09.2026, 10:00 Uhr vor Ort an der HdM. Ein weiterer B
 
 Die [Teamablage](start.qmd#team) enthält Anweisungen, Exporte, Playbook und Evaluation. Ein Teamboard führt Zuständigkeiten und Arbeitsschritte. Versionen und Testbelege machen Beiträge nachvollziehbar. Das Coaching dient der Klärung und Rückmeldung, nicht als Ersatz für eigenständige Projektarbeit.
 
-ChatGPT ist die gemeinsame Oberfläche für Promptübungen. Vorhandene Claude- oder Gemini-Zugänge dürfen verwendet werden. n8n ist das zentrale Werkzeug für Automatisierung; die Modellverbindung wird getrennt bereitgestellt. Für einen nachvollziehbaren Vergleich werden Produkt, Modell und Konfiguration dokumentiert.
+Gemini ist die gemeinsame Oberfläche für Promptübungen. Vorhandene Zugänge zu ChatGPT oder Claude dürfen verwendet werden. n8n ist das zentrale Werkzeug für Automatisierung; die Modellverbindung wird getrennt bereitgestellt. Für einen nachvollziehbaren Vergleich werden Produkt, Modell und Konfiguration dokumentiert.

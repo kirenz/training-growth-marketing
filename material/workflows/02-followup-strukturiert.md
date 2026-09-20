@@ -4,7 +4,7 @@ Neun Knoten. Ein Kontakt pro Lauf. Nur kontakt_erlaubt = ja gelangt zum Modell. 
 
 ## Import und Verbindung
 
-JSON in einen neuen eigenen n8n-Workflow importieren. Der Export ist inaktiv und enthält keine Zugangsdaten. Im Knoten Kursmodell die von der Lehrperson bereitgestellte OpenAI-Verbindung und das freigegebene Modell auswählen. Voreinstellung ist gpt-4.1-mini, keine Zusage über das Kontingent des Kurskontos. Alternativ einen freigegebenen Chat-Model-Knoten mit demselben KI-Eingang verbinden; danach erneut testen.
+JSON in einen neuen eigenen n8n-Workflow importieren. Der Export ist inaktiv und enthält keine Zugangsdaten. Im Knoten Kursmodell die von der Lehrperson bereitgestellte Gemini-Verbindung und das freigegebene Modell auswählen. Voreinstellung ist gemini-3.1-flash-lite, keine Zusage über das Kontingent des Kurskontos. Alternativ einen freigegebenen Chat-Model-Knoten mit demselben KI-Eingang verbinden; danach erneut testen.
 
 ## Eingabe und Ergebnis
 

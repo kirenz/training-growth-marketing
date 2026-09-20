@@ -23,6 +23,6 @@ Die SQL-Abfrage verwendet `$1` und die Option Query Parameters mit `{{ [$json.ko
 - K-01 und K-02: exakt ein passender Kontakt.
 - K-05: `kontakt_erlaubt = nein` bleibt erhalten.
 - K-99: Fehler **Unbekannte Kontakt-ID**, keine scheinbar erfolgreiche leere Ausgabe.
-- Verbindungsfehler: Credential, Datenbankname und SSH-Tunnel prüfen. Das ChatGPT-Konto ist hier nicht beteiligt.
+- Verbindungsfehler: Credential, Datenbankname und SSH-Tunnel prüfen. Das Gemini-Konto ist hier nicht beteiligt.
 
 Es gibt keinen Schreibzugriff auf das CRM. Ausgaben bei Bedarf für das Testprotokoll sichern. Für die Kombination mit dem Modell anschließend Variante **05** importieren. Beide Varianten lassen die Knotennamen für die vorbereiteten Feldzuordnungen unverändert.

@@ -6,6 +6,8 @@ toc: true
 
 [Kurze Erklärungen für die Aufgabe, die gerade ansteht. Die Blocktage verlinken direkt auf die benötigten Abschnitte.]{.lead}
 
+Der Werkzeugkasten ist zum Nachschlagen da, nicht zum Durchlesen. Niemand muss diese Seiten vorbereiten oder am Stück lesen. In den Übungen steht jeweils dabei, welcher Abschnitt gerade hilft; dorthin führt dann ein direkter Link.
+
 | Frage | Einstieg |
 |---|---|
 | Welches Marketingproblem soll gelöst werden? | [Growth Marketing](growth-marketing.qmd) |

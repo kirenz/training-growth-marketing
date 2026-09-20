@@ -35,7 +35,7 @@ Erzeugt Text aus gelernten Mustern und dem, was ihm für die aktuelle Aufgabe vo
 
 [Chat]{.ws-h}
 
-Das Produkt um das Modell herum: Verlauf, Websuche, Dateien. ChatGPT, Claude, Gemini. Ein Mensch führt den Dialog.
+Das Produkt um das Modell herum: Verlauf, Websuche, Dateien. Gemini, ChatGPT, Claude. Ein Mensch führt den Dialog.
 :::
 ::: {.ws-card .fragment .is-key}
 [Ebene 3]{.ws-card__tag}
@@ -47,7 +47,7 @@ n8n verbindet Arbeitsschritte und ruft das Modell über eine Schnittstelle auf. 
 :::
 
 ::: {.notes}
-Die Trennung erklärt viele Alltagserfahrungen: Was ChatGPT gestern konnte, kann n8n heute nicht automatisch, weil Produktfunktionen wie Websuche im Workflow nicht dabei sind. Der Kurszugang zu n8n kommt von mir, das private ChatGPT-Konto wird dort nicht eingetragen.
+Die Trennung erklärt viele Alltagserfahrungen: Was Gemini gestern konnte, kann n8n heute nicht automatisch, weil Produktfunktionen wie Websuche im Workflow nicht dabei sind. Der Kurszugang zu n8n kommt von mir, das private Gemini-Konto wird dort nicht eingetragen.
 :::
 
 ## Vier Begriffe reichen für die Übungen
@@ -260,7 +260,7 @@ Beide Modelle können denselben Fehler machen. Der Critic markiert Stellen, der 
 ::: {.ws-task}
 **Etwa 20 Minuten, erst einzeln, dann im Team.**
 
-1. Jede Person: neuer Chat, Prompt von der Kursseite hinein, an der markierten Stelle den Text aus dem Doc „Kontext für ChatGPT" einfügen, abschicken.
+1. Jede Person: neuer Chat, Prompt von der Kursseite hinein, an der markierten Stelle den Text aus dem Doc „Kontext für Gemini" einfügen, abschicken.
 2. Antwort mit Namen in ein Dokument in der Teamablage kopieren.
 3. Die drei Antworten vergleichen: Empfehlung? Passt sie zu Regel 3 im Fallpaket? Wird etwas erfunden? Steht am Ende, was fehlt?
 4. Zwei Sätze: Worin unterscheiden sich die drei Antworten bei gleichem Prompt?

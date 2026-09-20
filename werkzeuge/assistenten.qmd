@@ -14,15 +14,15 @@ toc: true
 | Wissen | Leistungsbeschreibung, Startregeln, Arbeitshilfen |
 | Aktueller Fall | Kontakt-ID, Rolle, Unternehmen, Anliegen, Sprache und Kontaktstatus |
 
-Die [Follow-up-Anweisungen](https://docs.google.com/document/d/1SIYpnRHpPq9tb5qiE0-Ixu8o4xy0_5NJHvM-DgZ0LYc/edit) und der [Kontext für ChatGPT](https://docs.google.com/document/d/1bAQ1KaMDCp7nuRhHrkBBs7P0Iy9E_AxfXJAnBEiN68g/edit) werden als Text gespeichert. Für jeden unabhängigen Test werden beide zusammen mit einem Kontakt in einen neuen Chat eingefügt. So lassen sich Änderungen und Ergebnisse nachvollziehen.
+Die [Follow-up-Anweisungen](https://docs.google.com/document/d/1SIYpnRHpPq9tb5qiE0-Ixu8o4xy0_5NJHvM-DgZ0LYc/edit) und der [Kontext für Gemini](https://docs.google.com/document/d/1bAQ1KaMDCp7nuRhHrkBBs7P0Iy9E_AxfXJAnBEiN68g/edit) werden als Text gespeichert. Für jeden unabhängigen Test werden beide zusammen mit einem Kontakt in einen neuen Chat eingefügt. So lassen sich Änderungen und Ergebnisse nachvollziehen.
 
-## Kein eigener GPT als Voraussetzung
+## Kein eigener Gem als Voraussetzung
 
-Die Pflichtübungen verlangen weder einen selbst erstellten GPT noch einen Gem oder ein anderes kontospezifisches Assistentenprodukt. Verfügbare gespeicherte Assistenten können optional verwendet werden. Die Regeln müssen weiterhin exportierbar und im Wortlaut dokumentiert sein. Produktfunktionen können sich ändern; der Kern der Aufgabe bleibt die überprüfbare Spezifikation.
+Die Pflichtübungen verlangen weder einen selbst erstellten Gem noch ein anderes kontospezifisches Assistentenprodukt. Verfügbare gespeicherte Assistenten können optional verwendet werden. Die Regeln müssen weiterhin exportierbar und im Wortlaut dokumentiert sein. Produktfunktionen können sich ändern; der Kern der Aufgabe bleibt die überprüfbare Spezifikation.
 
 ## Übertragung nach n8n
 
-Im Workflow enthält die Basic LLM Chain die Aufgabe und das Material. Die variablen Felder kommen aus dem vorherigen Knoten. Eine Antwort aus ChatGPT wird nicht automatisch dieselbe Antwort in n8n: Modell, Zusatzfunktionen, Verlauf und Einstellungen können abweichen. Deshalb werden die Testfälle nach der Übertragung erneut ausgeführt.
+Im Workflow enthält die Basic LLM Chain die Aufgabe und das Material. Die variablen Felder kommen aus dem vorherigen Knoten. Eine Antwort aus Gemini wird nicht automatisch dieselbe Antwort in n8n: Modell, Zusatzfunktionen, Verlauf und Einstellungen können abweichen. Deshalb werden die Testfälle nach der Übertragung erneut ausgeführt.
 
 ## Pflege
 

@@ -10,7 +10,7 @@ anchor-sections: false
 
 # Agentic AI für Growth Marketing
 
-[In den drei Blocktagen lernen wir ChatGPT und n8n kennen und bauen im Team einen ersten KI-Workflow für ein konkretes Marketingproblem. Daraus entsteht das Semesterprojekt mit Zoi.]{.hero-lead}
+[In den drei Blocktagen lernen wir Gemini und n8n kennen und bauen im Team einen ersten KI-Workflow für ein konkretes Marketingproblem. Daraus entsteht das Semesterprojekt mit Zoi.]{.hero-lead}
 
 ::: {.hero-actions}
 <a href="tage/montag.html" class="btn btn-primary">Zum ersten Tag</a>
@@ -23,8 +23,12 @@ anchor-sections: false
 | Tag | Thema | |
 |---|---|---|
 | Montag, 21.09. | Teamfindung, Growth-Hypothese am Übungsfall, erster eigener n8n-Workflow | [Zum Tag](tage/montag.html) |
-| Dienstag, 22.09. | Briefing durch Zoi um 10 Uhr, Projektbrief, Ablaufskizze, Ausbau des Workflows | [Zum Tag](tage/dienstag.html) |
-| Mittwoch, 23.09. | Testfälle, Vergleich mit einer einfachen Lösung, Live-Demo, Start ins Semesterprojekt | [Zum Tag](tage/mittwoch.html) |
+| Dienstag, 22.09. | Briefing durch Zoi um 10 Uhr, Projektbrief, Ablaufskizze, Ausbau des Workflows | wird am Morgen freigeschaltet |
+| Mittwoch, 23.09. | Testfälle, Vergleich mit einer einfachen Lösung, Live-Demo, Start ins Semesterprojekt | wird am Morgen freigeschaltet |
+
+## So ist die Seite aufgebaut
+
+Die Tagesseiten sind der Fahrplan: Dort steht, was wir gerade machen, mit allen Aufgaben und Links. Der **Werkzeugkasten** ist ein Nachschlagewerk für genau diese Aufgaben und muss nicht vorher gelesen werden. Unter **Materialien** liegen alle Dateien und Vorlagen an einer Stelle. Die Seiten für Dienstag und Mittwoch schalten wir am jeweiligen Morgen frei.
 
 ## Der Übungsfall
 

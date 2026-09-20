@@ -256,7 +256,7 @@ Eine Änderung erhält Versionsnummer, Datum, Grund und betroffene Testfälle. E
 Produktfunktionen ändern sich, der Kern der Aufgabe bleibt die überprüfbare Spezifikation. Deshalb Textdateien in der Teamablage, nicht nur Einstellungen in einem Konto.
 :::
 
-## Eine Antwort aus ChatGPT ist nicht dieselbe Antwort in n8n {.center}
+## Eine Antwort aus Gemini ist nicht dieselbe Antwort in n8n {.center}
 
 ::: {.ws-statement}
 Modell, Zusatzfunktionen, Verlauf und Einstellungen können abweichen. Nach der Übertragung in die Basic LLM Chain werden die Testfälle deshalb erneut ausgeführt.

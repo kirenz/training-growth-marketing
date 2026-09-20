@@ -12,20 +12,19 @@ toc: true
 
 Pro Team liegen ein Projektbrief mit Quellen, ein kleiner ausgeführter Workflow, mindestens drei dokumentierte Testfälle und eine kurze Einrichtungs- und Bedienungsanleitung vor. Jede Person erklärt einen Teil. Ein negativer Vergleich oder ein dokumentierter Fehler ist ein verwertbares Ergebnis; ein nicht ausgeführter Export ist noch kein funktionierender Prototyp.
 
-## Zeitplan {#zeitplan}
+## Bausteine des Tages {#bausteine}
 
-| Zeit | Inhalt |
+Fest sind Beginn um 09:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr. Dazwischen arbeiten wir in Bausteinen. Die Dauer ist eine Schätzung; Reihenfolge und Umfang passen wir daran an, wie die Teamarbeit läuft. Kurze Pausen legen wir nach Bedarf ein.
+
+| Baustein | Dauer |
 |---|---|
-| 09:00–09:30 | Stand, Vergleichskriterien und begrenzter Ausbau |
-| 09:30–10:45 | Übung 3.1: Ablauf stabilisieren und testen |
-| 10:45–11:00 | Pause |
-| 11:00–12:00 | Übung 3.2: Chat und Workflow vergleichen |
-| 12:00–13:00 | Übung 3.3: Entscheidung und erste Übergabeanleitung |
-| **13:00–14:00** | **Mittagspause** |
-| 14:00–15:00 | Letzte Korrektur, erneuter Test und Vorbereitung der Demo |
-| 15:00–15:15 | Pause |
-| 15:15–16:30 | Sechs Teamdemos: je 8 Minuten plus 4 Minuten Fragen, 3 Minuten Wechselpuffer |
-| 16:30–17:00 | Start ins Project Studio und nächste Coachingfrage |
+| Stand, Vergleichskriterien und begrenzter Ausbau | ca. 30 Min |
+| Übung 3.1: Ablauf stabilisieren und testen | ca. 75 Min |
+| Übung 3.2: Chat und Workflow vergleichen | ca. 60 Min |
+| Übung 3.3: Entscheidung und erste Übergabeanleitung | ca. 60 Min |
+| Letzte Korrektur, erneuter Test und Vorbereitung der Demo | ca. 60 Min |
+| Teamdemos: je 8 Minuten plus 4 Minuten Fragen | ca. 75 Min |
+| Start ins Project Studio und nächste Coachingfrage | ca. 30 Min |
 
 ## Übung 3.1: Drei Fälle und eine klare Fehlergrenze {#uebung-3-1}
 
@@ -36,7 +35,7 @@ Pro Team liegen ein Projektbrief mit Quellen, ein kleiner ausgeführter Workflow
 :::
 
 ::: {.uebung}
-### 75 Minuten · Dreierteams
+### ca. 75 Minuten · Dreierteams
 
 **Material:** Eigener Ablauf, [Testprotokoll](../material/vorlagen/testprotokoll.csv), [Testerwartungen](https://docs.google.com/document/d/12kVes3a17_Zduv-doQIlfYh3N83G0K5K1cn3G1Tz1JA/edit), [strukturierter Referenzablauf](../material/workflows/02-followup-strukturiert.json).
 
@@ -59,7 +58,7 @@ Pro Team liegen ein Projektbrief mit Quellen, ein kleiner ausgeführter Workflow
 :::
 
 ::: {.uebung}
-### 60 Minuten · Dreierteams
+### ca. 60 Minuten · Dreierteams
 
 **Material:** [Zusätzliche Testfälle](../material/daten/testfaelle-transfer.csv), [Vergleichstabelle](../material/vorlagen/vergleich-baseline.csv), [Prüfen und vergleichen](../werkzeuge/pruefen.qmd).
 
@@ -76,7 +75,7 @@ Verglichen werden ein einfacher Chat und der Workflow, beide mit denselben Infor
 ## Übung 3.3: Nutzbarkeit erklären {#uebung-3-3}
 
 ::: {.uebung}
-### 60 Minuten · Dreierteams
+### ca. 60 Minuten · Dreierteams
 
 **Material:** Projektbrief, Workflow-Export und Testergebnisse.
 
@@ -88,11 +87,11 @@ Verglichen werden ein einfacher Chat und der Workflow, beide mit denselben Infor
 **Ergebnis:** Erste Fassung des Playbooks und eine begründete Ausbauentscheidung. Kein Anspruch auf Produktivreife.
 :::
 
-## 14:00 Letzte Korrektur
+## Letzte Korrektur
 
 Nur noch eine relevante Korrektur mit erneutem Test vornehmen. Für die Präsentation genügt der echte Ablauf mit Eingabe, Ergebnis und Testbeleg. Eine gesicherte Ausgabe dient als Ersatz, falls die Modellverbindung ausfällt; dann wird die Demonstration als Wiedergabe eines früheren Laufs bezeichnet.
 
-## 15:15 Teamdemos {#demos}
+## Teamdemos {#demos}
 
 Acht Minuten pro Team:
 
@@ -103,7 +102,7 @@ Acht Minuten pro Team:
 
 Vier Minuten Fragen und Rückmeldung pro Team. Alle drei Personen übernehmen einen Teil. Bewertungsmaßstab der Rückmeldung sind Begründung, tatsächliche Funktion und nachvollziehbare Prüfung.
 
-## 16:30 Weiterarbeit im Semester {#weiter}
+## Weiterarbeit im Semester {#weiter}
 
 Die wöchentlichen 90 Minuten dienen dem Coaching. Die Teams vereinbaren eigenständige Arbeitszeiten. Jedes Team bringt einen [kurzen belegten Stand](https://docs.google.com/document/d/1KSs2vnaxsv0qxEs2N4grN57J8qKsadgFxYV0i0-6NTA/edit) mit. Jeweils drei Teams erhalten ein vertieftes Review, in der Folgewoche die anderen drei. Blockierende Fragen können jede Woche eingebracht werden.
 

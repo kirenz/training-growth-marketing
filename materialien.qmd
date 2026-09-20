@@ -12,7 +12,7 @@ toc: true
 |---|---|
 | [Website von Aurenta](aurenta/index.html) | Fiktive Unternehmenswebsite: Startseite, KI-Praxischeck, Webinar mit Zusammenfassung, Fachbeitrag, Erstgespräch |
 | [Fallpaket Aurenta](https://docs.google.com/document/d/1DZ9IaK7D3EqfwPLos8j4GZd35xRHN8hfdmBAXrVsLUU/edit) | Google Doc: der Fall auf einer Seite, zum Lesen. Problem, die drei Möglichkeiten, Regeln, Kontakte |
-| [Kontext für ChatGPT](https://docs.google.com/document/d/1bAQ1KaMDCp7nuRhHrkBBs7P0Iy9E_AxfXJAnBEiN68g/edit) | Google Doc mit allen Details zu Aurenta. Wird komplett in den Chat kopiert, nicht gelesen |
+| [Kontext für Gemini](https://docs.google.com/document/d/1bAQ1KaMDCp7nuRhHrkBBs7P0Iy9E_AxfXJAnBEiN68g/edit) | Google Doc mit allen Details zu Aurenta. Wird komplett in den Chat kopiert, nicht gelesen |
 | [Zwei plausible Entwürfe](https://docs.google.com/document/d/1_h820RAj27LmmoikA_fxTYikmlySU9lSNAIqotemRTc/edit) | Passung statt bloßer Sprachqualität beurteilen |
 | [Kampagnen-Lesehilfe](https://docs.google.com/document/d/1JjHqI88fyQwAPD7c-2CjUGDjBeV3qsqS3J3zxpq0g1E/edit) | Kennzahlen mit Zähler und Nenner |
 
@@ -24,7 +24,7 @@ toc: true
 | [Anleitung Pivot-Tabellen](https://docs.google.com/document/d/1YckXrnscZX7MjaUonjEQiHHqT2aO87pcMy2JlSQCDIU/edit) | Google Doc: Trichter je Kampagne und Kreuztabelle Anliegen gegen Buchung in Google Sheets |
 | [Kontakte K-01 bis K-06](material/daten/kontakte-webinar.csv) | Export der Webinar-Anmeldungen von Aurenta: sechs Kontakte mit Anliegen, einschließlich leerem Feld und Kontaktsperre. Woher die Spalten kommen, steht im Fallpaket |
 | [Kampagnen A bis C](material/daten/kampagnen.csv) | Synthetische Funnel-Zahlen; kein A/B-Test |
-| [Zusätzliche Testfälle T-01 bis T-03](material/daten/testfaelle-transfer.csv) | Erst am Mittwoch für den zusätzlichen Vergleich verwenden |
+| Zusätzliche Testfälle T-01 bis T-03 | wird am Mittwoch freigeschaltet |
 
 CSV-Dateien sind mit Semikolon getrennt und als UTF-8 mit BOM gespeichert. Beim Import in ein Tabellenprogramm bei Bedarf Semikolon als Trennzeichen wählen. Die Kontakt-IDs sind Text. Die Kampagnentabelle und die kleine Kontaktliste sind unterschiedliche Übungsdatensätze.
 
@@ -41,9 +41,9 @@ Der gemeinsame Zugang ist nur zum Lesen vorgesehen. [Vorbereitete Leseabfragen](
 | [Umfrage zur Teambildung](https://docs.google.com/forms/d/e/1FAIpQLSc9kP94sU9djozeVh9rZ9O0Oz_0FLJbSW883tvB8zyQOeppeQ/viewform) | Google-Formular, wird am Montag im Kurs ausgefüllt; [Textfassung der Fragen](https://docs.google.com/document/d/1YpzfFeP2L6jjcJthmrwukUelgQ7zNwMTB9burSysWEA/edit) |
 | [Anleitung Übung 1.1](https://docs.google.com/document/d/1rE-JFfq53XUhWb8J4MXdZihW5DgRqXAHAwvS_McTWqA/edit) | Google Doc: Vorstellungsrunde, Fall kennenlernen, Teamvereinbarung |
 | [Experimentkarte für Montag](https://docs.google.com/document/d/1RDw-7aKpkUtPurVk-NHItVg3zBKczG0G_tw_4TrfUtk/edit) | Beobachtung, Hypothese, Kennzahl |
-| [Experimentkarte](https://docs.google.com/document/d/1JrrMgJ6fCEae3trCWNqdAonEc9EHbZ-PWskl8wtli-s/edit) | Ausführliche Fassung mit Testdesign, ab Mittwoch |
-| [Projektbrief](https://docs.google.com/document/d/1Jwbhg5CbI-mxCJvRw1oSLBkLR7ZoPOQrwN0jsluFtIM/edit) | Dienstag: Zuschnitt nach dem Zoi-Briefing |
-| [Ablaufskizze: Lesehilfe und Aurenta-Beispiel](https://docs.google.com/document/d/1pO28YSUSkvbrn8drNZqMMVqimBHT2fiyT0LEfXeF_tY/edit) | Dienstag: Swimlane-Diagramm für Übung 2.2, Beispiel [heute](material/prozess/aurenta-webinar-ist.svg) und [mit KI-Agent](material/prozess/aurenta-webinar-soll.svg), BPMN-Dateien zum Öffnen in demo.bpmn.io |
+| Experimentkarte, ausführliche Fassung mit Testdesign | wird am Mittwoch freigeschaltet |
+| Projektbrief | wird am Dienstag freigeschaltet |
+| Ablaufskizze: Lesehilfe und Aurenta-Beispiel | wird am Dienstag freigeschaltet |
 | [Content-Briefing](https://docs.google.com/document/d/1d6kA5m4GPTFosAYjYV-uU3wwNbkvTbEGFy8GnoXr6zs/edit) | Optionale Erweiterung für Beiträge und Sprachfassungen |
 | [Coaching-Stand](https://docs.google.com/document/d/1KSs2vnaxsv0qxEs2N4grN57J8qKsadgFxYV0i0-6NTA/edit) | Belegtes Ergebnis, offene Frage, nächster Versuch |
 

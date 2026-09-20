@@ -6,21 +6,39 @@ toc: true
 
 [Ein Notebook, ein funktionierender Chat-Zugang und eine vorbereitete n8n-Umgebung genügen für den Einstieg. Eigene Programmierung und private Bezahlabos sind nicht erforderlich.]{.lead}
 
-## ChatGPT als gemeinsame Oberfläche {#zugang}
+## Gemini als gemeinsame Oberfläche {#zugang}
 
-Die Demonstrationen erfolgen in [ChatGPT](https://chatgpt.com/). Alle Pflichtübungen sind als Textaufgaben angelegt: Fallmaterial kopieren, Auftrag formulieren, Ergebnis prüfen und verbessern. Datei-Uploads, Bildgenerierung, Deep Research und selbst erstellte GPTs sind keine Voraussetzung.
+Die Demonstrationen erfolgen in [Gemini](https://gemini.google.com/). Ein kostenloses Google-Konto genügt. Alle Pflichtübungen sind als Textaufgaben angelegt: Fallmaterial kopieren, Auftrag formulieren, Ergebnis prüfen und verbessern. Datei-Uploads, Bildgenerierung, Deep Research und selbst erstellte Gems sind keine Voraussetzung.
 
-Vorhandene Zugänge zu Claude oder Gemini dürfen verwendet werden. Produkt und angezeigtes Modell werden im Testprotokoll festgehalten. Unterschiede sind ein möglicher Einflussfaktor; ein Vergleich zwischen Produkten belegt nicht allein den Nutzen einer Workflow-Architektur.
+Vorhandene Zugänge zu ChatGPT oder Claude dürfen verwendet werden. Produkt und angezeigtes Modell werden im Testprotokoll festgehalten. Unterschiede sind ein möglicher Einflussfaktor; ein Vergleich zwischen Produkten belegt nicht allein den Nutzen einer Workflow-Architektur.
 
-Vor dem Kurstag einmal anmelden, einen neuen Chat starten und eine kurze Testfrage stellen. Bei fehlendem Zugang wird zunächst gemeinsam an einem verfügbaren Gerät gearbeitet, ohne Kontopasswörter zu teilen. Die Lehrperson klärt den Kurszugang. Eine Prüfung vorbereiteter Ausgaben kann Wartezeit überbrücken, ersetzt aber keine eigene Durchführung.
+### In drei Schritten einsatzbereit {#registrieren}
+
+1. [gemini.google.com](https://gemini.google.com/) öffnen und mit dem Google-Konto anmelden. Wer noch keines hat, legt ein kostenloses an.
+2. Einen neuen Chat starten und eine kurze Testfrage stellen, zum Beispiel: „Nenne drei Kennzahlen, mit denen sich der Erfolg eines Webinars messen lässt."
+3. Prüfen, dass eine Antwort ankommt. Mehr ist für den Einstieg nicht nötig.
+
+Wer das vor dem Kurstag erledigt, spart am Montag Zeit; wir richten den Zugang aber auch gemeinsam ein. Bei fehlendem Zugang wird zunächst gemeinsam an einem verfügbaren Gerät gearbeitet, ohne Kontopasswörter zu teilen. Die Lehrperson klärt den Kurszugang. Eine Prüfung vorbereiteter Ausgaben kann Wartezeit überbrücken, ersetzt aber keine eigene Durchführung.
 
 ::: {.callout-note title="Kostenloser Zugang und Limits"}
-Für die textbasierten Pflichtübungen ist kein Bezahlabo vorgesehen. Funktionen und Kontingente können sich ändern. Maßgeblich sind die Hinweise im eigenen Konto und die [offizielle Free-Tier-Hilfe](https://help.openai.com/en/articles/9275245-chatgpt-free-tier-faq). Zusätzliche Käufe sind keine Übungsaufgabe.
+Für die textbasierten Pflichtübungen ist kein Bezahlabo vorgesehen; der kostenlose Zugang reicht aus. Funktionen und Kontingente können sich ändern. Maßgeblich sind die Hinweise im eigenen Konto. Zusätzliche Käufe sind keine Übungsaufgabe.
+:::
+
+::: {.callout-tip title="Freiwillig: Google AI Plus für Studierende"}
+Google stellt Studierenden und Auszubildenden ein Jahr lang [Google AI Plus](https://gemini.google/students/) kostenlos bereit, mit höheren Nutzungslimits, mehr Speicher und zusätzlichen Funktionen.
+
+Das gehört **nicht zum Kurs** und bringt bei der Bewertung keinen Vorteil. Wer sich dafür interessiert, sollte vorher drei Punkte kennen:
+
+- Das Angebot gilt ab 18 Jahren, die Berechtigung ist jährlich neu nachzuweisen.
+- Bei der Registrierung ist eine gültige Zahlungsmethode erforderlich.
+- Ohne rechtzeitige Kündigung verlängert sich das Abo nach Ablauf automatisch kostenpflichtig zu 21,99 Euro im Monat. Das Angebot selbst gilt bis 31.12.2026.
+
+Wer das nicht möchte, arbeitet den ganzen Kurs über mit dem kostenlosen Zugang.
 :::
 
 ## n8n ab Montag {#n8n}
 
-Der Zugang zur Kursumgebung und die eingerichtete Modellverbindung werden durch die Lehrperson bereitgestellt. Ein Browser-Chatkonto stellt nicht automatisch eine API-Verbindung für n8n bereit. [ChatGPT und API werden getrennt abgerechnet](https://help.openai.com/en/articles/9039756-managing-billing-for-chatgpt-and-the-api-platform).
+Der Zugang zur Kursumgebung und die eingerichtete Modellverbindung werden durch die Lehrperson bereitgestellt. Ein Browser-Chatkonto stellt nicht automatisch eine API-Verbindung für n8n bereit: Die Gemini-App und die [Gemini-API](https://ai.google.dev/gemini-api/docs/pricing) sind getrennte Zugänge mit eigenen Konten und eigenen Kontingenten. In n8n wird deshalb die vorbereitete Verbindung ausgewählt, nicht das eigene Gemini-Konto.
 
 Die [Referenzworkflows](materialien.qmd#workflows) enthalten keine Zugangsdaten. Nach dem Import muss die vorbereitete Verbindung ausgewählt und das freigegebene Modell eingestellt werden. Ein vollständiger Lauf mit den Kurszugängen ist der Zugangstest.
 
@@ -41,7 +59,7 @@ Ergebnisse werden ab Montag in einer gemeinsamen Teamablage gesammelt. Falls die
 
 ## Arbeitsregeln {#regeln}
 
-Die Übungen nutzen ausschließlich das synthetische Fallmaterial. Keine vertraulichen Unterlagen oder echten Kontaktdaten Dritter eingeben. Nachrichten werden als Entwürfe abgelegt; keine Übung versendet, bucht oder verändert ein produktives CRM. Eine menschliche Prüfung bleibt sichtbar, auch wenn ein Modell seine Antwort für richtig hält.
+Die Übungen nutzen ausschließlich das synthetische Fallmaterial. Keine vertraulichen Unterlagen oder echten Kontaktdaten Dritter eingeben. Das ist kein Formalismus: Auf kostenlosen Zugängen können Inhalte zur Verbesserung der Produkte ausgewertet werden. Für synthetisches Übungsmaterial ist das unkritisch, für echte Daten wäre es das nicht. Nachrichten werden als Entwürfe abgelegt; keine Übung versendet, bucht oder verändert ein produktives CRM. Eine menschliche Prüfung bleibt sichtbar, auch wenn ein Modell seine Antwort für richtig hält.
 
 Ein neuer unabhängiger Test beginnt in einem neuen Chat. Innerhalb einer Übung darf ein Prompt im Dialog verbessert werden; dieser Verlauf wird als Überarbeitung gekennzeichnet. Für einen Vergleich werden die endgültigen Anweisungen anschließend in frischen Chats geprüft.
 

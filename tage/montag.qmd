@@ -16,27 +16,26 @@ toc: true
 
 Am Ende des Tages hat jedes Team einen ersten eigenen KI-Workflow gebaut und an Beispielen ausprobiert.
 
-::: {#zeitplan .callout-note collapse="true" title="Zeitplan"}
+::: {#bausteine .callout-note collapse="true" title="Bausteine des Tages"}
 
-| Zeit | Inhalt | Arbeitsform |
+Fest sind Beginn um 09:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr. Dazwischen arbeiten wir in Bausteinen. Die Dauer ist eine Schätzung; Reihenfolge und Umfang passen wir daran an, wie die Teamarbeit läuft. Dass ein Baustein länger dauert und ein anderer entfällt, ist eingeplant.
+
+| Baustein | Dauer | Arbeitsform |
 |---|---|---|
-| 09:00 | Projekt und Semesterziel | Gemeinsam |
-| | Teams bilden: Umfrage und Einteilung | Einzeln, dann gemeinsam |
-| | Übung 1.1: Team bilden und Zusammenarbeit vereinbaren | Dreierteams |
-| ca. 10:30 | Pause | |
-| | Growth Marketing am Beratungsfall | Kurzer Input mit gemeinsamer Auswertung |
-| | Übung 1.2: Vom Trichter zur Hypothese | Dreierteams |
-| | KI verstehen und Aufträge formulieren | Kurzer Input |
-| | Übung 1.3: Der erste Prompt | Einzeln, dann im Team |
-| | n8n-Demo und Vergleich Workflow / Agent | Gemeinsam |
-| | Übung 1.4: Den ersten Datenfluss aufbauen | Angeleitet in den Teams |
-| **13:00–14:00** | **Mittagspause** | |
-| | Übung 1.4 fortsetzen: Modellschritt und Ergebnis | Dreierteams, Coaching |
-| ca. 15:00 | Pause | |
-| | Übung 1.5: Anpassen und an drei Fällen prüfen | Dreierteams |
-| | Sechs Teamdemos mit kurzem Feedback | Gemeinsam |
-| | Teamreflexion und Fragen für Zoi | Teams und Abschlussrunde |
-| 17:00 | Ende | |
+| Projekt und Semesterziel | ca. 20 Min | Gemeinsam |
+| Zugang zu Gemini einrichten | ca. 15 Min | Einzeln |
+| Teams bilden: Umfrage und Einteilung | ca. 20 Min | Einzeln, dann gemeinsam |
+| Übung 1.1: Als Team arbeitsfähig werden | ca. 60 Min | Dreierteams |
+| Growth Marketing am Beratungsfall | ca. 30 Min | Input mit gemeinsamer Auswertung |
+| Übung 1.2: Vom Trichter zur Hypothese | ca. 30 Min | Dreierteams |
+| KI verstehen und Aufträge formulieren | ca. 20 Min | Input |
+| Übung 1.3: Der erste Prompt | ca. 20 Min | Einzeln, dann im Team |
+| n8n-Demo und Vergleich Workflow / Agent | ca. 20 Min | Gemeinsam |
+| Übung 1.4: Der erste eigene Workflow | ca. 90 Min | Angeleitet in den Teams |
+| Übung 1.5: Eine Entscheidung verbessern | ca. 45 Min | Dreierteams |
+| Teamdemos, Reflexion und Fragen für Zoi | ca. 45 Min | Gemeinsam |
+
+Zwei kurze Pausen legen wir nach Bedarf ein, etwa gegen 10:30 und gegen 15:00 Uhr.
 
 :::
 
@@ -66,6 +65,26 @@ Die Website von Aurenta zeigt das Unternehmen so, wie es ein Kontakt sieht: Star
 :::
 
 Aurenta beschreibt kein reales Angebot von Zoi. Der reale Projektzuschnitt entsteht nach dem Briefing am Dienstag.
+
+## Zugang einrichten {#zugang}
+
+::: {.todo}
+[Aufgabe · etwa 15 Minuten]{.todo-label}
+
+Wir arbeiten im Kurs mit **Gemini**. Ein kostenloses Google-Konto genügt, ein Bezahlabo ist für keine Pflichtübung nötig.
+
+1. [gemini.google.com](https://gemini.google.com/) öffnen und mit dem Google-Konto anmelden. Wer noch keines hat, legt jetzt ein kostenloses an.
+2. Einen neuen Chat starten und eine Testfrage stellen: „Nenne drei Kennzahlen, mit denen sich der Erfolg eines Webinars messen lässt."
+3. Prüfen, dass eine Antwort ankommt. Mehr ist für den Einstieg nicht nötig.
+
+<a href="https://gemini.google.com/" class="btn btn-primary" target="_blank" rel="noopener">Gemini öffnen</a>
+:::
+
+Wer bereits einen Zugang zu ChatGPT oder Claude hat, darf ihn verwenden. Wichtig ist nur, dass später im Testprotokoll steht, mit welchem Produkt und welchem Modell gearbeitet wurde.
+
+Das Studierendenangebot von Google, ein Jahr Google AI Plus kostenlos, ist freiwillig und für den Kurs nicht erforderlich. Es verlangt bei der Registrierung eine Zahlungsmethode und verlängert sich ohne Kündigung kostenpflichtig. Die Bedingungen stehen in der [Vorbereitung](../start.qmd#zugang).
+
+Am Nachmittag kommt n8n dazu. Dort wird nicht das eigene Konto eingetragen, sondern eine vorbereitete Verbindung ausgewählt. Chat und Schnittstelle sind zwei getrennte Zugänge; warum das so ist, sehen wir uns in Übung 1.4 an.
 
 ## Teams bilden {#teams}
 
@@ -137,18 +156,18 @@ Kurzer Input mit dem [Werkzeugkasten Growth Marketing](../werkzeuge/growth-marke
 ::: {.uebung}
 ### Etwa 20 Minuten · Erst einzeln, dann im Team
 
-**Material:** [Kontext für ChatGPT](https://docs.google.com/document/d/1bAQ1KaMDCp7nuRhHrkBBs7P0Iy9E_AxfXJAnBEiN68g/edit), [Fallpaket](https://docs.google.com/document/d/1DZ9IaK7D3EqfwPLos8j4GZd35xRHN8hfdmBAXrVsLUU/edit) für die Regeln, [zwei Beispielantworten mit typischen Fehlern](https://docs.google.com/document/d/1_h820RAj27LmmoikA_fxTYikmlySU9lSNAIqotemRTc/edit).
+**Material:** [Kontext für Gemini](https://docs.google.com/document/d/1bAQ1KaMDCp7nuRhHrkBBs7P0Iy9E_AxfXJAnBEiN68g/edit), [Fallpaket](https://docs.google.com/document/d/1DZ9IaK7D3EqfwPLos8j4GZd35xRHN8hfdmBAXrVsLUU/edit) für die Regeln, [zwei Beispielantworten mit typischen Fehlern](https://docs.google.com/document/d/1_h820RAj27LmmoikA_fxTYikmlySU9lSNAIqotemRTc/edit).
 
 Der Prompt unten ist die Vorstufe des Workflows aus Übung 1.4. Dort übernimmt n8n dieselbe Anweisung als KI-Schritt. Vorher soll jedes Team gesehen haben, was das Modell damit macht.
 
-1. Jede Person öffnet einen neuen Chat und kopiert den Prompt unten hinein. An der markierten Stelle den kompletten Text aus dem Google Doc „Kontext für ChatGPT" einfügen: im Doc alles markieren, kopieren, im Chat an der Stelle einfügen. Das Doc muss nicht gelesen werden.
+1. Jede Person öffnet einen neuen Chat und kopiert den Prompt unten hinein. An der markierten Stelle den kompletten Text aus dem Google Doc „Kontext für Gemini" einfügen: im Doc alles markieren, kopieren, im Chat an der Stelle einfügen. Das Doc muss nicht gelesen werden.
 2. Abschicken. Die Antwort in ein Dokument in der Teamablage kopieren, mit dem Namen der Person darüber.
 3. Die drei Antworten nebeneinander legen und für jede vier Fragen beantworten: Empfiehlt sie Material, Rückfrage oder Erstgespräch? Stimmt das mit Regel 3 im Fallpaket überein (wer um Informationen bittet und kein Gespräch will, bekommt Material)? Wird eine Aufzeichnung oder ein Termin erfunden? Steht am Ende, was fehlt oder unsicher ist?
 4. In zwei Sätzen festhalten, worin sich die drei Antworten unterscheiden, obwohl der Prompt derselbe war. Zum Vergleich die zwei Beispielantworten ansehen.
 
 ```default
 Kontext:
-<Hier den kompletten Text aus dem Google Doc „Kontext für ChatGPT“ einfügen.>
+<Hier den kompletten Text aus dem Google Doc „Kontext für Gemini“ einfügen.>
 Kontakt K-02: Content Marketing in einem technischen Handelsunternehmen.
 Nicht am Webinar teilgenommen. Anliegen: „Gibt es eine Aufzeichnung?
 Ich möchte zunächst die Inhalte nacharbeiten.“ Sprache: Deutsch.
@@ -238,4 +257,4 @@ Die Präsentationen öffnen sich in einem neuen Tab. Pfeiltasten zum Blättern, 
 </ul>
 :::
 
-[**Weiter zum Dienstag: Vom Übungsfall zum Zoi-Auftrag**](dienstag.qmd)
+Wie es am Dienstag weitergeht, sehen wir am Dienstagmorgen.

@@ -69,6 +69,6 @@ Genau diese Tabelle bekommen die Teams als Datei `kontakte-webinar.csv`, mit den
 
 K-02 ist also eine Person aus dem Content Marketing, die sich angemeldet hat, beim Webinar nicht dabei war und ins Textfeld geschrieben hat, dass sie eine Aufzeichnung sucht. Namen und E-Mail-Adressen fehlen, weil alle Kontakte erfunden sind. Die Kampagnenzahlen (198 Follow-ups, 10 Gespräche) stammen aus derselben Art von Export, nur über drei Webinare zusammengezählt.
 
-## Für ChatGPT gibt es eine längere Fassung
+## Für Gemini gibt es eine längere Fassung
 
-Die Datei „Kontext für ChatGPT“ auf der Materialseite enthält alle Details zu Aurenta, damit das Modell nichts erfindet. Sie wird in Übung 1.3 in den Chat kopiert und muss nicht gelesen werden.
+Die Datei „Kontext für Gemini“ auf der Materialseite enthält alle Details zu Aurenta, damit das Modell nichts erfindet. Sie wird in Übung 1.3 in den Chat kopiert und muss nicht gelesen werden.

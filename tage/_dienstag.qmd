@@ -12,23 +12,22 @@ toc: true
 
 Jedes Team erstellt einen Projektbrief, eine aktualisierte Experimentkarte, eine Ablaufskizze und einen überarbeiteten n8n-Prototyp. Ein anderes Team prüft einen Fall. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt.
 
-## Zeitplan {#zeitplan}
+## Bausteine des Tages {#bausteine}
 
-| Zeit | Inhalt |
-|---|---|
-| 09:00–09:30 | Rückblick auf Montag, ein gemeinsamer Fehler und seine Ursache |
-| 09:30–10:00 | Fragen bündeln und Briefing vorbereiten |
-| 10:00–11:00 | Zoi-Briefing, einschließlich Rückfragen |
-| 11:00–11:15 | Pause |
-| 11:15–12:15 | Übung 2.1: Projektbrief und erster Zuschnitt |
-| 12:15–13:00 | Übung 2.2: Kundenweg und Ablauf entwerfen |
-| **13:00–14:00** | **Mittagspause** |
-| 14:00–15:15 | Übung 2.3: Anweisungen und Workflow übertragen |
-| 15:15–15:30 | Pause |
-| 15:30–16:15 | Gegenseitiger Test: drei Teampaare |
-| 16:15–17:00 | Sechs kurze Design-Reviews und Entscheidung für Mittwoch |
+Fest sind Beginn um 09:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr. Dazwischen arbeiten wir in Bausteinen. Die Dauer ist eine Schätzung; Reihenfolge und Umfang passen wir daran an, wie die Teamarbeit läuft. Kurze Pausen legen wir nach Bedarf ein. Fest liegt heute zusätzlich das Briefing durch Zoi ab 10:00 Uhr.
 
-## 09:00 Rückblick und Briefingvorbereitung
+| Baustein | Dauer | |
+|---|---|---|
+| Rückblick auf Montag, ein gemeinsamer Fehler und seine Ursache | ca. 30 Min | |
+| Fragen bündeln und Briefing vorbereiten | ca. 30 Min | |
+| **Zoi-Briefing einschließlich Rückfragen** | ca. 60 Min | **fest ab 10:00 Uhr** |
+| Übung 2.1: Projektbrief und erster Zuschnitt | ca. 60 Min | |
+| Übung 2.2: Kundenweg und Ablauf entwerfen | ca. 45 Min | |
+| Übung 2.3: Anweisungen und Workflow übertragen | ca. 75 Min | |
+| Gegenseitiger Test: drei Teampaare | ca. 45 Min | |
+| Design-Reviews und Entscheidung für Mittwoch | ca. 45 Min | |
+
+## Rückblick und Briefingvorbereitung
 
 ::: {.folien .folien-inline}
 [Folien]{.folien-label}
@@ -40,7 +39,7 @@ Ein konkreter Lauf vom Montag wird gemeinsam betrachtet: Welche Eingabe führte 
 
 Je Team eine Frage zu Problem und Ziel, eine zu Daten und Prozess und eine zur späteren Nutzbarkeit priorisieren. Während des Briefings werden drei Aufgaben verteilt: belegte Aussagen notieren, Annahmen und offene Punkte erkennen, Fragen stellen. Die Aufgaben wechseln beim anschließenden Bearbeiten.
 
-## 10:00 Briefing des Projektpartners {#briefing}
+## Briefing des Projektpartners ab 10:00 Uhr {#briefing}
 
 Geplant sind etwa 45 Minuten Vorstellung und 15 Minuten Fragen, vor Ort an der HdM. Angebot, Zielgruppe, heutiger Prozess und gewünschter Nutzen werden anhand des Briefings konkretisiert. Eine geplante Veranstaltung ist noch kein Nachweis einer getroffenen Vereinbarung.
 
@@ -51,7 +50,7 @@ Der Projektbrief hält die Lücke fest. Die technische Übung wird am vollständ
 ## Übung 2.1: Ein bearbeitbares Problem {#uebung-2-1}
 
 ::: {.uebung}
-### 60 Minuten · Dreierteams
+### ca. 60 Minuten · Dreierteams
 
 **Material:** Mitschrift, [Projektbrief](https://docs.google.com/document/d/1Jwbhg5CbI-mxCJvRw1oSLBkLR7ZoPOQrwN0jsluFtIM/edit), [Experimentkarte](https://docs.google.com/document/d/1JrrMgJ6fCEae3trCWNqdAonEc9EHbZ-PWskl8wtli-s/edit).
 
@@ -77,7 +76,7 @@ Erfinde keine Aussagen des Partners und keine verfügbaren Daten.
 ## Übung 2.2: Den Kundenweg und den Ablauf verbinden {#uebung-2-2}
 
 ::: {.uebung}
-### 45 Minuten · Dreierteams
+### ca. 45 Minuten · Dreierteams
 
 **Material:** Projektbrief und Workflow vom Montag, [Lesehilfe Ablaufskizze](https://docs.google.com/document/d/1pO28YSUSkvbrn8drNZqMMVqimBHT2fiyT0LEfXeF_tY/edit), Beispiel Aurenta heute ([Bild](../material/prozess/aurenta-webinar-ist.svg) · [BPMN](../material/prozess/aurenta-webinar-ist.bpmn)) und mit KI-Agent ([Bild](../material/prozess/aurenta-webinar-soll.svg) · [BPMN](../material/prozess/aurenta-webinar-soll.bpmn)).
 
@@ -102,7 +101,7 @@ Die Skizze wird als Swimlane-Diagramm gezeichnet: eine Bahn je Rolle (Marketing-
 :::
 
 ::: {.uebung}
-### 75 Minuten · Dreierteams, Bedienung wechseln
+### ca. 75 Minuten · Dreierteams, Bedienung wechseln
 
 **Material:** [Anweisungen](https://docs.google.com/document/d/1SIYpnRHpPq9tb5qiE0-Ixu8o4xy0_5NJHvM-DgZ0LYc/edit), [Assistenten-Bausteine](../werkzeuge/assistenten.qmd), [n8n-Anleitung](../werkzeuge/workflows.qmd#ausbau).
 
@@ -114,11 +113,11 @@ Die Skizze wird als Swimlane-Diagramm gezeichnet: eine Bahn je Rolle (Marketing-
 **Ergebnis:** Ein überarbeiteter lauffähiger Ablauf. Bei unvollständigem Zoi-Material steht im Export ausdrücklich „Aurenta-Übungsfall“. Die Ausgaben bleiben Entwürfe.
 :::
 
-## 15:30 Gegenseitiger Test
+## Gegenseitiger Test
 
 Teampaare: 1 und 2, 3 und 4, 5 und 6. Pro Richtung etwa 20 Minuten, fünf Minuten gemeinsame Entscheidung. Das testende Team erhält einen Fall und die vorher vereinbarten Kriterien, aber keine Erklärung, warum das Ergebnis angeblich gut ist. Es prüft den tatsächlichen Lauf und benennt einen belegten Befund. Anschließend entscheidet das verantwortliche Team über eine Änderung.
 
-## 16:15 Design-Reviews
+## Design-Reviews
 
 Pro Team sechs Minuten, neun Minuten gemeinsamer Puffer: Problem und Datenlage, ein funktionierender Ausschnitt, ein offener Test, Entscheidung für Mittwoch. Das Review bestätigt einen bearbeitbaren nächsten Schritt. Es verlangt noch keinen vollständigen Semesterprozess.
 
@@ -133,4 +132,4 @@ Die Präsentationen öffnen sich in einem neuen Tab.
 </ul>
 :::
 
-[**Weiter zum Mittwoch: Testen, vergleichen und übergeben**](mittwoch.qmd)
+Wie es am Mittwoch weitergeht, sehen wir am Mittwochmorgen.

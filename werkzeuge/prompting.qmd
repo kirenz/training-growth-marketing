@@ -16,7 +16,7 @@ toc: true
 | Prüfung | Was das Modell melden soll, statt Lücken zu füllen. Wichtig, und fast alle vergessen es | Nenne am Ende, was fehlt oder unsicher ist |
 
 ```default
-Kontext: <Kontext für ChatGPT und die Kontaktfelder von K-02 einfügen.>
+Kontext: <Kontext für Gemini und die Kontaktfelder von K-02 einfügen.>
 
 Aufgabe: Empfiehl für K-02 den nächsten Schritt (Material, Rückfrage
 oder Erstgespräch) und schreibe den Nachrichtenentwurf.

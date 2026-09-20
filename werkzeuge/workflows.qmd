@@ -66,7 +66,7 @@ Die beiden Knoten verbinden und ausführen. Die Ausgabe muss genau diesen Kontak
 
 Eine **Basic LLM Chain** hinzufügen und „Bedarf und Entwurf“ nennen. Den Prompt selbst definieren (Define below) und den vollständigen [vorbereiteten n8n-Prompt](https://docs.google.com/document/d/1duTCf9tVaspLswnrjjesW6we4CtV7Nv0vefCDKm2oOY/edit) in das Feld einsetzen. Er enthält das Fallpaket und die variablen Kontaktfelder. Das führende `=` kennzeichnet im Export einen Ausdruck; in der Oberfläche den Expression-Modus verwenden und die Vorschau prüfen.
 
-Unter Chat Model den **OpenAI Chat Model**-Knoten verbinden, „Kursmodell“ nennen und die vorbereitete Verbindung auswählen. Das Kursmodell wird von der Lehrperson festgelegt; die Referenz enthält gpt-4.1-mini als austauschbare Voreinstellung. Das persönliche ChatGPT-Konto wird hier nicht eingegeben.
+Unter Chat Model den **Google Gemini Chat Model**-Knoten verbinden, „Kursmodell“ nennen und die vorbereitete Verbindung auswählen. Das Kursmodell wird von der Lehrperson festgelegt; die Referenz enthält gemini-3.1-flash-lite als austauschbare Voreinstellung. Das persönliche Gemini-Konto wird hier nicht eingegeben.
 
 Die Platzhalter wie `{{ $json.anliegen }}` greifen auf das Feld des aktuellen Eingabeelements zu. Sie sind Feldzuordnungen, keine Programmieraufgabe. In der Vorschau muss das tatsächliche Anliegen erscheinen. Den Workflow manuell ausführen und die Antwort lesen.
 
@@ -124,4 +124,4 @@ Die Ablage erhält den Hinweis „manuelle Simulation“. Damit ist die fachlich
 
 ## Technische Quellen
 
-[Basic LLM Chain](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.chainllm/) · [OpenAI Chat Model](https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatopenai/) · [Structured Output Parser](https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.outputparserstructured/). Der konkrete Lauf mit Kursmodell und Kurszugängen muss vor der Vorlesung geprüft sein.
+[Basic LLM Chain](https://docs.n8n.io/integrations/builtin/cluster-nodes/root-nodes/n8n-nodes-langchain.chainllm/) · [Google Gemini Chat Model](https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.lmchatgooglegemini/) · [Structured Output Parser](https://docs.n8n.io/integrations/builtin/cluster-nodes/sub-nodes/n8n-nodes-langchain.outputparserstructured/). Der konkrete Lauf mit Kursmodell und Kurszugängen muss vor der Vorlesung geprüft sein.

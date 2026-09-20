@@ -90,19 +90,14 @@
     {
       "id": "93fb2ddc-4d9b-5216-9454-7728a689d848",
       "name": "Kursmodell",
-      "type": "@n8n/n8n-nodes-langchain.lmChatOpenAi",
-      "typeVersion": 1.2,
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1.1,
       "position": [
         660,
         260
       ],
       "parameters": {
-        "model": {
-          "__rl": true,
-          "value": "gpt-4.1-mini",
-          "mode": "list",
-          "cachedResultName": "gpt-4.1-mini"
-        },
+        "modelName": "models/gemini-3.1-flash-lite",
         "options": {
           "temperature": 0.2
         }

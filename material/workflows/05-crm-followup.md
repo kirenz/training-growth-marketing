@@ -10,7 +10,7 @@ Variante 04 kann einen Kontakt lesen. Variante 02 kann mit der vorbereiteten Mod
 
 1. `05-crm-followup.json` als neuen Workflow importieren und speichern.
 2. Im Knoten **Kontakt aus CRM lesen** die Aurenta-Postgres-Credential auswählen.
-3. Im Knoten **Kursmodell** die bereitgestellte Modellverbindung und das freigegebene Modell auswählen. `gpt-4.1-mini` ist nur die austauschbare Voreinstellung. Bei einem anderen Anbieter den passenden Chat-Model-Knoten an denselben Modelleingang anschließen und erneut testen.
+3. Im Knoten **Kursmodell** die bereitgestellte Modellverbindung und das freigegebene Modell auswählen. `gemini-3.1-flash-lite` ist nur die austauschbare Voreinstellung. Bei einem anderen Anbieter den passenden Chat-Model-Knoten an denselben Modelleingang anschließen und erneut testen.
 4. Im Knoten **Kontakt auswaehlen** zunächst `K-01` belassen. Den gesamten Workflow starten.
 5. Das Ergebnis in **Ergebnis zur Pruefung** anhand des Fallpakets prüfen. Kontakt-ID und `freigabe = offen` kommen aus fester Logik. Entscheidung, Begründung und Entwurf kommen vom Modell.
 
