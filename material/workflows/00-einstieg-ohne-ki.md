@@ -6,7 +6,7 @@
 
 1. In n8n einen neuen Workflow öffnen und über das Workflow-Menü „Import from File“ die Datei `00-einstieg-ohne-ki.json` importieren. Einen eigenen Namen vergeben und speichern.
 2. Den Knoten **Kontakt** öffnen. Er enthält K-01 bereits vollständig. Die sieben Felder entsprechen der Kontaktliste.
-3. **Execute Workflow** wählen. Den letzten ausgeführten Knoten **Ergebnis zur Pruefung** öffnen.
+3. **Execute Workflow** wählen. Den letzten ausgeführten Knoten **Ergebnis ablegen** öffnen.
 4. Prüfen: `kontakt_id = K-01`, das ursprüngliche Anliegen, die Sprache und `freigabe = offen` stehen in der Ausgabe. Es wurde kein Text durch ein Modell erzeugt.
 5. Im Kontakt-Knoten nur `kontakt_erlaubt` auf `nein` setzen und erneut starten. Jetzt läuft **Gesperrt zur Pruefung**: `entscheidung = kein_followup`, der Nachrichtenentwurf bleibt leer. Anschließend auf `ja` zurückstellen.
 

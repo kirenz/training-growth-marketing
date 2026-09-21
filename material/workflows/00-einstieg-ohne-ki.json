@@ -108,7 +108,7 @@
     },
     {
       "id": "995ef5ae-11a1-5a4e-883a-5e7c5059a528",
-      "name": "Ergebnis zur Pruefung",
+      "name": "Ergebnis ablegen",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
@@ -240,7 +240,7 @@
       "main": [
         [
           {
-            "node": "Ergebnis zur Pruefung",
+            "node": "Ergebnis ablegen",
             "type": "main",
             "index": 0
           }

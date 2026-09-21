@@ -72,7 +72,7 @@ Die Platzhalter wie `{{ $json.anliegen }}` greifen auf das Feld des aktuellen Ei
 
 ### 3. Ergebnis zur Prüfung
 
-Einen weiteren **Edit Fields**-Knoten nach der Chain ergänzen, „Ergebnis zur Pruefung“ nennen und diese String-Felder setzen:
+Einen weiteren **Edit Fields**-Knoten nach der Chain ergänzen, „Ergebnis ablegen“ nennen und diese String-Felder setzen:
 
 | Feld | Wert |
 |---|---|

@@ -7,7 +7,7 @@
 1. `04-crm-kontakt-lesen.json` als neuen Workflow importieren und unter einem eigenen Namen speichern.
 2. Im Knoten **Kontakt aus CRM lesen** die von der Lehrperson eingerichtete Postgres-Credential **Aurenta – Übungsfall (Lesen)** auswählen. Die Datenbank ist bereits vorhanden; die Credential muss separat in n8n gespeichert und getestet sein. Keine bestehende Zoi-Verbindung auf eine andere Datenbank umstellen.
 3. Im Knoten **Kontakt auswaehlen** steht `kontakt_id = K-01`. Den gesamten Workflow starten.
-4. **Ergebnis zur Pruefung** öffnen: ID, Rolle, Unternehmen, Webinarstatus, Anliegen, Sprache und Kontaktstatus müssen der CSV-Datei entsprechen. `freigabe` bleibt `offen`.
+4. **Ergebnis ablegen** öffnen: ID, Rolle, Unternehmen, Webinarstatus, Anliegen, Sprache und Kontaktstatus müssen der CSV-Datei entsprechen. `freigabe` bleibt `offen`.
 5. Nur die ID auf `K-02` ändern und erneut ausführen. Es muss jetzt das Anliegen zur Webinaraufzeichnung erscheinen.
 
 K-01 bis K-06 sind die Entwicklungsfälle. T-01 bis T-03 erst am Mittwoch verwenden. Der Workflow verarbeitet genau einen Kontakt je Lauf. Er liest auch gesperrte Kontakte, erzeugt aber keinerlei Nachricht und führt keine KI-Bewertung aus.
