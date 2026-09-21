@@ -35,18 +35,14 @@ Fest sind Beginn um 09:30 Uhr in Raum I120, das Briefing durch Zoi ab 10:00 Uhr,
 ::: {.folien .folien-inline}
 [Folien]{.folien-label}
 
-<ul><li><a class="folie" href="../slides/tag2-briefing.html" target="_blank" rel="noopener">Vom Übungsfall zum Zoi-Auftrag <span>Rückblick, Briefing, Projektbrief, Ablaufskizze</span></a></li></ul>
+<ul><li><a class="folie" href="../slides/tag2-briefing.html" target="_blank" rel="noopener">Vom Übungsfall zum Zoi-Auftrag <span>Briefing, Ablaufskizze, Antigravity</span></a></li></ul>
 :::
 
 Die am Montag gesammelten Fragen an Zoi werden gesichtet, Dubletten zusammengefasst, und jedes Team markiert die eine Frage, die es im Briefing selbst stellt. Dazu werden drei Aufgaben fürs Briefing verteilt: belegte Aussagen notieren, Annahmen und offene Punkte erkennen, Fragen stellen. Die Aufgaben wechseln beim anschließenden Bearbeiten.
 
 ## Briefing des Projektpartners ab 10:00 Uhr {#briefing}
 
-Geplant sind eine Vorstellung durch Zoi und anschließend Fragen, vor Ort an der HdM. Angebot, Zielgruppe, heutiger Prozess und gewünschter Nutzen werden anhand des Briefings konkretisiert. Eine geplante Veranstaltung ist noch kein Nachweis einer getroffenen Vereinbarung.
-
-::: {.callout-note title="Wenn Informationen noch fehlen"}
-Der Projektbrief hält die Lücke fest. Die technische Übung wird am vollständigen Aurenta-Fall fortgeführt. Eine Übertragung auf Zoi wird nur dort vorgenommen, wo tatsächliche Informationen vorliegen. Der Übungsfall wird nicht als Angebot des Partners ausgegeben.
-:::
+Geplant sind eine Vorstellung durch Zoi und anschließend Fragen, vor Ort an der HdM. Angebot, Zielgruppe, heutiger Prozess und gewünschter Nutzen werden anhand des Briefings konkretisiert.
 
 ## Ein Lauf vom Montag: K-02 gemeinsam prüfen {#rueckblick}
 
@@ -115,7 +111,7 @@ Jedes Team zeigt in wenigen Minuten: den importierten Workflow, die Hypothese au
 Die Präsentationen öffnen sich in einem neuen Tab.
 
 <ul>
-<li><a class="folie" href="../slides/tag2-briefing.html" target="_blank" rel="noopener">Vom Übungsfall zum Zoi-Auftrag <span>Briefing, Projektbrief, Ablaufskizze, Anweisungen</span></a></li>
+<li><a class="folie" href="../slides/tag2-briefing.html" target="_blank" rel="noopener">Vom Übungsfall zum Zoi-Auftrag <span>Briefing, Ablaufskizze, Antigravity</span></a></li>
 <li><a class="folie" href="../slides/n8n-workflows.html" target="_blank" rel="noopener">n8n: Workflows und Agenten <span>Abschnitt Ausbau: Sperre, Parser, Agent</span></a></li>
 </ul>
 :::
