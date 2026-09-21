@@ -180,7 +180,7 @@ Die Präsentationen öffnen sich in einem neuen Tab. Pfeiltasten zum Blättern, 
 <ul>
 <li><a class="folie" href="../slides/tag1-projektstart.html" target="_blank" rel="noopener">Projektstart <span>Semester, Prüfung, Teams</span></a></li>
 <li><a class="folie" href="../slides/growth-marketing.html" target="_blank" rel="noopener">Growth Marketing am Fall Aurenta <span>Kundenweg, Hypothese, Experiment</span></a></li>
-<li><a class="folie" href="../slides/ki-und-prompting.html" target="_blank" rel="noopener">KI verstehen und Aufträge formulieren <span>vor Übung 1.3</span></a></li>
+<li><a class="folie" href="../slides/ki-und-prompting.html" target="_blank" rel="noopener">KI verstehen und Aufträge formulieren <span>Input, Übung dazu am Dienstag</span></a></li>
 <li><a class="folie" href="../slides/n8n-workflows.html" target="_blank" rel="noopener">n8n: Workflows und Agenten <span>Demo vor Übung 1.4</span></a></li>
 </ul>
 :::
