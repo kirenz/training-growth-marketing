@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -298,12 +263,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#briefing" id="toc-briefing" class="nav-link" data-scroll-target="#briefing">Briefing des Projektpartners ab 10:00 Uhr</a></li>
   <li><a href="#rueckblick" id="toc-rueckblick" class="nav-link" data-scroll-target="#rueckblick">Ein Lauf vom Montag: K-02 gemeinsam prüfen</a></li>
   <li><a href="#uebung-1-3" id="toc-uebung-1-3" class="nav-link" data-scroll-target="#uebung-1-3">Übung 1.3: Vom Prozess zum Workflow mit Antigravity</a></li>
-  <li><a href="#uebung-1-2" id="toc-uebung-1-2" class="nav-link" data-scroll-target="#uebung-1-2">Übung 1.2: Vom Trichter zur Hypothese</a></li>
-  <li><a href="#uebung-2-1" id="toc-uebung-2-1" class="nav-link" data-scroll-target="#uebung-2-1">Übung 2.1: Ein bearbeitbares Problem</a></li>
-  <li><a href="#uebung-2-2" id="toc-uebung-2-2" class="nav-link" data-scroll-target="#uebung-2-2">Übung 2.2: Den Kundenweg und den Ablauf verbinden</a></li>
+  <li><a href="#uebung-1-2" id="toc-uebung-1-2" class="nav-link" data-scroll-target="#uebung-1-2">Übung 1.2: Daten auswerten und eine Hypothese ableiten, mit Antigravity</a></li>
   <li><a href="#agenten" id="toc-agenten" class="nav-link" data-scroll-target="#agenten">Input: Workflows und Agenten</a></li>
-  <li><a href="#uebung-2-3" id="toc-uebung-2-3" class="nav-link" data-scroll-target="#uebung-2-3">Übung 2.3: Wiederverwendbare Anweisungen und ein erster Ausbau</a></li>
-  <li><a href="#design-reviews" id="toc-design-reviews" class="nav-link" data-scroll-target="#design-reviews">Design-Reviews</a></li>
+  <li><a href="#kurze-runde-zum-abschluss" id="toc-kurze-runde-zum-abschluss" class="nav-link" data-scroll-target="#kurze-runde-zum-abschluss">Kurze Runde zum Abschluss</a></li>
   </ul>
 </nav>
     </div>
@@ -334,15 +296,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul>
 <li>Briefing mit Zoi: Angebot, Zielgruppe und heutiger Prozess</li>
 <li>Antigravity: Ein Agent baut den Workflow aus der Skizze, das Team prüft</li>
-<li>Eine Hypothese aus den Aurenta-Daten</li>
-<li>Projektbrief und Ablaufskizze für den Zoi-Fall</li>
+<li>Antigravity: Ein Agent wertet die Aurenta-Daten aus, das Team prüft die Hypothese</li>
 <li>Workflows und Agenten: wann reicht der feste Ablauf?</li>
-<li>Workflow ausbauen und Entscheidung für Mittwoch</li>
 </ul>
 </div>
 <section id="ziel-und-tagesergebnis" class="level2">
 <h2 class="anchored" data-anchor-id="ziel-und-tagesergebnis">Ziel und Tagesergebnis</h2>
-<p>Jedes Team erstellt einen Projektbrief, eine aktualisierte Experimentkarte, eine Ablaufskizze und einen überarbeiteten n8n-Prototyp. Dazu lassen die Teams zum ersten Mal einen Agenten einen Workflow bauen und holen die Hypothesen-Übung vom Montag nach. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt.</p>
+<p>Jedes Team hat am Ende einen Workflow, den ein Agent aus der Ablaufskizze gebaut und das Team geprüft und importiert hat, dazu eine Hypothese aus den Aurenta-Daten. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt.</p>
 </section>
 <section id="bausteine" class="level2">
 <h2 class="anchored" data-anchor-id="bausteine">Bausteine des Tages</h2>
@@ -373,17 +333,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </tr>
 <tr class="odd">
 <td>Nach dem Briefing</td>
-<td>Ein Lauf vom Montag, dann Antigravity gemeinsam, dann Übungen</td>
-<td>Gemeinsam, dann Dreierteams</td>
+<td>Ein Lauf vom Montag, dann Antigravity: Workflow aus der Skizze</td>
+<td>Gemeinsam</td>
 </tr>
 <tr class="even">
 <td>Nachmittag</td>
-<td>Übungen und Input: Workflows und Agenten</td>
-<td>Dreierteams und gemeinsam</td>
+<td>Antigravity: Daten und Hypothese</td>
+<td>Gemeinsam</td>
 </tr>
 <tr class="odd">
+<td>Nachmittag</td>
+<td>Input: Workflows und Agenten</td>
+<td>Gemeinsam</td>
+</tr>
+<tr class="even">
 <td>Später Nachmittag</td>
-<td>Design-Reviews und Entscheidung für Mittwoch</td>
+<td>Kurze Runde und Entscheidung für Mittwoch</td>
 <td>Gemeinsam</td>
 </tr>
 </tbody>
@@ -434,78 +399,32 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <section id="gemeinsam-schritt-für-schritt-jedes-team-am-eigenen-rechner" class="level3 uebung">
 <h3 class="anchored" data-anchor-id="gemeinsam-schritt-für-schritt-jedes-team-am-eigenen-rechner">Gemeinsam Schritt für Schritt, jedes Team am eigenen Rechner</h3>
-<p><strong>Material:</strong> <a href="../material/workflows/antigravity-aurenta.zip">Startordner als ZIP</a> (Ablaufskizze als BPMN, Muster-Workflow, KI-Anweisung, Auftrag zum Kopieren), <a href="https://antigravity.google/" target="_blank">Antigravity</a>.</p>
-<p>Am Montag wurde der Workflow von Hand gebaut. Jetzt baut ihn ein Agent aus der Ablaufskizze, und das Team prüft, ob er den Regeln der Skizze entspricht. Das ist die Arbeitsweise für das Semester: Der Agent erzeugt, der Mensch prüft.</p>
+<p><strong>Material:</strong> <a href="../material/workflows/antigravity-aurenta.zip">Startordner als ZIP</a>, <a href="https://antigravity.google/" target="_blank">Antigravity</a>.</p>
+<p>Ein Agent baut den Workflow aus der Ablaufskizze, das Team prüft, ob er den Regeln der Skizze entspricht. Das ist die Arbeitsweise für das Semester: Der Agent erzeugt, der Mensch prüft.</p>
 <ol type="1">
-<li>Antigravity von antigravity.google herunterladen und installieren (Mac oder Windows). Mit dem Google-Konto anmelden, auf dem Gemini für Studierende läuft. Eine Person pro Team reicht, die anderen schauen mit.</li>
-<li>Das ZIP entpacken. In Antigravity links auf das Ordnersymbol mit „+“, „New Project“, den entpackten Ordner auswählen.</li>
-<li>Die Datei AUFTRAG.md öffnen, den Text unter der Linie kopieren und in den Chat einfügen. Abschicken. Der Agent legt einen Plan vor, liest die Dateien und schreibt aurenta-soll.json und zuordnung.md.</li>
-<li>Bevor etwas importiert wird: zuordnung.md lesen. Stimmt jeder Knoten mit einem Schritt der Skizze überein? Fehlt die Kontaktsperre vor dem KI-Schritt? Gibt es einen Knoten, der versendet oder schreibt? Wenn ja, dem Agenten die Korrektur im Chat auftragen.</li>
-<li>In n8n einen neuen Workflow anlegen, Menü oben rechts, „Import from file“, aurenta-soll.json wählen. Im Kursmodell das Credential „Gemini (Gruppe N)“ auswählen.</li>
-<li>Mit K-01 ausführen, dann im Knoten „Kontakt“ die Felder von K-05 eintragen und erneut ausführen. Bei K-05 darf der KI-Schritt nicht laufen.</li>
+<li>Antigravity installieren und mit dem Google-Konto anmelden, auf dem Gemini für Studierende läuft. Eine Person pro Team reicht.</li>
+<li>Das ZIP entpacken und den Ordner in Antigravity als Projekt öffnen.</li>
+<li>Den Auftrag aus AUFTRAG.md in den Chat geben. Der Agent liest die Skizze und das Muster und schreibt den Workflow als Datei.</li>
+<li>Prüfen, bevor importiert wird: Passt jeder Knoten zu einem Schritt der Skizze? Liegt die Kontaktsperre vor dem KI-Schritt? Versendet nichts?</li>
+<li>In n8n importieren, Credential wählen, mit K-01 und K-05 ausführen.</li>
 </ol>
 <p><strong>Wenn die Installation nicht klappt:</strong> denselben Auftrag in den Gemini-Chat einfügen, dazu den Inhalt der BPMN-Datei und des Muster-Workflows als Text. Der Weg ist umständlicher, das Ergebnis dasselbe.</p>
-<p><strong>Ergebnis:</strong> aurenta-soll.json und zuordnung.md in der Teamablage, dazu zwei Sätze: Was hat der Agent anders gemacht als die Skizze, und was musste korrigiert werden?</p>
+<p><strong>Ergebnis:</strong> Der importierte Workflow läuft für K-01. Ein Satz in der Teamablage: Was musste am Vorschlag des Agenten korrigiert werden?</p>
 </section>
 </section>
 <section id="uebung-1-2" class="level2">
-<h2 class="anchored" data-anchor-id="uebung-1-2">Übung 1.2: Vom Trichter zur Hypothese</h2>
-<section id="dreierteams" class="level3 uebung">
-<h3 class="anchored" data-anchor-id="dreierteams">Dreierteams</h3>
-<p><strong>Material:</strong> <a href="https://docs.google.com/spreadsheets/d/1ri_Z7epna2iRNSJYo7tQtC3cjAihbDuxn6-DSZN12q0/edit">Webinar-Kontakte als Google Sheet</a>, <a href="https://docs.google.com/document/d/1YckXrnscZX7MjaUonjEQiHHqT2aO87pcMy2JlSQCDIU/edit">Anleitung Pivot-Tabellen</a>, <a href="https://docs.google.com/document/d/1RDw-7aKpkUtPurVk-NHItVg3zBKczG0G_tw_4TrfUtk/edit">Experimentkarte für Montag</a>.</p>
+<h2 class="anchored" data-anchor-id="uebung-1-2">Übung 1.2: Daten auswerten und eine Hypothese ableiten, mit Antigravity</h2>
+<section id="gemeinsam-schritt-für-schritt-jedes-team-am-eigenen-rechner-1" class="level3 uebung">
+<h3 class="anchored" data-anchor-id="gemeinsam-schritt-für-schritt-jedes-team-am-eigenen-rechner-1">Gemeinsam Schritt für Schritt, jedes Team am eigenen Rechner</h3>
+<p><strong>Material:</strong> derselbe Startordner, darin die Datei webinar-kontakte-330.csv und der Auftrag AUFTRAG-DATEN.md.</p>
+<p>Aurenta schickt allen Webinar-Kontakten dieselbe Einladung. Von 198 Follow-ups kamen 10 brauchbare Gespräche. Der Agent soll in den Daten finden, wo die Kontakte verloren gehen, und eine Hypothese vorschlagen. Das Team prüft, ob die Zahlen stimmen und die Hypothese Sinn ergibt.</p>
 <ol type="1">
-<li>Eine Person öffnet das Google Sheet und legt über „Datei” und „Kopie erstellen” eine Kopie in der Teamablage an. Die anderen beiden schauen mit.</li>
-<li>Nach der Anleitung die erste Pivot-Tabelle anlegen: Zeilen sind die Kampagnen, Werte sind die vier Ergebnisspalten als Summe. In die Experimentkarte unter „Beobachtung” schreiben, an welcher Stelle des Weges die meisten Kontakte verloren gehen, mit Zahlen: Zähler und Nenner.</li>
-<li>Die zweite Pivot-Tabelle anlegen: Zeilen sind die Anliegen-Kategorien, Spalten ist „Gespräch gebucht”, Filter ist „Nachricht gesendet”. Ebenfalls unter „Beobachtung” notieren, welche Gruppe fast nie bucht und welche vergleichsweise oft.</li>
-<li>Im Team zwei mögliche Erklärungen für die Beobachtung aufschreiben. Beide müssen sich auf die Tabellen stützen, nicht auf Vermutungen über die Personen.</li>
-<li>Eine der beiden Erklärungen als Hypothese formulieren, nach dem Muster „Wenn wir X ändern, dann Y, weil Z”. X ist eine Änderung, die Aurenta selbst vornehmen kann, Y eine Zahl, die sich messen lässt, Z der Grund. Beispiel aus einem anderen Bereich: Wenn ein Onlineshop die Versandkosten schon auf der Produktseite zeigt, dann sinkt der Anteil abgebrochener Bestellungen, weil weniger Kunden erst an der Kasse überrascht werden.</li>
-<li>Die Kennzahl festlegen, an der sich die Hypothese später prüfen ließe: Zähler, Nenner, Zeitraum. In die Experimentkarte unter „Kennzahl”.</li>
+<li>Den Auftrag aus AUFTRAG-DATEN.md in den Chat geben. Der Agent wertet die Datei aus und schreibt Tabellen, Hypothese und Kennzahl in eine Datei.</li>
+<li>Die Zahlen prüfen: Sind Zähler und Nenner genannt? Passt die Stelle mit dem größten Verlust zu dem, was in der Datei steht?</li>
+<li>Die Hypothese prüfen: Ist X etwas, das Aurenta selbst ändern kann? Ist Y messbar? Ist Z eine Erklärung, keine Vermutung über Personen?</li>
+<li>Wenn etwas nicht stimmt, den Agenten im Chat korrigieren lassen.</li>
 </ol>
-<p><strong>Ergebnis:</strong> Die Kopie des Sheets mit zwei Pivot-Tabellen und die ausgefüllte Experimentkarte (Beobachtung, Hypothese, Kennzahl), beides in der Teamablage.</p>
-</section>
-<p>Das Hypothesen-Muster wird direkt danach in Übung 2.1 auf Zoi übertragen.</p>
-</section>
-<section id="uebung-2-1" class="level2">
-<h2 class="anchored" data-anchor-id="uebung-2-1">Übung 2.1: Ein bearbeitbares Problem</h2>
-<section id="dreierteams-1" class="level3 uebung">
-<h3 class="anchored" data-anchor-id="dreierteams-1">Dreierteams</h3>
-<p><strong>Material:</strong> Mitschrift, <a href="https://docs.google.com/document/d/1Jwbhg5CbI-mxCJvRw1oSLBkLR7ZoPOQrwN0jsluFtIM/edit">Projektbrief</a>, <a href="https://docs.google.com/document/d/1JrrMgJ6fCEae3trCWNqdAonEc9EHbZ-PWskl8wtli-s/edit">Experimentkarte</a>.</p>
-<ol type="1">
-<li>Mitschriften zusammenführen: Aussagen mit Quelle und Zeitpunkt von Interpretationen trennen. Dafür einen Prompt nach dem Muster Kontext, Aufgabe, Format, Prüfung nutzen: Kontext ist die Mitschrift, Aufgabe das Trennen, Format eine Tabelle mit Quelle, Prüfung „nichts ergänzen, Lücken markieren“.</li>
-<li>Einen Engpass im Kundenweg wählen. Nutzen und betroffene Zielgruppe beschreiben, bevor Werkzeuge ausgewählt werden.</li>
-<li>Hypothese und alternative Erklärung formulieren, nach dem Muster aus Übung 1.2. Verfügbare Daten und geplante Wirkungsmetrik benennen.</li>
-<li>Einen ersten Ablauf und dessen Grenze festlegen: Welche Eingabe wird bis Mittwoch zu welcher prüfbaren Ausgabe? Was bleibt außerhalb dieses ersten Prototyps?.</li>
-</ol>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode default code-with-copy"><code class="sourceCode default"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>Prüfe diesen Projektbrief als kritischer Gesprächspartner.</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>&lt;Projektbrief hier einfügen.&gt;</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>Nenne höchstens drei Punkte, an denen Problem, Zielgruppe,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>Datenlage oder erwarteter Nutzen noch unklar sind.</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>Trenne Widersprüche im Text von eigenen Vermutungen.</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>Schlage für jeden Punkt eine konkrete Klärungsfrage vor.</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>Erfinde keine Aussagen des Partners und keine verfügbaren Daten.</span></code></pre></div><button title="In die Zwischenablage kopieren" class="code-copy-button"><i class="bi"></i></button></div>
-<p><strong>Ergebnis:</strong> Projektbrief Version 1. Das Team entscheidet selbst über den Zuschnitt und dokumentiert, welche KI-Rückmeldungen es übernommen oder verworfen hat.</p>
-</section>
-</section>
-<section id="uebung-2-2" class="level2">
-<h2 class="anchored" data-anchor-id="uebung-2-2">Übung 2.2: Den Kundenweg und den Ablauf verbinden</h2>
-<section id="dreierteams-2" class="level3 uebung">
-<h3 class="anchored" data-anchor-id="dreierteams-2">Dreierteams</h3>
-<p><strong>Material:</strong> Projektbrief und Workflow vom Montag, <a href="https://docs.google.com/document/d/1pO28YSUSkvbrn8drNZqMMVqimBHT2fiyT0LEfXeF_tY/edit">Lesehilfe Ablaufskizze</a>, Beispiel Aurenta heute (<a href="../material/prozess/aurenta-webinar-ist.svg">Bild</a> · <a href="../material/prozess/aurenta-webinar-ist.bpmn">BPMN</a>) und mit KI-Agent (<a href="../material/prozess/aurenta-webinar-soll.svg">Bild</a> · <a href="../material/prozess/aurenta-webinar-soll.bpmn">BPMN</a>).</p>
-<ol type="1">
-<li>Den fachlichen Weg von Interesse bis zu einem nächsten sinnvollen Schritt skizzieren.</li>
-<li>Für den gewählten Ausschnitt Eingabe, Verarbeitung, Ausgabe und menschliche Entscheidung ergänzen.</li>
-<li>Je Schritt feste Regel, Modellaufgabe oder menschliche Entscheidung markieren. Schnittstellen zu Recherche, Content, Follow-up und Reporting sichtbar machen.</li>
-<li>Die drei Testfälle für Mittwoch festlegen: normaler Fall, fehlende Information, Grenze oder Sperre.</li>
-</ol>
-<p>Die Skizze wird als Swimlane-Diagramm gezeichnet: eine Bahn je Rolle (Marketing-Team, KI-Agent, Workflow-System), der Schritt-Typ steckt im Symbol. Das Aurenta-Beispiel zeigt beide Stände. Werkzeug nach Wahl: draw.io mit BPMN-Formen oder demo.bpmn.io; ein Foto einer Whiteboard-Skizze ist als erste Fassung ebenfalls zulässig, wenn Bahnen und Entscheidungen erkennbar sind.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../material/prozess/aurenta-webinar-soll.svg"><img src="../material/prozess/aurenta-webinar-soll.svg" class="infografik img-fluid figure-img" alt="Swimlane-Diagramm des Soll-Prozesses: Kontakt aus CRM lesen, Kontaktfreigabe prüfen, KI-Agent ordnet Anliegen ein und erstellt Entwurf, Ergebnis zur Prüfung ablegen, Marketing-Team prüft und gibt frei, Versand durch Mensch."></a></p>
-<figcaption>Aurenta-Übungsfall: Webinar-Nachbereitung mit KI-Agent (Entwurf). Bahnen: Marketing-Team, KI-Agent, Workflow-System. Zum Vergrößern anklicken.</figcaption>
-</figure>
-</div>
-<p><strong>Ergebnis:</strong> Eine verständliche Swimlane-Skizze mit eindeutigen Feldnamen, abgelegt im Drive-Ordner des Teams. Mehrere Agenten sind kein Qualitätskriterium. Ein Modellschritt wird nur ergänzt, wenn die Aufgabe ihn begründet.</p>
+<p><strong>Ergebnis:</strong> Die Auswertung in der Teamablage und eine Hypothese, hinter der das Team steht.</p>
 </section>
 </section>
 <section id="agenten" class="level2">
@@ -520,30 +439,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <p>Ein Workflow legt die Schritte vorab fest, ein Agent wählt zur Laufzeit Werkzeuge und nächste Schritte selbst. Die Demo zeigt beides am Aurenta-Fall: den festen Ablauf vom Montag und die Agenten-Variante, in der das Modell entscheidet, welches Wissenswerkzeug es aufruft. Drei Fragen für die eigene Skizze: Reicht die einfachste Lösung? Ist jeder Schritt im Laufprotokoll nachvollziehbar? Was genau bekommt das Modell als Werkzeug, und was nicht? Eine begründete Entscheidung gegen einen Agenten ist im Projekt ausdrücklich zulässig.</p>
 </section>
-<section id="uebung-2-3" class="level2">
-<h2 class="anchored" data-anchor-id="uebung-2-3">Übung 2.3: Wiederverwendbare Anweisungen und ein erster Ausbau</h2>
-<div class="folien folien-inline">
-<p><span class="folien-label">Folien</span></p>
-<ul>
-<li>
-<a class="folie" href="../slides/n8n-workflows.html" target="_blank" rel="noopener">n8n: Workflows und Agenten <span>Abschnitt Ausbau</span></a>
-</li>
-</ul>
-</div>
-<section id="dreierteams-bedienung-wechseln" class="level3 uebung">
-<h3 class="anchored" data-anchor-id="dreierteams-bedienung-wechseln">Dreierteams, Bedienung wechseln</h3>
-<p><strong>Material:</strong> Eigener Workflow, <a href="../werkzeuge/workflows.html#ausbau">n8n-Anleitung zum Ausbau</a>, <a href="https://docs.google.com/document/d/1SIYpnRHpPq9tb5qiE0-Ixu8o4xy0_5NJHvM-DgZ0LYc/edit">Anweisungen</a>.</p>
-<ol type="1">
-<li>Aus der Ablaufskizze eine gezielte Erweiterung auswählen: strukturierte Felder, feste Kontaktsperre oder passendere Materialauswahl.</li>
-<li>Die Erweiterung im eigenen n8n-Workflow umsetzen, mit der Lösung 1.4b oder dem Ergebnis aus Übung 1.3 als Referenz.</li>
-<li>Einen Fall vor und nach der Änderung prüfen, Export und Änderungsgrund ablegen.</li>
-</ol>
-<p><strong>Ergebnis:</strong> Ein überarbeiteter lauffähiger Ablauf. Bei unvollständigem Zoi-Material steht im Export ausdrücklich „Aurenta-Übungsfall“. Die Ausgaben bleiben Entwürfe.</p>
-</section>
-</section>
-<section id="design-reviews" class="level2">
-<h2 class="anchored" data-anchor-id="design-reviews">Design-Reviews</h2>
-<p>Jedes Team kurz: Problem und Datenlage, ein funktionierender Ausschnitt, ein offener Test, Entscheidung für Mittwoch. Das Review bestätigt einen bearbeitbaren nächsten Schritt. Es verlangt noch keinen vollständigen Semesterprozess.</p>
+<section id="kurze-runde-zum-abschluss" class="level2">
+<h2 class="anchored" data-anchor-id="kurze-runde-zum-abschluss">Kurze Runde zum Abschluss</h2>
+<p>Jedes Team zeigt in wenigen Minuten: den importierten Workflow, die Hypothese aus den Daten, und was es am Vorschlag des Agenten korrigieren musste. Daraus folgt die Entscheidung, womit das Team am Mittwoch weiterarbeitet.</p>
 <div class="folien">
 <p><span class="folien-label">Alle Folien zu diesem Tag</span></p>
 <p>Die Präsentationen öffnen sich in einem neuen Tab.</p>
