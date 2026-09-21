@@ -25,7 +25,7 @@ Für die textbasierten Pflichtübungen ist kein Bezahlabo vorgesehen; der kosten
 :::
 
 ::: {.callout-tip title="Freiwillig: Google AI Plus für Studierende"}
-Google stellt Studierenden und Auszubildenden ein Jahr lang [Google AI Plus](https://gemini.google/students/) kostenlos bereit, mit höheren Nutzungslimits, mehr Speicher und zusätzlichen Funktionen.
+Google stellt Studierenden und Auszubildenden ein Jahr lang [Google AI Plus](https://gemini.google/de/students/?hl=de) kostenlos bereit, mit höheren Nutzungslimits, mehr Speicher und zusätzlichen Funktionen.
 
 Das gehört **nicht zum Kurs** und bringt bei der Bewertung keinen Vorteil. Wer sich dafür interessiert, sollte vorher drei Punkte kennen:
 
