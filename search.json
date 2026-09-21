@@ -14,18 +14,18 @@
     "text": "Drei Fragen pro Team und drei Rollen im Briefing\n\n\nDrei Fragen vorbereiten\n\neine zu Problem und Ziel\neine zu Daten und Prozess\neine zur späteren Nutzbarkeit\n\n\n\nDrei Rollen während des Briefings\n\nbelegte Aussagen notieren, mit Zeitpunkt\nAnnahmen und offene Punkte erkennen\nFragen stellen\n\n\n\n\nVorstellung durch Zoi, danach Fragen. Die Rollen wechseln beim anschließenden Bearbeiten.\n\n\nDie gestern gesammelten Fragen als Ausgangspunkt. Jedes Team markiert die eine Frage, die es selbst stellt. Eine geplante Veranstaltung ist noch kein Nachweis einer getroffenen Vereinbarung: Was Zoi vorhat, ist nicht dasselbe wie das, was Zoi tut."
   },
   {
-    "objectID": "slides/tag2-briefing.html#rückblick-ein-lauf-ein-fehler-eine-ursache",
-    "href": "slides/tag2-briefing.html#rückblick-ein-lauf-ein-fehler-eine-ursache",
+    "objectID": "slides/tag2-briefing.html#wenn-das-ergebnis-nicht-passt-woran-lag-es",
+    "href": "slides/tag2-briefing.html#wenn-das-ergebnis-nicht-passt-woran-lag-es",
     "title": "Vom Übungsfall zum Zoi-Auftrag",
-    "section": "Rückblick: ein Lauf, ein Fehler, eine Ursache",
-    "text": "Rückblick: ein Lauf, ein Fehler, eine Ursache\n\n\nUrsache 1\nDaten\nFalsches Feld, leeres Anliegen, vertauschte Kontakt-ID. Der Fehler entsteht vor dem Modell.\n\n\nUrsache 2\nAnweisung\nRegel fehlt oder ist unklar. Das Modell tut, was der Prompt zulässt, etwa ein Gespräch trotz Materialwunsch.\n\n\nUrsache 3\nModell\nAnweisung und Daten stimmen, die Antwort trotzdem nicht. Erst hier hilft ein anderes Modell oder ein Critic.\n\n\n\nErwartung vor dem Lauf nennen, dann das Ergebnis lesen. Ergebnis ist eine überprüfbare Änderung, kein Grundsatzgespräch.\n\n\nDen Lösungsworkflow mit K-02 an die Wand: Welche Eingabe führte zu welcher Empfehlung? Die drei Ursachen sauber trennen, weil sie drei verschiedene Korrekturen brauchen."
+    "section": "Wenn das Ergebnis nicht passt: Woran lag es?",
+    "text": "Wenn das Ergebnis nicht passt: Woran lag es?\n\n\nUrsache 1\nDaten\nDas Modell hat falsche oder unvollständige Angaben bekommen, zum Beispiel ein leeres Anliegen oder die falsche Kontakt-ID.\n\n\nUrsache 2\nAnweisung\nDie Angaben stimmen, aber im Prompt fehlt eine Regel oder sie ist unklar. Beispiel: Der Kontakt will nur Material, der Prompt erlaubt trotzdem eine Gesprächseinladung.\n\n\nUrsache 3\nModell\nAngaben und Prompt stimmen, die Antwort ist trotzdem falsch. Erst dann lohnt ein anderes Modell oder ein zusätzlicher Prüfschritt.\n\n\n\nVorgehen: Erst sagen, welche Entscheidung wir für K-02 erwarten. Dann den Lauf starten und vergleichen. Zum Schluss eine konkrete Änderung festhalten.\n\n\nDen Lösungsworkflow mit K-02 an die Wand: Welche Eingabe führte zu welcher Empfehlung? Die drei Ursachen sauber trennen, weil sie drei verschiedene Korrekturen brauchen."
   },
   {
-    "objectID": "slides/tag2-briefing.html#der-projektbrief-beantwortet-vier-fragen-bevor-werkzeuge-gewählt-werden",
-    "href": "slides/tag2-briefing.html#der-projektbrief-beantwortet-vier-fragen-bevor-werkzeuge-gewählt-werden",
+    "objectID": "slides/tag2-briefing.html#der-projektbrief-vier-fragen-bevor-es-um-werkzeuge-geht",
+    "href": "slides/tag2-briefing.html#der-projektbrief-vier-fragen-bevor-es-um-werkzeuge-geht",
     "title": "Vom Übungsfall zum Zoi-Auftrag",
-    "section": "Der Projektbrief beantwortet vier Fragen, bevor Werkzeuge gewählt werden",
-    "text": "Der Projektbrief beantwortet vier Fragen, bevor Werkzeuge gewählt werden\n\n\nFrage 1\nWelcher Engpass?\nEine Stelle im Kundenweg, Nutzen und betroffene Zielgruppe. Aussagen mit Quelle, getrennt von Interpretationen.\n\n\nFrage 2\nWelche Hypothese?\nWenn X, dann Y, weil Z. Dazu eine alternative Erklärung, verfügbare Daten, geplante Kennzahl.\n\n\nFrage 3\nWelcher erste Ablauf?\nWelche Eingabe wird bis Mittwoch zu welcher prüfbaren Ausgabe?\n\n\nFrage 4\nWo ist die Grenze?\nWas bleibt ausdrücklich außerhalb des ersten Prototyps? Das schützt vor dem vollständigen Semesterprozess in einem Tag.\n\n\n\nVorlage auf der Kursseite. Übung 2.1, etwa eine Stunde: Mitschriften zusammenführen, Engpass wählen, Hypothese formulieren, Ablauf und Grenze festlegen. Das Team entscheidet den Zuschnitt selbst."
+    "section": "Der Projektbrief: vier Fragen, bevor es um Werkzeuge geht",
+    "text": "Der Projektbrief: vier Fragen, bevor es um Werkzeuge geht\n\n\nFrage 1\nWelcher Engpass?\nAn welcher Stelle im Kundenweg gehen Kontakte verloren, und wem würde eine Verbesserung nützen? Nur, was Zoi gesagt hat, zählt als Fakt.\n\n\nFrage 2\nWelche Hypothese?\nWenn wir X ändern, dann verbessert sich Y, weil Z. Dazu: Welche andere Erklärung wäre möglich, welche Daten gibt es, woran messen wir?\n\n\nFrage 3\nWelcher erste Ablauf?\nWas geht in den Workflow hinein, und was kommt heraus? So klein, dass es bis Mittwoch läuft und getestet werden kann.\n\n\nFrage 4\nWo ist die Grenze?\nWas lassen wir bewusst weg? Der erste Prototyp ist ein Ausschnitt, nicht das ganze Semesterprojekt.\n\n\n\nVorlage auf der Kursseite. Übung 2.1, etwa eine Stunde: Mitschriften zusammenführen, Engpass wählen, Hypothese formulieren, Ablauf und Grenze festlegen. Das Team entscheidet den Zuschnitt selbst."
   },
   {
     "objectID": "slides/tag2-briefing.html#ein-kritischer-chat-prüft-den-brief-entscheidet-aber-nicht",
@@ -46,21 +46,21 @@
     "href": "slides/tag2-briefing.html#aurenta-heute-alle-kontakte-bekommen-dieselbe-einladung",
     "title": "Vom Übungsfall zum Zoi-Auftrag",
     "section": "Aurenta heute: alle Kontakte bekommen dieselbe Einladung",
-    "text": "Aurenta heute: alle Kontakte bekommen dieselbe Einladung\n\n\nWerkzeug: demo.bpmn.io öffnen · Datei aurenta-webinar-ist.bpmn herunterladen und per Drag-and-drop ins Werkzeug ziehen\n\n\nVon links nach rechts lesen. Der Ist-Prozess hat keinen Modellschritt und keine Unterscheidung nach Anliegen. Das ist der Engpass aus der Hypothese: Die Einladung kommt für einen Teil der Kontakte zu früh."
+    "text": "Aurenta heute: alle Kontakte bekommen dieselbe Einladung\n\n\nSelbst öffnen: Datei herunterladen, dann demo.bpmn.io öffnen und die Datei hineinziehen.\n\n\nVon links nach rechts lesen. Der Ist-Prozess hat keinen Modellschritt und keine Unterscheidung nach Anliegen. Das ist der Engpass aus der Hypothese: Die Einladung kommt für einen Teil der Kontakte zu früh."
   },
   {
     "objectID": "slides/tag2-briefing.html#aurenta-mit-ki-agent-sperre-einordnung-entwurf-menschliche-freigabe",
     "href": "slides/tag2-briefing.html#aurenta-mit-ki-agent-sperre-einordnung-entwurf-menschliche-freigabe",
     "title": "Vom Übungsfall zum Zoi-Auftrag",
     "section": "Aurenta mit KI-Agent: Sperre, Einordnung, Entwurf, menschliche Freigabe",
-    "text": "Aurenta mit KI-Agent: Sperre, Einordnung, Entwurf, menschliche Freigabe\n\n\nWerkzeug: demo.bpmn.io öffnen · Datei aurenta-webinar-soll.bpmn herunterladen und per Drag-and-drop ins Werkzeug ziehen\n\n\nDie Kontaktsperre liegt als feste Regel im Workflow-System, vor dem Modell. Der KI-Agent ordnet das Anliegen ein und schreibt den Entwurf. Freigabe und Versand bleiben in der Bahn Marketing-Team. Genau das ist der Workflow 02 von gestern, nur als Prozessbild."
+    "text": "Aurenta mit KI-Agent: Sperre, Einordnung, Entwurf, menschliche Freigabe\n\n\nSelbst öffnen: Datei herunterladen, dann demo.bpmn.io öffnen und die Datei hineinziehen.\n\n\nDie Kontaktsperre liegt als feste Regel im Workflow-System, vor dem Modell. Der KI-Agent ordnet das Anliegen ein und schreibt den Entwurf. Freigabe und Versand bleiben in der Bahn Marketing-Team. Genau das ist der Workflow 02 von gestern, nur als Prozessbild."
   },
   {
-    "objectID": "slides/tag2-briefing.html#jeder-schritt-ist-feste-regel-modellaufgabe-oder-menschliche-entscheidung",
-    "href": "slides/tag2-briefing.html#jeder-schritt-ist-feste-regel-modellaufgabe-oder-menschliche-entscheidung",
+    "objectID": "slides/tag2-briefing.html#jeder-schritt-in-der-skizze-ist-eines-von-dreien-regel-ki-oder-mensch",
+    "href": "slides/tag2-briefing.html#jeder-schritt-in-der-skizze-ist-eines-von-dreien-regel-ki-oder-mensch",
     "title": "Vom Übungsfall zum Zoi-Auftrag",
-    "section": "Jeder Schritt ist feste Regel, Modellaufgabe oder menschliche Entscheidung",
-    "text": "Jeder Schritt ist feste Regel, Modellaufgabe oder menschliche Entscheidung\n\nIn der eigenen Skizze wird je Schritt markiert, welche der drei Arten er ist, und wo die Schnittstellen zu Recherche, Content, Follow-up und Reporting liegen. Ein Modellschritt wird nur ergänzt, wenn die Aufgabe ihn begründet.\n\n\nAus der Skizze folgen die drei Testfälle für Mittwoch: normaler Fall, fehlende Information, Grenze oder Sperre.\n\n\nÜbung 2.2: fachlichen Weg skizzieren, für den gewählten Ausschnitt Eingabe, Verarbeitung, Ausgabe und menschliche Entscheidung ergänzen, Schritt-Typen markieren, Testfälle festlegen. Mehrere Agenten sind kein Qualitätskriterium."
+    "section": "Jeder Schritt in der Skizze ist eines von dreien: Regel, KI oder Mensch",
+    "text": "Jeder Schritt in der Skizze ist eines von dreien: Regel, KI oder Mensch\n\nFeste Regel: läuft immer gleich, braucht keine KI. KI-Schritt: braucht Sprachverständnis oder muss formulieren. Mensch: entscheidet, gibt frei, versendet. Jeder Kasten in der Skizze bekommt eine dieser drei Arten. KI kommt nur dorthin, wo eine Regel nicht reicht.\n\n\nAus der Skizze ergeben sich die drei Testfälle für Mittwoch: ein normaler Fall, ein Fall mit fehlender Information, ein gesperrter Kontakt.\n\n\nÜbung 2.2: fachlichen Weg skizzieren, für den gewählten Ausschnitt Eingabe, Verarbeitung, Ausgabe und menschliche Entscheidung ergänzen, Schritt-Typen markieren, Testfälle festlegen. Mehrere Agenten sind kein Qualitätskriterium."
   },
   {
     "objectID": "slides/tag2-briefing.html#eine-antwort-aus-gemini-ist-nicht-dieselbe-antwort-in-n8n",

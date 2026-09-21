@@ -386,27 +386,27 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="rückblick-ein-lauf-ein-fehler-eine-ursache" class="slide level2">
-<h2>Rückblick: ein Lauf, ein Fehler, eine Ursache</h2>
+<section id="wenn-das-ergebnis-nicht-passt-woran-lag-es" class="slide level2">
+<h2>Wenn das Ergebnis nicht passt: Woran lag es?</h2>
 <div class="ws-cards">
 <div class="ws-card fragment">
 <p><span class="ws-card__tag">Ursache 1</span></p>
 <p><span class="ws-h">Daten</span></p>
-<p>Falsches Feld, leeres Anliegen, vertauschte Kontakt-ID. Der Fehler entsteht vor dem Modell.</p>
+<p>Das Modell hat falsche oder unvollständige Angaben bekommen, zum Beispiel ein leeres Anliegen oder die falsche Kontakt-ID.</p>
 </div>
 <div class="ws-card fragment">
 <p><span class="ws-card__tag">Ursache 2</span></p>
 <p><span class="ws-h">Anweisung</span></p>
-<p>Regel fehlt oder ist unklar. Das Modell tut, was der Prompt zulässt, etwa ein Gespräch trotz Materialwunsch.</p>
+<p>Die Angaben stimmen, aber im Prompt fehlt eine Regel oder sie ist unklar. Beispiel: Der Kontakt will nur Material, der Prompt erlaubt trotzdem eine Gesprächseinladung.</p>
 </div>
 <div class="ws-card fragment">
 <p><span class="ws-card__tag">Ursache 3</span></p>
 <p><span class="ws-h">Modell</span></p>
-<p>Anweisung und Daten stimmen, die Antwort trotzdem nicht. Erst hier hilft ein anderes Modell oder ein Critic.</p>
+<p>Angaben und Prompt stimmen, die Antwort ist trotzdem falsch. Erst dann lohnt ein anderes Modell oder ein zusätzlicher Prüfschritt.</p>
 </div>
 </div>
 <div class="ws-note">
-<p>Erwartung vor dem Lauf nennen, dann das Ergebnis lesen. Ergebnis ist eine überprüfbare Änderung, kein Grundsatzgespräch.</p>
+<p>Vorgehen: Erst sagen, welche Entscheidung wir für K-02 erwarten. Dann den Lauf starten und vergleichen. Zum Schluss eine konkrete Änderung festhalten.</p>
 </div>
 <aside class="notes">
 <p>Den Lösungsworkflow mit K-02 an die Wand: Welche Eingabe führte zu welcher Empfehlung? Die drei Ursachen sauber trennen, weil sie drei verschiedene Korrekturen brauchen.</p>
@@ -430,28 +430,28 @@
 
 </div>
 </section>
-<section id="der-projektbrief-beantwortet-vier-fragen-bevor-werkzeuge-gewählt-werden" class="slide level2">
-<h2>Der Projektbrief beantwortet vier Fragen, bevor Werkzeuge gewählt werden</h2>
+<section id="der-projektbrief-vier-fragen-bevor-es-um-werkzeuge-geht" class="slide level2">
+<h2>Der Projektbrief: vier Fragen, bevor es um Werkzeuge geht</h2>
 <div class="ws-cards">
 <div class="ws-card fragment">
 <p><span class="ws-card__tag">Frage 1</span></p>
 <p><span class="ws-h">Welcher Engpass?</span></p>
-<p>Eine Stelle im Kundenweg, Nutzen und betroffene Zielgruppe. Aussagen mit Quelle, getrennt von Interpretationen.</p>
+<p>An welcher Stelle im Kundenweg gehen Kontakte verloren, und wem würde eine Verbesserung nützen? Nur, was Zoi gesagt hat, zählt als Fakt.</p>
 </div>
 <div class="ws-card fragment">
 <p><span class="ws-card__tag">Frage 2</span></p>
 <p><span class="ws-h">Welche Hypothese?</span></p>
-<p>Wenn X, dann Y, weil Z. Dazu eine alternative Erklärung, verfügbare Daten, geplante Kennzahl.</p>
+<p>Wenn wir X ändern, dann verbessert sich Y, weil Z. Dazu: Welche andere Erklärung wäre möglich, welche Daten gibt es, woran messen wir?</p>
 </div>
 <div class="ws-card fragment is-key">
 <p><span class="ws-card__tag">Frage 3</span></p>
 <p><span class="ws-h">Welcher erste Ablauf?</span></p>
-<p>Welche Eingabe wird bis Mittwoch zu welcher prüfbaren Ausgabe?</p>
+<p>Was geht in den Workflow hinein, und was kommt heraus? So klein, dass es bis Mittwoch läuft und getestet werden kann.</p>
 </div>
 <div class="ws-card fragment">
 <p><span class="ws-card__tag">Frage 4</span></p>
 <p><span class="ws-h">Wo ist die Grenze?</span></p>
-<p>Was bleibt ausdrücklich außerhalb des ersten Prototyps? Das schützt vor dem vollständigen Semesterprozess in einem Tag.</p>
+<p>Was lassen wir bewusst weg? Der erste Prototyp ist ein Ausschnitt, nicht das ganze Semesterprojekt.</p>
 </div>
 </div>
 <aside class="notes">
@@ -577,7 +577,7 @@
 <h2>Aurenta heute: alle Kontakte bekommen dieselbe Einladung</h2>
 
 <img data-src="images/aurenta-webinar-ist.png" alt="Swimlane-Diagramm des Ist-Prozesses der Webinar-Nachbereitung bei Aurenta." class="r-stretch"><div class="ws-note">
-<p><a href="https://demo.bpmn.io/new" target="_blank">Werkzeug: demo.bpmn.io öffnen</a> · <a href="../material/prozess/aurenta-webinar-ist.bpmn" download="aurenta-webinar-ist.bpmn">Datei aurenta-webinar-ist.bpmn herunterladen</a> und per Drag-and-drop ins Werkzeug ziehen</p>
+<p>Selbst öffnen: <a href="../material/prozess/aurenta-webinar-ist.bpmn" download="aurenta-webinar-ist.bpmn">Datei herunterladen</a>, dann <a href="https://demo.bpmn.io/new" target="_blank">demo.bpmn.io</a> öffnen und die Datei hineinziehen.</p>
 </div>
 <aside class="notes">
 <p>Von links nach rechts lesen. Der Ist-Prozess hat keinen Modellschritt und keine Unterscheidung nach Anliegen. Das ist der Engpass aus der Hypothese: Die Einladung kommt für einen Teil der Kontakte zu früh.</p>
@@ -597,7 +597,7 @@
 <h2>Aurenta mit KI-Agent: Sperre, Einordnung, Entwurf, menschliche Freigabe</h2>
 
 <img data-src="images/aurenta-webinar-soll.png" alt="Swimlane-Diagramm des Soll-Prozesses: Kontakt aus CRM lesen, Kontaktfreigabe prüfen, KI-Agent ordnet Anliegen ein und erstellt Entwurf, Marketing-Team prüft und gibt frei, Versand durch Mensch." class="r-stretch"><div class="ws-note">
-<p><a href="https://demo.bpmn.io/new" target="_blank">Werkzeug: demo.bpmn.io öffnen</a> · <a href="../material/prozess/aurenta-webinar-soll.bpmn" download="aurenta-webinar-soll.bpmn">Datei aurenta-webinar-soll.bpmn herunterladen</a> und per Drag-and-drop ins Werkzeug ziehen</p>
+<p>Selbst öffnen: <a href="../material/prozess/aurenta-webinar-soll.bpmn" download="aurenta-webinar-soll.bpmn">Datei herunterladen</a>, dann <a href="https://demo.bpmn.io/new" target="_blank">demo.bpmn.io</a> öffnen und die Datei hineinziehen.</p>
 </div>
 <aside class="notes">
 <p>Die Kontaktsperre liegt als feste Regel im Workflow-System, vor dem Modell. Der KI-Agent ordnet das Anliegen ein und schreibt den Entwurf. Freigabe und Versand bleiben in der Bahn Marketing-Team. Genau das ist der Workflow 02 von gestern, nur als Prozessbild.</p>
@@ -613,13 +613,13 @@
           display:block!important;
       }</style></aside>
 </section>
-<section id="jeder-schritt-ist-feste-regel-modellaufgabe-oder-menschliche-entscheidung" class="slide level2 center">
-<h2>Jeder Schritt ist feste Regel, Modellaufgabe oder menschliche Entscheidung</h2>
+<section id="jeder-schritt-in-der-skizze-ist-eines-von-dreien-regel-ki-oder-mensch" class="slide level2 center">
+<h2>Jeder Schritt in der Skizze ist eines von dreien: Regel, KI oder Mensch</h2>
 <div class="ws-statement">
-<p>In der eigenen Skizze wird je Schritt markiert, welche der drei Arten er ist, und wo die Schnittstellen zu Recherche, Content, Follow-up und Reporting liegen. Ein Modellschritt wird nur ergänzt, wenn die Aufgabe ihn begründet.</p>
+<p>Feste Regel: läuft immer gleich, braucht keine KI. KI-Schritt: braucht Sprachverständnis oder muss formulieren. Mensch: entscheidet, gibt frei, versendet. Jeder Kasten in der Skizze bekommt eine dieser drei Arten. KI kommt nur dorthin, wo eine Regel nicht reicht.</p>
 </div>
 <div class="ws-note">
-<p>Aus der Skizze folgen die drei Testfälle für Mittwoch: normaler Fall, fehlende Information, Grenze oder Sperre.</p>
+<p>Aus der Skizze ergeben sich die drei Testfälle für Mittwoch: ein normaler Fall, ein Fall mit fehlender Information, ein gesperrter Kontakt.</p>
 </div>
 <aside class="notes">
 <p>Übung 2.2: fachlichen Weg skizzieren, für den gewählten Ausschnitt Eingabe, Verarbeitung, Ausgabe und menschliche Entscheidung ergänzen, Schritt-Typen markieren, Testfälle festlegen. Mehrere Agenten sind kein Qualitätskriterium.</p>
