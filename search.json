@@ -46,14 +46,14 @@
     "href": "slides/tag2-briefing.html#aurenta-heute-alle-kontakte-bekommen-dieselbe-einladung",
     "title": "Vom Übungsfall zum Zoi-Auftrag",
     "section": "Aurenta heute: alle Kontakte bekommen dieselbe Einladung",
-    "text": "Aurenta heute: alle Kontakte bekommen dieselbe Einladung\n\n\nVon links nach rechts lesen. Der Ist-Prozess hat keinen Modellschritt und keine Unterscheidung nach Anliegen. Das ist der Engpass aus der Hypothese: Die Einladung kommt für einen Teil der Kontakte zu früh."
+    "text": "Aurenta heute: alle Kontakte bekommen dieselbe Einladung\n\n\nWerkzeug: demo.bpmn.io öffnen · Datei aurenta-webinar-ist.bpmn herunterladen und per Drag-and-drop ins Werkzeug ziehen\n\n\nVon links nach rechts lesen. Der Ist-Prozess hat keinen Modellschritt und keine Unterscheidung nach Anliegen. Das ist der Engpass aus der Hypothese: Die Einladung kommt für einen Teil der Kontakte zu früh."
   },
   {
     "objectID": "slides/tag2-briefing.html#aurenta-mit-ki-agent-sperre-einordnung-entwurf-menschliche-freigabe",
     "href": "slides/tag2-briefing.html#aurenta-mit-ki-agent-sperre-einordnung-entwurf-menschliche-freigabe",
     "title": "Vom Übungsfall zum Zoi-Auftrag",
     "section": "Aurenta mit KI-Agent: Sperre, Einordnung, Entwurf, menschliche Freigabe",
-    "text": "Aurenta mit KI-Agent: Sperre, Einordnung, Entwurf, menschliche Freigabe\n\n\nDie Kontaktsperre liegt als feste Regel im Workflow-System, vor dem Modell. Der KI-Agent ordnet das Anliegen ein und schreibt den Entwurf. Freigabe und Versand bleiben in der Bahn Marketing-Team. Genau das ist der Workflow 02 von gestern, nur als Prozessbild."
+    "text": "Aurenta mit KI-Agent: Sperre, Einordnung, Entwurf, menschliche Freigabe\n\n\nWerkzeug: demo.bpmn.io öffnen · Datei aurenta-webinar-soll.bpmn herunterladen und per Drag-and-drop ins Werkzeug ziehen\n\n\nDie Kontaktsperre liegt als feste Regel im Workflow-System, vor dem Modell. Der KI-Agent ordnet das Anliegen ein und schreibt den Entwurf. Freigabe und Versand bleiben in der Bahn Marketing-Team. Genau das ist der Workflow 02 von gestern, nur als Prozessbild."
   },
   {
     "objectID": "slides/tag2-briefing.html#jeder-schritt-ist-feste-regel-modellaufgabe-oder-menschliche-entscheidung",
