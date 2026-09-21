@@ -74,7 +74,7 @@ Vorstellung durch Zoi, danach Fragen. Die Rollen wechseln beim anschließenden B
 Die gestern gesammelten Fragen als Ausgangspunkt. Jedes Team markiert die eine Frage, die es selbst stellt. Eine geplante Veranstaltung ist noch kein Nachweis einer getroffenen Vereinbarung: Was Zoi vorhat, ist nicht dasselbe wie das, was Zoi tut.
 :::
 
-## Rückblick: ein Lauf, ein Fehler, eine Ursache
+## Wenn das Ergebnis nicht passt: Woran lag es?
 
 ::: {.ws-cards}
 ::: {.ws-card .fragment}
@@ -82,26 +82,26 @@ Die gestern gesammelten Fragen als Ausgangspunkt. Jedes Team markiert die eine F
 
 [Daten]{.ws-h}
 
-Falsches Feld, leeres Anliegen, vertauschte Kontakt-ID. Der Fehler entsteht vor dem Modell.
+Das Modell hat falsche oder unvollständige Angaben bekommen, zum Beispiel ein leeres Anliegen oder die falsche Kontakt-ID.
 :::
 ::: {.ws-card .fragment}
 [Ursache 2]{.ws-card__tag}
 
 [Anweisung]{.ws-h}
 
-Regel fehlt oder ist unklar. Das Modell tut, was der Prompt zulässt, etwa ein Gespräch trotz Materialwunsch.
+Die Angaben stimmen, aber im Prompt fehlt eine Regel oder sie ist unklar. Beispiel: Der Kontakt will nur Material, der Prompt erlaubt trotzdem eine Gesprächseinladung.
 :::
 ::: {.ws-card .fragment}
 [Ursache 3]{.ws-card__tag}
 
 [Modell]{.ws-h}
 
-Anweisung und Daten stimmen, die Antwort trotzdem nicht. Erst hier hilft ein anderes Modell oder ein Critic.
+Angaben und Prompt stimmen, die Antwort ist trotzdem falsch. Erst dann lohnt ein anderes Modell oder ein zusätzlicher Prüfschritt.
 :::
 :::
 
 ::: {.ws-note}
-Erwartung vor dem Lauf nennen, dann das Ergebnis lesen. Ergebnis ist eine überprüfbare Änderung, kein Grundsatzgespräch.
+Vorgehen: Erst sagen, welche Entscheidung wir für K-02 erwarten. Dann den Lauf starten und vergleichen. Zum Schluss eine konkrete Änderung festhalten.
 :::
 
 ::: {.notes}
@@ -112,7 +112,7 @@ Den Lösungsworkflow mit K-02 an die Wand: Welche Eingabe führte zu welcher Emp
 
 {{< include includes/bg-grid.html >}}
 
-## Der Projektbrief beantwortet vier Fragen, bevor Werkzeuge gewählt werden
+## Der Projektbrief: vier Fragen, bevor es um Werkzeuge geht
 
 ::: {.ws-cards}
 ::: {.ws-card .fragment}
@@ -120,28 +120,28 @@ Den Lösungsworkflow mit K-02 an die Wand: Welche Eingabe führte zu welcher Emp
 
 [Welcher Engpass?]{.ws-h}
 
-Eine Stelle im Kundenweg, Nutzen und betroffene Zielgruppe. Aussagen mit Quelle, getrennt von Interpretationen.
+An welcher Stelle im Kundenweg gehen Kontakte verloren, und wem würde eine Verbesserung nützen? Nur, was Zoi gesagt hat, zählt als Fakt.
 :::
 ::: {.ws-card .fragment}
 [Frage 2]{.ws-card__tag}
 
 [Welche Hypothese?]{.ws-h}
 
-Wenn X, dann Y, weil Z. Dazu eine alternative Erklärung, verfügbare Daten, geplante Kennzahl.
+Wenn wir X ändern, dann verbessert sich Y, weil Z. Dazu: Welche andere Erklärung wäre möglich, welche Daten gibt es, woran messen wir?
 :::
 ::: {.ws-card .fragment .is-key}
 [Frage 3]{.ws-card__tag}
 
 [Welcher erste Ablauf?]{.ws-h}
 
-Welche Eingabe wird bis Mittwoch zu welcher prüfbaren Ausgabe?
+Was geht in den Workflow hinein, und was kommt heraus? So klein, dass es bis Mittwoch läuft und getestet werden kann.
 :::
 ::: {.ws-card .fragment}
 [Frage 4]{.ws-card__tag}
 
 [Wo ist die Grenze?]{.ws-h}
 
-Was bleibt ausdrücklich außerhalb des ersten Prototyps? Das schützt vor dem vollständigen Semesterprozess in einem Tag.
+Was lassen wir bewusst weg? Der erste Prototyp ist ein Ausschnitt, nicht das ganze Semesterprojekt.
 :::
 :::
 
@@ -187,7 +187,7 @@ Notation ist BPMN 2.0, dieselbe wie in Prozessmanagement-Werkzeugen. Für die Ü
 ![](images/aurenta-webinar-ist.png){fig-alt="Swimlane-Diagramm des Ist-Prozesses der Webinar-Nachbereitung bei Aurenta."}
 
 ::: {.ws-note}
-[Werkzeug: demo.bpmn.io öffnen](https://demo.bpmn.io/new){target="_blank"} · [Datei aurenta-webinar-ist.bpmn herunterladen](../material/prozess/aurenta-webinar-ist.bpmn){download="aurenta-webinar-ist.bpmn"} und per Drag-and-drop ins Werkzeug ziehen
+Selbst öffnen: [Datei herunterladen](../material/prozess/aurenta-webinar-ist.bpmn){download="aurenta-webinar-ist.bpmn"}, dann [demo.bpmn.io](https://demo.bpmn.io/new){target="_blank"} öffnen und die Datei hineinziehen.
 :::
 
 ::: {.notes}
@@ -199,21 +199,21 @@ Von links nach rechts lesen. Der Ist-Prozess hat keinen Modellschritt und keine 
 ![](images/aurenta-webinar-soll.png){fig-alt="Swimlane-Diagramm des Soll-Prozesses: Kontakt aus CRM lesen, Kontaktfreigabe prüfen, KI-Agent ordnet Anliegen ein und erstellt Entwurf, Marketing-Team prüft und gibt frei, Versand durch Mensch."}
 
 ::: {.ws-note}
-[Werkzeug: demo.bpmn.io öffnen](https://demo.bpmn.io/new){target="_blank"} · [Datei aurenta-webinar-soll.bpmn herunterladen](../material/prozess/aurenta-webinar-soll.bpmn){download="aurenta-webinar-soll.bpmn"} und per Drag-and-drop ins Werkzeug ziehen
+Selbst öffnen: [Datei herunterladen](../material/prozess/aurenta-webinar-soll.bpmn){download="aurenta-webinar-soll.bpmn"}, dann [demo.bpmn.io](https://demo.bpmn.io/new){target="_blank"} öffnen und die Datei hineinziehen.
 :::
 
 ::: {.notes}
 Die Kontaktsperre liegt als feste Regel im Workflow-System, vor dem Modell. Der KI-Agent ordnet das Anliegen ein und schreibt den Entwurf. Freigabe und Versand bleiben in der Bahn Marketing-Team. Genau das ist der Workflow 02 von gestern, nur als Prozessbild.
 :::
 
-## Jeder Schritt ist feste Regel, Modellaufgabe oder menschliche Entscheidung {.center}
+## Jeder Schritt in der Skizze ist eines von dreien: Regel, KI oder Mensch {.center}
 
 ::: {.ws-statement}
-In der eigenen Skizze wird je Schritt markiert, welche der drei Arten er ist, und wo die Schnittstellen zu Recherche, Content, Follow-up und Reporting liegen. Ein Modellschritt wird nur ergänzt, wenn die Aufgabe ihn begründet.
+Feste Regel: läuft immer gleich, braucht keine KI. KI-Schritt: braucht Sprachverständnis oder muss formulieren. Mensch: entscheidet, gibt frei, versendet. Jeder Kasten in der Skizze bekommt eine dieser drei Arten. KI kommt nur dorthin, wo eine Regel nicht reicht.
 :::
 
 ::: {.ws-note}
-Aus der Skizze folgen die drei Testfälle für Mittwoch: normaler Fall, fehlende Information, Grenze oder Sperre.
+Aus der Skizze ergeben sich die drei Testfälle für Mittwoch: ein normaler Fall, ein Fall mit fehlender Information, ein gesperrter Kontakt.
 :::
 
 ::: {.notes}
