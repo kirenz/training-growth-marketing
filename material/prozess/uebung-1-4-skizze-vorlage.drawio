@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" agent="process-lab" version="24.0.0">
+  <diagram id="uebung-1-4" name="Übung 1.4 Skizze">
+    <mxGraphModel dx="1200" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+      <mxCell id="0" />
+      <mxCell id="1" parent="0" />
+      <mxCell id="title" value="Übung 1.4: Skizze des Follow-up-Workflows (Vorlage, Kästen und Pfeile anpassen)" style="text;html=1;align=left;verticalAlign=middle;fontSize=16;fontStyle=1;fontColor=#1F3864;" vertex="1" parent="1">
+        <mxGeometry x="40" y="20" width="800" height="30" as="geometry" />
+      </mxCell>
+      <mxCell id="legend_title" value="Art des Schritts" style="text;html=1;align=left;verticalAlign=middle;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+        <mxGeometry x="40" y="60" width="200" height="20" as="geometry" />
+      </mxCell>
+      <mxCell id="legend_rule" value="Feste Regel" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+        <mxGeometry x="40" y="85" width="110" height="30" as="geometry" />
+      </mxCell>
+      <mxCell id="legend_model" value="Modellaufgabe" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=11;" vertex="1" parent="1">
+        <mxGeometry x="160" y="85" width="110" height="30" as="geometry" />
+      </mxCell>
+      <mxCell id="legend_human" value="Menschliche Entscheidung" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+        <mxGeometry x="280" y="85" width="150" height="30" as="geometry" />
+      </mxCell>
+      <mxCell id="start" value="Start&#10;(manuell)" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fontSize=12;" vertex="1" parent="1">
+        <mxGeometry x="40" y="200" width="80" height="80" as="geometry" />
+      </mxCell>
+      <mxCell id="kontakt" value="&lt;b&gt;Kontakt bereitstellen&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;kontakt_id, rolle, unternehmen, webinar_status, anliegen, sprache, kontakt_erlaubt&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+        <mxGeometry x="170" y="190" width="200" height="100" as="geometry" />
+      </mxCell>
+      <mxCell id="modell" value="&lt;b&gt;Bedarf einordnen und Entwurf schreiben&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;Prompt mit Fallpaket und fünf Regeln, Kursmodell&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+        <mxGeometry x="450" y="190" width="200" height="100" as="geometry" />
+      </mxCell>
+      <mxCell id="ablage" value="&lt;b&gt;Ergebnis zur Prüfung ablegen&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;kontakt_id, ergebnis, freigabe = offen&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+        <mxGeometry x="730" y="190" width="200" height="100" as="geometry" />
+      </mxCell>
+      <mxCell id="pruefung" value="&lt;b&gt;Prüfung durch Mensch&lt;/b&gt;&lt;br&gt;&lt;font style=&quot;font-size: 10px&quot;&gt;außerhalb des Workflows&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" vertex="1" parent="1">
+        <mxGeometry x="1010" y="200" width="160" height="80" as="geometry" />
+      </mxCell>
+      <mxCell id="e1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;" edge="1" parent="1" source="start" target="kontakt">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="e2" value="7 Kontaktfelder" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1" source="kontakt" target="modell">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="e3" value="Modelltext" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;" edge="1" parent="1" source="modell" target="ablage">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="e4" value="Ergebnis" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=1;fontSize=10;dashed=1;" edge="1" parent="1" source="ablage" target="pruefung">
+        <mxGeometry relative="1" as="geometry" />
+      </mxCell>
+      <mxCell id="note_id" value="Die kontakt_id kommt aus dem Kasten „Kontakt bereitstellen“, nicht vom Modell." style="text;html=1;align=left;verticalAlign=top;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+        <mxGeometry x="730" y="300" width="220" height="40" as="geometry" />
+      </mxCell>
+      <mxCell id="note_not" value="&lt;b&gt;Was der Workflow nicht tut:&lt;/b&gt; kein Versand, keine Terminbuchung, keine Änderung im CRM. Die Freigabe ist eine Person, kein Kasten im Workflow." style="text;html=1;align=left;verticalAlign=top;fontSize=11;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="40" y="380" width="600" height="50" as="geometry" />
+      </mxCell>
+      <mxCell id="note_check" value="&lt;b&gt;Prüfen vor dem Bauen:&lt;/b&gt; Eingabe und Ausgabe mit Feldnamen benannt? Jeder Kasten genau eine Art? Pfeile mit Feldern beschriftet? Erreicht die kontakt_id den letzten Kasten? Nicht mehr Kästen als später Knoten?" style="text;html=1;align=left;verticalAlign=top;fontSize=11;whiteSpace=wrap;" vertex="1" parent="1">
+        <mxGeometry x="40" y="440" width="700" height="60" as="geometry" />
+      </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

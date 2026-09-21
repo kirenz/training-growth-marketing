@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Synthetischer Übungsfall Aurenta (HdM-Projekt Agentic AI für Growth Marketing, WS 2026/27). Starter-Workflow aus Übung 1.4, ein Kontakt pro Lauf. Layout ergänzt durch scripts/layout.mjs. -->
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" id="Defs_Starter" targetNamespace="http://kirenz.de/process-lab">
+  <bpmn:collaboration id="Collab_Starter">
+    <bpmn:participant id="Pool_Aurenta" name="Aurenta · Follow-up Starter (Übung 1.4)" processRef="Prozess_Starter" />
+  </bpmn:collaboration>
+  <bpmn:process id="Prozess_Starter" name="Follow-up Starter" isExecutable="false">
+    <bpmn:laneSet id="LaneSet_Starter">
+      <bpmn:lane id="Lane_Marketing" name="Marketing-Team">
+        <bpmn:flowNodeRef>T_Pruefen</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Ende_Entschieden</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_Agent" name="KI-Agent">
+        <bpmn:flowNodeRef>T_Entwurf</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_System" name="Workflow-System (n8n)">
+        <bpmn:flowNodeRef>Start</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>T_Kontakt</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>T_Ablage</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Start" name="Manuell gestartet">
+      <bpmn:documentation>Manual Trigger in n8n. Ein Lauf verarbeitet genau einen Kontakt.</bpmn:documentation>
+      <bpmn:outgoing>F1</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:serviceTask id="T_Kontakt" name="Kontakt bereitstellen">
+      <bpmn:documentation>Edit Fields mit sieben Feldern aus der Kontaktliste: kontakt_id, rolle, unternehmen, webinar_status, anliegen, sprache, kontakt_erlaubt. Werte von Hand eingetragen, zuerst K-01. Feste Daten, keine Regel und kein Modell.</bpmn:documentation>
+      <bpmn:incoming>F1</bpmn:incoming>
+      <bpmn:outgoing>F2</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="T_Entwurf" name="Bedarf einordnen und Entwurf schreiben">
+      <bpmn:documentation>Basic LLM Chain mit dem vorbereiteten Prompt (Fallpaket, fünf Regeln, sieben Kontaktfelder) und dem Kursmodell Gemini. Ausgabe als Text: entscheidung, begruendung, material_id, nachricht_entwurf (max. 120 Wörter), offene_punkte. Die Kontaktsperre wird hier nur per Anweisung berücksichtigt.</bpmn:documentation>
+      <bpmn:incoming>F2</bpmn:incoming>
+      <bpmn:outgoing>F3</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:serviceTask id="T_Ablage" name="Ergebnis zur Prüfung ablegen">
+      <bpmn:documentation>Edit Fields mit kontakt_id aus dem Knoten Kontakt, ergebnis = Modelltext, freigabe = offen als fester Wert. Kein Versand, keine Ablage in CRM oder Datenbank. Hier endet der Workflow in n8n.</bpmn:documentation>
+      <bpmn:incoming>F3</bpmn:incoming>
+      <bpmn:outgoing>F4</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:userTask id="T_Pruefen" name="Entwurf prüfen und Freigabe entscheiden">
+      <bpmn:documentation>Außerhalb von n8n. Eine Person liest Entscheidung und Entwurf im Ausführungsprotokoll, vergleicht mit den fünf Regeln und entscheidet. Versand ist nicht Teil der Übung.</bpmn:documentation>
+      <bpmn:incoming>F4</bpmn:incoming>
+      <bpmn:outgoing>F5</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:endEvent id="Ende_Entschieden" name="Freigabe entschieden">
+      <bpmn:incoming>F5</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="F1" sourceRef="Start" targetRef="T_Kontakt" />
+    <bpmn:sequenceFlow id="F2" name="7 Kontaktfelder" sourceRef="T_Kontakt" targetRef="T_Entwurf" />
+    <bpmn:sequenceFlow id="F3" name="Modelltext" sourceRef="T_Entwurf" targetRef="T_Ablage" />
+    <bpmn:sequenceFlow id="F4" name="Ergebnis" sourceRef="T_Ablage" targetRef="T_Pruefen" />
+    <bpmn:sequenceFlow id="F5" sourceRef="T_Pruefen" targetRef="Ende_Entschieden" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="Diagram_1">
+    <bpmndi:BPMNPlane id="Plane_1" bpmnElement="Collab_Starter">
+      <bpmndi:BPMNShape id="Pool_Aurenta_di" bpmnElement="Pool_Aurenta" isHorizontal="true">
+        <dc:Bounds x="0" y="0" width="1400" height="480" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_Marketing_di" bpmnElement="Lane_Marketing" isHorizontal="true">
+        <dc:Bounds x="30" y="0" width="1370" height="160" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_Agent_di" bpmnElement="Lane_Agent" isHorizontal="true">
+        <dc:Bounds x="30" y="160" width="1370" height="160" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_System_di" bpmnElement="Lane_System" isHorizontal="true">
+        <dc:Bounds x="30" y="320" width="1370" height="160" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Start_di" bpmnElement="Start">
+        <dc:Bounds x="162" y="382" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="135" y="422" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T_Kontakt_di" bpmnElement="T_Kontakt">
+        <dc:Bounds x="320" y="360" width="160" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T_Entwurf_di" bpmnElement="T_Entwurf">
+        <dc:Bounds x="540" y="200" width="160" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T_Ablage_di" bpmnElement="T_Ablage">
+        <dc:Bounds x="760" y="360" width="160" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="T_Pruefen_di" bpmnElement="T_Pruefen">
+        <dc:Bounds x="980" y="40" width="160" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Ende_Entschieden_di" bpmnElement="Ende_Entschieden">
+        <dc:Bounds x="1262" y="62" width="36" height="36" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1235" y="102" width="90" height="20" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="F1_di" bpmnElement="F1">
+        <di:waypoint x="198" y="400" />
+        <di:waypoint x="320" y="400" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F2_di" bpmnElement="F2">
+        <di:waypoint x="480" y="400" />
+        <di:waypoint x="510" y="400" />
+        <di:waypoint x="510" y="240" />
+        <di:waypoint x="540" y="240" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="490" y="380" width="40" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F3_di" bpmnElement="F3">
+        <di:waypoint x="700" y="240" />
+        <di:waypoint x="730" y="240" />
+        <di:waypoint x="730" y="400" />
+        <di:waypoint x="760" y="400" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="710" y="220" width="40" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F4_di" bpmnElement="F4">
+        <di:waypoint x="920" y="400" />
+        <di:waypoint x="950" y="400" />
+        <di:waypoint x="950" y="80" />
+        <di:waypoint x="980" y="80" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="930" y="380" width="40" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="F5_di" bpmnElement="F5">
+        <di:waypoint x="1140" y="80" />
+        <di:waypoint x="1262" y="80" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
