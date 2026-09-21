@@ -389,7 +389,7 @@
         { id: "kontakt", x: 330, y: 120, w: 170, h: 70, kind: "EDIT FIELDS (SET)", name: "Kontakt", info: "Sieben Felder als String: kontakt_id, rolle, unternehmen, webinar_status, anliegen, sprache, kontakt_erlaubt. Werte aus der Kontaktliste. Zwischenziel vor der Mittagspause: Diese Felder kommen in der Ausgabe an." },
         { id: "chain", x: 600, y: 120, w: 190, h: 70, kind: "BASIC LLM CHAIN", name: "Bedarf und Entwurf", info: "Der vorbereitete n8n-Prompt mit Fallpaket. Platzhalter wie <code>{{ $json.anliegen }}</code> holen die Felder des aktuellen Kontakts, keine Programmierung. In der Vorschau muss das echte Anliegen erscheinen." },
         { id: "model", x: 600, y: 235, w: 190, h: 56, kind: "GOOGLE GEMINI CHAT MODEL", name: "Kursmodell", sub: true, info: "Die vorbereitete Verbindung der Lehrperson, nicht das eigene Gemini-Konto. Voreinstellung im Export austauschbar. Chat-Abo und API sind getrennte Zugänge." },
-        { id: "result", x: 900, y: 120, w: 200, h: 70, kind: "EDIT FIELDS (SET)", name: "Ergebnis zur Pruefung", info: "Drei Felder: <code>kontakt_id</code> aus dem Kontakt-Knoten, <code>ergebnis</code> aus der Modellantwort, <code>freigabe = offen</code> als fester Text. Kein Versand, kein CRM-Schreiben. Die Ausgabe steht im Ausführungsprotokoll." }
+        { id: "result", x: 900, y: 120, w: 200, h: 70, kind: "EDIT FIELDS (SET)", name: "Ergebnis ablegen", info: "Drei Felder: <code>kontakt_id</code> aus dem Kontakt-Knoten, <code>ergebnis</code> aus der Modellantwort, <code>freigabe = offen</code> als fester Text. Kein Versand, kein CRM-Schreiben. Die Ausgabe steht im Ausführungsprotokoll." }
       ],
       edges: [["trigger", "kontakt"], ["kontakt", "chain"], ["chain", "result"]],
       path: ["trigger", "kontakt", "chain", "result"]
@@ -450,7 +450,7 @@
     if (nodeId === "kontakt") return "<b>Kontakt</b> · Ausgabe des Knotens:" + fmtKV({ kontakt_id: c, rolle: d.rolle, webinar_status: d.webinar_status, anliegen: d.anliegen, kontakt_erlaubt: d.kontakt_erlaubt });
     if (nodeId === "if") return "<b>kontakt_erlaubt?</b> · Wert: <code>" + d.kontakt_erlaubt + "</code> → Zweig <b>" + (d.kontakt_erlaubt === "ja" ? "ja" : "nein") + "</b>.";
     if (nodeId === "chain") return "<b>Bedarf und Entwurf</b> · Prompt mit eingesetztem Anliegen: „" + d.anliegen + "“ · Antwort des Kursmodells (Beispiel): " + d.out;
-    if (nodeId === "result") return "<b>Ergebnis zur Pruefung</b>" + fmtKV({ kontakt_id: c, ergebnis: "<i>Modellantwort als Text</i>", freigabe: "offen" }) + (c === "K-05" ? "<br><span style='color:#ff7847'>Problem: Für einen gesperrten Kontakt liegt ein Entwurf zur Prüfung vor. Der Ausbau verhindert das.</span>" : "");
+    if (nodeId === "result") return "<b>Ergebnis ablegen</b>" + fmtKV({ kontakt_id: c, ergebnis: "<i>Modellantwort als Text</i>", freigabe: "offen" }) + (c === "K-05" ? "<br><span style='color:#ff7847'>Problem: Für einen gesperrten Kontakt liegt ein Entwurf zur Prüfung vor. Der Ausbau verhindert das.</span>" : "");
     if (nodeId === "felder") return "<b>Felder übernehmen</b>" + fmtKV(Object.assign({ kontakt_id: c }, d.struct, { freigabe: "offen" }));
     if (nodeId === "block") return "<b>kein_followup</b>" + fmtKV({ kontakt_id: c, entscheidung: "kein_followup", nachricht_entwurf: "<i>leer</i>", freigabe: "offen" }) + "<br><span style='color:#88F297'>Das Modell wurde nicht aufgerufen. Die Sperre ist eine feste Regel, keine Modellentscheidung.</span>";
     return "";

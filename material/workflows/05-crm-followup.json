@@ -244,7 +244,7 @@
     },
     {
       "id": "3d84ba87-9a4f-53d5-88c7-c1d013a453e2",
-      "name": "Ergebnis zur Pruefung",
+      "name": "Ergebnis ablegen",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
@@ -428,7 +428,7 @@
       "main": [
         [
           {
-            "node": "Ergebnis zur Pruefung",
+            "node": "Ergebnis ablegen",
             "type": "main",
             "index": 0
           }
