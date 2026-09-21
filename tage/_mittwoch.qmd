@@ -44,6 +44,8 @@ Fest sind Beginn um 09:00 Uhr in Raum I120, die Mittagspause von 13:00 bis 14:00
 3. Eine Ursache gezielt bearbeiten. Fehlender Zugang, falsche Feldzuordnung und unpassende Modellantwort sind unterschiedliche Befunde (20 Minuten).
 4. Den geänderten Fall und einen zuvor bestandenen Fall erneut prüfen (20 Minuten).
 
+Diese Übung übernimmt Übung 1.5 vom Montag: Erwartung vor dem Lauf, drei Kontakte, eine begründete Regeländerung. Wer früher fertig ist, lässt einen Fall vom Nachbarteam prüfen, ohne Erklärung, warum das Ergebnis gut sein soll.
+
 **Aurenta-Variante:** K-01, K-06 und K-05. Die feste Kontaktsperre im erweiterten Workflow muss K-05 bereits vor dem Modellschritt abfangen. K-06 benötigt eine Klärung, keine erfundene Bedarfseinschätzung.
 
 **Ergebnis:** Nachvollziehbare Testbelege und ein begründeter Umgang mit Fehlern. Ein Output Parser prüft Struktur, keine Wahrheit. Die fachliche Prüfung bleibt beim Team.

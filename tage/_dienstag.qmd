@@ -10,22 +10,27 @@ toc: true
 
 ## Ziel und Tagesergebnis
 
-Jedes Team erstellt einen Projektbrief, eine aktualisierte Experimentkarte, eine Ablaufskizze und einen überarbeiteten n8n-Prototyp. Ein anderes Team prüft einen Fall. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt.
+Jedes Team erstellt einen Projektbrief, eine aktualisierte Experimentkarte, eine Ablaufskizze und einen überarbeiteten n8n-Prototyp. Dazu holen die Teams die Hypothesen-Übung und den ersten Prompt vom Montag nach. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt.
 
 ## Bausteine des Tages {#bausteine}
 
 Fest sind Beginn um 09:30 Uhr in Raum I120, das Briefing durch Zoi ab 10:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr.
 
-| Baustein | Arbeitsform |
-|---|---|
-| Fragen an Zoi sichten und Rollen fürs Briefing verteilen | Gemeinsam |
-| **Zoi-Briefing einschließlich Rückfragen** | Gemeinsam |
-| Ein Lauf vom Montag: K-02 gemeinsam prüfen | Gemeinsam |
-| Übung 2.1: Projektbrief und erster Zuschnitt | Dreierteams |
-| Übung 2.2: Kundenweg und Ablauf entwerfen | Dreierteams |
-| Übung 2.3: Anweisungen und Workflow übertragen | Dreierteams, Bedienung wechseln |
-| Gegenseitiger Test: drei Teampaare | Je zwei Teams |
-| Design-Reviews und Entscheidung für Mittwoch | Gemeinsam |
+| Zeit | Baustein | Arbeitsform |
+|---|---|---|
+| 09:30 | Fragen an Zoi sichten und Rollen fürs Briefing verteilen | Gemeinsam |
+| 10:00 | **Zoi-Briefing einschließlich Rückfragen** | Gemeinsam |
+| 11:00 | Ein Lauf vom Montag: K-02 gemeinsam prüfen | Gemeinsam |
+| 11:15 | Übung 1.2: Vom Trichter zur Hypothese (vom Montag) | Dreierteams |
+| 11:45 | Übung 2.1: Projektbrief und erster Zuschnitt | Dreierteams |
+| 12:30 | Übung 2.2: Kundenweg und Ablauf entwerfen, Teil 1 | Dreierteams |
+| 13:00 | Mittagspause | |
+| 14:00 | Übung 2.2, Teil 2: Schritt-Arten und Testfälle | Dreierteams |
+| 14:15 | Übung 1.3: Der erste Prompt (vom Montag) | Einzeln, dann im Team |
+| 14:35 | Input: Workflows und Agenten | Gemeinsam |
+| 14:55 | Übung 2.3: Anweisungen und Workflow übertragen | Dreierteams, Bedienung wechseln |
+| 16:15 | Design-Reviews und Entscheidung für Mittwoch | Gemeinsam |
+| 16:55 | Ende | |
 
 ## Briefingvorbereitung
 
@@ -49,16 +54,24 @@ Der Projektbrief hält die Lücke fest. Die technische Übung wird am vollständ
 
 Nach dem Briefing wird ein Lauf des Lösungsworkflows mit Kontakt K-02 gemeinsam betrachtet: Welche Entscheidung erwarten die Regeln, was hat das Modell geliefert, und lag der Unterschied an den Daten, der Anweisung oder am Modell? Die Erwartung wird vor dem Lauf genannt, nicht danach. So arbeiten die Teams am Mittwoch mit dem Testprotokoll weiter. Höchstens 15 Minuten.
 
+## Übung 1.2 nachgeholt: Vom Trichter zur Hypothese {#uebung-1-2}
+
+::: {.uebung}
+### ca. 30 Minuten · Dreierteams
+
+Die Übung vom Montag wird unverändert bearbeitet: [Übung 1.2 auf der Montagsseite](montag.qmd#uebung-1-2). Pivot-Tabellen zu den Aurenta-Kampagnen, Beobachtung mit Zähler und Nenner, eine Hypothese nach dem Muster „Wenn wir X ändern, dann Y, weil Z“, dazu die Kennzahl. Das Muster wird direkt danach in Übung 2.1 auf Zoi übertragen.
+:::
+
 ## Übung 2.1: Ein bearbeitbares Problem {#uebung-2-1}
 
 ::: {.uebung}
-### ca. 60 Minuten · Dreierteams
+### ca. 45 Minuten · Dreierteams
 
 **Material:** Mitschrift, [Projektbrief](https://docs.google.com/document/d/1Jwbhg5CbI-mxCJvRw1oSLBkLR7ZoPOQrwN0jsluFtIM/edit), [Experimentkarte](https://docs.google.com/document/d/1JrrMgJ6fCEae3trCWNqdAonEc9EHbZ-PWskl8wtli-s/edit).
 
-1. Mitschriften zusammenführen: Aussagen mit Quelle und Zeitpunkt von Interpretationen trennen (15 Minuten).
+1. Mitschriften zusammenführen: Aussagen mit Quelle und Zeitpunkt von Interpretationen trennen (10 Minuten).
 2. Einen Engpass im Kundenweg wählen. Nutzen und betroffene Zielgruppe beschreiben, bevor Werkzeuge ausgewählt werden (15 Minuten).
-3. Hypothese und alternative Erklärung formulieren. Verfügbare Daten und geplante Wirkungsmetrik benennen (15 Minuten).
+3. Hypothese und alternative Erklärung formulieren, nach dem Muster aus Übung 1.2. Verfügbare Daten und geplante Wirkungsmetrik benennen (10 Minuten).
 4. Einen ersten Ablauf und dessen Grenze festlegen: Welche Eingabe wird bis Mittwoch zu welcher prüfbaren Ausgabe? Was bleibt außerhalb dieses ersten Prototyps? (15 Minuten).
 
 ```default
@@ -78,7 +91,7 @@ Erfinde keine Aussagen des Partners und keine verfügbaren Daten.
 ## Übung 2.2: Den Kundenweg und den Ablauf verbinden {#uebung-2-2}
 
 ::: {.uebung}
-### ca. 45 Minuten · Dreierteams
+### ca. 45 Minuten, geteilt durch die Mittagspause · Dreierteams
 
 **Material:** Projektbrief und Workflow vom Montag, [Lesehilfe Ablaufskizze](https://docs.google.com/document/d/1pO28YSUSkvbrn8drNZqMMVqimBHT2fiyT0LEfXeF_tY/edit), Beispiel Aurenta heute ([Bild](../material/prozess/aurenta-webinar-ist.svg) · [BPMN](../material/prozess/aurenta-webinar-ist.bpmn)) und mit KI-Agent ([Bild](../material/prozess/aurenta-webinar-soll.svg) · [BPMN](../material/prozess/aurenta-webinar-soll.bpmn)).
 
@@ -93,6 +106,30 @@ Die Skizze wird als Swimlane-Diagramm gezeichnet: eine Bahn je Rolle (Marketing-
 
 **Ergebnis:** Eine verständliche Swimlane-Skizze mit eindeutigen Feldnamen, abgelegt im Drive-Ordner des Teams. Mehrere Agenten sind kein Qualitätskriterium. Ein Modellschritt wird nur ergänzt, wenn die Aufgabe ihn begründet.
 :::
+
+## Übung 1.3 nachgeholt: Der erste Prompt {#uebung-1-3}
+
+::: {.folien .folien-inline}
+[Folien]{.folien-label}
+
+<ul><li><a class="folie" href="../slides/ki-und-prompting.html" target="_blank" rel="noopener">KI verstehen und Aufträge formulieren <span>Kontext, Aufgabe, Format, Prüfung</span></a></li></ul>
+:::
+
+::: {.uebung}
+### ca. 20 Minuten · Erst einzeln, dann im Team
+
+Die Übung vom Montag wird unverändert bearbeitet: [Übung 1.3 auf der Montagsseite](montag.qmd#uebung-1-3). Der Prompt aus Kontext, Aufgabe, Format und Prüfung ist die Vorstufe der Anweisungen, die in Übung 2.3 in den Workflow übertragen werden.
+:::
+
+## Input: Workflows und Agenten {#agenten}
+
+::: {.folien .folien-inline}
+[Folien]{.folien-label}
+
+<ul><li><a class="folie" href="../slides/n8n-workflows.html" target="_blank" rel="noopener">n8n: Workflows und Agenten <span>Abschnitt Agent, Demo mit Werkzeugwahl</span></a></li></ul>
+:::
+
+Etwa 20 Minuten gemeinsam. Ein Workflow legt die Schritte vorab fest, ein Agent wählt zur Laufzeit Werkzeuge und nächste Schritte selbst. Die Demo zeigt beides am Aurenta-Fall: den festen Ablauf vom Montag und die Agenten-Variante, in der das Modell entscheidet, welches Wissenswerkzeug es aufruft. Drei Fragen für die eigene Skizze: Reicht die einfachste Lösung? Ist jeder Schritt im Laufprotokoll nachvollziehbar? Was genau bekommt das Modell als Werkzeug, und was nicht? Eine begründete Entscheidung gegen einen Agenten ist im Projekt ausdrücklich zulässig.
 
 ## Übung 2.3: Wiederverwendbare Anweisungen und ein erster Ausbau {#uebung-2-3}
 
@@ -115,13 +152,9 @@ Die Skizze wird als Swimlane-Diagramm gezeichnet: eine Bahn je Rolle (Marketing-
 **Ergebnis:** Ein überarbeiteter lauffähiger Ablauf. Bei unvollständigem Zoi-Material steht im Export ausdrücklich „Aurenta-Übungsfall“. Die Ausgaben bleiben Entwürfe.
 :::
 
-## Gegenseitiger Test
-
-Teampaare: 1 und 2, 3 und 4, 5 und 6. Pro Richtung etwa 20 Minuten, fünf Minuten gemeinsame Entscheidung. Das testende Team erhält einen Fall und die vorher vereinbarten Kriterien, aber keine Erklärung, warum das Ergebnis angeblich gut ist. Es prüft den tatsächlichen Lauf und benennt einen belegten Befund. Anschließend entscheidet das verantwortliche Team über eine Änderung.
-
 ## Design-Reviews
 
-Pro Team sechs Minuten, neun Minuten gemeinsamer Puffer: Problem und Datenlage, ein funktionierender Ausschnitt, ein offener Test, Entscheidung für Mittwoch. Das Review bestätigt einen bearbeitbaren nächsten Schritt. Es verlangt noch keinen vollständigen Semesterprozess.
+Pro Team fünf Minuten, zehn Minuten gemeinsamer Puffer: Problem und Datenlage, ein funktionierender Ausschnitt, ein offener Test, Entscheidung für Mittwoch. Das Review bestätigt einen bearbeitbaren nächsten Schritt. Es verlangt noch keinen vollständigen Semesterprozess.
 
 ::: {.folien}
 [Alle Folien zu diesem Tag]{.folien-label}
