@@ -3,9 +3,9 @@
   "nodes": [
     {
       "parameters": {
-        "content": "## Marketing-Team\nEntwurf prüfen und Freigabe entscheiden: außerhalb von n8n, im Ausführungsprotokoll oder in der Teamablage.",
-        "height": 160,
-        "width": 2200,
+        "content": "## Marketing-Team\nDiese beiden Schritte laufen außerhalb von n8n. Die Knoten sind nur Platzhalter ohne Funktion: Der Workflow versendet nichts.",
+        "height": 260,
+        "width": 2780,
         "color": 4
       },
       "id": "aaf264b9-cebc-4a44-9ab6-e13474b5bdce",
@@ -14,14 +14,14 @@
       "typeVersion": 1,
       "position": [
         -140,
-        -330
+        -430
       ]
     },
     {
       "parameters": {
         "content": "## KI-Agent\nModellschritt: Anliegen einordnen, nächsten Schritt empfehlen, Entwurf schreiben. Kursmodell und Ausgabeformat hängen als Bausteine darunter.",
         "height": 400,
-        "width": 2200,
+        "width": 2780,
         "color": 7
       },
       "id": "352e904f-f958-48c7-87d9-a7eda6529217",
@@ -37,7 +37,7 @@
       "parameters": {
         "content": "## Workflow-System (n8n)\nFeste Schritte: Kontakt lesen, Kontaktsperre prüfen, Ergebnis zur Prüfung ablegen. Kein Versand.",
         "height": 560,
-        "width": 2200,
+        "width": 2780,
         "color": 6
       },
       "id": "ebf28e29-04b9-4e13-b955-1020e8f15378",
@@ -407,6 +407,32 @@
         },
         "options": {}
       }
+    },
+    {
+      "parameters": {},
+      "id": "5b3c985c-f5ce-4fc6-bd15-23ecbae2cb0e",
+      "name": "Entwurf pruefen und Freigabe entscheiden",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        2160,
+        -300
+      ],
+      "notes": "Mensch, außerhalb von n8n",
+      "notesInFlow": true
+    },
+    {
+      "parameters": {},
+      "id": "cd6c0080-fd17-4512-9c6e-102a6020ca90",
+      "name": "Follow-up versenden",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        2440,
+        -300
+      ],
+      "notes": "Mensch, außerhalb von n8n",
+      "notesInFlow": true
     }
   ],
   "connections": {
@@ -517,6 +543,28 @@
         [
           {
             "node": "Unbekannte Kontakt-ID",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Ergebnis zur Pruefung": {
+      "main": [
+        [
+          {
+            "node": "Entwurf pruefen und Freigabe entscheiden",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Entwurf pruefen und Freigabe entscheiden": {
+      "main": [
+        [
+          {
+            "node": "Follow-up versenden",
             "type": "main",
             "index": 0
           }
