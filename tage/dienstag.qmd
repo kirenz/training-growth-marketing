@@ -16,20 +16,18 @@ Jedes Team erstellt einen Projektbrief, eine aktualisierte Experimentkarte, eine
 
 Fest sind Beginn um 09:30 Uhr in Raum I120, das Briefing durch Zoi ab 10:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr.
 
-| Zeit | Baustein | Arbeitsform |
+| Zeitfenster | Baustein | Arbeitsform |
 |---|---|---|
-| 09:30 | Fragen an Zoi sichten und Rollen fürs Briefing verteilen | Gemeinsam |
-| 10:00 | **Zoi-Briefing einschließlich Rückfragen** | Gemeinsam |
-| 11:00 | Ein Lauf vom Montag: K-02 gemeinsam prüfen | Gemeinsam |
-| 11:15 | Übung 1.3: Der erste Prompt (vom Montag) | Einzeln, dann im Team |
-| 11:35 | Übung 1.2: Vom Trichter zur Hypothese (vom Montag) | Dreierteams |
-| 12:05 | Übung 2.1: Projektbrief und erster Zuschnitt | Dreierteams |
-| 13:00 | Mittagspause | |
-| 14:00 | Übung 2.2: Kundenweg und Ablauf entwerfen | Dreierteams |
-| 14:45 | Input: Workflows und Agenten | Gemeinsam |
-| 15:05 | Übung 2.3: Anweisungen und Workflow übertragen | Dreierteams, Bedienung wechseln |
-| 16:20 | Design-Reviews und Entscheidung für Mittwoch | Gemeinsam |
-| 17:00 | Ende | |
+| Vormittag | Fragen an Zoi sichten und Rollen fürs Briefing verteilen | Gemeinsam |
+| Vormittag | **Zoi-Briefing einschließlich Rückfragen** | Gemeinsam |
+| Nach dem Briefing | Ein Lauf vom Montag: K-02 gemeinsam prüfen | Gemeinsam |
+| Nach dem Briefing | Übung 1.3: Der erste Prompt (vom Montag) | Einzeln, dann im Team |
+| Nach dem Briefing | Übung 1.2: Vom Trichter zur Hypothese (vom Montag) | Dreierteams |
+| Bis zur Mittagspause | Übung 2.1: Projektbrief und erster Zuschnitt | Dreierteams |
+| Nachmittag | Übung 2.2: Kundenweg und Ablauf entwerfen | Dreierteams |
+| Nachmittag | Input: Workflows und Agenten | Gemeinsam |
+| Nachmittag | Übung 2.3: Anweisungen und Workflow übertragen | Dreierteams, Bedienung wechseln |
+| Später Nachmittag | Design-Reviews und Entscheidung für Mittwoch | Gemeinsam |
 
 ## Briefingvorbereitung
 
@@ -39,11 +37,11 @@ Fest sind Beginn um 09:30 Uhr in Raum I120, das Briefing durch Zoi ab 10:00 Uhr,
 <ul><li><a class="folie" href="../slides/tag2-briefing.html" target="_blank" rel="noopener">Vom Übungsfall zum Zoi-Auftrag <span>Rückblick, Briefing, Projektbrief, Ablaufskizze</span></a></li></ul>
 :::
 
-Die am Montag gesammelten Fragen an Zoi werden gesichtet, Dubletten zusammengefasst, und jedes Team markiert die eine Frage, die es im Briefing selbst stellt. Dazu werden drei Aufgaben fürs Briefing verteilt: belegte Aussagen notieren, Annahmen und offene Punkte erkennen, Fragen stellen. Die Aufgaben wechseln beim anschließenden Bearbeiten. Höchstens 25 Minuten.
+Die am Montag gesammelten Fragen an Zoi werden gesichtet, Dubletten zusammengefasst, und jedes Team markiert die eine Frage, die es im Briefing selbst stellt. Dazu werden drei Aufgaben fürs Briefing verteilt: belegte Aussagen notieren, Annahmen und offene Punkte erkennen, Fragen stellen. Die Aufgaben wechseln beim anschließenden Bearbeiten.
 
 ## Briefing des Projektpartners ab 10:00 Uhr {#briefing}
 
-Geplant sind etwa 45 Minuten Vorstellung und 15 Minuten Fragen, vor Ort an der HdM. Angebot, Zielgruppe, heutiger Prozess und gewünschter Nutzen werden anhand des Briefings konkretisiert. Eine geplante Veranstaltung ist noch kein Nachweis einer getroffenen Vereinbarung.
+Geplant sind eine Vorstellung durch Zoi und anschließend Fragen, vor Ort an der HdM. Angebot, Zielgruppe, heutiger Prozess und gewünschter Nutzen werden anhand des Briefings konkretisiert. Eine geplante Veranstaltung ist noch kein Nachweis einer getroffenen Vereinbarung.
 
 ::: {.callout-note title="Wenn Informationen noch fehlen"}
 Der Projektbrief hält die Lücke fest. Die technische Übung wird am vollständigen Aurenta-Fall fortgeführt. Eine Übertragung auf Zoi wird nur dort vorgenommen, wo tatsächliche Informationen vorliegen. Der Übungsfall wird nicht als Angebot des Partners ausgegeben.
@@ -51,7 +49,7 @@ Der Projektbrief hält die Lücke fest. Die technische Übung wird am vollständ
 
 ## Ein Lauf vom Montag: K-02 gemeinsam prüfen {#rueckblick}
 
-Nach dem Briefing wird ein Lauf des Lösungsworkflows mit Kontakt K-02 gemeinsam betrachtet: Welche Entscheidung erwarten die Regeln, was hat das Modell geliefert, und lag der Unterschied an den Daten, der Anweisung oder am Modell? Die Erwartung wird vor dem Lauf genannt, nicht danach. So arbeiten die Teams am Mittwoch mit dem Testprotokoll weiter. Höchstens 15 Minuten.
+Nach dem Briefing wird ein Lauf des Lösungsworkflows mit Kontakt K-02 gemeinsam betrachtet: Welche Entscheidung erwarten die Regeln, was hat das Modell geliefert, und lag der Unterschied an den Daten, der Anweisung oder am Modell? Die Erwartung wird vor dem Lauf genannt, nicht danach. So arbeiten die Teams am Mittwoch mit dem Testprotokoll weiter.
 
 ## Übung 1.3: Der erste Prompt {#uebung-1-3}
 
@@ -62,7 +60,7 @@ Nach dem Briefing wird ein Lauf des Lösungsworkflows mit Kontakt K-02 gemeinsam
 :::
 
 ::: {.uebung}
-### Etwa 20 Minuten · Erst einzeln, dann im Team
+### Erst einzeln, dann im Team
 
 **Material:** [Kontext für Gemini](https://docs.google.com/document/d/1bAQ1KaMDCp7nuRhHrkBBs7P0Iy9E_AxfXJAnBEiN68g/edit), [Fallpaket](https://docs.google.com/document/d/1DZ9IaK7D3EqfwPLos8j4GZd35xRHN8hfdmBAXrVsLUU/edit) für die Regeln, [zwei Beispielantworten mit typischen Fehlern](https://docs.google.com/document/d/1_h820RAj27LmmoikA_fxTYikmlySU9lSNAIqotemRTc/edit).
 
@@ -102,7 +100,7 @@ Der Prompt aus Kontext, Aufgabe, Format und Prüfung wird gleich in Übung 2.1 a
 ## Übung 1.2: Vom Trichter zur Hypothese {#uebung-1-2}
 
 ::: {.uebung}
-### Etwa 30 Minuten · Dreierteams
+### Dreierteams
 
 **Material:** [Webinar-Kontakte als Google Sheet](https://docs.google.com/spreadsheets/d/1ri_Z7epna2iRNSJYo7tQtC3cjAihbDuxn6-DSZN12q0/edit), [Anleitung Pivot-Tabellen](https://docs.google.com/document/d/1YckXrnscZX7MjaUonjEQiHHqT2aO87pcMy2JlSQCDIU/edit), [Experimentkarte für Montag](https://docs.google.com/document/d/1RDw-7aKpkUtPurVk-NHItVg3zBKczG0G_tw_4TrfUtk/edit).
 
@@ -121,14 +119,14 @@ Das Hypothesen-Muster wird direkt danach in Übung 2.1 auf Zoi übertragen.
 ## Übung 2.1: Ein bearbeitbares Problem {#uebung-2-1}
 
 ::: {.uebung}
-### ca. 45 Minuten · Dreierteams
+### Dreierteams
 
 **Material:** Mitschrift, [Projektbrief](https://docs.google.com/document/d/1Jwbhg5CbI-mxCJvRw1oSLBkLR7ZoPOQrwN0jsluFtIM/edit), [Experimentkarte](https://docs.google.com/document/d/1JrrMgJ6fCEae3trCWNqdAonEc9EHbZ-PWskl8wtli-s/edit).
 
-1. Mitschriften zusammenführen: Aussagen mit Quelle und Zeitpunkt von Interpretationen trennen. Dafür den Prompt aus Übung 1.3 nutzen: Kontext ist die Mitschrift, Aufgabe das Trennen, Format eine Tabelle mit Quelle, Prüfung „nichts ergänzen, Lücken markieren“ (10 Minuten).
-2. Einen Engpass im Kundenweg wählen. Nutzen und betroffene Zielgruppe beschreiben, bevor Werkzeuge ausgewählt werden (15 Minuten).
-3. Hypothese und alternative Erklärung formulieren, nach dem Muster aus Übung 1.2. Verfügbare Daten und geplante Wirkungsmetrik benennen (10 Minuten).
-4. Einen ersten Ablauf und dessen Grenze festlegen: Welche Eingabe wird bis Mittwoch zu welcher prüfbaren Ausgabe? Was bleibt außerhalb dieses ersten Prototyps? (15 Minuten).
+1. Mitschriften zusammenführen: Aussagen mit Quelle und Zeitpunkt von Interpretationen trennen. Dafür den Prompt aus Übung 1.3 nutzen: Kontext ist die Mitschrift, Aufgabe das Trennen, Format eine Tabelle mit Quelle, Prüfung „nichts ergänzen, Lücken markieren“.
+2. Einen Engpass im Kundenweg wählen. Nutzen und betroffene Zielgruppe beschreiben, bevor Werkzeuge ausgewählt werden.
+3. Hypothese und alternative Erklärung formulieren, nach dem Muster aus Übung 1.2. Verfügbare Daten und geplante Wirkungsmetrik benennen.
+4. Einen ersten Ablauf und dessen Grenze festlegen: Welche Eingabe wird bis Mittwoch zu welcher prüfbaren Ausgabe? Was bleibt außerhalb dieses ersten Prototyps?.
 
 ```default
 Prüfe diesen Projektbrief als kritischer Gesprächspartner.
@@ -147,14 +145,14 @@ Erfinde keine Aussagen des Partners und keine verfügbaren Daten.
 ## Übung 2.2: Den Kundenweg und den Ablauf verbinden {#uebung-2-2}
 
 ::: {.uebung}
-### ca. 45 Minuten · Dreierteams
+### Dreierteams
 
 **Material:** Projektbrief und Workflow vom Montag, [Lesehilfe Ablaufskizze](https://docs.google.com/document/d/1pO28YSUSkvbrn8drNZqMMVqimBHT2fiyT0LEfXeF_tY/edit), Beispiel Aurenta heute ([Bild](../material/prozess/aurenta-webinar-ist.svg) · [BPMN](../material/prozess/aurenta-webinar-ist.bpmn)) und mit KI-Agent ([Bild](../material/prozess/aurenta-webinar-soll.svg) · [BPMN](../material/prozess/aurenta-webinar-soll.bpmn)).
 
-1. Den fachlichen Weg von Interesse bis zu einem nächsten sinnvollen Schritt skizzieren (10 Minuten).
-2. Für den gewählten Ausschnitt Eingabe, Verarbeitung, Ausgabe und menschliche Entscheidung ergänzen (15 Minuten).
-3. Je Schritt feste Regel, Modellaufgabe oder menschliche Entscheidung markieren. Schnittstellen zu Recherche, Content, Follow-up und Reporting sichtbar machen (10 Minuten).
-4. Die drei Testfälle für Mittwoch festlegen: normaler Fall, fehlende Information, Grenze oder Sperre (10 Minuten).
+1. Den fachlichen Weg von Interesse bis zu einem nächsten sinnvollen Schritt skizzieren.
+2. Für den gewählten Ausschnitt Eingabe, Verarbeitung, Ausgabe und menschliche Entscheidung ergänzen.
+3. Je Schritt feste Regel, Modellaufgabe oder menschliche Entscheidung markieren. Schnittstellen zu Recherche, Content, Follow-up und Reporting sichtbar machen.
+4. Die drei Testfälle für Mittwoch festlegen: normaler Fall, fehlende Information, Grenze oder Sperre.
 
 Die Skizze wird als Swimlane-Diagramm gezeichnet: eine Bahn je Rolle (Marketing-Team, KI-Agent, Workflow-System), der Schritt-Typ steckt im Symbol. Das Aurenta-Beispiel zeigt beide Stände. Werkzeug nach Wahl: draw.io mit BPMN-Formen oder demo.bpmn.io; ein Foto einer Whiteboard-Skizze ist als erste Fassung ebenfalls zulässig, wenn Bahnen und Entscheidungen erkennbar sind.
 
@@ -171,7 +169,7 @@ Die Skizze wird als Swimlane-Diagramm gezeichnet: eine Bahn je Rolle (Marketing-
 <ul><li><a class="folie" href="../slides/n8n-workflows.html" target="_blank" rel="noopener">n8n: Workflows und Agenten <span>Abschnitt Agent, Demo mit Werkzeugwahl</span></a></li></ul>
 :::
 
-Etwa 20 Minuten gemeinsam. Ein Workflow legt die Schritte vorab fest, ein Agent wählt zur Laufzeit Werkzeuge und nächste Schritte selbst. Die Demo zeigt beides am Aurenta-Fall: den festen Ablauf vom Montag und die Agenten-Variante, in der das Modell entscheidet, welches Wissenswerkzeug es aufruft. Drei Fragen für die eigene Skizze: Reicht die einfachste Lösung? Ist jeder Schritt im Laufprotokoll nachvollziehbar? Was genau bekommt das Modell als Werkzeug, und was nicht? Eine begründete Entscheidung gegen einen Agenten ist im Projekt ausdrücklich zulässig.
+Ein Workflow legt die Schritte vorab fest, ein Agent wählt zur Laufzeit Werkzeuge und nächste Schritte selbst. Die Demo zeigt beides am Aurenta-Fall: den festen Ablauf vom Montag und die Agenten-Variante, in der das Modell entscheidet, welches Wissenswerkzeug es aufruft. Drei Fragen für die eigene Skizze: Reicht die einfachste Lösung? Ist jeder Schritt im Laufprotokoll nachvollziehbar? Was genau bekommt das Modell als Werkzeug, und was nicht? Eine begründete Entscheidung gegen einen Agenten ist im Projekt ausdrücklich zulässig.
 
 ## Übung 2.3: Wiederverwendbare Anweisungen und ein erster Ausbau {#uebung-2-3}
 
@@ -182,21 +180,21 @@ Etwa 20 Minuten gemeinsam. Ein Workflow legt die Schritte vorab fest, ein Agent 
 :::
 
 ::: {.uebung}
-### ca. 75 Minuten · Dreierteams, Bedienung wechseln
+### Dreierteams, Bedienung wechseln
 
 **Material:** [Anweisungen](https://docs.google.com/document/d/1SIYpnRHpPq9tb5qiE0-Ixu8o4xy0_5NJHvM-DgZ0LYc/edit), [Assistenten-Bausteine](../werkzeuge/assistenten.qmd), [n8n-Anleitung](../werkzeuge/workflows.qmd#ausbau).
 
-1. Dauerhafte Regeln vom jeweiligen Kontaktfall trennen. Angebotswissen als gesonderte Grundlage benennen (15 Minuten).
-2. Einen neuen Chat mit Regeln, Wissen und einem Fall ausführen. Ohne eigene GPTs oder andere Bezahlfunktionen (15 Minuten).
-3. Dieselbe Aufgabe in n8n übertragen. Eine gezielte Erweiterung auswählen: strukturierte Felder, feste Kontaktsperre oder passendere Materialauswahl (30 Minuten).
-4. Einen Fall vor und nach der Änderung prüfen und Export sowie Änderungsgrund ablegen (15 Minuten).
+1. Dauerhafte Regeln vom jeweiligen Kontaktfall trennen. Angebotswissen als gesonderte Grundlage benennen.
+2. Einen neuen Chat mit Regeln, Wissen und einem Fall ausführen. Ohne eigene GPTs oder andere Bezahlfunktionen.
+3. Dieselbe Aufgabe in n8n übertragen. Eine gezielte Erweiterung auswählen: strukturierte Felder, feste Kontaktsperre oder passendere Materialauswahl.
+4. Einen Fall vor und nach der Änderung prüfen und Export sowie Änderungsgrund ablegen.
 
 **Ergebnis:** Ein überarbeiteter lauffähiger Ablauf. Bei unvollständigem Zoi-Material steht im Export ausdrücklich „Aurenta-Übungsfall“. Die Ausgaben bleiben Entwürfe.
 :::
 
 ## Design-Reviews
 
-Pro Team fünf Minuten, zehn Minuten gemeinsamer Puffer: Problem und Datenlage, ein funktionierender Ausschnitt, ein offener Test, Entscheidung für Mittwoch. Das Review bestätigt einen bearbeitbaren nächsten Schritt. Es verlangt noch keinen vollständigen Semesterprozess.
+Jedes Team kurz: Problem und Datenlage, ein funktionierender Ausschnitt, ein offener Test, Entscheidung für Mittwoch. Das Review bestätigt einen bearbeitbaren nächsten Schritt. Es verlangt noch keinen vollständigen Semesterprozess.
 
 ::: {.folien}
 [Alle Folien zu diesem Tag]{.folien-label}

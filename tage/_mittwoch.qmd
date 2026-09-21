@@ -35,14 +35,14 @@ Fest sind Beginn um 09:00 Uhr in Raum I120, die Mittagspause von 13:00 bis 14:00
 :::
 
 ::: {.uebung}
-### ca. 75 Minuten · Dreierteams
+### Dreierteams
 
 **Material:** Eigener Ablauf, [Testprotokoll](../material/vorlagen/testprotokoll.csv), [Testerwartungen](https://docs.google.com/document/d/12kVes3a17_Zduv-doQIlfYh3N83G0K5K1cn3G1Tz1JA/edit), [strukturierter Referenzablauf](../material/workflows/02-followup-strukturiert.json).
 
-1. Erwartete Entscheidungen und Grenzen vorab im Testprotokoll festlegen, bevor ein Lauf startet. Ein normaler Fall, eine Lücke und eine Sperre sind Pflicht (15 Minuten).
-2. Alle drei Fälle ausführen und tatsächliche Ausgaben sichern (20 Minuten).
-3. Eine Ursache gezielt bearbeiten. Fehlender Zugang, falsche Feldzuordnung und unpassende Modellantwort sind unterschiedliche Befunde (20 Minuten).
-4. Den geänderten Fall und einen zuvor bestandenen Fall erneut prüfen (20 Minuten).
+1. Erwartete Entscheidungen und Grenzen vorab im Testprotokoll festlegen, bevor ein Lauf startet. Ein normaler Fall, eine Lücke und eine Sperre sind Pflicht.
+2. Alle drei Fälle ausführen und tatsächliche Ausgaben sichern.
+3. Eine Ursache gezielt bearbeiten. Fehlender Zugang, falsche Feldzuordnung und unpassende Modellantwort sind unterschiedliche Befunde.
+4. Den geänderten Fall und einen zuvor bestandenen Fall erneut prüfen.
 
 Diese Übung übernimmt die am Montag entfallene Testübung: Erwartung vor dem Lauf, drei Kontakte, eine begründete Regeländerung. Wer früher fertig ist, lässt einen Fall vom Nachbarteam prüfen, ohne Erklärung, warum das Ergebnis gut sein soll.
 
@@ -60,16 +60,16 @@ Diese Übung übernimmt die am Montag entfallene Testübung: Erwartung vor dem L
 :::
 
 ::: {.uebung}
-### ca. 60 Minuten · Dreierteams
+### Dreierteams
 
 **Material:** [Zusätzliche Testfälle](../material/daten/testfaelle-transfer.csv), [Vergleichstabelle](../material/vorlagen/vergleich-baseline.csv), [Prüfen und vergleichen](../werkzeuge/pruefen.qmd).
 
 Verglichen werden ein einfacher Chat und der Workflow, beide mit denselben Informationen, demselben gewünschten Ergebnis und denselben Kriterien. Der Chat erhält einen brauchbaren Auftrag. Ein absichtlich schlechter Prompt wäre kein fairer Vergleich.
 
-1. Kriterien und Varianten festhalten. Modell und Produkt notieren; unterschiedliche Modelle sind ein Einflussfaktor (10 Minuten).
-2. T-01 bis T-03 in beiden Verfahren bearbeiten. Für T-01 mit dem Chat beginnen, für T-02 mit dem Workflow, für T-03 die Reihenfolge auslosen. Zeiten für Bearbeitung, Prüfung und Nacharbeit getrennt erfassen (30 Minuten).
-3. Ergebnisse anhand derselben Kriterien vergleichen (15 Minuten).
-4. Eine Schlussfolgerung und mindestens eine Einschränkung formulieren (5 Minuten).
+1. Kriterien und Varianten festhalten. Modell und Produkt notieren; unterschiedliche Modelle sind ein Einflussfaktor.
+2. T-01 bis T-03 in beiden Verfahren bearbeiten. Für T-01 mit dem Chat beginnen, für T-02 mit dem Workflow, für T-03 die Reihenfolge auslosen. Zeiten für Bearbeitung, Prüfung und Nacharbeit getrennt erfassen.
+3. Ergebnisse anhand derselben Kriterien vergleichen.
+4. Eine Schlussfolgerung und mindestens eine Einschränkung formulieren.
 
 **Ergebnis:** Kleiner explorativer Vergleich. Drei Fälle liefern Hinweise, keinen belastbaren allgemeinen Produktivitätsnachweis. Falls ein Fall zuvor zum Optimieren genutzt wurde, wird er nicht als unabhängiger Test ausgegeben. Für einen Zoi-Prototyp werden entsprechend neue synthetische Fälle aus der eigenen Spezifikation erstellt.
 :::
@@ -77,14 +77,14 @@ Verglichen werden ein einfacher Chat und der Workflow, beide mit denselben Infor
 ## Übung 3.3: Nutzbarkeit erklären {#uebung-3-3}
 
 ::: {.uebung}
-### ca. 60 Minuten · Dreierteams
+### Dreierteams
 
 **Material:** Projektbrief, Workflow-Export und Testergebnisse.
 
-1. Auf einer Seite festhalten: Zweck, Eingaben, Ausgabe, Einrichtung, Start und menschliche Prüfung. Zugangsdaten nicht aufnehmen (20 Minuten).
-2. Ergebnis des Vergleichs interpretieren: Was ist besser, schlechter oder unverändert? Lohnt sich Automatisierung bei wiederholter Nutzung? Einrichtungszeit separat ausweisen (15 Minuten).
-3. Marketinghypothese und einen späteren Wirkungstest formulieren. Synthetische Ausgaben belegen keine zusätzliche Conversion (15 Minuten).
-4. Eine andere Person im Team führt den Ablauf nur mit der Anleitung aus. Eine unklare Stelle verbessern (10 Minuten).
+1. Auf einer Seite festhalten: Zweck, Eingaben, Ausgabe, Einrichtung, Start und menschliche Prüfung. Zugangsdaten nicht aufnehmen.
+2. Ergebnis des Vergleichs interpretieren: Was ist besser, schlechter oder unverändert? Lohnt sich Automatisierung bei wiederholter Nutzung? Einrichtungszeit separat ausweisen.
+3. Marketinghypothese und einen späteren Wirkungstest formulieren. Synthetische Ausgaben belegen keine zusätzliche Conversion.
+4. Eine andere Person im Team führt den Ablauf nur mit der Anleitung aus. Eine unklare Stelle verbessern.
 
 **Ergebnis:** Erste Fassung des Playbooks und eine begründete Ausbauentscheidung. Kein Anspruch auf Produktivreife.
 :::
@@ -95,14 +95,14 @@ Nur noch eine relevante Korrektur mit erneutem Test vornehmen. Für die Präsent
 
 ## Teamdemos {#demos}
 
-Acht Minuten pro Team:
+Kurz pro Team:
 
 - Eine Minute: Problem, Zielgruppe und Nutzenannahme.
-- Drei Minuten: Ein echter Lauf vom Eingang bis zum Ergebnis.
-- Zwei Minuten: Test und Vergleich mit einer einfacheren Lösung.
-- Zwei Minuten: Grenze, offene Entscheidung und nächster Versuch.
+- Ein echter Lauf vom Eingang bis zum Ergebnis.
+- Test und Vergleich mit einer einfacheren Lösung.
+- Grenze, offene Entscheidung und nächster Versuch.
 
-Vier Minuten Fragen und Rückmeldung pro Team. Alle drei Personen übernehmen einen Teil. Bewertungsmaßstab der Rückmeldung sind Begründung, tatsächliche Funktion und nachvollziehbare Prüfung.
+Danach Fragen und Rückmeldung. Alle drei Personen übernehmen einen Teil. Bewertungsmaßstab der Rückmeldung sind Begründung, tatsächliche Funktion und nachvollziehbare Prüfung.
 
 ## Weiterarbeit im Semester {#weiter}
 
