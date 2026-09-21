@@ -515,14 +515,14 @@
     "href": "tage/dienstag.html#briefingvorbereitung",
     "title": "Dienstag: Vom Übungsfall zum Zoi-Auftrag",
     "section": "Briefingvorbereitung",
-    "text": "Briefingvorbereitung\n\nFolien\n\n\nVom Übungsfall zum Zoi-Auftrag Rückblick, Briefing, Projektbrief, Ablaufskizze\n\n\n\nDie am Montag gesammelten Fragen an Zoi werden gesichtet, Dubletten zusammengefasst, und jedes Team markiert die eine Frage, die es im Briefing selbst stellt. Dazu werden drei Aufgaben fürs Briefing verteilt: belegte Aussagen notieren, Annahmen und offene Punkte erkennen, Fragen stellen. Die Aufgaben wechseln beim anschließenden Bearbeiten."
+    "text": "Briefingvorbereitung\n\nFolien\n\n\nVom Übungsfall zum Zoi-Auftrag Briefing, Ablaufskizze, Antigravity\n\n\n\nDie am Montag gesammelten Fragen an Zoi werden gesichtet, Dubletten zusammengefasst, und jedes Team markiert die eine Frage, die es im Briefing selbst stellt. Dazu werden drei Aufgaben fürs Briefing verteilt: belegte Aussagen notieren, Annahmen und offene Punkte erkennen, Fragen stellen. Die Aufgaben wechseln beim anschließenden Bearbeiten."
   },
   {
     "objectID": "tage/dienstag.html#briefing",
     "href": "tage/dienstag.html#briefing",
     "title": "Dienstag: Vom Übungsfall zum Zoi-Auftrag",
     "section": "Briefing des Projektpartners ab 10:00 Uhr",
-    "text": "Briefing des Projektpartners ab 10:00 Uhr\nGeplant sind eine Vorstellung durch Zoi und anschließend Fragen, vor Ort an der HdM. Angebot, Zielgruppe, heutiger Prozess und gewünschter Nutzen werden anhand des Briefings konkretisiert. Eine geplante Veranstaltung ist noch kein Nachweis einer getroffenen Vereinbarung.\n\n\n\n\n\n\nHinweisWenn Informationen noch fehlen\n\n\n\nDer Projektbrief hält die Lücke fest. Die technische Übung wird am vollständigen Aurenta-Fall fortgeführt. Eine Übertragung auf Zoi wird nur dort vorgenommen, wo tatsächliche Informationen vorliegen. Der Übungsfall wird nicht als Angebot des Partners ausgegeben."
+    "text": "Briefing des Projektpartners ab 10:00 Uhr\nGeplant sind eine Vorstellung durch Zoi und anschließend Fragen, vor Ort an der HdM. Angebot, Zielgruppe, heutiger Prozess und gewünschter Nutzen werden anhand des Briefings konkretisiert."
   },
   {
     "objectID": "tage/dienstag.html#rueckblick",
@@ -557,7 +557,7 @@
     "href": "tage/dienstag.html#kurze-runde-zum-abschluss",
     "title": "Dienstag: Vom Übungsfall zum Zoi-Auftrag",
     "section": "Kurze Runde zum Abschluss",
-    "text": "Kurze Runde zum Abschluss\nJedes Team zeigt in wenigen Minuten: den importierten Workflow, die Hypothese aus den Daten, und was es am Vorschlag des Agenten korrigieren musste. Daraus folgt die Entscheidung, womit das Team am Mittwoch weiterarbeitet.\n\nAlle Folien zu diesem Tag\nDie Präsentationen öffnen sich in einem neuen Tab.\n\n\nVom Übungsfall zum Zoi-Auftrag Briefing, Projektbrief, Ablaufskizze, Anweisungen\n\n\nn8n: Workflows und Agenten Abschnitt Ausbau: Sperre, Parser, Agent\n\n\n\nWie es am Mittwoch weitergeht, sehen wir am Mittwochmorgen."
+    "text": "Kurze Runde zum Abschluss\nJedes Team zeigt in wenigen Minuten: den importierten Workflow, die Hypothese aus den Daten, und was es am Vorschlag des Agenten korrigieren musste. Daraus folgt die Entscheidung, womit das Team am Mittwoch weiterarbeitet.\n\nAlle Folien zu diesem Tag\nDie Präsentationen öffnen sich in einem neuen Tab.\n\n\nVom Übungsfall zum Zoi-Auftrag Briefing, Ablaufskizze, Antigravity\n\n\nn8n: Workflows und Agenten Abschnitt Ausbau: Sperre, Parser, Agent\n\n\n\nWie es am Mittwoch weitergeht, sehen wir am Mittwochmorgen."
   },
   {
     "objectID": "start.html",
@@ -613,7 +613,7 @@
     "href": "index.html#die-drei-tage",
     "title": "Agentic AI für Growth Marketing",
     "section": "Die drei Tage",
-    "text": "Die drei Tage\n\n\n\nTag\nThema\n\n\n\n\n\nMontag, 21.09.\nTeamfindung, Growth-Hypothese am Übungsfall, erster eigener n8n-Workflow\nZum Tag\n\n\nDienstag, 22.09.\nBriefing durch Zoi um 10 Uhr, Projektbrief, Ablaufskizze, Ausbau des Workflows\nZum Tag\n\n\nMittwoch, 23.09.\nTestfälle, Vergleich mit einer einfachen Lösung, Live-Demo, Start ins Semesterprojekt\nwird am Morgen freigeschaltet"
+    "text": "Die drei Tage\n\n\n\nTag\nThema\n\n\n\n\n\nMontag, 21.09.\nTeamfindung, Growth-Hypothese am Übungsfall, erster eigener n8n-Workflow\nZum Tag\n\n\nDienstag, 22.09.\nBriefing durch Zoi um 10 Uhr, Ablaufskizze, Antigravity: Workflow und Daten mit einem Agenten\nZum Tag\n\n\nMittwoch, 23.09.\nTestfälle, Vergleich mit einer einfachen Lösung, Live-Demo, Start ins Semesterprojekt\nwird am Morgen freigeschaltet"
   },
   {
     "objectID": "index.html#so-ist-die-seite-aufgebaut",
@@ -935,7 +935,7 @@
     "href": "materialien.html#vorlagen",
     "title": "Materialien und Workflow-Vorlagen",
     "section": "Team, Hypothese und Projektbrief",
-    "text": "Team, Hypothese und Projektbrief\n\n\n\nVorlage\nVerwendung\n\n\n\n\nUmfrage zur Teambildung\nGoogle-Formular, wird am Montag im Kurs ausgefüllt; Textfassung der Fragen\n\n\nAnleitung Übung 1.1\nGoogle Doc: Vorstellungsrunde, Fall kennenlernen, Teamvereinbarung\n\n\nExperimentkarte für Montag\nBeobachtung, Hypothese, Kennzahl\n\n\nExperimentkarte, ausführliche Fassung mit Testdesign\nwird am Mittwoch freigeschaltet\n\n\nProjektbrief\nDienstag: Zuschnitt nach dem Zoi-Briefing\n\n\nAblaufskizze: Lesehilfe und Aurenta-Beispiel\nDienstag: Swimlane-Diagramm für Übung 2.2, Beispiel heute und mit KI-Agent, BPMN-Dateien zum Öffnen in demo.bpmn.io\n\n\nContent-Briefing\nOptionale Erweiterung für Beiträge und Sprachfassungen\n\n\nCoaching-Stand\nBelegtes Ergebnis, offene Frage, nächster Versuch"
+    "text": "Team, Hypothese und Projektbrief\n\n\n\nVorlage\nVerwendung\n\n\n\n\nUmfrage zur Teambildung\nGoogle-Formular, wird am Montag im Kurs ausgefüllt; Textfassung der Fragen\n\n\nAnleitung Übung 1.1\nGoogle Doc: Vorstellungsrunde, Fall kennenlernen, Teamvereinbarung\n\n\nExperimentkarte für Montag\nBeobachtung, Hypothese, Kennzahl\n\n\nExperimentkarte, ausführliche Fassung mit Testdesign\nwird am Mittwoch freigeschaltet\n\n\nProjektbrief\nIm Semester: Zuschnitt des Zoi-Auftrags\n\n\nAblaufskizze: Lesehilfe und Aurenta-Beispiel\nDienstag: Swimlane-Diagramm, Beispiel heute und mit KI-Agent, BPMN-Dateien zum Öffnen in demo.bpmn.io\n\n\nContent-Briefing\nOptionale Erweiterung für Beiträge und Sprachfassungen\n\n\nCoaching-Stand\nBelegtes Ergebnis, offene Frage, nächster Versuch"
   },
   {
     "objectID": "materialien.html#tests",
