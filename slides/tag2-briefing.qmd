@@ -219,18 +219,3 @@ Aus der Skizze ergeben sich die drei Testfälle für Mittwoch: ein normaler Fall
 ::: {.notes}
 Übung 2.2: fachlichen Weg skizzieren, für den gewählten Ausschnitt Eingabe, Verarbeitung, Ausgabe und menschliche Entscheidung ergänzen, Schritt-Typen markieren, Testfälle festlegen. Mehrere Agenten sind kein Qualitätskriterium.
 :::
-
-# Anweisungen wiederverwenden {background-color="#0b0d13"}
-
-{{< include includes/bg-grid.html >}}
-
-## Eine Antwort aus Gemini ist nicht dieselbe Antwort in n8n {.center}
-
-::: {.ws-statement}
-Modell, Zusatzfunktionen, Verlauf und Einstellungen können abweichen. Nach der Übertragung in die Basic LLM Chain werden die Testfälle deshalb erneut ausgeführt.
-:::
-
-::: {.notes}
-Übung 2.3: Regeln vom Fall trennen, im neuen Chat prüfen, dieselbe Aufgabe in n8n übertragen, eine gezielte Erweiterung wählen (strukturierte Felder, feste Kontaktsperre oder passendere Materialauswahl), einen Fall vor und nach der Änderung prüfen, Export und Änderungsgrund ablegen. Bedienung wechseln.
-:::
-
