@@ -53,27 +53,70 @@ Der Projektbrief hält die Lücke fest. Die technische Übung wird am vollständ
 
 Nach dem Briefing wird ein Lauf des Lösungsworkflows mit Kontakt K-02 gemeinsam betrachtet: Welche Entscheidung erwarten die Regeln, was hat das Modell geliefert, und lag der Unterschied an den Daten, der Anweisung oder am Modell? Die Erwartung wird vor dem Lauf genannt, nicht danach. So arbeiten die Teams am Mittwoch mit dem Testprotokoll weiter. Höchstens 15 Minuten.
 
-## Übung 1.3 nachgeholt: Der erste Prompt {#uebung-1-3}
+## Übung 1.3: Der erste Prompt {#uebung-1-3}
 
 ::: {.folien .folien-inline}
 [Folien]{.folien-label}
 
-<ul><li><a class="folie" href="../slides/ki-und-prompting.html" target="_blank" rel="noopener">KI verstehen und Aufträge formulieren <span>Kontext, Aufgabe, Format, Prüfung</span></a></li></ul>
+<ul><li><a class="folie" href="../slides/ki-und-prompting.html" target="_blank" rel="noopener">KI verstehen und Aufträge formulieren <span>Kurzer Input vor der Übung</span></a></li></ul>
 :::
 
 ::: {.uebung}
-### ca. 20 Minuten · Erst einzeln, dann im Team
+### Etwa 20 Minuten · Erst einzeln, dann im Team
 
-Die Übung vom Montag wird unverändert bearbeitet: [Übung 1.3 auf der Montagsseite](montag.qmd#uebung-1-3). Der Prompt aus Kontext, Aufgabe, Format und Prüfung wird direkt danach in Übung 2.1 auf die eigene Briefing-Mitschrift angewendet und ist die Vorstufe der Anweisungen, die in Übung 2.3 in den Workflow übertragen werden.
+**Material:** [Kontext für Gemini](https://docs.google.com/document/d/1bAQ1KaMDCp7nuRhHrkBBs7P0Iy9E_AxfXJAnBEiN68g/edit), [Fallpaket](https://docs.google.com/document/d/1DZ9IaK7D3EqfwPLos8j4GZd35xRHN8hfdmBAXrVsLUU/edit) für die Regeln, [zwei Beispielantworten mit typischen Fehlern](https://docs.google.com/document/d/1_h820RAj27LmmoikA_fxTYikmlySU9lSNAIqotemRTc/edit).
+
+Der Prompt unten ist die Vorstufe des Workflows aus Übung 1.4. Dort übernimmt n8n dieselbe Anweisung als KI-Schritt. Vorher soll jedes Team gesehen haben, was das Modell damit macht.
+
+1. Jede Person öffnet einen neuen Chat und kopiert den Prompt unten hinein. An der markierten Stelle den kompletten Text aus dem Google Doc „Kontext für Gemini" einfügen: im Doc alles markieren, kopieren, im Chat an der Stelle einfügen. Das Doc muss nicht gelesen werden.
+2. Abschicken. Die Antwort in ein Dokument in der Teamablage kopieren, mit dem Namen der Person darüber.
+3. Die drei Antworten nebeneinander legen und für jede vier Fragen beantworten: Empfiehlt sie Material, Rückfrage oder Erstgespräch? Stimmt das mit Regel 3 im Fallpaket überein (wer um Informationen bittet und kein Gespräch will, bekommt Material)? Wird eine Aufzeichnung oder ein Termin erfunden? Steht am Ende, was fehlt oder unsicher ist?
+4. In zwei Sätzen festhalten, worin sich die drei Antworten unterscheiden, obwohl der Prompt derselbe war. Zum Vergleich die zwei Beispielantworten ansehen.
+
+```default
+Kontext:
+<Hier den kompletten Text aus dem Google Doc „Kontext für Gemini“ einfügen.>
+Kontakt K-02: Content Marketing in einem technischen Handelsunternehmen.
+Nicht am Webinar teilgenommen. Anliegen: „Gibt es eine Aufzeichnung?
+Ich möchte zunächst die Inhalte nacharbeiten.“ Sprache: Deutsch.
+Kontakt erlaubt: ja.
+
+Aufgabe: Empfiehl für Kontakt K-02 den nächsten Schritt (Material,
+Rückfrage oder Erstgespräch), begründe die Entscheidung und schreibe
+den Nachrichtenentwurf.
+
+Format: Entscheidung, Begründung mit Bezug auf das Anliegen, bei Material
+die Arbeitshilfe (M1, M2 oder M3), Nachrichtenentwurf mit höchstens
+120 Wörtern in der Sie-Form.
+
+Prüfung: Nenne am Ende, was fehlt oder unsicher ist, statt es zu
+erfinden. Keine Links, Anhänge, Termine oder Leistungen, die nicht
+im Kontext stehen.
+```
+
+**Ergebnis:** Der Prompt und die drei bewerteten Antworten in der Teamablage.
 :::
 
-## Übung 1.2 nachgeholt: Vom Trichter zur Hypothese {#uebung-1-2}
+Der Prompt aus Kontext, Aufgabe, Format und Prüfung wird gleich in Übung 2.1 auf die eigene Briefing-Mitschrift angewendet und ist die Vorstufe der Anweisungen, die in Übung 2.3 in den Workflow übertragen werden.
+
+## Übung 1.2: Vom Trichter zur Hypothese {#uebung-1-2}
 
 ::: {.uebung}
-### ca. 30 Minuten · Dreierteams
+### Etwa 30 Minuten · Dreierteams
 
-Die Übung vom Montag wird unverändert bearbeitet: [Übung 1.2 auf der Montagsseite](montag.qmd#uebung-1-2). Pivot-Tabellen zu den Aurenta-Kampagnen, Beobachtung mit Zähler und Nenner, eine Hypothese nach dem Muster „Wenn wir X ändern, dann Y, weil Z“, dazu die Kennzahl. Das Muster wird direkt danach in Übung 2.1 auf Zoi übertragen.
+**Material:** [Webinar-Kontakte als Google Sheet](https://docs.google.com/spreadsheets/d/1ri_Z7epna2iRNSJYo7tQtC3cjAihbDuxn6-DSZN12q0/edit), [Anleitung Pivot-Tabellen](https://docs.google.com/document/d/1YckXrnscZX7MjaUonjEQiHHqT2aO87pcMy2JlSQCDIU/edit), [Experimentkarte für Montag](https://docs.google.com/document/d/1RDw-7aKpkUtPurVk-NHItVg3zBKczG0G_tw_4TrfUtk/edit).
+
+1. Eine Person öffnet das Google Sheet und legt über „Datei" und „Kopie erstellen" eine Kopie in der Teamablage an. Die anderen beiden schauen mit.
+2. Nach der Anleitung die erste Pivot-Tabelle anlegen: Zeilen sind die Kampagnen, Werte sind die vier Ergebnisspalten als Summe. In die Experimentkarte unter „Beobachtung" schreiben, an welcher Stelle des Weges die meisten Kontakte verloren gehen, mit Zahlen: Zähler und Nenner.
+3. Die zweite Pivot-Tabelle anlegen: Zeilen sind die Anliegen-Kategorien, Spalten ist „Gespräch gebucht", Filter ist „Nachricht gesendet". Ebenfalls unter „Beobachtung" notieren, welche Gruppe fast nie bucht und welche vergleichsweise oft.
+4. Im Team zwei mögliche Erklärungen für die Beobachtung aufschreiben. Beide müssen sich auf die Tabellen stützen, nicht auf Vermutungen über die Personen.
+5. Eine der beiden Erklärungen als Hypothese formulieren, nach dem Muster „Wenn wir X ändern, dann Y, weil Z". X ist eine Änderung, die Aurenta selbst vornehmen kann, Y eine Zahl, die sich messen lässt, Z der Grund. Beispiel aus einem anderen Bereich: Wenn ein Onlineshop die Versandkosten schon auf der Produktseite zeigt, dann sinkt der Anteil abgebrochener Bestellungen, weil weniger Kunden erst an der Kasse überrascht werden.
+6. Die Kennzahl festlegen, an der sich die Hypothese später prüfen ließe: Zähler, Nenner, Zeitraum. In die Experimentkarte unter „Kennzahl".
+
+**Ergebnis:** Die Kopie des Sheets mit zwei Pivot-Tabellen und die ausgefüllte Experimentkarte (Beobachtung, Hypothese, Kennzahl), beides in der Teamablage.
 :::
+
+Das Hypothesen-Muster wird direkt danach in Übung 2.1 auf Zoi übertragen.
 
 ## Übung 2.1: Ein bearbeitbares Problem {#uebung-2-1}
 
