@@ -56,6 +56,13 @@
     "text": "Aurenta mit KI-Agent: Sperre, Einordnung, Entwurf, menschliche Freigabe\n\n\nSelbst öffnen: Datei herunterladen, dann demo.bpmn.io öffnen und die Datei hineinziehen.\n\n\nDie Kontaktsperre liegt als feste Regel im Workflow-System, vor dem Modell. Der KI-Agent ordnet das Anliegen ein und schreibt den Entwurf. Freigabe und Versand bleiben in der Bahn Marketing-Team. Genau das ist der Workflow 02 von gestern, nur als Prozessbild."
   },
   {
+    "objectID": "slides/tag2-briefing.html#derselbe-ablauf-in-n8n-bahnen-als-notizen-schritte-als-knoten",
+    "href": "slides/tag2-briefing.html#derselbe-ablauf-in-n8n-bahnen-als-notizen-schritte-als-knoten",
+    "title": "Vom Übungsfall zum Zoi-Auftrag",
+    "section": "Derselbe Ablauf in n8n: Bahnen als Notizen, Schritte als Knoten",
+    "text": "Derselbe Ablauf in n8n: Bahnen als Notizen, Schritte als Knoten\n\n\nSelbst öffnen: Datei herunterladen, dann in n8n einen neuen Workflow anlegen, Menü oben rechts, „Import from file“. Im Postgres-Knoten das Credential „Postgres growth_gN“ wählen, im Kursmodell „Gemini (Gruppe N)“.\n\n\nJeder Kasten der Skizze ist ein Knoten. Die Bahnen sind in n8n Notizen, sie haben keine Funktion, machen aber sichtbar, was Regel, Modell und Mensch ist. Der Mensch hat keinen Knoten: Der Workflow endet bei „Ergebnis zur Prüfung“. Das ist Beispiel 05 aus dem Starterpaket, nur anders angeordnet."
+  },
+  {
     "objectID": "slides/tag2-briefing.html#jeder-schritt-in-der-skizze-ist-eines-von-dreien-regel-ki-oder-mensch",
     "href": "slides/tag2-briefing.html#jeder-schritt-in-der-skizze-ist-eines-von-dreien-regel-ki-oder-mensch",
     "title": "Vom Übungsfall zum Zoi-Auftrag",
