@@ -6,7 +6,13 @@ toc: true
 
 [22. September 2026 · 09:30–17:00 Uhr · Raum I120 · Briefing mit Zoi um 10:00 Uhr]{.kicker}
 
-[Der erste Prototyp schafft eine gemeinsame Sprache für das Briefing. Heute wird daraus ein begründeter Projektzuschnitt mit einem klaren ersten Ablauf.]{.lead}
+::: {.lead}
+- Briefing mit Zoi: Angebot, Zielgruppe und heutiger Prozess
+- Erster Prompt und eine Hypothese aus den Aurenta-Daten
+- Projektbrief und Ablaufskizze für den Zoi-Fall
+- Workflows und Agenten: wann reicht der feste Ablauf?
+- Workflow ausbauen und Entscheidung für Mittwoch
+:::
 
 ## Ziel und Tagesergebnis
 
