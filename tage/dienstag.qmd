@@ -8,7 +8,8 @@ toc: true
 
 ::: {.lead}
 - Briefing mit Zoi: Angebot, Zielgruppe und heutiger Prozess
-- Erster Prompt und eine Hypothese aus den Aurenta-Daten
+- Antigravity: Ein Agent baut den Workflow aus der Skizze, das Team prüft
+- Eine Hypothese aus den Aurenta-Daten
 - Projektbrief und Ablaufskizze für den Zoi-Fall
 - Workflows und Agenten: wann reicht der feste Ablauf?
 - Workflow ausbauen und Entscheidung für Mittwoch
@@ -16,7 +17,7 @@ toc: true
 
 ## Ziel und Tagesergebnis
 
-Jedes Team erstellt einen Projektbrief, eine aktualisierte Experimentkarte, eine Ablaufskizze und einen überarbeiteten n8n-Prototyp. Dazu holen die Teams die Hypothesen-Übung und den ersten Prompt vom Montag nach. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt.
+Jedes Team erstellt einen Projektbrief, eine aktualisierte Experimentkarte, eine Ablaufskizze und einen überarbeiteten n8n-Prototyp. Dazu lassen die Teams zum ersten Mal einen Agenten einen Workflow bauen und holen die Hypothesen-Übung vom Montag nach. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt.
 
 ## Bausteine des Tages {#bausteine}
 
@@ -26,7 +27,7 @@ Fest sind Beginn um 09:30 Uhr in Raum I120, das Briefing durch Zoi ab 10:00 Uhr,
 |---|---|---|
 | Vormittag | Briefingvorbereitung | Gemeinsam |
 | Vormittag | **Zoi-Briefing einschließlich Rückfragen** | Gemeinsam |
-| Nach dem Briefing | Ein Lauf vom Montag, danach Übungen | Gemeinsam, dann Dreierteams |
+| Nach dem Briefing | Ein Lauf vom Montag, dann Antigravity gemeinsam, dann Übungen | Gemeinsam, dann Dreierteams |
 | Nachmittag | Übungen und Input: Workflows und Agenten | Dreierteams und gemeinsam |
 | Später Nachmittag | Design-Reviews und Entscheidung für Mittwoch | Gemeinsam |
 
@@ -52,51 +53,32 @@ Der Projektbrief hält die Lücke fest. Die technische Übung wird am vollständ
 
 Nach dem Briefing wird ein Lauf des Lösungsworkflows mit Kontakt K-02 gemeinsam betrachtet: Welche Entscheidung erwarten die Regeln, was hat das Modell geliefert, und lag der Unterschied an den Daten, der Anweisung oder am Modell? Die Erwartung wird vor dem Lauf genannt, nicht danach. So arbeiten die Teams am Mittwoch mit dem Testprotokoll weiter.
 
-## Übung 1.3: Der erste Prompt {#uebung-1-3}
+## Übung 1.3: Vom Prozess zum Workflow mit Antigravity {#uebung-1-3}
 
 ::: {.folien .folien-inline}
 [Folien]{.folien-label}
 
-<ul><li><a class="folie" href="../slides/ki-und-prompting.html" target="_blank" rel="noopener">KI verstehen und Aufträge formulieren <span>Kurzer Input vor der Übung</span></a></li></ul>
+<ul><li><a class="folie" href="../slides/tag2-briefing.html#/antigravity" target="_blank" rel="noopener">Vom Übungsfall zum Zoi-Auftrag <span>Abschnitt Antigravity</span></a></li></ul>
 :::
 
 ::: {.uebung}
-### Erst einzeln, dann im Team
+### Gemeinsam Schritt für Schritt, jedes Team am eigenen Rechner
 
-**Material:** [Kontext für Gemini](https://docs.google.com/document/d/1bAQ1KaMDCp7nuRhHrkBBs7P0Iy9E_AxfXJAnBEiN68g/edit), [Fallpaket](https://docs.google.com/document/d/1DZ9IaK7D3EqfwPLos8j4GZd35xRHN8hfdmBAXrVsLUU/edit) für die Regeln, [zwei Beispielantworten mit typischen Fehlern](https://docs.google.com/document/d/1_h820RAj27LmmoikA_fxTYikmlySU9lSNAIqotemRTc/edit).
+**Material:** [Startordner als ZIP](../material/workflows/antigravity-aurenta.zip) (Ablaufskizze als BPMN, Muster-Workflow, KI-Anweisung, Auftrag zum Kopieren), [Antigravity](https://antigravity.google/){target="_blank"}.
 
-Der Prompt unten ist die Vorstufe des Workflows aus Übung 1.4. Dort übernimmt n8n dieselbe Anweisung als KI-Schritt. Vorher soll jedes Team gesehen haben, was das Modell damit macht.
+Am Montag wurde der Workflow von Hand gebaut. Jetzt baut ihn ein Agent aus der Ablaufskizze, und das Team prüft, ob er den Regeln der Skizze entspricht. Das ist die Arbeitsweise für das Semester: Der Agent erzeugt, der Mensch prüft.
 
-1. Jede Person öffnet einen neuen Chat und kopiert den Prompt unten hinein. An der markierten Stelle den kompletten Text aus dem Google Doc „Kontext für Gemini" einfügen: im Doc alles markieren, kopieren, im Chat an der Stelle einfügen. Das Doc muss nicht gelesen werden.
-2. Abschicken. Die Antwort in ein Dokument in der Teamablage kopieren, mit dem Namen der Person darüber.
-3. Die drei Antworten nebeneinander legen und für jede vier Fragen beantworten: Empfiehlt sie Material, Rückfrage oder Erstgespräch? Stimmt das mit Regel 3 im Fallpaket überein (wer um Informationen bittet und kein Gespräch will, bekommt Material)? Wird eine Aufzeichnung oder ein Termin erfunden? Steht am Ende, was fehlt oder unsicher ist?
-4. In zwei Sätzen festhalten, worin sich die drei Antworten unterscheiden, obwohl der Prompt derselbe war. Zum Vergleich die zwei Beispielantworten ansehen.
+1. Antigravity von antigravity.google herunterladen und installieren (Mac oder Windows). Mit dem Google-Konto anmelden, auf dem Gemini für Studierende läuft. Eine Person pro Team reicht, die anderen schauen mit.
+2. Das ZIP entpacken. In Antigravity links auf das Ordnersymbol mit „+“, „New Project“, den entpackten Ordner auswählen.
+3. Die Datei AUFTRAG.md öffnen, den Text unter der Linie kopieren und in den Chat einfügen. Abschicken. Der Agent legt einen Plan vor, liest die Dateien und schreibt aurenta-soll.json und zuordnung.md.
+4. Bevor etwas importiert wird: zuordnung.md lesen. Stimmt jeder Knoten mit einem Schritt der Skizze überein? Fehlt die Kontaktsperre vor dem KI-Schritt? Gibt es einen Knoten, der versendet oder schreibt? Wenn ja, dem Agenten die Korrektur im Chat auftragen.
+5. In n8n einen neuen Workflow anlegen, Menü oben rechts, „Import from file“, aurenta-soll.json wählen. Im Kursmodell das Credential „Gemini (Gruppe N)“ auswählen.
+6. Mit K-01 ausführen, dann im Knoten „Kontakt“ die Felder von K-05 eintragen und erneut ausführen. Bei K-05 darf der KI-Schritt nicht laufen.
 
-```default
-Kontext:
-<Hier den kompletten Text aus dem Google Doc „Kontext für Gemini“ einfügen.>
-Kontakt K-02: Content Marketing in einem technischen Handelsunternehmen.
-Nicht am Webinar teilgenommen. Anliegen: „Gibt es eine Aufzeichnung?
-Ich möchte zunächst die Inhalte nacharbeiten.“ Sprache: Deutsch.
-Kontakt erlaubt: ja.
+**Wenn die Installation nicht klappt:** denselben Auftrag in den Gemini-Chat einfügen, dazu den Inhalt der BPMN-Datei und des Muster-Workflows als Text. Der Weg ist umständlicher, das Ergebnis dasselbe.
 
-Aufgabe: Empfiehl für Kontakt K-02 den nächsten Schritt (Material,
-Rückfrage oder Erstgespräch), begründe die Entscheidung und schreibe
-den Nachrichtenentwurf.
-
-Format: Entscheidung, Begründung mit Bezug auf das Anliegen, bei Material
-die Arbeitshilfe (M1, M2 oder M3), Nachrichtenentwurf mit höchstens
-120 Wörtern in der Sie-Form.
-
-Prüfung: Nenne am Ende, was fehlt oder unsicher ist, statt es zu
-erfinden. Keine Links, Anhänge, Termine oder Leistungen, die nicht
-im Kontext stehen.
-```
-
-**Ergebnis:** Der Prompt und die drei bewerteten Antworten in der Teamablage.
+**Ergebnis:** aurenta-soll.json und zuordnung.md in der Teamablage, dazu zwei Sätze: Was hat der Agent anders gemacht als die Skizze, und was musste korrigiert werden?
 :::
-
-Der Prompt aus Kontext, Aufgabe, Format und Prüfung wird gleich in Übung 2.1 auf die eigene Briefing-Mitschrift angewendet und ist die Vorstufe der Anweisungen, die in Übung 2.3 in den Workflow übertragen werden.
 
 ## Übung 1.2: Vom Trichter zur Hypothese {#uebung-1-2}
 
@@ -124,7 +106,7 @@ Das Hypothesen-Muster wird direkt danach in Übung 2.1 auf Zoi übertragen.
 
 **Material:** Mitschrift, [Projektbrief](https://docs.google.com/document/d/1Jwbhg5CbI-mxCJvRw1oSLBkLR7ZoPOQrwN0jsluFtIM/edit), [Experimentkarte](https://docs.google.com/document/d/1JrrMgJ6fCEae3trCWNqdAonEc9EHbZ-PWskl8wtli-s/edit).
 
-1. Mitschriften zusammenführen: Aussagen mit Quelle und Zeitpunkt von Interpretationen trennen. Dafür den Prompt aus Übung 1.3 nutzen: Kontext ist die Mitschrift, Aufgabe das Trennen, Format eine Tabelle mit Quelle, Prüfung „nichts ergänzen, Lücken markieren“.
+1. Mitschriften zusammenführen: Aussagen mit Quelle und Zeitpunkt von Interpretationen trennen. Dafür einen Prompt nach dem Muster Kontext, Aufgabe, Format, Prüfung nutzen: Kontext ist die Mitschrift, Aufgabe das Trennen, Format eine Tabelle mit Quelle, Prüfung „nichts ergänzen, Lücken markieren“.
 2. Einen Engpass im Kundenweg wählen. Nutzen und betroffene Zielgruppe beschreiben, bevor Werkzeuge ausgewählt werden.
 3. Hypothese und alternative Erklärung formulieren, nach dem Muster aus Übung 1.2. Verfügbare Daten und geplante Wirkungsmetrik benennen.
 4. Einen ersten Ablauf und dessen Grenze festlegen: Welche Eingabe wird bis Mittwoch zu welcher prüfbaren Ausgabe? Was bleibt außerhalb dieses ersten Prototyps?.
@@ -183,12 +165,11 @@ Ein Workflow legt die Schritte vorab fest, ein Agent wählt zur Laufzeit Werkzeu
 ::: {.uebung}
 ### Dreierteams, Bedienung wechseln
 
-**Material:** [Anweisungen](https://docs.google.com/document/d/1SIYpnRHpPq9tb5qiE0-Ixu8o4xy0_5NJHvM-DgZ0LYc/edit), [Assistenten-Bausteine](../werkzeuge/assistenten.qmd), [n8n-Anleitung](../werkzeuge/workflows.qmd#ausbau).
+**Material:** Eigener Workflow, [n8n-Anleitung zum Ausbau](../werkzeuge/workflows.qmd#ausbau), [Anweisungen](https://docs.google.com/document/d/1SIYpnRHpPq9tb5qiE0-Ixu8o4xy0_5NJHvM-DgZ0LYc/edit).
 
-1. Dauerhafte Regeln vom jeweiligen Kontaktfall trennen. Angebotswissen als gesonderte Grundlage benennen.
-2. Einen neuen Chat mit Regeln, Wissen und einem Fall ausführen. Ohne eigene GPTs oder andere Bezahlfunktionen.
-3. Dieselbe Aufgabe in n8n übertragen. Eine gezielte Erweiterung auswählen: strukturierte Felder, feste Kontaktsperre oder passendere Materialauswahl.
-4. Einen Fall vor und nach der Änderung prüfen und Export sowie Änderungsgrund ablegen.
+1. Aus der Ablaufskizze eine gezielte Erweiterung auswählen: strukturierte Felder, feste Kontaktsperre oder passendere Materialauswahl.
+2. Die Erweiterung im eigenen n8n-Workflow umsetzen, mit der Lösung 1.4b oder dem Ergebnis aus Übung 1.3 als Referenz.
+3. Einen Fall vor und nach der Änderung prüfen, Export und Änderungsgrund ablegen.
 
 **Ergebnis:** Ein überarbeiteter lauffähiger Ablauf. Bei unvollständigem Zoi-Material steht im Export ausdrücklich „Aurenta-Übungsfall“. Die Ausgaben bleiben Entwürfe.
 :::
