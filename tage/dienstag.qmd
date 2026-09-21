@@ -18,15 +18,10 @@ Fest sind Beginn um 09:30 Uhr in Raum I120, das Briefing durch Zoi ab 10:00 Uhr,
 
 | Zeitfenster | Baustein | Arbeitsform |
 |---|---|---|
-| Vormittag | Fragen an Zoi sichten und Rollen fürs Briefing verteilen | Gemeinsam |
+| Vormittag | Briefingvorbereitung | Gemeinsam |
 | Vormittag | **Zoi-Briefing einschließlich Rückfragen** | Gemeinsam |
-| Nach dem Briefing | Ein Lauf vom Montag: K-02 gemeinsam prüfen | Gemeinsam |
-| Nach dem Briefing | Übung 1.3: Der erste Prompt (vom Montag) | Einzeln, dann im Team |
-| Nach dem Briefing | Übung 1.2: Vom Trichter zur Hypothese (vom Montag) | Dreierteams |
-| Bis zur Mittagspause | Übung 2.1: Projektbrief und erster Zuschnitt | Dreierteams |
-| Nachmittag | Übung 2.2: Kundenweg und Ablauf entwerfen | Dreierteams |
-| Nachmittag | Input: Workflows und Agenten | Gemeinsam |
-| Nachmittag | Übung 2.3: Anweisungen und Workflow übertragen | Dreierteams, Bedienung wechseln |
+| Nach dem Briefing | Ein Lauf vom Montag, danach Übungen | Gemeinsam, dann Dreierteams |
+| Nachmittag | Übungen und Input: Workflows und Agenten | Dreierteams und gemeinsam |
 | Später Nachmittag | Design-Reviews und Entscheidung für Mittwoch | Gemeinsam |
 
 ## Briefingvorbereitung
