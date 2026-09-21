@@ -24,27 +24,54 @@ format:
 
 ::: {.ws-modules}
 ::: {.ws-module}
-**1 Rückblick**<span>Ein Lauf vom Montag, ein Fehler, eine Ursache</span>
+**1 Briefing**<span>Zoi um 10 Uhr: Angebot, Zielgruppe, heutiger Prozess, gewünschter Nutzen</span>
 :::
 ::: {.ws-module}
-**2 Briefing**<span>Zoi um 10 Uhr: Angebot, Zielgruppe, heutiger Prozess, gewünschter Nutzen</span>
+**2 Ein Lauf vom Montag**<span>K-02: Erwartung, Ergebnis, Ursache</span>
 :::
 ::: {.ws-module}
-**3 Projektbrief**<span>Engpass, Zielgruppe, Hypothese, erster Ablauf und seine Grenze</span>
+**3 Prompt und Hypothese**<span>Der erste Prompt, dann eine Hypothese aus den Aurenta-Daten</span>
 :::
 ::: {.ws-module}
-**4 Ablaufskizze**<span>Swimlane-Diagramm: wer macht was, Regel oder Modell oder Mensch</span>
+**4 Projektbrief**<span>Engpass, Zielgruppe, Hypothese, erster Ablauf und seine Grenze</span>
 :::
 ::: {.ws-module}
-**5 Anweisungen und Ausbau**<span>Regeln, Wissen und Fall trennen, dann in n8n übertragen</span>
+**5 Ablaufskizze**<span>Swimlane-Diagramm: wer macht was, Regel oder Modell oder Mensch</span>
 :::
 ::: {.ws-module}
-**6 Test und Review**<span>Ein anderes Team prüft, sechs Design-Reviews, Entscheidung für Mittwoch</span>
+**6 Workflows und Agenten**<span>Wann reicht der feste Ablauf, dann Ausbau und Reviews</span>
 :::
 :::
 
 ::: {.notes}
 Am Ende des Tages: Projektbrief, aktualisierte Experimentkarte, Ablaufskizze, überarbeiteter Prototyp. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt, das zieht sich durch den ganzen Tag.
+:::
+
+## Drei Fragen pro Team und drei Rollen im Briefing
+
+::: {.ws-compare}
+::: {.ws-compare__side .is-left}
+[Drei Fragen vorbereiten]{.ws-h}
+
+- eine zu Problem und Ziel
+- eine zu Daten und Prozess
+- eine zur späteren Nutzbarkeit
+:::
+::: {.ws-compare__side .is-right}
+[Drei Rollen während des Briefings]{.ws-h}
+
+- belegte Aussagen notieren, mit Zeitpunkt
+- Annahmen und offene Punkte erkennen
+- Fragen stellen
+:::
+:::
+
+::: {.ws-note}
+Vorstellung durch Zoi, danach Fragen. Die Rollen wechseln beim anschließenden Bearbeiten.
+:::
+
+::: {.notes}
+Die gestern gesammelten Fragen als Ausgangspunkt. Jedes Team markiert die eine Frage, die es selbst stellt. Eine geplante Veranstaltung ist noch kein Nachweis einer getroffenen Vereinbarung: Was Zoi vorhat, ist nicht dasselbe wie das, was Zoi tut.
 :::
 
 ## Rückblick: ein Lauf, ein Fehler, eine Ursache
@@ -74,56 +101,11 @@ Anweisung und Daten stimmen, die Antwort trotzdem nicht. Erst hier hilft ein and
 :::
 
 ::: {.ws-note}
-Höchstens 30 Minuten. Ergebnis ist eine überprüfbare Änderung, kein Grundsatzgespräch.
+Erwartung vor dem Lauf nennen, dann das Ergebnis lesen. Ergebnis ist eine überprüfbare Änderung, kein Grundsatzgespräch.
 :::
 
 ::: {.notes}
-Einen konkreten Lauf von gestern an die Wand: Welche Eingabe führte zu welcher Empfehlung? Die drei Ursachen sauber trennen, weil sie drei verschiedene Korrekturen brauchen.
-:::
-
-## Drei Fragen pro Team und drei Rollen im Briefing
-
-::: {.ws-compare}
-::: {.ws-compare__side .is-left}
-[Drei Fragen vorbereiten]{.ws-h}
-
-- eine zu Problem und Ziel
-- eine zu Daten und Prozess
-- eine zur späteren Nutzbarkeit
-:::
-::: {.ws-compare__side .is-right}
-[Drei Rollen während des Briefings]{.ws-h}
-
-- belegte Aussagen notieren, mit Zeitpunkt
-- Annahmen und offene Punkte erkennen
-- Fragen stellen
-:::
-:::
-
-::: {.ws-note}
-Etwa 45 Minuten Vorstellung, 15 Minuten Fragen. Die Rollen wechseln beim anschließenden Bearbeiten.
-:::
-
-::: {.notes}
-Die Fragen von gestern Abend als Ausgangspunkt. Pro Team höchstens drei, damit alle sechs Teams drankommen. Eine geplante Veranstaltung ist noch kein Nachweis einer getroffenen Vereinbarung: Was Zoi vorhat, ist nicht dasselbe wie das, was Zoi tut.
-:::
-
-## Belegt, angenommen oder offen: drei Arten von Notizen
-
-{{< include includes/aussagen-sortieren.html >}}
-
-::: {.notes}
-Am Aurenta-Beispiel geübt, weil das Zoi-Briefing erst um 10 Uhr ist. Belegt heißt: nachlesbar oder vom Partner gesagt, mit Quelle und Zeitpunkt. Annahmen sind erlaubt, sie gehören als Hypothese in den Brief. Offene Fragen werden gesammelt und gestellt.
-:::
-
-## Wenn Informationen fehlen, hält der Projektbrief die Lücke fest {.center}
-
-::: {.ws-statement}
-Die technische Übung läuft am vollständigen Aurenta-Fall weiter. Auf Zoi übertragen wird nur, was tatsächlich gesagt wurde. Der Übungsfall wird nicht als Angebot des Partners ausgegeben.
-:::
-
-::: {.notes}
-Praktisch: Im Export steht dann ausdrücklich „Aurenta-Übungsfall“. Lieber eine dokumentierte Lücke als eine erfundene Zoi-Zahl.
+Den Lösungsworkflow mit K-02 an die Wand: Welche Eingabe führte zu welcher Empfehlung? Die drei Ursachen sauber trennen, weil sie drei verschiedene Korrekturen brauchen.
 :::
 
 # Projektbrief {background-color="#0b0d13"}
@@ -227,34 +209,12 @@ Aus der Skizze folgen die drei Testfälle für Mittwoch: normaler Fall, fehlende
 :::
 
 ::: {.notes}
-Übung 2.2, etwa 45 Minuten: fachlichen Weg skizzieren, für den gewählten Ausschnitt Eingabe, Verarbeitung, Ausgabe und menschliche Entscheidung ergänzen, Schritt-Typen markieren, Testfälle festlegen. Mehrere Agenten sind kein Qualitätskriterium.
+Übung 2.2: fachlichen Weg skizzieren, für den gewählten Ausschnitt Eingabe, Verarbeitung, Ausgabe und menschliche Entscheidung ergänzen, Schritt-Typen markieren, Testfälle festlegen. Mehrere Agenten sind kein Qualitätskriterium.
 :::
 
 # Anweisungen wiederverwenden {background-color="#0b0d13"}
 
 {{< include includes/bg-grid.html >}}
-
-## Dauerhafte Regeln, Wissen und der aktuelle Fall werden getrennt gepflegt
-
-{{< include includes/bausteine-sortieren.html >}}
-
-::: {.notes}
-Warum die Trennung: Regeln ändern sich selten, Wissen ändert sich mit dem Angebot, der Fall ändert sich bei jedem Kontakt. Wer alles in einen Prompt schreibt, muss bei jeder Angebotsänderung alles neu prüfen. Anweisungen und Fallpaket werden als Text gespeichert und für jeden Test zusammen mit einem Kontakt in einen neuen Chat eingefügt.
-:::
-
-## Kein eigener GPT nötig, aber exportierbare Regeln {.center}
-
-::: {.ws-statement}
-Die Übungen verlangen weder einen selbst erstellten GPT noch einen Gem. Gespeicherte Assistenten dürfen genutzt werden, die Regeln müssen aber im Wortlaut dokumentiert und exportierbar bleiben.
-:::
-
-::: {.ws-note}
-Eine Änderung erhält Versionsnummer, Datum, Grund und betroffene Testfälle. Ein gespeicherter Assistent ist noch kein Agent.
-:::
-
-::: {.notes}
-Produktfunktionen ändern sich, der Kern der Aufgabe bleibt die überprüfbare Spezifikation. Deshalb Textdateien in der Teamablage, nicht nur Einstellungen in einem Konto.
-:::
 
 ## Eine Antwort aus Gemini ist nicht dieselbe Antwort in n8n {.center}
 
@@ -263,35 +223,6 @@ Modell, Zusatzfunktionen, Verlauf und Einstellungen können abweichen. Nach der 
 :::
 
 ::: {.notes}
-Übung 2.3, etwa 75 Minuten: Regeln vom Fall trennen, im neuen Chat prüfen, dieselbe Aufgabe in n8n übertragen, eine gezielte Erweiterung wählen (strukturierte Felder, feste Kontaktsperre oder passendere Materialauswahl), einen Fall vor und nach der Änderung prüfen, Export und Änderungsgrund ablegen. Bedienung wechseln.
+Übung 2.3: Regeln vom Fall trennen, im neuen Chat prüfen, dieselbe Aufgabe in n8n übertragen, eine gezielte Erweiterung wählen (strukturierte Felder, feste Kontaktsperre oder passendere Materialauswahl), einen Fall vor und nach der Änderung prüfen, Export und Änderungsgrund ablegen. Bedienung wechseln.
 :::
 
-## Gegenseitiger Test: ein Fall, die Kriterien, keine Erklärung
-
-::: {.ws-task}
-**Teampaare 1 und 2, 3 und 4, 5 und 6. Etwa 20 Minuten pro Richtung.**
-
-- Das testende Team bekommt einen Fall und die vorher vereinbarten Kriterien.
-- Es bekommt **keine** Erklärung, warum das Ergebnis angeblich gut ist.
-- Es prüft den tatsächlichen Lauf und benennt einen belegten Befund.
-- Danach entscheidet das verantwortliche Team über eine Änderung.
-:::
-
-::: {.notes}
-Der Sinn: Ein Prototyp muss ohne seine Erbauer funktionieren. Das ist die Vorstufe zum Playbook am Mittwoch und zur Übergabe an Zoi.
-:::
-
-## Design-Review: vier Punkte in sechs Minuten
-
-::: {.ws-task}
-1. Problem und Datenlage
-2. Ein funktionierender Ausschnitt
-3. Ein offener Test
-4. Entscheidung für Mittwoch
-
-Das Review bestätigt einen bearbeitbaren nächsten Schritt. Es verlangt noch keinen vollständigen Semesterprozess.
-:::
-
-::: {.notes}
-Sechs Teams, sechs Minuten, gemeinsamer Puffer. Rückmeldung bezieht sich auf Begründung und Funktion, nicht auf Folien. Morgen: Testen, vergleichen, übergeben.
-:::

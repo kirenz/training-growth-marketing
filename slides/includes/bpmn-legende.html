@@ -1,6 +1,6 @@
 ```{=html}
 <div class="gm-bp" id="gm-bp">
-  <svg id="gm-bp-svg" viewBox="0 0 900 330" aria-hidden="true"></svg>
+  <svg id="gm-bp-svg" viewBox="0 0 900 420" aria-hidden="true"></svg>
   <div class="gm-bp__panel" id="gm-bp-panel">Ein Symbol anklicken. Für die Ablaufskizze reichen die Bahnen und diese sechs Symbole.</div>
 </div>
 <style>
@@ -24,17 +24,19 @@
   // Drei Bahnen als Hintergrund
   var lanes = ["Marketing-Team", "KI-Agent", "Workflow-System"];
   lanes.forEach(function (l, i) { el("rect", { x: 20, y: 20 + i * 95, width: 860, height: 90, "class": "lane", rx: 6 }); var t = el("text", { x: 34, y: 45 + i * 95, "class": "lanelabel" }); t.textContent = l; });
+  // Neutrale Zeile für Elemente, die in jeder Bahn liegen können
+  el("rect", { x: 20, y: 310, width: 860, height: 90, "class": "lane", rx: 6, "stroke-dasharray": "8 6" }); var tn = el("text", { x: 34, y: 335, "class": "lanelabel" }); tn.textContent = "In jeder Bahn möglich";
   var syms = [
-    { name: "Bahn (Lane)", lane: 1, x: 560, kind: "lane", e: "<b>Waagerechte Bahn:</b> wer den Schritt ausführt. Drei Bahnen reichen: Marketing-Team (Mensch), KI-Agent (Modellschritte), Workflow-System (feste Regeln, Systemaufrufe). Jeder Schritt liegt in genau einer Bahn." },
+    { name: "Bahn (Lane)", lane: 3, x: 250, kind: "lane", e: "<b>Waagerechte Bahn:</b> wer den Schritt ausführt. Drei Bahnen reichen: Marketing-Team (Mensch), KI-Agent (Modellschritte), Workflow-System (feste Regeln, Systemaufrufe). Jeder Schritt liegt in genau einer Bahn." },
     { name: "Mensch", lane: 0, x: 250, kind: "user", e: "<b>Rechteck mit Person:</b> ein Mensch entscheidet oder arbeitet, zum Beispiel Freigabe des Entwurfs. Liegt immer in der Bahn Marketing-Team." },
     { name: "Versand", lane: 0, x: 400, kind: "send", e: "<b>Rechteck mit Briefumschlag:</b> Versand einer Nachricht. Im Kurs bleibt der Versand beim Menschen, kein Workflow versendet etwas." },
-    { name: "Modellschritt", lane: 1, x: 250, kind: "service", e: "<b>Rechteck mit Zahnrädern:</b> Modellschritt oder Systemaufruf, etwa der KI-Entwurf oder das Lesen aus dem CRM. Ein Modellschritt liegt in der Bahn KI-Agent." },
+    { name: "Modellschritt", lane: 1, x: 250, kind: "service", e: "<b>Rechteck mit Zahnrädern:</b> Modellschritt oder Systemaufruf. Ein Modellschritt wie der KI-Entwurf liegt in der Bahn KI-Agent, ein Systemaufruf wie das Lesen aus dem CRM im Workflow-System." },
     { name: "Feste Regel", lane: 2, x: 250, kind: "rule", e: "<b>Rechteck mit Tabelle:</b> feste Regel ohne KI, zum Beispiel die Kontaktsperre (kontakt_erlaubt = nein). Liegt im Workflow-System, vor dem Modell." },
-    { name: "Entscheidung", lane: 2, x: 400, kind: "gateway", e: "<b>Raute mit X:</b> Entscheidung, die Pfeile tragen die Antworten (ja, nein). Genau ein Pfad wird genommen." },
-    { name: "Start und Ende", lane: 2, x: 560, kind: "events", e: "<b>Dünner Kreis, dicker Kreis:</b> Start und Ende des Ablaufs. Lesen: von links nach rechts entlang der Pfeile." }
+    { name: "Entscheidung", lane: 3, x: 430, kind: "gateway", e: "<b>Raute mit X:</b> Entscheidung, die Pfeile tragen die Antworten (ja, nein). Genau ein Pfad wird genommen. Liegt in der Bahn, in der geprüft wird, bei einer festen Regel also im Workflow-System, bei einer Freigabe beim Marketing-Team." },
+    { name: "Start und Ende", lane: 3, x: 620, kind: "events", e: "<b>Dünner Kreis, dicker Kreis:</b> Start und Ende des Ablaufs. Sie liegen in der Bahn, in der der Ablauf beginnt oder endet, im Aurenta-Beispiel Start im Workflow-System und Ende beim Marketing-Team. Lesen: von links nach rechts entlang der Pfeile." }
   ];
   syms.forEach(function (s, idx) {
-    var g = el("g", { "class": "sym" }), cy = 65 + s.lane * 95, cx = s.x;
+    var g = el("g", { "class": "sym" }), cy = (s.lane === 3 ? 360 : 65 + s.lane * 95), cx = s.x;
     if (s.kind === "lane") { el("rect", { x: cx - 60, y: cy - 28, width: 120, height: 56, rx: 4, "class": "box", "stroke-dasharray": "8 6" }, g); }
     else if (s.kind === "gateway") { el("polygon", { points: (cx) + "," + (cy - 30) + " " + (cx + 30) + "," + cy + " " + cx + "," + (cy + 30) + " " + (cx - 30) + "," + cy, "class": "box" }, g); el("path", { d: "M " + (cx - 10) + " " + (cy - 10) + " L " + (cx + 10) + " " + (cy + 10) + " M " + (cx + 10) + " " + (cy - 10) + " L " + (cx - 10) + " " + (cy + 10), "class": "ico" }, g); }
     else if (s.kind === "events") { el("circle", { cx: cx - 30, cy: cy, r: 18, "class": "box" }, g); el("circle", { cx: cx + 30, cy: cy, r: 18, "class": "box", "stroke-width": 6 }, g); }
