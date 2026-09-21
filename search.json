@@ -63,13 +63,6 @@
     "text": "Jeder Schritt in der Skizze ist eines von dreien: Regel, KI oder Mensch\n\nFeste Regel: läuft immer gleich, braucht keine KI. KI-Schritt: braucht Sprachverständnis oder muss formulieren. Mensch: entscheidet, gibt frei, versendet. Jeder Kasten in der Skizze bekommt eine dieser drei Arten. KI kommt nur dorthin, wo eine Regel nicht reicht.\n\n\nAus der Skizze ergeben sich die drei Testfälle für Mittwoch: ein normaler Fall, ein Fall mit fehlender Information, ein gesperrter Kontakt.\n\n\nÜbung 2.2: fachlichen Weg skizzieren, für den gewählten Ausschnitt Eingabe, Verarbeitung, Ausgabe und menschliche Entscheidung ergänzen, Schritt-Typen markieren, Testfälle festlegen. Mehrere Agenten sind kein Qualitätskriterium."
   },
   {
-    "objectID": "slides/tag2-briefing.html#eine-antwort-aus-gemini-ist-nicht-dieselbe-antwort-in-n8n",
-    "href": "slides/tag2-briefing.html#eine-antwort-aus-gemini-ist-nicht-dieselbe-antwort-in-n8n",
-    "title": "Vom Übungsfall zum Zoi-Auftrag",
-    "section": "Eine Antwort aus Gemini ist nicht dieselbe Antwort in n8n",
-    "text": "Eine Antwort aus Gemini ist nicht dieselbe Antwort in n8n\n\nModell, Zusatzfunktionen, Verlauf und Einstellungen können abweichen. Nach der Übertragung in die Basic LLM Chain werden die Testfälle deshalb erneut ausgeführt.\n\n\nÜbung 2.3: Regeln vom Fall trennen, im neuen Chat prüfen, dieselbe Aufgabe in n8n übertragen, eine gezielte Erweiterung wählen (strukturierte Felder, feste Kontaktsperre oder passendere Materialauswahl), einen Fall vor und nach der Änderung prüfen, Export und Änderungsgrund ablegen. Bedienung wechseln."
-  },
-  {
     "objectID": "slides/ki-und-prompting.html#modell-chat-und-workflow-sind-drei-verschiedene-dinge",
     "href": "slides/ki-und-prompting.html#modell-chat-und-workflow-sind-drei-verschiedene-dinge",
     "title": "KI verstehen und Aufträge formulieren",
