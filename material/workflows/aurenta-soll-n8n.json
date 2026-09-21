@@ -351,7 +351,7 @@
     },
     {
       "id": "2b5d4b34-c33f-5584-b234-de6db6aaa6dc",
-      "name": "Gesperrt zur Pruefung",
+      "name": "Gesperrt, kein Follow-up",
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
@@ -406,7 +406,9 @@
           ]
         },
         "options": {}
-      }
+      },
+      "notes": "Endpunkt: kein Modellaufruf, leerer Entwurf",
+      "notesInFlow": true
     },
     {
       "parameters": {},
@@ -469,7 +471,7 @@
         ],
         [
           {
-            "node": "Gesperrt zur Pruefung",
+            "node": "Gesperrt, kein Follow-up",
             "type": "main",
             "index": 0
           }
