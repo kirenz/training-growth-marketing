@@ -206,6 +206,18 @@ Selbst öffnen: [Datei herunterladen](../material/prozess/aurenta-webinar-soll.b
 Die Kontaktsperre liegt als feste Regel im Workflow-System, vor dem Modell. Der KI-Agent ordnet das Anliegen ein und schreibt den Entwurf. Freigabe und Versand bleiben in der Bahn Marketing-Team. Genau das ist der Workflow 02 von gestern, nur als Prozessbild.
 :::
 
+## Derselbe Ablauf in n8n: Bahnen als Notizen, Schritte als Knoten
+
+![](images/n8n-aurenta-soll.png){fig-alt="n8n-Workflow des Soll-Prozesses, angeordnet in drei Bahnen: Marketing-Team als Notiz außerhalb des Workflows, KI-Agent mit der LLM Chain und ihren Bausteinen, Workflow-System mit Kontakt lesen, Kontaktsperre, Ergebnis zur Prüfung."}
+
+::: {.ws-note}
+Selbst öffnen: [Datei herunterladen](../material/workflows/aurenta-soll-n8n.json){download="aurenta-soll-n8n.json"}, dann in n8n einen neuen Workflow anlegen, Menü oben rechts, „Import from file“. Im Postgres-Knoten das Credential „Postgres growth_gN“ wählen, im Kursmodell „Gemini (Gruppe N)“.
+:::
+
+::: {.notes}
+Jeder Kasten der Skizze ist ein Knoten. Die Bahnen sind in n8n Notizen, sie haben keine Funktion, machen aber sichtbar, was Regel, Modell und Mensch ist. Der Mensch hat keinen Knoten: Der Workflow endet bei „Ergebnis zur Prüfung“. Das ist Beispiel 05 aus dem Starterpaket, nur anders angeordnet.
+:::
+
 ## Jeder Schritt in der Skizze ist eines von dreien: Regel, KI oder Mensch {.center}
 
 ::: {.ws-statement}
