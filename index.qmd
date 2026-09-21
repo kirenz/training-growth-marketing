@@ -23,7 +23,7 @@ anchor-sections: false
 | Tag | Thema | |
 |---|---|---|
 | Montag, 21.09. | Teamfindung, Growth-Hypothese am Übungsfall, erster eigener n8n-Workflow | [Zum Tag](tage/montag.html) |
-| Dienstag, 22.09. | Briefing durch Zoi um 10 Uhr, Projektbrief, Ablaufskizze, Ausbau des Workflows | wird am Morgen freigeschaltet |
+| Dienstag, 22.09. | Briefing durch Zoi um 10 Uhr, Projektbrief, Ablaufskizze, Ausbau des Workflows | [Zum Tag](tage/dienstag.html) |
 | Mittwoch, 23.09. | Testfälle, Vergleich mit einer einfachen Lösung, Live-Demo, Start ins Semesterprojekt | wird am Morgen freigeschaltet |
 
 ## So ist die Seite aufgebaut

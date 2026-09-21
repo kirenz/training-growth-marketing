@@ -185,4 +185,4 @@ Die Präsentationen öffnen sich in einem neuen Tab. Pfeiltasten zum Blättern, 
 </ul>
 :::
 
-Wie es am Dienstag weitergeht, sehen wir am Dienstagmorgen.
+[**Weiter zum Dienstag: Vom Übungsfall zum Zoi-Auftrag**](dienstag.qmd)

@@ -42,8 +42,8 @@ Der gemeinsame Zugang ist nur zum Lesen vorgesehen. [Vorbereitete Leseabfragen](
 | [Anleitung Übung 1.1](https://docs.google.com/document/d/1rE-JFfq53XUhWb8J4MXdZihW5DgRqXAHAwvS_McTWqA/edit) | Google Doc: Vorstellungsrunde, Fall kennenlernen, Teamvereinbarung |
 | [Experimentkarte für Montag](https://docs.google.com/document/d/1RDw-7aKpkUtPurVk-NHItVg3zBKczG0G_tw_4TrfUtk/edit) | Beobachtung, Hypothese, Kennzahl |
 | Experimentkarte, ausführliche Fassung mit Testdesign | wird am Mittwoch freigeschaltet |
-| Projektbrief | wird am Dienstag freigeschaltet |
-| Ablaufskizze: Lesehilfe und Aurenta-Beispiel | wird am Dienstag freigeschaltet |
+| [Projektbrief](https://docs.google.com/document/d/1Jwbhg5CbI-mxCJvRw1oSLBkLR7ZoPOQrwN0jsluFtIM/edit) | Dienstag: Zuschnitt nach dem Zoi-Briefing |
+| [Ablaufskizze: Lesehilfe und Aurenta-Beispiel](https://docs.google.com/document/d/1pO28YSUSkvbrn8drNZqMMVqimBHT2fiyT0LEfXeF_tY/edit) | Dienstag: Swimlane-Diagramm für Übung 2.2, Beispiel [heute](material/prozess/aurenta-webinar-ist.svg) und [mit KI-Agent](material/prozess/aurenta-webinar-soll.svg), BPMN-Dateien zum Öffnen in demo.bpmn.io |
 | [Content-Briefing](https://docs.google.com/document/d/1d6kA5m4GPTFosAYjYV-uU3wwNbkvTbEGFy8GnoXr6zs/edit) | Optionale Erweiterung für Beiträge und Sprachfassungen |
 | [Coaching-Stand](https://docs.google.com/document/d/1KSs2vnaxsv0qxEs2N4grN57J8qKsadgFxYV0i0-6NTA/edit) | Belegtes Ergebnis, offene Frage, nächster Versuch |
 

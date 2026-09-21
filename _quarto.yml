@@ -9,7 +9,7 @@ project:
     - index.qmd
     - start.qmd
     - tage/montag.qmd
-#FREI:dienstag    - tage/dienstag.qmd
+    - tage/dienstag.qmd
 #FREI:mittwoch    - tage/mittwoch.qmd
     - projekt.qmd
     - werkzeuge/index.qmd
@@ -24,7 +24,7 @@ project:
     - slides/tag1-projektstart.qmd
     - slides/ki-und-prompting.qmd
     - slides/n8n-workflows.qmd
-#FREI:dienstag    - slides/tag2-briefing.qmd
+    - slides/tag2-briefing.qmd
 #FREI:mittwoch    - slides/tag3-testen.qmd
 
 lang: de
@@ -53,8 +53,8 @@ website:
         menu:
           - href: tage/montag.qmd
             text: "Montag, 21.09."
-#FREI:dienstag          - href: tage/dienstag.qmd
-#FREI:dienstag            text: "Dienstag, 22.09."
+          - href: tage/dienstag.qmd
+            text: "Dienstag, 22.09."
 #FREI:mittwoch          - href: tage/mittwoch.qmd
 #FREI:mittwoch            text: "Mittwoch, 23.09."
       - text: Werkzeugkasten
