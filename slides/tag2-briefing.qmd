@@ -30,16 +30,16 @@ format:
 **2 Ein Lauf vom Montag**<span>K-02: Erwartung, Ergebnis, Ursache</span>
 :::
 ::: {.ws-module}
-**3 Antigravity und Hypothese**<span>Ein Agent baut den Workflow aus der Skizze, dann eine Hypothese aus den Aurenta-Daten</span>
+**3 Ablaufskizze**<span>Swimlane-Diagramm: wer macht was, Regel oder Modell oder Mensch</span>
 :::
 ::: {.ws-module}
-**4 Projektbrief**<span>Engpass, Zielgruppe, Hypothese, erster Ablauf und seine Grenze</span>
+**4 Antigravity: Workflow**<span>Ein Agent baut den Workflow aus der Skizze, das Team prüft und importiert</span>
 :::
 ::: {.ws-module}
-**5 Ablaufskizze**<span>Swimlane-Diagramm: wer macht was, Regel oder Modell oder Mensch</span>
+**5 Antigravity: Daten**<span>Ein Agent wertet die Aurenta-Daten aus, das Team prüft die Hypothese</span>
 :::
 ::: {.ws-module}
-**6 Workflows und Agenten**<span>Wann reicht der feste Ablauf, dann Ausbau und Reviews</span>
+**6 Workflows und Agenten**<span>Wann reicht der feste Ablauf, dann kurze Runde</span>
 :::
 :::
 
@@ -108,113 +108,6 @@ Vorgehen: Erst sagen, welche Entscheidung wir für K-02 erwarten. Dann den Lauf 
 Den Lösungsworkflow mit K-02 an die Wand: Welche Eingabe führte zu welcher Empfehlung? Die drei Ursachen sauber trennen, weil sie drei verschiedene Korrekturen brauchen.
 :::
 
-# Antigravity {background-color="#0b0d13"}
-
-{{< include includes/bg-grid.html >}}
-
-## Der Agent baut den Workflow aus der Skizze, das Team prüft {#antigravity}
-
-::: {.ws-cards}
-::: {.ws-card .fragment}
-[1]{.ws-card__tag}
-
-[Ordner öffnen]{.ws-h}
-
-Startordner entpacken, in Antigravity als Projekt öffnen: Skizze als BPMN, Muster-Workflow, KI-Anweisung, Auftrag.
-:::
-::: {.ws-card .fragment}
-[2]{.ws-card__tag}
-
-[Auftrag geben]{.ws-h}
-
-Den Auftrag aus AUFTRAG.md in den Chat. Kontext, Aufgabe, Format, Prüfung, wie beim Prompt am Montag, nur ist das Ergebnis eine Datei.
-:::
-::: {.ws-card .fragment .is-key}
-[3]{.ws-card__tag}
-
-[Prüfen, bevor importiert wird]{.ws-h}
-
-zuordnung.md lesen: Jeder Knoten ein Schritt der Skizze? Sperre vor dem Modell? Kein Versand? Korrekturen im Chat beauftragen.
-:::
-::: {.ws-card .fragment}
-[4]{.ws-card__tag}
-
-[Importieren und testen]{.ws-h}
-
-n8n, Import from file, Credential wählen. K-01 muss durchlaufen, bei K-05 darf das Modell nicht starten.
-:::
-:::
-
-::: {.ws-note}
-Der Agent erzeugt, der Mensch prüft. Was der Agent nicht aus der Skizze ableiten kann, fragt er oder sagt es am Ende. Beides ist ein Befund, kein Fehler.
-:::
-
-::: {.notes}
-Gemeinsam vorne mitgehen. Antigravity ist kostenlos, Gemini für Studierende bringt das höhere Kontingent. Wer die Installation nicht schafft, nimmt den Gemini-Chat mit demselben Auftrag und den Dateiinhalten als Text. Wichtig: Der importierte Workflow ist nicht die Lösung, sondern ein Vorschlag, und die Zuordnungstabelle ist der Prüfgegenstand.
-:::
-
-# Projektbrief {background-color="#0b0d13"}
-
-{{< include includes/bg-grid.html >}}
-
-## Der Projektbrief: vier Fragen, bevor es um Werkzeuge geht
-
-::: {.ws-cards}
-::: {.ws-card .fragment}
-[Frage 1]{.ws-card__tag}
-
-[Welcher Engpass?]{.ws-h}
-
-An welcher Stelle im Kundenweg gehen Kontakte verloren, und wem würde eine Verbesserung nützen? Nur, was Zoi gesagt hat, zählt als Fakt.
-:::
-::: {.ws-card .fragment}
-[Frage 2]{.ws-card__tag}
-
-[Welche Hypothese?]{.ws-h}
-
-Wenn wir X ändern, dann verbessert sich Y, weil Z. Dazu: Welche andere Erklärung wäre möglich, welche Daten gibt es, woran messen wir?
-:::
-::: {.ws-card .fragment .is-key}
-[Frage 3]{.ws-card__tag}
-
-[Welcher erste Ablauf?]{.ws-h}
-
-Was geht in den Workflow hinein, und was kommt heraus? So klein, dass es bis Mittwoch läuft und getestet werden kann.
-:::
-::: {.ws-card .fragment}
-[Frage 4]{.ws-card__tag}
-
-[Wo ist die Grenze?]{.ws-h}
-
-Was lassen wir bewusst weg? Der erste Prototyp ist ein Ausschnitt, nicht das ganze Semesterprojekt.
-:::
-:::
-
-::: {.notes}
-Vorlage auf der Kursseite. Übung 2.1, etwa eine Stunde: Mitschriften zusammenführen, Engpass wählen, Hypothese formulieren, Ablauf und Grenze festlegen. Das Team entscheidet den Zuschnitt selbst.
-:::
-
-## Ein kritischer Chat prüft den Brief, entscheidet aber nicht
-
-```default
-Prüfe diesen Projektbrief als kritischer Gesprächspartner.
-<Projektbrief hier einfügen.>
-
-Nenne höchstens drei Punkte, an denen Problem, Zielgruppe,
-Datenlage oder erwarteter Nutzen noch unklar sind.
-Trenne Widersprüche im Text von eigenen Vermutungen.
-Schlage für jeden Punkt eine konkrete Klärungsfrage vor.
-Erfinde keine Aussagen des Partners und keine verfügbaren Daten.
-```
-
-::: {.ws-note}
-Das Team dokumentiert, welche Rückmeldungen es übernommen oder verworfen hat. Ergebnis: Projektbrief Version 1.
-:::
-
-::: {.notes}
-Dieselbe Rolle wie der zweite Chat gestern: Kritik, keine Freigabe. Die letzte Zeile ist wichtig, sonst erfindet das Modell Aussagen des Partners, die es nie gab.
-:::
-
 # Ablaufskizze {background-color="#0b0d13"}
 
 {{< include includes/bg-grid.html >}}
@@ -276,3 +169,49 @@ Aus der Skizze ergeben sich die drei Testfälle für Mittwoch: ein normaler Fall
 ::: {.notes}
 Übung 2.2: fachlichen Weg skizzieren, für den gewählten Ausschnitt Eingabe, Verarbeitung, Ausgabe und menschliche Entscheidung ergänzen, Schritt-Typen markieren, Testfälle festlegen. Mehrere Agenten sind kein Qualitätskriterium.
 :::
+
+# Antigravity {background-color="#0b0d13"}
+
+{{< include includes/bg-grid.html >}}
+
+## Der Agent baut den Workflow aus der Skizze, das Team prüft {#antigravity}
+
+::: {.ws-cards}
+::: {.ws-card .fragment}
+[1]{.ws-card__tag}
+
+[Ordner öffnen]{.ws-h}
+
+Startordner entpacken, in Antigravity als Projekt öffnen: Skizze als BPMN, Muster-Workflow, KI-Anweisung, Auftrag.
+:::
+::: {.ws-card .fragment}
+[2]{.ws-card__tag}
+
+[Auftrag geben]{.ws-h}
+
+Den Auftrag aus AUFTRAG.md in den Chat. Kontext, Aufgabe, Format, Prüfung, wie beim Prompt am Montag, nur ist das Ergebnis eine Datei.
+:::
+::: {.ws-card .fragment .is-key}
+[3]{.ws-card__tag}
+
+[Prüfen, bevor importiert wird]{.ws-h}
+
+zuordnung.md lesen: Jeder Knoten ein Schritt der Skizze? Sperre vor dem Modell? Kein Versand? Korrekturen im Chat beauftragen.
+:::
+::: {.ws-card .fragment}
+[4]{.ws-card__tag}
+
+[Importieren und testen]{.ws-h}
+
+n8n, Import from file, Credential wählen. K-01 muss durchlaufen, bei K-05 darf das Modell nicht starten.
+:::
+:::
+
+::: {.ws-note}
+Der Agent erzeugt, der Mensch prüft. Was der Agent nicht aus der Skizze ableiten kann, fragt er oder sagt es am Ende. Beides ist ein Befund, kein Fehler.
+:::
+
+::: {.notes}
+Gemeinsam vorne mitgehen. Antigravity ist kostenlos, Gemini für Studierende bringt das höhere Kontingent. Wer die Installation nicht schafft, nimmt den Gemini-Chat mit demselben Auftrag und den Dateiinhalten als Text. Wichtig: Der importierte Workflow ist nicht die Lösung, sondern ein Vorschlag, und die Zuordnungstabelle ist der Prüfgegenstand.
+:::
+

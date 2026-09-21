@@ -9,15 +9,13 @@ toc: true
 ::: {.lead}
 - Briefing mit Zoi: Angebot, Zielgruppe und heutiger Prozess
 - Antigravity: Ein Agent baut den Workflow aus der Skizze, das Team prüft
-- Eine Hypothese aus den Aurenta-Daten
-- Projektbrief und Ablaufskizze für den Zoi-Fall
+- Antigravity: Ein Agent wertet die Aurenta-Daten aus, das Team prüft die Hypothese
 - Workflows und Agenten: wann reicht der feste Ablauf?
-- Workflow ausbauen und Entscheidung für Mittwoch
 :::
 
 ## Ziel und Tagesergebnis
 
-Jedes Team erstellt einen Projektbrief, eine aktualisierte Experimentkarte, eine Ablaufskizze und einen überarbeiteten n8n-Prototyp. Dazu lassen die Teams zum ersten Mal einen Agenten einen Workflow bauen und holen die Hypothesen-Übung vom Montag nach. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt.
+Jedes Team hat am Ende einen Workflow, den ein Agent aus der Ablaufskizze gebaut und das Team geprüft und importiert hat, dazu eine Hypothese aus den Aurenta-Daten. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt.
 
 ## Bausteine des Tages {#bausteine}
 
@@ -27,9 +25,10 @@ Fest sind Beginn um 09:30 Uhr in Raum I120, das Briefing durch Zoi ab 10:00 Uhr,
 |---|---|---|
 | Vormittag | Briefingvorbereitung | Gemeinsam |
 | Vormittag | **Zoi-Briefing einschließlich Rückfragen** | Gemeinsam |
-| Nach dem Briefing | Ein Lauf vom Montag, dann Antigravity gemeinsam, dann Übungen | Gemeinsam, dann Dreierteams |
-| Nachmittag | Übungen und Input: Workflows und Agenten | Dreierteams und gemeinsam |
-| Später Nachmittag | Design-Reviews und Entscheidung für Mittwoch | Gemeinsam |
+| Nach dem Briefing | Ein Lauf vom Montag, dann Antigravity: Workflow aus der Skizze | Gemeinsam |
+| Nachmittag | Antigravity: Daten und Hypothese | Gemeinsam |
+| Nachmittag | Input: Workflows und Agenten | Gemeinsam |
+| Später Nachmittag | Kurze Runde und Entscheidung für Mittwoch | Gemeinsam |
 
 ## Briefingvorbereitung
 
@@ -64,84 +63,36 @@ Nach dem Briefing wird ein Lauf des Lösungsworkflows mit Kontakt K-02 gemeinsam
 ::: {.uebung}
 ### Gemeinsam Schritt für Schritt, jedes Team am eigenen Rechner
 
-**Material:** [Startordner als ZIP](../material/workflows/antigravity-aurenta.zip) (Ablaufskizze als BPMN, Muster-Workflow, KI-Anweisung, Auftrag zum Kopieren), [Antigravity](https://antigravity.google/){target="_blank"}.
+**Material:** [Startordner als ZIP](../material/workflows/antigravity-aurenta.zip), [Antigravity](https://antigravity.google/){target="_blank"}.
 
-Am Montag wurde der Workflow von Hand gebaut. Jetzt baut ihn ein Agent aus der Ablaufskizze, und das Team prüft, ob er den Regeln der Skizze entspricht. Das ist die Arbeitsweise für das Semester: Der Agent erzeugt, der Mensch prüft.
+Ein Agent baut den Workflow aus der Ablaufskizze, das Team prüft, ob er den Regeln der Skizze entspricht. Das ist die Arbeitsweise für das Semester: Der Agent erzeugt, der Mensch prüft.
 
-1. Antigravity von antigravity.google herunterladen und installieren (Mac oder Windows). Mit dem Google-Konto anmelden, auf dem Gemini für Studierende läuft. Eine Person pro Team reicht, die anderen schauen mit.
-2. Das ZIP entpacken. In Antigravity links auf das Ordnersymbol mit „+“, „New Project“, den entpackten Ordner auswählen.
-3. Die Datei AUFTRAG.md öffnen, den Text unter der Linie kopieren und in den Chat einfügen. Abschicken. Der Agent legt einen Plan vor, liest die Dateien und schreibt aurenta-soll.json und zuordnung.md.
-4. Bevor etwas importiert wird: zuordnung.md lesen. Stimmt jeder Knoten mit einem Schritt der Skizze überein? Fehlt die Kontaktsperre vor dem KI-Schritt? Gibt es einen Knoten, der versendet oder schreibt? Wenn ja, dem Agenten die Korrektur im Chat auftragen.
-5. In n8n einen neuen Workflow anlegen, Menü oben rechts, „Import from file“, aurenta-soll.json wählen. Im Kursmodell das Credential „Gemini (Gruppe N)“ auswählen.
-6. Mit K-01 ausführen, dann im Knoten „Kontakt“ die Felder von K-05 eintragen und erneut ausführen. Bei K-05 darf der KI-Schritt nicht laufen.
+1. Antigravity installieren und mit dem Google-Konto anmelden, auf dem Gemini für Studierende läuft. Eine Person pro Team reicht.
+2. Das ZIP entpacken und den Ordner in Antigravity als Projekt öffnen.
+3. Den Auftrag aus AUFTRAG.md in den Chat geben. Der Agent liest die Skizze und das Muster und schreibt den Workflow als Datei.
+4. Prüfen, bevor importiert wird: Passt jeder Knoten zu einem Schritt der Skizze? Liegt die Kontaktsperre vor dem KI-Schritt? Versendet nichts?
+5. In n8n importieren, Credential wählen, mit K-01 und K-05 ausführen.
 
 **Wenn die Installation nicht klappt:** denselben Auftrag in den Gemini-Chat einfügen, dazu den Inhalt der BPMN-Datei und des Muster-Workflows als Text. Der Weg ist umständlicher, das Ergebnis dasselbe.
 
-**Ergebnis:** aurenta-soll.json und zuordnung.md in der Teamablage, dazu zwei Sätze: Was hat der Agent anders gemacht als die Skizze, und was musste korrigiert werden?
+**Ergebnis:** Der importierte Workflow läuft für K-01. Ein Satz in der Teamablage: Was musste am Vorschlag des Agenten korrigiert werden?
 :::
 
-## Übung 1.2: Vom Trichter zur Hypothese {#uebung-1-2}
+## Übung 1.2: Daten auswerten und eine Hypothese ableiten, mit Antigravity {#uebung-1-2}
 
 ::: {.uebung}
-### Dreierteams
+### Gemeinsam Schritt für Schritt, jedes Team am eigenen Rechner
 
-**Material:** [Webinar-Kontakte als Google Sheet](https://docs.google.com/spreadsheets/d/1ri_Z7epna2iRNSJYo7tQtC3cjAihbDuxn6-DSZN12q0/edit), [Anleitung Pivot-Tabellen](https://docs.google.com/document/d/1YckXrnscZX7MjaUonjEQiHHqT2aO87pcMy2JlSQCDIU/edit), [Experimentkarte für Montag](https://docs.google.com/document/d/1RDw-7aKpkUtPurVk-NHItVg3zBKczG0G_tw_4TrfUtk/edit).
+**Material:** derselbe Startordner, darin die Datei webinar-kontakte-330.csv und der Auftrag AUFTRAG-DATEN.md.
 
-1. Eine Person öffnet das Google Sheet und legt über „Datei" und „Kopie erstellen" eine Kopie in der Teamablage an. Die anderen beiden schauen mit.
-2. Nach der Anleitung die erste Pivot-Tabelle anlegen: Zeilen sind die Kampagnen, Werte sind die vier Ergebnisspalten als Summe. In die Experimentkarte unter „Beobachtung" schreiben, an welcher Stelle des Weges die meisten Kontakte verloren gehen, mit Zahlen: Zähler und Nenner.
-3. Die zweite Pivot-Tabelle anlegen: Zeilen sind die Anliegen-Kategorien, Spalten ist „Gespräch gebucht", Filter ist „Nachricht gesendet". Ebenfalls unter „Beobachtung" notieren, welche Gruppe fast nie bucht und welche vergleichsweise oft.
-4. Im Team zwei mögliche Erklärungen für die Beobachtung aufschreiben. Beide müssen sich auf die Tabellen stützen, nicht auf Vermutungen über die Personen.
-5. Eine der beiden Erklärungen als Hypothese formulieren, nach dem Muster „Wenn wir X ändern, dann Y, weil Z". X ist eine Änderung, die Aurenta selbst vornehmen kann, Y eine Zahl, die sich messen lässt, Z der Grund. Beispiel aus einem anderen Bereich: Wenn ein Onlineshop die Versandkosten schon auf der Produktseite zeigt, dann sinkt der Anteil abgebrochener Bestellungen, weil weniger Kunden erst an der Kasse überrascht werden.
-6. Die Kennzahl festlegen, an der sich die Hypothese später prüfen ließe: Zähler, Nenner, Zeitraum. In die Experimentkarte unter „Kennzahl".
+Aurenta schickt allen Webinar-Kontakten dieselbe Einladung. Von 198 Follow-ups kamen 10 brauchbare Gespräche. Der Agent soll in den Daten finden, wo die Kontakte verloren gehen, und eine Hypothese vorschlagen. Das Team prüft, ob die Zahlen stimmen und die Hypothese Sinn ergibt.
 
-**Ergebnis:** Die Kopie des Sheets mit zwei Pivot-Tabellen und die ausgefüllte Experimentkarte (Beobachtung, Hypothese, Kennzahl), beides in der Teamablage.
-:::
+1. Den Auftrag aus AUFTRAG-DATEN.md in den Chat geben. Der Agent wertet die Datei aus und schreibt Tabellen, Hypothese und Kennzahl in eine Datei.
+2. Die Zahlen prüfen: Sind Zähler und Nenner genannt? Passt die Stelle mit dem größten Verlust zu dem, was in der Datei steht?
+3. Die Hypothese prüfen: Ist X etwas, das Aurenta selbst ändern kann? Ist Y messbar? Ist Z eine Erklärung, keine Vermutung über Personen?
+4. Wenn etwas nicht stimmt, den Agenten im Chat korrigieren lassen.
 
-Das Hypothesen-Muster wird direkt danach in Übung 2.1 auf Zoi übertragen.
-
-## Übung 2.1: Ein bearbeitbares Problem {#uebung-2-1}
-
-::: {.uebung}
-### Dreierteams
-
-**Material:** Mitschrift, [Projektbrief](https://docs.google.com/document/d/1Jwbhg5CbI-mxCJvRw1oSLBkLR7ZoPOQrwN0jsluFtIM/edit), [Experimentkarte](https://docs.google.com/document/d/1JrrMgJ6fCEae3trCWNqdAonEc9EHbZ-PWskl8wtli-s/edit).
-
-1. Mitschriften zusammenführen: Aussagen mit Quelle und Zeitpunkt von Interpretationen trennen. Dafür einen Prompt nach dem Muster Kontext, Aufgabe, Format, Prüfung nutzen: Kontext ist die Mitschrift, Aufgabe das Trennen, Format eine Tabelle mit Quelle, Prüfung „nichts ergänzen, Lücken markieren“.
-2. Einen Engpass im Kundenweg wählen. Nutzen und betroffene Zielgruppe beschreiben, bevor Werkzeuge ausgewählt werden.
-3. Hypothese und alternative Erklärung formulieren, nach dem Muster aus Übung 1.2. Verfügbare Daten und geplante Wirkungsmetrik benennen.
-4. Einen ersten Ablauf und dessen Grenze festlegen: Welche Eingabe wird bis Mittwoch zu welcher prüfbaren Ausgabe? Was bleibt außerhalb dieses ersten Prototyps?.
-
-```default
-Prüfe diesen Projektbrief als kritischer Gesprächspartner.
-<Projektbrief hier einfügen.>
-
-Nenne höchstens drei Punkte, an denen Problem, Zielgruppe,
-Datenlage oder erwarteter Nutzen noch unklar sind.
-Trenne Widersprüche im Text von eigenen Vermutungen.
-Schlage für jeden Punkt eine konkrete Klärungsfrage vor.
-Erfinde keine Aussagen des Partners und keine verfügbaren Daten.
-```
-
-**Ergebnis:** Projektbrief Version 1. Das Team entscheidet selbst über den Zuschnitt und dokumentiert, welche KI-Rückmeldungen es übernommen oder verworfen hat.
-:::
-
-## Übung 2.2: Den Kundenweg und den Ablauf verbinden {#uebung-2-2}
-
-::: {.uebung}
-### Dreierteams
-
-**Material:** Projektbrief und Workflow vom Montag, [Lesehilfe Ablaufskizze](https://docs.google.com/document/d/1pO28YSUSkvbrn8drNZqMMVqimBHT2fiyT0LEfXeF_tY/edit), Beispiel Aurenta heute ([Bild](../material/prozess/aurenta-webinar-ist.svg) · [BPMN](../material/prozess/aurenta-webinar-ist.bpmn)) und mit KI-Agent ([Bild](../material/prozess/aurenta-webinar-soll.svg) · [BPMN](../material/prozess/aurenta-webinar-soll.bpmn)).
-
-1. Den fachlichen Weg von Interesse bis zu einem nächsten sinnvollen Schritt skizzieren.
-2. Für den gewählten Ausschnitt Eingabe, Verarbeitung, Ausgabe und menschliche Entscheidung ergänzen.
-3. Je Schritt feste Regel, Modellaufgabe oder menschliche Entscheidung markieren. Schnittstellen zu Recherche, Content, Follow-up und Reporting sichtbar machen.
-4. Die drei Testfälle für Mittwoch festlegen: normaler Fall, fehlende Information, Grenze oder Sperre.
-
-Die Skizze wird als Swimlane-Diagramm gezeichnet: eine Bahn je Rolle (Marketing-Team, KI-Agent, Workflow-System), der Schritt-Typ steckt im Symbol. Das Aurenta-Beispiel zeigt beide Stände. Werkzeug nach Wahl: draw.io mit BPMN-Formen oder demo.bpmn.io; ein Foto einer Whiteboard-Skizze ist als erste Fassung ebenfalls zulässig, wenn Bahnen und Entscheidungen erkennbar sind.
-
-[![Aurenta-Übungsfall: Webinar-Nachbereitung mit KI-Agent (Entwurf). Bahnen: Marketing-Team, KI-Agent, Workflow-System. Zum Vergrößern anklicken.](../material/prozess/aurenta-webinar-soll.svg){.infografik fig-alt="Swimlane-Diagramm des Soll-Prozesses: Kontakt aus CRM lesen, Kontaktfreigabe prüfen, KI-Agent ordnet Anliegen ein und erstellt Entwurf, Ergebnis zur Prüfung ablegen, Marketing-Team prüft und gibt frei, Versand durch Mensch."}](../material/prozess/aurenta-webinar-soll.svg)
-
-**Ergebnis:** Eine verständliche Swimlane-Skizze mit eindeutigen Feldnamen, abgelegt im Drive-Ordner des Teams. Mehrere Agenten sind kein Qualitätskriterium. Ein Modellschritt wird nur ergänzt, wenn die Aufgabe ihn begründet.
+**Ergebnis:** Die Auswertung in der Teamablage und eine Hypothese, hinter der das Team steht.
 :::
 
 ## Input: Workflows und Agenten {#agenten}
@@ -154,29 +105,9 @@ Die Skizze wird als Swimlane-Diagramm gezeichnet: eine Bahn je Rolle (Marketing-
 
 Ein Workflow legt die Schritte vorab fest, ein Agent wählt zur Laufzeit Werkzeuge und nächste Schritte selbst. Die Demo zeigt beides am Aurenta-Fall: den festen Ablauf vom Montag und die Agenten-Variante, in der das Modell entscheidet, welches Wissenswerkzeug es aufruft. Drei Fragen für die eigene Skizze: Reicht die einfachste Lösung? Ist jeder Schritt im Laufprotokoll nachvollziehbar? Was genau bekommt das Modell als Werkzeug, und was nicht? Eine begründete Entscheidung gegen einen Agenten ist im Projekt ausdrücklich zulässig.
 
-## Übung 2.3: Wiederverwendbare Anweisungen und ein erster Ausbau {#uebung-2-3}
+## Kurze Runde zum Abschluss
 
-::: {.folien .folien-inline}
-[Folien]{.folien-label}
-
-<ul><li><a class="folie" href="../slides/n8n-workflows.html" target="_blank" rel="noopener">n8n: Workflows und Agenten <span>Abschnitt Ausbau</span></a></li></ul>
-:::
-
-::: {.uebung}
-### Dreierteams, Bedienung wechseln
-
-**Material:** Eigener Workflow, [n8n-Anleitung zum Ausbau](../werkzeuge/workflows.qmd#ausbau), [Anweisungen](https://docs.google.com/document/d/1SIYpnRHpPq9tb5qiE0-Ixu8o4xy0_5NJHvM-DgZ0LYc/edit).
-
-1. Aus der Ablaufskizze eine gezielte Erweiterung auswählen: strukturierte Felder, feste Kontaktsperre oder passendere Materialauswahl.
-2. Die Erweiterung im eigenen n8n-Workflow umsetzen, mit der Lösung 1.4b oder dem Ergebnis aus Übung 1.3 als Referenz.
-3. Einen Fall vor und nach der Änderung prüfen, Export und Änderungsgrund ablegen.
-
-**Ergebnis:** Ein überarbeiteter lauffähiger Ablauf. Bei unvollständigem Zoi-Material steht im Export ausdrücklich „Aurenta-Übungsfall“. Die Ausgaben bleiben Entwürfe.
-:::
-
-## Design-Reviews
-
-Jedes Team kurz: Problem und Datenlage, ein funktionierender Ausschnitt, ein offener Test, Entscheidung für Mittwoch. Das Review bestätigt einen bearbeitbaren nächsten Schritt. Es verlangt noch keinen vollständigen Semesterprozess.
+Jedes Team zeigt in wenigen Minuten: den importierten Workflow, die Hypothese aus den Daten, und was es am Vorschlag des Agenten korrigieren musste. Daraus folgt die Entscheidung, womit das Team am Mittwoch weiterarbeitet.
 
 ::: {.folien}
 [Alle Folien zu diesem Tag]{.folien-label}
