@@ -4,7 +4,7 @@ toc: true
 ---
 
 
-[23. September 2026 · 09:00–17:00 Uhr · Vom Prototyp zur begründeten Entscheidung]{.kicker}
+[23. September 2026 · 09:00–17:00 Uhr · Raum I120 · Vom Prototyp zur begründeten Entscheidung]{.kicker}
 
 [Ein Ablauf ist erst dann brauchbar, wenn seine Ergebnisse überprüfbar sind und andere ihn nachvollziehen können. Heute werden offene Fehler bearbeitet, Chat und Workflow fair verglichen und die weitere Projektarbeit vereinbart.]{.lead}
 
@@ -14,7 +14,7 @@ Pro Team liegen ein Projektbrief mit Quellen, ein kleiner ausgeführter Workflow
 
 ## Bausteine des Tages {#bausteine}
 
-Fest sind Beginn um 09:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr.
+Fest sind Beginn um 09:00 Uhr in Raum I120, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr.
 
 | Baustein | Arbeitsform |
 |---|---|
@@ -39,7 +39,7 @@ Fest sind Beginn um 09:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das 
 
 **Material:** Eigener Ablauf, [Testprotokoll](../material/vorlagen/testprotokoll.csv), [Testerwartungen](https://docs.google.com/document/d/12kVes3a17_Zduv-doQIlfYh3N83G0K5K1cn3G1Tz1JA/edit), [strukturierter Referenzablauf](../material/workflows/02-followup-strukturiert.json).
 
-1. Erwartete Entscheidungen und Grenzen vorab festlegen. Ein normaler Fall, eine Lücke und eine Sperre sind Pflicht (15 Minuten).
+1. Erwartete Entscheidungen und Grenzen vorab im Testprotokoll festlegen, bevor ein Lauf startet. Ein normaler Fall, eine Lücke und eine Sperre sind Pflicht (15 Minuten).
 2. Alle drei Fälle ausführen und tatsächliche Ausgaben sichern (20 Minuten).
 3. Eine Ursache gezielt bearbeiten. Fehlender Zugang, falsche Feldzuordnung und unpassende Modellantwort sind unterschiedliche Befunde (20 Minuten).
 4. Den geänderten Fall und einen zuvor bestandenen Fall erneut prüfen (20 Minuten).
