@@ -186,6 +186,10 @@ Notation ist BPMN 2.0, dieselbe wie in Prozessmanagement-Werkzeugen. Für die Ü
 
 ![](images/aurenta-webinar-ist.png){fig-alt="Swimlane-Diagramm des Ist-Prozesses der Webinar-Nachbereitung bei Aurenta."}
 
+::: {.ws-note}
+[Werkzeug: demo.bpmn.io öffnen](https://demo.bpmn.io/new){target="_blank"} · [Datei aurenta-webinar-ist.bpmn herunterladen](../material/prozess/aurenta-webinar-ist.bpmn){download="aurenta-webinar-ist.bpmn"} und per Drag-and-drop ins Werkzeug ziehen
+:::
+
 ::: {.notes}
 Von links nach rechts lesen. Der Ist-Prozess hat keinen Modellschritt und keine Unterscheidung nach Anliegen. Das ist der Engpass aus der Hypothese: Die Einladung kommt für einen Teil der Kontakte zu früh.
 :::
@@ -193,6 +197,10 @@ Von links nach rechts lesen. Der Ist-Prozess hat keinen Modellschritt und keine 
 ## Aurenta mit KI-Agent: Sperre, Einordnung, Entwurf, menschliche Freigabe
 
 ![](images/aurenta-webinar-soll.png){fig-alt="Swimlane-Diagramm des Soll-Prozesses: Kontakt aus CRM lesen, Kontaktfreigabe prüfen, KI-Agent ordnet Anliegen ein und erstellt Entwurf, Marketing-Team prüft und gibt frei, Versand durch Mensch."}
+
+::: {.ws-note}
+[Werkzeug: demo.bpmn.io öffnen](https://demo.bpmn.io/new){target="_blank"} · [Datei aurenta-webinar-soll.bpmn herunterladen](../material/prozess/aurenta-webinar-soll.bpmn){download="aurenta-webinar-soll.bpmn"} und per Drag-and-drop ins Werkzeug ziehen
+:::
 
 ::: {.notes}
 Die Kontaktsperre liegt als feste Regel im Workflow-System, vor dem Modell. Der KI-Agent ordnet das Anliegen ein und schreibt den Entwurf. Freigabe und Versand bleiben in der Bahn Marketing-Team. Genau das ist der Workflow 02 von gestern, nur als Prozessbild.
