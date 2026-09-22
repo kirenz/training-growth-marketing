@@ -16,10 +16,6 @@ toc: true
 
 Am Ende des Tages hat jedes Team einen ersten eigenen KI-Workflow gebaut und an Beispielen ausprobiert.
 
-::: {.callout-note title="Stand nach dem Montag"}
-Bearbeitet wurden Übung 1.1 und Übung 1.4. Die Übungen zur Hypothese und zum ersten Prompt stehen jetzt auf der Dienstag-Seite, die Testarbeit mit Regeländerung am Mittwoch in Übung 3.1.
-:::
-
 ::: {#bausteine .callout-note collapse="true" title="Bausteine des Tages"}
 
 Fest sind Beginn um 09:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr.
