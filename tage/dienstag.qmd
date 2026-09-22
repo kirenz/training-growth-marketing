@@ -46,7 +46,7 @@ Geplant sind eine Vorstellung durch Zoi und anschließend Fragen, vor Ort an der
 
 ## Ein Lauf vom Montag: K-02 gemeinsam prüfen {#rueckblick}
 
-Nach dem Briefing wird ein Lauf des Lösungsworkflows mit Kontakt K-02 gemeinsam betrachtet: Welche Entscheidung erwarten die Regeln, was hat das Modell geliefert, und lag der Unterschied an den Daten, der Anweisung oder am Modell? Die Erwartung wird vor dem Lauf genannt, nicht danach. So arbeiten die Teams am Mittwoch mit dem Testprotokoll weiter.
+Nach dem Briefing wird ein Lauf des Lösungsworkflows mit Kontakt K-02 gemeinsam betrachtet: Welche Entscheidung erwarten die Regeln, was hat das Modell geliefert, und lag der Unterschied an den Daten, der Anweisung oder am Modell?
 
 ## Übung 1.3: Vom Prozess zum Workflow mit Antigravity {#uebung-1-3}
 
