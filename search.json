@@ -18,7 +18,7 @@
     "href": "slides/agenten.html#die-schleife-das-modell-ruft-werkzeuge-auf-bis-die-aufgabe-gelöst-ist",
     "title": "Workflows und Agenten",
     "section": "Die Schleife: Das Modell ruft Werkzeuge auf, bis die Aufgabe gelöst ist",
-    "text": "Die Schleife: Das Modell ruft Werkzeuge auf, bis die Aufgabe gelöst ist\n\n\nDer gelbe Rahmen ist der Kontext: alles, was das Modell in diesem Moment sieht. Werkzeuge liefern neue Informationen hinein, deshalb kann der Agent mehr als eine einzelne Anfrage.\n\n\nReAct-Muster, Yao et al. 2023: Reasoning und Acting im Wechsel. Der entscheidende Unterschied zum Workflow ist die Rückkante von den Werkzeugen ins Modell. Im Workflow gibt es sie nicht, dort ist die Reihenfolge fest."
+    "text": "Die Schleife: Das Modell ruft Werkzeuge auf, bis die Aufgabe gelöst ist\n\n\n\n\n\n\nDer gelbe Rahmen ist der Kontext: alles, was das Modell in diesem Moment sieht. Werkzeuge liefern neue Informationen hinein, deshalb kann der Agent mehr als eine einzelne Anfrage.\n\n\nReAct-Muster, Yao et al. 2023: Reasoning und Acting im Wechsel. Der entscheidende Unterschied zum Workflow ist die Rückkante von den Werkzeugen ins Modell. Im Workflow gibt es sie nicht, dort ist die Reihenfolge fest."
   },
   {
     "objectID": "slides/agenten.html#drei-bausteine-modell-werkzeuge-kontext",
@@ -46,7 +46,7 @@
     "href": "slides/agenten.html#workflow-oder-agent-der-agent-wählt-werkzeuge-der-workflow-nicht",
     "title": "Workflows und Agenten",
     "section": "Workflow oder Agent: der Agent wählt Werkzeuge, der Workflow nicht",
-    "text": "Workflow oder Agent: der Agent wählt Werkzeuge, der Workflow nicht\n\n\nGleiche Eingabe, gleicher Weg: Der Workflow ist prüfbar, indem man ihn nachvollzieht. Der Agent ist prüfbar nur über das Laufprotokoll: Welches Werkzeug hat er wann aufgerufen, und hat es die Antwort verbessert?\n\n\nDemo aus dem eigenen Konto: den Starter mit K-02 laufen lassen, dann die Agenten-Variante aus dem Starterpaket (03) mit demselben Kontakt. Im Laufprotokoll zeigen, welches Wissenswerkzeug der Agent gewählt hat. Frage in die Runde: Hat die Werkzeugwahl die Antwort besser gemacht, oder nur langsamer? Beide Antworten sind zulässig, wenn sie begründet sind."
+    "text": "Workflow oder Agent: der Agent wählt Werkzeuge, der Workflow nicht\n\n\n\n\n\n\nGleiche Eingabe, gleicher Weg: Der Workflow ist prüfbar, indem man ihn nachvollzieht. Der Agent ist prüfbar nur über das Laufprotokoll: Welches Werkzeug hat er wann aufgerufen, und hat es die Antwort verbessert?\n\n\nDemo aus dem eigenen Konto: den Starter mit K-02 laufen lassen, dann die Agenten-Variante aus dem Starterpaket (03) mit demselben Kontakt. Im Laufprotokoll zeigen, welches Wissenswerkzeug der Agent gewählt hat. Frage in die Runde: Hat die Werkzeugwahl die Antwort besser gemacht, oder nur langsamer? Beide Antworten sind zulässig, wenn sie begründet sind."
   },
   {
     "objectID": "slides/agenten.html#drei-prinzipien-einfach-anfangen-nachvollziehbar-bleiben-werkzeuge-sauber-beschreiben",
