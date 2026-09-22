@@ -91,7 +91,7 @@ Definition nach Google, Agents-Whitepaper 2024. Die vier Karten sind der Anker f
 
 ## Die Schleife: Das Modell ruft Werkzeuge auf, bis die Aufgabe gelöst ist
 
-![](images/agenten-schleife.svg){fig-alt="Schleife: Eingabe, Modell im Kontext denkt, ruft Werkzeuge auf, bekommt Ergebnisse zurück, gibt am Ende die Antwort aus." width="88%"}
+![](images/agenten-schleife.svg){fig-alt="Schleife: Eingabe, Modell im Kontext denkt, ruft Werkzeuge auf, bekommt Ergebnisse zurück, gibt am Ende die Antwort aus." height="330px" fig-align="center"}
 
 ::: {.ws-note}
 Der gelbe Rahmen ist der Kontext: alles, was das Modell in diesem Moment sieht. Werkzeuge liefern neue Informationen hinein, deshalb kann der Agent mehr als eine einzelne Anfrage.
@@ -193,7 +193,7 @@ Andrew Ng spricht von Autonomiegraden: Stufe 3 wenig autonom, Stufe 4 teilautono
 
 ## Workflow oder Agent: der Agent wählt Werkzeuge, der Workflow nicht
 
-![](images/kette-vs-agent.svg){fig-alt="Oben der feste Workflow: Kontakt, Modell, Entwurf. Unten der Agent: das Modell ruft zusätzlich Leistungswissen und Lernmaterial auf." width="92%"}
+![](images/kette-vs-agent.svg){fig-alt="Oben der feste Workflow: Kontakt, Modell, Entwurf. Unten der Agent: das Modell ruft zusätzlich Leistungswissen und Lernmaterial auf." height="430px" fig-align="center"}
 
 ::: {.ws-note}
 Gleiche Eingabe, gleicher Weg: Der Workflow ist prüfbar, indem man ihn nachvollzieht. Der Agent ist prüfbar nur über das Laufprotokoll: Welches Werkzeug hat er wann aufgerufen, und hat es die Antwort verbessert?
