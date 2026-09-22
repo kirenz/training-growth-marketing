@@ -618,86 +618,58 @@
   {
     "objectID": "tage/mittwoch.html",
     "href": "tage/mittwoch.html",
-    "title": "Mittwoch: Testen, vergleichen und übergeben",
+    "title": "Mittwoch: Prompting, Daten und Agenten",
     "section": "",
-    "text": "23. September 2026 · 09:00–17:00 Uhr · Raum I120 · Vom Prototyp zur begründeten Entscheidung\nEin Ablauf ist erst dann brauchbar, wenn seine Ergebnisse überprüfbar sind und andere ihn nachvollziehen können. Heute werden mit Antigravity die Aurenta-Daten ausgewertet und eine Hypothese geprüft. Nach dem Input zu Workflows und Agenten werden offene Fehler bearbeitet, Chat und Workflow fair verglichen und die weitere Projektarbeit vereinbart."
+    "text": "23. September 2026 · 09:00–17:00 Uhr · Raum I120 · Mit klaren Aufträgen beginnen\nZum Einstieg steht Prompting auf dem Programm. Danach folgen die Datenauswertung mit Antigravity und die Frage, wann ein fester Workflow genügt und wann ein Agent sinnvoll ist. Zum Abschluss teilen die Teams ihre Ergebnisse und offenen Fragen."
   },
   {
     "objectID": "tage/mittwoch.html#ziel-und-tagesergebnis",
     "href": "tage/mittwoch.html#ziel-und-tagesergebnis",
-    "title": "Mittwoch: Testen, vergleichen und übergeben",
+    "title": "Mittwoch: Prompting, Daten und Agenten",
     "section": "Ziel und Tagesergebnis",
-    "text": "Ziel und Tagesergebnis\nPro Team liegen eine geprüfte Hypothese aus den Aurenta-Daten, ein Projektbrief mit Quellen, ein kleiner ausgeführter Workflow, mindestens drei dokumentierte Testfälle und eine kurze Einrichtungs- und Bedienungsanleitung vor. Jede Person erklärt einen Teil. Ein negativer Vergleich oder ein dokumentierter Fehler ist ein verwertbares Ergebnis; ein nicht ausgeführter Export ist noch kein funktionierender Prototyp."
+    "text": "Ziel und Tagesergebnis\nJedes Team formuliert einen klaren Auftrag mit Kontext, Aufgabe, Format und Prüfung, verbessert eine Antwort gezielt und leitet mit Antigravity eine Hypothese aus den Aurenta-Daten ab. Im Mittelpunkt stehen erste nachvollziehbare Ergebnisse und Fragen für die weitere Projektarbeit."
   },
   {
     "objectID": "tage/mittwoch.html#bausteine",
     "href": "tage/mittwoch.html#bausteine",
-    "title": "Mittwoch: Testen, vergleichen und übergeben",
+    "title": "Mittwoch: Prompting, Daten und Agenten",
     "section": "Bausteine des Tages",
-    "text": "Bausteine des Tages\nFest sind Beginn um 09:00 Uhr in Raum I120, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr.\n\n\n\n\n\n\n\nBaustein\nArbeitsform\n\n\n\n\nÜbung 1.2: Daten auswerten und eine Hypothese ableiten, mit Antigravity\nGemeinsam\n\n\nInput: Workflows und Agenten\nGemeinsam\n\n\nStand, Vergleichskriterien und begrenzter Ausbau\nGemeinsam\n\n\nÜbung 3.1: Ablauf stabilisieren und testen\nDreierteams\n\n\nÜbung 3.2: Chat und Workflow vergleichen\nDreierteams\n\n\nÜbung 3.3: Entscheidung und erste Übergabeanleitung\nDreierteams\n\n\nLetzte Korrektur, erneuter Test und Vorbereitung der Demo\nDreierteams\n\n\nTeamdemos mit Fragerunde\nGemeinsam\n\n\nKurze Runde zum Abschluss: Workflow, Hypothese und Korrekturen\nGemeinsam\n\n\nStart ins Project Studio und nächste Coachingfrage\nGemeinsam"
+    "text": "Bausteine des Tages\nFest sind Beginn um 09:00 Uhr in Raum I120, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr.\n\n\n\n\n\n\n\nBaustein\nArbeitsform\n\n\n\n\nEinstieg: Prompting verstehen und gemeinsam ausprobieren\nGemeinsam und in Teams\n\n\nÜbung 1.2: Daten auswerten und eine Hypothese ableiten, mit Antigravity\nGemeinsam\n\n\nInput: Workflows und Agenten\nGemeinsam\n\n\nKurze Runde zum Abschluss: Ergebnisse, Korrekturen und offene Fragen\nGemeinsam\n\n\nWeiterarbeit im Semester und nächste Coachingfrage\nGemeinsam"
+  },
+  {
+    "objectID": "tage/mittwoch.html#prompting",
+    "href": "tage/mittwoch.html#prompting",
+    "title": "Mittwoch: Prompting, Daten und Agenten",
+    "section": "Einstieg: Prompting",
+    "text": "Einstieg: Prompting\nPrompting wurde am Montag und Dienstag noch nicht behandelt und steht deshalb heute am Anfang. Ein klarer Auftrag beschreibt vier Dinge: Kontext, Aufgabe, Format und Prüfung.\n\nFolien\n\n\nKI verstehen und Aufträge formulieren Kontext, Grenzen und vier Teile eines Auftrags\n\n\n\n\nGemeinsam ausprobieren\nMaterial: Aufträge formulieren, Kontext für Gemini, Kontaktfälle.\n\nAm Kontakt K-02 gemeinsam klären: Welches Ergebnis wird gebraucht, und welche Informationen benötigt das Modell dafür?\nDen Beispielprompt aus dem Werkzeugkasten mit dem Aurenta-Kontext und den Angaben zu K-02 ergänzen und im Chat ausführen.\nDie Antwort mit dem Material abgleichen: Passt sie zum Anliegen? Stimmen die Angaben? Was fehlt oder wurde ergänzt?\nEine unklare Anweisung präzisieren und die Antwort erneut erzeugen. Anschließend besprechen, was sich dadurch verändert hat.\n\nErgebnis: Ein nachvollziehbarer Prompt und ein konkretes Beispiel dafür, wie eine gezielte Rückmeldung die Antwort verbessert. Die gleiche Arbeitsweise wird anschließend bei Antigravity genutzt."
   },
   {
     "objectID": "tage/mittwoch.html#uebung-1-2",
     "href": "tage/mittwoch.html#uebung-1-2",
-    "title": "Mittwoch: Testen, vergleichen und übergeben",
+    "title": "Mittwoch: Prompting, Daten und Agenten",
     "section": "Übung 1.2: Daten auswerten und eine Hypothese ableiten, mit Antigravity",
     "text": "Übung 1.2: Daten auswerten und eine Hypothese ableiten, mit Antigravity\n\nGemeinsam Schritt für Schritt, jedes Team am eigenen Rechner\nMaterial: Antigravity-Startordner als ZIP, darin die Datei webinar-kontakte-330.csv und der Auftrag AUFTRAG-DATEN.md.\nAurenta schickt allen Webinar-Kontakten dieselbe Einladung. Von 198 Follow-ups kamen 10 brauchbare Gespräche. Der Agent soll in den Daten finden, wo die Kontakte verloren gehen, und eine Hypothese vorschlagen. Das Team prüft, ob die Zahlen stimmen und die Hypothese Sinn ergibt.\n\nDen Auftrag aus AUFTRAG-DATEN.md in den Chat geben. Der Agent wertet die Datei aus und schreibt Tabellen, Hypothese und Kennzahl in eine Datei.\nDie Zahlen prüfen: Sind Zähler und Nenner genannt? Passt die Stelle mit dem größten Verlust zu dem, was in der Datei steht?\nDie Hypothese prüfen: Ist X etwas, das Aurenta selbst ändern kann? Ist Y messbar? Ist Z eine Erklärung, keine Vermutung über Personen?\nWenn etwas nicht stimmt, den Agenten im Chat korrigieren lassen.\n\nErgebnis: Die Auswertung in der Teamablage und eine Hypothese, hinter der das Team steht."
   },
   {
     "objectID": "tage/mittwoch.html#agenten",
     "href": "tage/mittwoch.html#agenten",
-    "title": "Mittwoch: Testen, vergleichen und übergeben",
+    "title": "Mittwoch: Prompting, Daten und Agenten",
     "section": "Input: Workflows und Agenten",
     "text": "Input: Workflows und Agenten\n\nFolien\n\n\nWorkflows und Agenten Ziel, Schleife, Kontext, Stufen, Prinzipien, Muster\n\n\n\nEin Workflow legt die Schritte vorab fest, ein Agent wählt zur Laufzeit Werkzeuge und nächste Schritte selbst. Die Demo zeigt beides am Aurenta-Fall: den festen Ablauf vom Montag und die Agenten-Variante, in der das Modell entscheidet, welches Wissenswerkzeug es aufruft. Drei Fragen für die eigene Skizze: Reicht die einfachste Lösung? Ist jeder Schritt im Laufprotokoll nachvollziehbar? Was genau bekommt das Modell als Werkzeug, und was nicht? Eine begründete Entscheidung gegen einen Agenten ist im Projekt ausdrücklich zulässig."
   },
   {
-    "objectID": "tage/mittwoch.html#uebung-3-1",
-    "href": "tage/mittwoch.html#uebung-3-1",
-    "title": "Mittwoch: Testen, vergleichen und übergeben",
-    "section": "Übung 3.1: Drei Fälle und eine klare Fehlergrenze",
-    "text": "Übung 3.1: Drei Fälle und eine klare Fehlergrenze\n\nFolien\n\n\nTesten, vergleichen und übergeben Testfälle, Rubrik\n\n\n\n\nDreierteams\nMaterial: Eigener Ablauf, Testprotokoll, Testerwartungen, strukturierter Referenzablauf.\n\nErwartete Entscheidungen und Grenzen vorab im Testprotokoll festlegen, bevor ein Lauf startet. Ein normaler Fall, eine Lücke und eine Sperre sind Pflicht.\nAlle drei Fälle ausführen und tatsächliche Ausgaben sichern.\nEine Ursache gezielt bearbeiten. Fehlender Zugang, falsche Feldzuordnung und unpassende Modellantwort sind unterschiedliche Befunde.\nDen geänderten Fall und einen zuvor bestandenen Fall erneut prüfen.\n\nDiese Übung übernimmt die am Montag entfallene Testübung: Erwartung vor dem Lauf, drei Kontakte, eine begründete Regeländerung. Wer früher fertig ist, lässt einen Fall vom Nachbarteam prüfen, ohne Erklärung, warum das Ergebnis gut sein soll.\nAurenta-Variante: K-01, K-06 und K-05. Die feste Kontaktsperre im erweiterten Workflow muss K-05 bereits vor dem Modellschritt abfangen. K-06 benötigt eine Klärung, keine erfundene Bedarfseinschätzung.\nErgebnis: Nachvollziehbare Testbelege und ein begründeter Umgang mit Fehlern. Ein Output Parser prüft Struktur, keine Wahrheit. Die fachliche Prüfung bleibt beim Team."
-  },
-  {
-    "objectID": "tage/mittwoch.html#uebung-3-2",
-    "href": "tage/mittwoch.html#uebung-3-2",
-    "title": "Mittwoch: Testen, vergleichen und übergeben",
-    "section": "Übung 3.2: Ein fairer Vergleich",
-    "text": "Übung 3.2: Ein fairer Vergleich\n\nFolien\n\n\nGrowth Marketing am Fall Aurenta Abschnitt A/B-Test und Kreuztabellen\n\n\n\n\nDreierteams\nMaterial: Zusätzliche Testfälle, Vergleichstabelle, Prüfen und vergleichen.\nVerglichen werden ein einfacher Chat und der Workflow, beide mit denselben Informationen, demselben gewünschten Ergebnis und denselben Kriterien. Der Chat erhält einen brauchbaren Auftrag. Ein absichtlich schlechter Prompt wäre kein fairer Vergleich.\n\nKriterien und Varianten festhalten. Modell und Produkt notieren; unterschiedliche Modelle sind ein Einflussfaktor.\nT-01 bis T-03 in beiden Verfahren bearbeiten. Für T-01 mit dem Chat beginnen, für T-02 mit dem Workflow, für T-03 die Reihenfolge auslosen. Zeiten für Bearbeitung, Prüfung und Nacharbeit getrennt erfassen.\nErgebnisse anhand derselben Kriterien vergleichen.\nEine Schlussfolgerung und mindestens eine Einschränkung formulieren.\n\nErgebnis: Kleiner explorativer Vergleich. Drei Fälle liefern Hinweise, keinen belastbaren allgemeinen Produktivitätsnachweis. Falls ein Fall zuvor zum Optimieren genutzt wurde, wird er nicht als unabhängiger Test ausgegeben. Für einen Zoi-Prototyp werden entsprechend neue synthetische Fälle aus der eigenen Spezifikation erstellt."
-  },
-  {
-    "objectID": "tage/mittwoch.html#uebung-3-3",
-    "href": "tage/mittwoch.html#uebung-3-3",
-    "title": "Mittwoch: Testen, vergleichen und übergeben",
-    "section": "Übung 3.3: Nutzbarkeit erklären",
-    "text": "Übung 3.3: Nutzbarkeit erklären\n\nDreierteams\nMaterial: Projektbrief, Workflow-Export und Testergebnisse.\n\nAuf einer Seite festhalten: Zweck, Eingaben, Ausgabe, Einrichtung, Start und menschliche Prüfung. Zugangsdaten nicht aufnehmen.\nErgebnis des Vergleichs interpretieren: Was ist besser, schlechter oder unverändert? Lohnt sich Automatisierung bei wiederholter Nutzung? Einrichtungszeit separat ausweisen.\nMarketinghypothese und einen späteren Wirkungstest formulieren. Synthetische Ausgaben belegen keine zusätzliche Conversion.\nEine andere Person im Team führt den Ablauf nur mit der Anleitung aus. Eine unklare Stelle verbessern.\n\nErgebnis: Erste Fassung des Playbooks und eine begründete Ausbauentscheidung. Kein Anspruch auf Produktivreife."
-  },
-  {
-    "objectID": "tage/mittwoch.html#letzte-korrektur",
-    "href": "tage/mittwoch.html#letzte-korrektur",
-    "title": "Mittwoch: Testen, vergleichen und übergeben",
-    "section": "Letzte Korrektur",
-    "text": "Letzte Korrektur\nNur noch eine relevante Korrektur mit erneutem Test vornehmen. Für die Präsentation genügt der echte Ablauf mit Eingabe, Ergebnis und Testbeleg. Eine gesicherte Ausgabe dient als Ersatz, falls die Modellverbindung ausfällt; dann wird die Demonstration als Wiedergabe eines früheren Laufs bezeichnet."
-  },
-  {
-    "objectID": "tage/mittwoch.html#demos",
-    "href": "tage/mittwoch.html#demos",
-    "title": "Mittwoch: Testen, vergleichen und übergeben",
-    "section": "Teamdemos",
-    "text": "Teamdemos\nKurz pro Team:\n\nEine Minute: Problem, Zielgruppe und Nutzenannahme.\nEin echter Lauf vom Eingang bis zum Ergebnis.\nTest und Vergleich mit einer einfacheren Lösung.\nGrenze, offene Entscheidung und nächster Versuch.\n\nDanach Fragen und Rückmeldung. Alle drei Personen übernehmen einen Teil. Bewertungsmaßstab der Rückmeldung sind Begründung, tatsächliche Funktion und nachvollziehbare Prüfung."
-  },
-  {
     "objectID": "tage/mittwoch.html#kurze-runde-zum-abschluss",
     "href": "tage/mittwoch.html#kurze-runde-zum-abschluss",
-    "title": "Mittwoch: Testen, vergleichen und übergeben",
+    "title": "Mittwoch: Prompting, Daten und Agenten",
     "section": "Kurze Runde zum Abschluss",
-    "text": "Kurze Runde zum Abschluss\nJedes Team zeigt in wenigen Minuten: den importierten Workflow, die Hypothese aus den Daten, und was es am Vorschlag des Agenten korrigieren musste. Daraus folgt die Entscheidung, womit das Team im Semesterprojekt weiterarbeitet."
+    "text": "Kurze Runde zum Abschluss\nJedes Team zeigt in wenigen Minuten einen verbesserten Prompt, die Hypothese aus den Daten und eine Korrektur am Vorschlag des Agenten. Ein vorhandener Workflow kann als Beispiel dienen. Offene Fragen werden gemeinsam gesammelt. Daraus folgt die Entscheidung, womit das Team im Semesterprojekt weiterarbeitet."
   },
   {
     "objectID": "tage/mittwoch.html#weiter",
     "href": "tage/mittwoch.html#weiter",
-    "title": "Mittwoch: Testen, vergleichen und übergeben",
+    "title": "Mittwoch: Prompting, Daten und Agenten",
     "section": "Weiterarbeit im Semester",
-    "text": "Weiterarbeit im Semester\nDie wöchentlichen 90 Minuten dienen dem Coaching. Die Teams vereinbaren eigenständige Arbeitszeiten. Jedes Team bringt einen kurzen belegten Stand mit. Jeweils drei Teams erhalten ein vertieftes Review, in der Folgewoche die anderen drei. Blockierende Fragen können jede Woche eingebracht werden.\nBis zum ersten Coaching liegen der aktualisierte Projektbrief, ein reproduzierbarer Lauf und eine priorisierte Entscheidungsfrage vor. Der weitere Umfang wird am Zoi-Auftrag konkretisiert. Checkpoints und Prüfungsleistung bleiben über das Semester sichtbar.\n\nAlle Folien zu diesem Tag\nDie Präsentationen öffnen sich in einem neuen Tab.\n\n\nn8n: Workflows und Agenten Abschnitt Ausbau: Sperre, Parser, Agent\n\n\nTesten, vergleichen und übergeben Testfälle, Rubrik, fairer Vergleich, Playbook, Semester\n\n\nGrowth Marketing am Fall Aurenta Abschnitt A/B-Test und Kreuztabellen"
+    "text": "Weiterarbeit im Semester\nDie wöchentlichen 90 Minuten dienen dem Coaching. Die Teams vereinbaren eigenständige Arbeitszeiten. Jedes Team bringt einen kurzen belegten Stand mit. Jeweils drei Teams erhalten ein vertieftes Review, in der Folgewoche die anderen drei. Blockierende Fragen können jede Woche eingebracht werden.\nFür das erste Coaching hält jedes Team den bisherigen Stand und eine konkrete Frage zur Weiterarbeit fest. Der weitere Umfang wird am Zoi-Auftrag konkretisiert. Checkpoints und Prüfungsleistung bleiben über das Semester sichtbar.\n\nAlle Folien zu diesem Tag\nDie Präsentationen öffnen sich in einem neuen Tab.\n\n\nKI verstehen und Aufträge formulieren Prompting zum Einstieg\n\n\nWorkflows und Agenten Ziel, Kontext und Werkzeugwahl\n\n\nn8n: Workflows und Agenten Fester Ablauf und Agent im Vergleich"
   },
   {
     "objectID": "tage/montag.html",
@@ -781,7 +753,7 @@
     "href": "index.html#die-drei-tage",
     "title": "Agentic AI für Growth Marketing",
     "section": "Die drei Tage",
-    "text": "Die drei Tage\n\n\n\nTag\nThema\n\n\n\n\n\nMontag, 21.09.\nTeamfindung, Growth-Hypothese am Übungsfall, erster eigener n8n-Workflow\nZum Tag\n\n\nDienstag, 22.09.\nBriefing durch Zoi um 10 Uhr, Ablaufskizze, Antigravity: Workflow mit einem Agenten, GitHub und Student Developer Pack\nZum Tag\n\n\nMittwoch, 23.09.\nAntigravity: Daten und Hypothese, Workflows und Agenten, Tests, Vergleich und Abschlussrunde\nZum Tag"
+    "text": "Die drei Tage\n\n\n\nTag\nThema\n\n\n\n\n\nMontag, 21.09.\nTeamfindung, Growth-Hypothese am Übungsfall, erster eigener n8n-Workflow\nZum Tag\n\n\nDienstag, 22.09.\nBriefing durch Zoi um 10 Uhr, Ablaufskizze, Antigravity: Workflow mit einem Agenten, GitHub und Student Developer Pack\nZum Tag\n\n\nMittwoch, 23.09.\nPrompting zum Einstieg, Antigravity: Daten und Hypothese, Workflows und Agenten, Abschlussrunde\nZum Tag"
   },
   {
     "objectID": "index.html#so-ist-die-seite-aufgebaut",
@@ -900,7 +872,7 @@
     "href": "tage/dienstag.html#github",
     "title": "Dienstag: Vom Übungsfall zum Zoi-Auftrag",
     "section": "GitHub und das Student Developer Pack",
-    "text": "GitHub und das Student Developer Pack\nNach Antigravity ging es um GitHub: Projektdateien gemeinsam ablegen, Änderungen nachvollziehen und frühere Stände wiederfinden. Ein Repository enthält die Dateien eines Projekts und ihre Versionsgeschichte. Ein Commit hält einen beschriebenen Änderungsstand fest. So lässt sich auch bei einem vom Agenten erzeugten Workflow nachvollziehen, was geändert wurde.\n\nVideo: Was ist GitHub?\nDas kurze offizielle Einführungsvideo zeigt, wofür GitHub genutzt wird (Englisch).\n\nVideo auf YouTube öffnen\n\n\nStudent Developer Pack einrichten\nDas GitHub Student Developer Pack bündelt Angebote für verifizierte Studierende. Voraussetzung sind ein persönliches GitHub-Konto, ein laufendes Studium und ein Nachweis des Studierendenstatus; das Mindestalter beträgt 13 Jahre.\n\nEin persönliches GitHub-Konto anlegen oder mit einem bestehenden Konto anmelden.\nDie HdM-E-Mail-Adresse zum Konto hinzufügen und bestätigen. Wenn GitHub im Antrag eine Hochschuladresse verlangt, muss diese vor der Bewerbung verifiziert sein.\nÜber die GitHub-Education-Einstellungen den Antrag starten und die Angaben zum Studium ausfüllen.\nDen angeforderten aktuellen Nachweis einreichen, beispielsweise eine Immatrikulationsbescheinigung oder einen Studierendenausweis mit aktuellem Datum.\nNach der Genehmigung die gewünschten Angebote im Education-Portal einzeln aktivieren. Ein eingereichter Antrag ist noch keine Freischaltung.\n\nDie Verifizierung gilt laut GitHub zwei Jahre und muss danach erneuert werden. Einzelne Partnerangebote haben eigene Laufzeiten, Kontingente und Bedingungen. Vor der Aktivierung sind mögliche Folgekosten und Verlängerungen zu prüfen; eine erneute Verifizierung setzt bereits genutzte Angebote nicht automatisch zurück.\nOffizielle Anleitung zur Bewerbung · Bedingungen des Student Developer Packs\n\nAlle Folien zu diesem Tag\nDie Präsentationen öffnen sich in einem neuen Tab.\n\n\nVom Übungsfall zum Zoi-Auftrag Briefing, Ablaufskizze, Antigravity\n\n\n\nAm Mittwoch folgen die Datenauswertung mit Antigravity, der Input zu Workflows und Agenten, die Tests und die gemeinsame Abschlussrunde. Weiter zum Mittwoch: Testen, vergleichen und übergeben"
+    "text": "GitHub und das Student Developer Pack\nNach Antigravity ging es um GitHub: Projektdateien gemeinsam ablegen, Änderungen nachvollziehen und frühere Stände wiederfinden. Ein Repository enthält die Dateien eines Projekts und ihre Versionsgeschichte. Ein Commit hält einen beschriebenen Änderungsstand fest. So lässt sich auch bei einem vom Agenten erzeugten Workflow nachvollziehen, was geändert wurde.\n\nVideo: Was ist GitHub?\nDas kurze offizielle Einführungsvideo zeigt, wofür GitHub genutzt wird (Englisch).\n\nVideo auf YouTube öffnen\n\n\nStudent Developer Pack einrichten\nDas GitHub Student Developer Pack bündelt Angebote für verifizierte Studierende. Voraussetzung sind ein persönliches GitHub-Konto, ein laufendes Studium und ein Nachweis des Studierendenstatus; das Mindestalter beträgt 13 Jahre.\n\nEin persönliches GitHub-Konto anlegen oder mit einem bestehenden Konto anmelden.\nDie HdM-E-Mail-Adresse zum Konto hinzufügen und bestätigen. Wenn GitHub im Antrag eine Hochschuladresse verlangt, muss diese vor der Bewerbung verifiziert sein.\nÜber die GitHub-Education-Einstellungen den Antrag starten und die Angaben zum Studium ausfüllen.\nDen angeforderten aktuellen Nachweis einreichen, beispielsweise eine Immatrikulationsbescheinigung oder einen Studierendenausweis mit aktuellem Datum.\nNach der Genehmigung die gewünschten Angebote im Education-Portal einzeln aktivieren. Ein eingereichter Antrag ist noch keine Freischaltung.\n\nDie Verifizierung gilt laut GitHub zwei Jahre und muss danach erneuert werden. Einzelne Partnerangebote haben eigene Laufzeiten, Kontingente und Bedingungen. Vor der Aktivierung sind mögliche Folgekosten und Verlängerungen zu prüfen; eine erneute Verifizierung setzt bereits genutzte Angebote nicht automatisch zurück.\nOffizielle Anleitung zur Bewerbung · Bedingungen des Student Developer Packs\n\nAlle Folien zu diesem Tag\nDie Präsentationen öffnen sich in einem neuen Tab.\n\n\nVom Übungsfall zum Zoi-Auftrag Briefing, Ablaufskizze, Antigravity\n\n\n\nAm Mittwoch beginnt der Tag mit Prompting. Danach folgen die Datenauswertung mit Antigravity, der Input zu Workflows und Agenten und die gemeinsame Abschlussrunde. Weiter zum Mittwoch: Prompting, Daten und Agenten"
   },
   {
     "objectID": "projekt.html",
