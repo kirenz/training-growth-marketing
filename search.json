@@ -578,7 +578,7 @@
     "href": "index.html#die-drei-tage",
     "title": "Agentic AI für Growth Marketing",
     "section": "Die drei Tage",
-    "text": "Die drei Tage\n\n\n\nTag\nThema\n\n\n\n\n\nMontag, 21.09.\nTeamfindung, Growth-Hypothese am Übungsfall, erster eigener n8n-Workflow\nZum Tag\n\n\nDienstag, 22.09.\nBriefing durch Zoi um 10 Uhr, Ablaufskizze, Antigravity: Workflow und Daten mit einem Agenten\nZum Tag\n\n\nMittwoch, 23.09.\nTestfälle, Vergleich mit einer einfachen Lösung, Live-Demo, Start ins Semesterprojekt\nwird am Morgen freigeschaltet"
+    "text": "Die drei Tage\n\n\n\nTag\nThema\n\n\n\n\n\nMontag, 21.09.\nTeamfindung, Growth-Hypothese am Übungsfall, erster eigener n8n-Workflow\nZum Tag\n\n\nDienstag, 22.09.\nBriefing durch Zoi um 10 Uhr, Ablaufskizze, Antigravity: Workflow mit einem Agenten, GitHub und Student Developer Pack\nZum Tag\n\n\nMittwoch, 23.09.\nAntigravity: Daten und Hypothese, Workflows und Agenten, Tests, Vergleich und Abschlussrunde\nwird am Morgen freigeschaltet"
   },
   {
     "objectID": "index.html#so-ist-die-seite-aufgebaut",
@@ -648,21 +648,21 @@
     "href": "tage/dienstag.html#ziel-und-tagesergebnis",
     "title": "Dienstag: Vom Übungsfall zum Zoi-Auftrag",
     "section": "Ziel und Tagesergebnis",
-    "text": "Ziel und Tagesergebnis\nJedes Team hat am Ende einen Workflow, den ein Agent aus der Ablaufskizze gebaut und das Team geprüft und importiert hat, dazu eine Hypothese aus den Aurenta-Daten. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt."
+    "text": "Ziel und Tagesergebnis\nIm Mittelpunkt stehen das Zoi-Briefing, der Workflow aus der Ablaufskizze mit Antigravity und die Einführung in GitHub. Dazu gehört die Einrichtung des Student Developer Packs. Datenanalyse, Hypothese und die Unterscheidung von Workflows und Agenten folgen am Mittwoch. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt."
   },
   {
     "objectID": "tage/dienstag.html#bausteine",
     "href": "tage/dienstag.html#bausteine",
     "title": "Dienstag: Vom Übungsfall zum Zoi-Auftrag",
     "section": "Bausteine des Tages",
-    "text": "Bausteine des Tages\nFest sind Beginn um 09:30 Uhr in Raum I120, das Briefing durch Zoi ab 10:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr.\n\n\n\n\n\n\n\n\nZeitfenster\nBaustein\nArbeitsform\n\n\n\n\nVormittag\nBriefingvorbereitung\nGemeinsam\n\n\nVormittag\nZoi-Briefing einschließlich Rückfragen\nGemeinsam\n\n\nNach dem Briefing\nEin Lauf vom Montag, dann Antigravity: Workflow aus der Skizze\nGemeinsam\n\n\nNachmittag\nAntigravity: Daten und Hypothese\nGemeinsam\n\n\nNachmittag\nInput: Workflows und Agenten\nGemeinsam\n\n\nSpäter Nachmittag\nKurze Runde und Entscheidung für Mittwoch\nGemeinsam"
+    "text": "Bausteine des Tages\nFest sind Beginn um 09:30 Uhr in Raum I120, das Briefing durch Zoi ab 10:00 Uhr, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr.\n\n\n\n\n\n\n\n\nZeitfenster\nBaustein\nArbeitsform\n\n\n\n\nVormittag\nBriefingvorbereitung\nGemeinsam\n\n\nVormittag\nZoi-Briefing einschließlich Rückfragen\nGemeinsam\n\n\nNach dem Briefing\nEin Lauf vom Montag, dann Antigravity: Workflow aus der Skizze\nGemeinsam\n\n\nNach Antigravity\nGitHub: Repository und Versionsgeschichte\nGemeinsam\n\n\nAnschließend\nGitHub Student Developer Pack einrichten\nGemeinsam"
   },
   {
     "objectID": "tage/dienstag.html#briefingvorbereitung",
     "href": "tage/dienstag.html#briefingvorbereitung",
     "title": "Dienstag: Vom Übungsfall zum Zoi-Auftrag",
     "section": "Briefingvorbereitung",
-    "text": "Briefingvorbereitung\n\nFolien\n\n\nVom Übungsfall zum Zoi-Auftrag Briefing, Ablaufskizze, Antigravity\n\n\nWorkflows und Agenten Input am Nachmittag\n\n\n\nVor dem Briefing sprechen wir über die offenen Fragen an Zoi, die am Montag gesammelt wurden: Was wollen wir wissen, und wer fragt nach? Während des Briefings hilft es, mitzuschreiben, was Zoi tatsächlich sagt, und getrennt davon zu notieren, was noch unklar bleibt."
+    "text": "Briefingvorbereitung\n\nFolien\n\n\nVom Übungsfall zum Zoi-Auftrag Briefing, Ablaufskizze, Antigravity\n\n\n\nVor dem Briefing sprechen wir über die offenen Fragen an Zoi, die am Montag gesammelt wurden: Was wollen wir wissen, und wer fragt nach? Während des Briefings hilft es, mitzuschreiben, was Zoi tatsächlich sagt, und getrennt davon zu notieren, was noch unklar bleibt."
   },
   {
     "objectID": "tage/dienstag.html#briefing",
@@ -670,6 +670,13 @@
     "title": "Dienstag: Vom Übungsfall zum Zoi-Auftrag",
     "section": "Briefing des Projektpartners ab 10:00 Uhr",
     "text": "Briefing des Projektpartners ab 10:00 Uhr\nGeplant sind eine Vorstellung durch Zoi und anschließend Fragen, vor Ort an der HdM. Angebot, Zielgruppe, heutiger Prozess und gewünschter Nutzen werden anhand des Briefings konkretisiert."
+  },
+  {
+    "objectID": "tage/dienstag.html#zoi-unterlagen",
+    "href": "tage/dienstag.html#zoi-unterlagen",
+    "title": "Dienstag: Vom Übungsfall zum Zoi-Auftrag",
+    "section": "Unterlagen von Zoi",
+    "text": "Unterlagen von Zoi\nAktuelle Unterlagen von Sarah Engler im freigegebenen Zoi-Ordner\nDer Ordner enthält die Briefing-Präsentation, das AI-Orientation-Workshop-Angebot, die Company Presentation, die Beispielkampagne, das Dokument „Marketing AI Automation“ sowie das Prozessdiagramm mit Erläuterungen. Dieser Ordner ersetzt die früheren Materiallinks.\nBriefing-Arbeitsmaterialien und rohes Transkript des Kurses"
   },
   {
     "objectID": "tage/dienstag.html#rueckblick",
@@ -683,28 +690,14 @@
     "href": "tage/dienstag.html#uebung-1-3",
     "title": "Dienstag: Vom Übungsfall zum Zoi-Auftrag",
     "section": "Übung 1.3: Vom Prozess zum Workflow mit Antigravity",
-    "text": "Übung 1.3: Vom Prozess zum Workflow mit Antigravity\n\nFolien\n\n\nVom Übungsfall zum Zoi-Auftrag Abschnitt Antigravity\n\n\n\n\nGemeinsam Schritt für Schritt, jedes Team am eigenen Rechner\nMaterial: Startordner als ZIP, Antigravity.\nEin Agent baut den Workflow aus der Ablaufskizze, das Team prüft, ob er den Regeln der Skizze entspricht. Das ist die Arbeitsweise für das Semester: Der Agent erzeugt, der Mensch prüft.\n\nAntigravity installieren und mit dem Google-Konto anmelden, auf dem Gemini für Studierende läuft. Eine Person pro Team reicht.\nDas ZIP entpacken und den Ordner in Antigravity als Projekt öffnen.\nDen Auftrag aus AUFTRAG.md in den Chat geben. Der Agent liest die Skizze und das Muster und schreibt den Workflow als Datei.\nPrüfen, bevor importiert wird: Passt jeder Knoten zu einem Schritt der Skizze? Liegt die Kontaktsperre vor dem KI-Schritt? Versendet nichts?\nIn n8n importieren, Credential wählen, mit K-01 und K-05 ausführen.\n\nWenn die Installation nicht klappt: denselben Auftrag in den Gemini-Chat einfügen, dazu den Inhalt der BPMN-Datei und des Muster-Workflows als Text. Der Weg ist umständlicher, das Ergebnis dasselbe.\nErgebnis: Der importierte Workflow läuft für K-01. Ein Satz in der Teamablage: Was musste am Vorschlag des Agenten korrigiert werden?"
+    "text": "Übung 1.3: Vom Prozess zum Workflow mit Antigravity\n\nFolien\n\n\nVom Übungsfall zum Zoi-Auftrag Abschnitt Antigravity\n\n\n\n\nGemeinsam Schritt für Schritt, jedes Team am eigenen Rechner\nMaterial: Startordner als ZIP, Antigravity.\nEin Agent baut den Workflow aus der Ablaufskizze, das Team prüft, ob er den Regeln der Skizze entspricht. Das ist die Arbeitsweise für das Semester: Der Agent erzeugt, der Mensch prüft.\n\nAntigravity installieren und mit dem Google-Konto anmelden, auf dem Gemini für Studierende läuft. Eine Person pro Team reicht.\nDas ZIP entpacken und den Ordner in Antigravity als Projekt öffnen.\nDen Auftrag aus AUFTRAG.md in den Chat geben. Der Agent liest die Skizze und das Muster und schreibt den Workflow als Datei.\nPrüfen, bevor importiert wird: Passt jeder Knoten zu einem Schritt der Skizze? Liegt die Kontaktsperre vor dem KI-Schritt? Versendet nichts?\nIn n8n importieren, Credential wählen, mit K-01 und K-05 ausführen.\n\nWenn die Installation nicht klappt: denselben Auftrag in den Gemini-Chat einfügen, dazu den Inhalt der BPMN-Datei und des Muster-Workflows als Text. Der Weg ist umständlicher, das Ergebnis dasselbe.\nErgebnis: Der importierte Workflow läuft für K-01. Ein Satz in der Teamablage: Was musste am Vorschlag des Agenten korrigiert werden?\n\n\nVideo: Einführung in Antigravity\n\n„Welcome to Google Antigravity“ auf YouTube öffnen"
   },
   {
-    "objectID": "tage/dienstag.html#uebung-1-2",
-    "href": "tage/dienstag.html#uebung-1-2",
+    "objectID": "tage/dienstag.html#github",
+    "href": "tage/dienstag.html#github",
     "title": "Dienstag: Vom Übungsfall zum Zoi-Auftrag",
-    "section": "Übung 1.2: Daten auswerten und eine Hypothese ableiten, mit Antigravity",
-    "text": "Übung 1.2: Daten auswerten und eine Hypothese ableiten, mit Antigravity\n\nGemeinsam Schritt für Schritt, jedes Team am eigenen Rechner\nMaterial: derselbe Startordner, darin die Datei webinar-kontakte-330.csv und der Auftrag AUFTRAG-DATEN.md.\nAurenta schickt allen Webinar-Kontakten dieselbe Einladung. Von 198 Follow-ups kamen 10 brauchbare Gespräche. Der Agent soll in den Daten finden, wo die Kontakte verloren gehen, und eine Hypothese vorschlagen. Das Team prüft, ob die Zahlen stimmen und die Hypothese Sinn ergibt.\n\nDen Auftrag aus AUFTRAG-DATEN.md in den Chat geben. Der Agent wertet die Datei aus und schreibt Tabellen, Hypothese und Kennzahl in eine Datei.\nDie Zahlen prüfen: Sind Zähler und Nenner genannt? Passt die Stelle mit dem größten Verlust zu dem, was in der Datei steht?\nDie Hypothese prüfen: Ist X etwas, das Aurenta selbst ändern kann? Ist Y messbar? Ist Z eine Erklärung, keine Vermutung über Personen?\nWenn etwas nicht stimmt, den Agenten im Chat korrigieren lassen.\n\nErgebnis: Die Auswertung in der Teamablage und eine Hypothese, hinter der das Team steht."
-  },
-  {
-    "objectID": "tage/dienstag.html#agenten",
-    "href": "tage/dienstag.html#agenten",
-    "title": "Dienstag: Vom Übungsfall zum Zoi-Auftrag",
-    "section": "Input: Workflows und Agenten",
-    "text": "Input: Workflows und Agenten\n\nFolien\n\n\nWorkflows und Agenten Ziel, Schleife, Kontext, Stufen, Prinzipien, Muster\n\n\n\nEin Workflow legt die Schritte vorab fest, ein Agent wählt zur Laufzeit Werkzeuge und nächste Schritte selbst. Die Demo zeigt beides am Aurenta-Fall: den festen Ablauf vom Montag und die Agenten-Variante, in der das Modell entscheidet, welches Wissenswerkzeug es aufruft. Drei Fragen für die eigene Skizze: Reicht die einfachste Lösung? Ist jeder Schritt im Laufprotokoll nachvollziehbar? Was genau bekommt das Modell als Werkzeug, und was nicht? Eine begründete Entscheidung gegen einen Agenten ist im Projekt ausdrücklich zulässig."
-  },
-  {
-    "objectID": "tage/dienstag.html#kurze-runde-zum-abschluss",
-    "href": "tage/dienstag.html#kurze-runde-zum-abschluss",
-    "title": "Dienstag: Vom Übungsfall zum Zoi-Auftrag",
-    "section": "Kurze Runde zum Abschluss",
-    "text": "Kurze Runde zum Abschluss\nJedes Team zeigt in wenigen Minuten: den importierten Workflow, die Hypothese aus den Daten, und was es am Vorschlag des Agenten korrigieren musste. Daraus folgt die Entscheidung, womit das Team am Mittwoch weiterarbeitet.\n\nAlle Folien zu diesem Tag\nDie Präsentationen öffnen sich in einem neuen Tab.\n\n\nVom Übungsfall zum Zoi-Auftrag Briefing, Ablaufskizze, Antigravity\n\n\nWorkflows und Agenten Input am Nachmittag\n\n\nn8n: Workflows und Agenten Abschnitt Ausbau: Sperre, Parser, Agent\n\n\n\nWie es am Mittwoch weitergeht, sehen wir am Mittwochmorgen."
+    "section": "GitHub und das Student Developer Pack",
+    "text": "GitHub und das Student Developer Pack\nNach Antigravity ging es um GitHub: Projektdateien gemeinsam ablegen, Änderungen nachvollziehen und frühere Stände wiederfinden. Ein Repository enthält die Dateien eines Projekts und ihre Versionsgeschichte. Ein Commit hält einen beschriebenen Änderungsstand fest. So lässt sich auch bei einem vom Agenten erzeugten Workflow nachvollziehen, was geändert wurde.\n\nVideo: Was ist GitHub?\nDas kurze offizielle Einführungsvideo zeigt, wofür GitHub genutzt wird (Englisch).\n\nVideo auf YouTube öffnen\n\n\nStudent Developer Pack einrichten\nDas GitHub Student Developer Pack bündelt Angebote für verifizierte Studierende. Voraussetzung sind ein persönliches GitHub-Konto, ein laufendes Studium und ein Nachweis des Studierendenstatus; das Mindestalter beträgt 13 Jahre.\n\nEin persönliches GitHub-Konto anlegen oder mit einem bestehenden Konto anmelden.\nDie HdM-E-Mail-Adresse zum Konto hinzufügen und bestätigen. Wenn GitHub im Antrag eine Hochschuladresse verlangt, muss diese vor der Bewerbung verifiziert sein.\nÜber die GitHub-Education-Einstellungen den Antrag starten und die Angaben zum Studium ausfüllen.\nDen angeforderten aktuellen Nachweis einreichen, beispielsweise eine Immatrikulationsbescheinigung oder einen Studierendenausweis mit aktuellem Datum.\nNach der Genehmigung die gewünschten Angebote im Education-Portal einzeln aktivieren. Ein eingereichter Antrag ist noch keine Freischaltung.\n\nDie Verifizierung gilt laut GitHub zwei Jahre und muss danach erneuert werden. Einzelne Partnerangebote haben eigene Laufzeiten, Kontingente und Bedingungen. Vor der Aktivierung sind mögliche Folgekosten und Verlängerungen zu prüfen; eine erneute Verifizierung setzt bereits genutzte Angebote nicht automatisch zurück.\nOffizielle Anleitung zur Bewerbung · Bedingungen des Student Developer Packs\n\nAlle Folien zu diesem Tag\nDie Präsentationen öffnen sich in einem neuen Tab.\n\n\nVom Übungsfall zum Zoi-Auftrag Briefing, Ablaufskizze, Antigravity\n\n\nn8n: Workflows und Agenten Abschnitt Ausbau: Sperre, Parser, Agent\n\n\n\nAm Mittwoch folgen die Datenauswertung mit Antigravity, der Input zu Workflows und Agenten, die Tests und die gemeinsame Abschlussrunde. Wie es am Mittwoch weitergeht, sehen wir am Mittwochmorgen."
   },
   {
     "objectID": "werkzeuge/index.html",
@@ -1138,7 +1131,7 @@
     "href": "slides/tag2-briefing.html#der-tag-macht-aus-dem-prototyp-einen-begründeten-projektzuschnitt",
     "title": "Vom Übungsfall zum Zoi-Auftrag",
     "section": "Der Tag macht aus dem Prototyp einen begründeten Projektzuschnitt",
-    "text": "Der Tag macht aus dem Prototyp einen begründeten Projektzuschnitt\n\n\n1 BriefingZoi um 10 Uhr: Angebot, Zielgruppe, heutiger Prozess, gewünschter Nutzen\n\n\n2 Ein Lauf vom MontagK-02: Erwartung, Ergebnis, Ursache\n\n\n3 AblaufskizzeSwimlane-Diagramm: wer macht was, Regel oder Modell oder Mensch\n\n\n4 Antigravity: WorkflowEin Agent baut den Workflow aus der Skizze, das Team prüft und importiert\n\n\n5 Antigravity: DatenEin Agent wertet die Aurenta-Daten aus, das Team prüft die Hypothese\n\n\n6 Workflows und AgentenWann reicht der feste Ablauf, dann kurze Runde\n\n\n\nAm Ende des Tages: Projektbrief, aktualisierte Experimentkarte, Ablaufskizze, überarbeiteter Prototyp. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt, das zieht sich durch den ganzen Tag."
+    "text": "Der Tag macht aus dem Prototyp einen begründeten Projektzuschnitt\n\n\n1 BriefingZoi um 10 Uhr: Angebot, Zielgruppe, heutiger Prozess, gewünschter Nutzen\n\n\n2 Ein Lauf vom MontagK-02: Erwartung, Ergebnis, Ursache\n\n\n3 AblaufskizzeSwimlane-Diagramm: wer macht was, Regel oder Modell oder Mensch\n\n\n4 Antigravity: WorkflowEin Agent baut den Workflow aus der Skizze, das Team prüft und importiert\n\n\n5 GitHubProjektdateien, Repository und Versionsgeschichte\n\n\n6 Student Developer PackPersönliches Konto, Studierendenstatus und Angebote einrichten\n\n\n\nDienstag: Zoi-Briefing, Ablaufskizze, Antigravity und GitHub. Die Datenauswertung und der Input zu Workflows und Agenten folgen am Mittwoch. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt, das zieht sich durch den ganzen Tag."
   },
   {
     "objectID": "slides/tag2-briefing.html#drei-fragen-pro-team-und-drei-rollen-im-briefing",
