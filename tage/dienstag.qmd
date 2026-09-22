@@ -38,7 +38,7 @@ Fest sind Beginn um 09:30 Uhr in Raum I120, das Briefing durch Zoi ab 10:00 Uhr,
 <ul><li><a class="folie" href="../slides/tag2-briefing.html" target="_blank" rel="noopener">Vom Übungsfall zum Zoi-Auftrag <span>Briefing, Ablaufskizze, Antigravity</span></a></li></ul>
 :::
 
-Die am Montag gesammelten Fragen an Zoi werden gesichtet, Dubletten zusammengefasst, und jedes Team markiert die eine Frage, die es im Briefing selbst stellt. Dazu werden drei Aufgaben fürs Briefing verteilt: belegte Aussagen notieren, Annahmen und offene Punkte erkennen, Fragen stellen. Die Aufgaben wechseln beim anschließenden Bearbeiten.
+Vor dem Briefing sprechen wir über die offenen Fragen an Zoi, die am Montag gesammelt wurden: Was wollen wir wissen, und wer fragt nach? Während des Briefings hilft es, mitzuschreiben, was Zoi tatsächlich sagt, und getrennt davon zu notieren, was noch unklar bleibt.
 
 ## Briefing des Projektpartners ab 10:00 Uhr {#briefing}
 
