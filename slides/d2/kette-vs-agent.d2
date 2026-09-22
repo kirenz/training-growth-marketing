@@ -1,0 +1,26 @@
+direction: right
+classes: {
+  n: { style: { fill: "#1e2332"; stroke: "#9ba3ba"; stroke-width: 2; border-radius: 10; font-color: "#f2f5ff"; font-size: 26 } }
+  m: { shape: diamond; style: { fill: "#1e2332"; stroke: "#88F297"; stroke-width: 3; font-color: "#f2f5ff"; font-size: 26 } }
+  t: { style: { fill: "#161a24"; stroke: "#4ba9ff"; stroke-width: 2; border-radius: 10; font-color: "#f2f5ff"; font-size: 24 } }
+  e: { style: { stroke: "#9ba3ba"; stroke-width: 2; font-color: "#9ba3ba"; font-size: 20 } }
+  el: { style: { stroke: "#4ba9ff"; stroke-width: 2; stroke-dash: 4; font-color: "#4ba9ff"; font-size: 20 } }
+}
+W: { label: "Workflow: die Schritte stehen fest"; style: { fill: "transparent"; stroke: "#2a2f3e"; stroke-dash: 3; font-color: "#9ba3ba"; font-size: 24 }
+  k: { label: "Kontakt"; class: n }
+  m: { label: "Modell"; class: m }
+  a: { label: "Entwurf"; class: n }
+  k -> m: { class: e }
+  m -> a: { class: e }
+}
+A: { label: "Agent: das Modell wählt Werkzeuge"; style: { fill: "transparent"; stroke: "#2a2f3e"; stroke-dash: 3; font-color: "#9ba3ba"; font-size: 24 }
+  k: { label: "Kontakt"; class: n }
+  m: { label: "Modell"; class: m }
+  a: { label: "Entwurf"; class: n }
+  t1: { label: "Leistungswissen"; class: t }
+  t2: { label: "Lernmaterial"; class: t }
+  k -> m: { class: e }
+  m -> a: { class: e }
+  m -> t1: "Aufruf" { class: el }
+  m -> t2: "Aufruf" { class: el }
+}

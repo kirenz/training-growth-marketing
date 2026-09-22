@@ -25,6 +25,7 @@ project:
     - slides/ki-und-prompting.qmd
     - slides/n8n-workflows.qmd
     - slides/tag2-briefing.qmd
+    - slides/agenten.qmd
 #FREI:mittwoch    - slides/tag3-testen.qmd
 
 lang: de
