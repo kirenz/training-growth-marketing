@@ -1341,7 +1341,7 @@
     "href": "slides/agenten.html#vier-stufen-chat-anweisung-workflow-agent",
     "title": "Workflows und Agenten",
     "section": "Vier Stufen: Chat, Anweisung, Workflow, Agent",
-    "text": "Vier Stufen: Chat, Anweisung, Workflow, Agent\n\n\nStufe 1\nChat\nEine Frage, eine Antwort. Jedes Mal neu, nichts wiederverwendbar.\n\n\nStufe 2\nAnweisung\nRegeln und Wissen als Text gespeichert, pro Fall eingefügt. Gleiche Qualität bei jedem Lauf.\n\n\nStufe 3\nWorkflow\nDer Ablauf steht fest. Das Modell übernimmt einzelne Schritte, entscheidet aber nicht über den Ablauf. Hier steht der Kurs.\n\n\nStufe 4\nAgent\nDas Modell wählt innerhalb gesetzter Grenzen Werkzeuge und nächste Schritte selbst.\n\n\n\nAndrew Ng spricht von Autonomiegraden: Stufe 3 wenig autonom, Stufe 4 teilautonom, darüber hochautonom mit eigenen Plänen. Für das Projekt reicht Stufe 4 mit klaren Grenzen. Ein Agent, der eigene Werkzeuge baut, ist kein Ziel im Semester."
+    "text": "Vier Stufen: Chat, Anweisung, Workflow, Agent\n\n\nStufe 1\nChat\nEine Frage, eine Antwort. Jedes Mal neu, nichts wiederverwendbar.\n\n\nStufe 2\nAnweisung\nRegeln und Wissen als Text gespeichert, pro Fall eingefügt. Gleiche Qualität bei jedem Lauf.\n\n\nStufe 3\nWorkflow\nDer Ablauf steht fest. Das Modell übernimmt einzelne Schritte, entscheidet aber nicht über den Ablauf. Hier steht der Kurs.\n\n\nStufe 4\nAgent\nDas Modell wählt innerhalb gesetzter Grenzen Werkzeuge und nächste Schritte selbst.\n\n\n\nDiese vier Formen ordnen die Beispiele aus dem Kurs. Andrew Ngs Autonomiegrade beschreiben eine andere Frage: Wie viel Entscheidungsfreiheit hat das Modell innerhalb eines mehrstufigen Ablaufs? Das folgt auf der nächsten Folie."
   },
   {
     "objectID": "slides/agenten.html#workflow-oder-agent-der-agent-wählt-werkzeuge-der-workflow-nicht",
@@ -1370,5 +1370,12 @@
     "title": "Workflows und Agenten",
     "section": "Der Mensch bleibt im Ablauf: Freigabe, Versand, Grenzen",
     "text": "Der Mensch bleibt im Ablauf: Freigabe, Versand, Grenzen\n\n\nWas der Agent tut\n\nliest Kontakt und Wissen\nschlägt Entscheidung und Entwurf vor\nlegt beides zur Prüfung ab\nsagt, was fehlt oder unsicher ist\n\n\n\nWas beim Menschen bleibt\n\ndie Freigabe\nder Versand\ndie Regel, wer gar nicht kontaktiert wird\ndie Entscheidung, ob ein Agent überhaupt lohnt\n\n\n\n\nEin Agent, der alles selbst entscheidet, ist im Marketing kein Ziel. Ein Agent, der gut vorbereitet und sauber übergibt, spart die Zeit, die zählt.\n\n\nSchluss und Brücke zum Mittwoch: Dort wird geprüft, ob der eigene Ablauf das hält. Erwartung vor dem Lauf, drei Fälle, ein Vergleich mit dem Chat."
+  },
+  {
+    "objectID": "slides/agenten.html#drei-autonomiegrade-nach-andrew-ng",
+    "href": "slides/agenten.html#drei-autonomiegrade-nach-andrew-ng",
+    "title": "Workflows und Agenten",
+    "section": "Drei Autonomiegrade nach Andrew Ng",
+    "text": "Drei Autonomiegrade nach Andrew Ng\nAuch agentische Abläufe unterscheiden sich darin, wie viel das Modell selbst entscheiden darf.\n\n\nGrad 1 · gering\nFester Ablauf\nAlle Schritte stehen vorher fest. Welche Werkzeuge verwendet werden, ist vorgegeben.\n\n\nGrad 2 · teilweise\nWerkzeuge auswählen\nDas Modell trifft Entscheidungen und wählt aus vorher festgelegten Werkzeugen.\n\n\nGrad 3 · hoch\nWeitgehend selbstständig\nDas Modell trifft viele Entscheidungen selbst und kann auch neue Werkzeuge erstellen.\n\n\n\nDie Zoi-Skizze beginnt mit einem festen Ablauf. Mehr Autonomie ist nur sinnvoll, wenn ein konkreter Schritt sie braucht. Einführungsfolie zu den Autonomiegraden · Quelle: Andrew Ng, „Agentic AI“\n\n\nDie drei Grade stammen aus der früheren Einführungsfolie nach Andrew Ng. Nicht mit den vier Kursformen Chat, Anweisung, Workflow und Agent gleichsetzen: Ein Agent kann unterschiedlich viel Autonomie erhalten. Für den ersten Zoi-Textentwurf genügt ein fester Ablauf mit menschlicher Prüfung."
   }
 ]
