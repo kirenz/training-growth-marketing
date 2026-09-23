@@ -618,65 +618,58 @@
   {
     "objectID": "tage/mittwoch.html",
     "href": "tage/mittwoch.html",
-    "title": "Mittwoch: Projekt-Notebook und erster Workflow",
+    "title": "Mittwoch: Projekt-Notebook und Workflow-Skizze",
     "section": "",
     "text": "23. September 2026 · 09:00–17:00 Uhr · Raum I120 · Zoi-Projektwissen sammeln und anwenden\nZu Beginn richten die Teams ein Gemini Notebook für das Zoi-Projekt ein. Die erste Prompt-Übung findet direkt in „Configure chat“ statt. Danach skizzieren sie in draw.io einen kurzen Workflow für einen Kampagnentext. An diesen Skizzen besprechen wir den Unterschied zwischen Workflow und Agent."
   },
   {
     "objectID": "tage/mittwoch.html#ziel-und-tagesergebnis",
     "href": "tage/mittwoch.html#ziel-und-tagesergebnis",
-    "title": "Mittwoch: Projekt-Notebook und erster Workflow",
+    "title": "Mittwoch: Projekt-Notebook und Workflow-Skizze",
     "section": "Ziel und Tagesergebnis",
     "text": "Ziel und Tagesergebnis\nJedes Team hat ein Notebook mit den aktuellen Projektquellen, eine gemeinsam entwickelte und geprüfte Chat-Konfiguration sowie eine einfache Skizze für die Erstellung eines Kampagnentextes. Belegte Aussagen, eigene Vorschläge und offene Fragen bleiben erkennbar."
   },
   {
     "objectID": "tage/mittwoch.html#bausteine",
     "href": "tage/mittwoch.html#bausteine",
-    "title": "Mittwoch: Projekt-Notebook und erster Workflow",
+    "title": "Mittwoch: Projekt-Notebook und Workflow-Skizze",
     "section": "Bausteine des Tages",
-    "text": "Bausteine des Tages\nFest sind Beginn um 09:00 Uhr in Raum I120, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr.\n\n\n\n\n\n\n\nBaustein\nArbeitsform\n\n\n\n\nGemini Notebook einrichten und Projektquellen hinzufügen\nGemeinsame Demonstration, dann Teams\n\n\nErste Prompt-Übung: „Configure chat“ gemeinsam anpassen und prüfen\nGemeinsam\n\n\nKurzen Workflow für einen Kampagnentext in draw.io skizzieren\nTeams\n\n\nInput: Workflows und Agenten, anschließend Skizzen prüfen\nGemeinsam und in Teams\n\n\nn8n-Beispiel und Weiterarbeit im Semester\nGemeinsam\n\n\nKurze Runde zum Abschluss\nGemeinsam"
+    "text": "Bausteine des Tages\nFest sind Beginn um 09:00 Uhr in Raum I120, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr.\n\n\n\n\n\n\n\nBaustein\nArbeitsform\n\n\n\n\nGemini Notebook einrichten und Projektquellen hinzufügen\nGemeinsame Demonstration, dann Teams\n\n\nErste Prompt-Übung: „Configure chat“ gemeinsam anpassen und prüfen\nGemeinsam\n\n\nKurzen Workflow für einen Kampagnentext in draw.io skizzieren\nTeams\n\n\nInput: Workflows und Agenten, anschließend Skizzen prüfen\nGemeinsam und in Teams\n\n\nKurze Runde zum Abschluss\nGemeinsam"
   },
   {
     "objectID": "tage/mittwoch.html#notebook",
     "href": "tage/mittwoch.html#notebook",
-    "title": "Mittwoch: Projekt-Notebook und erster Workflow",
+    "title": "Mittwoch: Projekt-Notebook und Workflow-Skizze",
     "section": "Einstieg: Ein Projekt-Notebook aufbauen",
     "text": "Einstieg: Ein Projekt-Notebook aufbauen\nGemini Notebook öffnen und für das Zoi-Projekt ein neues Notebook anlegen. Das Notebook dient als gemeinsames Nachschlagewerk: Antworten lassen sich anhand der hinzugefügten Quellen prüfen.\nQuellen für das Notebook:\n\nSarahs aktueller Zoi-Ordner: alle sieben Dateien einzeln hinzufügen. Dazu gehören das HdM-Briefing, das Angebot zum AI Orientation Workshop, die Company Presentation, die Beispielkampagne, „Marketing AI Automation“ und die beiden Prozessgrafiken.\nRohes Transkript des Zoi-Briefings: als Quelle ergänzen. Das automatische Transkript kann Hörfehler enthalten.\nProjektbeschreibung der Lehrveranstaltung: als Webquelle ergänzen. Sie beschreibt Rahmen und Prüfungsleistung; für Zois aktuelle Abläufe sind die Briefing-Unterlagen maßgeblich.\n\nIn der Quellenliste prüfen, ob alle Dateien tatsächlich hinzugefügt wurden. Anschließend eine eigene Frage zum Projekt stellen, die Antwort mit ihren Quellenhinweisen öffnen und mit dem Original vergleichen. Ein Ordnerlink allein fügt seine Dateien nicht als Quellen hinzu. Googles Anleitung zum Hinzufügen von Quellen.\n\nErste Prompt-Übung: „Configure chat“\nIm Chat-Bereich Configure chat öffnen und Custom wählen. Die Antwortlänge kann zunächst auf „Default“ bleiben. Gemeinsam überlegen, welche Rolle das Notebook im Projekt erfüllen soll und wie es mit den Quellen arbeiten soll. Formulierungen aus der Gruppe sammeln und daraus eine kurze gemeinsame Anweisung entwickeln. Dabei helfen vier Fragen: Welchen Kontext hat das Notebook? Was soll es leisten? Wie sollen Antworten aussehen? Wie sollen Unsicherheit und Quellen kenntlich werden?\nDie Anweisung speichern und mit zwei unterschiedlichen Projektfragen erproben. Eine Antwort an den Quellen prüfen, eine Schwäche benennen und die Konfiguration gemeinsam verbessern. Den ersten und den überarbeiteten Stand festhalten. Googles Anleitung zu „Configure chat“.\nErgebnis: Ein nutzbares Projekt-Notebook und eine selbst formulierte Chat-Konfiguration, deren Wirkung an konkreten Antworten geprüft wurde."
   },
   {
     "objectID": "tage/mittwoch.html#uebung-1-2",
     "href": "tage/mittwoch.html#uebung-1-2",
-    "title": "Mittwoch: Projekt-Notebook und erster Workflow",
+    "title": "Mittwoch: Projekt-Notebook und Workflow-Skizze",
     "section": "Übung 1.2: Einen kurzen Workflow für Kampagnentexte skizzieren",
     "text": "Übung 1.2: Einen kurzen Workflow für Kampagnentexte skizzieren\n\nIn Teams\nMaterial: das eigene Gemini Notebook mit den Zoi-Quellen und draw.io.\nSarah beschreibt die Erstellung und Abstimmung von Kampagneninhalten als aufwendig. Jedes Team bespricht mit dem Notebook einen kleinen, möglichen Ablauf, in dem ein LLM einen Textentwurf für den AI Orientation Workshop erstellt. Ein kurzer LinkedIn-Beitrag oder ein Newsletter-Absatz genügt als Beispiel.\n\nIm Team festlegen, welcher Text entstehen soll und welche vorhandenen Informationen das LLM dafür benötigt. Das Notebook nutzen, um Aussagen aus dem Briefing und offene Fragen nachzusehen.\nDen möglichen Ablauf in draw.io mit wenigen Kästen und Pfeilen skizzieren: von der Eingabe über den LLM-Entwurf bis zur menschlichen Prüfung und einem freigegebenen Entwurf. Die Beschriftungen selbst wählen.\nDie Skizze mit den Zoi-Quellen abgleichen. Sichtbar machen, welche Schritte aus dem Briefing stammen und welche das Team für einen ersten Prototyp vorschlägt.\n\nErgebnis: Eine einfache, gespeicherte draw.io-Skizze und eine offene Frage für die weitere Projektarbeit. Der Workflow muss heute nicht umgesetzt werden; es wird nichts veröffentlicht oder versendet."
   },
   {
     "objectID": "tage/mittwoch.html#agenten",
     "href": "tage/mittwoch.html#agenten",
-    "title": "Mittwoch: Projekt-Notebook und erster Workflow",
+    "title": "Mittwoch: Projekt-Notebook und Workflow-Skizze",
     "section": "Input: Workflows und Agenten",
     "text": "Input: Workflows und Agenten\n\nFolien\n\n\nVier Stufen: Chat, Anweisung, Workflow, Agent Vom Projekt-Notebook zur Ablaufskizze\n\n\n\nDas Projekt-Notebook liefert Quellen, „Configure chat“ legt eine dauerhafte Anweisung für das Gespräch fest und die draw.io-Skizze ordnet mehrere Schritte. Nach der Folie prüfen die Teams ihre Skizze: Sind die Schritte bereits klar festgelegt? Wo müsste ein Modell tatsächlich selbst entscheiden, welches Werkzeug es nutzt? Für einen ersten Textentwurf kann ein fester Ablauf genügen. Die menschliche Prüfung bleibt als eigener Schritt erkennbar."
   },
   {
-    "objectID": "tage/mittwoch.html#von-der-skizze-zur-möglichen-umsetzung",
-    "href": "tage/mittwoch.html#von-der-skizze-zur-möglichen-umsetzung",
-    "title": "Mittwoch: Projekt-Notebook und erster Workflow",
-    "section": "Von der Skizze zur möglichen Umsetzung",
-    "text": "Von der Skizze zur möglichen Umsetzung\n\nFolien\n\n\nn8n: Workflows und Agenten Beispiele für die spätere Umsetzung\n\n\n\nDie Skizze dient als Ausgangspunkt für einen möglichen Prototyp im Semester. Erst danach wird entschieden, welche Schritte in n8n gebaut werden, welche Informationen fehlen und wie die Qualität der Textentwürfe geprüft wird. Projekt und Prüfungsleistung."
-  },
-  {
     "objectID": "tage/mittwoch.html#kurze-runde-zum-abschluss",
     "href": "tage/mittwoch.html#kurze-runde-zum-abschluss",
-    "title": "Mittwoch: Projekt-Notebook und erster Workflow",
+    "title": "Mittwoch: Projekt-Notebook und Workflow-Skizze",
     "section": "Kurze Runde zum Abschluss",
     "text": "Kurze Runde zum Abschluss\nJedes Team zeigt kurz sein Diagramm, erläutert die gewählte Eingabe und Ausgabe und nennt eine offene Frage. Auch eine Änderung an der gemeinsamen Notebook-Konfiguration kann besprochen werden. Die Skizze und die offene Frage bilden den Ausgangspunkt für das erste Coaching."
   },
   {
     "objectID": "tage/mittwoch.html#weiter",
     "href": "tage/mittwoch.html#weiter",
-    "title": "Mittwoch: Projekt-Notebook und erster Workflow",
+    "title": "Mittwoch: Projekt-Notebook und Workflow-Skizze",
     "section": "Weiterarbeit im Semester",
-    "text": "Weiterarbeit im Semester\nDie wöchentlichen 90 Minuten dienen dem Coaching. Die Teams vereinbaren eigenständige Arbeitszeiten. Jedes Team bringt einen kurzen belegten Stand mit. Jeweils drei Teams erhalten ein vertieftes Review, in der Folgewoche die anderen drei. Blockierende Fragen können jede Woche eingebracht werden.\nFür das erste Coaching hält jedes Team den bisherigen Stand und eine konkrete Frage zur Weiterarbeit fest. Der weitere Umfang wird am Zoi-Auftrag konkretisiert. Checkpoints und Prüfungsleistung bleiben über das Semester sichtbar.\n\nAlle Folien zu diesem Tag\nDie Präsentationen öffnen sich in einem neuen Tab.\n\n\nWorkflows und Agenten Ziel, Kontext und Werkzeugwahl\n\n\nn8n: Workflows und Agenten Fester Ablauf und Agent im Vergleich"
+    "text": "Weiterarbeit im Semester\nDie wöchentlichen 90 Minuten dienen dem Coaching. Die Teams vereinbaren eigenständige Arbeitszeiten. Jedes Team bringt einen kurzen belegten Stand mit. Jeweils drei Teams erhalten ein vertieftes Review, in der Folgewoche die anderen drei. Blockierende Fragen können jede Woche eingebracht werden.\nFür das erste Coaching hält jedes Team den bisherigen Stand und eine konkrete Frage zur Weiterarbeit fest. Der weitere Umfang wird am Zoi-Auftrag konkretisiert. Checkpoints und Prüfungsleistung bleiben über das Semester sichtbar.\n\nAlle Folien zu diesem Tag\nDie Präsentationen öffnen sich in einem neuen Tab.\n\n\nWorkflows und Agenten Ziel, Kontext und Werkzeugwahl"
   },
   {
     "objectID": "tage/montag.html",
@@ -879,7 +872,7 @@
     "href": "tage/dienstag.html#github",
     "title": "Dienstag: Vom Übungsfall zum Zoi-Auftrag",
     "section": "GitHub und das Student Developer Pack",
-    "text": "GitHub und das Student Developer Pack\nNach Antigravity ging es um GitHub: Projektdateien gemeinsam ablegen, Änderungen nachvollziehen und frühere Stände wiederfinden. Ein Repository enthält die Dateien eines Projekts und ihre Versionsgeschichte. Ein Commit hält einen beschriebenen Änderungsstand fest. So lässt sich auch bei einem vom Agenten erzeugten Workflow nachvollziehen, was geändert wurde.\n\nVideo: Was ist GitHub?\nDas kurze offizielle Einführungsvideo zeigt, wofür GitHub genutzt wird (Englisch).\n\nVideo auf YouTube öffnen\n\n\nStudent Developer Pack einrichten\nDas GitHub Student Developer Pack bündelt Angebote für verifizierte Studierende. Voraussetzung sind ein persönliches GitHub-Konto, ein laufendes Studium und ein Nachweis des Studierendenstatus; das Mindestalter beträgt 13 Jahre.\n\nEin persönliches GitHub-Konto anlegen oder mit einem bestehenden Konto anmelden.\nDie HdM-E-Mail-Adresse zum Konto hinzufügen und bestätigen. Wenn GitHub im Antrag eine Hochschuladresse verlangt, muss diese vor der Bewerbung verifiziert sein.\nÜber die GitHub-Education-Einstellungen den Antrag starten und die Angaben zum Studium ausfüllen.\nDen angeforderten aktuellen Nachweis einreichen, beispielsweise eine Immatrikulationsbescheinigung oder einen Studierendenausweis mit aktuellem Datum.\nNach der Genehmigung die gewünschten Angebote im Education-Portal einzeln aktivieren. Ein eingereichter Antrag ist noch keine Freischaltung.\n\nDie Verifizierung gilt laut GitHub zwei Jahre und muss danach erneuert werden. Einzelne Partnerangebote haben eigene Laufzeiten, Kontingente und Bedingungen. Vor der Aktivierung sind mögliche Folgekosten und Verlängerungen zu prüfen; eine erneute Verifizierung setzt bereits genutzte Angebote nicht automatisch zurück.\nOffizielle Anleitung zur Bewerbung · Bedingungen des Student Developer Packs\n\nAlle Folien zu diesem Tag\nDie Präsentationen öffnen sich in einem neuen Tab.\n\n\nVom Übungsfall zum Zoi-Auftrag Briefing, Ablaufskizze, Antigravity\n\n\n\nAm Mittwoch beginnt der Tag mit einem Gemini Notebook für die Projektunterlagen und einer Übung zu „Configure chat“. Danach skizzieren die Teams einen kurzen Workflow in draw.io und besprechen Workflows und Agenten. Weiter zum Mittwoch: Projekt-Notebook und erster Workflow"
+    "text": "GitHub und das Student Developer Pack\nNach Antigravity ging es um GitHub: Projektdateien gemeinsam ablegen, Änderungen nachvollziehen und frühere Stände wiederfinden. Ein Repository enthält die Dateien eines Projekts und ihre Versionsgeschichte. Ein Commit hält einen beschriebenen Änderungsstand fest. So lässt sich auch bei einem vom Agenten erzeugten Workflow nachvollziehen, was geändert wurde.\n\nVideo: Was ist GitHub?\nDas kurze offizielle Einführungsvideo zeigt, wofür GitHub genutzt wird (Englisch).\n\nVideo auf YouTube öffnen\n\n\nStudent Developer Pack einrichten\nDas GitHub Student Developer Pack bündelt Angebote für verifizierte Studierende. Voraussetzung sind ein persönliches GitHub-Konto, ein laufendes Studium und ein Nachweis des Studierendenstatus; das Mindestalter beträgt 13 Jahre.\n\nEin persönliches GitHub-Konto anlegen oder mit einem bestehenden Konto anmelden.\nDie HdM-E-Mail-Adresse zum Konto hinzufügen und bestätigen. Wenn GitHub im Antrag eine Hochschuladresse verlangt, muss diese vor der Bewerbung verifiziert sein.\nÜber die GitHub-Education-Einstellungen den Antrag starten und die Angaben zum Studium ausfüllen.\nDen angeforderten aktuellen Nachweis einreichen, beispielsweise eine Immatrikulationsbescheinigung oder einen Studierendenausweis mit aktuellem Datum.\nNach der Genehmigung die gewünschten Angebote im Education-Portal einzeln aktivieren. Ein eingereichter Antrag ist noch keine Freischaltung.\n\nDie Verifizierung gilt laut GitHub zwei Jahre und muss danach erneuert werden. Einzelne Partnerangebote haben eigene Laufzeiten, Kontingente und Bedingungen. Vor der Aktivierung sind mögliche Folgekosten und Verlängerungen zu prüfen; eine erneute Verifizierung setzt bereits genutzte Angebote nicht automatisch zurück.\nOffizielle Anleitung zur Bewerbung · Bedingungen des Student Developer Packs\n\nAlle Folien zu diesem Tag\nDie Präsentationen öffnen sich in einem neuen Tab.\n\n\nVom Übungsfall zum Zoi-Auftrag Briefing, Ablaufskizze, Antigravity\n\n\n\nAm Mittwoch beginnt der Tag mit einem Gemini Notebook für die Projektunterlagen und einer Übung zu „Configure chat“. Danach skizzieren die Teams einen kurzen Workflow in draw.io und besprechen Workflows und Agenten. Weiter zum Mittwoch: Projekt-Notebook und Workflow-Skizze"
   },
   {
     "objectID": "projekt.html",
