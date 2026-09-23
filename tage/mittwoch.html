@@ -297,7 +297,7 @@ ul.task-list li input[type="checkbox"] {
 <p><span class="lead">Zu Beginn richten die Teams ein Gemini Notebook für das Zoi-Projekt ein. Die erste Prompt-Übung findet direkt in „Configure chat“ statt. Danach skizzieren sie in draw.io einen kurzen Workflow für einen Kampagnentext. An diesen Skizzen besprechen wir den Unterschied zwischen Workflow und Agent.</span></p>
 <section id="ziel-und-tagesergebnis" class="level2">
 <h2 class="anchored" data-anchor-id="ziel-und-tagesergebnis">Ziel und Tagesergebnis</h2>
-<p>Jedes Team hat ein Notebook mit den aktuellen Projektquellen, eine gemeinsam entwickelte und geprüfte Chat-Konfiguration sowie eine einfache Skizze für die Erstellung eines Kampagnentextes. Belegte Aussagen, eigene Vorschläge und offene Fragen bleiben erkennbar.</p>
+<p>Jedes Team hat ein Notebook mit den aktuellen Projektquellen, eine gemeinsam entwickelte und geprüfte Chat-Konfiguration sowie eine einfache Skizze für die Erstellung eines Kampagnentextes. Die Skizze liegt in einem strukturierten GitHub-Repository mit <code>README.md</code> und <code>AGENTS.md</code>. Belegte Aussagen, eigene Vorschläge und offene Fragen bleiben erkennbar.</p>
 </section>
 <section id="bausteine" class="level2">
 <h2 class="anchored" data-anchor-id="bausteine">Bausteine des Tages</h2>
@@ -323,7 +323,7 @@ ul.task-list li input[type="checkbox"] {
 <td>Gemeinsam</td>
 </tr>
 <tr class="odd">
-<td>Kurzen Workflow für einen Kampagnentext in draw.io skizzieren</td>
+<td>Kurzen Workflow skizzieren und GitHub-Projektordner einrichten</td>
 <td>Teams</td>
 </tr>
 <tr class="even">
@@ -358,14 +358,17 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="uebung-1-2">Übung 1.2: Einen kurzen Workflow für Kampagnentexte skizzieren</h2>
 <section id="in-teams" class="level3 uebung">
 <h3 class="anchored" data-anchor-id="in-teams">In Teams</h3>
-<p><strong>Material:</strong> das eigene Gemini Notebook mit den Zoi-Quellen und <a href="https://app.diagrams.net/" target="_blank">draw.io</a>.</p>
+<p><strong>Material:</strong> das eigene Gemini Notebook mit den Zoi-Quellen, <a href="https://app.diagrams.net/" target="_blank">draw.io</a>, ein GitHub-Team-Repository und die <a href="../start.html#team">Ordner der Teamablage</a>.</p>
 <p>Sarah beschreibt die Erstellung und Abstimmung von Kampagneninhalten als aufwendig. Jedes Team bespricht mit dem Notebook einen kleinen, möglichen Ablauf, in dem ein LLM einen Textentwurf für den AI Orientation Workshop erstellt. Ein kurzer LinkedIn-Beitrag oder ein Newsletter-Absatz genügt als Beispiel.</p>
 <ol type="1">
 <li>Im Team festlegen, welcher Text entstehen soll und welche vorhandenen Informationen das LLM dafür benötigt. Das Notebook nutzen, um Aussagen aus dem Briefing und offene Fragen nachzusehen.</li>
 <li>Den möglichen Ablauf in draw.io mit wenigen Kästen und Pfeilen skizzieren: von der Eingabe über den LLM-Entwurf bis zur menschlichen Prüfung und einem freigegebenen Entwurf. Die Beschriftungen selbst wählen.</li>
 <li>Die Skizze mit den Zoi-Quellen abgleichen. Sichtbar machen, welche Schritte aus dem Briefing stammen und welche das Team für einen ersten Prototyp vorschlägt.</li>
+<li>Ein privates Team-Repository auf GitHub anlegen oder ein vorhandenes verwenden. Die bearbeitbare draw.io-Datei unter <code>02_Workflows/</code> ablegen. Für weitere Ergebnisse die bereits vereinbarten Ordner <code>01_Agenten/</code>, <code>03_Playbook/</code> und <code>04_Evaluation/</code> nutzen, sobald dort Dateien entstehen. Im Repository-Stamm eine knappe <code>README.md</code> mit Projektziel, Ordnerübersicht und Links zu den Zoi-Quellen schreiben. <a href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes">Hinweise von GitHub zu README-Dateien</a>.</li>
+<li>Im Repository-Stamm eine erste <code>AGENTS.md</code> anlegen. Sie beschreibt den Projektzweck, die Ablageorte, die verfügbaren Quellen und die Regeln für KI-Agenten: belegte Zoi-Aussagen von Vorschlägen trennen, erzeugte Texte menschlich prüfen und nichts eigenständig veröffentlichen oder versenden. Nur Regeln eintragen, die für dieses Team tatsächlich gelten; die Datei im Projektverlauf ergänzen. <a href="https://agents.md/">Projektseite und Beispiele zu AGENTS.md</a>.</li>
+<li>Eine <code>.gitignore</code> für lokale und temporäre Dateien ergänzen. Keine Zugangsdaten, echten Kontaktdaten oder Kopien der Zoi-Originalunterlagen ins Repository übernehmen; die Unterlagen über Drive verlinken. Die ersten Dateien gemeinsam prüfen, mit einem aussagekräftigen Commit speichern und auf GitHub kontrollieren, ob die Teammitglieder sie sehen können. <a href="https://docs.github.com/en/get-started/git-basics/ignoring-files">GitHubs Anleitung zu <code>.gitignore</code></a>.</li>
 </ol>
-<p><strong>Ergebnis:</strong> Eine einfache, gespeicherte draw.io-Skizze und eine offene Frage für die weitere Projektarbeit. Der Workflow muss heute nicht umgesetzt werden; es wird nichts veröffentlicht oder versendet.</p>
+<p><strong>Ergebnis:</strong> Eine einfache, gespeicherte draw.io-Skizze, ein nachvollziehbar strukturiertes Team-Repository mit <code>README.md</code> und <code>AGENTS.md</code> sowie eine offene Frage für die weitere Projektarbeit. Der Workflow muss heute nicht umgesetzt werden; es wird keine Kampagne veröffentlicht oder versendet.</p>
 </section>
 </section>
 <section id="agenten" class="level2">
@@ -382,7 +385,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="kurze-runde-zum-abschluss" class="level2">
 <h2 class="anchored" data-anchor-id="kurze-runde-zum-abschluss">Kurze Runde zum Abschluss</h2>
-<p>Jedes Team zeigt kurz sein Diagramm, erläutert die gewählte Eingabe und Ausgabe und nennt eine offene Frage. Auch eine Änderung an der gemeinsamen Notebook-Konfiguration kann besprochen werden. Die Skizze und die offene Frage bilden den Ausgangspunkt für das erste Coaching.</p>
+<p>Jedes Team zeigt kurz sein Diagramm, erläutert die gewählte Eingabe und Ausgabe, zeigt den Ablageort im Repository und nennt eine offene Frage. Auch eine Änderung an der gemeinsamen Notebook-Konfiguration kann besprochen werden. Die Skizze und die offene Frage bilden den Ausgangspunkt für das erste Coaching.</p>
 </section>
 <section id="weiter" class="level2">
 <h2 class="anchored" data-anchor-id="weiter">Weiterarbeit im Semester</h2>
