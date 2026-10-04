@@ -703,6 +703,13 @@ img.abbildung, .abbildung img, p > img.abbildung {
 #quarto-document-content .next-step p a:hover { color: #ffffff; }
 
 // Codeblöcke innerhalb dunkler Boxen lesbar
+#quarto-document-content .uebung :not(pre) > code:not(.sourceCode),
+#quarto-document-content .todo :not(pre) > code:not(.sourceCode) {
+  background-color: var(--box-surface);
+  color: var(--box-accent);
+  border-color: var(--box-border);
+}
+
 #quarto-document-content .uebung div.sourceCode,
 #quarto-document-content .uebung pre.sourceCode,
 #quarto-document-content .uebung pre,

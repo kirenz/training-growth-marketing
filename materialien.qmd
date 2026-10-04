@@ -20,11 +20,11 @@ toc: true
 
 | Datei | Inhalt |
 |---|---|
-| [Webinar-Kontakte: 330 Anmeldungen](https://docs.google.com/spreadsheets/d/1ri_Z7epna2iRNSJYo7tQtC3cjAihbDuxn6-DSZN12q0/edit) | Google Sheet, Export der drei Webinare, eine Zeile pro Kontakt. Für die Pivot-Tabellen in Übung 1.2, Kopie anlegen |
+| [Webinar-Kontakte: 330 Anmeldungen](https://docs.google.com/spreadsheets/d/1ri_Z7epna2iRNSJYo7tQtC3cjAihbDuxn6-DSZN12q0/edit) | Google Sheet, Export der drei Webinare, eine Zeile pro Kontakt. Optionales Übungsmaterial zum fiktiven Aurenta-Fall |
 | [Anleitung Pivot-Tabellen](https://docs.google.com/document/d/1YckXrnscZX7MjaUonjEQiHHqT2aO87pcMy2JlSQCDIU/edit) | Google Doc: Trichter je Kampagne und Kreuztabelle Anliegen gegen Buchung in Google Sheets |
 | [Kontakte K-01 bis K-06](material/daten/kontakte-webinar.csv) | Export der Webinar-Anmeldungen von Aurenta: sechs Kontakte mit Anliegen, einschließlich leerem Feld und Kontaktsperre. Woher die Spalten kommen, steht im Fallpaket |
 | [Kampagnen A bis C](material/daten/kampagnen.csv) | Synthetische Funnel-Zahlen; kein A/B-Test |
-| Zusätzliche Testfälle T-01 bis T-03 | wird am Mittwoch freigeschaltet |
+| [Zusätzliche Testfälle T-01 bis T-03](material/daten/testfaelle-transfer.csv) | Erst am Mittwoch für den zusätzlichen Vergleich verwenden |
 
 CSV-Dateien sind mit Semikolon getrennt und als UTF-8 mit BOM gespeichert. Beim Import in ein Tabellenprogramm bei Bedarf Semikolon als Trennzeichen wählen. Die Kontakt-IDs sind Text. Die Kampagnentabelle und die kleine Kontaktliste sind unterschiedliche Übungsdatensätze.
 
@@ -36,16 +36,16 @@ Der gemeinsame Zugang ist nur zum Lesen vorgesehen. [Vorbereitete Leseabfragen](
 
 ## Team, Hypothese und Projektbrief {#vorlagen}
 
-| Vorlage | Verwendung |
+| Material oder Werkzeug | Verwendung |
 |---|---|
 | [Umfrage zur Teambildung](https://docs.google.com/forms/d/e/1FAIpQLSc9kP94sU9djozeVh9rZ9O0Oz_0FLJbSW883tvB8zyQOeppeQ/viewform) | Google-Formular, wird am Montag im Kurs ausgefüllt; [Textfassung der Fragen](https://docs.google.com/document/d/1YpzfFeP2L6jjcJthmrwukUelgQ7zNwMTB9burSysWEA/edit) |
 | [Anleitung Übung 1.1](https://docs.google.com/document/d/1rE-JFfq53XUhWb8J4MXdZihW5DgRqXAHAwvS_McTWqA/edit) | Google Doc: Vorstellungsrunde, Fall kennenlernen, Teamvereinbarung |
 | [Experimentkarte für Montag](https://docs.google.com/document/d/1RDw-7aKpkUtPurVk-NHItVg3zBKczG0G_tw_4TrfUtk/edit) | Beobachtung, Hypothese, Kennzahl |
-| Experimentkarte, ausführliche Fassung mit Testdesign | wird am Mittwoch freigeschaltet |
+| [Experimentkarte](https://docs.google.com/document/d/1JrrMgJ6fCEae3trCWNqdAonEc9EHbZ-PWskl8wtli-s/edit) | Ausführliche Fassung mit Testdesign, ab Mittwoch |
 | [Projektbrief](https://docs.google.com/document/d/1Jwbhg5CbI-mxCJvRw1oSLBkLR7ZoPOQrwN0jsluFtIM/edit) | Im Semester: Zuschnitt des Zoi-Auftrags |
 | [Ablaufskizze: Lesehilfe und Aurenta-Beispiel](https://docs.google.com/document/d/1pO28YSUSkvbrn8drNZqMMVqimBHT2fiyT0LEfXeF_tY/edit) | Dienstag: Swimlane-Diagramm, Beispiel [heute](material/prozess/aurenta-webinar-ist.svg) und [mit KI-Agent](material/prozess/aurenta-webinar-soll.svg), BPMN-Dateien zum Öffnen in demo.bpmn.io |
 | [Content-Briefing](https://docs.google.com/document/d/1d6kA5m4GPTFosAYjYV-uU3wwNbkvTbEGFy8GnoXr6zs/edit) | Optionale Erweiterung für Beiträge und Sprachfassungen |
-| [Coaching-Stand](https://docs.google.com/document/d/1KSs2vnaxsv0qxEs2N4grN57J8qKsadgFxYV0i0-6NTA/edit) | Belegtes Ergebnis, offene Frage, nächster Versuch |
+| [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects) | Aufgaben, Zuständigkeiten und Arbeitsstand für die Coachings; Ergebnisse im Team-Repository |
 
 ## Anweisungen und Tests {#tests}
 

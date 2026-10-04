@@ -36,15 +36,15 @@ format:
 **4 Antigravity: Workflow**<span>Ein Agent baut den Workflow aus der Skizze, das Team prüft und importiert</span>
 :::
 ::: {.ws-module}
-**5 Antigravity: Daten**<span>Ein Agent wertet die Aurenta-Daten aus, das Team prüft die Hypothese</span>
+**5 GitHub**<span>Projektdateien, Repository und Versionsgeschichte</span>
 :::
 ::: {.ws-module}
-**6 Workflows und Agenten**<span>Wann reicht der feste Ablauf, dann kurze Runde</span>
+**6 Student Developer Pack**<span>Persönliches Konto, Studierendenstatus und Angebote einrichten</span>
 :::
 :::
 
 ::: {.notes}
-Am Ende des Tages: Projektbrief, aktualisierte Experimentkarte, Ablaufskizze, überarbeiteter Prototyp. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt, das zieht sich durch den ganzen Tag.
+Dienstag: Zoi-Briefing, Ablaufskizze, Antigravity und GitHub. Die Datenauswertung und der Input zu Workflows und Agenten folgen am Mittwoch. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt, das zieht sich durch den ganzen Tag.
 :::
 
 ## Drei Fragen pro Team und drei Rollen im Briefing

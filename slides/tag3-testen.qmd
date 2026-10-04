@@ -354,7 +354,7 @@ Was bis nächste Woche passiert.
 :::
 
 ::: {.ws-note}
-Jedes Team bringt wöchentlich einen kurzen Stand mit Beleg: was läuft, was unklar ist, welcher Versuch als Nächstes Erkenntnis bringt. Vorlage auf der Kursseite.
+Jedes Team öffnet im Coaching sein GitHub-Repository und GitHub Project: Dateien und Testbelege, Aufgaben, Zuständigkeiten, aktueller Stand und offene Fragen.
 :::
 
 ::: {.notes}

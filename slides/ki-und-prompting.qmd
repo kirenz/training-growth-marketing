@@ -15,7 +15,7 @@ format:
     navigation-mode: linear
     scrollable: true
     preview-links: auto
-    footer: '<a class="deck-back" href="../tage/montag.html">Zurück zur Kursseite: Montag</a> · Agentic AI für Growth Marketing | Blocktag 1'
+    footer: '<a class="deck-back" href="../tage/mittwoch.html">Zurück zur Kursseite: Mittwoch</a> · Agentic AI für Growth Marketing | Blocktag 3'
     template-partials:
       - title-slide.html
 ---

@@ -9,13 +9,13 @@ toc: true
 ::: {.lead}
 - Briefing mit Zoi: Angebot, Zielgruppe und heutiger Prozess
 - Antigravity: Ein Agent baut den Workflow aus der Skizze, das Team prüft
-- Antigravity: Ein Agent wertet die Aurenta-Daten aus, das Team prüft die Hypothese
-- Workflows und Agenten: wann reicht der feste Ablauf?
+- GitHub: Projektdateien und Änderungen gemeinsam organisieren
+- GitHub Student Developer Pack: Konto und Verifizierung einrichten
 :::
 
 ## Ziel und Tagesergebnis
 
-Jedes Team hat am Ende einen Workflow, den ein Agent aus der Ablaufskizze gebaut und das Team geprüft und importiert hat, dazu eine Hypothese aus den Aurenta-Daten. Annahmen über Zoi werden von Aussagen aus dem Briefing getrennt.
+Im Mittelpunkt stehen das Zoi-Briefing, der Workflow aus der Ablaufskizze mit Antigravity und die Einführung in GitHub. Dazu gehört die Einrichtung des Student Developer Packs. Am Mittwoch folgen das Projekt-Notebook, eine einfache Workflow-Skizze zu Zois Kampagneninhalten und die Unterscheidung von Workflows und Agenten.
 
 ## Bausteine des Tages {#bausteine}
 
@@ -26,17 +26,15 @@ Fest sind Beginn um 09:30 Uhr in Raum I120, das Briefing durch Zoi ab 10:00 Uhr,
 | Vormittag | Briefingvorbereitung | Gemeinsam |
 | Vormittag | **Zoi-Briefing einschließlich Rückfragen** | Gemeinsam |
 | Nach dem Briefing | Ein Lauf vom Montag, dann Antigravity: Workflow aus der Skizze | Gemeinsam |
-| Nachmittag | Antigravity: Daten und Hypothese | Gemeinsam |
-| Nachmittag | Input: Workflows und Agenten | Gemeinsam |
-| Später Nachmittag | Kurze Runde und Entscheidung für Mittwoch | Gemeinsam |
+| Nach Antigravity | GitHub: Repository und Versionsgeschichte | Gemeinsam |
+| Anschließend | GitHub Student Developer Pack einrichten | Gemeinsam |
 
 ## Briefingvorbereitung
 
 ::: {.folien .folien-inline}
 [Folien]{.folien-label}
 
-<ul><li><a class="folie" href="../slides/tag2-briefing.html" target="_blank" rel="noopener">Vom Übungsfall zum Zoi-Auftrag <span>Briefing, Ablaufskizze, Antigravity</span></a></li>
-<li><a class="folie" href="../slides/agenten.html" target="_blank" rel="noopener">Workflows und Agenten <span>Input am Nachmittag</span></a></li></ul>
+<ul><li><a class="folie" href="../slides/tag2-briefing.html" target="_blank" rel="noopener">Vom Übungsfall zum Zoi-Auftrag <span>Briefing, Ablaufskizze, Antigravity</span></a></li></ul>
 :::
 
 Vor dem Briefing sprechen wir über die offenen Fragen an Zoi, die am Montag gesammelt wurden: Was wollen wir wissen, und wer fragt nach? Während des Briefings hilft es, mitzuschreiben, was Zoi tatsächlich sagt, und getrennt davon zu notieren, was noch unklar bleibt.
@@ -44,6 +42,14 @@ Vor dem Briefing sprechen wir über die offenen Fragen an Zoi, die am Montag ges
 ## Briefing des Projektpartners ab 10:00 Uhr {#briefing}
 
 Geplant sind eine Vorstellung durch Zoi und anschließend Fragen, vor Ort an der HdM. Angebot, Zielgruppe, heutiger Prozess und gewünschter Nutzen werden anhand des Briefings konkretisiert.
+
+## Unterlagen von Zoi {#zoi-unterlagen}
+
+[**Aktuelle Unterlagen von Sarah Engler im freigegebenen Zoi-Ordner**](https://drive.google.com/drive/folders/1K1mH52NZwIs0G_lpNLjbS2zavvcBs2hA)
+
+Der Ordner enthält die Briefing-Präsentation, das AI-Orientation-Workshop-Angebot, die Company Presentation, die Beispielkampagne, das Dokument „Marketing AI Automation“ sowie das Prozessdiagramm mit Erläuterungen. Dieser Ordner ersetzt die früheren Materiallinks.
+
+[Briefing-Arbeitsmaterialien und rohes Transkript des Kurses](https://drive.google.com/drive/folders/1nVOoFxo8qOu0dNmokfhatgNlNopMb7cI)
 
 ## Ein Lauf vom Montag: K-02 gemeinsam prüfen {#rueckblick}
 
@@ -75,36 +81,37 @@ Ein Agent baut den Workflow aus der Ablaufskizze, das Team prüft, ob er den Reg
 **Ergebnis:** Der importierte Workflow läuft für K-01. Ein Satz in der Teamablage: Was musste am Vorschlag des Agenten korrigiert werden?
 :::
 
-## Übung 1.2: Daten auswerten und eine Hypothese ableiten, mit Antigravity {#uebung-1-2}
+### Video: Einführung in Antigravity
 
-::: {.uebung}
-### Gemeinsam Schritt für Schritt, jedes Team am eigenen Rechner
+{{< video https://www.youtube.com/watch?v=SVCBA-pBgt0 >}}
 
-**Material:** derselbe Startordner, darin die Datei webinar-kontakte-330.csv und der Auftrag AUFTRAG-DATEN.md.
+[„Welcome to Google Antigravity“ auf YouTube öffnen](https://www.youtube.com/watch?v=SVCBA-pBgt0)
 
-Aurenta schickt allen Webinar-Kontakten dieselbe Einladung. Von 198 Follow-ups kamen 10 brauchbare Gespräche. Der Agent soll in den Daten finden, wo die Kontakte verloren gehen, und eine Hypothese vorschlagen. Das Team prüft, ob die Zahlen stimmen und die Hypothese Sinn ergibt.
+## GitHub und das Student Developer Pack {#github}
 
-1. Den Auftrag aus AUFTRAG-DATEN.md in den Chat geben. Der Agent wertet die Datei aus und schreibt Tabellen, Hypothese und Kennzahl in eine Datei.
-2. Die Zahlen prüfen: Sind Zähler und Nenner genannt? Passt die Stelle mit dem größten Verlust zu dem, was in der Datei steht?
-3. Die Hypothese prüfen: Ist X etwas, das Aurenta selbst ändern kann? Ist Y messbar? Ist Z eine Erklärung, keine Vermutung über Personen?
-4. Wenn etwas nicht stimmt, den Agenten im Chat korrigieren lassen.
+Nach Antigravity ging es um GitHub: Projektdateien gemeinsam ablegen, Änderungen nachvollziehen und frühere Stände wiederfinden. Ein **Repository** enthält die Dateien eines Projekts und ihre Versionsgeschichte. Ein **Commit** hält einen beschriebenen Änderungsstand fest. So lässt sich auch bei einem vom Agenten erzeugten Workflow nachvollziehen, was geändert wurde.
 
-**Ergebnis:** Die Auswertung in der Teamablage und eine Hypothese, hinter der das Team steht.
-:::
+### Video: Was ist GitHub?
 
-## Input: Workflows und Agenten {#agenten}
+Das kurze offizielle Einführungsvideo zeigt, wofür GitHub genutzt wird (Englisch).
 
-::: {.folien .folien-inline}
-[Folien]{.folien-label}
+{{< video https://www.youtube.com/watch?v=pBy1zgt0XPc >}}
 
-<ul><li><a class="folie" href="../slides/agenten.html" target="_blank" rel="noopener">Workflows und Agenten <span>Ziel, Schleife, Kontext, Stufen, Prinzipien, Muster</span></a></li></ul>
-:::
+[Video auf YouTube öffnen](https://www.youtube.com/watch?v=pBy1zgt0XPc)
 
-Ein Workflow legt die Schritte vorab fest, ein Agent wählt zur Laufzeit Werkzeuge und nächste Schritte selbst. Die Demo zeigt beides am Aurenta-Fall: den festen Ablauf vom Montag und die Agenten-Variante, in der das Modell entscheidet, welches Wissenswerkzeug es aufruft. Drei Fragen für die eigene Skizze: Reicht die einfachste Lösung? Ist jeder Schritt im Laufprotokoll nachvollziehbar? Was genau bekommt das Modell als Werkzeug, und was nicht? Eine begründete Entscheidung gegen einen Agenten ist im Projekt ausdrücklich zulässig.
+### Student Developer Pack einrichten
 
-## Kurze Runde zum Abschluss
+Das [GitHub Student Developer Pack](https://education.github.com/pack) bündelt Angebote für verifizierte Studierende. Voraussetzung sind ein persönliches GitHub-Konto, ein laufendes Studium und ein Nachweis des Studierendenstatus; das Mindestalter beträgt 13 Jahre.
 
-Jedes Team zeigt in wenigen Minuten: den importierten Workflow, die Hypothese aus den Daten, und was es am Vorschlag des Agenten korrigieren musste. Daraus folgt die Entscheidung, womit das Team am Mittwoch weiterarbeitet.
+1. Ein persönliches [GitHub-Konto](https://github.com/signup) anlegen oder mit einem bestehenden Konto anmelden.
+2. Die HdM-E-Mail-Adresse zum Konto hinzufügen und bestätigen. Wenn GitHub im Antrag eine Hochschuladresse verlangt, muss diese vor der Bewerbung verifiziert sein.
+3. Über die [GitHub-Education-Einstellungen](https://github.com/settings/education/benefits) den Antrag starten und die Angaben zum Studium ausfüllen.
+4. Den angeforderten aktuellen Nachweis einreichen, beispielsweise eine Immatrikulationsbescheinigung oder einen Studierendenausweis mit aktuellem Datum.
+5. Nach der Genehmigung die gewünschten Angebote im Education-Portal einzeln aktivieren. Ein eingereichter Antrag ist noch keine Freischaltung.
+
+Die Verifizierung gilt laut GitHub zwei Jahre und muss danach erneuert werden. Einzelne Partnerangebote haben eigene Laufzeiten, Kontingente und Bedingungen. Vor der Aktivierung sind mögliche Folgekosten und Verlängerungen zu prüfen; eine erneute Verifizierung setzt bereits genutzte Angebote nicht automatisch zurück.
+
+[Offizielle Anleitung zur Bewerbung](https://docs.github.com/en/education/about-github-education/github-education-for-students/apply-to-github-education-as-a-student) · [Bedingungen des Student Developer Packs](https://docs.github.com/en/education/about-github-education/github-education-for-students/github-terms-and-conditions-for-the-student-developer-pack)
 
 ::: {.folien}
 [Alle Folien zu diesem Tag]{.folien-label}
@@ -113,9 +120,7 @@ Die Präsentationen öffnen sich in einem neuen Tab.
 
 <ul>
 <li><a class="folie" href="../slides/tag2-briefing.html" target="_blank" rel="noopener">Vom Übungsfall zum Zoi-Auftrag <span>Briefing, Ablaufskizze, Antigravity</span></a></li>
-<li><a class="folie" href="../slides/agenten.html" target="_blank" rel="noopener">Workflows und Agenten <span>Input am Nachmittag</span></a></li>
-<li><a class="folie" href="../slides/n8n-workflows.html" target="_blank" rel="noopener">n8n: Workflows und Agenten <span>Abschnitt Ausbau: Sperre, Parser, Agent</span></a></li>
 </ul>
 :::
 
-Wie es am Mittwoch weitergeht, sehen wir am Mittwochmorgen.
+Am Mittwoch beginnt der Tag mit einem Gemini Notebook für die Projektunterlagen und einer Übung zu „Configure chat“. Danach skizzieren die Teams einen kurzen Workflow in draw.io und besprechen Workflows und Agenten. [**Weiter zum Mittwoch: Projekt-Notebook und Workflow-Skizze**](mittwoch.qmd)

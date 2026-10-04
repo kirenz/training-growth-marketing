@@ -15,7 +15,7 @@ format:
     navigation-mode: linear
     scrollable: true
     preview-links: auto
-    footer: '<a class="deck-back" href="../tage/dienstag.html">Zurück zur Kursseite: Dienstag</a> · Agentic AI für Growth Marketing | Blocktag 2'
+    footer: '<a class="deck-back" href="../tage/mittwoch.html">Zurück zur Kursseite: Mittwoch</a> · Agentic AI für Growth Marketing | Blocktag 3'
     template-partials:
       - title-slide.html
 ---
@@ -188,7 +188,43 @@ Das Modell wählt innerhalb gesetzter Grenzen Werkzeuge und nächste Schritte se
 :::
 
 ::: {.notes}
-Andrew Ng spricht von Autonomiegraden: Stufe 3 wenig autonom, Stufe 4 teilautonom, darüber hochautonom mit eigenen Plänen. Für das Projekt reicht Stufe 4 mit klaren Grenzen. Ein Agent, der eigene Werkzeuge baut, ist kein Ziel im Semester.
+Diese vier Formen ordnen die Beispiele aus dem Kurs. Andrew Ngs Autonomiegrade beschreiben eine andere Frage: Wie viel Entscheidungsfreiheit hat das Modell innerhalb eines mehrstufigen Ablaufs? Das folgt auf der nächsten Folie.
+:::
+
+## Drei Autonomiegrade nach Andrew Ng
+
+Auch agentische Abläufe unterscheiden sich darin, wie viel das Modell selbst entscheiden darf.
+
+::: {.ws-cards}
+::: {.ws-card .fragment .is-key}
+[Grad 1 · gering]{.ws-card__tag}
+
+[Fester Ablauf]{.ws-h}
+
+Alle Schritte stehen vorher fest. Welche Werkzeuge verwendet werden, ist vorgegeben.
+:::
+::: {.ws-card .fragment}
+[Grad 2 · teilweise]{.ws-card__tag}
+
+[Werkzeuge auswählen]{.ws-h}
+
+Das Modell trifft Entscheidungen und wählt aus vorher festgelegten Werkzeugen.
+:::
+::: {.ws-card .fragment}
+[Grad 3 · hoch]{.ws-card__tag}
+
+[Weitgehend selbstständig]{.ws-h}
+
+Das Modell trifft viele Entscheidungen selbst und kann auch neue Werkzeuge erstellen.
+:::
+:::
+
+::: {.ws-note}
+Die Zoi-Skizze beginnt mit einem festen Ablauf. Mehr Autonomie ist nur sinnvoll, wenn ein konkreter Schritt sie braucht. [Einführungsfolie zu den Autonomiegraden](https://kirenz.github.io/agentic-ai-introduction/introduction.html#/agentic-ai---different-degrees-of-autonomy){target="_blank"} · [Quelle: Andrew Ng, „Agentic AI“](https://learn.deeplearning.ai/courses/agentic-ai/information){target="_blank"}
+:::
+
+::: {.notes}
+Die drei Grade stammen aus der früheren Einführungsfolie nach Andrew Ng. Nicht mit den vier Kursformen Chat, Anweisung, Workflow und Agent gleichsetzen: Ein Agent kann unterschiedlich viel Autonomie erhalten. Für den ersten Zoi-Textentwurf genügt ein fester Ablauf mit menschlicher Prüfung.
 :::
 
 ## Workflow oder Agent: der Agent wählt Werkzeuge, der Workflow nicht
@@ -242,6 +278,8 @@ Aus Anthropic, Building effective agents, Dezember 2024. Die drei Prinzipien sin
 | Parallel | Mehrere Prüfer gleichzeitig, dann ein Urteil | Verzweigung, dann Merge |
 | Schleife mit Prüfer | Entwurf, Bewertung, Überarbeitung, bis es reicht | zwei Chains plus If mit Rückkante |
 | Agent | Das Modell wählt Werkzeuge selbst | AI-Agent-Knoten mit Tool-Anschlüssen |
+
+[Quelle: Anthropic, „Building effective agents“](https://www.anthropic.com/engineering/building-effective-agents){target="_blank"}
 
 ::: {.ws-note}
 Alle fünf sind im Kurs „KI-Agenten in n8n“ mit Beispielen hinterlegt. Für das Zoi-Projekt braucht es meist Kette und Verzweigung, der Agent kommt dort hin, wo Wissensquellen je nach Anliegen wechseln.

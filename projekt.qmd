@@ -4,7 +4,7 @@ toc: true
 ---
 
 
-[Die Blocktage schaffen einen ersten Prototyp. Im Semester entwickeln die Teams daraus einen zusammenhängenden Marketingprozess, prüfen seinen Nutzen und bereiten die Übergabe an den Praxispartner vor.]{.lead}
+[Die Blocktage vermitteln die Grundlagen und führen zu einer ersten Prozessskizze. Im Semester entwickeln die Teams daraus einen zusammenhängenden Marketingprozess, prüfen seinen Nutzen und bereiten die Übergabe an den Praxispartner vor.]{.lead}
 
 ## Rahmen {#rahmen}
 
@@ -22,9 +22,9 @@ Die 90 Minuten Coaching sind nicht das gesamte Arbeitsbudget. Teams vereinbaren 
 
 ## Aufgabe und Zuschnitt {#aufgabe}
 
-Jedes Team entwickelt einen zusammenhängenden Prozess für die Vermarktung einer Dienstleistung. Ausgangspunkt sind ein konkretes Marketingproblem, eine Zielgruppe und eine überprüfbare Nutzenannahme. Der fachliche Zuschnitt wird nach dem Zoi-Briefing im Coaching konkretisiert.
+Jedes Team entwickelt einen zusammenhängenden Prozess für die Vermarktung einer Dienstleistung. Ausgangspunkt sind ein konkretes Marketingproblem, eine Zielgruppe und eine überprüfbare Nutzenannahme. Der fachliche Zuschnitt orientiert sich am Zoi-Briefing und wird im Coaching für jedes Team konkretisiert.
 
-Das Semesterprojekt hat vier Arbeitsbereiche. In den drei Blocktagen arbeiten alle Teams im Bereich Kontakte nachfassen. Welche Bereiche im Semester dazukommen und wie tief sie bearbeitet werden, hängt vom Briefing mit Zoi ab.
+Das Semesterprojekt hat vier mögliche Arbeitsbereiche. Am Montag diente ein fiktiver Follow-up-Fall als Einstieg in n8n. Nach dem Zoi-Briefing rückt die Erstellung und Abstimmung von Kampagneninhalten in den Vordergrund. Welche weiteren Bereiche ein Team bearbeitet und wie tief es sie umsetzt, wird im Coaching abgestimmt.
 
 | Arbeitsbereich | Fachbegriff | Worum es geht |
 |---|---|---|
@@ -39,7 +39,7 @@ KI wird dort eingesetzt, wo Sprachverständnis, Interpretation oder begrenzte We
 
 ## Project Studio: Sichtbare Zwischenstände {#coaching}
 
-Alle Teams bringen wöchentlich einen [kurzen Stand mit Beleg](https://docs.google.com/document/d/1KSs2vnaxsv0qxEs2N4grN57J8qKsadgFxYV0i0-6NTA/edit): was läuft, was unklar ist, welcher Versuch als Nächstes Erkenntnis bringen soll. Drei Teams erhalten pro Woche ein vertieftes Review, die anderen drei in der Folgewoche. Dringende Blockaden werden unabhängig von dieser Reihenfolge besprochen.
+Alle Teams zeigen wöchentlich ihr GitHub-Repository und ihr GitHub Project: Ergebnisse und Testbelege liegen im Repository, Aufgaben, Zuständigkeiten und aktueller Stand im Project. Im Review besprechen wir, was funktioniert, was unklar ist und welcher Versuch als Nächstes Erkenntnis bringen soll. Drei Teams erhalten pro Woche ein vertieftes Review, die anderen drei in der Folgewoche. Dringende Blockaden werden unabhängig von dieser Reihenfolge besprochen.
 
 Ein möglicher 90-Minuten-Rahmen: 15 Minuten gemeinsame Befunde, 30 Minuten für drei Reviews, 35 Minuten betreute Teamarbeit und 10 Minuten Entscheidungen und Abschluss. Die Teams arbeiten zwischen den Terminen selbstständig weiter.
 
@@ -86,6 +86,6 @@ Zoi-Briefing: Dienstag, 22.09.2026, 10:00 Uhr vor Ort an der HdM. Ein weiterer B
 
 ## Ablage und Arbeitsorganisation {#ablage}
 
-Die [Teamablage](start.qmd#team) enthält Anweisungen, Exporte, Playbook und Evaluation. Ein Teamboard führt Zuständigkeiten und Arbeitsschritte. Versionen und Testbelege machen Beiträge nachvollziehbar. Das Coaching dient der Klärung und Rückmeldung, nicht als Ersatz für eigenständige Projektarbeit.
+Das GitHub-Team-Repository enthält Anweisungen, Exporte, Playbook und Evaluation; die [vorgeschlagene Ordnerstruktur](start.qmd#team) hilft beim Einstieg. Im GitHub Project pflegt das Team Aufgaben, Zuständigkeiten und Arbeitsstand. Versionen und Testbelege machen Beiträge nachvollziehbar. Das Coaching dient der Klärung und Rückmeldung, nicht als Ersatz für eigenständige Projektarbeit.
 
 Gemini ist die gemeinsame Oberfläche für Promptübungen. Vorhandene Zugänge zu ChatGPT oder Claude dürfen verwendet werden. n8n ist das zentrale Werkzeug für Automatisierung; die Modellverbindung wird getrennt bereitgestellt. Für einen nachvollziehbaren Vergleich werden Produkt, Modell und Konfiguration dokumentiert.

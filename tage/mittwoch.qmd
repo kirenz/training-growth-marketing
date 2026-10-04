@@ -1,0 +1,111 @@
+---
+title: "Mittwoch: Projekt-Notebook und Workflow-Skizze"
+toc: true
+---
+
+
+[23. September 2026 · 09:00–17:00 Uhr · Raum I120 · Zoi-Projektwissen sammeln und anwenden]{.kicker}
+
+[Zu Beginn richten die Teams ein Gemini Notebook für das Zoi-Projekt ein. Die erste Prompt-Übung findet direkt in „Configure chat“ statt. Danach skizzieren sie in draw.io einen kurzen Workflow für einen Kampagnentext. An diesen Skizzen besprechen wir den Unterschied zwischen Workflow und Agent.]{.lead}
+
+## Ziel und Tagesergebnis
+
+Jedes Team hat ein Notebook mit den aktuellen Projektquellen, eine gemeinsam entwickelte und geprüfte Chat-Konfiguration sowie eine einfache Skizze für die Erstellung eines Kampagnentextes. Die Skizze liegt in einem strukturierten GitHub-Repository mit `README.md` und `AGENTS.md`. Belegte Aussagen, eigene Vorschläge und offene Fragen bleiben erkennbar.
+
+## Bausteine des Tages {#bausteine}
+
+Fest sind Beginn um 09:00 Uhr in Raum I120, die Mittagspause von 13:00 bis 14:00 Uhr und das Ende um 17:00 Uhr.
+
+| Baustein | Arbeitsform |
+|---|---|
+| Gemini Notebook einrichten und Projektquellen hinzufügen | Gemeinsame Demonstration, dann Teams |
+| Erste Prompt-Übung: „Configure chat“ gemeinsam anpassen und prüfen | Gemeinsam |
+| Kurzen Workflow skizzieren und GitHub-Projektordner einrichten | Teams |
+| Input: Workflows und Agenten, anschließend Skizzen prüfen | Gemeinsam und in Teams |
+| GitHub Projects für Aufgaben und Zusammenarbeit kennenlernen | Gemeinsam, dann Teams |
+| Kurze Runde zum Abschluss | Gemeinsam |
+
+## Einstieg: Ein Projekt-Notebook aufbauen {#notebook}
+
+[Gemini Notebook öffnen](https://notebook.google.com/){target="_blank"} und für das Zoi-Projekt ein neues Notebook anlegen. Das Notebook dient als gemeinsames Nachschlagewerk: Antworten lassen sich anhand der hinzugefügten Quellen prüfen.
+
+**Quellen für das Notebook:**
+
+- [Sarahs aktueller Zoi-Ordner](https://drive.google.com/drive/folders/1K1mH52NZwIs0G_lpNLjbS2zavvcBs2hA): alle sieben Dateien einzeln hinzufügen. Dazu gehören das HdM-Briefing, das Angebot zum AI Orientation Workshop, die Company Presentation, die Beispielkampagne, „Marketing AI Automation“ und die beiden Prozessgrafiken.
+- [Rohes Transkript des Zoi-Briefings](https://drive.google.com/file/d/1JHOtE2KwFkEggdU_U_ApQ4fk1ckFKdW2/view): als Quelle ergänzen. Das automatische Transkript kann Hörfehler enthalten.
+- [Projektbeschreibung der Lehrveranstaltung](https://kirenz.github.io/training-growth-marketing/projekt.html): als Webquelle ergänzen. Sie beschreibt Rahmen und Prüfungsleistung; für Zois aktuelle Abläufe sind die Briefing-Unterlagen maßgeblich.
+
+In der Quellenliste prüfen, ob alle Dateien tatsächlich hinzugefügt wurden. Anschließend eine eigene Frage zum Projekt stellen, die Antwort mit ihren Quellenhinweisen öffnen und mit dem Original vergleichen. Ein Ordnerlink allein fügt seine Dateien nicht als Quellen hinzu. [Googles Anleitung zum Hinzufügen von Quellen](https://support.google.com/gemininotebook/answer/16215270?hl=de).
+
+### Erste Prompt-Übung: „Configure chat“ {#prompting}
+
+Im Chat-Bereich **Configure chat** öffnen und **Custom** wählen. Die Antwortlänge kann zunächst auf „Default“ bleiben. Gemeinsam überlegen, welche Rolle das Notebook im Projekt erfüllen soll und wie es mit den Quellen arbeiten soll. Formulierungen aus der Gruppe sammeln und daraus eine kurze gemeinsame Anweisung entwickeln. Dabei helfen vier Fragen: Welchen Kontext hat das Notebook? Was soll es leisten? Wie sollen Antworten aussehen? Wie sollen Unsicherheit und Quellen kenntlich werden?
+
+Die Anweisung speichern und mit zwei unterschiedlichen Projektfragen erproben. Eine Antwort an den Quellen prüfen, eine Schwäche benennen und die Konfiguration gemeinsam verbessern. Den ersten und den überarbeiteten Stand festhalten. [Googles Anleitung zu „Configure chat“](https://support.google.com/gemininotebook/answer/16179559?hl=de).
+
+**Ergebnis:** Ein nutzbares Projekt-Notebook und eine selbst formulierte Chat-Konfiguration, deren Wirkung an konkreten Antworten geprüft wurde.
+
+## Übung 1.2: Einen kurzen Workflow für Kampagnentexte skizzieren {#uebung-1-2}
+
+::: {.uebung}
+### In Teams
+
+**Material:** das eigene Gemini Notebook mit den Zoi-Quellen, [draw.io](https://app.diagrams.net/){target="_blank"}, ein GitHub-Team-Repository und die [vorgeschlagene Ordnerstruktur](../start.qmd#team).
+
+Sarah beschreibt die Erstellung und Abstimmung von Kampagneninhalten als aufwendig. Jedes Team bespricht mit dem Notebook einen kleinen, möglichen Ablauf, in dem ein LLM einen Textentwurf für den AI Orientation Workshop erstellt. Ein kurzer LinkedIn-Beitrag oder ein Newsletter-Absatz genügt als Beispiel.
+
+1. Im Team festlegen, welcher Text entstehen soll und welche vorhandenen Informationen das LLM dafür benötigt. Das Notebook nutzen, um Aussagen aus dem Briefing und offene Fragen nachzusehen.
+2. Den möglichen Ablauf in draw.io mit wenigen Kästen und Pfeilen skizzieren: von der Eingabe über den LLM-Entwurf bis zur menschlichen Prüfung und einem freigegebenen Entwurf. Die Beschriftungen selbst wählen.
+3. Die Skizze mit den Zoi-Quellen abgleichen. Sichtbar machen, welche Schritte aus dem Briefing stammen und welche das Team für einen ersten Prototyp vorschlägt.
+4. Ein privates Team-Repository auf GitHub anlegen oder ein vorhandenes verwenden. Die bearbeitbare draw.io-Datei beispielsweise unter `02_Workflows/` ablegen. Für weitere Ergebnisse bieten sich die Ordner `01_Agenten/`, `03_Playbook/` und `04_Evaluation/` an, sobald dort Dateien entstehen. Die hier gezeigte Projektstruktur ist ein Vorschlag; die Teams können davon abweichen. Im Repository-Stamm eine knappe `README.md` mit Projektziel, Ordnerübersicht und Links zu den Zoi-Quellen schreiben. [Hinweise von GitHub zu README-Dateien](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-readmes).
+5. Im Repository-Stamm eine erste `AGENTS.md` anlegen. Sie beschreibt den Projektzweck, die Ablageorte, die verfügbaren Quellen und die Regeln für KI-Agenten: belegte Zoi-Aussagen von Vorschlägen trennen, erzeugte Texte menschlich prüfen und nichts eigenständig veröffentlichen oder versenden. Nur Regeln eintragen, die für dieses Team tatsächlich gelten; die Datei im Projektverlauf ergänzen. [Projektseite und Beispiele zu AGENTS.md](https://agents.md/).
+6. Eine `.gitignore` für lokale und temporäre Dateien ergänzen. Keine Zugangsdaten, echten Kontaktdaten oder Kopien der Zoi-Originalunterlagen ins Repository übernehmen; die Unterlagen über Drive verlinken. Die ersten Dateien gemeinsam prüfen, mit einem aussagekräftigen Commit speichern und auf GitHub kontrollieren, ob die Teammitglieder sie sehen können. [GitHubs Anleitung zu `.gitignore`](https://docs.github.com/en/get-started/git-basics/ignoring-files).
+
+**Ergebnis:** Eine einfache, gespeicherte draw.io-Skizze und ein nachvollziehbar strukturiertes Team-Repository mit `README.md` und `AGENTS.md`.
+:::
+
+## Input: Workflows und Agenten {#agenten}
+
+::: {.folien .folien-inline}
+[Folien]{.folien-label}
+
+<ul><li><a class="folie" href="../slides/agenten.html#/vier-stufen-chat-anweisung-workflow-agent" target="_blank" rel="noopener">Vier Stufen: Chat, Anweisung, Workflow, Agent <span>Vom Projekt-Notebook zur Ablaufskizze</span></a></li></ul>
+:::
+
+Das Projekt-Notebook liefert Quellen, „Configure chat“ legt eine dauerhafte Anweisung für das Gespräch fest und die draw.io-Skizze ordnet mehrere Schritte. Nach der Folie prüfen die Teams ihre Skizze: Sind die Schritte bereits klar festgelegt? Wo müsste ein Modell tatsächlich selbst entscheiden, welches Werkzeug es nutzt? Für einen ersten Textentwurf kann ein fester Ablauf genügen. Die menschliche Prüfung bleibt als eigener Schritt erkennbar.
+
+## GitHub Projects für die Teamarbeit {#github-projects}
+
+Wir sehen uns [GitHub Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects) als gemeinsames Board für die Arbeit im Team an. Die Ergebnisse liegen als Dateien im GitHub-Repository; im Project wird sichtbar, welche Aufgaben anstehen, wer sie übernimmt und woran gerade gearbeitet wird.
+
+Jedes Team legt ein Project an oder nutzt ein vorhandenes. Erste Arbeitsschritte können als Issues im Team-Repository erfasst und dem Project hinzugefügt werden. Zuständigkeiten und Status werden dort gepflegt. Die Struktur des Boards kann das Team passend zu seiner Arbeit wählen. Vor dem ersten Coaching sicherstellen, dass die Lehrperson Repository und Project öffnen kann. [GitHubs Einstieg in Projects](https://docs.github.com/en/issues/planning-and-tracking-with-projects/learning-about-projects/quickstart-for-projects).
+
+## Kurze Runde zum Abschluss
+
+Jedes Team zeigt kurz sein Diagramm, erläutert die gewählte Eingabe und Ausgabe, zeigt den Ablageort im Repository und nennt eine offene Frage. Auch die ersten Aufgaben im GitHub Project oder eine Änderung an der gemeinsamen Notebook-Konfiguration können besprochen werden. Die Skizze und die offene Frage bilden den Ausgangspunkt für das erste Coaching.
+
+## Weiterarbeit im Semester {#weiter}
+
+Die wöchentlichen 90 Minuten dienen dem Coaching. Die Teams vereinbaren eigenständige Arbeitszeiten. In den Sitzungen öffnen sie ihr GitHub-Repository und ihr GitHub Project: An Dateien, Issues und Commits besprechen wir die bisherigen Ergebnisse; im Board sehen wir Aufgaben, Zuständigkeiten und den aktuellen Arbeitsstand. Jeweils drei Teams erhalten ein vertieftes Review, in der Folgewoche die anderen drei. Blockierende Fragen können jede Woche eingebracht werden.
+
+Für das erste Coaching zeigt jedes Team die bisherigen Dateien im Repository, die Aufteilung der nächsten Aufgaben im Project und eine konkrete Frage zur Weiterarbeit. Der weitere Umfang wird am Zoi-Auftrag konkretisiert. [Checkpoints und Prüfungsleistung](../projekt.qmd) bleiben über das Semester sichtbar.
+
+::: {.folien}
+[Alle Folien zu diesem Tag]{.folien-label}
+
+Die Präsentationen öffnen sich in einem neuen Tab.
+
+<ul>
+<li><a class="folie" href="../slides/agenten.html" target="_blank" rel="noopener">Workflows und Agenten <span>Ziel, Kontext und Werkzeugwahl</span></a></li>
+</ul>
+:::
+
+## Business-Kontext und Business Value {#business-kontext}
+
+Für die weitere Projektarbeit hilft der Blick vom Geschäftsmodell zur einzelnen Marketingmaßnahme:
+
+1. **Zois Geschäftsmodell skizzieren:** Mit dem [Business Model Canvas von Strategyzer](https://www.strategyzer.com/library/the-business-model-canvas) eine erste Übersicht erstellen. Welche Kundensegmente und Angebote sind aus den Projektquellen erkennbar? Über welche Kanäle erreicht Zoi diese Kunden? Felder, zu denen Informationen fehlen, bleiben offen oder werden als Annahme markiert. Die Skizze ist eine Arbeitshilfe, keine bestätigte Beschreibung des gesamten Unternehmens.
+2. **Ein Wertversprechen genauer betrachten:** Für ein ausgewähltes Kundensegment und ein Angebot, etwa den AI Orientation Workshop, den [Value Proposition Canvas](https://www.strategyzer.com/library/the-value-proposition-canvas) nutzen. Welche Aufgaben möchten diese Kunden erledigen, welche Schwierigkeiten haben sie und welche Ergebnisse wünschen sie sich? Was kann Zois Angebot dazu beitragen? Aussagen aus dem Briefing und eigene Vermutungen bleiben unterscheidbar.
+3. **Growth Marketing darin verorten:** Überlegen, an welcher Stelle zwischen erstem Kontakt, Interesse und Gespräch ein Marketingprozess helfen könnte. Welchen Nutzen hätte das für die Zielgruppe und welchen für Zoi? Woran ließe sich prüfen, ob der vorgeschlagene Prozess diesen Nutzen tatsächlich bringt? Wenn die Abfolge der Kontakte unklar ist, kann eine einfache [Customer Journey Map](https://www.nngroup.com/articles/customer-journey-mapping/) als zusätzliche Skizze helfen.
+
+Für den Einstieg genügt ein grober Canvas mit offenen Fragen. Er kann im Coaching ergänzt und korrigiert werden, sobald weitere Informationen vorliegen.
