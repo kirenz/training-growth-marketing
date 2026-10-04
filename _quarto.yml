@@ -12,6 +12,7 @@ project:
     - tage/dienstag.qmd
     - tage/mittwoch.qmd
     - projekt.qmd
+    - vorpruefung.qmd
     - werkzeuge/index.qmd
     - werkzeuge/growth-marketing.qmd
     - werkzeuge/ki-verstehen.qmd
@@ -76,6 +77,8 @@ website:
             text: Prüfen und vergleichen
       - href: projekt.qmd
         text: Semesterprojekt
+      - href: vorpruefung.qmd
+        text: Vorprüfungsleistung
       - href: materialien.qmd
         text: Materialien
   page-footer:

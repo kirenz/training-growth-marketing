@@ -13,7 +13,7 @@ toc: true
 | Projektpartner | [Zoi](https://www.zoi.tech/) |
 | Format | Interdisziplinäres Projekt, 5 SWS, sechs Dreierteams |
 | Blocktage | 21.–23.09.2026, 09:00–17:00 Uhr; Mittagspause jeweils 13:00–14:00 Uhr |
-| Coaching | Dienstag, 08:15–09:45 Uhr, Raum I008 |
+| Coaching | Ab 06.10.2026 dienstags, 08:15–09:45 Uhr, Raum I008 |
 | Weitere Arbeitszeit | Eigenständige Projektarbeit und Abstimmung im Team außerhalb des Coachings |
 | Sprache | Vorlesung Deutsch; Projektinhalte und Kommunikation mit dem Partner Englisch |
 | Programmierung | Keine Voraussetzung; visuelle Umsetzung in n8n |
@@ -24,16 +24,34 @@ Die 90 Minuten Coaching sind nicht das gesamte Arbeitsbudget. Teams vereinbaren 
 
 Jedes Team entwickelt einen zusammenhängenden Prozess für die Vermarktung einer Dienstleistung. Ausgangspunkt sind ein konkretes Marketingproblem, eine Zielgruppe und eine überprüfbare Nutzenannahme. Der fachliche Zuschnitt orientiert sich am Zoi-Briefing und wird im Coaching für jedes Team konkretisiert.
 
-Das Semesterprojekt hat vier mögliche Arbeitsbereiche. Am Montag diente ein fiktiver Follow-up-Fall als Einstieg in n8n. Nach dem Zoi-Briefing rückt die Erstellung und Abstimmung von Kampagneninhalten in den Vordergrund. Welche weiteren Bereiche ein Team bearbeitet und wie tief es sie umsetzt, wird im Coaching abgestimmt.
+### Der Zoi-Fall {#zoi-fall}
 
-| Arbeitsbereich | Fachbegriff | Worum es geht |
-|---|---|---|
-| Passende Kunden finden | Recherche und Qualifizierung | Welche Unternehmen kommen als Kunden infrage, und was wissen wir über sie? |
-| Inhalte erstellen | Content und Lokalisierung | Texte für Website, LinkedIn oder Newsletter, auch in anderen Sprachen |
-| Kontakte nachfassen | Nurturing und Follow-up | Wer sich für ein Webinar oder ein Whitepaper interessiert hat, bekommt den passenden nächsten Schritt |
-| Ergebnisse auswerten | Reporting | Welche Maßnahmen haben gewirkt, und was folgt daraus? |
+| | Festlegung aus dem Briefing |
+|---|---|
+| Angebot | AI Orientation Workshop, ca. vier Wochen, Einstiegsangebot |
+| Zielmarkt | UK; Zielgruppen nach Branche und Abteilung, nicht nach Personas |
+| Kanäle | LinkedIn Ads, Google Ads, Newsletter, Landingpage, Download-Asset, Nurturing-Mails |
+| Erfolgsmaß | MQL, danach CTR und CPC |
+| Schwerpunkt | Content für mehrere Formate erstellen und abstimmen |
 
-Der bisherige Briefingentwurf nennt Lead-Liste mit Gesprächsbriefings, LinkedIn-Beitrag, Newsletter, zusätzliche Sprachfassung, Follow-up-Strecke und Reporting als Ergebnisse. Diese Liste dient der Abstimmung des Projektbriefs mit Zoi und ist kein zusätzlicher Auftrag für Montag bis Mittwoch. Änderungen am verbindlichen Prüfungsumfang werden durch die Lehrperson erläutert.
+Quellen: [Zoi-Ordner](https://drive.google.com/drive/folders/1K1mH52NZwIs0G_lpNLjbS2zavvcBs2hA) und [Zoi Tone of Voice](https://docs.google.com/document/d/1qpN23JG7_uM4zXHwk-3bEs8PaIbpniZnuje5IJkEpXY/edit).
+
+| Arbeitsbereich | Worum es geht |
+|---|---|
+| Recherche und Qualifizierung | Welche Unternehmen passen, und was wissen wir über sie? |
+| Content und Lokalisierung | Inhalte für die Kanäle, auch in weiteren Sprachen |
+| Nurturing und Follow-up | Der passende nächste Schritt für jeden Kontakt |
+| Reporting | Was hat gewirkt, und was folgt daraus? |
+
+### Zugänge für das Semester {#zugaenge}
+
+**HubSpot:** Zoi gibt keinen Zugriff auf das eigene HubSpot. Jedes Team arbeitet in einem kostenlosen HubSpot-Account.
+
+1. Legen Sie pro Team einen kostenlosen [HubSpot-Account](https://www.hubspot.com/products/crm) an. Eine Person übernimmt das.
+2. Laden Sie die anderen Teammitglieder als Nutzer ein.
+3. Tragen Sie nur synthetische Kontakte ein.
+
+**Tone of Voice:** Nehmen Sie das Dokument als Quelle in das Gemini Notebook auf. Prüfen Sie jeden Content-Entwurf dagegen.
 
 KI wird dort eingesetzt, wo Sprachverständnis, Interpretation oder begrenzte Werkzeugwahl einen begründbaren Vorteil bieten. Eine möglichst große Zahl von Agenten ist kein Qualitätsmerkmal. Die Entscheidung für einen Agenten oder einen festen Workflow wird am konkreten Teilproblem geprüft.
 
@@ -78,11 +96,11 @@ Die vier benoteten Komponenten werden im Team erbracht. Bewertet werden die Qual
 
 ### Vorprüfungsleistung {#vorpruefung}
 
-Vorgesehen sind Online-Kurse zu KI-Grundlagen, KI-Agenten im Marketing, n8n und Inbound Marketing. Die veröffentlichte Projektbeschreibung nennt mindestens 80 Prozent im jeweiligen Abschlussquiz. Die verbindliche Kursliste, zulässigen Nachweise und der Abgabeweg werden gesondert bekannt gegeben; Anbieter können unterschiedliche Quiz- und Zertifikatsregeln haben. Die Website ersetzt diese Festlegung nicht durch eigene Ausnahmen.
+Online-Kurse zu KI-Grundlagen, n8n, KI-Agenten im Marketing und Inbound Marketing, Frist 17.11.2026. [Kursliste, Bestehensregel und Nachweis](vorpruefung.qmd).
 
 ### Weitere Termine
 
-Zoi-Briefing: Dienstag, 22.09.2026, 10:00 Uhr vor Ort an der HdM. Ein weiterer Blocktag im Semester und der genaue Abschlusspräsentationstermin werden abgestimmt.
+Ein weiterer Blocktag im Semester und der genaue Abschlusspräsentationstermin werden abgestimmt.
 
 ## Ablage und Arbeitsorganisation {#ablage}
 

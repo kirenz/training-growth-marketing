@@ -1,0 +1,84 @@
+---
+title: "Vorprüfungsleistung: Online-Kurse"
+toc: true
+---
+
+
+[Individuell, unbenotet, Frist **17.11.2026**. Vier Themen: drei auf der Lernplattform, eines in der HubSpot Academy.]{.lead}
+
+## Überblick {#ueberblick}
+
+| Thema | Wo | Richtwert |
+|---|---|---|
+| KI-Grundlagen | [Lernplattform](https://kurse.kirenz.de) | ca. 4 Std. |
+| n8n-Grundlagen | [Lernplattform](https://kurse.kirenz.de) | ca. 1 Std. |
+| KI-Agenten im Marketing | [Lernplattform](https://kurse.kirenz.de) | ca. 4 Std. |
+| Inbound Marketing | [HubSpot Academy](https://academy.hubspot.com/courses/inbound-marketing) | laut HubSpot |
+
+Die drei Plattform-Themen liegen in einem gemeinsamen Kurs: „Agentic AI für Growth Marketing: Vorprüfungsleistung“. Die Zugangsdaten kommen per Mail.
+
+## Bestanden, wenn {#bestanden}
+
+**Lernplattform:**
+
+- Alle Einheiten des Kurses sind abgeschlossen.
+- Mindestens 80 % aller Quizfragen sind richtig beantwortet.
+- Jede Frage hat bis zu 3 Versuche.
+
+**HubSpot Academy:** Das Zertifikat „Inbound Marketing“ liegt vor.
+
+## Nachweis {#nachweis}
+
+1. Bearbeiten Sie alle Einheiten auf der Lernplattform. Der Fortschritt wird automatisch gespeichert.
+2. Schließen Sie den HubSpot-Kurs mit dem Zertifikat ab.
+3. Laden Sie das Zertifikat als PDF herunter.
+4. Reichen Sie das PDF bis 17.11.2026 ein. Den Abgabeweg nennen wir im Coaching.
+
+Prüfen: Auf der Lernplattform zeigt der Kurs 100 % Fortschritt.
+
+::: {.callout-warning title="Achtung"}
+Für das HubSpot-Zertifikat gelten die Regeln von HubSpot: Bestehensgrenze und Wartezeit bei Wiederholung legt HubSpot fest. Beginnen Sie deshalb früh.
+:::
+
+## Einheiten auf der Lernplattform {#einheiten}
+
+::: {.callout-note collapse="true" title="KI-Grundlagen (10 Einheiten)"}
+1. Vom Briefing zum Entwurf
+2. Halluzinationen und Unsicherheit
+3. Den Pilotfall im Use-Case-Canvas festhalten
+4. Vom Zuruf zum klaren Auftrag
+5. Einen Arbeitsauftrag für eine Kundenanfrage formulieren
+6. Mit Beispielen und Format steuern
+7. Im Dialog weiterarbeiten
+8. Aussagen, Zahlen und Quellen prüfen
+9. Mit Testfällen die Qualität prüfen
+10. Einen Auftrag auf andere KI-Werkzeuge übertragen
+:::
+
+::: {.callout-note collapse="true" title="n8n-Grundlagen (7 Einheiten)"}
+1. Was n8n im Kern leistet
+2. Was sich automatisieren lässt
+3. Die vier Bausteine
+4. Cloud, Self-Hosted oder Managed?
+5. Pro Execution statt pro Task
+6. Credentials sicher vorbereiten
+7. Der erste Workflow
+:::
+
+::: {.callout-note collapse="true" title="KI-Agenten im Marketing (13 Einheiten)"}
+1. Was einen KI-Agenten ausmacht
+2. Use-Cases auswählen und Agent-Scope festlegen
+3. Prompt-Engineering für Agenten
+4. Tools als Stellglieder eines Agenten
+5. Pattern 01: Prompt Chaining
+6. Pattern 02: Routing
+7. Pattern 05: Evaluator-Optimizer
+8. Pattern 06: Agent mit Tools
+9. Wann Content-Marketing nach Multi-Agents ruft
+10. Content-Factory aufbauen
+11. Wann Lead-Triage nach Multi-Agents ruft
+12. Lead-Qualifizierung aufbauen
+13. Policy-Gate und Approval-Pattern
+:::
+
+Die Einheiten 10, 12 und 13 passen direkt zum Zoi-Projekt: Content, Lead-Qualifizierung und menschliche Freigabe.
