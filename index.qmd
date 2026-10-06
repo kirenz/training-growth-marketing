@@ -14,7 +14,7 @@ anchor-sections: false
 
 ::: {.hero-actions}
 <a href="projekt.html" class="btn btn-primary">Zum Semesterprojekt</a>
-<a href="vorpruefung.html" class="btn btn-outline">Vorprüfungsleistung</a>
+<a href="abgaben.html" class="btn btn-outline">Abgaben</a>
 :::
 :::
 
@@ -33,6 +33,7 @@ anchor-sections: false
 | Seite | Inhalt |
 |---|---|
 | [Semesterprojekt](projekt.qmd) | Zoi-Fall, Zugänge, Coaching, Prüfungsleistung |
+| [Abgaben](abgaben.qmd) | Was wann wo abgegeben wird, Schritt für Schritt |
 | [Werkzeugkasten](werkzeuge/index.qmd) | Prompting, Workflows, Agenten, Prüfen |
 | [Blocktage](tage/montag.qmd) | Montag bis Mittwoch, 21.–23.09. |
 | [Materialien](materialien.qmd) | Vorlagen und Dateien aus den Blocktagen |

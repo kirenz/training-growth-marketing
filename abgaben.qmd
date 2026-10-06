@@ -1,0 +1,182 @@
+---
+title: "Abgaben im Semester"
+toc: true
+---
+
+
+[Was im Semester entsteht, in welcher Reihenfolge und wo es abgegeben wird. Die Schritte bauen aufeinander auf: Jedes Ergebnis ist die Grundlage für das nächste.]{.lead}
+
+## Überblick {#ueberblick}
+
+| Nr. | Ergebnis | Art | Termin | Wo |
+|---|---|---|---|---|
+| 1 | [Business Model Canvas und Value Proposition Canvas](#canvas) | Team, Rückmeldung | wird im Coaching genannt | Moodle und Repository |
+| 2 | [Projektbrief und Ablaufskizze](#projektbrief) | Team, Checkpoint 1 | im Coaching vereinbart | Repository |
+| 3 | [Erster durchgängiger Ausschnitt](#ausschnitt) | Team, Checkpoint 2 | im Coaching vereinbart | Repository |
+| 4 | [Vorprüfungsleistung: Online-Kurse](#vorpruefung) | individuell, unbenotet | 17.11.2026 | Lernplattform und Moodle |
+| 5 | [Zwischenpräsentation](#zwischen) | Team, 10 % | 01.12.2026 | Präsentation mit Zoi |
+| 6 | [Ausbau und Evaluation](#evaluation) | Team, Checkpoint 3 | im Coaching vereinbart | Repository |
+| 7 | [Abschlusspräsentation mit Live-Demo](#abschluss) | Team, 20 % | Woche vom 26.01.2027 | Präsentation mit Zoi |
+| 8 | [Agenten, Workflows, Playbook und Evaluation](#endabgabe) | Team, 40 % und 30 % | 12.02.2027 | Moodle |
+
+Die Checkpoints sind Rückmeldungen im Coaching und keine zusätzlichen Prüfungskomponenten. Benotet werden nur die Komponenten mit Prozentangabe. Gewichte und Termine stehen auch auf der Seite [Semesterprojekt](projekt.qmd#pruefung).
+
+## Laufend: jede Woche {#laufend}
+
+Diese Arbeit begleitet alle Schritte. Sie wird nicht gesondert abgegeben, ist aber Grundlage für jedes Review.
+
+1. Aufgaben im GitHub Project anlegen, mit verantwortlicher Person und Zieltermin.
+2. Ergebnisse und Testbelege im Repository ablegen.
+3. Vor jedem Coaching einen kurzen Eintrag in `docs/weekly-log.md` schreiben: Ergebnis mit Link, wichtigste Erkenntnis, offene Frage.
+4. Wichtige Entscheidungen mit Datum und Begründung in `docs/research-and-decisions.md` festhalten.
+
+## Schritt für Schritt {#schritte}
+
+::: {.uebung #canvas}
+### 1 · Business Model Canvas und Value Proposition Canvas
+
+[Team · Rückmeldung im Coaching · Abgabe in Moodle]{.uebung-meta}
+
+**Worum es geht:** Zois Geschäftsmodell verstehen, bevor ein Marketingprozess entsteht. Der Einstieg dazu steht am [Mittwoch der Blocktage](tage/mittwoch.qmd#business-kontext).
+
+1. Für Zoi einen [Business Model Canvas](https://www.strategyzer.com/library/the-business-model-canvas) ausfüllen.
+2. Für ein Kundensegment und den AI Orientation Workshop einen [Value Proposition Canvas](https://www.strategyzer.com/library/the-value-proposition-canvas) ausfüllen.
+3. Aussagen aus dem Briefing und eigene Annahmen sichtbar unterscheiden (zum Beispiel Annahmen kursiv oder farbig).
+4. Beide Canvas als ein PDF exportieren. Dateiname: `team-NN-canvas.pdf`.
+5. Das PDF in Moodle hochladen.
+6. Dieselbe Datei im Repository unter `docs/` ablegen.
+
+::: {.ergebnis}
+**Prüfen:** Jedes Feld ist ausgefüllt oder als offene Frage markiert. Eine Person außerhalb des Teams erkennt, welche Aussagen belegt sind und welche Annahmen sind.
+:::
+:::
+
+::: {.uebung #projektbrief}
+### 2 · Projektbrief und Ablaufskizze (Checkpoint 1)
+
+[Team · Rückmeldung im Coaching · Ablage im Repository]{.uebung-meta}
+
+**Worum es geht:** Aus dem Canvas ein konkretes, bearbeitbares Marketingproblem ableiten.
+
+1. Den Arbeitsbereich festlegen (Recherche, Content, Nurturing oder Reporting, siehe [Zoi-Fall](projekt.qmd#zoi-fall)).
+2. Problem, Zielgruppe und eine überprüfbare Hypothese im `README.md` beschreiben.
+3. Festhalten, welche Daten vorliegen und welche synthetisch erzeugt werden.
+4. Den geplanten Ablauf als Skizze ablegen: Eingang, Schritte, Ausgabe, menschliche Freigabe.
+
+::: {.ergebnis}
+**Prüfen:** Die Hypothese nennt eine messbare Größe (zum Beispiel „Entwurf in unter 10 Minuten statt 45 Minuten, bei gleicher Qualität laut Checkliste“).
+:::
+:::
+
+::: {.uebung #ausschnitt}
+### 3 · Erster durchgängiger Ausschnitt (Checkpoint 2)
+
+[Team · Rückmeldung im Coaching · Ablage im Repository]{.uebung-meta}
+
+**Worum es geht:** Ein kleiner Teil des Ablaufs läuft vollständig, von der Eingabe bis zur Ausgabe.
+
+1. Einen n8n-Workflow für einen Teilschritt bauen.
+2. Ihn mit mindestens fünf synthetischen Testfällen ausführen.
+3. Den Workflow als JSON nach `workflows/` exportieren.
+4. Prompts im Wortlaut nach `prompts/` legen.
+5. Eingaben und Ergebnisse der Testfälle in `evaluation/` ablegen.
+
+::: {.ergebnis}
+**Prüfen:** Im Export stehen keine Schlüssel oder Zugangsdaten. Eine andere Person versteht aus den Dateien, was hineingeht und was herauskommt.
+:::
+:::
+
+::: {.uebung #vorpruefung}
+### 4 · Vorprüfungsleistung: Online-Kurse
+
+[Individuell · unbenotet · Frist 17.11.2026]{.uebung-meta}
+
+1. Alle Einheiten auf der [Lernplattform](https://kurse.kirenz.de) abschließen.
+2. Das HubSpot-Zertifikat „Inbound Marketing“ erwerben.
+3. Das Zertifikat als PDF in Moodle hochladen.
+
+Bestehensregel und Kursliste: [Vorprüfungsleistung](vorpruefung.qmd).
+:::
+
+::: {.uebung #zwischen}
+### 5 · Zwischenpräsentation
+
+[Team · 10 % · 01.12.2026, mit Zoi]{.uebung-meta}
+
+**Worum es geht:** Zoi sieht den Stand und gibt Rückmeldung, bevor der Ausbau beginnt.
+
+1. Problem, Hypothese und Ablauf vorstellen.
+2. Den Ausschnitt aus Schritt 3 an einem Testfall zeigen.
+3. Erste Testergebnisse und erkannte Grenzen nennen.
+4. Offene Entscheidungen benennen, zu denen Zoi Rückmeldung geben soll.
+5. Die Folien als PDF in Moodle hochladen.
+
+::: {.ergebnis}
+**Prüfen:** Jede Person aus dem Team präsentiert einen Teil.
+:::
+:::
+
+::: {.uebung #evaluation}
+### 6 · Ausbau und Evaluation (Checkpoint 3)
+
+[Team · Rückmeldung im Coaching · Ablage im Repository]{.uebung-meta}
+
+**Worum es geht:** Die Schritte zu einem Prozess verbinden und belegen, ob er einen Vorteil bringt.
+
+1. Die Rückmeldung von Zoi einarbeiten.
+2. Weitere Schritte anbinden, bis der Prozess durchgängig läuft.
+3. Kriterien für den Vergleich festlegen, bevor getestet wird.
+4. Denselben Satz Testfälle mit dem Workflow und mit einer einfachen Alternative bearbeiten (manuell oder ein einzelner KI-Auftrag).
+5. Zeit erfassen, einschließlich Prüfung und Nacharbeit. Einrichtungsaufwand getrennt ausweisen.
+6. Fehler und Grenzfälle dokumentieren, nicht nur gelungene Fälle.
+7. Das Playbook in `docs/playbook.md` beginnen.
+
+::: {.ergebnis}
+**Prüfen:** Die Auswertung beantwortet die Frage: Bringt der Workflow gegenüber der einfacheren Alternative einen Vorteil, und wo nicht?
+:::
+:::
+
+::: {.uebung #abschluss}
+### 7 · Abschlusspräsentation mit Live-Demo
+
+[Team · 20 % · Woche vom 26.01.2027, mit Zoi]{.uebung-meta}
+
+1. Einen vollständigen Ablauf live zeigen, vom Eingang bis zum Reporting.
+2. Eine menschliche Freigabe oder eine Fehlerbehandlung im Ablauf zeigen.
+3. Die Ergebnisse der Evaluation vorstellen.
+4. Grenzen und Empfehlungen für Zoi nennen.
+
+::: {.callout-warning title="Achtung"}
+Kontaktaufnahme und Versand werden in der Testumgebung simuliert. Die Demo versendet nichts an echte Kontakte.
+:::
+:::
+
+::: {.uebung #endabgabe}
+### 8 · Endabgabe: Agenten, Workflows, Playbook und Evaluation
+
+[Team · 40 % und 30 % · 12.02.2027 · Abgabe in Moodle]{.uebung-meta}
+
+**Inhalt:**
+
+- **Agenten und Workflows (40 %):** n8n-Exporte, Prompts im Wortlaut, Wissensquellen, synthetische Testdaten, erklärte Ein- und Ausgaben, menschliche Entscheidungspunkte.
+- **Playbook und Evaluation (30 %):** Einrichtung, Nutzung, Pflege, Fehlerbehandlung und Grenzen; Messdesign, Testbelege, Vergleich und Interpretation. Dazu ein englischer Bericht von etwa sechs bis acht Seiten als `submission/report.pdf`.
+
+**Abgabe:**
+
+1. Alle Dateien im Repository vervollständigen.
+2. Eine zweite Person richtet die Lösung nach dem Playbook ein und führt einen Testfall aus.
+3. Alle Dateien auf Passwörter, Tokens und personenbezogene Daten prüfen, auch die n8n-Exporte.
+4. Im Repository unter Releases den Stand `abgabe-v1.0` anlegen.
+5. Das Source-ZIP dieses Release herunterladen und entpacken.
+6. Prüfen, ob Bericht, Daten und Nachweise im ZIP enthalten sind.
+7. Das ZIP in Moodle hochladen.
+8. In der Abgabe Team, Namen, Repo-Link, Release-Link und Commit-ID nennen.
+
+::: {.ergebnis}
+**Prüfen:** Das hochgeladene ZIP enthält alles, was zur Bewertung nötig ist. Inhalte aus GitHub Project und Issues sind nicht im ZIP enthalten; wichtige Nachweise gehören deshalb in die Dokumentationsdateien.
+:::
+:::
+
+::: {.callout-warning title="Achtung"}
+Keine Schlüssel, Passwörter oder Zugangsdaten in Moodle oder im Repository ablegen. Benötigte Zugänge nur nach ihrem Zweck beschreiben (zum Beispiel „Zugang zur Modellverbindung für den Entwurfsschritt“).
+:::

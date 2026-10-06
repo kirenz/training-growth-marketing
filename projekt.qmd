@@ -72,6 +72,8 @@ Die Checkpoints sind formative Rückmeldungen und keine zusätzlichen benoteten 
 
 ## Abgaben {#abgaben}
 
+Reihenfolge, Termine und Abgabewege aller Ergebnisse stehen auf der Seite [Abgaben](abgaben.qmd).
+
 **Agenten und Workflows:** ausführbare Konfigurationen und n8n-Exporte, Anweisungen im Wortlaut, verwendete Wissensquellen, erklärte Ein- und Ausgaben sowie erkennbare menschliche Entscheidungspunkte. Keine Schlüssel oder Zugangsdaten in den Abgaben.
 
 **Playbook:** Einrichtung, Nutzung, Pflege, Fehlerbehandlung und bekannte Grenzen. Eine andere Person muss den dokumentierten Ablauf nachvollziehen können.
