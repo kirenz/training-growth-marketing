@@ -28,7 +28,7 @@ Am Montag sind nur die Startseite, die Vorbereitung, der Montag, der Werkzeugkas
 Freischalten mit einem Befehl:
 
 ```sh
-cd ~/code/presentation/training-growth-marketing
+cd ~/code/hdm/projekte-lehre/projekte-ws2627/growth-marketing/training-growth-marketing
 ./freischalten.sh dienstag     # am Dienstagmorgen
 ./freischalten.sh mittwoch     # am Mittwochmorgen
 ./veroeffentlichen.sh
@@ -51,7 +51,7 @@ Das ist ein Schutz vor Gelegenheitszugriffen, keine echte Zugangskontrolle: Der 
 ## Veröffentlichung
 
 ```sh
-cd ~/code/presentation/training-growth-marketing
+cd ~/code/hdm/projekte-lehre/projekte-ws2627/growth-marketing/training-growth-marketing
 ./veroeffentlichen.sh
 ```
 
