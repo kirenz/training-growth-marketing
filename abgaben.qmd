@@ -16,7 +16,7 @@ toc: true
 | 4 | [Vorprüfungsleistung: Online-Kurse](#vorpruefung) | individuell, unbenotet | 17.11.2026 | Lernplattform und Moodle |
 | 5 | [Zwischenpräsentation](#zwischen) | Team, 10 % | 01.12.2026 | Präsentation mit Zoi |
 | 6 | [Ausbau und Evaluation](#evaluation) | Team, Checkpoint 3 | im Coaching vereinbart | Repository |
-| 7 | [Abschlusspräsentation mit Live-Demo](#abschluss) | Team, 20 % | Woche vom 26.01.2027 | Präsentation mit Zoi |
+| 7 | [Abschlusspräsentation mit Live-Demo](#abschluss) | Team, 20 % | Do 28.01.2027 | Präsentation bei Zoi |
 | 8 | [Agenten, Workflows, Playbook und Evaluation](#endabgabe) | Team, 40 % und 30 % | 12.02.2027 | Moodle |
 
 Die Checkpoints sind Rückmeldungen im Coaching und keine zusätzlichen Prüfungskomponenten. Benotet werden nur die Komponenten mit Prozentangabe. Gewichte und Termine stehen auch auf der Seite [Semesterprojekt](projekt.qmd#pruefung).
@@ -139,7 +139,10 @@ Bestehensregel und Kursliste: [Vorprüfungsleistung](vorpruefung.qmd).
 ::: {.uebung #abschluss}
 ### 7 · Abschlusspräsentation mit Live-Demo
 
-[Team · 20 % · Woche vom 26.01.2027, mit Zoi]{.uebung-meta}
+[Team · 20 % · Do 28.01.2027, 13:30–16:30 Uhr, bei Zoi]{.uebung-meta}
+
+**Ort:** Zoi Office, Quellenstraße 7 / Tor 19, 70376 Stuttgart. Ankommen ab 13:30 Uhr, Präsentationen ab 14:00 Uhr im 4. Stock. Pro Team ca. 15 Minuten inklusive Live-Demo, danach gemeinsame Fragerunde und Feedback von Zoi.
+
 
 1. Einen vollständigen Ablauf live zeigen, vom Eingang bis zum Reporting.
 2. Eine menschliche Freigabe oder eine Fehlerbehandlung im Ablauf zeigen.
