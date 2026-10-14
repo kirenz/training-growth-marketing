@@ -68,7 +68,7 @@ Ein möglicher 90-Minuten-Rahmen: 15 Minuten gemeinsame Befunde, 30 Minuten für
 | 3: Ausbau und Evaluation | Verbundene Schritte, Vergleich und dokumentierte Fehler | Bringt die Lösung gegenüber einer einfacheren Alternative einen Vorteil? |
 | 4: Übergabe | Live-Demo, Playbook und Evaluation | Kann der Partner die Lösung verstehen, prüfen und weiterentwickeln? |
 
-Die Checkpoints sind formative Rückmeldungen und keine zusätzlichen benoteten Prüfungskomponenten. Ihre konkreten Termine werden im Coaching vereinbart. Die Zwischenpräsentation am 01.12. bleibt ein eigener benoteter Termin.
+Die Checkpoints sind formative Rückmeldungen und keine zusätzlichen benoteten Prüfungskomponenten. Ihre konkreten Termine werden im Coaching vereinbart. Die Zwischenpräsentation am 08.12. bleibt ein eigener benoteter Termin.
 
 ## Abgaben {#abgaben}
 
@@ -89,7 +89,7 @@ Die vorhandenen Termine und Gewichte der kombinierten Modulprüfung bleiben unve
 | Komponente | Gewicht | Termin |
 |---|---|---|
 | Vorprüfungsleistung: Online-Kurse, individuell | unbenotet | 17.11.2026 |
-| Zwischenpräsentation | 10 % | 01.12.2026 |
+| Zwischenpräsentation | 10 % | Di 08.12.2026, 08:15–09:45 Uhr |
 | Abschlusspräsentation mit Live-Demo | 20 % | Do 28.01.2027, 13:30–16:30 Uhr, bei Zoi |
 | Agenten und Workflows | 40 % | 12.02.2027 |
 | Playbook und Evaluation | 30 % | 12.02.2027 |
@@ -102,7 +102,7 @@ Online-Kurse zu KI-Grundlagen, n8n, KI-Agenten im Marketing und Inbound Marketin
 
 ### Weitere Termine
 
-Die Abschlusspräsentation findet am Donnerstag, 28.01.2027, von 13:30 bis 16:30 Uhr im Zoi Office statt (Quellenstraße 7 / Tor 19, 70376 Stuttgart). Ein weiterer Blocktag im Semester wird abgestimmt.
+Die Zwischenpräsentation findet am Dienstag, 08.12.2026, von 08:15 bis 09:45 Uhr im regulären Projekttermin in Raum I008 statt. Zoi ist per Video zugeschaltet. Die Abschlusspräsentation findet am Donnerstag, 28.01.2027, von 13:30 bis 16:30 Uhr im Zoi Office statt (Quellenstraße 7 / Tor 19, 70376 Stuttgart). Ein weiterer Blocktag im Semester wird abgestimmt.
 
 ## Ablage und Arbeitsorganisation {#ablage}
 

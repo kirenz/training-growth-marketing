@@ -14,7 +14,7 @@ toc: true
 | 2 | [Projektbrief und Ablaufskizze](#projektbrief) | Team, Checkpoint 1 | im Coaching vereinbart | Repository |
 | 3 | [Erster durchgängiger Ausschnitt](#ausschnitt) | Team, Checkpoint 2 | im Coaching vereinbart | Repository |
 | 4 | [Vorprüfungsleistung: Online-Kurse](#vorpruefung) | individuell, unbenotet | 17.11.2026 | Lernplattform und Moodle |
-| 5 | [Zwischenpräsentation](#zwischen) | Team, 10 % | 01.12.2026 | Präsentation mit Zoi |
+| 5 | [Zwischenpräsentation](#zwischen) | Team, 10 % | Di 08.12.2026 | Präsentation mit Zoi |
 | 6 | [Ausbau und Evaluation](#evaluation) | Team, Checkpoint 3 | im Coaching vereinbart | Repository |
 | 7 | [Abschlusspräsentation mit Live-Demo](#abschluss) | Team, 20 % | Do 28.01.2027 | Präsentation bei Zoi |
 | 8 | [Agenten, Workflows, Playbook und Evaluation](#endabgabe) | Team, 40 % und 30 % | 12.02.2027 | Moodle |
@@ -101,7 +101,9 @@ Bestehensregel und Kursliste: [Vorprüfungsleistung](vorpruefung.qmd).
 ::: {.uebung #zwischen}
 ### 5 · Zwischenpräsentation
 
-[Team · 10 % · 01.12.2026, mit Zoi]{.uebung-meta}
+[Team · 10 % · Di 08.12.2026, 08:15–09:45 Uhr, mit Zoi]{.uebung-meta}
+
+**Ort:** regulärer Projekttermin in Raum I008. Zoi ist per Video zugeschaltet. Pro Team ca. 10 Minuten, danach Feedback von Zoi.
 
 **Worum es geht:** Zoi sieht den Stand und gibt Rückmeldung, bevor der Ausbau beginnt.
 
