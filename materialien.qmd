@@ -75,3 +75,7 @@ Die [Bauanleitung](werkzeuge/workflows.qmd) erklärt Aufbau, Zuordnungen, Import
 | Lehrdemo: begrenzte Werkzeugwahl | [03 JSON](material/workflows/03-agenten-demo.json) | [Anleitung](https://docs.google.com/document/d/1iCLOaovYWVN8ethN2exdRWrZIm9zdB4aWI0v5BiliTM/edit) |
 
 Zusätzlich: [vollständiger n8n-Prompt](https://docs.google.com/document/d/1duTCf9tVaspLswnrjjesW6we4CtV7Nv0vefCDKm2oOY/edit) und [Ausgabe-Schema](material/workflows/ausgabe-schema.json). Alle Workflows starten manuell. Ergebnisse werden im Ausführungsprotokoll sichtbar und für die Teamablage gesichert. Kein Workflow enthält Versand oder produktive CRM-Schreibzugriffe.
+
+### Zum Weiterlernen
+
+[n8n Quickstart (QS101)](https://learn.n8n.io/courses/course-v1:n8n+QS101+2026H2/about): kostenloser Kurs der n8n Academy (englisch) vom ersten Workflow bis zum KI-Agenten. Teil der [Vorprüfungsleistung](vorpruefung.qmd#qs101). Im n8n-Konto der Gruppe bearbeiten, nicht in n8n Cloud.

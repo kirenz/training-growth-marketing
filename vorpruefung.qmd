@@ -4,7 +4,7 @@ toc: true
 ---
 
 
-[Individuell, unbenotet, Frist **17.11.2026**. Vier Themen: drei auf der Lernplattform, eines in der HubSpot Academy.]{.lead}
+[Individuell, unbenotet, Frist **17.11.2026**. Fünf Themen: drei auf der Lernplattform, eines in der HubSpot Academy, eines in der n8n Academy.]{.lead}
 
 ## Überblick {#ueberblick}
 
@@ -14,6 +14,7 @@ toc: true
 | n8n-Grundlagen | [Lernplattform](https://kurse.kirenz.de) | ca. 1 Std. |
 | KI-Agenten im Marketing | [Lernplattform](https://kurse.kirenz.de) | ca. 4 Std. |
 | Inbound Marketing | [HubSpot Academy](https://academy.hubspot.com/courses/inbound-marketing) | laut HubSpot |
+| n8n Quickstart (QS101), englisch | [n8n Academy](https://learn.n8n.io/courses/course-v1:n8n+QS101+2026H2/about) (kostenlos) | ca. 3 bis 5 Std., Workflows bis zum KI-Agenten |
 
 Die drei Plattform-Themen liegen in einem gemeinsamen Kurs: „Agentic AI für Growth Marketing: Vorprüfungsleistung“. Die Zugangsdaten kommen per Mail.
 
@@ -27,17 +28,31 @@ Die drei Plattform-Themen liegen in einem gemeinsamen Kurs: „Agentic AI für G
 
 **HubSpot Academy:** Das Zertifikat „Inbound Marketing“ liegt vor.
 
+**n8n Academy:** Der Kurs QS101 ist mit mindestens 70 % bestanden, die Teilnahmebescheinigung oder das Badge liegt vor.
+
 ## Nachweis {#nachweis}
 
 1. Bearbeiten Sie alle Einheiten auf der Lernplattform. Der Fortschritt wird automatisch gespeichert.
 2. Schließen Sie den HubSpot-Kurs mit dem Zertifikat ab.
-3. Laden Sie das Zertifikat als PDF herunter.
-4. Laden Sie das PDF bis 17.11.2026 in Moodle hoch.
+3. Schließen Sie den n8n-Kurs QS101 ab (Hinweise unten).
+4. Laden Sie das HubSpot-Zertifikat als PDF herunter.
+5. Laden Sie die Teilnahmebescheinigung oder das Badge der n8n Academy als PDF oder Screenshot herunter.
+6. Laden Sie beide Nachweise bis 17.11.2026 in Moodle hoch.
 
-Prüfen: Auf der Lernplattform zeigt der Kurs 100 % Fortschritt.
+Prüfen: Auf der Lernplattform zeigt der Kurs 100 % Fortschritt. In Moodle liegen zwei Nachweise, Kurstitel und Ihr Name sind lesbar.
 
 ::: {.callout-warning title="Achtung"}
 Für das HubSpot-Zertifikat gelten die Regeln von HubSpot: Bestehensgrenze und Wartezeit bei Wiederholung legt HubSpot fest. Beginnen Sie deshalb früh.
+:::
+
+## n8n-Kurs QS101 {#qs101}
+
+Der Kurs der n8n Academy führt ohne Vorwissen vom ersten Workflow bis zum KI-Agenten. Er ergänzt die n8n-Grundlagen auf der Lernplattform um praktische Übungen.
+
+::: {.callout-note title="n8n-Instanz für den Kurs"}
+Bearbeiten Sie den Kurs im n8n-Konto Ihrer Gruppe auf dem HdM-Server (https://kirenz.iuk.hdm-stuttgart.de/n8n-1/), nicht in n8n Cloud. Den Schritt „setting up n8n“ am Kursbeginn überspringen Sie also. Von zu Hause brauchen Sie dafür das HdM-VPN (FortiClient, Zugang mit der HdM-Kennung). Für den Teil zum KI-Agenten nehmen Sie die vorbereitete Verbindung `Gemini (Gruppe N)` Ihrer Gruppe, ein eigener API-Schlüssel ist nicht nötig. Trigger-Pfade bekommen wie immer das Gruppen-Präfix (zum Beispiel `g3-qs101-form`).
+
+**Ausnahme zur Regel aus Übung 1.4:** Dort gilt, dass immer nur eine Person einen Workflow bearbeitet. Für QS101 baut jede Person ihre eigenen Workflows, weil der Kurs individuell abgeschlossen wird. Jeder Workflow-Name beginnt mit Ihrem Nachnamen (zum Beispiel „Müller · QS101 Übung 1“). Workflows anderer Personen öffnen Sie nicht zum Bearbeiten.
 :::
 
 ## Einheiten auf der Lernplattform {#einheiten}

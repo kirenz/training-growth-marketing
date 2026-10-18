@@ -98,7 +98,7 @@ Die vier benoteten Komponenten werden im Team erbracht. Bewertet werden die Qual
 
 ### Vorprüfungsleistung {#vorpruefung}
 
-Online-Kurse zu KI-Grundlagen, n8n, KI-Agenten im Marketing und Inbound Marketing, Frist 17.11.2026. [Kursliste, Bestehensregel und Nachweis](vorpruefung.qmd).
+Online-Kurse zu KI-Grundlagen, n8n-Grundlagen, KI-Agenten im Marketing und Inbound Marketing sowie der Kurs QS101 der n8n Academy, Frist 17.11.2026. [Kursliste, Bestehensregel und Nachweis](vorpruefung.qmd).
 
 ### Weitere Termine
 
