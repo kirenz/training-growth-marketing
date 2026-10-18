@@ -13,7 +13,7 @@ toc: true
 | 1 | [Business Model Canvas und Value Proposition Canvas](#canvas) | Team, Rückmeldung | wird im Coaching genannt | Moodle und Repository |
 | 2 | [Projektbrief und Ablaufskizze](#projektbrief) | Team, Checkpoint 1 | im Coaching vereinbart | Repository |
 | 3 | [Erster durchgängiger Ausschnitt](#ausschnitt) | Team, Checkpoint 2 | im Coaching vereinbart | Repository |
-| 4 | [Vorprüfungsleistung: Online-Kurse](#vorpruefung) | individuell, unbenotet | 17.11.2026 | Lernplattform, n8n Academy und Moodle |
+| 4 | [Vorprüfungsleistung: Online-Kurse](#vorpruefung) | individuell, unbenotet | 17.11.2026, QS101 bis 30.11.2026 | Lernplattform, n8n Academy und Moodle |
 | 5 | [Zwischenpräsentation](#zwischen) | Team, 10 % | Di 08.12.2026 | Präsentation mit Zoi |
 | 6 | [Ausbau und Evaluation](#evaluation) | Team, Checkpoint 3 | im Coaching vereinbart | Repository |
 | 7 | [Abschlusspräsentation mit Live-Demo](#abschluss) | Team, 20 % | Do 28.01.2027 | Präsentation bei Zoi |
@@ -89,12 +89,12 @@ Diese Arbeit begleitet alle Schritte. Sie wird nicht gesondert abgegeben, ist ab
 ::: {.uebung #vorpruefung}
 ### 4 · Vorprüfungsleistung: Online-Kurse
 
-[Individuell · unbenotet · Frist 17.11.2026]{.uebung-meta}
+[Individuell · unbenotet · Frist 17.11.2026, n8n-Kurs QS101 bis 30.11.2026]{.uebung-meta}
 
 1. Alle Einheiten auf der [Lernplattform](https://kurse.kirenz.de) abschließen.
 2. Das HubSpot-Zertifikat „Inbound Marketing“ erwerben.
 3. Den n8n-Kurs [QS101](vorpruefung.qmd#qs101) im n8n-Konto der Gruppe abschließen, bestanden ab 70 %.
-4. Beide Nachweise (HubSpot-Zertifikat, n8n-Bescheinigung oder Badge) in Moodle hochladen.
+4. Das HubSpot-Zertifikat bis 17.11.2026 und die n8n-Bescheinigung oder das Badge bis 30.11.2026 in Moodle hochladen.
 
 Bestehensregel und Kursliste: [Vorprüfungsleistung](vorpruefung.qmd).
 :::

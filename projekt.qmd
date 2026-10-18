@@ -88,7 +88,7 @@ Die vorhandenen Termine und Gewichte der kombinierten Modulprüfung bleiben unve
 
 | Komponente | Gewicht | Termin |
 |---|---|---|
-| Vorprüfungsleistung: Online-Kurse, individuell | unbenotet | 17.11.2026 |
+| Vorprüfungsleistung: Online-Kurse, individuell | unbenotet | 17.11.2026, n8n-Kurs QS101 bis 30.11.2026 |
 | Zwischenpräsentation | 10 % | Di 08.12.2026, 08:15–09:45 Uhr |
 | Abschlusspräsentation mit Live-Demo | 20 % | Do 28.01.2027, 13:30–16:30 Uhr, bei Zoi |
 | Agenten und Workflows | 40 % | 12.02.2027 |
@@ -98,7 +98,7 @@ Die vier benoteten Komponenten werden im Team erbracht. Bewertet werden die Qual
 
 ### Vorprüfungsleistung {#vorpruefung}
 
-Online-Kurse zu KI-Grundlagen, n8n-Grundlagen, KI-Agenten im Marketing und Inbound Marketing sowie der Kurs QS101 der n8n Academy, Frist 17.11.2026. [Kursliste, Bestehensregel und Nachweis](vorpruefung.qmd).
+Online-Kurse zu KI-Grundlagen, n8n-Grundlagen, KI-Agenten im Marketing und Inbound Marketing sowie der Kurs QS101 der n8n Academy. Frist 17.11.2026, für QS101 30.11.2026. [Kursliste, Bestehensregel und Nachweis](vorpruefung.qmd).
 
 ### Weitere Termine
 

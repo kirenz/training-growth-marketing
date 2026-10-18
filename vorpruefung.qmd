@@ -4,7 +4,7 @@ toc: true
 ---
 
 
-[Individuell, unbenotet, Frist **17.11.2026**. Fünf Themen: drei auf der Lernplattform, eines in der HubSpot Academy, eines in der n8n Academy.]{.lead}
+[Individuell, unbenotet, Fristen **17.11.2026** (Lernplattform und HubSpot) und **30.11.2026** (n8n-Kurs QS101). Fünf Themen: drei auf der Lernplattform, eines in der HubSpot Academy, eines in der n8n Academy.]{.lead}
 
 ## Überblick {#ueberblick}
 
@@ -35,9 +35,8 @@ Die drei Plattform-Themen liegen in einem gemeinsamen Kurs: „Agentic AI für G
 1. Bearbeiten Sie alle Einheiten auf der Lernplattform. Der Fortschritt wird automatisch gespeichert.
 2. Schließen Sie den HubSpot-Kurs mit dem Zertifikat ab.
 3. Schließen Sie den n8n-Kurs QS101 ab (Hinweise unten).
-4. Laden Sie das HubSpot-Zertifikat als PDF herunter.
-5. Laden Sie die Teilnahmebescheinigung oder das Badge der n8n Academy als PDF oder Screenshot herunter.
-6. Laden Sie beide Nachweise bis 17.11.2026 in Moodle hoch.
+4. Laden Sie das HubSpot-Zertifikat als PDF bis 17.11.2026 in Moodle hoch.
+5. Laden Sie die Teilnahmebescheinigung oder das Badge der n8n Academy bis 30.11.2026 in Moodle hoch (als PDF oder Screenshot).
 
 Prüfen: Auf der Lernplattform zeigt der Kurs 100 % Fortschritt. In Moodle liegen zwei Nachweise, Kurstitel und Ihr Name sind lesbar.
 
@@ -47,7 +46,7 @@ Für das HubSpot-Zertifikat gelten die Regeln von HubSpot: Bestehensgrenze und W
 
 ## n8n-Kurs QS101 {#qs101}
 
-Der Kurs der n8n Academy führt ohne Vorwissen vom ersten Workflow bis zum KI-Agenten. Er ergänzt die n8n-Grundlagen auf der Lernplattform um praktische Übungen.
+Frist: **30.11.2026**. Der Kurs der n8n Academy führt ohne Vorwissen vom ersten Workflow bis zum KI-Agenten. Er ergänzt die n8n-Grundlagen auf der Lernplattform um praktische Übungen.
 
 ::: {.callout-note title="n8n-Instanz für den Kurs"}
 Bearbeiten Sie den Kurs im n8n-Konto Ihrer Gruppe auf dem HdM-Server (https://kirenz.iuk.hdm-stuttgart.de/n8n-1/), nicht in n8n Cloud. Den Schritt „setting up n8n“ am Kursbeginn überspringen Sie also. Von zu Hause brauchen Sie dafür das HdM-VPN (FortiClient, Zugang mit der HdM-Kennung). Für den Teil zum KI-Agenten nehmen Sie die vorbereitete Verbindung `Gemini (Gruppe N)` Ihrer Gruppe, ein eigener API-Schlüssel ist nicht nötig. Trigger-Pfade bekommen wie immer das Gruppen-Präfix (zum Beispiel `g3-qs101-form`).
