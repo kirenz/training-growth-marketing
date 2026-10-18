@@ -272,6 +272,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#ueberblick" id="toc-ueberblick" class="nav-link active" data-scroll-target="#ueberblick">Überblick</a></li>
   <li><a href="#bestanden" id="toc-bestanden" class="nav-link" data-scroll-target="#bestanden">Bestanden, wenn</a></li>
   <li><a href="#nachweis" id="toc-nachweis" class="nav-link" data-scroll-target="#nachweis">Nachweis</a></li>
+  <li><a href="#qs101" id="toc-qs101" class="nav-link" data-scroll-target="#qs101">n8n-Kurs QS101</a></li>
   <li><a href="#einheiten" id="toc-einheiten" class="nav-link" data-scroll-target="#einheiten">Einheiten auf der Lernplattform</a></li>
   </ul>
 </nav>
@@ -298,7 +299,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><span class="lead">Individuell, unbenotet, Frist <strong>17.11.2026</strong>. Vier Themen: drei auf der Lernplattform, eines in der HubSpot Academy.</span></p>
+<p><span class="lead">Individuell, unbenotet, Frist <strong>17.11.2026</strong>. Fünf Themen: drei auf der Lernplattform, eines in der HubSpot Academy, eines in der n8n Academy.</span></p>
 <section id="ueberblick" class="level2">
 <h2 class="anchored" data-anchor-id="ueberblick">Überblick</h2>
 <table class="caption-top table">
@@ -330,6 +331,11 @@ ul.task-list li input[type="checkbox"] {
 <td><a href="https://academy.hubspot.com/courses/inbound-marketing">HubSpot Academy</a></td>
 <td>laut HubSpot</td>
 </tr>
+<tr class="odd">
+<td>n8n Quickstart (QS101), englisch</td>
+<td><a href="https://learn.n8n.io/courses/course-v1:n8n+QS101+2026H2/about">n8n Academy</a> (kostenlos)</td>
+<td>ca. 3 bis 5 Std., Workflows bis zum KI-Agenten</td>
+</tr>
 </tbody>
 </table>
 <p>Die drei Plattform-Themen liegen in einem gemeinsamen Kurs: „Agentic AI für Growth Marketing: Vorprüfungsleistung“. Die Zugangsdaten kommen per Mail.</p>
@@ -343,16 +349,19 @@ ul.task-list li input[type="checkbox"] {
 <li>Jede Frage hat bis zu 3 Versuche.</li>
 </ul>
 <p><strong>HubSpot Academy:</strong> Das Zertifikat „Inbound Marketing“ liegt vor.</p>
+<p><strong>n8n Academy:</strong> Der Kurs QS101 ist mit mindestens 70 % bestanden, die Teilnahmebescheinigung oder das Badge liegt vor.</p>
 </section>
 <section id="nachweis" class="level2">
 <h2 class="anchored" data-anchor-id="nachweis">Nachweis</h2>
 <ol type="1">
 <li>Bearbeiten Sie alle Einheiten auf der Lernplattform. Der Fortschritt wird automatisch gespeichert.</li>
 <li>Schließen Sie den HubSpot-Kurs mit dem Zertifikat ab.</li>
-<li>Laden Sie das Zertifikat als PDF herunter.</li>
-<li>Laden Sie das PDF bis 17.11.2026 in Moodle hoch.</li>
+<li>Schließen Sie den n8n-Kurs QS101 ab (Hinweise unten).</li>
+<li>Laden Sie das HubSpot-Zertifikat als PDF herunter.</li>
+<li>Laden Sie die Teilnahmebescheinigung oder das Badge der n8n Academy als PDF oder Screenshot herunter.</li>
+<li>Laden Sie beide Nachweise bis 17.11.2026 in Moodle hoch.</li>
 </ol>
-<p>Prüfen: Auf der Lernplattform zeigt der Kurs 100 % Fortschritt.</p>
+<p>Prüfen: Auf der Lernplattform zeigt der Kurs 100 % Fortschritt. In Moodle liegen zwei Nachweise, Kurstitel und Ihr Name sind lesbar.</p>
 <div class="callout callout-style-simple callout-warning callout-titled" title="Achtung">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -367,10 +376,28 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 </section>
+<section id="qs101" class="level2">
+<h2 class="anchored" data-anchor-id="qs101">n8n-Kurs QS101</h2>
+<p>Der Kurs der n8n Academy führt ohne Vorwissen vom ersten Workflow bis zum KI-Agenten. Er ergänzt die n8n-Grundlagen auf der Lernplattform um praktische Übungen.</p>
+<div class="callout callout-style-simple callout-note callout-titled" title="n8n-Instanz für den Kurs">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Hinweis</span>n8n-Instanz für den Kurs
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Bearbeiten Sie den Kurs im n8n-Konto Ihrer Gruppe auf dem HdM-Server (https://kirenz.iuk.hdm-stuttgart.de/n8n-1/), nicht in n8n Cloud. Den Schritt „setting up n8n“ am Kursbeginn überspringen Sie also. Von zu Hause brauchen Sie dafür das HdM-VPN (FortiClient, Zugang mit der HdM-Kennung). Für den Teil zum KI-Agenten nehmen Sie die vorbereitete Verbindung <code>Gemini (Gruppe N)</code> Ihrer Gruppe, ein eigener API-Schlüssel ist nicht nötig. Trigger-Pfade bekommen wie immer das Gruppen-Präfix (zum Beispiel <code>g3-qs101-form</code>).</p>
+<p><strong>Ausnahme zur Regel aus Übung 1.4:</strong> Dort gilt, dass immer nur eine Person einen Workflow bearbeitet. Für QS101 baut jede Person ihre eigenen Workflows, weil der Kurs individuell abgeschlossen wird. Jeder Workflow-Name beginnt mit Ihrem Nachnamen (zum Beispiel „Müller · QS101 Übung 1“). Workflows anderer Personen öffnen Sie nicht zum Bearbeiten.</p>
+</div>
+</div>
+</section>
 <section id="einheiten" class="level2">
 <h2 class="anchored" data-anchor-id="einheiten">Einheiten auf der Lernplattform</h2>
 <div class="callout callout-style-simple callout-note callout-titled" title="KI-Grundlagen (10 Einheiten)">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -379,7 +406,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="1">
 <li>Vom Briefing zum Entwurf</li>
@@ -397,7 +424,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout callout-style-simple callout-note callout-titled" title="n8n-Grundlagen (7 Einheiten)">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -406,7 +433,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="1">
 <li>Was n8n im Kern leistet</li>
@@ -421,7 +448,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout callout-style-simple callout-note callout-titled" title="KI-Agenten im Marketing (13 Einheiten)">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
@@ -430,7 +457,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <ol type="1">
 <li>Was einen KI-Agenten ausmacht</li>
