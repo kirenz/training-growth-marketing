@@ -4,15 +4,15 @@ toc: true
 ---
 
 
-[Individuell, unbenotet. Fristen: **Dienstag, 17.11.2026** (AI Fluency, HubSpot, Camunda) und **Montag, 30.11.2026** (n8n-Kurs QS101).]{.lead}
+[Individuell, unbenotet. Frist für alle Kurse: **Montag, 30.11.2026**.]{.lead}
 
 ## Überblick {#ueberblick}
 
 | Thema | Wo | Richtwert | Frist |
 |---|---|---|---|
-| AI Fluency: Framework & Foundations, englisch | [Anthropic Academy](https://anthropic.skilljar.com/ai-fluency-framework-foundations) (kostenlos) | laut Anbieter | 17.11.2026 |
-| Inbound Marketing | [HubSpot Academy](https://academy.hubspot.com/courses/inbound-marketing) (kostenlos) | laut HubSpot | 17.11.2026 |
-| Lernpfad BPMN, Stufen „Foundation“ und „Basic“, deutsch und englisch | [Camunda Academy](https://academy.camunda.com/path/bpmn-lp) (kostenlos) | ca. 5,5 Std. | 17.11.2026 |
+| AI Fluency: Framework & Foundations, englisch | [Anthropic Academy](https://anthropic.skilljar.com/ai-fluency-framework-foundations) (kostenlos) | laut Anbieter | 30.11.2026 |
+| Inbound Marketing | [HubSpot Academy](https://academy.hubspot.com/courses/inbound-marketing) (kostenlos) | laut HubSpot | 30.11.2026 |
+| Lernpfad BPMN, Stufen „Foundation“ und „Basic“, deutsch und englisch | [Camunda Academy](https://academy.camunda.com/path/bpmn-lp) (kostenlos) | ca. 5,5 Std. | 30.11.2026 |
 | n8n Quickstart (QS101), englisch | [n8n Academy](https://learn.n8n.io/courses/course-v1:n8n+QS101+2026H2/about) (kostenlos) | ca. 3 bis 5 Std. | 30.11.2026 |
 
 ## Camunda: Pflichtkurse {#camunda}
@@ -51,7 +51,7 @@ Wenn Sie ein Pseudonym nutzen: Schreiben Sie es bei der Moodle-Abgabe in das Kom
 
 ## Nachweis {#nachweis}
 
-**Bis 17.11.2026, drei externe Kurse:**
+**AI Fluency, HubSpot und Camunda:**
 
 1. Bearbeiten Sie alle Module der Kurse.
 2. Bestehen Sie bei AI Fluency und HubSpot den Abschlusstest.
@@ -64,7 +64,7 @@ Prüfen: Auf jedem Zertifikat sind Ihr Name oder Ihr Pseudonym und der Kurstitel
 
 Bietet ein Anbieter kein PDF an, reicht ein Screenshot des Zertifikats. Name oder Pseudonym, Kurstitel und Datum müssen darauf sichtbar sein.
 
-**Bis 30.11.2026, n8n-Kurs QS101:** Laden Sie die Teilnahmebescheinigung oder das Badge als PDF oder Screenshot in Moodle hoch.
+**n8n-Kurs QS101:** Laden Sie die Teilnahmebescheinigung oder das Badge als PDF oder Screenshot in Moodle hoch.
 
 ## n8n-Kurs QS101 {#qs101}
 

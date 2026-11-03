@@ -104,7 +104,7 @@ Bereich 3 ist markiert, weil die drei Blocktage dort ansetzen. Welche Tiefe je B
 
 | Komponente | Gewicht | Termin |
 |---|---:|---|
-| Vorprüfungsleistung: Online-Kurse, individuell | unbenotet | 17.11.2026, QS101 bis 30.11.2026 |
+| Vorprüfungsleistung: Online-Kurse, individuell | unbenotet | 30.11.2026 |
 | Zwischenpräsentation | 10 % | 01.12.2026 |
 | Abschlusspräsentation mit Live-Demo | 20 % | Woche vom 26.01.2027 |
 | Agenten und Workflows | 40 % | 12.02.2027 |
@@ -115,7 +115,7 @@ Die vier benoteten Teile werden im Team erbracht. Jede Person beteiligt sich an 
 :::
 
 ::: {.notes}
-Vorprüfungsleistung: AI Fluency (Anthropic), Inbound Marketing (HubSpot), neun BPMN-Kurse (Camunda), dazu QS101 der n8n Academy bis 30.11. Kursliste, Bestehensregeln und Nachweis stehen auf der Kursseite unter „Vorprüfungsleistung“.
+Vorprüfungsleistung: AI Fluency (Anthropic), Inbound Marketing (HubSpot), neun BPMN-Kurse (Camunda), dazu QS101 der n8n Academy, Frist für alles 30.11. Kursliste, Bestehensregeln und Nachweis stehen auf der Kursseite unter „Vorprüfungsleistung“.
 :::
 
 ## Bewertet wird die Qualität des Messdesigns, nicht die Höhe der Zahlen {.center}
