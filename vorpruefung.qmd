@@ -4,70 +4,91 @@ toc: true
 ---
 
 
-[Individuell, unbenotet, Fristen **17.11.2026** (Lernplattform und HubSpot) und **30.11.2026** (n8n-Kurs QS101). Fünf Themen: drei auf der Lernplattform, eines in der HubSpot Academy, eines in der n8n Academy.]{.lead}
+[Individuell, unbenotet. Fristen: **Dienstag, 17.11.2026** (Lernplattform, AI Fluency, HubSpot, Camunda) und **Montag, 30.11.2026** (n8n-Kurs QS101).]{.lead}
 
 ## Überblick {#ueberblick}
 
-| Thema | Wo | Richtwert |
-|---|---|---|
-| KI-Grundlagen | [Lernplattform](https://kurse.kirenz.de) | ca. 4 Std. |
-| n8n-Grundlagen | [Lernplattform](https://kurse.kirenz.de) | ca. 1 Std. |
-| KI-Agenten im Marketing | [Lernplattform](https://kurse.kirenz.de) | ca. 4 Std. |
-| Inbound Marketing | [HubSpot Academy](https://academy.hubspot.com/courses/inbound-marketing) | laut HubSpot |
-| n8n Quickstart (QS101), englisch | [n8n Academy](https://learn.n8n.io/courses/course-v1:n8n+QS101+2026H2/about) (kostenlos) | ca. 3 bis 5 Std., Workflows bis zum KI-Agenten |
+| Thema | Wo | Richtwert | Frist |
+|---|---|---|---|
+| AI Fluency: Framework & Foundations, englisch | [Anthropic Academy](https://anthropic.skilljar.com/ai-fluency-framework-foundations) (kostenlos) | laut Anbieter | 17.11.2026 |
+| Inbound Marketing | [HubSpot Academy](https://academy.hubspot.com/courses/inbound-marketing) (kostenlos) | laut HubSpot | 17.11.2026 |
+| Lernpfad BPMN, Stufen „Foundation“ und „Basic“, deutsch und englisch | [Camunda Academy](https://academy.camunda.com/path/bpmn-lp) (kostenlos) | ca. 5,5 Std. | 17.11.2026 |
+| n8n-Grundlagen | [Lernplattform](https://kurse.kirenz.de) | ca. 1 Std. | 17.11.2026 |
+| KI-Agenten im Marketing | [Lernplattform](https://kurse.kirenz.de) | ca. 4 Std. | 17.11.2026 |
+| n8n Quickstart (QS101), englisch | [n8n Academy](https://learn.n8n.io/courses/course-v1:n8n+QS101+2026H2/about) (kostenlos) | ca. 3 bis 5 Std. | 30.11.2026 |
 
-Die drei Plattform-Themen liegen in einem gemeinsamen Kurs: „Agentic AI für Growth Marketing: Vorprüfungsleistung“. Die Zugangsdaten kommen per Mail.
+AI Fluency ersetzt das Thema KI-Grundlagen auf der Lernplattform. Die beiden Plattform-Themen liegen im Kurs „Agentic AI für Growth Marketing: Vorprüfungsleistung“. Die Zugangsdaten kommen per Mail.
+
+## Camunda: Pflichtkurse {#camunda}
+
+Pflicht sind diese neun Kurse aus dem Lernpfad BPMN, zusammen ca. 5,5 Stunden:
+
+1. BPMN - Overview
+2. BPMN - Task Types
+3. BPMN - Events
+4. BPMN - Participants
+5. BPMN - Subprocesses
+6. BPMN - Messages and Collaboration
+7. BPMN - Data and Artifacts
+8. BPMN - Error Handling
+9. BPMN - Creating Readable Process Models
+
+Freiwillig: Stufe „Advanced“, BPMN Challenge und Assessment. Für die Übungen brauchen Sie ein kostenloses Camunda-Konto.
 
 ## Bestanden, wenn {#bestanden}
 
-**Lernplattform:**
+**Lernplattform (n8n-Grundlagen, KI-Agenten im Marketing):**
 
-- Alle Einheiten des Kurses sind abgeschlossen.
-- Mindestens 80 % aller Quizfragen sind richtig beantwortet.
-- Jede Frage hat bis zu 3 Versuche.
+- Alle Einheiten sind abgeschlossen.
+- Mindestens 80 % der Quizfragen sind richtig beantwortet.
+- Den Fortschritt speichert die Lernplattform automatisch. Ein eigener Nachweis ist nicht nötig.
 
-**HubSpot Academy:** Das Zertifikat „Inbound Marketing“ liegt vor.
+**AI Fluency und HubSpot:** Alle Module sind bearbeitet, der Abschlusstest ist bestanden, das Zertifikat liegt vor.
+
+**Camunda:** Alle neun Pflichtkurse sind abgeschlossen, die neun Zertifikate liegen vor.
 
 **n8n Academy:** Der Kurs QS101 ist mit mindestens 70 % bestanden, die Teilnahmebescheinigung oder das Badge liegt vor.
 
+::: {.callout-warning title="Achtung"}
+Für das HubSpot-Zertifikat gelten die Regeln von HubSpot. Bei einer Wiederholung des Tests kann eine Wartezeit gelten. Beginnen Sie deshalb früh.
+:::
+
+## Anmeldung und Datenschutz {#datenschutz}
+
+Anthropic, HubSpot und Camunda sind seriöse Anbieter. Sie müssen dort aber keine echten Daten angeben. Sie können sich auch mit einem Pseudonym und einer eigenen E-Mail-Adresse nur für diesen Zweck registrieren. Ihre Moodle-Abgabe ordnet den Nachweis Ihnen zu.
+
+Wenn Sie ein Pseudonym nutzen: Schreiben Sie es bei der Moodle-Abgabe in das Kommentarfeld (zum Beispiel „Pseudonym bei allen drei Anbietern: M. Sommer“).
+
 ## Nachweis {#nachweis}
 
-1. Bearbeiten Sie alle Einheiten auf der Lernplattform. Der Fortschritt wird automatisch gespeichert.
-2. Schließen Sie den HubSpot-Kurs mit dem Zertifikat ab.
-3. Schließen Sie den n8n-Kurs QS101 ab (Hinweise unten).
-4. Laden Sie das HubSpot-Zertifikat als PDF bis 17.11.2026 in Moodle hoch.
-5. Laden Sie die Teilnahmebescheinigung oder das Badge der n8n Academy bis 30.11.2026 in Moodle hoch (als PDF oder Screenshot).
+**Bis 17.11.2026, drei externe Kurse:**
 
-Prüfen: Auf der Lernplattform zeigt der Kurs 100 % Fortschritt. In Moodle liegen zwei Nachweise, Kurstitel und Ihr Name sind lesbar.
+1. Bearbeiten Sie alle Module der Kurse.
+2. Bestehen Sie bei AI Fluency und HubSpot den Abschlusstest.
+3. Laden Sie die Zertifikate als PDF herunter. Die Camunda-Zertifikate finden Sie unter Benutzersymbol > My Profile > Anmeldungen.
+4. Fügen Sie die neun Camunda-Zertifikate zu einer PDF-Datei zusammen.
+5. Benennen Sie die Dateien nach dem Muster `Nachname_Kurs.pdf` (zum Beispiel `Muster_AI-Fluency.pdf`, `Muster_HubSpot.pdf`, `Muster_BPMN.pdf`).
+6. Laden Sie die drei PDFs in Moodle in der Abgabe zur Vorprüfungsleistung hoch.
 
-::: {.callout-warning title="Achtung"}
-Für das HubSpot-Zertifikat gelten die Regeln von HubSpot: Bestehensgrenze und Wartezeit bei Wiederholung legt HubSpot fest. Beginnen Sie deshalb früh.
-:::
+Prüfen: Auf jedem Zertifikat sind Ihr Name oder Ihr Pseudonym und der Kurstitel lesbar.
+
+Bietet ein Anbieter kein PDF an, reicht ein Screenshot des Zertifikats. Name oder Pseudonym, Kurstitel und Datum müssen darauf sichtbar sein.
+
+**Bis 30.11.2026, n8n-Kurs QS101:** Laden Sie die Teilnahmebescheinigung oder das Badge als PDF oder Screenshot in Moodle hoch.
+
+**Lernplattform:** kein Upload. Prüfen: Der Kurs zeigt 100 % Fortschritt.
 
 ## n8n-Kurs QS101 {#qs101}
 
-Frist: **30.11.2026**. Der Kurs der n8n Academy führt ohne Vorwissen vom ersten Workflow bis zum KI-Agenten. Er ergänzt die n8n-Grundlagen auf der Lernplattform um praktische Übungen.
+Frist: **Montag, 30.11.2026**. Der Kurs der n8n Academy führt ohne Vorwissen vom ersten Workflow bis zum KI-Agenten. Er ergänzt die n8n-Grundlagen auf der Lernplattform um praktische Übungen.
 
 ::: {.callout-note title="n8n-Instanz für den Kurs"}
-Bearbeiten Sie den Kurs im n8n-Konto Ihrer Gruppe auf dem HdM-Server (https://kirenz.iuk.hdm-stuttgart.de/n8n-1/), nicht in n8n Cloud. Den Schritt „setting up n8n“ am Kursbeginn überspringen Sie also. Von zu Hause brauchen Sie dafür das HdM-VPN (FortiClient, Zugang mit der HdM-Kennung). Für den Teil zum KI-Agenten nehmen Sie die vorbereitete Verbindung `Gemini (Gruppe N)` Ihrer Gruppe, ein eigener API-Schlüssel ist nicht nötig. Trigger-Pfade bekommen wie immer das Gruppen-Präfix (zum Beispiel `g3-qs101-form`).
+Bearbeiten Sie den Kurs im n8n-Konto Ihrer Gruppe auf dem HdM-Server (https://kirenz.iuk.hdm-stuttgart.de/n8n-1/), nicht in n8n Cloud. Den Schritt „setting up n8n“ am Kursbeginn überspringen Sie also. Von zu Hause brauchen Sie dafür das HdM-VPN (FortiClient, Zugang mit der HdM-Kennung). Für den KI-Agenten nehmen Sie die vorbereitete Verbindung `Gemini (Gruppe N)` Ihrer Gruppe, ein eigener API-Schlüssel ist nicht nötig. Trigger-Pfade bekommen wie immer das Gruppen-Präfix (zum Beispiel `g3-qs101-form`).
 
-**Ausnahme zur Regel aus Übung 1.4:** Dort gilt, dass immer nur eine Person einen Workflow bearbeitet. Für QS101 baut jede Person ihre eigenen Workflows, weil der Kurs individuell abgeschlossen wird. Jeder Workflow-Name beginnt mit Ihrem Nachnamen (zum Beispiel „Müller · QS101 Übung 1“). Workflows anderer Personen öffnen Sie nicht zum Bearbeiten.
+**Ausnahme zur Regel aus Übung 1.4:** Dort gilt, dass immer nur eine Person einen Workflow bearbeitet. Für QS101 baut jede Person ihre eigenen Workflows, weil der Kurs individuell abgeschlossen wird. Jeder Workflow-Name beginnt mit Ihrem Nachnamen (zum Beispiel „Mueller-QS101-1-Uebung-1“). Workflows anderer Personen öffnen Sie nicht zum Bearbeiten.
 :::
 
 ## Einheiten auf der Lernplattform {#einheiten}
-
-::: {.callout-note collapse="true" title="KI-Grundlagen (10 Einheiten)"}
-1. Vom Briefing zum Entwurf
-2. Halluzinationen und Unsicherheit
-3. Den Pilotfall im Use-Case-Canvas festhalten
-4. Vom Zuruf zum klaren Auftrag
-5. Einen Arbeitsauftrag für eine Kundenanfrage formulieren
-6. Mit Beispielen und Format steuern
-7. Im Dialog weiterarbeiten
-8. Aussagen, Zahlen und Quellen prüfen
-9. Mit Testfällen die Qualität prüfen
-10. Einen Auftrag auf andere KI-Werkzeuge übertragen
-:::
 
 ::: {.callout-note collapse="true" title="n8n-Grundlagen (7 Einheiten)"}
 1. Was n8n im Kern leistet
