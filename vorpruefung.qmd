@@ -4,7 +4,7 @@ toc: true
 ---
 
 
-[Individuell, unbenotet. Fristen: **Dienstag, 17.11.2026** (Lernplattform, AI Fluency, HubSpot, Camunda) und **Montag, 30.11.2026** (n8n-Kurs QS101).]{.lead}
+[Individuell, unbenotet. Fristen: **Dienstag, 17.11.2026** (AI Fluency, HubSpot, Camunda) und **Montag, 30.11.2026** (n8n-Kurs QS101).]{.lead}
 
 ## Überblick {#ueberblick}
 
@@ -13,11 +13,7 @@ toc: true
 | AI Fluency: Framework & Foundations, englisch | [Anthropic Academy](https://anthropic.skilljar.com/ai-fluency-framework-foundations) (kostenlos) | laut Anbieter | 17.11.2026 |
 | Inbound Marketing | [HubSpot Academy](https://academy.hubspot.com/courses/inbound-marketing) (kostenlos) | laut HubSpot | 17.11.2026 |
 | Lernpfad BPMN, Stufen „Foundation“ und „Basic“, deutsch und englisch | [Camunda Academy](https://academy.camunda.com/path/bpmn-lp) (kostenlos) | ca. 5,5 Std. | 17.11.2026 |
-| n8n-Grundlagen | [Lernplattform](https://kurse.kirenz.de) | ca. 1 Std. | 17.11.2026 |
-| KI-Agenten im Marketing | [Lernplattform](https://kurse.kirenz.de) | ca. 4 Std. | 17.11.2026 |
 | n8n Quickstart (QS101), englisch | [n8n Academy](https://learn.n8n.io/courses/course-v1:n8n+QS101+2026H2/about) (kostenlos) | ca. 3 bis 5 Std. | 30.11.2026 |
-
-AI Fluency ersetzt das Thema KI-Grundlagen auf der Lernplattform. Die beiden Plattform-Themen liegen im Kurs „Agentic AI für Growth Marketing: Vorprüfungsleistung“. Die Zugangsdaten kommen per Mail.
 
 ## Camunda: Pflichtkurse {#camunda}
 
@@ -36,12 +32,6 @@ Pflicht sind diese neun Kurse aus dem Lernpfad BPMN, zusammen ca. 5,5 Stunden:
 Freiwillig: Stufe „Advanced“, BPMN Challenge und Assessment. Für die Übungen brauchen Sie ein kostenloses Camunda-Konto.
 
 ## Bestanden, wenn {#bestanden}
-
-**Lernplattform (n8n-Grundlagen, KI-Agenten im Marketing):**
-
-- Alle Einheiten sind abgeschlossen.
-- Mindestens 80 % der Quizfragen sind richtig beantwortet.
-- Den Fortschritt speichert die Lernplattform automatisch. Ein eigener Nachweis ist nicht nötig.
 
 **AI Fluency und HubSpot:** Alle Module sind bearbeitet, der Abschlusstest ist bestanden, das Zertifikat liegt vor.
 
@@ -76,44 +66,12 @@ Bietet ein Anbieter kein PDF an, reicht ein Screenshot des Zertifikats. Name ode
 
 **Bis 30.11.2026, n8n-Kurs QS101:** Laden Sie die Teilnahmebescheinigung oder das Badge als PDF oder Screenshot in Moodle hoch.
 
-**Lernplattform:** kein Upload. Prüfen: Der Kurs zeigt 100 % Fortschritt.
-
 ## n8n-Kurs QS101 {#qs101}
 
-Frist: **Montag, 30.11.2026**. Der Kurs der n8n Academy führt ohne Vorwissen vom ersten Workflow bis zum KI-Agenten. Er ergänzt die n8n-Grundlagen auf der Lernplattform um praktische Übungen.
+Frist: **Montag, 30.11.2026**. Der Kurs der n8n Academy führt ohne Vorwissen vom ersten Workflow bis zum KI-Agenten.
 
 ::: {.callout-note title="n8n-Instanz für den Kurs"}
 Bearbeiten Sie den Kurs im n8n-Konto Ihrer Gruppe auf dem HdM-Server (https://kirenz.iuk.hdm-stuttgart.de/n8n-1/), nicht in n8n Cloud. Den Schritt „setting up n8n“ am Kursbeginn überspringen Sie also. Von zu Hause brauchen Sie dafür das HdM-VPN (FortiClient, Zugang mit der HdM-Kennung). Für den KI-Agenten nehmen Sie die vorbereitete Verbindung `Gemini (Gruppe N)` Ihrer Gruppe, ein eigener API-Schlüssel ist nicht nötig. Trigger-Pfade bekommen wie immer das Gruppen-Präfix (zum Beispiel `g3-qs101-form`).
 
 **Ausnahme zur Regel aus Übung 1.4:** Dort gilt, dass immer nur eine Person einen Workflow bearbeitet. Für QS101 baut jede Person ihre eigenen Workflows, weil der Kurs individuell abgeschlossen wird. Jeder Workflow-Name beginnt mit Ihrem Nachnamen (zum Beispiel „Mueller-QS101-1-Uebung-1“). Workflows anderer Personen öffnen Sie nicht zum Bearbeiten.
 :::
-
-## Einheiten auf der Lernplattform {#einheiten}
-
-::: {.callout-note collapse="true" title="n8n-Grundlagen (7 Einheiten)"}
-1. Was n8n im Kern leistet
-2. Was sich automatisieren lässt
-3. Die vier Bausteine
-4. Cloud, Self-Hosted oder Managed?
-5. Pro Execution statt pro Task
-6. Credentials sicher vorbereiten
-7. Der erste Workflow
-:::
-
-::: {.callout-note collapse="true" title="KI-Agenten im Marketing (13 Einheiten)"}
-1. Was einen KI-Agenten ausmacht
-2. Use-Cases auswählen und Agent-Scope festlegen
-3. Prompt-Engineering für Agenten
-4. Tools als Stellglieder eines Agenten
-5. Pattern 01: Prompt Chaining
-6. Pattern 02: Routing
-7. Pattern 05: Evaluator-Optimizer
-8. Pattern 06: Agent mit Tools
-9. Wann Content-Marketing nach Multi-Agents ruft
-10. Content-Factory aufbauen
-11. Wann Lead-Triage nach Multi-Agents ruft
-12. Lead-Qualifizierung aufbauen
-13. Policy-Gate und Approval-Pattern
-:::
-
-Die Einheiten 10, 12 und 13 passen direkt zum Zoi-Projekt: Content, Lead-Qualifizierung und menschliche Freigabe.

@@ -115,7 +115,7 @@ Die vier benoteten Teile werden im Team erbracht. Jede Person beteiligt sich an 
 :::
 
 ::: {.notes}
-Vorprüfungsleistung: AI Fluency (Anthropic), Inbound Marketing (HubSpot), neun BPMN-Kurse (Camunda), n8n-Grundlagen und KI-Agenten im Marketing auf der Lernplattform, dazu QS101 der n8n Academy bis 30.11. Kursliste, Bestehensregeln und Nachweis stehen auf der Kursseite unter „Vorprüfungsleistung“.
+Vorprüfungsleistung: AI Fluency (Anthropic), Inbound Marketing (HubSpot), neun BPMN-Kurse (Camunda), dazu QS101 der n8n Academy bis 30.11. Kursliste, Bestehensregeln und Nachweis stehen auf der Kursseite unter „Vorprüfungsleistung“.
 :::
 
 ## Bewertet wird die Qualität des Messdesigns, nicht die Höhe der Zahlen {.center}

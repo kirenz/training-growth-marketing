@@ -86,7 +86,7 @@ Seit 19.09.2026 liegt der Aurenta-Fall zusätzlich in der separaten, nur lesbare
 - /Users/jankirenz/code/hdm-projekte/projekte/ws-2026/agentic-ai-growth-marketing.qmd: Termine, 5 SWS, Gewichte 10/20/40/30.
 - Lokaler Zoi-Briefingentwurf: Kontext der vier Arbeitsbereiche, keine bestätigte Leistungsvereinbarung.
 - Öffentliche Quellen stehen direkt auf der Growth-Seite und in den Werkzeugseiten. Anbieterfälle als Selbstauskünfte kennzeichnen, keine Effektraten übertragen.
-- Vorprüfungsleistung: Maßgeblich sind die Moodle-Ankündigungen (Stand 03.11.2026). AI Fluency ersetzt KI-Grundlagen, dazu HubSpot, Camunda BPMN (neun Pflichtkurse), zwei Plattform-Themen und QS101. `vorpruefung.qmd` gibt diesen Stand wieder.
+- Vorprüfungsleistung: Maßgeblich sind die Moodle-Ankündigungen (Stand 03.11.2026). AI Fluency, HubSpot, Camunda BPMN (neun Pflichtkurse) und QS101. Keine Themen auf der Lernplattform. `vorpruefung.qmd` gibt diesen Stand wieder.
 
 ## Technische Prüfung
 

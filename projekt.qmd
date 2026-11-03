@@ -98,7 +98,7 @@ Die vier benoteten Komponenten werden im Team erbracht. Bewertet werden die Qual
 
 ### Vorprüfungsleistung {#vorpruefung}
 
-Online-Kurse: AI Fluency (Anthropic), Inbound Marketing (HubSpot), Lernpfad BPMN (Camunda), n8n-Grundlagen und KI-Agenten im Marketing auf der Lernplattform sowie der Kurs QS101 der n8n Academy. Frist 17.11.2026, für QS101 30.11.2026. [Kursliste, Bestehensregel und Nachweis](vorpruefung.qmd).
+Online-Kurse: AI Fluency (Anthropic), Inbound Marketing (HubSpot), Lernpfad BPMN (Camunda) und der Kurs QS101 der n8n Academy. Frist 17.11.2026, für QS101 30.11.2026. [Kursliste, Bestehensregel und Nachweis](vorpruefung.qmd).
 
 ### Weitere Termine
 
