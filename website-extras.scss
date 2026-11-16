@@ -559,6 +559,16 @@ img.abbildung, .abbildung img, p > img.abbildung {
 #quarto-document-content .folien a.folie,
 #quarto-document-content .folien a.folie:hover { color: #ffffff; text-decoration: none; }
 
+// PDF-Link neben jeder Folienzeile (setzt scripts/deck_pdf.py beim Rendern)
+.folien li { display: flex; gap: 0.45rem; }
+.folien li a.folie { flex: 1; }
+#quarto-document-content .folien a.deck-pdf {
+  display: flex; align-items: center; padding: 0.55rem 0.9rem;
+  background: #161a24; border: 1px solid #2a2f3e; border-radius: 0.6rem;
+  color: #88F297; font-weight: 600; font-size: 0.9rem; text-decoration: none; background-image: none;
+  &:hover { border-color: #88F297; background: #1e2332; }
+}
+
 // Kompakte Folienzeile innerhalb eines Abschnitts
 .folien.folien-inline {
   padding: 0.55rem 0.9rem;

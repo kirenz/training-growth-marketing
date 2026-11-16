@@ -19,6 +19,8 @@ quarto preview --no-browser
 
 `render.sh` rendert die Kurswebsite und danach das Teilprojekt `aurenta/` (fiktive Unternehmenswebsite, Ausgabe `_site/aurenta/`). Ein alleiniges `quarto render` leert `_site/` und entfernt damit die Aurenta-Seiten; dann `cd aurenta && quarto render` nachholen.
 
+Zuletzt erzeugt `render.sh` mit `scripts/deck_pdf.py` für jedes Deck, das auf einer Tagesseite verlinkt ist, `slides/<deck>.pdf` (eine Seite je Folie, alle Klickschritte aufgedeckt) und setzt neben jede Folienzeile einen Link „PDF“. Braucht `uv` und Google Chrome oder Playwright-Chromium (Jan, 16.11.2026). Gesperrte Tage erscheinen nicht, also auch ihre PDFs nicht.
+
 Lokale Styles, keine externe Schrift. Downloads unter material/. Im Montagsstand werden 12 Kursseiten, 4 Foliensätze und die 5 Aurenta-Seiten gebaut; Dienstag und Mittwoch kommen bei der Freischaltung dazu.
 
 ## Freischaltung der Blocktage
